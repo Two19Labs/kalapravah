@@ -36,7 +36,7 @@ export default function ArtistSection({ onContactStudio }) {
             <div className="deckled-frame p-4 rounded-sm bg-[#FFFDF9] shadow-xl">
               <div className="relative aspect-[4/5] rounded overflow-hidden bg-[#FAF8F3]">
                 <img
-                  src="/images/rashmi_dhar.jpg"
+                  src="./images/rashmi_dhar.jpg"
                   alt="Rashmi Dhar Madhubani Artist in Studio"
                   className="w-full h-full object-cover"
                 />

@@ -9,7 +9,7 @@ export default function TechniqueShowcase() {
       id: 'kachni',
       name: 'Kachni (Line Work)',
       subtitle: 'Precision of fine hatched lines',
-      image: '/images/monsoon_court.jpg',
+      image: './images/monsoon_court.jpg',
       description: 'Kachni relies entirely on fine, hatched black ink lines. Every shadow, texture, and leaf vein is constructed line by patient line without any solid color fills.',
       details: [
         'Drawn with fine nib ink pens and fine brushes',
@@ -23,7 +23,7 @@ export default function TechniqueShowcase() {
       id: 'bharni',
       name: 'Bharni (Color Fill)',
       subtitle: 'Vibrant natural pigment washes',
-      image: '/images/vighnaharta.jpg',
+      image: './images/vighnaharta.jpg',
       description: 'Bharni style features bold double-line black borders filled with vivid natural dyes and pigments derived from turmeric, indigo, madder red, and lampblack.',
       details: [
         'Rich color fills within bold black ink outlines',
@@ -37,7 +37,7 @@ export default function TechniqueShowcase() {
       id: 'godna',
       name: 'Godna (Tattoo Mandalas)',
       subtitle: 'Ancestral tattoo line patterning',
-      image: '/images/sonepur_wheel.jpg',
+      image: './images/sonepur_wheel.jpg',
       description: 'Godna style preserves the ancient tattoo traditions of rural Bihar. It utilizes concentric mandala wheels, stippling, and symbolic wildlife motifs.',
       details: [
         'Inspired by traditional women’s protective body tattoos',
