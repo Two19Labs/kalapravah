@@ -98,7 +98,7 @@ export default function Hero({ onExploreGallery, onMeetArtist, onOpenCommission 
                 {/* Image */}
                 <div className="relative aspect-[4/3] overflow-hidden rounded-sm bg-[#FAF8F3]">
                   <img
-                    src="./images/vighnaharta.jpg"
+                    src="/images/vighnaharta.jpg"
                     alt="Vighnaharta Madhubani Artwork by Rashmi Dhar"
                     className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
                   />

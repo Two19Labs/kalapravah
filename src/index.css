@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --bg-parchment: #F8F5EE;
@@ -26,17 +28,6 @@
   --shadow-hover: 0 20px 40px -15px rgba(28, 25, 23, 0.15), 0 10px 15px -5px rgba(28, 25, 23, 0.05);
 }
 
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-  font-size: 16px;
-}
-
 body {
   font-family: var(--font-sans);
   background-color: var(--bg-parchment);
@@ -56,25 +47,6 @@ h1, h2, h3, h4, .font-serif {
   color: var(--text-ink);
   font-weight: 600;
   letter-spacing: -0.01em;
-}
-
-h1 {
-  font-size: clamp(2.5rem, 5vw, 4.5rem);
-  line-height: 1.1;
-}
-
-h2 {
-  font-size: clamp(2rem, 3.5vw, 3rem);
-  line-height: 1.2;
-}
-
-h3 {
-  font-size: clamp(1.4rem, 2.2vw, 1.8rem);
-  line-height: 1.3;
-}
-
-p {
-  color: var(--text-body);
 }
 
 /* Deckled Edge Frame Simulation */
@@ -148,52 +120,6 @@ p {
   transform: translateY(-1px);
 }
 
-.btn-terracotta {
-  background-color: var(--color-terracotta);
-  border-color: var(--color-terracotta);
-  color: #FAF8F3;
-}
-
-.btn-terracotta:hover {
-  background-color: #9B3A21;
-  box-shadow: 0 4px 14px rgba(185, 74, 45, 0.25);
-}
-
-/* Ornamental Dividers */
-.motif-divider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  margin: 2.5rem 0;
-}
-
-.motif-divider::before,
-.motif-divider::after {
-  content: "";
-  height: 1px;
-  width: 80px;
-  background: linear-gradient(to right, transparent, var(--border-strong), transparent);
-}
-
-/* Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--bg-parchment);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--border-strong);
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--color-ochre);
-}
-
 /* Glass & Modal Overlay */
 .modal-backdrop {
   position: fixed;
@@ -234,11 +160,12 @@ p {
   animation: fadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-@keyframes pulseSlow {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.8; transform: scale(1.03); }
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
-
-.animate-pulse-slow {
-  animation: pulseSlow 4s ease-in-out infinite;
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
