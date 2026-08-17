@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import AboutSection from './components/AboutSection';
 import TechniqueShowcase from './components/TechniqueShowcase';
 import GallerySection from './components/GallerySection';
 import ArtworkLightbox from './components/ArtworkLightbox';
@@ -25,7 +26,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F8F5EE] font-sans selection:bg-[#B94A2D] selection:text-white">
+    <div className="min-h-screen bg-[#FAF8F3] font-sans selection:bg-[#B94A2D] selection:text-white text-[#44403C]">
       
       {/* Navigation Header */}
       <Navbar
@@ -34,25 +35,29 @@ export default function App() {
         onOpenCommission={() => setCommissionOpen(true)}
       />
 
-      {/* Hero Section with 3D Art Sphere */}
+      {/* 3D Hero Section (Hero Canvas on Right, Narrative Intro on Left) */}
       <Hero
         onExploreGallery={() => scrollToSection('gallery')}
         onMeetArtist={() => scrollToSection('artist')}
         onOpenCommission={() => setCommissionOpen(true)}
       />
 
-      {/* Interactive Technique Comparison Slider */}
+      {/* Editorial About Kalapravah Section (Manifesto & 3 Pillars) */}
+      <AboutSection
+        onExploreGallery={() => scrollToSection('gallery')}
+        onOpenCommission={() => setCommissionOpen(true)}
+      />
+
+      {/* Interactive Technique Comparison Slider (Kachni vs Bharni) */}
       <TechniqueShowcase />
 
-
-
-      {/* Selected Gallery Works */}
+      {/* Selected Gallery Works (Filter Tabs & Lightbox View) */}
       <GallerySection
         onSelectArtwork={(artwork) => setSelectedArtwork(artwork)}
         onOpenCommission={() => setCommissionOpen(true)}
       />
 
-      {/* Motif Dictionary */}
+      {/* Visual Vocabulary Motif Dictionary */}
       <MotifDictionary />
 
       {/* Artist Biography & Heritage (Rashmi Dhar) */}

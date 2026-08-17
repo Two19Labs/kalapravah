@@ -1,136 +1,197 @@
 import React, { useState } from 'react';
-import { Feather, Layers, Compass, CheckCircle2 } from 'lucide-react';
+import { Layers, Sparkles, Feather, HelpCircle } from 'lucide-react';
 
 export default function TechniqueShowcase() {
+  const [sliderPosition, setSliderPosition] = useState(50);
   const [activeTab, setActiveTab] = useState('kachni');
 
-  const techniques = [
-    {
-      id: 'kachni',
-      name: 'Kachni (Line Work)',
-      subtitle: 'Precision of fine hatched lines',
-      image: '/images/monsoon_court.jpg',
-      description: 'Kachni relies entirely on fine, hatched black ink lines. Every shadow, texture, and leaf vein is constructed line by patient line without any solid color fills.',
-      details: [
-        'Drawn with fine nib ink pens and fine brushes',
-        'Requires extreme concentration and steady rhythm',
-        'Exclusively relies on cross-hatching and double contours',
-        'Traditional to the Mithila region for sacred rituals'
-      ],
-      color: '#1E304B'
+  const techniques = {
+    kachni: {
+      name: "Kachni Style (Line Work)",
+      subtitle: "Precision, Patience & Fine Hatching",
+      description: "Kachni relies strictly on fine line drawing, hatching, and intricate geometric patterns. Artists draw double lines and fill the inner spaces with delicate parallel lines or cross-hatching without solid color blocks.",
+      materials: ["Bamboo nib pens", "Kashmiri walnut ink", "Handmade organic paper", "Mineral black pigment"],
+      symbolicMeaning: "Symbolizes clarity of thought, restraint, and patient spiritual meditation."
     },
-    {
-      id: 'bharni',
-      name: 'Bharni (Color Fill)',
-      subtitle: 'Vibrant natural pigment washes',
-      image: '/images/vighnaharta.jpg',
-      description: 'Bharni style features bold double-line black borders filled with vivid natural dyes and pigments derived from turmeric, indigo, madder red, and lampblack.',
-      details: [
-        'Rich color fills within bold black ink outlines',
-        'Pigments sourced from organic plants, minerals, and ochre',
-        'Depicts mythological narratives, deities, and court scenes',
-        'High visual warmth and timeless vibrant presence'
-      ],
-      color: '#B94A2D'
-    },
-    {
-      id: 'godna',
-      name: 'Godna (Tattoo Mandalas)',
-      subtitle: 'Ancestral tattoo line patterning',
-      image: '/images/sonepur_wheel.jpg',
-      description: 'Godna style preserves the ancient tattoo traditions of rural Bihar. It utilizes concentric mandala wheels, stippling, and symbolic wildlife motifs.',
-      details: [
-        'Inspired by traditional women’s protective body tattoos',
-        'Rhythmic circular mandalas with geometric borders',
-        'Monochrome or dual-tone natural pigment palettes',
-        'Deeply symbolic of protection and ancestral memory'
-      ],
-      color: '#C87A38'
+    bharni: {
+      name: "Bharni Style (Color Fill)",
+      subtitle: "Vibrant Earth Dyes & Solid Color Saturated Fields",
+      description: "Bharni brings Madhubani paintings to life through vivid, vibrant colors. Solid areas of deities, peacocks, and floral motifs are filled completely with organic vegetable and mineral dyes.",
+      materials: ["Turmeric yellow", "Marigold ochre", "Indigo leaf dye", "Rice paste binder"],
+      symbolicMeaning: "Symbolizes abundance, joy, fertility, and cosmic vitality."
     }
-  ];
-
-  const current = techniques.find(t => t.id === activeTab);
+  };
 
   return (
-    <section className="py-20 bg-[#FAF8F3] border-y border-[#E7E0D2] relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="techniques" className="py-20 md:py-28 bg-[#FAF8F3] relative overflow-hidden border-t border-[#E7E0D2]">
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="text-xs font-semibold uppercase tracking-widest text-[#B94A2D] block mb-2">
-            The Three Mithila Traditions
-          </span>
-          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#1C1917]">
-            Crafted line by patient line
+        {/* Section Header */}
+        <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#E7E0D2]/70 border border-[#C4B9A3]/60 text-xs font-semibold text-[#1C1917]">
+            <Layers className="w-3.5 h-3.5 text-[#B94A2D]" />
+            <span>Folk Art Master Techniques</span>
+          </div>
+
+          <h2 className="font-serif text-3xl sm:text-5xl font-bold text-[#1C1917] tracking-tight">
+            Kachni line vs. Bharni color.
           </h2>
-          <p className="mt-3 text-base sm:text-lg text-[#5C5652]">
-            In an age of mass production, every Kalapravah painting is created by hand on handmade paper using three distinct Madhubani disciplines.
+
+          <p className="text-base sm:text-lg text-[#5C5652] leading-relaxed">
+            Madhubani art is categorized by distinct traditional line and color methodologies. Slide below to compare fine-line hatching against rich mineral color fill.
           </p>
         </div>
 
-        {/* Interactive Tabs */}
-        <div className="flex justify-center gap-2 sm:gap-4 mb-10 flex-wrap">
-          {techniques.map((tech) => (
-            <button
-              key={tech.id}
-              onClick={() => setActiveTab(tech.id)}
-              className={`px-5 py-3 rounded text-sm font-semibold transition-all flex items-center gap-2 ${
-                activeTab === tech.id
-                  ? 'bg-[#1C1917] text-[#FAF8F3] shadow-md scale-105'
-                  : 'bg-[#FFFDF9] text-[#44403C] hover:bg-[#E7E0D2]/50 border border-[#E7E0D2]'
-              }`}
-            >
-              <Feather className={`w-4 h-4 ${activeTab === tech.id ? 'text-[#D99B26]' : 'text-[#78716C]'}`} />
-              <span>{tech.name}</span>
-            </button>
-          ))}
-        </div>
-
-        {/* Tab Content Display */}
-        <div className="deckled-frame bg-[#FFFDF9] p-6 sm:p-10 rounded-sm">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            
-            {/* Visual Column */}
-            <div className="lg:col-span-6">
-              <div className="relative aspect-[4/3] rounded overflow-hidden shadow-inner bg-[#FAF8F3]">
-                <img
-                  src={current.image}
-                  alt={current.name}
-                  className="w-full h-full object-cover transition-opacity duration-500"
+        {/* Interactive Comparison Slider */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          {/* Slider Visual Column */}
+          <div className="lg:col-span-7">
+            <div className="deckled-frame p-4 rounded-sm bg-[#FFFDF9] shadow-xl relative">
+              
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-sm select-none">
+                
+                {/* Right Image: Bharni Style */}
+                <img 
+                  src="/images/vighnaharta.jpg"
+                  alt="Bharni Style Madhubani Fill"
+                  onError={(e) => {
+                    e.currentTarget.src = "https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=1200&q=80";
+                  }}
+                  className="absolute inset-0 w-full h-full object-cover"
                 />
-                <div className="absolute top-3 left-3 bg-[#1C1917]/85 text-[#FAF8F3] text-xs px-3 py-1.5 rounded backdrop-blur-sm">
-                  {current.name}
+                <div className="absolute top-4 right-4 bg-[#1C1917]/80 backdrop-blur-md text-[#FAF8F3] text-xs font-bold px-3 py-1.5 rounded-sm border border-white/20">
+                  Bharni (Solid Color Fill)
                 </div>
+
+                {/* Left Image: Kachni Style (Clipped via Slider) */}
+                <div 
+                  className="absolute inset-0 overflow-hidden"
+                  style={{ width: `${sliderPosition}%` }}
+                >
+                  <img 
+                    src="/images/madhubani_art_texture.jpg"
+                    alt="Kachni Line Work Shading"
+                    onError={(e) => {
+                      e.currentTarget.src = "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=1200&q=80";
+                    }}
+                    className="absolute inset-0 w-full h-full object-cover max-w-none"
+                    style={{ width: '100%', height: '100%' }}
+                  />
+                  <div className="absolute top-4 left-4 bg-[#B94A2D]/90 backdrop-blur-md text-white text-xs font-bold px-3 py-1.5 rounded-sm border border-white/20">
+                    Kachni (Fine Line Hatching)
+                  </div>
+                </div>
+
+                {/* Interactive Drag Handle */}
+                <div 
+                  className="absolute top-0 bottom-0 w-1 bg-white cursor-ew-resize shadow-2xl flex items-center justify-center"
+                  style={{ left: `${sliderPosition}%` }}
+                >
+                  <div className="w-8 h-8 rounded-full bg-[#1C1917] text-white flex items-center justify-center shadow-lg border-2 border-white text-xs font-bold">
+                    ↔
+                  </div>
+                </div>
+
+                {/* Range Input Overlay */}
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value={sliderPosition}
+                  onChange={(e) => setSliderPosition(Number(e.target.value))}
+                  className="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-20"
+                />
+
               </div>
+
+              {/* Slider Caption */}
+              <div className="mt-3 pt-3 border-t border-[#E7E0D2]/60 flex items-center justify-between text-xs text-[#78716C]">
+                <span className="flex items-center gap-1.5 font-serif italic text-[#1C1917]">
+                  <Feather className="w-3.5 h-3.5 text-[#B94A2D]" />
+                  Drag slider left/right to compare technique brushwork
+                </span>
+                <span>Authentic Organic Dyes</span>
+              </div>
+
+            </div>
+          </div>
+
+          {/* Technique Details Column */}
+          <div className="lg:col-span-5 space-y-6">
+            
+            {/* Toggle Tabs */}
+            <div className="flex gap-2 border-b border-[#E7E0D2] pb-3">
+              <button
+                onClick={() => setActiveTab('kachni')}
+                className={`text-sm font-serif font-bold pb-2 border-b-2 transition-colors ${
+                  activeTab === 'kachni'
+                    ? 'border-[#B94A2D] text-[#B94A2D]'
+                    : 'border-transparent text-[#78716C] hover:text-[#1C1917]'
+                }`}
+              >
+                Kachni (Line Work)
+              </button>
+
+              <button
+                onClick={() => setActiveTab('bharni')}
+                className={`text-sm font-serif font-bold pb-2 border-b-2 transition-colors ${
+                  activeTab === 'bharni'
+                    ? 'border-[#B94A2D] text-[#B94A2D]'
+                    : 'border-transparent text-[#78716C] hover:text-[#1C1917]'
+                }`}
+              >
+                Bharni (Color Fill)
+              </button>
             </div>
 
-            {/* Description Column */}
-            <div className="lg:col-span-6 space-y-5 text-left">
-              <div>
-                <span className="text-xs font-bold uppercase tracking-wider text-[#C87A38]">
-                  {current.subtitle}
-                </span>
-                <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#1C1917] mt-1">
-                  {current.name}
-                </h3>
-              </div>
+            {/* Active Content */}
+            <div className="space-y-4 animate-fade-in">
+              <h3 className="font-serif text-2xl font-bold text-[#1C1917]">
+                {techniques[activeTab].name}
+              </h3>
 
-              <p className="text-base text-[#5C5652] leading-relaxed">
-                {current.description}
+              <p className="text-xs font-semibold uppercase tracking-wider text-[#C87A38]">
+                {techniques[activeTab].subtitle}
               </p>
 
-              <div className="space-y-2.5 pt-2">
-                {current.details.map((detail, idx) => (
-                  <div key={idx} className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-[#B94A2D] shrink-0 mt-0.5" />
-                    <span className="text-sm text-[#44403C] font-medium">{detail}</span>
-                  </div>
-                ))}
+              <p className="text-sm text-[#5C5652] leading-relaxed">
+                {techniques[activeTab].description}
+              </p>
+
+              {/* Material Badges */}
+              <div className="pt-3 space-y-2">
+                <span className="text-xs font-semibold text-[#1C1917] block">
+                  Traditional Materials & Pigments:
+                </span>
+                <div className="flex flex-wrap gap-2">
+                  {techniques[activeTab].materials.map((mat, idx) => (
+                    <span 
+                      key={idx}
+                      className="px-2.5 py-1 text-xs bg-[#F8F5EE] border border-[#C4B9A3]/50 text-[#44403C] rounded-sm"
+                    >
+                      {mat}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Cultural Meaning Callout Box */}
+              <div className="p-4 bg-[#E7E0D2]/40 border-l-2 border-[#B94A2D] rounded-r-sm space-y-1">
+                <span className="text-xs font-semibold text-[#1C1917] block flex items-center gap-1.5">
+                  <Sparkles className="w-3.5 h-3.5 text-[#B94A2D]" />
+                  Symbolic Significance
+                </span>
+                <p className="text-xs text-[#5C5652] italic">
+                  "{techniques[activeTab].symbolicMeaning}"
+                </p>
               </div>
 
             </div>
 
           </div>
+
         </div>
 
       </div>

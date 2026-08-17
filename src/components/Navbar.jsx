@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Sparkles, Menu, X, Feather, Calendar, Palette } from 'lucide-react';
+import { Sparkles, Menu, X, Feather } from 'lucide-react';
 
 export default function Navbar({ activeSection, setActiveSection, onOpenCommission }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -13,21 +13,22 @@ export default function Navbar({ activeSection, setActiveSection, onOpenCommissi
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navLinks = [
+  const navItems = [
     { id: 'hero', label: 'Home' },
+    { id: 'about', label: 'About' },
     { id: 'gallery', label: 'Gallery' },
+    { id: 'techniques', label: 'Techniques' },
     { id: 'artist', label: 'The Artist' },
-    { id: 'motifs', label: 'Motifs' },
     { id: 'workshops', label: 'Workshops' },
     { id: 'contact', label: 'Contact' },
   ];
 
-  const scrollTo = (id) => {
+  const handleNavClick = (id) => {
     setActiveSection(id);
     setMobileMenuOpen(false);
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    const elem = document.getElementById(id);
+    if (elem) {
+      elem.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -35,114 +36,96 @@ export default function Navbar({ activeSection, setActiveSection, onOpenCommissi
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-[#FAF8F3]/90 backdrop-blur-md shadow-sm border-b border-[#E7E0D2] py-3.5' 
+          ? 'bg-[#FAF8F3]/90 backdrop-blur-md border-b border-[#E7E0D2] shadow-sm py-3' 
           : 'bg-transparent py-5'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between">
-          
-          {/* Brand Mark */}
-          <button 
-            onClick={() => scrollTo('hero')}
-            className="group text-left focus:outline-none flex items-center gap-3"
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+        
+        {/* Brand Logo & Tagline */}
+        <button 
+          onClick={() => handleNavClick('hero')} 
+          className="text-left group focus:outline-none"
+        >
+          <div className="flex items-center gap-2">
+            <Feather className="w-5 h-5 text-[#B94A2D] transform group-hover:rotate-12 transition-transform" />
+            <span className="font-serif text-2xl font-bold tracking-tight text-[#1C1917]">
+              Kalapravah
+            </span>
+          </div>
+          <span className="text-[10px] text-[#78716C] tracking-wide block uppercase font-medium">
+            Handmade Madhubani Folk Art
+          </span>
+        </button>
+
+        {/* Desktop Navigation Links */}
+        <nav className="hidden lg:flex items-center gap-8">
+          {navItems.map((item) => (
+            <button
+              key={item.id}
+              onClick={() => handleNavClick(item.id)}
+              className={`text-sm font-medium transition-colors hover:text-[#B94A2D] relative py-1 ${
+                activeSection === item.id 
+                  ? 'text-[#B94A2D] font-semibold' 
+                  : 'text-[#44403C]'
+              }`}
+            >
+              {item.label}
+              {activeSection === item.id && (
+                <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#B94A2D] rounded-full animate-fade-in" />
+              )}
+            </button>
+          ))}
+        </nav>
+
+        {/* Action Button & Mobile Toggle */}
+        <div className="flex items-center gap-3">
+          <button
+            onClick={onOpenCommission}
+            className="hidden sm:inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold tracking-wider uppercase rounded-sm bg-[#1C1917] text-[#FAF8F3] hover:bg-[#B94A2D] transition-colors border border-[#1C1917]"
           >
-            <div className="w-9 h-9 rounded border border-[#C87A38]/40 bg-[#FFFDF9] flex items-center justify-center text-[#B94A2D] shadow-sm group-hover:border-[#B94A2D] transition-colors">
-              <Feather className="w-5 h-5 transform group-hover:rotate-12 transition-transform" />
-            </div>
-            <div>
-              <span className="font-serif text-2xl font-bold tracking-tight text-[#1C1917] block leading-none">
-                KALAPRAVAH
-              </span>
-              <span className="text-[10px] tracking-widest uppercase text-[#78716C] font-medium block mt-1">
-                Handmade Madhubani • Rashmi Dhar
-              </span>
-            </div>
+            <Sparkles className="w-3.5 h-3.5 text-[#C87A38]" />
+            <span>Commission Art</span>
           </button>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-7">
-            {navLinks.map((link) => (
-              <button
-                key={link.id}
-                onClick={() => scrollTo(link.id)}
-                className={`text-sm font-medium transition-colors relative py-1 ${
-                  activeSection === link.id
-                    ? 'text-[#B94A2D]'
-                    : 'text-[#44403C] hover:text-[#1C1917]'
-                }`}
-              >
-                {link.label}
-                {activeSection === link.id && (
-                  <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#B94A2D] rounded-full" />
-                )}
-              </button>
-            ))}
-          </nav>
-
-          {/* Quick Actions */}
-          <div className="hidden lg:flex items-center gap-3">
-            <button
-              onClick={onOpenCommission}
-              className="btn-outline !py-2 !px-4 text-xs font-semibold flex items-center gap-2 border-[#C87A38]/50 hover:border-[#C87A38] text-[#1C1917]"
-            >
-              <Palette className="w-3.5 h-3.5 text-[#C87A38]" />
-              Commission Art
-            </button>
-            <button
-              onClick={() => scrollTo('contact')}
-              className="btn-primary !py-2 !px-4 text-xs font-semibold"
-            >
-              Get in Touch
-            </button>
-          </div>
-
-          {/* Mobile Menu Toggle */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 rounded-md text-[#1C1917] hover:bg-[#E7E0D2]/50 transition-colors"
+            className="lg:hidden p-2 text-[#1C1917] hover:text-[#B94A2D] focus:outline-none"
             aria-label="Toggle Navigation Menu"
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
-
         </div>
+
       </div>
 
-      {/* Mobile Drawer */}
+      {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-[#FAF8F3] border-b border-[#E7E0D2] px-6 py-6 space-y-4 shadow-xl animate-fade-in">
+        <div className="lg:hidden bg-[#FAF8F3] border-b border-[#E7E0D2] px-6 py-6 space-y-4 shadow-xl animate-fade-in">
           <div className="flex flex-col space-y-3">
-            {navLinks.map((link) => (
+            {navItems.map((item) => (
               <button
-                key={link.id}
-                onClick={() => scrollTo(link.id)}
-                className={`text-left text-base font-serif font-medium py-2 border-b border-[#E7E0D2]/40 ${
-                  activeSection === link.id ? 'text-[#B94A2D] font-bold' : 'text-[#1C1917]'
+                key={item.id}
+                onClick={() => handleNavClick(item.id)}
+                className={`text-left text-base font-serif font-medium py-2 border-b border-[#E7E0D2]/50 ${
+                  activeSection === item.id ? 'text-[#B94A2D] font-bold' : 'text-[#1C1917]'
                 }`}
               >
-                {link.label}
+                {item.label}
               </button>
             ))}
           </div>
-          <div className="pt-2 flex flex-col gap-2">
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onOpenCommission();
-              }}
-              className="btn-outline w-full justify-center text-sm"
-            >
-              <Palette className="w-4 h-4 text-[#C87A38]" />
-              Commission Bespoke Art
-            </button>
-            <button
-              onClick={() => scrollTo('contact')}
-              className="btn-primary w-full justify-center text-sm"
-            >
-              Contact Studio
-            </button>
-          </div>
+
+          <button
+            onClick={() => {
+              setMobileMenuOpen(false);
+              onOpenCommission();
+            }}
+            className="w-full mt-4 flex items-center justify-center gap-2 px-5 py-3 text-xs font-semibold tracking-wider uppercase rounded-sm bg-[#B94A2D] text-white"
+          >
+            <Sparkles className="w-4 h-4 text-white" />
+            <span>Commission Bespoke Artwork</span>
+          </button>
         </div>
       )}
     </header>

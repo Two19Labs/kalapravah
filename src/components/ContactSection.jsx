@@ -1,222 +1,216 @@
 import React, { useState } from 'react';
-import { Mail, MapPin, Clock, Send, Check, HelpCircle, ChevronDown, Sparkles } from 'lucide-react';
+import { Mail, MapPin, Send, MessageSquare, ChevronDown, ChevronUp, CheckCircle2 } from 'lucide-react';
 
 export default function ContactSection() {
   const [submitted, setSubmitted] = useState(false);
-  const [form, setForm] = useState({ name: '', email: '', subject: 'General Inquiry', message: '' });
-  const [openFaq, setOpenFaq] = useState(null);
-
-  const faqs = [
-    {
-      q: "Are all paintings completely hand-drawn?",
-      a: "Yes. Every piece from Kalapravah is rendered entirely by hand on handmade paper using organic pigments and permanent ink. No digital prints or reproduction press shortcuts are used."
-    },
-    {
-      q: "Can I commission a painting in custom dimensions or themes?",
-      a: "Absolutely. Artist Rashmi Dhar works closely with collectors to compose Madhubani pieces around your specific family history, preferred color palettes, and wall dimensions."
-    },
-    {
-      q: "Do you ship artworks internationally?",
-      a: "Yes. All artworks are carefully rolled in acid-free paper and shipped in heavy-duty protective wooden/PVC tubes with full insurance and tracking worldwide."
-    },
-    {
-      q: "How can schools or corporate spaces host a workshop?",
-      a: "You can send us an inquiry with your preferred dates and participant numbers. We provide customized curriculum modules and complete art kits for institutional groups."
-    }
-  ];
+  const [activeFaq, setActiveFaq] = useState(null);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    inquiryType: 'commission',
+    message: ''
+  });
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setSubmitted(true);
   };
 
+  const faqs = [
+    {
+      q: "How are the original paintings prepared and framed?",
+      a: "Every artwork is hand-painted on premium handmade khadi/paper with natural organic pigments. Works are signed by artist Rashmi Dhar and can be shipped unframed (rolled in protective wooden tubes) or mounted in acid-free museum-grade wooden glass frames."
+    },
+    {
+      q: "How long does a bespoke commissioned artwork take?",
+      a: "Bespoke commissions typically take 2 to 4 weeks depending on canvas dimensions and detail complexity (Kachni line density vs. Bharni fill layers)."
+    },
+    {
+      q: "Are natural organic dyes and mineral pigments durable?",
+      a: "Yes! Natural pigments (turmeric, indigo, organic black ink, and mineral ochres) bound with natural tree gum have lasted for centuries on traditional Mithila walls and handmade paper."
+    },
+    {
+      q: "Can Kalapravah host workshops outside Delhi NCR?",
+      a: "Yes! Rashmi Dhar conducts institutional, corporate, and private workshops across India as well as virtual online masterclasses."
+    }
+  ];
+
   return (
-    <section id="contact" className="py-24 bg-[#F8F5EE] relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-20 md:py-28 bg-[#FAF8F3] relative overflow-hidden border-t border-[#E7E0D2]">
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        {/* Section Title */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-semibold uppercase tracking-widest text-[#B94A2D] block mb-2">
-            Get In Touch
-          </span>
-          <h2 className="font-serif text-3xl sm:text-5xl font-bold text-[#1C1917]">
-            Let's make something by hand
+        {/* Banner Callout Header */}
+        <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#E7E0D2]/70 border border-[#C4B9A3]/60 text-xs font-semibold text-[#1C1917]">
+            <MessageSquare className="w-3.5 h-3.5 text-[#B94A2D]" />
+            <span>Start a Conversation</span>
+          </div>
+
+          <h2 className="font-serif text-3xl sm:text-5xl font-bold text-[#1C1917] tracking-tight">
+            Bring a hand-painted story <br />
+            <span className="italic font-normal text-[#B94A2D]">into your space.</span>
           </h2>
-          <p className="mt-3 text-base text-[#5C5652]">
-            Enquire about available paintings, commission a piece, or invite Kalapravah to host a Madhubani workshop.
+
+          <p className="text-base sm:text-lg text-[#5C5652] leading-relaxed">
+            Enquire about available paintings, commission a bespoke narrative piece, or invite Kalapravah to host a Madhubani workshop.
           </p>
         </div>
 
+        {/* Contact Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           
-          {/* Studio Contact Cards Column */}
-          <div className="lg:col-span-5 space-y-6 text-left">
-            
-            <div className="deckled-frame bg-[#FFFDF9] p-6 rounded-sm space-y-4">
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded bg-[#FAF8F3] border border-[#E7E0D2] flex items-center justify-center text-[#B94A2D] shrink-0">
-                  <Mail className="w-5 h-5" />
-                </div>
-                <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-[#78716C]">Direct Email</span>
-                  <a
-                    href="mailto:hello@kalapravah.art"
-                    className="font-serif text-xl font-bold text-[#1C1917] block hover:text-[#B94A2D] transition-colors"
-                  >
-                    hello@kalapravah.art
-                  </a>
-                  <p className="text-xs text-[#78716C] mt-1">Direct studio inbox for commissions & inquiries</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="deckled-frame bg-[#FFFDF9] p-6 rounded-sm space-y-4">
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded bg-[#FAF8F3] border border-[#E7E0D2] flex items-center justify-center text-[#C87A38] shrink-0">
-                  <MapPin className="w-5 h-5" />
-                </div>
-                <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-[#78716C]">Studio Location</span>
-                  <h4 className="font-serif text-xl font-bold text-[#1C1917]">
-                    Delhi NCR, India
-                  </h4>
-                  <p className="text-xs text-[#78716C] mt-1">Studio visits strictly by prior appointment</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="deckled-frame bg-[#FFFDF9] p-6 rounded-sm space-y-4">
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded bg-[#FAF8F3] border border-[#E7E0D2] flex items-center justify-center text-[#1E304B] shrink-0">
-                  <Clock className="w-5 h-5" />
-                </div>
-                <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-[#78716C]">Response Time</span>
-                  <h4 className="font-serif text-xl font-bold text-[#1C1917]">
-                    Within 2 Working Days
-                  </h4>
-                  <p className="text-xs text-[#78716C] mt-1">Rashmi personally reads and responds to every note</p>
-                </div>
-              </div>
-            </div>
-
-            {/* FAQ Accordion */}
-            <div className="pt-4 space-y-3">
-              <h4 className="font-serif text-xl font-bold text-[#1C1917]">Frequently Asked Questions</h4>
-              <div className="space-y-2">
-                {faqs.map((faq, idx) => (
-                  <div key={idx} className="bg-[#FFFDF9] border border-[#E7E0D2] rounded">
-                    <button
-                      onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
-                      className="w-full p-3.5 text-left text-xs font-bold text-[#1C1917] flex items-center justify-between"
-                    >
-                      <span>{faq.q}</span>
-                      <ChevronDown className={`w-4 h-4 text-[#78716C] transition-transform ${openFaq === idx ? 'rotate-180' : ''}`} />
-                    </button>
-                    {openFaq === idx && (
-                      <div className="px-3.5 pb-3 text-xs text-[#5C5652] border-t border-[#E7E0D2]/50 pt-2 leading-relaxed">
-                        {faq.a}
-                      </div>
-                    )}
+          {/* Left Column: Form */}
+          <div className="lg:col-span-7">
+            <div className="deckled-frame p-8 md:p-10 rounded-sm bg-[#FFFDF9] border border-[#E7E0D2] shadow-xl">
+              {submitted ? (
+                <div className="text-center py-12 space-y-4">
+                  <div className="w-14 h-14 bg-[#3E5A47]/10 text-[#3E5A47] rounded-full flex items-center justify-center mx-auto">
+                    <CheckCircle2 className="w-8 h-8" />
                   </div>
-                ))}
-              </div>
-            </div>
+                  <h3 className="font-serif text-2xl font-bold text-[#1C1917]">
+                    Message Sent to Studio
+                  </h3>
+                  <p className="text-sm text-[#5C5652] max-w-md mx-auto">
+                    Thank you for reaching out to Kalapravah. Rashmi Dhar will respond to your enquiry within 24 hours.
+                  </p>
+                  <button
+                    onClick={() => setSubmitted(false)}
+                    className="btn-outline text-xs font-semibold uppercase"
+                  >
+                    Send Another Inquiry
+                  </button>
+                </div>
+              ) : (
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div className="space-y-2 text-left">
+                      <label className="text-xs font-semibold uppercase tracking-wider text-[#1C1917] block">
+                        Your Name
+                      </label>
+                      <input
+                        type="text"
+                        required
+                        value={formData.name}
+                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                        placeholder="e.g. Ananya Sharma"
+                        className="w-full px-4 py-3 bg-[#FAF8F3] border border-[#C4B9A3]/60 rounded-sm text-sm text-[#1C1917] focus:outline-none focus:border-[#B94A2D]"
+                      />
+                    </div>
 
+                    <div className="space-y-2 text-left">
+                      <label className="text-xs font-semibold uppercase tracking-wider text-[#1C1917] block">
+                        Email Address
+                      </label>
+                      <input
+                        type="email"
+                        required
+                        value={formData.email}
+                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                        placeholder="you@example.com"
+                        className="w-full px-4 py-3 bg-[#FAF8F3] border border-[#C4B9A3]/60 rounded-sm text-sm text-[#1C1917] focus:outline-none focus:border-[#B94A2D]"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="space-y-2 text-left">
+                    <label className="text-xs font-semibold uppercase tracking-wider text-[#1C1917] block">
+                      Enquiry Purpose
+                    </label>
+                    <select
+                      value={formData.inquiryType}
+                      onChange={(e) => setFormData({ ...formData, inquiryType: e.target.value })}
+                      className="w-full px-4 py-3 bg-[#FAF8F3] border border-[#C4B9A3]/60 rounded-sm text-sm text-[#1C1917] focus:outline-none focus:border-[#B94A2D]"
+                    >
+                      <option value="commission">Commission a Bespoke Artwork</option>
+                      <option value="purchase">Purchase an Available Painting</option>
+                      <option value="workshop">Book a Madhubani Workshop / Masterclass</option>
+                      <option value="general">General Studio Inquiry</option>
+                    </select>
+                  </div>
+
+                  <div className="space-y-2 text-left">
+                    <label className="text-xs font-semibold uppercase tracking-wider text-[#1C1917] block">
+                      Your Message / Story Concept
+                    </label>
+                    <textarea
+                      rows={4}
+                      required
+                      value={formData.message}
+                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                      placeholder="Share details about your desired artwork size, story theme, or workshop dates..."
+                      className="w-full px-4 py-3 bg-[#FAF8F3] border border-[#C4B9A3]/60 rounded-sm text-sm text-[#1C1917] focus:outline-none focus:border-[#B94A2D]"
+                    />
+                  </div>
+
+                  <button
+                    type="submit"
+                    className="btn-primary w-full justify-center text-xs font-semibold uppercase tracking-wider py-3.5"
+                  >
+                    <span>Send Message to Studio</span>
+                    <Send className="w-4 h-4" />
+                  </button>
+
+                </form>
+              )}
+            </div>
           </div>
 
-          {/* Contact Form Column */}
-          <div className="lg:col-span-7 deckled-frame bg-[#FFFDF9] p-8 sm:p-10 rounded-sm text-left">
-            {!submitted ? (
-              <form onSubmit={handleSubmit} className="space-y-5">
-                <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-[#B94A2D]">
-                    Start A Conversation
-                  </span>
-                  <h3 className="font-serif text-2xl font-bold text-[#1C1917] mt-1">
-                    Send a note to the studio
-                  </h3>
-                </div>
+          {/* Right Column: Studio Info & Accordion FAQs */}
+          <div className="lg:col-span-5 space-y-8 text-left">
+            
+            {/* Studio Info Card */}
+            <div className="deckled-frame p-6 rounded-sm bg-[#FFFDF9] border border-[#E7E0D2] space-y-4">
+              <h3 className="font-serif text-xl font-bold text-[#1C1917]">
+                Kalapravah Studio
+              </h3>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-xs font-bold text-[#1C1917] mb-1">Your Name</label>
-                    <input
-                      type="text"
-                      required
-                      placeholder="Enter your name"
-                      value={form.name}
-                      onChange={(e) => setForm({ ...form, name: e.target.value })}
-                      className="w-full px-3.5 py-2.5 text-sm bg-[#FAF8F3] border border-[#C4B9A3] rounded focus:outline-none focus:border-[#B94A2D]"
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-xs font-bold text-[#1C1917] mb-1">Email Address</label>
-                    <input
-                      type="email"
-                      required
-                      placeholder="you@example.com"
-                      value={form.email}
-                      onChange={(e) => setForm({ ...form, email: e.target.value })}
-                      className="w-full px-3.5 py-2.5 text-sm bg-[#FAF8F3] border border-[#C4B9A3] rounded focus:outline-none focus:border-[#B94A2D]"
-                    />
-                  </div>
+              <div className="space-y-3 text-sm text-[#5C5652]">
+                <div className="flex items-center gap-3">
+                  <MapPin className="w-4 h-4 text-[#B94A2D]" />
+                  <span>Delhi NCR, India</span>
                 </div>
-
-                <div>
-                  <label className="block text-xs font-bold text-[#1C1917] mb-1">Subject / Inquiry Type</label>
-                  <select
-                    value={form.subject}
-                    onChange={(e) => setForm({ ...form, subject: e.target.value })}
-                    className="w-full px-3.5 py-2.5 text-sm bg-[#FAF8F3] border border-[#C4B9A3] rounded focus:outline-none focus:border-[#B94A2D]"
-                  >
-                    <option value="General Inquiry">General Studio Inquiry</option>
-                    <option value="Available Painting Purchase">Inquire About Available Painting</option>
-                    <option value="Bespoke Commission">Commission Artwork</option>
-                    <option value="Host Workshop">Host a Workshop (School/Institution)</option>
-                    <option value="Exhibition Press">Exhibition & Media Press</option>
-                  </select>
+                <div className="flex items-center gap-3">
+                  <Mail className="w-4 h-4 text-[#B94A2D]" />
+                  <a href="mailto:hello@kalapravah.art" className="hover:text-[#B94A2D] transition-colors">
+                    hello@kalapravah.art
+                  </a>
                 </div>
-
-                <div>
-                  <label className="block text-xs font-bold text-[#1C1917] mb-1">Your Message</label>
-                  <textarea
-                    rows={5}
-                    required
-                    placeholder="Tell us about the painting, custom narrative, or workshop details..."
-                    value={form.message}
-                    onChange={(e) => setForm({ ...form, message: e.target.value })}
-                    className="w-full px-3.5 py-2.5 text-sm bg-[#FAF8F3] border border-[#C4B9A3] rounded focus:outline-none focus:border-[#B94A2D]"
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="btn-primary w-full justify-center text-sm font-semibold !py-3.5"
-                >
-                  <Send className="w-4 h-4" /> Send Message
-                </button>
-              </form>
-            ) : (
-              <div className="py-12 text-center space-y-4">
-                <div className="w-14 h-14 bg-[#3E5A47] text-white rounded-full flex items-center justify-center mx-auto">
-                  <Check className="w-8 h-8" />
-                </div>
-                <h3 className="font-serif text-3xl font-bold text-[#1C1917]">
-                  Thank You for Reaching Out
-                </h3>
-                <p className="text-sm text-[#5C5652] max-w-md mx-auto">
-                  Your message has been sent to <strong>hello@kalapravah.art</strong>. Rashmi Dhar will reply to <em>{form.email}</em> shortly.
-                </p>
-                <button
-                  onClick={() => setSubmitted(false)}
-                  className="btn-outline !py-2 !px-4 text-xs"
-                >
-                  Send Another Message
-                </button>
               </div>
-            )}
+
+              <div className="pt-3 border-t border-[#E7E0D2]/60 text-xs text-[#78716C]">
+                <span>Studio visits welcomed by prior appointment</span>
+              </div>
+            </div>
+
+            {/* Accordion FAQs */}
+            <div className="space-y-3">
+              <h3 className="font-serif text-lg font-bold text-[#1C1917]">
+                Frequently Asked Questions
+              </h3>
+
+              {faqs.map((faq, idx) => (
+                <div 
+                  key={idx}
+                  className="border border-[#E7E0D2] rounded-sm bg-[#FFFDF9] overflow-hidden"
+                >
+                  <button
+                    onClick={() => setActiveFaq(activeFaq === idx ? null : idx)}
+                    className="w-full px-4 py-3 text-left font-serif font-semibold text-sm text-[#1C1917] flex items-center justify-between hover:text-[#B94A2D]"
+                  >
+                    <span>{faq.q}</span>
+                    {activeFaq === idx ? <ChevronUp className="w-4 h-4 text-[#B94A2D]" /> : <ChevronDown className="w-4 h-4 text-[#78716C]" />}
+                  </button>
+                  {activeFaq === idx && (
+                    <div className="px-4 pb-3 text-xs text-[#5C5652] leading-relaxed border-t border-[#E7E0D2]/40 pt-2 bg-[#FAF8F3]">
+                      {faq.a}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+
           </div>
 
         </div>
