@@ -2,20 +2,15 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import AboutSection from './components/AboutSection';
-import TechniqueShowcase from './components/TechniqueShowcase';
 import GallerySection from './components/GallerySection';
 import ArtworkLightbox from './components/ArtworkLightbox';
-import MotifDictionary from './components/MotifDictionary';
 import ArtistSection from './components/ArtistSection';
-import CommissionBuilder from './components/CommissionBuilder';
-import WorkshopsSection from './components/WorkshopsSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState('hero');
   const [selectedArtwork, setSelectedArtwork] = useState(null);
-  const [commissionOpen, setCommissionOpen] = useState(false);
 
   const scrollToSection = (id) => {
     setActiveSection(id);
@@ -32,43 +27,29 @@ export default function App() {
       <Navbar
         activeSection={activeSection}
         setActiveSection={setActiveSection}
-        onOpenCommission={() => setCommissionOpen(true)}
+        onOpenContact={() => scrollToSection('contact')}
       />
 
-      {/* 3D Hero Section (Hero Canvas on Right, Narrative Intro on Left) */}
+      {/* Hero Section (Left: Lovable Copy, Right: 3D Art Sphere) */}
       <Hero
         onExploreGallery={() => scrollToSection('gallery')}
         onMeetArtist={() => scrollToSection('artist')}
-        onOpenCommission={() => setCommissionOpen(true)}
       />
 
-      {/* Editorial About Kalapravah Section (Manifesto & 3 Pillars) */}
-      <AboutSection
-        onExploreGallery={() => scrollToSection('gallery')}
-        onOpenCommission={() => setCommissionOpen(true)}
-      />
+      {/* About Kalapravah Section */}
+      <AboutSection />
 
-      {/* Interactive Technique Comparison Slider (Kachni vs Bharni) */}
-      <TechniqueShowcase />
-
-      {/* Selected Gallery Works (Filter Tabs & Lightbox View) */}
+      {/* Selected Works Gallery Section */}
       <GallerySection
         onSelectArtwork={(artwork) => setSelectedArtwork(artwork)}
-        onOpenCommission={() => setCommissionOpen(true)}
       />
 
-      {/* Visual Vocabulary Motif Dictionary */}
-      <MotifDictionary />
-
-      {/* Artist Biography & Heritage (Rashmi Dhar) */}
+      {/* The Artist Section (Rashmi Dhar) */}
       <ArtistSection
         onContactStudio={() => scrollToSection('contact')}
       />
 
-      {/* Workshops & Teaching Masterclasses */}
-      <WorkshopsSection />
-
-      {/* Studio Contact & FAQs */}
+      {/* Contact & Call To Action Banner */}
       <ContactSection />
 
       {/* Footer */}
@@ -80,13 +61,7 @@ export default function App() {
       <ArtworkLightbox
         artwork={selectedArtwork}
         onClose={() => setSelectedArtwork(null)}
-        onOpenCommission={() => setCommissionOpen(true)}
-      />
-
-      {/* Bespoke Commission Builder Modal */}
-      <CommissionBuilder
-        isOpen={commissionOpen}
-        onClose={() => setCommissionOpen(false)}
+        onOpenCommission={() => scrollToSection('contact')}
       />
 
     </div>
