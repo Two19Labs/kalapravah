@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import ArtGravitySection from './components/ArtGravitySection';
 import TechniqueShowcase from './components/TechniqueShowcase';
 import GallerySection from './components/GallerySection';
 import ArtworkLightbox from './components/ArtworkLightbox';
@@ -35,18 +34,16 @@ export default function App() {
         onOpenCommission={() => setCommissionOpen(true)}
       />
 
-      {/* Hero Section */}
+      {/* Hero Section with 3D Art Sphere */}
       <Hero
         onExploreGallery={() => scrollToSection('gallery')}
         onMeetArtist={() => scrollToSection('artist')}
         onOpenCommission={() => setCommissionOpen(true)}
       />
 
-      {/* Interactive 3D Celestial Art Gravity Section */}
-      <ArtGravitySection />
-
       {/* Interactive Technique Comparison Slider */}
       <TechniqueShowcase />
+
 
 
       {/* Selected Gallery Works */}

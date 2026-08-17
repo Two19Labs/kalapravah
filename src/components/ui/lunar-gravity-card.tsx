@@ -6,7 +6,8 @@ import { OrbitControls, useTexture, Environment } from "@react-three/drei";
 import * as THREE from "three";
 import { cn } from "@/lib/utils";
 
-const RADIUS = 2.0;
+// Enlarged 3D Sphere radius for Hero showcase
+const RADIUS = 2.45;
 
 const ArtCanvasMesh = ({ onClick, textureUrl = "/images/madhubani_art_texture.jpg" }: { onClick?: () => void, textureUrl?: string }) => {
   const meshRef = useRef<THREE.Mesh>(null);
@@ -16,8 +17,8 @@ const ArtCanvasMesh = ({ onClick, textureUrl = "/images/madhubani_art_texture.jp
   const colorMap = useTexture(textureUrl);
 
   useFrame((_, delta) => {
-    if (meshRef.current) meshRef.current.rotation.y += delta * 0.08;
-    if (frameRef.current) frameRef.current.rotation.y += delta * 0.08;
+    if (meshRef.current) meshRef.current.rotation.y += delta * 0.07;
+    if (frameRef.current) frameRef.current.rotation.y += delta * 0.07;
   });
 
   return (
@@ -40,11 +41,11 @@ const ArtCanvasMesh = ({ onClick, textureUrl = "/images/madhubani_art_texture.jp
 
       {/* Decorative Metallic Gold Halo Bevel Ring */}
       <mesh ref={frameRef} rotation={[Math.PI / 4, Math.PI / 6, 0]}>
-        <torusGeometry args={[RADIUS + 0.15, 0.04, 16, 100]} />
+        <torusGeometry args={[RADIUS + 0.18, 0.045, 16, 100]} />
         <meshStandardMaterial 
           color="#C87A38" 
           roughness={0.2}
-          metalness={0.85}
+          metalness={0.88}
         />
       </mesh>
     </group>
@@ -61,9 +62,9 @@ const [ringPositions, ringColors, ringRandoms] = (() => {
     const angle = Math.random() * Math.PI * 2;
 
     const rDist = Math.pow(Math.random(), 1.5);
-    const radius = 2.2 + rDist * 2.2; 
+    const radius = 2.65 + rDist * 2.5; 
 
-    const thickness = 0.4 - (rDist * 0.2); 
+    const thickness = 0.45 - (rDist * 0.2); 
     const ySpread = (Math.random() + Math.random() + Math.random() - 1.5);
     const y = ySpread * thickness; 
 
@@ -79,13 +80,13 @@ const [ringPositions, ringColors, ringRandoms] = (() => {
     // Organic Art Mineral Pigment Palette: Terracotta Red, Golden Ochre, Indigo Blue
     if (paletteType < 0.65) {
       // Golden Ochre / Mineral Amber
-      baseR = 0.85; baseG = 0.55; baseB = 0.20;
+      baseR = 0.88; baseG = 0.58; baseB = 0.22;
     } else if (paletteType < 0.88) {
       // Terracotta Rust Red
-      baseR = 0.78; baseG = 0.30; baseB = 0.18;
+      baseR = 0.80; baseG = 0.32; baseB = 0.20;
     } else {
       // Deep Peacock Indigo Blue
-      baseR = 0.12; baseG = 0.45; baseB = 0.75;
+      baseR = 0.12; baseG = 0.48; baseB = 0.78;
     }
 
     baseR = Math.min(1.0, Math.max(0.0, baseR + (Math.random() - 0.5) * 0.1));
@@ -196,7 +197,7 @@ const ParticleRing = ({ ringState, massiveAsteroidsRef }: { ringState: 'hidden' 
 
       transformed.y += (1.0 - particleProgress) * (transformed.y >= 0.0 ? 1.0 : -1.0);
 
-      vec3 moonSurface = normalize(transformed) * 2.1;
+      vec3 moonSurface = normalize(transformed) * 2.55;
       transformed = mix(moonSurface, transformed, particleProgress);
       `
     );
@@ -258,7 +259,7 @@ const ParticleRing = ({ ringState, massiveAsteroidsRef }: { ringState: 'hidden' 
 const generateAsteroids = (count: number) => {
   const data = [];
   for (let i = 0; i < count; i++) {
-    const baseRadius = 2.8 + Math.random() * 2.0; 
+    const baseRadius = 3.2 + Math.random() * 2.2; 
     const radialAmplitude = 0.5 + Math.random() * 1.5; 
     const radialSpeed = 0.15 + Math.random() * 0.25; 
     const phase = Math.random() * Math.PI * 2;
@@ -272,7 +273,7 @@ const generateAsteroids = (count: number) => {
     const rotationSpeedY = (Math.random() - 0.5) * 0.05;
     const rotationSpeedZ = (Math.random() - 0.5) * 0.05;
 
-    const scale = 0.02 + Math.pow(Math.random(), 4) * 0.18;
+    const scale = 0.025 + Math.pow(Math.random(), 4) * 0.2;
 
     data.push({
       angle, baseRadius, radialAmplitude, radialSpeed, phase, zOffset, speed,
@@ -317,9 +318,9 @@ const AsteroidBelt = ({ ringState, massiveAsteroidsRef }: { ringState: 'hidden' 
       ast.phase += ast.radialSpeed * delta;
       let currentRadius = ast.baseRadius + Math.sin(ast.phase) * ast.radialAmplitude;
 
-      if (currentRadius < 2.15) {
-        const penetration = 2.15 - currentRadius;
-        currentRadius = 2.15 + penetration * 0.85;
+      if (currentRadius < 2.6) {
+        const penetration = 2.6 - currentRadius;
+        currentRadius = 2.6 + penetration * 0.85;
       }
 
       const x = Math.cos(ast.angle) * currentRadius;
@@ -370,46 +371,45 @@ export interface LunarGravityCardProps {
 export default function LunarGravityCard({ 
   className,
   artTextureUrl = "/images/madhubani_art_texture.jpg",
-  title = (
-    <>
-      <span className="text-zinc-50 drop-shadow-sm">Cosmic</span>
-      <br />
-      <span className="text-transparent bg-clip-text bg-gradient-to-b from-white via-amber-400 to-amber-700 drop-shadow-md">
-        Canvas.
-      </span>
-    </>
-  ),
-  description = "Interactive 3D Art Gravity: Handmade Indian folk motifs suspended in real-time particle dynamics."
+  title,
+  description
 }: LunarGravityCardProps) {
   const [ringState, setRingState] = useState<'hidden' | 'animating' | 'visible'>('hidden');
   const massiveAsteroidsRef = useRef<Float32Array>(new Float32Array(75 * 4));
 
   return (
-    <div className={cn("w-full max-w-[1000px] min-h-[700px] md:min-h-[auto] md:h-[540px] bg-black rounded-[2.5rem] flex flex-col md:flex-row relative overflow-hidden border border-white/[0.08] shadow-[0_30px_100px_rgba(0,0,0,0.4)]", className)}>
+    <div className={cn("w-full h-full min-h-[480px] lg:min-h-[580px] bg-black rounded-[2.5rem] flex flex-col md:flex-row relative overflow-hidden border border-white/[0.12] shadow-[0_30px_100px_rgba(0,0,0,0.5)]", className)}>
       
-      <div className="absolute top-0 left-0 md:inset-y-0 md:left-0 w-full h-[60%] md:h-full md:w-[60%] bg-gradient-to-b md:bg-gradient-to-r from-black via-black/90 to-transparent z-10 pointer-events-none"></div>
+      {/* Dynamic Background Overlay */}
+      <div className="absolute top-0 left-0 md:inset-y-0 md:left-0 w-full h-[60%] md:h-full md:w-[50%] bg-gradient-to-b md:bg-gradient-to-r from-black via-black/85 to-transparent z-10 pointer-events-none"></div>
 
-      <div className="w-full md:w-[45%] flex flex-col justify-center px-10 py-12 md:p-0 md:pl-16 relative z-20 pointer-events-none">
-        <h2 className="text-[4.5rem] md:text-[5.5rem] font-bold tracking-tighter leading-[0.9] mb-6">
-          {title}
-        </h2>
-        <p className="text-base md:text-lg text-zinc-400 font-medium leading-relaxed max-w-[340px]">
-          {description}
-        </p>
-      </div>
+      {title || description ? (
+        <div className="w-full md:w-[45%] flex flex-col justify-center px-8 py-10 md:p-0 md:pl-12 relative z-20 pointer-events-none">
+          {title && (
+            <h2 className="text-[3.5rem] md:text-[4.5rem] font-bold tracking-tighter leading-[0.95] mb-6">
+              {title}
+            </h2>
+          )}
+          {description && (
+            <p className="text-base md:text-lg text-zinc-300 font-medium leading-relaxed max-w-[340px]">
+              {description}
+            </p>
+          )}
+        </div>
+      ) : null}
      
-      <div className="relative md:absolute md:right-0 md:top-0 w-full h-[450px] md:h-full md:w-[65%] pointer-events-auto z-0 flex items-center justify-center">
+      <div className={cn("relative w-full h-full min-h-[480px] lg:min-h-[580px] pointer-events-auto z-0 flex items-center justify-center", title || description ? "md:absolute md:right-0 md:top-0 md:w-[65%]" : "w-full")}>
         <div className="absolute inset-0 w-full h-full">
-          <Canvas shadows camera={{ position: [0, 4, 10], fov: 45 }} dpr={[1, 2]}>
+          <Canvas shadows camera={{ position: [0, 3.2, 8.6], fov: 45 }} dpr={[1, 2]}>
             <Environment preset="city" />
 
-            <ambientLight intensity={0.15} />
-            <directionalLight position={[8, 5, 5]} intensity={1.8} color="#FFFDF9" castShadow shadow-mapSize={[2048, 2048]} />
-            <directionalLight position={[-5, -3, -5]} intensity={0.4} color="#C87A38" />
+            <ambientLight intensity={0.2} />
+            <directionalLight position={[8, 5, 5]} intensity={1.9} color="#FFFDF9" castShadow shadow-mapSize={[2048, 2048]} />
+            <directionalLight position={[-5, -3, -5]} intensity={0.45} color="#C87A38" />
 
             <OrbitControls enableZoom={false} enablePan={false} autoRotate={false} />
 
-            <group rotation={[Math.PI / 8, 0, 0]}>
+            <group rotation={[Math.PI / 9, 0, 0]}>
               <Suspense fallback={null}>
                 <ArtCanvasMesh 
                   textureUrl={artTextureUrl} 
@@ -421,6 +421,12 @@ export default function LunarGravityCard({
               </Suspense>
             </group>
           </Canvas>
+        </div>
+
+        {/* Interactive Click Hint Pill Overlay */}
+        <div className="absolute bottom-6 right-6 z-30 pointer-events-none bg-black/60 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/10 text-[11px] font-medium text-amber-200/90 shadow-lg flex items-center gap-2">
+          <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
+          <span>Tap 3D Art Sphere to ignite cosmic particles</span>
         </div>
       </div>
 
