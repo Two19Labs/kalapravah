@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import AboutSection from './components/AboutSection';
-import GallerySection from './components/GallerySection';
-import ArtworkLightbox from './components/ArtworkLightbox';
-import ArtistSection from './components/ArtistSection';
-import ContactSection from './components/ContactSection';
+import FeaturedCollection from './components/FeaturedCollection';
+import EmergingTalentBanner from './components/EmergingTalentBanner';
+import JournalSection from './components/JournalSection';
 import Footer from './components/Footer';
+import ArtworkLightbox from './components/ArtworkLightbox';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState('hero');
@@ -21,38 +20,33 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FAF8F3] font-sans selection:bg-[#B94A2D] selection:text-white text-[#44403C]">
+    <div className="min-h-screen bg-[#FAF8F3] font-sans selection:bg-[#C87A38] selection:text-white text-[#44403C]">
       
-      {/* Navigation Header */}
+      {/* Navbar Header */}
       <Navbar
         activeSection={activeSection}
         setActiveSection={setActiveSection}
-        onOpenContact={() => scrollToSection('contact')}
       />
 
-      {/* Hero Section (Left: Lovable Copy, Right: 3D Art Sphere) */}
+      {/* ARTESIA Hero Section (Where Art Inspires Life & 3D Sphere) */}
       <Hero
-        onExploreGallery={() => scrollToSection('gallery')}
-        onMeetArtist={() => scrollToSection('artist')}
+        onExploreArtworks={() => scrollToSection('collections')}
       />
 
-      {/* About Kalapravah Section */}
-      <AboutSection />
-
-      {/* Selected Works Gallery Section */}
-      <GallerySection
+      {/* Featured Collection Section (Timeless Expressions) */}
+      <FeaturedCollection
         onSelectArtwork={(artwork) => setSelectedArtwork(artwork)}
       />
 
-      {/* The Artist Section (Rashmi Dhar) */}
-      <ArtistSection
-        onContactStudio={() => scrollToSection('contact')}
+      {/* Emerging Talent Full Width Banner */}
+      <EmergingTalentBanner
+        onDiscoverArtists={() => scrollToSection('journal')}
       />
 
-      {/* Contact & Call To Action Banner */}
-      <ContactSection />
+      {/* From the Journal Section (Stories Behind the Art) */}
+      <JournalSection />
 
-      {/* Footer */}
+      {/* Footer & Stay Inspired Newsletter Bar */}
       <Footer
         onNavigate={(id) => scrollToSection(id)}
       />
@@ -61,7 +55,7 @@ export default function App() {
       <ArtworkLightbox
         artwork={selectedArtwork}
         onClose={() => setSelectedArtwork(null)}
-        onOpenCommission={() => scrollToSection('contact')}
+        onOpenCommission={() => scrollToSection('collections')}
       />
 
     </div>
