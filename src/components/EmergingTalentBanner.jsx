@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import ImagePlaceholder from './ImagePlaceholder';
 
 export default function EmergingTalentBanner({ onDiscoverArtists }) {
   return (
@@ -49,17 +50,10 @@ export default function EmergingTalentBanner({ onDiscoverArtists }) {
 
             </div>
 
-            {/* Right Visual Image */}
+            {/* Right Visual Image Placeholder */}
             <div className="lg:col-span-4 flex justify-center lg:justify-end">
               <div className="relative aspect-[3/4] w-full max-w-[260px] overflow-hidden rounded-sm border border-[#1C1917]/20 shadow-xl">
-                <img
-                  src="/images/madhubani_art_texture.jpg"
-                  alt="Emerging Folk Art Sculpture & Canvas"
-                  onError={(e) => {
-                    e.currentTarget.src = "https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=800&q=80";
-                  }}
-                  className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
-                />
+                <ImagePlaceholder title="HERITAGE SCULPTURE" subtitle="Folk Art Showcase" />
               </div>
             </div>
 

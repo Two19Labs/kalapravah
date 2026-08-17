@@ -1,49 +1,51 @@
 import React, { useRef } from 'react';
-import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ArrowRight, ChevronLeft, ChevronRight, Eye } from 'lucide-react';
+import ImagePlaceholder from './ImagePlaceholder';
 
 export default function FeaturedCollection({ onSelectArtwork }) {
   const scrollContainerRef = useRef(null);
 
+  // Exact 5 artwork frames pulled from https://kalapravah-art-roots.lovable.app/gallery
   const collectionItems = [
     {
       id: 1,
-      title: "WHISPERS OF SILENCE",
-      medium: "Oil on Canvas",
-      year: "2023",
-      image: "/images/still_mind.jpg",
-      fallbackImage: "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=800&q=80"
+      title: "VIGHNAHARTA",
+      medium: "Natural pigment & ink on handmade paper",
+      style: "Bharni Fill Style",
+      year: "2025",
+      description: "Ganesha ringed by a garden in bloom — the remover of obstacles drawn in the bharni fill style, his mouse keeping watch below."
     },
     {
       id: 2,
-      title: "BEYOND HORIZONS",
-      medium: "Acrylic on Canvas",
-      year: "2022",
-      image: "/images/monsoon_court.jpg",
-      fallbackImage: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=800&q=80"
+      title: "THE STILL MIND",
+      medium: "Ink, ochre & gold wash on handmade paper",
+      style: "Kachni & Gold Wash",
+      year: "2026",
+      description: "A Buddha in abhaya mudra against a halo of turmeric light, lotuses opening at the border in patient, repeated line."
     },
     {
       id: 3,
-      title: "UNTITLED No. 07",
-      medium: "Mixed Media",
-      year: "2024",
-      image: "/images/raas.jpg",
-      fallbackImage: "https://images.unsplash.com/photo-1582562124811-c09040d0a901?auto=format&fit=crop&w=800&q=80"
+      title: "MONSOON COURT",
+      medium: "Kachni line work on handmade paper",
+      style: "Monochrome Kachni Line",
+      year: "2025",
+      description: "Three peacocks nested in dense foliage, built entirely from hatched line — the discipline of kachni at its most demanding."
     },
     {
       id: 4,
-      title: "VIGHNAHARTA",
-      medium: "Bharni Style • Natural Pigments",
-      year: "2025",
-      image: "/images/vighnaharta.jpg",
-      fallbackImage: "https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=800&q=80"
+      title: "RAAS",
+      medium: "Natural pigment on handmade paper",
+      style: "Sacred Motifs",
+      year: "2026",
+      description: "Radha and Krishna at the centre of a turning lotus of gopis, framed by a fruiting tree and its birds."
     },
     {
       id: 5,
       title: "SONEPUR WHEEL",
-      medium: "Mineral Dyes & Ink on Khadi Paper",
+      medium: "Ink & yellow on handmade paper",
+      style: "Godna Tattoo Line",
       year: "2025",
-      image: "/images/sonepur_wheel.jpg",
-      fallbackImage: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=800&q=80"
+      description: "A monochrome mandala worked in godna-inspired tattoo line, the black border holding the composition like a held breath."
     }
   ];
 
@@ -63,24 +65,23 @@ export default function FeaturedCollection({ onSelectArtwork }) {
           {/* Left Title Column */}
           <div className="lg:col-span-4 space-y-6 text-left">
             <span className="text-xs font-semibold tracking-[0.2em] uppercase text-[#C87A38]">
-              FEATURED COLLECTION
+              SELECTED WORKS
             </span>
 
             <h2 className="font-serif text-4xl sm:text-5xl font-normal tracking-tight text-[#1C1917] leading-[1.08]">
-              Timeless <br />
-              Expressions
+              From the studio
             </h2>
 
             <p className="text-sm text-[#5C5652] leading-relaxed max-w-sm">
-              A curated collection of masterpieces that transcend time and trends.
+              Paintings, each one a story held in line. Painted entirely by hand on handmade paper.
             </p>
 
             <div className="pt-2">
               <a
-                href="#artworks"
+                href="#collections"
                 className="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.15em] uppercase text-[#1C1917] hover:text-[#C87A38] transition-colors"
               >
-                <span>VIEW COLLECTION</span>
+                <span>SEE ALL FRAMES</span>
                 <ArrowRight className="w-4 h-4" />
               </a>
             </div>
@@ -116,26 +117,28 @@ export default function FeaturedCollection({ onSelectArtwork }) {
                   onClick={() => onSelectArtwork && onSelectArtwork(item)}
                   className="art-card-frame min-w-[280px] sm:min-w-[320px] max-w-[320px] p-4 rounded-sm group cursor-pointer shrink-0 text-left"
                 >
-                  <div className="relative aspect-[3/4] overflow-hidden rounded-sm bg-[#FAF8F3] mb-4">
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      onError={(e) => {
-                        e.currentTarget.src = item.fallbackImage;
-                      }}
-                      className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-                    />
+                  {/* Image Placeholder Frame */}
+                  <div className="relative aspect-[3/4] overflow-hidden rounded-sm mb-4">
+                    <ImagePlaceholder title={item.title} subtitle={item.medium} />
+                    
+                    {/* Hover Inspect Overlay */}
+                    <div className="absolute inset-0 bg-[#1C1917]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[2px]">
+                      <span className="px-3 py-1.5 bg-[#FAF8F3] text-[#1C1917] text-xs font-semibold uppercase tracking-wider rounded flex items-center gap-1.5 shadow-lg">
+                        <Eye className="w-3.5 h-3.5 text-[#B94A2D]" />
+                        Inspect Details
+                      </span>
+                    </div>
                   </div>
 
-                  <div className="space-y-1">
+                  <div className="space-y-1.5">
                     <h3 className="font-serif text-base font-bold text-[#1C1917] tracking-wider uppercase">
                       {item.title}
                     </h3>
-                    <p className="text-xs text-[#78716C]">
+                    <p className="text-xs font-medium text-[#B94A2D]">
                       {item.medium}
                     </p>
-                    <p className="text-xs font-serif text-[#C87A38]">
-                      {item.year}
+                    <p className="text-xs text-[#5C5652] line-clamp-2 leading-relaxed pt-1">
+                      {item.description}
                     </p>
                   </div>
                 </div>

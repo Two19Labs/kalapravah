@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import ImagePlaceholder from './ImagePlaceholder';
 
 export default function JournalSection() {
   const articles = [
@@ -7,22 +8,19 @@ export default function JournalSection() {
       id: 1,
       title: "Inside the Studio of Contemporary Artist Rashmi Dhar",
       date: "JUNE 8, 2026",
-      image: "/images/rashmi_dhar.jpg",
-      fallbackImage: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80"
+      subtitle: "Artist Profile & Process"
     },
     {
       id: 2,
       title: "How Landscapes & Nature Motifs Influence Indian Folk Art",
       date: "MAY 24, 2026",
-      image: "/images/monsoon_court.jpg",
-      fallbackImage: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=800&q=80"
+      subtitle: "Kachni & Peacock Motifs"
     },
     {
       id: 3,
       title: "The Timeless Beauty of Natural Mineral Pigments & Line Work",
       date: "MAY 12, 2026",
-      image: "/images/still_mind.jpg",
-      fallbackImage: "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=800&q=80"
+      subtitle: "Bharni Fill & Organic Dyes"
     }
   ];
 
@@ -49,7 +47,7 @@ export default function JournalSection() {
 
             <div className="pt-2">
               <a
-                href="#journal-articles"
+                href="#journal"
                 className="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.15em] uppercase text-[#1C1917] hover:text-[#C87A38] transition-colors"
               >
                 <span>READ JOURNAL</span>
@@ -58,7 +56,7 @@ export default function JournalSection() {
             </div>
           </div>
 
-          {/* Right 3 Article Cards */}
+          {/* Right 3 Article Cards with Placeholders */}
           <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-6">
             {articles.map((article) => (
               <div
@@ -66,15 +64,8 @@ export default function JournalSection() {
                 className="art-card-frame p-4 rounded-sm group cursor-pointer text-left flex flex-col justify-between"
               >
                 <div>
-                  <div className="relative aspect-[4/3] overflow-hidden rounded-sm bg-[#FAF8F3] mb-4">
-                    <img
-                      src={article.image}
-                      alt={article.title}
-                      onError={(e) => {
-                        e.currentTarget.src = article.fallbackImage;
-                      }}
-                      className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-                    />
+                  <div className="relative aspect-[4/3] overflow-hidden rounded-sm mb-4">
+                    <ImagePlaceholder title="JOURNAL IMAGE" subtitle={article.subtitle} />
                   </div>
 
                   <h3 className="font-serif text-base font-bold text-[#1C1917] leading-snug group-hover:text-[#C87A38] transition-colors mb-3">
