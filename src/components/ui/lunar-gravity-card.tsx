@@ -8,33 +8,46 @@ import { cn } from "@/lib/utils";
 
 const RADIUS = 2.0;
 
-const RealisticMoon = ({ onClick }: { onClick?: () => void }) => {
+const ArtCanvasMesh = ({ onClick, textureUrl = "/images/madhubani_art_texture.jpg" }: { onClick?: () => void, textureUrl?: string }) => {
   const meshRef = useRef<THREE.Mesh>(null);
+  const frameRef = useRef<THREE.Mesh>(null);
 
-  const colorMap = useTexture("https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/planets/moon_1024.jpg");
+  // Load authentic traditional Madhubani folk art texture
+  const colorMap = useTexture(textureUrl);
 
   useFrame((_, delta) => {
-    if (meshRef.current) meshRef.current.rotation.y += delta * 0.05;
+    if (meshRef.current) meshRef.current.rotation.y += delta * 0.08;
+    if (frameRef.current) frameRef.current.rotation.y += delta * 0.08;
   });
 
   return (
-    <mesh 
-      ref={meshRef} 
-      castShadow 
-      receiveShadow 
+    <group 
       onClick={onClick}
       onPointerOver={() => document.body.style.cursor = 'pointer'} 
       onPointerOut={() => document.body.style.cursor = 'auto'}
-   >
-      <sphereGeometry args={[RADIUS, 64, 64]} />
-      <meshStandardMaterial 
-        map={colorMap} 
-        bumpMap={colorMap} 
-        bumpScale={0.02} 
-        roughness={0.8}
-        metalness={0.1}
-      />
-    </mesh>
+    >
+      {/* Central 3D Art Canvas Sphere */}
+      <mesh ref={meshRef} castShadow receiveShadow>
+        <sphereGeometry args={[RADIUS, 64, 64]} />
+        <meshStandardMaterial 
+          map={colorMap} 
+          bumpMap={colorMap} 
+          bumpScale={0.06} 
+          roughness={0.35}
+          metalness={0.15}
+        />
+      </mesh>
+
+      {/* Decorative Metallic Gold Halo Bevel Ring */}
+      <mesh ref={frameRef} rotation={[Math.PI / 4, Math.PI / 6, 0]}>
+        <torusGeometry args={[RADIUS + 0.15, 0.04, 16, 100]} />
+        <meshStandardMaterial 
+          color="#C87A38" 
+          roughness={0.2}
+          metalness={0.85}
+        />
+      </mesh>
+    </group>
   );
 };
 
@@ -63,12 +76,16 @@ const [ringPositions, ringColors, ringRandoms] = (() => {
     const paletteType = Math.random();
     let baseR, baseG, baseB;
 
-    if (paletteType < 0.80) {
-      baseR = 0.25; baseG = 0.30; baseB = 0.35;
-    } else if (paletteType < 0.92) {
-      baseR = 0.0; baseG = 0.6; baseB = 0.8;
+    // Organic Art Mineral Pigment Palette: Terracotta Red, Golden Ochre, Indigo Blue
+    if (paletteType < 0.65) {
+      // Golden Ochre / Mineral Amber
+      baseR = 0.85; baseG = 0.55; baseB = 0.20;
+    } else if (paletteType < 0.88) {
+      // Terracotta Rust Red
+      baseR = 0.78; baseG = 0.30; baseB = 0.18;
     } else {
-      baseR = 0.6; baseG = 0.2; baseB = 0.8;
+      // Deep Peacock Indigo Blue
+      baseR = 0.12; baseG = 0.45; baseB = 0.75;
     }
 
     baseR = Math.min(1.0, Math.max(0.0, baseR + (Math.random() - 0.5) * 0.1));
@@ -225,10 +242,10 @@ const ParticleRing = ({ ringState, massiveAsteroidsRef }: { ringState: 'hidden' 
         />
       </bufferGeometry>
       <pointsMaterial 
-        size={0.008} 
+        size={0.009} 
         vertexColors 
         transparent 
-        opacity={0.8} 
+        opacity={0.85} 
         sizeAttenuation={true} 
         blending={THREE.AdditiveBlending} 
         depthWrite={false} 
@@ -271,10 +288,7 @@ const generateAsteroids = (count: number) => {
 const AsteroidBelt = ({ ringState, massiveAsteroidsRef }: { ringState: 'hidden' | 'animating' | 'visible', massiveAsteroidsRef: React.MutableRefObject<Float32Array> }) => {
   const meshRef = useRef<THREE.InstancedMesh>(null);
 
-  const [colorMap, bumpMap] = useTexture([
-    'https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/planets/moon_1024.jpg',
-    'https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/planets/moon_1024.jpg'
-  ]);
+  const colorMap = useTexture('/images/madhubani_art_texture.jpg');
 
   const count = 75; 
   const dummy = useMemo(() => new THREE.Object3D(), []);
@@ -333,15 +347,14 @@ const AsteroidBelt = ({ ringState, massiveAsteroidsRef }: { ringState: 'hidden' 
 
   return (
     <instancedMesh ref={meshRef} args={[undefined, undefined, count]} castShadow receiveShadow>
-
       <dodecahedronGeometry args={[1, 0]} />
       <meshStandardMaterial 
         map={colorMap} 
-        bumpMap={bumpMap} 
+        bumpMap={colorMap} 
         bumpScale={0.08}
         color="#ffffff"
-        roughness={0.7}
-        metalness={0.1}
+        roughness={0.6}
+        metalness={0.2}
       />
     </instancedMesh>
   );
@@ -351,20 +364,22 @@ export interface LunarGravityCardProps {
   className?: string;
   title?: React.ReactNode;
   description?: React.ReactNode;
+  artTextureUrl?: string;
 }
 
 export default function LunarGravityCard({ 
   className,
+  artTextureUrl = "/images/madhubani_art_texture.jpg",
   title = (
     <>
-      <span className="text-zinc-50 drop-shadow-sm">Lunar</span>
+      <span className="text-zinc-50 drop-shadow-sm">Cosmic</span>
       <br />
-      <span className="text-transparent bg-clip-text bg-gradient-to-b from-white via-zinc-400 to-zinc-800 drop-shadow-md">
-        Gravity.
+      <span className="text-transparent bg-clip-text bg-gradient-to-b from-white via-amber-400 to-amber-700 drop-shadow-md">
+        Canvas.
       </span>
     </>
   ),
-  description = "Embed highly realistic astrophysics directly into your Next.js project. Zero configuration, fully interactive, and flawlessly smooth."
+  description = "Interactive 3D Art Gravity: Handmade Indian folk motifs suspended in real-time particle dynamics."
 }: LunarGravityCardProps) {
   const [ringState, setRingState] = useState<'hidden' | 'animating' | 'visible'>('hidden');
   const massiveAsteroidsRef = useRef<Float32Array>(new Float32Array(75 * 4));
@@ -388,15 +403,18 @@ export default function LunarGravityCard({
           <Canvas shadows camera={{ position: [0, 4, 10], fov: 45 }} dpr={[1, 2]}>
             <Environment preset="city" />
 
-            <ambientLight intensity={0.02} />
-            <directionalLight position={[8, 5, 5]} intensity={1.5} color="#ffffff" castShadow shadow-mapSize={[2048, 2048]} />
-            <directionalLight position={[-5, -3, -5]} intensity={0.15} color="#4a90e2" />
+            <ambientLight intensity={0.15} />
+            <directionalLight position={[8, 5, 5]} intensity={1.8} color="#FFFDF9" castShadow shadow-mapSize={[2048, 2048]} />
+            <directionalLight position={[-5, -3, -5]} intensity={0.4} color="#C87A38" />
 
             <OrbitControls enableZoom={false} enablePan={false} autoRotate={false} />
 
             <group rotation={[Math.PI / 8, 0, 0]}>
               <Suspense fallback={null}>
-                <RealisticMoon onClick={() => { if(ringState === 'hidden') setRingState('animating') }} />
+                <ArtCanvasMesh 
+                  textureUrl={artTextureUrl} 
+                  onClick={() => { if(ringState === 'hidden') setRingState('animating') }} 
+                />
                 <ParticleRing ringState={ringState} massiveAsteroidsRef={massiveAsteroidsRef} />
                 <AsteroidBelt ringState={ringState} massiveAsteroidsRef={massiveAsteroidsRef} />
                 <Environment preset="city" />
