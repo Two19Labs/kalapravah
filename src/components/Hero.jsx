@@ -15,13 +15,13 @@ export default function Hero({ onExploreArtworks }) {
   };
 
   return (
-    <section id="hero" className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden bg-[#FAF8F3]">
+    <section id="hero" className="relative pt-20 md:pt-24 overflow-hidden bg-[#FAF8F3] border-b border-[#E7E0D2]">
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+      <div className="w-full mx-auto relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 min-h-[calc(100vh-80px)] lg:min-h-[680px]">
           
-          {/* Left Column: ARTESIA Exact Hero Layout in Light Theme */}
-          <div className="lg:col-span-6 space-y-8 text-left">
+          {/* Left Column: Light Parchment ARTESIA Layout */}
+          <div className="lg:col-span-6 space-y-8 text-left py-12 sm:py-16 lg:py-24 px-6 sm:px-12 lg:px-16 flex flex-col justify-center bg-[#FAF8F3]">
             
             {/* Tag */}
             <span className="text-xs font-semibold tracking-[0.2em] uppercase text-[#C87A38]">
@@ -82,11 +82,9 @@ export default function Hero({ onExploreArtworks }) {
 
           </div>
 
-          {/* Right Column: Floating Dark Universe 3D Madhubani Art Sphere */}
-          <div className="lg:col-span-6 relative w-full flex justify-center">
-            <div className="w-full max-w-lg lg:max-w-none aspect-[4/3.8] sm:aspect-[4/3] lg:aspect-square rounded-[2.5rem] overflow-hidden shadow-2xl border border-white/10 bg-black relative">
-              <LunarGravityCard className="w-full h-full min-h-[460px] sm:min-h-[540px] lg:min-h-[620px] !border-none !rounded-none" />
-            </div>
+          {/* Right Column: Full Edge-to-Edge Solid Black Section (#000000) */}
+          <div className="lg:col-span-6 bg-black relative w-full h-full min-h-[480px] sm:min-h-[560px] lg:min-h-[680px] flex items-center justify-center overflow-hidden border-t lg:border-t-0 lg:border-l border-[#E7E0D2]/20">
+            <LunarGravityCard className="w-full h-full !min-h-full !border-none !rounded-none !bg-black" />
           </div>
 
         </div>
