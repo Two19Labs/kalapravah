@@ -85,7 +85,7 @@ export default function Footer({ onNavigate }) {
                     <path d="M12 0C5.373 0 0 5.373 0 12c0 2.119.553 4.11 1.519 5.84L0 24l6.344-1.498A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.84 0-3.567-.492-5.064-1.353l-.363-.21-3.76.888.888-3.66-.232-.375A9.957 9.957 0 012 12c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10z"/>
                   </svg>
                   <span className="font-semibold uppercase tracking-wider text-[11px] text-[#1C1917] group-hover:text-[#C87A38] transition-colors">
-                    Send via WhatsApp (+91 99713 99395)
+                    Send via WhatsApp
                   </span>
                 </div>
                 <ArrowRight className="w-4 h-4 text-[#1C1917] group-hover:text-[#C87A38] group-hover:translate-x-1 transition-all duration-300 shrink-0" />
