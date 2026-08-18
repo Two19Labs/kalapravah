@@ -1,57 +1,121 @@
-import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import React, { useState } from 'react';
 
 export default function Footer({ onNavigate }) {
+  const [category, setCategory] = useState('Artwork Inquiry');
+  const [message, setMessage] = useState('');
+
+  const categories = ['Artwork Inquiry', 'Custom Commission', 'Workshops', 'General'];
+
+  const handleSendWhatsApp = (e) => {
+    e.preventDefault();
+    const formattedText = `Hello Kalapravah,\n\nI am inquiring about: *${category}*.\n${message.trim() ? `Message: ${message.trim()}` : 'Please share more details with me.'}`;
+    const waUrl = `https://wa.me/919971399395?text=${encodeURIComponent(formattedText)}`;
+    window.open(waUrl, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <footer className="bg-[#FAF8F3] text-[#1C1917] pt-20 pb-12 border-t border-[#E7E0D2]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* ARTESIA WhatsApp Inquiry & Socials Bar */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 pb-16 border-b border-[#E7E0D2] items-center text-left">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 pb-16 border-b border-[#E7E0D2] items-start text-left">
           
           {/* Left: STAY INSPIRED */}
-          <div className="lg:col-span-4 space-y-2">
+          <div className="lg:col-span-4 space-y-2 pt-2">
             <span className="text-xs font-semibold tracking-[0.2em] uppercase text-[#C87A38]">
               STAY INSPIRED
             </span>
             <p className="text-xs text-[#5C5652] leading-relaxed max-w-sm">
-              Connect with us directly for inquiries on new artworks, custom commissions, and exhibitions.
+              Connect with us directly on WhatsApp for inquiries on new artworks, custom commissions, and upcoming exhibitions.
             </p>
           </div>
 
-          {/* Center: WhatsApp Inquiry Card */}
+          {/* Center: Interactive WhatsApp Inquiry Card */}
           <div className="lg:col-span-5">
-            <a
-              href="https://wa.me/919971399395"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex items-center justify-between gap-4 px-5 py-3.5 bg-[#FFFDF9] hover:bg-[#F4EFE6] border border-[#C4B9A3]/80 hover:border-[#25D366] rounded-sm transition-all duration-300 shadow-xs hover:shadow-md cursor-pointer text-left"
-            >
-              <div className="flex items-center gap-3.5">
-                <div className="w-9 h-9 rounded-full bg-[#25D366]/10 flex items-center justify-center border border-[#25D366]/20 group-hover:bg-[#25D366] transition-colors duration-300 shrink-0">
-                  <svg
-                    className="w-5 h-5 fill-current text-[#25D366] group-hover:text-white transition-colors duration-300"
-                    viewBox="0 0 24 24"
-                  >
+            <div className="bg-[#FFFDF9] border border-[#C4B9A3]/80 rounded-sm p-4 sm:p-5 shadow-xs space-y-4">
+              
+              {/* Card Header */}
+              <div className="flex items-center justify-between border-b border-[#E7E0D2] pb-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full bg-[#25D366]/15 flex items-center justify-center border border-[#25D366]/30 shrink-0">
+                    <svg className="w-4 h-4 fill-current text-[#25D366]" viewBox="0 0 24 24">
+                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347z"/>
+                      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.119.553 4.11 1.519 5.84L0 24l6.344-1.498A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.84 0-3.567-.492-5.064-1.353l-.363-.21-3.76.888.888-3.66-.232-.375A9.957 9.957 0 012 12c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="text-xs font-semibold text-[#1C1917] tracking-wide">
+                      WhatsApp Inquiry
+                    </h4>
+                    <p className="text-[10px] text-[#78716C] font-mono">
+                      +91 99713 99395
+                    </p>
+                  </div>
+                </div>
+                <span className="inline-flex items-center gap-1 text-[10px] font-medium text-[#25D366] bg-[#25D366]/10 px-2 py-0.5 rounded-full border border-[#25D366]/20">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#25D366] animate-pulse"></span>
+                  Active
+                </span>
+              </div>
+
+              {/* Inquiry Form */}
+              <form onSubmit={handleSendWhatsApp} className="space-y-3">
+                
+                {/* Category Options */}
+                <div>
+                  <label className="block text-[10px] font-semibold uppercase tracking-wider text-[#78716C] mb-1.5">
+                    Choose Category
+                  </label>
+                  <div className="flex flex-wrap gap-1.5">
+                    {categories.map((cat) => (
+                      <button
+                        key={cat}
+                        type="button"
+                        onClick={() => setCategory(cat)}
+                        className={`text-[11px] font-medium px-2.5 py-1 rounded-sm border transition-all duration-200 cursor-pointer ${
+                          category === cat
+                            ? 'bg-[#1C1917] text-white border-[#1C1917] shadow-xs'
+                            : 'bg-[#FAF8F3] text-[#5C5652] border-[#E7E0D2] hover:border-[#C4B9A3] hover:text-[#1C1917]'
+                        }`}
+                      >
+                        {cat}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Message Input Box */}
+                <div>
+                  <label className="block text-[10px] font-semibold uppercase tracking-wider text-[#78716C] mb-1">
+                    Your Message
+                  </label>
+                  <textarea
+                    rows={2}
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    placeholder="Type your question or detail..."
+                    className="w-full px-3 py-2 bg-[#FAF8F3] border border-[#C4B9A3]/70 rounded-sm text-xs text-[#1C1917] placeholder:text-[#948E88] focus:outline-none focus:border-[#25D366] focus:bg-[#FFFDF9] transition-all resize-none"
+                  />
+                </div>
+
+                {/* Send Button */}
+                <button
+                  type="submit"
+                  className="w-full flex items-center justify-center gap-2 py-2.5 px-4 bg-[#25D366] hover:bg-[#20bd5a] text-white font-semibold text-xs tracking-wider uppercase rounded-sm transition-all duration-300 shadow-sm hover:shadow-md active:scale-[0.99] cursor-pointer"
+                >
+                  <svg className="w-4 h-4 fill-current text-white" viewBox="0 0 24 24">
                     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347z"/>
                     <path d="M12 0C5.373 0 0 5.373 0 12c0 2.119.553 4.11 1.519 5.84L0 24l6.344-1.498A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.84 0-3.567-.492-5.064-1.353l-.363-.21-3.76.888.888-3.66-.232-.375A9.957 9.957 0 012 12c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10z"/>
                   </svg>
-                </div>
-                <div>
-                  <span className="block text-xs font-semibold text-[#1C1917] group-hover:text-[#25D366] transition-colors tracking-wide">
-                    WhatsApp Inquiry
-                  </span>
-                  <span className="block text-[11px] text-[#78716C] font-mono mt-0.5">
-                    +91 99713 99395
-                  </span>
-                </div>
-              </div>
-              <ArrowRight className="w-4 h-4 text-[#1C1917] group-hover:text-[#25D366] group-hover:translate-x-1 transition-all duration-300 shrink-0" />
-            </a>
+                  <span>Send on WhatsApp</span>
+                </button>
+              </form>
+
+            </div>
           </div>
 
           {/* Right: FOLLOW US */}
-          <div className="lg:col-span-3 space-y-2 text-left lg:text-right">
+          <div className="lg:col-span-3 space-y-2 text-left lg:text-right pt-2">
             <span className="text-xs font-semibold tracking-[0.2em] uppercase text-[#C87A38] block">
               FOLLOW US
             </span>
@@ -84,4 +148,5 @@ export default function Footer({ onNavigate }) {
     </footer>
   );
 }
+
 
