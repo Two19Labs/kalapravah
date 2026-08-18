@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import FeaturedCollection from './components/FeaturedCollection';
@@ -10,6 +10,34 @@ import ArtworkLightbox from './components/ArtworkLightbox';
 export default function App() {
   const [activeSection, setActiveSection] = useState('hero');
   const [selectedArtwork, setSelectedArtwork] = useState(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ['hero', 'collections', 'journal', 'contact'];
+      const scrollPosition = window.scrollY + 160;
+
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 50) {
+        setActiveSection('contact');
+        return;
+      }
+
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const elem = document.getElementById(sections[i]);
+        if (elem) {
+          const top = elem.offsetTop;
+          if (scrollPosition >= top) {
+            setActiveSection(sections[i]);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const scrollToSection = (id) => {
     setActiveSection(id);
