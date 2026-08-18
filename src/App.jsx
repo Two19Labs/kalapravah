@@ -37,11 +37,6 @@ export default function App() {
         onSelectArtwork={(artwork) => setSelectedArtwork(artwork)}
       />
 
-      {/* Emerging Talent Full Width Banner */}
-      <EmergingTalentBanner
-        onDiscoverArtists={() => scrollToSection('journal')}
-      />
-
       {/* From the Journal Section (Stories Behind the Art) */}
       <JournalSection />
 
