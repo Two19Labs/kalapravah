@@ -378,27 +378,27 @@ export default function LunarGravityCard({
   const massiveAsteroidsRef = useRef<Float32Array>(new Float32Array(75 * 4));
 
   return (
-    <div className={cn("w-full h-full min-h-[480px] lg:min-h-[580px] bg-black rounded-[2.5rem] flex flex-col md:flex-row relative overflow-hidden border border-white/[0.12] shadow-[0_30px_100px_rgba(0,0,0,0.5)]", className)}>
+    <div className={cn("w-full h-full min-h-[380px] sm:min-h-[460px] lg:min-h-[560px] bg-black rounded-[2rem] sm:rounded-[2.5rem] flex flex-col md:flex-row relative overflow-hidden border border-white/[0.12] shadow-[0_30px_100px_rgba(0,0,0,0.5)]", className)}>
       
       {/* Dynamic Background Overlay */}
       <div className="absolute top-0 left-0 md:inset-y-0 md:left-0 w-full h-[60%] md:h-full md:w-[50%] bg-gradient-to-b md:bg-gradient-to-r from-black via-black/85 to-transparent z-10 pointer-events-none"></div>
 
       {title || description ? (
-        <div className="w-full md:w-[45%] flex flex-col justify-center px-8 py-10 md:p-0 md:pl-12 relative z-20 pointer-events-none">
+        <div className="w-full md:w-[45%] flex flex-col justify-center px-6 sm:px-10 py-8 md:p-0 md:pl-12 relative z-20 pointer-events-none">
           {title && (
-            <h2 className="text-[3.5rem] md:text-[4.5rem] font-bold tracking-tighter leading-[0.95] mb-6">
+            <h2 className="text-[2.8rem] sm:text-[3.8rem] md:text-[4.5rem] font-bold tracking-tighter leading-[0.95] mb-4 sm:mb-6">
               {title}
             </h2>
           )}
           {description && (
-            <p className="text-base md:text-lg text-zinc-300 font-medium leading-relaxed max-w-[340px]">
+            <p className="text-sm sm:text-base md:text-lg text-zinc-300 font-medium leading-relaxed max-w-[340px]">
               {description}
             </p>
           )}
         </div>
       ) : null}
      
-      <div className={cn("relative w-full h-full min-h-[480px] lg:min-h-[580px] pointer-events-auto z-0 flex items-center justify-center", title || description ? "md:absolute md:right-0 md:top-0 md:w-[65%]" : "w-full")}>
+      <div className={cn("relative w-full h-full min-h-[380px] sm:min-h-[460px] lg:min-h-[560px] pointer-events-auto z-0 flex items-center justify-center", title || description ? "md:absolute md:right-0 md:top-0 md:w-[65%]" : "w-full")}>
         <div className="absolute inset-0 w-full h-full">
           <Canvas shadows camera={{ position: [0, 3.2, 8.6], fov: 45 }} dpr={[1, 2]}>
             <Environment preset="city" />
@@ -423,10 +423,10 @@ export default function LunarGravityCard({
           </Canvas>
         </div>
 
-        {/* Interactive Click Hint Pill Overlay */}
-        <div className="absolute bottom-6 right-6 z-30 pointer-events-none bg-black/60 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/10 text-[11px] font-medium text-amber-200/90 shadow-lg flex items-center gap-2">
-          <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
-          <span>Tap 3D Art Sphere to ignite cosmic particles</span>
+        {/* Updated Interactive Hint Pill Overlay (Responsive & Requested Copy) */}
+        <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 left-4 sm:left-auto z-30 pointer-events-none bg-black/75 backdrop-blur-md px-3.5 sm:px-4 py-2 rounded-full border border-white/15 text-[10px] sm:text-xs font-medium text-amber-200/90 shadow-xl flex items-center justify-center gap-2 max-w-full text-center">
+          <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse shrink-0" />
+          <span className="truncate sm:whitespace-normal">Celestial bodies hold Madhubani cosmic balance — click the sphere to ignite particle rings</span>
         </div>
       </div>
 
