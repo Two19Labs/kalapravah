@@ -422,7 +422,7 @@ export default function LunarGravityCard({
      
       <div className={cn("relative w-full h-full pointer-events-auto z-0 flex items-center justify-center bg-transparent", title || description ? "md:absolute md:right-0 md:top-0 md:w-[65%]" : "w-full")}>
         <div className="absolute inset-0 w-full h-full touch-pan-y" style={{ touchAction: "pan-y" }}>
-          <Canvas shadows camera={{ position: [0, 2.0, 8.8], fov: 45 }} dpr={[1, 2]}>
+          <Canvas shadows camera={{ position: [0, 2.0, 8.8], fov: 45 }} dpr={[1, 2]} style={{ touchAction: "pan-y" }}>
             {/* Dramatic Cinematic Studio Lighting */}
             <ambientLight intensity={0.65} />
             <directionalLight position={[8, 6, 6]} intensity={2.8} color="#FFFDF9" castShadow shadow-mapSize={[2048, 2048]} />

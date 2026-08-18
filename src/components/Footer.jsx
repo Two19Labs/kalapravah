@@ -213,19 +213,34 @@ export default function Footer({ onNavigate }) {
       </section>
 
       {/* ========================================================================= */}
-      {/* TRADITIONAL MADHUBANI MOTIF BORDER DIVIDER (SVG PATTERN) */}
+      {/* TRADITIONAL MADHUBANI MOTIF BORDER DIVIDER (CONTINUOUS MARQUEE) */}
       {/* ========================================================================= */}
       <div className="bg-[#261E1A] text-[#C87A38] py-2.5 overflow-hidden border-t border-b border-[#3D302A] select-none">
-        <div className="flex items-center justify-around gap-4 text-[10px] font-mono tracking-[0.3em] uppercase opacity-85">
-          <span>❖ MITHILA HERITAGE</span>
-          <span>◆</span>
-          <span>KACHNI & BHARNI STYLE</span>
-          <span>◆</span>
-          <span>100% HAND PAINTED</span>
-          <span>◆</span>
-          <span>RASHMI DHAR ARTWORKS</span>
-          <span>◆</span>
-          <span>TRADITIONAL MOTIFS</span>
+        <div className="animate-marquee text-[10px] font-mono tracking-[0.3em] uppercase opacity-90 whitespace-nowrap">
+          <div className="flex items-center gap-6 pr-6">
+            <span>❖ MITHILA HERITAGE</span>
+            <span>◆</span>
+            <span>KACHNI & BHARNI STYLE</span>
+            <span>◆</span>
+            <span>100% HAND PAINTED</span>
+            <span>◆</span>
+            <span>RASHMI DHAR ARTWORKS</span>
+            <span>◆</span>
+            <span>TRADITIONAL MOTIFS</span>
+            <span>◆</span>
+          </div>
+          <div className="flex items-center gap-6 pr-6">
+            <span>❖ MITHILA HERITAGE</span>
+            <span>◆</span>
+            <span>KACHNI & BHARNI STYLE</span>
+            <span>◆</span>
+            <span>100% HAND PAINTED</span>
+            <span>◆</span>
+            <span>RASHMI DHAR ARTWORKS</span>
+            <span>◆</span>
+            <span>TRADITIONAL MOTIFS</span>
+            <span>◆</span>
+          </div>
         </div>
       </div>
 

@@ -24,30 +24,30 @@ export default function JournalSection() {
   ];
 
   return (
-    <section id="journal" className="py-20 md:py-28 bg-[#FAF8F3] relative overflow-hidden border-t border-[#E7E0D2]">
+    <section id="journal" className="py-14 sm:py-20 md:py-28 bg-[#FAF8F3] relative overflow-hidden border-t border-[#E7E0D2]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
           
           {/* Left Title Column */}
-          <div className="lg:col-span-4 space-y-6 text-left">
-            <span className="text-xs font-semibold tracking-[0.2em] uppercase text-[#C87A38]">
+          <div className="lg:col-span-4 space-y-4 sm:space-y-6 text-left">
+            <span className="text-[10px] sm:text-xs font-semibold tracking-[0.2em] uppercase text-[#C87A38]">
               FROM THE JOURNAL
             </span>
 
-            <h2 className="font-serif text-4xl sm:text-5xl font-normal tracking-tight text-[#1C1917] leading-[1.08]">
-              Stories <br />
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal tracking-tight text-[#1C1917] leading-[1.1]">
+              Stories <br className="hidden sm:inline" />
               Behind the Art
             </h2>
 
-            <p className="text-sm text-[#5C5652] leading-relaxed max-w-sm">
+            <p className="text-xs sm:text-sm text-[#5C5652] leading-relaxed max-w-sm">
               Insights, inspiration, and in-depth stories from the world of art.
             </p>
 
-            <div className="pt-2">
+            <div className="pt-1 sm:pt-2">
               <a
                 href="#journal"
-                className="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.15em] uppercase text-[#1C1917] hover:text-[#C87A38] transition-colors"
+                className="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.15em] uppercase text-[#1C1917] hover:text-[#C87A38] transition-colors py-1"
               >
                 <span>READ JOURNAL</span>
                 <ArrowRight className="w-4 h-4" />
@@ -55,15 +55,15 @@ export default function JournalSection() {
             </div>
           </div>
 
-          {/* Right 3 Article Cards with Pulled Lovable Images */}
-          <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-6">
+          {/* Right 3 Article Cards */}
+          <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-6">
             {articles.map((article) => (
               <div
                 key={article.id}
-                className="art-card-frame p-4 rounded-sm group cursor-pointer text-left flex flex-col justify-between"
+                className="art-card-frame p-4 rounded-sm group cursor-pointer text-left flex flex-col justify-between active:scale-[0.99] transition-transform"
               >
                 <div>
-                  <div className="relative aspect-[4/3] overflow-hidden rounded-sm mb-4 border border-[#E7E0D2]">
+                  <div className="relative aspect-[16/10] sm:aspect-[4/3] overflow-hidden rounded-sm mb-4 border border-[#E7E0D2]">
                     <img
                       src={article.image}
                       alt={article.title}

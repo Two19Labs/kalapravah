@@ -98,77 +98,38 @@ h1, h2, h3, h4, .font-serif {
   scrollbar-color: var(--color-gold) var(--border-subtle);
 }
 
-/* Keyframe animations */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+/* Continuous Marquee Ticker Keyframes */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
 }
 
-@keyframes goldShimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
 }
 
-@keyframes floatSlow {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-8px) rotate(1deg); }
+.animate-marquee:hover {
+  animation-play-state: paused;
 }
 
-.animate-fade-in {
-  animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+/* Touch & Mobile Utilities */
+* {
+  -webkit-tap-highlight-color: transparent;
 }
 
-.animate-float-slow {
-  animation: floatSlow 6s ease-in-out infinite;
+html {
+  scroll-behavior: smooth;
 }
 
-/* Royal Gold Leaf Gradient & Shimmer Effects */
-.gold-text-gradient {
-  background: linear-gradient(135deg, #FFF6D6 0%, #D4AF37 40%, #F3E5AB 70%, #AA771C 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.btn-gold-royal {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.875rem;
-  background: linear-gradient(135deg, #1C1917 0%, #292524 100%);
-  color: #F3E5AB;
-  padding: 0.9rem 1.75rem;
+body {
   font-family: var(--font-sans);
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  border: 1px solid #D4AF37;
-  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.15);
-  cursor: pointer;
-  overflow: hidden;
-  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  background-color: var(--bg-parchment);
+  color: var(--text-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
 
-.btn-gold-royal::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.35), transparent);
-  transition: 0.5s;
-}
-
-.btn-gold-royal:hover::before {
-  left: 100%;
-}
-
-.btn-gold-royal:hover {
-  background: linear-gradient(135deg, #D4AF37 0%, #B48811 100%);
-  color: #0F0E0C;
-  border-color: #FFF3C4;
-  transform: translateY(-2px);
-  box-shadow: 0 12px 30px rgba(212, 175, 55, 0.35);
-}
 

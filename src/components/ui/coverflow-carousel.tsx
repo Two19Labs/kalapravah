@@ -339,17 +339,17 @@ export function CoverflowCarousel({
               type="button"
               aria-label="Previous slide"
               onClick={() => nudge(-1)}
-              className="absolute left-3 top-1/2 z-[200] -translate-y-1/2 rounded-full bg-background/70 p-2 text-foreground backdrop-blur transition hover:bg-background"
+              className="absolute left-1 sm:left-3 top-1/2 z-[200] -translate-y-1/2 rounded-full bg-background/80 p-1.5 sm:p-2 text-foreground backdrop-blur transition hover:bg-background shadow-md active:scale-95"
             >
-              <ChevronLeft className="size-5" />
+              <ChevronLeft className="size-4 sm:size-5" />
             </button>
             <button
               type="button"
               aria-label="Next slide"
               onClick={() => nudge(1)}
-              className="absolute right-3 top-1/2 z-[200] -translate-y-1/2 rounded-full bg-background/70 p-2 text-foreground backdrop-blur transition hover:bg-background"
+              className="absolute right-1 sm:right-3 top-1/2 z-[200] -translate-y-1/2 rounded-full bg-background/80 p-1.5 sm:p-2 text-foreground backdrop-blur transition hover:bg-background shadow-md active:scale-95"
             >
-              <ChevronRight className="size-5" />
+              <ChevronRight className="size-4 sm:size-5" />
             </button>
           </>
         )}
@@ -358,20 +358,20 @@ export function CoverflowCarousel({
       {showCaption && active?.title && (
         <div
           key={selected}
-          className="mt-2 flex flex-col items-center px-6 duration-300 animate-in fade-in"
+          className="mt-2 flex flex-col items-center px-4 sm:px-6 duration-300 animate-in fade-in"
         >
-          <p className="text-[15px] font-semibold tracking-tight text-foreground">
+          <p className="text-sm sm:text-[15px] font-semibold tracking-tight text-foreground text-center">
             {active.title}
           </p>
           {active.subtitle && (
-            <p className="mt-1 text-[13px] text-muted-foreground">
+            <p className="mt-0.5 text-xs sm:text-[13px] text-muted-foreground text-center">
               {active.subtitle}
             </p>
           )}
           {active.meta && active.meta.length > 0 && (
-            <dl className="mt-10 w-full max-w-[230px] text-[12px]">
+            <dl className="mt-4 sm:mt-6 w-full max-w-[240px] text-[11px] sm:text-[12px] bg-[#FFFDF9] border border-[#E7E0D2] rounded-md px-3 py-1.5 shadow-sm">
               {active.meta.map((row) => (
-                <div key={row.label} className="flex justify-between py-[5px]">
+                <div key={row.label} className="flex justify-between py-1 border-b border-[#E7E0D2]/40 last:border-b-0">
                   <dt className="text-muted-foreground">{row.label}</dt>
                   <dd className="font-medium text-foreground">{row.value}</dd>
                 </div>

@@ -83,17 +83,17 @@ export default function FeaturedCollection({ onSelectArtwork }) {
         </div>
 
         {/* 3D Coverflow Carousel integrated into the light themed parchment background */}
-        <div className="relative py-4">
+        <div className="relative py-2 sm:py-4">
           <CoverflowCarousel
             slides={slides}
             showCaption={true}
             showNavigation={true}
             showPagination={true}
-            cardWidth="clamp(200px, 28vw, 320px)"
-            rotate={42}
-            depth={0.65}
+            cardWidth="clamp(180px, 58vw, 300px)"
+            rotate={38}
+            depth={0.55}
             perspective={3}
-            gap={0.06}
+            gap={0.05}
             loop={true}
             autoPlayInterval={4000}
             pauseOnHover={true}
