@@ -7,6 +7,13 @@ export default {
   theme: {
     extend: {
       colors: {
+        background: "#FAF8F3",
+        foreground: "#1C1917",
+        muted: {
+          DEFAULT: "#F3EFE6",
+          foreground: "#78716C",
+        },
+        ring: "#C87A38",
         parchment: "#F8F5EE",
         card: "#FAF8F3",
         ink: "#1C1917",

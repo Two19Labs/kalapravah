@@ -1,10 +1,9 @@
-import React, { useRef } from 'react';
-import { ArrowRight, ChevronLeft, ChevronRight, Eye } from 'lucide-react';
+import React from 'react';
+import { ArrowRight, Eye } from 'lucide-react';
+import { CoverflowCarousel } from '@/components/ui/coverflow-carousel';
 
 export default function FeaturedCollection({ onSelectArtwork }) {
-  const scrollContainerRef = useRef(null);
-
-  // Exact 5 artwork frames & image assets pulled directly from https://kalapravah-art-roots.lovable.app/gallery
+  // Art pieces with local high-resolution artwork & curated Unsplash traditional art stock fallbacks
   const collectionItems = [
     {
       id: 1,
@@ -50,110 +49,91 @@ export default function FeaturedCollection({ onSelectArtwork }) {
       year: "2025",
       image: "/images/sonepur_wheel.jpg",
       description: "A monochrome mandala worked in godna-inspired tattoo line, the black border holding the composition like a held breath."
+    },
+    {
+      id: 6,
+      title: "LOTUS HARMONY",
+      medium: "Ochre & charcoal on parchment",
+      style: "Sacred Geometry",
+      year: "2025",
+      image: "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?w=640&h=640&fit=crop&q=70&auto=format",
+      description: "Interwoven lotus petals radiating outward, creating an intricate balance of symmetry and organic form."
+    },
+    {
+      id: 7,
+      title: "TREE OF LIFE",
+      medium: "Natural dyes on cloth paper",
+      style: "Mithila Folk Tradition",
+      year: "2026",
+      image: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=640&h=640&fit=crop&q=70&auto=format",
+      description: "Birds and blossoms intertwined around an ancient trunk, symbolizing eternal vitality and cosmic harmony."
     }
   ];
 
-  const handleScroll = (direction) => {
-    if (scrollContainerRef.current) {
-      const scrollAmount = direction === 'left' ? -340 : 340;
-      scrollContainerRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-    }
-  };
+  // Convert collection items to CoverflowCarousel slides
+  const slides = collectionItems.map((item) => ({
+    src: item.image,
+    alt: item.title,
+    title: item.title,
+    subtitle: `${item.style} • ${item.medium}`,
+    meta: [
+      { label: "Year", value: item.year },
+      { label: "Style", value: item.style },
+      { label: "Origin", value: "Handmade Paper" },
+    ],
+  }));
 
   return (
     <section id="collections" className="py-20 md:py-28 bg-[#FAF8F3] relative overflow-hidden border-t border-[#E7E0D2]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        {/* Section Header */}
+        <div className="text-center max-w-2xl mx-auto mb-12 space-y-4">
+          <span className="text-xs font-semibold tracking-[0.2em] uppercase text-[#C87A38]">
+            SELECTED WORKS & EXHIBITION
+          </span>
+          <h2 className="font-serif text-4xl sm:text-5xl font-normal tracking-tight text-[#1C1917] leading-[1.08]">
+            From the Studio Gallery
+          </h2>
+          <p className="text-sm text-[#5C5652] leading-relaxed">
+            Drag or use arrow keys to navigate the 3D coverflow carousel of traditional art pieces, each hand-painted with natural pigments on handmade paper.
+          </p>
+        </div>
+
+        {/* 3D Coverflow Carousel integrated into the light themed parchment background */}
+        <div className="relative py-4">
+          <CoverflowCarousel
+            slides={slides}
+            showCaption={true}
+            showNavigation={true}
+            showPagination={true}
+            cardWidth="clamp(200px, 28vw, 320px)"
+            rotate={42}
+            depth={0.65}
+            perspective={3}
+            gap={0.06}
+            loop={true}
+            cardClassName="border border-[#E7E0D2] shadow-2xl rounded-xl transition-shadow hover:shadow-[#C87A38]/10"
+          />
+        </div>
+
+        {/* Quick Inspect Button & Gallery Action */}
+        <div className="mt-12 text-center flex flex-col sm:flex-row items-center justify-center gap-4">
+          <button
+            onClick={() => onSelectArtwork && onSelectArtwork(collectionItems[0])}
+            className="btn-artesia inline-flex items-center gap-2"
+          >
+            <Eye className="w-4 h-4 text-[#B94A2D]" />
+            <span>INSPECT FEATURED ARTWORK</span>
+          </button>
           
-          {/* Left Title Column */}
-          <div className="lg:col-span-4 space-y-6 text-left">
-            <span className="text-xs font-semibold tracking-[0.2em] uppercase text-[#C87A38]">
-              SELECTED WORKS
-            </span>
-
-            <h2 className="font-serif text-4xl sm:text-5xl font-normal tracking-tight text-[#1C1917] leading-[1.08]">
-              From the studio
-            </h2>
-
-            <p className="text-sm text-[#5C5652] leading-relaxed max-w-sm">
-              Paintings, each one a story held in line. Painted entirely by hand on handmade paper.
-            </p>
-
-            <div className="pt-2">
-              <a
-                href="#collections"
-                className="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.15em] uppercase text-[#1C1917] hover:text-[#C87A38] transition-colors"
-              >
-                <span>SEE ALL FRAMES</span>
-                <ArrowRight className="w-4 h-4" />
-              </a>
-            </div>
-
-            {/* Scroll Navigation Arrows */}
-            <div className="pt-8 flex items-center gap-3">
-              <button
-                onClick={() => handleScroll('left')}
-                className="w-10 h-10 rounded-full border border-[#1C1917]/30 flex items-center justify-center text-[#1C1917] hover:bg-[#1C1917] hover:text-white transition-colors"
-                aria-label="Scroll left"
-              >
-                <ChevronLeft className="w-4 h-4" />
-              </button>
-              <button
-                onClick={() => handleScroll('right')}
-                className="w-10 h-10 rounded-full border border-[#1C1917]/30 flex items-center justify-center text-[#1C1917] hover:bg-[#1C1917] hover:text-white transition-colors"
-                aria-label="Scroll right"
-              >
-                <ChevronRight className="w-4 h-4" />
-              </button>
-            </div>
-          </div>
-
-          {/* Right Horizontal Scrollable Gallery Cards with Pulled Lovable Images */}
-          <div className="lg:col-span-8 overflow-hidden">
-            <div 
-              ref={scrollContainerRef}
-              className="flex gap-6 overflow-x-auto carousel-scrollbar pb-6 no-scrollbar"
-            >
-              {collectionItems.map((item) => (
-                <div
-                  key={item.id}
-                  onClick={() => onSelectArtwork && onSelectArtwork(item)}
-                  className="art-card-frame min-w-[280px] sm:min-w-[320px] max-w-[320px] p-4 rounded-sm group cursor-pointer shrink-0 text-left"
-                >
-                  {/* Artwork Image Container */}
-                  <div className="relative aspect-[3/4] overflow-hidden rounded-sm bg-[#FAF8F3] mb-4 border border-[#E7E0D2]">
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-                    />
-
-                    {/* Hover Inspect Overlay */}
-                    <div className="absolute inset-0 bg-[#1C1917]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[2px]">
-                      <span className="px-3 py-1.5 bg-[#FAF8F3] text-[#1C1917] text-xs font-semibold uppercase tracking-wider rounded flex items-center gap-1.5 shadow-lg">
-                        <Eye className="w-3.5 h-3.5 text-[#B94A2D]" />
-                        Inspect Details
-                      </span>
-                    </div>
-                  </div>
-
-                  <div className="space-y-1.5">
-                    <h3 className="font-serif text-base font-bold text-[#1C1917] tracking-wider uppercase">
-                      {item.title}
-                    </h3>
-                    <p className="text-xs font-medium text-[#B94A2D]">
-                      {item.medium}
-                    </p>
-                    <p className="text-xs text-[#5C5652] line-clamp-2 leading-relaxed pt-1">
-                      {item.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
+          <a
+            href="#journal"
+            className="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.15em] uppercase text-[#1C1917] hover:text-[#C87A38] transition-colors py-3 px-6"
+          >
+            <span>READ ARTIST STORIES</span>
+            <ArrowRight className="w-4 h-4" />
+          </a>
         </div>
 
       </div>
