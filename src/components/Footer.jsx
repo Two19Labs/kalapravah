@@ -35,7 +35,7 @@ export default function Footer({ onNavigate }) {
 
   const handleSendWhatsApp = (e) => {
     e.preventDefault();
-    const formattedText = `Hello Rashmi Dhar / Kalapravah,\n\nI am inquiring about: *${category}*.\n${message.trim() ? message.trim() : 'Please share available collection catalog and details.'}`;
+    const formattedText = `Hello Rashmi,\n\nI am inquiring about: *${category}*\n${message.trim() ? message.trim() : 'Please share available collection catalog and details.'}`;
     const waUrl = `https://wa.me/919971399395?text=${encodeURIComponent(formattedText)}`;
     window.open(waUrl, '_blank', 'noopener,noreferrer');
     setSubmitted(true);
@@ -90,11 +90,13 @@ export default function Footer({ onNavigate }) {
             {/* Left Column: Brand & Direct Contact */}
             <div className="lg:col-span-5 space-y-4">
               <div className="flex items-center gap-3.5">
-                <img 
-                  src="/images/logo-full.png" 
-                  alt="Kalapravah Logo" 
-                  className="w-12 h-12 sm:w-14 sm:h-14 object-contain shrink-0" 
-                />
+                <div className="bg-white p-2 rounded-2xl shadow-md shrink-0 flex items-center justify-center border border-white/20">
+                  <img 
+                    src="/images/logo-footer.png" 
+                    alt="Kalapravah Logo" 
+                    className="w-14 h-14 sm:w-16 sm:h-16 object-contain rounded-xl" 
+                  />
+                </div>
                 <div>
                   <span className="font-serif text-2xl sm:text-3xl font-bold tracking-widest text-white uppercase block leading-none" style={{ color: '#ffffff' }}>
                     KALAPRAVAH

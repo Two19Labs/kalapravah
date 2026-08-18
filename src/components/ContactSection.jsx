@@ -15,7 +15,7 @@ export default function ContactSection() {
 
   const handleWhatsAppSend = () => {
     const text = encodeURIComponent(
-      `Hello Rashmi Dhar / Kalapravah,\n\nI would like to make an enquiry regarding: *${selectedTopic}*.\n${note ? `Details: ${note}` : ''}`
+      `Hello Rashmi,\n\nI would like to make an enquiry regarding: *${selectedTopic}*\n${note ? `Details: ${note}` : ''}`
     );
     window.open(`https://wa.me/919876543210?text=${text}`, '_blank');
   };
