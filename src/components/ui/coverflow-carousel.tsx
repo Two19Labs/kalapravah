@@ -40,6 +40,10 @@ export interface CoverflowCarouselProps {
   label?: string;
   className?: string;
   cardClassName?: string;
+  /** Auto-swipe interval in milliseconds. Defaults to 4000 (4 seconds). Set to 0 to disable. */
+  autoPlayInterval?: number;
+  /** Pause auto-swipe on mouse hover. Defaults to true. */
+  pauseOnHover?: boolean;
 }
 
 export function CoverflowCarousel({
@@ -58,6 +62,8 @@ export function CoverflowCarousel({
   label = "Cover carousel",
   className,
   cardClassName,
+  autoPlayInterval = 4000,
+  pauseOnHover = true,
 }: CoverflowCarouselProps) {
   const count = slides.length;
 
@@ -241,6 +247,21 @@ export function CoverflowCarousel({
     [],
   );
 
+  const [isHovered, setIsHovered] = React.useState(false);
+
+  React.useEffect(() => {
+    if (!autoPlayInterval || autoPlayInterval <= 0) return;
+    if (pauseOnHover && isHovered) return;
+
+    const timer = setTimeout(() => {
+      if (dragRef.current === null) {
+        nudge(1);
+      }
+    }, autoPlayInterval);
+
+    return () => clearTimeout(timer);
+  }, [autoPlayInterval, pauseOnHover, isHovered, selected, nudge]);
+
   const active = slides[selected];
 
   return (
@@ -250,6 +271,8 @@ export function CoverflowCarousel({
       role="region"
       aria-roledescription="carousel"
       aria-label={label}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
       <div className="relative">
         <div

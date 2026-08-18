@@ -95,6 +95,8 @@ export default function FeaturedCollection({ onSelectArtwork }) {
             perspective={3}
             gap={0.06}
             loop={true}
+            autoPlayInterval={4000}
+            pauseOnHover={true}
             cardClassName="border border-[#E7E0D2] shadow-2xl rounded-xl transition-shadow hover:shadow-[#C87A38]/10"
           />
         </div>
