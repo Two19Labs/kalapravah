@@ -89,13 +89,20 @@ export default function Footer({ onNavigate }) {
             
             {/* Left Column: Brand & Direct Contact */}
             <div className="lg:col-span-5 space-y-4">
-              <div>
-                <span className="font-serif text-2xl font-bold tracking-widest text-[#FAF8F3] uppercase block">
-                  KALAPRAVAH
-                </span>
-                <span className="text-[10px] font-semibold tracking-[0.25em] uppercase text-[#D98A48] block mt-0.5">
-                  MITHILA ART GALLERY & STUDIO
-                </span>
+              <div className="flex items-center gap-3.5">
+                <img 
+                  src="/images/logo-full.png" 
+                  alt="Kalapravah Logo" 
+                  className="w-12 h-12 sm:w-14 sm:h-14 object-contain shrink-0" 
+                />
+                <div>
+                  <span className="font-serif text-2xl sm:text-3xl font-bold tracking-widest text-white uppercase block leading-none" style={{ color: '#ffffff' }}>
+                    KALAPRAVAH
+                  </span>
+                  <span className="text-[10px] font-semibold tracking-[0.25em] uppercase text-[#D98A48] block mt-1">
+                    MITHILA ART GALLERY & STUDIO
+                  </span>
+                </div>
               </div>
 
               <p className="text-xs text-[#A89F95] leading-relaxed max-w-sm">

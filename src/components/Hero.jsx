@@ -29,6 +29,11 @@ export default function Hero({ onExploreArtworks }) {
             
             {/* Top Category Tag */}
             <div className="flex items-center gap-2.5 sm:gap-3">
+              <img 
+                src="/images/logo-emblem.png" 
+                alt="Kalapravah Emblem Seal" 
+                className="w-7 h-7 sm:w-8 sm:h-8 object-contain"
+              />
               <span className="text-[10px] xs:text-xs font-semibold tracking-[0.16em] sm:tracking-[0.22em] uppercase text-[#C87A38]">
                 MADHUBANI HERITAGE FINE ART
               </span>

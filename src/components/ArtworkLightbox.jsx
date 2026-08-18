@@ -109,10 +109,11 @@ export default function ArtworkLightbox({ artwork, onClose, onOpenCommission }) 
                   <span className="text-[#78716C]">Medium</span>
                   <span className="font-medium text-[#1C1917] text-right">{artwork.medium}</span>
                 </div>
-                <div className="flex justify-between py-1 border-b border-[#E7E0D2]/50">
+                <div className="flex justify-between items-center py-1.5 border-b border-[#E7E0D2]/50">
                   <span className="text-[#78716C]">Authenticity</span>
-                  <span className="font-medium text-[#3E5A47] flex items-center gap-1">
-                    <CheckCircle className="w-3 h-3" /> Signed by Rashmi Dhar
+                  <span className="font-medium text-[#3E5A47] flex items-center gap-1.5">
+                    <img src="/images/logo-emblem.png" alt="Kalapravah Seal" className="w-4 h-4 object-contain" />
+                    <CheckCircle className="w-3 h-3 text-[#3E5A47]" /> Kalapravah Original • Signed by Rashmi Dhar
                   </span>
                 </div>
               </div>

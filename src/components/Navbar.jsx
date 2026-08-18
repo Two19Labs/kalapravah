@@ -53,11 +53,21 @@ export default function Navbar({ activeSection, setActiveSection }) {
         {/* Brand Logo */}
         <button 
           onClick={() => handleNavClick('hero')} 
-          className="text-left group focus:outline-none"
+          className="text-left group focus:outline-none flex items-center gap-2.5 sm:gap-3"
         >
-          <span className="font-serif text-xl sm:text-2xl font-bold tracking-widest text-[#1C1917] uppercase">
-            KALAPRAVAH
-          </span>
+          <img 
+            src="/images/logo-emblem.png" 
+            alt="Kalapravah Emblem" 
+            className="w-10 h-10 sm:w-11 sm:h-11 object-contain group-hover:scale-105 transition-transform duration-300" 
+          />
+          <div className="flex flex-col">
+            <span className="font-serif text-lg sm:text-2xl font-bold tracking-widest text-[#1C1917] uppercase leading-none">
+              KALAPRAVAH
+            </span>
+            <span className="text-[8px] sm:text-[9.5px] font-semibold tracking-[0.22em] text-[#C87A38] uppercase mt-0.5">
+              MITHILA ART GALLERY
+            </span>
+          </div>
         </button>
 
         {/* Desktop Header Nav Links */}
