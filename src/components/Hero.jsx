@@ -89,14 +89,10 @@ export default function Hero({ onExploreArtworks }) {
             </div>
 
             {/* Elegant Description Card Below Circle */}
-            <div className="mt-5 sm:mt-6 text-center max-w-lg mx-auto px-4 sm:px-6 py-3.5 rounded-2xl bg-[#FFFDF9] border border-[#E7E0D2] shadow-[0_4px_20px_rgba(28,25,23,0.05)] space-y-1.5 transition-all">
+            <div className="mt-5 sm:mt-6 text-center max-w-lg mx-auto px-4 sm:px-6 py-3.5 rounded-2xl bg-[#FFFDF9] border border-[#E7E0D2] shadow-[0_4px_20px_rgba(28,25,23,0.05)] transition-all">
               <p className="text-xs sm:text-sm md:text-[15px] text-[#292524] font-medium leading-relaxed">
                 In Madhubani folklore, celestial bodies like the Sun, Moon & Stars represent timeless cosmic balance.
               </p>
-              <div className="pt-0.5 flex items-center justify-center gap-2 text-[11px] sm:text-xs font-semibold text-[#C87A38] uppercase tracking-wider">
-                <span className="w-2 h-2 rounded-full bg-[#C87A38] animate-pulse shrink-0" />
-                <span>Click sphere to ignite interactive particle rings</span>
-              </div>
             </div>
 
           </div>
