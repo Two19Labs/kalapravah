@@ -9,11 +9,19 @@ import { cn } from "@/lib/utils";
 // Refined 3D Sphere radius so it floats serenely in the center of the dark universe canvas
 const RADIUS = 2.1;
 
-const ArtCanvasMesh = ({ onClick, textureUrl = "/images/madhubani_art_texture.jpg" }: { onClick?: () => void, textureUrl?: string }) => {
+const ArtCanvasMesh = ({ 
+  onClick, 
+  textureUrl = "/images/madhubani_art_texture.jpg",
+  ringColor = "#D4AF37"
+}: { 
+  onClick?: () => void, 
+  textureUrl?: string,
+  ringColor?: string
+}) => {
   const meshRef = useRef<THREE.Mesh>(null);
   const frameRef = useRef<THREE.Mesh>(null);
 
-  // Load authentic traditional Madhubani folk art texture
+  // Load authentic traditional Indian folk art texture
   const colorMap = useTexture(textureUrl);
 
   useFrame((_, delta) => {
@@ -43,7 +51,7 @@ const ArtCanvasMesh = ({ onClick, textureUrl = "/images/madhubani_art_texture.jp
       <mesh ref={frameRef} rotation={[Math.PI / 4, Math.PI / 6, 0]}>
         <torusGeometry args={[RADIUS + 0.16, 0.04, 16, 100]} />
         <meshStandardMaterial 
-          color="#C87A38" 
+          color={ringColor} 
           roughness={0.2}
           metalness={0.88}
         />
@@ -366,11 +374,15 @@ export interface LunarGravityCardProps {
   title?: React.ReactNode;
   description?: React.ReactNode;
   artTextureUrl?: string;
+  ringColor?: string;
+  hintText?: string;
 }
 
 export default function LunarGravityCard({ 
   className,
   artTextureUrl = "/images/madhubani_art_texture.jpg",
+  ringColor = "#D4AF37",
+  hintText = "Click 3D orb to ignite cosmic minerals",
   title,
   description
 }: LunarGravityCardProps) {
@@ -378,7 +390,7 @@ export default function LunarGravityCard({
   const massiveAsteroidsRef = useRef<Float32Array>(new Float32Array(75 * 4));
 
   return (
-    <div className={cn("w-full h-full min-h-[480px] sm:min-h-[560px] lg:min-h-[680px] bg-black rounded-none flex flex-col md:flex-row relative overflow-hidden border-none shadow-none", className)}>
+    <div className={cn("w-full h-full min-h-[480px] sm:min-h-[560px] lg:min-h-[680px] bg-transparent rounded-none flex flex-col md:flex-row relative overflow-hidden border-none shadow-none", className)}>
       
       {title || description ? (
         <div className="w-full md:w-[45%] flex flex-col justify-center px-6 sm:px-10 py-8 md:p-0 md:pl-12 relative z-20 pointer-events-none">
@@ -395,15 +407,14 @@ export default function LunarGravityCard({
         </div>
       ) : null}
      
-      <div className={cn("relative w-full h-full min-h-[480px] sm:min-h-[560px] lg:min-h-[680px] pointer-events-auto z-0 flex items-center justify-center bg-black", title || description ? "md:absolute md:right-0 md:top-0 md:w-[65%]" : "w-full")}>
+      <div className={cn("relative w-full h-full min-h-[480px] sm:min-h-[560px] lg:min-h-[680px] pointer-events-auto z-0 flex items-center justify-center bg-transparent", title || description ? "md:absolute md:right-0 md:top-0 md:w-[65%]" : "w-full")}>
         <div className="absolute inset-0 w-full h-full">
           <Canvas shadows camera={{ position: [0, 2.0, 8.8], fov: 45 }} dpr={[1, 2]}>
-            <Environment preset="city" />
-
-            {/* Dramatic Cinematic Lighting with Left Sphere Shadow */}
-            <ambientLight intensity={0.25} />
-            <directionalLight position={[8, 5, 5]} intensity={2.2} color="#FFFDF9" castShadow shadow-mapSize={[2048, 2048]} />
-            <directionalLight position={[-6, 2, 4]} intensity={0.4} color="#C87A38" />
+            {/* Dramatic Cinematic Studio Lighting */}
+            <ambientLight intensity={0.65} />
+            <directionalLight position={[8, 6, 6]} intensity={2.8} color="#FFFDF9" castShadow shadow-mapSize={[2048, 2048]} />
+            <directionalLight position={[-8, -2, -4]} intensity={1.2} color={ringColor} />
+            <pointLight position={[0, 4, 4]} intensity={1.5} color="#F5E6C8" />
 
             <OrbitControls enableZoom={false} enablePan={false} autoRotate={false} />
 
@@ -411,20 +422,20 @@ export default function LunarGravityCard({
               <Suspense fallback={null}>
                 <ArtCanvasMesh 
                   textureUrl={artTextureUrl} 
+                  ringColor={ringColor}
                   onClick={() => { if(ringState === 'hidden') setRingState('animating') }} 
                 />
                 <ParticleRing ringState={ringState} massiveAsteroidsRef={massiveAsteroidsRef} />
                 <AsteroidBelt ringState={ringState} massiveAsteroidsRef={massiveAsteroidsRef} />
-                <Environment preset="city" />
               </Suspense>
             </group>
           </Canvas>
         </div>
 
-        {/* Shortened, Ultra-Sleek 100% Readable Hint Pill Overlay */}
-        <div className="absolute bottom-6 right-6 lg:bottom-8 lg:right-8 z-30 pointer-events-none bg-black/85 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/20 text-xs font-medium text-amber-200 shadow-2xl flex items-center gap-2 max-w-[calc(100%-2rem)]">
-          <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse shrink-0" />
-          <span className="truncate">Madhubani cosmic balance — click sphere to ignite</span>
+        {/* Dynamic Hint Overlay Pill */}
+        <div className="absolute bottom-6 right-6 lg:bottom-8 lg:right-8 z-30 pointer-events-none bg-[#FFFDF9]/95 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-[#C4B9A3]/50 text-xs font-semibold tracking-wider text-[#1C1917] shadow-md flex items-center gap-2 max-w-[calc(100%-2rem)]">
+          <span className="w-2 h-2 rounded-full bg-[#C87A38] animate-pulse shrink-0" />
+          <span className="truncate uppercase text-[10px]">{hintText}</span>
         </div>
       </div>
 
@@ -433,3 +444,4 @@ export default function LunarGravityCard({
 }
 
 export { LunarGravityCard as Component };
+
