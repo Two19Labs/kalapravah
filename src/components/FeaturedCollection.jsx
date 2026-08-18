@@ -3,7 +3,7 @@ import { ArrowRight, Eye } from 'lucide-react';
 import { CoverflowCarousel } from '@/components/ui/coverflow-carousel';
 
 export default function FeaturedCollection({ onSelectArtwork }) {
-  // Art pieces with local high-resolution artwork & curated Unsplash traditional art stock fallbacks
+  // Exact 5 original artwork frames from the Kalapravah collection
   const collectionItems = [
     {
       id: 1,
@@ -49,28 +49,10 @@ export default function FeaturedCollection({ onSelectArtwork }) {
       year: "2025",
       image: "/images/sonepur_wheel.jpg",
       description: "A monochrome mandala worked in godna-inspired tattoo line, the black border holding the composition like a held breath."
-    },
-    {
-      id: 6,
-      title: "LOTUS HARMONY",
-      medium: "Ochre & charcoal on parchment",
-      style: "Sacred Geometry",
-      year: "2025",
-      image: "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?w=640&h=640&fit=crop&q=70&auto=format",
-      description: "Interwoven lotus petals radiating outward, creating an intricate balance of symmetry and organic form."
-    },
-    {
-      id: 7,
-      title: "TREE OF LIFE",
-      medium: "Natural dyes on cloth paper",
-      style: "Mithila Folk Tradition",
-      year: "2026",
-      image: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=640&h=640&fit=crop&q=70&auto=format",
-      description: "Birds and blossoms intertwined around an ancient trunk, symbolizing eternal vitality and cosmic harmony."
     }
   ];
 
-  // Convert collection items to CoverflowCarousel slides
+  // Convert exact collection items to CoverflowCarousel slides
   const slides = collectionItems.map((item) => ({
     src: item.image,
     alt: item.title,
