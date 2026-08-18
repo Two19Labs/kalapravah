@@ -129,7 +129,7 @@ export default function Footer({ onNavigate }) {
                   className="flex items-center gap-2.5 hover:text-[#FAF8F3] transition-colors"
                 >
                   <Phone className="w-3.5 h-3.5 text-[#25D366]" />
-                  <span>+91 99713 99395 (WhatsApp Studio)</span>
+                  <span>+91 99713 99395</span>
                 </a>
               </div>
             </div>
