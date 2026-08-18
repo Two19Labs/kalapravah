@@ -1,11 +1,10 @@
 import React, { useRef } from 'react';
 import { ArrowRight, ChevronLeft, ChevronRight, Eye } from 'lucide-react';
-import ImagePlaceholder from './ImagePlaceholder';
 
 export default function FeaturedCollection({ onSelectArtwork }) {
   const scrollContainerRef = useRef(null);
 
-  // Exact 5 artwork frames pulled from https://kalapravah-art-roots.lovable.app/gallery
+  // Exact 5 artwork frames & image assets pulled directly from https://kalapravah-art-roots.lovable.app/gallery
   const collectionItems = [
     {
       id: 1,
@@ -13,6 +12,7 @@ export default function FeaturedCollection({ onSelectArtwork }) {
       medium: "Natural pigment & ink on handmade paper",
       style: "Bharni Fill Style",
       year: "2025",
+      image: "/images/vighnaharta.jpg",
       description: "Ganesha ringed by a garden in bloom — the remover of obstacles drawn in the bharni fill style, his mouse keeping watch below."
     },
     {
@@ -21,6 +21,7 @@ export default function FeaturedCollection({ onSelectArtwork }) {
       medium: "Ink, ochre & gold wash on handmade paper",
       style: "Kachni & Gold Wash",
       year: "2026",
+      image: "/images/still_mind.jpg",
       description: "A Buddha in abhaya mudra against a halo of turmeric light, lotuses opening at the border in patient, repeated line."
     },
     {
@@ -29,6 +30,7 @@ export default function FeaturedCollection({ onSelectArtwork }) {
       medium: "Kachni line work on handmade paper",
       style: "Monochrome Kachni Line",
       year: "2025",
+      image: "/images/monsoon_court.jpg",
       description: "Three peacocks nested in dense foliage, built entirely from hatched line — the discipline of kachni at its most demanding."
     },
     {
@@ -37,6 +39,7 @@ export default function FeaturedCollection({ onSelectArtwork }) {
       medium: "Natural pigment on handmade paper",
       style: "Sacred Motifs",
       year: "2026",
+      image: "/images/raas.jpg",
       description: "Radha and Krishna at the centre of a turning lotus of gopis, framed by a fruiting tree and its birds."
     },
     {
@@ -45,6 +48,7 @@ export default function FeaturedCollection({ onSelectArtwork }) {
       medium: "Ink & yellow on handmade paper",
       style: "Godna Tattoo Line",
       year: "2025",
+      image: "/images/sonepur_wheel.jpg",
       description: "A monochrome mandala worked in godna-inspired tattoo line, the black border holding the composition like a held breath."
     }
   ];
@@ -105,7 +109,7 @@ export default function FeaturedCollection({ onSelectArtwork }) {
             </div>
           </div>
 
-          {/* Right Horizontal Scrollable Gallery Cards */}
+          {/* Right Horizontal Scrollable Gallery Cards with Pulled Lovable Images */}
           <div className="lg:col-span-8 overflow-hidden">
             <div 
               ref={scrollContainerRef}
@@ -117,10 +121,14 @@ export default function FeaturedCollection({ onSelectArtwork }) {
                   onClick={() => onSelectArtwork && onSelectArtwork(item)}
                   className="art-card-frame min-w-[280px] sm:min-w-[320px] max-w-[320px] p-4 rounded-sm group cursor-pointer shrink-0 text-left"
                 >
-                  {/* Image Placeholder Frame */}
-                  <div className="relative aspect-[3/4] overflow-hidden rounded-sm mb-4">
-                    <ImagePlaceholder title={item.title} subtitle={item.medium} />
-                    
+                  {/* Artwork Image Container */}
+                  <div className="relative aspect-[3/4] overflow-hidden rounded-sm bg-[#FAF8F3] mb-4 border border-[#E7E0D2]">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                    />
+
                     {/* Hover Inspect Overlay */}
                     <div className="absolute inset-0 bg-[#1C1917]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[2px]">
                       <span className="px-3 py-1.5 bg-[#FAF8F3] text-[#1C1917] text-xs font-semibold uppercase tracking-wider rounded flex items-center gap-1.5 shadow-lg">

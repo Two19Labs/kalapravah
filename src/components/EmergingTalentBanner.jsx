@@ -1,6 +1,5 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import ImagePlaceholder from './ImagePlaceholder';
 
 export default function EmergingTalentBanner({ onDiscoverArtists }) {
   return (
@@ -16,7 +15,7 @@ export default function EmergingTalentBanner({ onDiscoverArtists }) {
             <div className="lg:col-span-8 flex flex-col md:flex-row items-start md:items-center gap-8 text-left">
               
               {/* Monogram Seal */}
-              <div className="w-16 h-16 rounded-full border border-[#1C1917]/30 flex items-center justify-center shrink-0">
+              <div className="w-16 h-16 rounded-full border border-[#1C1917]/30 flex items-center justify-center shrink-0 bg-[#FAF8F3]">
                 <span className="font-serif text-2xl font-normal text-[#1C1917]">
                   K
                 </span>
@@ -50,10 +49,14 @@ export default function EmergingTalentBanner({ onDiscoverArtists }) {
 
             </div>
 
-            {/* Right Visual Image Placeholder */}
+            {/* Right Visual Artwork Image */}
             <div className="lg:col-span-4 flex justify-center lg:justify-end">
-              <div className="relative aspect-[3/4] w-full max-w-[260px] overflow-hidden rounded-sm border border-[#1C1917]/20 shadow-xl">
-                <ImagePlaceholder title="HERITAGE SCULPTURE" subtitle="Folk Art Showcase" />
+              <div className="relative aspect-[3/4] w-full max-w-[260px] overflow-hidden rounded-sm border border-[#1C1917]/20 shadow-xl bg-[#FAF8F3]">
+                <img
+                  src="/images/sonepur_wheel.jpg"
+                  alt="Sonepur Wheel Folk Art Mandala"
+                  className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
+                />
               </div>
             </div>
 

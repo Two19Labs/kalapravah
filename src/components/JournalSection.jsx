@@ -1,6 +1,5 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import ImagePlaceholder from './ImagePlaceholder';
 
 export default function JournalSection() {
   const articles = [
@@ -8,19 +7,19 @@ export default function JournalSection() {
       id: 1,
       title: "Inside the Studio of Contemporary Artist Rashmi Dhar",
       date: "JUNE 8, 2026",
-      subtitle: "Artist Profile & Process"
+      image: "/images/rashmi_dhar.jpg"
     },
     {
       id: 2,
       title: "How Landscapes & Nature Motifs Influence Indian Folk Art",
       date: "MAY 24, 2026",
-      subtitle: "Kachni & Peacock Motifs"
+      image: "/images/monsoon_court.jpg"
     },
     {
       id: 3,
       title: "The Timeless Beauty of Natural Mineral Pigments & Line Work",
       date: "MAY 12, 2026",
-      subtitle: "Bharni Fill & Organic Dyes"
+      image: "/images/still_mind.jpg"
     }
   ];
 
@@ -56,7 +55,7 @@ export default function JournalSection() {
             </div>
           </div>
 
-          {/* Right 3 Article Cards with Placeholders */}
+          {/* Right 3 Article Cards with Pulled Lovable Images */}
           <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-6">
             {articles.map((article) => (
               <div
@@ -64,8 +63,12 @@ export default function JournalSection() {
                 className="art-card-frame p-4 rounded-sm group cursor-pointer text-left flex flex-col justify-between"
               >
                 <div>
-                  <div className="relative aspect-[4/3] overflow-hidden rounded-sm mb-4">
-                    <ImagePlaceholder title="JOURNAL IMAGE" subtitle={article.subtitle} />
+                  <div className="relative aspect-[4/3] overflow-hidden rounded-sm mb-4 border border-[#E7E0D2]">
+                    <img
+                      src={article.image}
+                      alt={article.title}
+                      className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                    />
                   </div>
 
                   <h3 className="font-serif text-base font-bold text-[#1C1917] leading-snug group-hover:text-[#C87A38] transition-colors mb-3">

@@ -1,6 +1,5 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import ImagePlaceholder from './ImagePlaceholder';
 
 export default function ArtistSection({ onContactStudio }) {
   return (
@@ -8,12 +7,16 @@ export default function ArtistSection({ onContactStudio }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
-          {/* Left Column: Artist Image Frame Placeholder */}
+          {/* Left Column: Artist Image Frame with Pulled Lovable Asset */}
           <div className="lg:col-span-5 relative">
             <div className="relative mx-auto max-w-md lg:max-w-none">
               <div className="deckled-frame p-4 rounded-sm bg-[#FFFDF9] border border-[#E7E0D2] shadow-xl">
-                <div className="relative aspect-[3/4] overflow-hidden rounded-sm">
-                  <ImagePlaceholder title="RASHMI DHAR" subtitle="Folk Artist & Founder" />
+                <div className="relative aspect-[3/4] overflow-hidden rounded-sm bg-[#FAF8F3]">
+                  <img
+                    src="/images/rashmi_dhar.jpg"
+                    alt="Rashmi Dhar — Artist & Founder of Kalapravah"
+                    className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
+                  />
                 </div>
               </div>
             </div>
