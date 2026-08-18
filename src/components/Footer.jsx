@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { 
   Mail, 
   ChevronUp, 
-  Phone
+  Phone,
+  Sparkles,
+  MessageSquare,
+  ArrowRight,
+  Award
 } from 'lucide-react';
 
 const InstagramIcon = ({ className = "w-4 h-4" }) => (
@@ -12,6 +16,27 @@ const InstagramIcon = ({ className = "w-4 h-4" }) => (
 );
 
 export default function Footer({ onNavigate }) {
+  const [category, setCategory] = useState('Artwork Inquiry');
+  const [message, setMessage] = useState('');
+  const [submitted, setSubmitted] = useState(false);
+
+  const categories = [
+    'Artwork Inquiry', 
+    'Custom Commission', 
+    'Workshops & Teaching', 
+    'Exhibition / Gallery Feature',
+    'General Enquiry'
+  ];
+
+  const handleSendWhatsApp = (e) => {
+    e.preventDefault();
+    const formattedText = `Hello Rashmi Dhar / Kalapravah,\n\nI am inquiring about: *${category}*.\n${message.trim() ? message.trim() : 'Please share available collection catalog and details.'}`;
+    const waUrl = `https://wa.me/919971399395?text=${encodeURIComponent(formattedText)}`;
+    window.open(waUrl, '_blank', 'noopener,noreferrer');
+    setSubmitted(true);
+    setTimeout(() => setSubmitted(false), 5000);
+  };
+
   const handleLinkClick = (sectionId) => {
     if (onNavigate) {
       onNavigate(sectionId);
@@ -23,6 +48,161 @@ export default function Footer({ onNavigate }) {
 
   return (
     <footer className="w-full text-[#1C1917] overflow-hidden">
+
+      {/* ========================================================================= */}
+      {/* COMPACT DIRECT STUDIO INQUIRY & CONTACT SECTION (DARK BROWN FOOTER INTEGRATED) */}
+      {/* ========================================================================= */}
+      <section id="contact" className="bg-[#1C1613] text-[#EBE5DF] pt-14 pb-12 px-4 sm:px-6 lg:px-8 border-t border-[#362C26]">
+        <div className="max-w-7xl mx-auto space-y-10">
+          
+          {/* Header Banner */}
+          <div className="text-center max-w-2xl mx-auto space-y-2.5">
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#2D231E] rounded-full border border-[#42342C]">
+              <Sparkles className="w-3.5 h-3.5 text-[#D98A48]" />
+              <span className="text-[10px] sm:text-[11px] font-semibold tracking-[0.2em] uppercase text-[#D98A48]">
+                DIRECT ARTIST CONNECTIONS
+              </span>
+            </div>
+            <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#FAF8F3] tracking-wide">
+              Bring Timeless Madhubani Heritage into Your Space
+            </h3>
+            <p className="text-xs sm:text-sm text-[#A89F95] leading-relaxed">
+              Enquire about original paintings, request bespoke custom commissions, or invite artist Rashmi Dhar to host a Madhubani masterclass workshop.
+            </p>
+          </div>
+
+          {/* Dual Panel Compact Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+            
+            {/* Left Panel: WhatsApp Inquiry Form */}
+            <div className="lg:col-span-7 bg-[#251E1A] border border-[#3D312B] p-5 sm:p-7 rounded-md shadow-sm flex flex-col justify-between space-y-5">
+              <div>
+                <div className="flex items-center justify-between border-b border-[#3D312B] pb-3.5 mb-4">
+                  <div>
+                    <span className="text-[10px] font-bold tracking-[0.18em] uppercase text-[#D98A48] block">
+                      QUICK INQUIRY FORM
+                    </span>
+                    <h4 className="font-serif text-base sm:text-lg font-bold text-[#FAF8F3]">
+                      Send Direct Inquiry to Artist
+                    </h4>
+                  </div>
+                  <span className="inline-flex items-center gap-1.5 text-[10px] sm:text-[11px] font-semibold uppercase tracking-wider text-[#25D366] bg-[#25D366]/10 px-2.5 py-1 rounded-full border border-[#25D366]/20">
+                    <span className="w-2 h-2 rounded-full bg-[#25D366] animate-pulse" />
+                    WhatsApp Active
+                  </span>
+                </div>
+
+                <form onSubmit={handleSendWhatsApp} className="space-y-4">
+                  {/* Topic Selection */}
+                  <div>
+                    <label className="block text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.15em] text-[#A89F95] mb-2">
+                      1. Select Inquiry Topic
+                    </label>
+                    <div className="flex flex-wrap gap-2">
+                      {categories.map((cat) => (
+                        <button
+                          key={cat}
+                          type="button"
+                          onClick={() => setCategory(cat)}
+                          className={`px-3 py-1.5 text-xs font-medium tracking-wide rounded-sm border transition-all text-center cursor-pointer ${
+                            category === cat
+                              ? 'bg-[#D98A48] text-[#1C1613] border-[#D98A48] font-semibold shadow-sm'
+                              : 'bg-[#1C1613] text-[#C2B7AC] border-[#3D312B] hover:border-[#D98A48] hover:text-[#FAF8F3]'
+                          }`}
+                        >
+                          {cat}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Personal Note */}
+                  <div>
+                    <label className="block text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.15em] text-[#A89F95] mb-2">
+                      2. Personal Note or Dimensions (Optional)
+                    </label>
+                    <textarea
+                      rows={2}
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
+                      placeholder="Share details like preferred painting size, color palette, wall space, or event dates..."
+                      className="w-full px-3.5 py-2.5 bg-[#1C1613] border border-[#3D312B] focus:border-[#D98A48] rounded-sm text-xs text-[#FAF8F3] placeholder:text-[#786F66] focus:outline-none transition-colors resize-none"
+                    />
+                  </div>
+
+                  {/* WhatsApp CTA Button */}
+                  <button
+                    type="submit"
+                    className="w-full flex items-center justify-between px-5 py-3.5 bg-[#25D366] hover:bg-[#20bd5a] text-[#1C1613] rounded-sm text-xs font-bold uppercase tracking-[0.15em] transition-all duration-300 group cursor-pointer shadow-md"
+                  >
+                    <div className="flex items-center gap-2.5">
+                      <MessageSquare className="w-4 h-4 fill-current" />
+                      <span>Send Inquiry via WhatsApp</span>
+                    </div>
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </button>
+                </form>
+              </div>
+
+              {submitted && (
+                <p className="text-xs font-semibold text-[#25D366] text-center">
+                  ✓ Opening WhatsApp message with pre-formatted details...
+                </p>
+              )}
+            </div>
+
+            {/* Right Panel: Direct Contact & Authenticity Guarantee */}
+            <div className="lg:col-span-5 bg-[#251E1A] border border-[#3D312B] p-5 sm:p-7 rounded-md shadow-sm flex flex-col justify-between space-y-5">
+              
+              <div className="space-y-4">
+                <span className="text-[10px] font-bold tracking-[0.18em] uppercase text-[#D98A48] block border-b border-[#3D312B] pb-2.5">
+                  DIRECT CONTACT
+                </span>
+                
+                <div className="space-y-3.5 text-xs text-[#C2B7AC]">
+                  {/* Email */}
+                  <div className="flex items-start gap-3">
+                    <Mail className="w-4 h-4 text-[#D98A48] shrink-0 mt-0.5" />
+                    <div>
+                      <span className="font-semibold text-[#FAF8F3] block">Direct Email</span>
+                      <a href="mailto:kalapravah.art@gmail.com" className="hover:text-[#D98A48] underline transition-colors">
+                        kalapravah.art@gmail.com
+                      </a>
+                    </div>
+                  </div>
+
+                  {/* Direct WhatsApp Contact */}
+                  <div className="flex items-start gap-3">
+                    <Phone className="w-4 h-4 text-[#25D366] shrink-0 mt-0.5" />
+                    <div>
+                      <span className="font-semibold text-[#FAF8F3] block">WhatsApp Studio Direct</span>
+                      <a href="https://wa.me/919971399395" target="_blank" rel="noopener noreferrer" className="hover:text-[#25D366] transition-colors">
+                        +91 99713 99395
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Authenticity Guarantee Card */}
+              <div className="p-4 bg-[#1C1613] border border-[#3D312B] rounded-sm space-y-2">
+                <div className="flex items-center gap-2 text-[#D98A48]">
+                  <Award className="w-4 h-4" />
+                  <span className="text-xs font-bold uppercase tracking-wider text-[#FAF8F3]">
+                    100% Original Mithila Art Guarantee
+                  </span>
+                </div>
+                <p className="text-[11px] text-[#A89F95] leading-relaxed">
+                  Each artwork created by Rashmi Dhar is hand-drawn and painted using traditional natural pigments or fine acrylics, complete with an official physical Certificate of Authenticity.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
 
       {/* ========================================================================= */}
       {/* TRADITIONAL MADHUBANI MOTIF BORDER DIVIDER (CONTINUOUS MARQUEE) */}

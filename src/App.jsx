@@ -3,7 +3,6 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import FeaturedCollection from './components/FeaturedCollection';
 import JournalSection from './components/JournalSection';
-import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import ArtworkLightbox from './components/ArtworkLightbox';
 
@@ -69,10 +68,7 @@ export default function App() {
       {/* From the Journal Section (Stories Behind the Art) */}
       <JournalSection />
 
-      {/* Contact Section (Studio Direct Connections) */}
-      <ContactSection />
-
-      {/* Footer & Stay Inspired Newsletter Bar */}
+      {/* Footer & Integrated Compact WhatsApp Contact Section */}
       <Footer
         onNavigate={(id) => scrollToSection(id)}
       />
