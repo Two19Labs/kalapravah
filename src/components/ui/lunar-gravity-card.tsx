@@ -423,10 +423,12 @@ export default function LunarGravityCard({
           </Canvas>
         </div>
 
-        {/* Updated Interactive Hint Pill Overlay (Responsive & Requested Copy) */}
-        <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 left-4 sm:left-auto z-30 pointer-events-none bg-black/75 backdrop-blur-md px-3.5 sm:px-4 py-2 rounded-full border border-white/15 text-[10px] sm:text-xs font-medium text-amber-200/90 shadow-xl flex items-center justify-center gap-2 max-w-full text-center">
+        {/* High-Contrast 100% Fully Visible Hint Pill Overlay */}
+        <div className="absolute bottom-4 inset-x-4 sm:inset-x-auto sm:right-6 sm:bottom-6 z-30 pointer-events-none bg-black/90 backdrop-blur-xl px-4 py-2.5 rounded-full border border-amber-400/50 text-[11px] sm:text-xs font-medium text-amber-100 shadow-2xl flex items-center justify-center sm:justify-start gap-2.5 max-w-[calc(100%-2rem)] sm:max-w-xl mx-auto sm:mx-0">
           <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse shrink-0" />
-          <span className="truncate sm:whitespace-normal">Celestial bodies hold Madhubani cosmic balance — click the sphere to ignite particle rings</span>
+          <span className="leading-tight text-center sm:text-left">
+            Celestial bodies hold Madhubani cosmic balance — click the sphere to ignite particle rings
+          </span>
         </div>
       </div>
 
