@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import FeaturedCollection from './components/FeaturedCollection';
-import EmergingTalentBanner from './components/EmergingTalentBanner';
 import JournalSection from './components/JournalSection';
 import Footer from './components/Footer';
 import ArtworkLightbox from './components/ArtworkLightbox';
