@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import FeaturedCollection from './components/FeaturedCollection';
 import JournalSection from './components/JournalSection';
+import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import ArtworkLightbox from './components/ArtworkLightbox';
 
@@ -40,6 +41,9 @@ export default function App() {
       {/* From the Journal Section (Stories Behind the Art) */}
       <JournalSection />
 
+      {/* Contact Section (Studio Direct Connections) */}
+      <ContactSection />
+
       {/* Footer & Stay Inspired Newsletter Bar */}
       <Footer
         onNavigate={(id) => scrollToSection(id)}
@@ -49,7 +53,7 @@ export default function App() {
       <ArtworkLightbox
         artwork={selectedArtwork}
         onClose={() => setSelectedArtwork(null)}
-        onOpenCommission={() => scrollToSection('collections')}
+        onOpenCommission={() => scrollToSection('contact')}
       />
 
     </div>

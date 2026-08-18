@@ -1,133 +1,186 @@
 import React, { useState } from 'react';
-import { Send, CheckCircle2 } from 'lucide-react';
+import { MapPin, Mail, Clock, Award, Sparkles, ArrowRight, MessageSquare } from 'lucide-react';
 
 export default function ContactSection() {
-  const [showForm, setShowForm] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
+  const [selectedTopic, setSelectedTopic] = useState('Artwork Inquiry');
+  const [note, setNote] = useState('');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setSubmitted(true);
+  const topics = [
+    'Artwork Inquiry',
+    'Custom Commission',
+    'Workshops & Teaching',
+    'Exhibition / Gallery Feature',
+    'General Enquiry'
+  ];
+
+  const handleWhatsAppSend = () => {
+    const text = encodeURIComponent(
+      `Hello Rashmi Dhar / Kalapravah,\n\nI would like to make an enquiry regarding: *${selectedTopic}*.\n${note ? `Details: ${note}` : ''}`
+    );
+    window.open(`https://wa.me/919876543210?text=${text}`, '_blank');
   };
 
   return (
     <section id="contact" className="py-20 md:py-28 bg-[#FAF8F3] relative overflow-hidden border-t border-[#E7E0D2]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        {/* Banner Callout */}
-        <div className="text-center max-w-3xl mx-auto space-y-6">
-          <h2 className="font-serif text-3xl sm:text-5xl font-bold text-[#1C1917] tracking-tight leading-[1.12]">
-            Bring a hand-painted story into your space
+        {/* Top Header Pill & Titles */}
+        <div className="text-center max-w-3xl mx-auto space-y-4 mb-14">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#F3ECE0] border border-[#E7E0D2] text-xs font-semibold tracking-wider text-[#A16207] uppercase">
+            <Sparkles className="w-3.5 h-3.5 text-[#C87A38]" />
+            <span>STUDIO DIRECT CONNECTIONS</span>
+          </div>
+
+          <h2 className="font-serif text-3xl sm:text-5xl font-normal text-[#1C1917] tracking-tight leading-[1.15]">
+            Bring Timeless Madhubani Heritage into Your Space
           </h2>
 
-          <p className="text-base sm:text-lg text-[#5C5652] leading-relaxed max-w-2xl mx-auto">
-            Enquire about available paintings, commission a piece, or invite Kalapravah to host a Madhubani workshop.
+          <p className="text-sm sm:text-base text-[#5C5652] leading-relaxed max-w-2xl mx-auto">
+            Enquire about original paintings, request bespoke custom commissions, or invite artist Rashmi Dhar to host a Madhubani masterclass workshop.
           </p>
-
-          <div className="pt-2">
-            {!showForm ? (
-              <button
-                onClick={() => setShowForm(true)}
-                className="btn-primary text-sm sm:text-base px-8 py-3.5"
-              >
-                <span>Start a conversation</span>
-              </button>
-            ) : null}
-          </div>
         </div>
 
-        {/* Contact Form Overlay / Card */}
-        {showForm && (
-          <div className="mt-12 max-w-2xl mx-auto animate-fade-in">
-            <div className="deckled-frame p-8 md:p-10 rounded-sm bg-[#FFFDF9] border border-[#E7E0D2] shadow-xl text-left">
-              {submitted ? (
-                <div className="text-center py-10 space-y-4">
-                  <CheckCircle2 className="w-12 h-12 text-[#3E5A47] mx-auto" />
-                  <h3 className="font-serif text-2xl font-bold text-[#1C1917]">
-                    Message Sent
-                  </h3>
-                  <p className="text-sm text-[#5C5652]">
-                    Thank you for reaching out. We will get back to you shortly.
-                  </p>
-                  <button
-                    onClick={() => { setSubmitted(false); setShowForm(false); }}
-                    className="btn-outline text-xs uppercase"
-                  >
-                    Close
-                  </button>
-                </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  
-                  <div className="space-y-2">
-                    <label className="text-xs font-semibold uppercase tracking-wider text-[#1C1917] block">
-                      Your Name
-                    </label>
-                    <input
-                      type="text"
-                      required
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      placeholder="e.g. Ananya Sharma"
-                      className="w-full px-4 py-3 bg-[#FAF8F3] border border-[#C4B9A3]/60 rounded-sm text-sm text-[#1C1917] focus:outline-none focus:border-[#B94A2D]"
-                    />
-                  </div>
+        {/* Main 2-Column Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          {/* Left Box: Quick Inquiry Form */}
+          <div className="lg:col-span-7 bg-[#FFFDF9] border border-[#E7E0D2] rounded-lg p-6 sm:p-8 shadow-sm text-left space-y-6">
+            
+            {/* Form Top Title Bar */}
+            <div className="flex items-start justify-between gap-4 pb-2">
+              <div>
+                <span className="text-[10px] font-bold tracking-widest text-[#C87A38] uppercase block">
+                  QUICK INQUIRY FORM
+                </span>
+                <h3 className="font-serif text-2xl font-semibold text-[#1C1917]">
+                  Send Direct Inquiry to Artist
+                </h3>
+              </div>
 
-                  <div className="space-y-2">
-                    <label className="text-xs font-semibold uppercase tracking-wider text-[#1C1917] block">
-                      Email Address
-                    </label>
-                    <input
-                      type="email"
-                      required
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      placeholder="you@example.com"
-                      className="w-full px-4 py-3 bg-[#FAF8F3] border border-[#C4B9A3]/60 rounded-sm text-sm text-[#1C1917] focus:outline-none focus:border-[#B94A2D]"
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <label className="text-xs font-semibold uppercase tracking-wider text-[#1C1917] block">
-                      Message
-                    </label>
-                    <textarea
-                      rows={4}
-                      required
-                      value={formData.message}
-                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      placeholder="Enquire about available paintings, custom commissions, or workshops..."
-                      className="w-full px-4 py-3 bg-[#FAF8F3] border border-[#C4B9A3]/60 rounded-sm text-sm text-[#1C1917] focus:outline-none focus:border-[#B94A2D]"
-                    />
-                  </div>
-
-                  <div className="flex gap-4">
-                    <button
-                      type="submit"
-                      className="btn-primary flex-1 justify-center text-xs font-semibold uppercase py-3"
-                    >
-                      <span>Send Message</span>
-                      <Send className="w-4 h-4" />
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => setShowForm(false)}
-                      className="btn-outline text-xs uppercase px-6"
-                    >
-                      Cancel
-                    </button>
-                  </div>
-
-                </form>
-              )}
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#DCFCE7] text-[#15803D] text-[11px] font-semibold tracking-wide shrink-0">
+                <span className="w-2 h-2 rounded-full bg-[#22C55E] animate-pulse" />
+                <span>WHATSAPP ACTIVE</span>
+              </div>
             </div>
+
+            {/* Step 1: Select Inquiry Topic */}
+            <div className="space-y-3 pt-2">
+              <label className="text-[11px] font-bold tracking-wider text-[#78716C] uppercase block">
+                1. SELECT INQUIRY TOPIC
+              </label>
+
+              <div className="flex flex-wrap gap-2.5">
+                {topics.map((topic) => (
+                  <button
+                    key={topic}
+                    type="button"
+                    onClick={() => setSelectedTopic(topic)}
+                    className={`px-4 py-2.5 rounded-sm text-xs font-semibold transition-all ${
+                      selectedTopic === topic
+                        ? 'bg-[#1C1917] text-white border border-[#1C1917] shadow-sm'
+                        : 'bg-[#FAF8F3] text-[#44403C] border border-[#E7E0D2] hover:border-[#C4B9A3]'
+                    }`}
+                  >
+                    {topic}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Step 2: Personal Note or Dimensions */}
+            <div className="space-y-3 pt-2">
+              <label className="text-[11px] font-bold tracking-wider text-[#78716C] uppercase block">
+                2. PERSONAL NOTE OR DIMENSIONS (OPTIONAL)
+              </label>
+
+              <textarea
+                rows={3}
+                value={note}
+                onChange={(e) => setNote(e.target.value)}
+                placeholder="Share details like preferred painting size, color palette, wall space, or event dates..."
+                className="w-full px-4 py-3 bg-[#FAF8F3] border border-[#E7E0D2] rounded-sm text-xs text-[#1C1917] placeholder-[#A8A29E] focus:outline-none focus:border-[#C87A38] transition-colors"
+              />
+            </div>
+
+            {/* Action Button */}
+            <div className="pt-2">
+              <button
+                type="button"
+                onClick={handleWhatsAppSend}
+                className="w-full py-4 px-6 bg-[#1C1917] hover:bg-[#2D2A26] text-white rounded-sm font-semibold text-xs tracking-widest uppercase flex items-center justify-between transition-colors shadow-md group"
+              >
+                <div className="flex items-center gap-2">
+                  <MessageSquare className="w-4 h-4 text-[#22C55E]" />
+                  <span>SEND INQUIRY VIA WHATSAPP</span>
+                </div>
+                <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
+              </button>
+            </div>
+
           </div>
-        )}
+
+          {/* Right Box: Artisan Studio Details */}
+          <div className="lg:col-span-5 bg-[#FFFDF9] border border-[#E7E0D2] rounded-lg p-6 sm:p-8 shadow-sm text-left space-y-6 flex flex-col justify-between">
+            
+            <div className="space-y-6">
+              <div>
+                <span className="text-[10px] font-bold tracking-widest text-[#C87A38] uppercase block mb-3">
+                  ARTISAN STUDIO DETAILS
+                </span>
+                <div className="h-[1px] bg-[#E7E0D2] w-full" />
+              </div>
+
+              {/* Studio Info List */}
+              <div className="space-y-5 text-xs text-[#44403C]">
+                
+                {/* Location */}
+                <div className="flex items-start gap-3.5">
+                  <MapPin className="w-4 h-4 text-[#C87A38] shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-semibold text-[#1C1917] block">Studio Location</span>
+                    <span className="text-[#5C5652]">New Delhi / NCR, India • Shipping Worldwide</span>
+                  </div>
+                </div>
+
+                {/* Email */}
+                <div className="flex items-start gap-3.5">
+                  <Mail className="w-4 h-4 text-[#C87A38] shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-semibold text-[#1C1917] block">Direct Email</span>
+                    <a href="mailto:kalapravah.art@gmail.com" className="text-[#5C5652] hover:text-[#C87A38] transition-colors underline">
+                      kalapravah.art@gmail.com
+                    </a>
+                  </div>
+                </div>
+
+                {/* Hours */}
+                <div className="flex items-start gap-3.5">
+                  <Clock className="w-4 h-4 text-[#C87A38] shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-semibold text-[#1C1917] block">Studio Hours</span>
+                    <span className="text-[#5C5652]">Monday – Saturday, 10:00 AM – 7:00 PM IST</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            {/* Guarantee Box */}
+            <div className="pt-6 border-t border-[#E7E0D2]">
+              <div className="p-4 rounded-sm bg-[#FAF8F3] border border-[#E7E0D2] space-y-2">
+                <div className="flex items-center gap-2 text-xs font-bold text-[#1C1917] uppercase tracking-wide">
+                  <Award className="w-4 h-4 text-[#C87A38]" />
+                  <span>100% ORIGINAL MITHILA ART GUARANTEE</span>
+                </div>
+                <p className="text-[11px] text-[#78716C] leading-relaxed">
+                  Each artwork created by Rashmi Dhar is hand-drawn and painted using traditional natural pigments or fine acrylics, complete with an official physical Certificate of Authenticity.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
 
       </div>
     </section>
