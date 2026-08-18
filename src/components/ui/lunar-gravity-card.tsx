@@ -6,8 +6,8 @@ import { OrbitControls, useTexture, Environment } from "@react-three/drei";
 import * as THREE from "three";
 import { cn } from "@/lib/utils";
 
-// Enlarged 3D Sphere radius for Hero showcase
-const RADIUS = 2.75;
+// Enlarged 3D Sphere radius for floating right-hand universe showcase
+const RADIUS = 3.0;
 
 const ArtCanvasMesh = ({ onClick, textureUrl = "/images/madhubani_art_texture.jpg" }: { onClick?: () => void, textureUrl?: string }) => {
   const meshRef = useRef<THREE.Mesh>(null);
@@ -41,7 +41,7 @@ const ArtCanvasMesh = ({ onClick, textureUrl = "/images/madhubani_art_texture.jp
 
       {/* Decorative Metallic Gold Halo Bevel Ring */}
       <mesh ref={frameRef} rotation={[Math.PI / 4, Math.PI / 6, 0]}>
-        <torusGeometry args={[RADIUS + 0.2, 0.05, 16, 100]} />
+        <torusGeometry args={[RADIUS + 0.22, 0.05, 16, 100]} />
         <meshStandardMaterial 
           color="#C87A38" 
           roughness={0.2}
@@ -62,7 +62,7 @@ const [ringPositions, ringColors, ringRandoms] = (() => {
     const angle = Math.random() * Math.PI * 2;
 
     const rDist = Math.pow(Math.random(), 1.5);
-    const radius = 2.95 + rDist * 2.5; 
+    const radius = 3.2 + rDist * 2.5; 
 
     const thickness = 0.45 - (rDist * 0.2); 
     const ySpread = (Math.random() + Math.random() + Math.random() - 1.5);
@@ -197,7 +197,7 @@ const ParticleRing = ({ ringState, massiveAsteroidsRef }: { ringState: 'hidden' 
 
       transformed.y += (1.0 - particleProgress) * (transformed.y >= 0.0 ? 1.0 : -1.0);
 
-      vec3 moonSurface = normalize(transformed) * 2.85;
+      vec3 moonSurface = normalize(transformed) * 3.1;
       transformed = mix(moonSurface, transformed, particleProgress);
       `
     );
@@ -259,7 +259,7 @@ const ParticleRing = ({ ringState, massiveAsteroidsRef }: { ringState: 'hidden' 
 const generateAsteroids = (count: number) => {
   const data = [];
   for (let i = 0; i < count; i++) {
-    const baseRadius = 3.5 + Math.random() * 2.2; 
+    const baseRadius = 3.8 + Math.random() * 2.2; 
     const radialAmplitude = 0.5 + Math.random() * 1.5; 
     const radialSpeed = 0.15 + Math.random() * 0.25; 
     const phase = Math.random() * Math.PI * 2;
@@ -318,9 +318,9 @@ const AsteroidBelt = ({ ringState, massiveAsteroidsRef }: { ringState: 'hidden' 
       ast.phase += ast.radialSpeed * delta;
       let currentRadius = ast.baseRadius + Math.sin(ast.phase) * ast.radialAmplitude;
 
-      if (currentRadius < 2.9) {
-        const penetration = 2.9 - currentRadius;
-        currentRadius = 2.9 + penetration * 0.85;
+      if (currentRadius < 3.1) {
+        const penetration = 3.1 - currentRadius;
+        currentRadius = 3.1 + penetration * 0.85;
       }
 
       const x = Math.cos(ast.angle) * currentRadius;
@@ -378,7 +378,7 @@ export default function LunarGravityCard({
   const massiveAsteroidsRef = useRef<Float32Array>(new Float32Array(75 * 4));
 
   return (
-    <div className={cn("w-full h-full min-h-[380px] sm:min-h-[460px] lg:min-h-[560px] bg-black rounded-[2rem] sm:rounded-[2.5rem] flex flex-col md:flex-row relative overflow-hidden border border-white/[0.15] shadow-[0_30px_100px_rgba(0,0,0,0.5)]", className)}>
+    <div className={cn("w-full h-full min-h-[440px] sm:min-h-[520px] lg:min-h-[620px] bg-black rounded-[2rem] sm:rounded-[2.5rem] flex flex-col md:flex-row relative overflow-hidden border border-white/[0.15] shadow-[0_35px_120px_rgba(0,0,0,0.7)]", className)}>
       
       {title || description ? (
         <div className="w-full md:w-[45%] flex flex-col justify-center px-6 sm:px-10 py-8 md:p-0 md:pl-12 relative z-20 pointer-events-none">
@@ -395,15 +395,15 @@ export default function LunarGravityCard({
         </div>
       ) : null}
      
-      <div className={cn("relative w-full h-full min-h-[380px] sm:min-h-[460px] lg:min-h-[560px] pointer-events-auto z-0 flex items-center justify-center", title || description ? "md:absolute md:right-0 md:top-0 md:w-[65%]" : "w-full")}>
+      <div className={cn("relative w-full h-full min-h-[440px] sm:min-h-[520px] lg:min-h-[620px] pointer-events-auto z-0 flex items-center justify-center bg-black", title || description ? "md:absolute md:right-0 md:top-0 md:w-[65%]" : "w-full")}>
         <div className="absolute inset-0 w-full h-full">
-          <Canvas shadows camera={{ position: [0, 3.0, 8.2], fov: 45 }} dpr={[1, 2]}>
+          <Canvas shadows camera={{ position: [0, 2.7, 7.6], fov: 44 }} dpr={[1, 2]}>
             <Environment preset="city" />
 
-            {/* Bright 360-Degree Lighting for 100% Sphere & Text Visibility */}
-            <ambientLight intensity={0.65} />
-            <directionalLight position={[-8, 4, 6]} intensity={1.35} color="#FFFDF9" />
-            <directionalLight position={[8, 5, 5]} intensity={1.6} color="#FFFDF9" castShadow shadow-mapSize={[2048, 2048]} />
+            {/* Dramatic Cinematic Lighting (Spherical Left Shadow Restored) */}
+            <ambientLight intensity={0.25} />
+            <directionalLight position={[8, 5, 5]} intensity={2.2} color="#FFFDF9" castShadow shadow-mapSize={[2048, 2048]} />
+            <directionalLight position={[-6, 2, 4]} intensity={0.4} color="#C87A38" />
 
             <OrbitControls enableZoom={false} enablePan={false} autoRotate={false} />
 
@@ -421,12 +421,10 @@ export default function LunarGravityCard({
           </Canvas>
         </div>
 
-        {/* 100% Bright High-Contrast Gold Border Hint Overlay */}
-        <div className="absolute bottom-4 sm:bottom-6 inset-x-4 sm:inset-x-auto sm:right-6 z-40 pointer-events-none bg-[#121110] border-2 border-[#C87A38] text-amber-100 px-4 py-2.5 rounded-full shadow-2xl flex items-center justify-center sm:justify-start gap-2.5 max-w-[calc(100%-2rem)] sm:max-w-xl mx-auto sm:mx-0">
-          <span className="w-2 h-2 rounded-full bg-[#C87A38] animate-pulse shrink-0" />
-          <span className="text-[11px] sm:text-xs font-semibold leading-tight text-center sm:text-left text-amber-100">
-            Celestial bodies hold Madhubani cosmic balance — click the sphere to ignite particle rings
-          </span>
+        {/* Shortened, Ultra-Sleek 100% Readable Hint Pill Overlay */}
+        <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 z-30 pointer-events-none bg-black/85 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/20 text-xs font-medium text-amber-200 shadow-2xl flex items-center gap-2 max-w-[calc(100%-2rem)]">
+          <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse shrink-0" />
+          <span className="truncate">Madhubani cosmic balance — click sphere to ignite</span>
         </div>
       </div>
 

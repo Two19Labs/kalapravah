@@ -82,10 +82,10 @@ export default function Hero({ onExploreArtworks }) {
 
           </div>
 
-          {/* Right Column: 3D Interactive Madhubani Art Sphere */}
+          {/* Right Column: Floating Dark Universe 3D Madhubani Art Sphere */}
           <div className="lg:col-span-6 relative w-full flex justify-center">
-            <div className="w-full max-w-lg lg:max-w-none aspect-[4/3.8] sm:aspect-[4/3] lg:aspect-square rounded-[2.5rem] overflow-hidden shadow-2xl border border-[#C4B9A3]/50 bg-black relative">
-              <LunarGravityCard className="w-full h-full min-h-[460px] sm:min-h-[520px] lg:min-h-[560px] !border-none !rounded-none" />
+            <div className="w-full max-w-lg lg:max-w-none aspect-[4/3.8] sm:aspect-[4/3] lg:aspect-square rounded-[2.5rem] overflow-hidden shadow-2xl border border-white/10 bg-black relative">
+              <LunarGravityCard className="w-full h-full min-h-[460px] sm:min-h-[540px] lg:min-h-[620px] !border-none !rounded-none" />
             </div>
           </div>
 
