@@ -24,7 +24,7 @@ export default function JournalSection() {
   ];
 
   return (
-    <section id="journal" className="py-14 sm:py-20 md:py-28 bg-[#FAF8F3] relative overflow-hidden border-t border-[#E7E0D2]">
+    <section id="journal" className="pt-8 sm:pt-10 md:pt-12 pb-16 sm:pb-20 md:pb-24 bg-[#FAF8F3] relative overflow-hidden border-t border-[#E7E0D2]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">

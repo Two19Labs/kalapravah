@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { X, ZoomIn, Sparkles, Feather, CheckCircle, MessageSquare } from 'lucide-react';
+import { X, Sparkles, Feather, CheckCircle, MessageSquare } from 'lucide-react';
 
 export default function ArtworkLightbox({ artwork, onClose, onOpenCommission }) {
   if (!artwork) return null;
@@ -69,10 +69,6 @@ export default function ArtworkLightbox({ artwork, onClose, onOpenCommission }) 
                 />
               )}
 
-              {/* Hover/Tap Badge */}
-              <div className="absolute bottom-2 left-2 bg-[#1C1917]/75 text-white text-[9px] sm:text-[10px] px-2 py-1 rounded backdrop-blur-sm pointer-events-none flex items-center gap-1">
-                <ZoomIn className="w-3 h-3 text-[#C87A38]" /> Tap or hover to inspect fine detail
-              </div>
             </div>
 
             <div className="mt-3 sm:mt-4 text-[11px] sm:text-xs text-[#78716C] italic font-serif text-center">

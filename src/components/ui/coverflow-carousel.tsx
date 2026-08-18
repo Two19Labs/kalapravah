@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Eye } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 
@@ -44,6 +44,8 @@ export interface CoverflowCarouselProps {
   autoPlayInterval?: number;
   /** Pause auto-swipe on mouse hover. Defaults to true. */
   pauseOnHover?: boolean;
+  /** Callback fired when a slide card is clicked. */
+  onCardClick?: (index: number) => void;
 }
 
 export function CoverflowCarousel({
@@ -64,6 +66,7 @@ export function CoverflowCarousel({
   cardClassName,
   autoPlayInterval = 4000,
   pauseOnHover = true,
+  onCardClick,
 }: CoverflowCarouselProps) {
   const count = slides.length;
 
@@ -82,6 +85,7 @@ export function CoverflowCarousel({
     pos: number;
     v: number;
     t: number;
+    moved: boolean;
   } | null>(null);
 
   const [selected, setSelected] = React.useState(0);
@@ -182,7 +186,6 @@ export function CoverflowCarousel({
       cancelAnimationFrame(rafRef.current);
       rafRef.current = null;
     }
-    event.currentTarget.setPointerCapture(event.pointerId);
     targetRef.current = posRef.current;
     dragRef.current = {
       id: event.pointerId,
@@ -190,12 +193,20 @@ export function CoverflowCarousel({
       pos: posRef.current,
       v: 0,
       t: performance.now(),
+      moved: false,
     };
   };
 
   const onPointerMove = (event: React.PointerEvent<HTMLDivElement>) => {
     const drag = dragRef.current;
     if (!drag || drag.id !== event.pointerId) return;
+
+    if (Math.abs(event.clientX - drag.x) > 5) {
+      drag.moved = true;
+      if (!event.currentTarget.hasPointerCapture(event.pointerId)) {
+        event.currentTarget.setPointerCapture(event.pointerId);
+      }
+    }
 
     const pitch = widthRef.current * (1 + gap);
     if (!pitch) return;
@@ -315,8 +326,15 @@ export function CoverflowCarousel({
                 role="group"
                 aria-roledescription="slide"
                 aria-label={`${index + 1} of ${count}`}
+                onClick={() => {
+                  if (onCardClick) {
+                    onCardClick(index);
+                  } else {
+                    goTo(index);
+                  }
+                }}
                 className={cn(
-                  "absolute left-1/2 top-0 aspect-square overflow-hidden rounded-2xl bg-muted shadow-xl will-change-transform",
+                  "absolute left-1/2 top-0 aspect-square overflow-hidden rounded-2xl bg-muted shadow-xl will-change-transform cursor-pointer group/card",
                   cardClassName,
                 )}
                 style={{ width: "var(--cf-card)" }}
@@ -326,8 +344,15 @@ export function CoverflowCarousel({
                   src={slide.src}
                   alt={slide.alt}
                   draggable={false}
-                  className="h-full w-full select-none object-cover"
+                  className="h-full w-full select-none object-cover transition-transform duration-300 group-hover/card:scale-105"
                 />
+                {/* Subtle Hover Overlay Hint */}
+                <div className="absolute inset-0 bg-[#1C1917]/25 opacity-0 group-hover/card:opacity-100 transition-all duration-300 flex items-center justify-center pointer-events-none p-3">
+                  <div className="bg-[#FAF8F3]/95 backdrop-blur-md text-[#1C1917] text-[10px] sm:text-xs font-semibold tracking-wider uppercase px-3.5 py-2 rounded-full border border-[#E7E0D2] shadow-lg flex items-center gap-1.5 transform translate-y-1 group-hover/card:translate-y-0 transition-transform duration-300">
+                    <Eye className="w-3.5 h-3.5 text-[#C87A38]" />
+                    <span>Click to inspect</span>
+                  </div>
+                </div>
               </div>
             ))}
           </div>

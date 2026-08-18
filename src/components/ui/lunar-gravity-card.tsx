@@ -82,10 +82,10 @@ const [ringPositions, ringColors, ringRandoms] = (() => {
   for(let i=0; i<particlesCount; i++) {
     const angle = Math.random() * Math.PI * 2;
 
-    const rDist = Math.pow(Math.random(), 1.5);
-    const radius = 2.3 + rDist * 2.2; 
+    const rDist = Math.pow(Math.random(), 1.3);
+    const radius = 2.2 + rDist * 2.9; 
 
-    const thickness = 0.4 - (rDist * 0.2); 
+    const thickness = 0.55 - (rDist * 0.25); 
     const ySpread = (Math.random() + Math.random() + Math.random() - 1.5);
     const y = ySpread * thickness; 
 
@@ -280,13 +280,13 @@ const ParticleRing = ({ ringState, massiveAsteroidsRef }: { ringState: 'hidden' 
 const generateAsteroids = (count: number) => {
   const data = [];
   for (let i = 0; i < count; i++) {
-    const baseRadius = 2.7 + Math.random() * 1.8; 
+    const baseRadius = 2.5 + Math.random() * 2.4; 
     const radialAmplitude = 0.4 + Math.random() * 1.2; 
     const radialSpeed = 0.15 + Math.random() * 0.25; 
     const phase = Math.random() * Math.PI * 2;
 
     const angle = Math.random() * Math.PI * 2;
-    const zOffset = (Math.random() - 0.5) * 0.8; 
+    const zOffset = (Math.random() - 0.5) * 0.9; 
 
     const speed = (0.04 + Math.random() * 0.08) * (Math.random() > 0.5 ? 1 : -1);
 
@@ -422,7 +422,7 @@ export default function LunarGravityCard({
      
       <div className={cn("relative w-full h-full pointer-events-auto z-0 flex items-center justify-center bg-transparent", title || description ? "md:absolute md:right-0 md:top-0 md:w-[65%]" : "w-full")}>
         <div className="absolute inset-0 w-full h-full touch-pan-y" style={{ touchAction: "pan-y" }}>
-          <Canvas shadows camera={{ position: [0, 2.0, 8.8], fov: 45 }} dpr={[1, 2]} style={{ touchAction: "pan-y" }}>
+          <Canvas shadows camera={{ position: [0, 0.3, 7.8], fov: 45 }} dpr={[1, 2]} style={{ touchAction: "pan-y" }}>
             {/* Dramatic Cinematic Studio Lighting */}
             <ambientLight intensity={0.65} />
             <directionalLight position={[8, 6, 6]} intensity={2.8} color="#FFFDF9" castShadow shadow-mapSize={[2048, 2048]} />
@@ -431,7 +431,7 @@ export default function LunarGravityCard({
 
             <OrbitControls enableZoom={false} enablePan={false} autoRotate={false} />
 
-            <group rotation={[Math.PI / 9, 0, 0]}>
+            <group rotation={[Math.PI / 14, 0, 0]}>
               <Suspense fallback={null}>
                 <ArtCanvasMesh 
                   textureUrl={artTextureUrl} 
@@ -446,10 +446,12 @@ export default function LunarGravityCard({
         </div>
 
         {/* Dynamic Hint Overlay Pill */}
-        <div className="absolute bottom-3 right-3 sm:bottom-6 sm:right-6 lg:bottom-8 lg:right-8 z-30 pointer-events-none bg-[#FFFDF9]/95 backdrop-blur-md px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-full border border-[#C4B9A3]/50 text-[10px] sm:text-xs font-semibold tracking-wider text-[#1C1917] shadow-md flex items-center gap-1.5 sm:gap-2 max-w-[calc(100%-1.5rem)]">
-          <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-[#C87A38] animate-pulse shrink-0" />
-          <span className="truncate uppercase text-[9px] sm:text-[10px]">{hintText}</span>
-        </div>
+        {hintText && hintText.trim() !== "" ? (
+          <div className="absolute bottom-3 right-3 sm:bottom-6 sm:right-6 lg:bottom-8 lg:right-8 z-30 pointer-events-none bg-[#FFFDF9]/95 backdrop-blur-md px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-full border border-[#C4B9A3]/50 text-[10px] sm:text-xs font-semibold tracking-wider text-[#1C1917] shadow-md flex items-center gap-1.5 sm:gap-2 max-w-[calc(100%-1.5rem)]">
+            <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-[#C87A38] animate-pulse shrink-0" />
+            <span className="truncate uppercase text-[9px] sm:text-[10px]">{hintText}</span>
+          </div>
+        ) : null}
       </div>
 
     </div>

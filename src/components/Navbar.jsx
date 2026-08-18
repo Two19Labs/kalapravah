@@ -44,8 +44,8 @@ export default function Navbar({ activeSection, setActiveSection }) {
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled || mobileMenuOpen
-          ? 'bg-[#FAF8F3]/95 backdrop-blur-md border-b border-[#E7E0D2] shadow-sm py-3.5 sm:py-4' 
-          : 'bg-transparent py-4 sm:py-6'
+          ? 'bg-[#FAF8F3]/95 backdrop-blur-md border-b border-[#E7E0D2] shadow-sm py-3 sm:py-3.5' 
+          : 'bg-transparent py-3 sm:py-4'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
