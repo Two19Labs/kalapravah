@@ -9,7 +9,7 @@ export default function Footer({ onNavigate }) {
 
   const handleSendWhatsApp = (e) => {
     e.preventDefault();
-    const formattedText = `Hello Kalapravah,\n\nI am inquiring about: *${category}*.\n${message.trim() ? `Message: ${message.trim()}` : 'Please share more details with me.'}`;
+    const formattedText = `Hello Rashmi,\n\nI am inquiring about: *${category}*.\n${message.trim() ? message.trim() : 'Please share more details with me.'}`;
     const waUrl = `https://wa.me/919971399395?text=${encodeURIComponent(formattedText)}`;
     window.open(waUrl, '_blank', 'noopener,noreferrer');
   };
