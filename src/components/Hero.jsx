@@ -13,52 +13,52 @@ const MADHUBANI_ART = {
 
 export default function Hero({ onExploreArtworks }) {
   return (
-    <section id="hero" className="relative pt-24 lg:pt-28 overflow-hidden bg-[#FAF8F3] border-b border-[#E7E0D2]">
+    <section id="hero" className="relative pt-20 sm:pt-24 lg:pt-28 pb-10 sm:pb-14 lg:pb-16 overflow-hidden bg-[#FAF8F3] border-b border-[#E7E0D2]">
       
       {/* Soft Ambient Warm Spotlight behind 3D Canvas */}
       <div 
-        className="absolute top-1/2 right-1/4 -translate-y-1/2 w-[450px] sm:w-[600px] h-[450px] sm:h-[600px] rounded-full blur-[130px] pointer-events-none opacity-20 transition-all duration-700"
+        className="absolute top-1/2 left-1/2 sm:left-auto sm:right-1/4 -translate-x-1/2 sm:translate-x-0 -translate-y-1/2 w-[280px] xs:w-[380px] sm:w-[600px] h-[280px] xs:h-[380px] sm:h-[600px] rounded-full blur-[90px] sm:blur-[130px] pointer-events-none opacity-25 sm:opacity-20 transition-all duration-700"
         style={{ backgroundColor: MADHUBANI_ART.ringColor }}
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 min-h-[calc(100vh-100px)] lg:min-h-[640px] items-center gap-8 lg:gap-12 py-12 lg:py-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 min-h-0 lg:min-h-[640px] items-center gap-8 sm:gap-10 lg:gap-12 py-4 sm:py-8 lg:py-16">
           
           {/* Left Column: Clean Editorial Typography */}
-          <div className="lg:col-span-6 space-y-8 text-left flex flex-col justify-center">
+          <div className="lg:col-span-6 space-y-5 sm:space-y-8 text-left flex flex-col justify-center">
             
             {/* Top Category Tag */}
-            <div className="flex items-center gap-3">
-              <span className="text-xs font-semibold tracking-[0.22em] uppercase text-[#C87A38]">
+            <div className="flex items-center gap-2.5 sm:gap-3">
+              <span className="text-[10px] xs:text-xs font-semibold tracking-[0.16em] sm:tracking-[0.22em] uppercase text-[#C87A38]">
                 MADHUBANI HERITAGE FINE ART
               </span>
-              <span className="w-8 h-[1px] bg-[#C87A38]/50" />
+              <span className="w-6 sm:w-8 h-[1px] bg-[#C87A38]/50" />
             </div>
 
             {/* Headline */}
-            <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-normal tracking-tight text-[#1C1917] leading-[1.05]">
-              Where Art <br />
+            <h1 className="font-serif text-3xl xs:text-4xl sm:text-6xl lg:text-7xl font-normal tracking-tight text-[#1C1917] leading-[1.1] sm:leading-[1.05]">
+              Where Art <br className="hidden xs:inline" />
               Inspires Life
             </h1>
 
             {/* Subtitle */}
-            <p className="text-base sm:text-lg text-[#5C5652] max-w-md font-normal leading-relaxed">
+            <p className="text-sm sm:text-base lg:text-lg text-[#5C5652] max-w-md font-normal leading-relaxed">
               Discover original Mithila masterpieces, visionary Indian artisans, and centuries of living Madhubani cultural heritage.
             </p>
 
             {/* Focused Art Form Badge */}
-            <div className="pt-2">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#C87A38]/10 border border-[#C87A38]/30 text-xs font-semibold tracking-wider text-[#C87A38] uppercase">
+            <div className="pt-1 sm:pt-2">
+              <div className="inline-flex flex-wrap items-center gap-1.5 sm:gap-2 px-3 sm:px-3.5 py-1.5 rounded-full bg-[#C87A38]/10 border border-[#C87A38]/30 text-[10px] sm:text-xs font-semibold tracking-wider text-[#C87A38] uppercase max-w-full">
                 <span>ART FORM FOCUS:</span>
                 <span className="text-[#1C1917] font-bold">{MADHUBANI_ART.name} ({MADHUBANI_ART.region})</span>
               </div>
             </div>
 
             {/* Main CTA Action */}
-            <div className="pt-2 flex items-center gap-6">
+            <div className="pt-2 flex flex-col xs:flex-row items-stretch xs:items-center gap-4 sm:gap-6">
               <button
                 onClick={onExploreArtworks}
-                className="btn-artesia group"
+                className="btn-artesia group justify-center w-full xs:w-auto"
               >
                 <span>EXPLORE ARTWORKS</span>
                 <ArrowUpRight className="w-4 h-4 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
@@ -68,17 +68,17 @@ export default function Hero({ onExploreArtworks }) {
           </div>
 
           {/* Right Column: Clean Floating 3D Art Gallery Showcase */}
-          <div className="lg:col-span-6 relative w-full h-[450px] sm:h-[560px] lg:h-[620px] flex items-center justify-center">
+          <div className="lg:col-span-6 relative w-full flex items-center justify-center pt-2 sm:pt-4 lg:pt-0">
             
             {/* Subtle Gallery Pedestal / Soft Circle Vignette */}
-            <div className="absolute inset-0 rounded-full bg-[#FAF8F3] border border-[#E7E0D2]/50 shadow-[0_20px_50px_rgba(28,25,23,0.04)] overflow-hidden flex items-center justify-center">
+            <div className="relative w-full max-w-[290px] xs:max-w-[340px] sm:max-w-[480px] lg:max-w-[580px] aspect-square rounded-full bg-[#FAF8F3] border border-[#E7E0D2]/50 shadow-[0_20px_50px_rgba(28,25,23,0.04)] overflow-hidden flex items-center justify-center mx-auto">
               
               <LunarGravityCard 
                 key={MADHUBANI_ART.id}
                 artTextureUrl={MADHUBANI_ART.textureUrl}
                 ringColor={MADHUBANI_ART.ringColor}
                 hintText="Madhubani art — click sphere to ignite"
-                className="w-full h-full !min-h-full"
+                className="w-full h-full min-h-0 sm:min-h-0 lg:min-h-0"
               />
 
             </div>

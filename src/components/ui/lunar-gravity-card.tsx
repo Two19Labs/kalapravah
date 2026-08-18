@@ -403,7 +403,7 @@ export default function LunarGravityCard({
   const massiveAsteroidsRef = useRef<Float32Array>(new Float32Array(75 * 4));
 
   return (
-    <div className={cn("w-full h-full min-h-[480px] sm:min-h-[560px] lg:min-h-[680px] bg-transparent rounded-none flex flex-col md:flex-row relative overflow-hidden border-none shadow-none", className)}>
+    <div className={cn("w-full h-full bg-transparent rounded-none flex flex-col md:flex-row relative overflow-hidden border-none shadow-none", className)}>
       
       {title || description ? (
         <div className="w-full md:w-[45%] flex flex-col justify-center px-6 sm:px-10 py-8 md:p-0 md:pl-12 relative z-20 pointer-events-none">
@@ -420,8 +420,8 @@ export default function LunarGravityCard({
         </div>
       ) : null}
      
-      <div className={cn("relative w-full h-full min-h-[480px] sm:min-h-[560px] lg:min-h-[680px] pointer-events-auto z-0 flex items-center justify-center bg-transparent", title || description ? "md:absolute md:right-0 md:top-0 md:w-[65%]" : "w-full")}>
-        <div className="absolute inset-0 w-full h-full">
+      <div className={cn("relative w-full h-full pointer-events-auto z-0 flex items-center justify-center bg-transparent", title || description ? "md:absolute md:right-0 md:top-0 md:w-[65%]" : "w-full")}>
+        <div className="absolute inset-0 w-full h-full touch-pan-y" style={{ touchAction: "pan-y" }}>
           <Canvas shadows camera={{ position: [0, 2.0, 8.8], fov: 45 }} dpr={[1, 2]}>
             {/* Dramatic Cinematic Studio Lighting */}
             <ambientLight intensity={0.65} />
@@ -446,9 +446,9 @@ export default function LunarGravityCard({
         </div>
 
         {/* Dynamic Hint Overlay Pill */}
-        <div className="absolute bottom-6 right-6 lg:bottom-8 lg:right-8 z-30 pointer-events-none bg-[#FFFDF9]/95 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-[#C4B9A3]/50 text-xs font-semibold tracking-wider text-[#1C1917] shadow-md flex items-center gap-2 max-w-[calc(100%-2rem)]">
-          <span className="w-2 h-2 rounded-full bg-[#C87A38] animate-pulse shrink-0" />
-          <span className="truncate uppercase text-[10px]">{hintText}</span>
+        <div className="absolute bottom-3 right-3 sm:bottom-6 sm:right-6 lg:bottom-8 lg:right-8 z-30 pointer-events-none bg-[#FFFDF9]/95 backdrop-blur-md px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-full border border-[#C4B9A3]/50 text-[10px] sm:text-xs font-semibold tracking-wider text-[#1C1917] shadow-md flex items-center gap-1.5 sm:gap-2 max-w-[calc(100%-1.5rem)]">
+          <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-[#C87A38] animate-pulse shrink-0" />
+          <span className="truncate uppercase text-[9px] sm:text-[10px]">{hintText}</span>
         </div>
       </div>
 
