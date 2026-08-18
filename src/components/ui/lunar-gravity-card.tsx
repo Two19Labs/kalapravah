@@ -11,8 +11,8 @@ const RADIUS = 2.1;
 
 const ArtCanvasMesh = ({ 
   onClick, 
-  textureUrl = "/images/madhubani_art_texture.jpg",
-  ringColor = "#D4AF37"
+  textureUrl = "/images/sphere_madhubani.jpg",
+  ringColor = "#C87A38"
 }: { 
   onClick?: () => void, 
   textureUrl?: string,
@@ -21,8 +21,19 @@ const ArtCanvasMesh = ({
   const meshRef = useRef<THREE.Mesh>(null);
   const frameRef = useRef<THREE.Mesh>(null);
 
-  // Load authentic traditional Indian folk art texture
+  // Load authentic high-res Madhubani folk art texture
   const colorMap = useTexture(textureUrl);
+
+  useMemo(() => {
+    if (colorMap) {
+      colorMap.colorSpace = THREE.SRGBColorSpace;
+      colorMap.anisotropy = 16;
+      colorMap.generateMipmaps = true;
+      colorMap.minFilter = THREE.LinearMipmapLinearFilter;
+      colorMap.magFilter = THREE.LinearFilter;
+      colorMap.needsUpdate = true;
+    }
+  }, [colorMap]);
 
   useFrame((_, delta) => {
     if (meshRef.current) meshRef.current.rotation.y += delta * 0.07;
@@ -35,25 +46,27 @@ const ArtCanvasMesh = ({
       onPointerOver={() => document.body.style.cursor = 'pointer'} 
       onPointerOut={() => document.body.style.cursor = 'auto'}
     >
-      {/* Central 3D Art Canvas Sphere */}
+      {/* Central High-Quality 3D Art Canvas Sphere */}
       <mesh ref={meshRef} castShadow receiveShadow>
-        <sphereGeometry args={[RADIUS, 64, 64]} />
-        <meshStandardMaterial 
+        <sphereGeometry args={[RADIUS, 128, 128]} />
+        <meshPhysicalMaterial 
           map={colorMap} 
-          bumpMap={colorMap} 
-          bumpScale={0.06} 
-          roughness={0.35}
-          metalness={0.15}
+          roughness={0.28}
+          metalness={0.10}
+          clearcoat={0.65}
+          clearcoatRoughness={0.12}
+          reflectivity={0.85}
         />
       </mesh>
 
-      {/* Decorative Metallic Gold Halo Bevel Ring */}
+      {/* Decorative Metallic Ochre-Gold Halo Bevel Ring */}
       <mesh ref={frameRef} rotation={[Math.PI / 4, Math.PI / 6, 0]}>
-        <torusGeometry args={[RADIUS + 0.16, 0.04, 16, 100]} />
-        <meshStandardMaterial 
+        <torusGeometry args={[RADIUS + 0.16, 0.04, 32, 128]} />
+        <meshPhysicalMaterial 
           color={ringColor} 
-          roughness={0.2}
-          metalness={0.88}
+          roughness={0.18}
+          metalness={0.92}
+          clearcoat={0.4}
         />
       </mesh>
     </group>
@@ -297,7 +310,7 @@ const generateAsteroids = (count: number) => {
 const AsteroidBelt = ({ ringState, massiveAsteroidsRef }: { ringState: 'hidden' | 'animating' | 'visible', massiveAsteroidsRef: React.MutableRefObject<Float32Array> }) => {
   const meshRef = useRef<THREE.InstancedMesh>(null);
 
-  const colorMap = useTexture('/images/madhubani_art_texture.jpg');
+  const colorMap = useTexture('/images/sphere_madhubani.jpg');
 
   const count = 75; 
   const dummy = useMemo(() => new THREE.Object3D(), []);
@@ -380,8 +393,8 @@ export interface LunarGravityCardProps {
 
 export default function LunarGravityCard({ 
   className,
-  artTextureUrl = "/images/madhubani_art_texture.jpg",
-  ringColor = "#D4AF37",
+  artTextureUrl = "/images/sphere_madhubani.jpg",
+  ringColor = "#C87A38",
   hintText = "Click 3D orb to ignite cosmic minerals",
   title,
   description
