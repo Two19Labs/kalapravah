@@ -1,30 +1,9 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { ARTWORKS } from '../data/artworks';
 
 export default function GallerySection({ onSelectArtwork }) {
-  const galleryArtworks = [
-    {
-      id: 1,
-      title: "The Still Mind",
-      medium: "Ink, ochre & gold wash on handmade paper",
-      image: "/images/still_mind.jpg",
-      fallbackImage: "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-      id: 2,
-      title: "Monsoon Court",
-      medium: "Kachni line work on handmade paper",
-      image: "/images/monsoon_court.jpg",
-      fallbackImage: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-      id: 3,
-      title: "Raas",
-      medium: "Natural pigment on handmade paper",
-      image: "/images/raas.jpg",
-      fallbackImage: "https://images.unsplash.com/photo-1582562124811-c09040d0a901?auto=format&fit=crop&w=800&q=80"
-    }
-  ];
+  const galleryArtworks = ARTWORKS.slice(0, 3);
 
   return (
     <section id="gallery" className="py-20 md:py-28 bg-[#F8F5EE] relative overflow-hidden border-t border-[#E7E0D2]">

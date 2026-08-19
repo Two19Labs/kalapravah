@@ -97,7 +97,7 @@ export default function JournalSection({ onOpenCommission, onOpenArticlePage }) 
           <div className="lg:col-span-7 space-y-4">
             <div className="flex items-center gap-1.5 text-xs font-semibold tracking-widest uppercase text-[#78716C] text-left">
               <BookOpen className="w-3.5 h-3.5 text-[#C87A38]" />
-              <span>ARTICLES & RESEARCH ({BLOG_ARTICLES.length})</span>
+              <span>BLOG ({BLOG_ARTICLES.length})</span>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">

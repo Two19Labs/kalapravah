@@ -83,7 +83,7 @@ export default function ArtworkLightbox({ artwork, onClose, onOpenCommission }) 
             <div className="space-y-4">
               <div>
                 <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#B94A2D] block">
-                  {artwork.style || "Madhubani Folk Art"}
+                  {artwork.styleCategory || artwork.style || "Madhubani Folk Art"}
                 </span>
                 <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#1C1917] mt-1">
                   {artwork.title}
@@ -93,29 +93,63 @@ export default function ArtworkLightbox({ artwork, onClose, onOpenCommission }) 
                 </p>
               </div>
 
+              {/* Artwork Specifications & Details Box */}
+              <div className="bg-[#FAF8F3] border border-[#E7E0D2] rounded-md p-3 sm:p-4 text-xs space-y-2 shadow-sm">
+                <div className="flex justify-between py-1 border-b border-[#E7E0D2]/60">
+                  <span className="text-[#78716C]">Year</span>
+                  <span className="font-semibold text-[#1C1917]">{artwork.year || "2026"}</span>
+                </div>
+                <div className="flex justify-between py-1 border-b border-[#E7E0D2]/60">
+                  <span className="text-[#78716C]">Style</span>
+                  <span className="font-semibold text-[#1C1917]">{artwork.styleCategory || artwork.style || "Madhubani Folk Art"}</span>
+                </div>
+                {artwork.dimensions && (
+                  <div className="flex justify-between py-1 border-b border-[#E7E0D2]/60">
+                    <span className="text-[#78716C]">Dimensions</span>
+                    <span className="font-semibold text-[#1C1917]">{artwork.dimensions}</span>
+                  </div>
+                )}
+                {artwork.medium && (
+                  <div className="flex justify-between py-1 border-b border-[#E7E0D2]/60">
+                    <span className="text-[#78716C]">Medium</span>
+                    <span className="font-semibold text-[#1C1917] text-right max-w-[60%]">{artwork.medium}</span>
+                  </div>
+                )}
+                {artwork.technique && (
+                  <div className="flex justify-between py-1 border-b border-[#E7E0D2]/60">
+                    <span className="text-[#78716C]">Technique</span>
+                    <span className="font-semibold text-[#1C1917] text-right max-w-[60%]">{artwork.technique}</span>
+                  </div>
+                )}
+                {artwork.pigments && (
+                  <div className="flex justify-between py-1 border-b border-[#E7E0D2]/60">
+                    <span className="text-[#78716C]">Pigments & Ink</span>
+                    <span className="font-semibold text-[#1C1917] text-right max-w-[60%]">{artwork.pigments}</span>
+                  </div>
+                )}
+                {artwork.motifs && artwork.motifs.length > 0 && (
+                  <div className="flex justify-between py-1 border-b border-[#E7E0D2]/60">
+                    <span className="text-[#78716C]">Motifs</span>
+                    <span className="font-semibold text-[#1C1917] text-right max-w-[60%]">{artwork.motifs.join(', ')}</span>
+                  </div>
+                )}
+                <div className="flex justify-between items-center pt-1 text-[11px]">
+                  <span className="text-[#78716C]">Authenticity</span>
+                  <span className="font-semibold text-[#3E5A47] flex items-center gap-1.5">
+                    <img src="/images/logo-emblem.png" alt="Kalapravah Seal" className="w-3.5 h-3.5 object-contain" />
+                    <CheckCircle className="w-3 h-3 text-[#3E5A47]" /> Kalapravah Original • Signed by Rashmi Dhar
+                  </span>
+                </div>
+              </div>
+
               {/* Story / Description */}
               <div className="space-y-2 border-t border-b border-[#E7E0D2] py-3.5 sm:py-4">
                 <span className="text-[11px] sm:text-xs font-bold uppercase tracking-widest text-[#1C1917] flex items-center gap-1.5">
                   <Feather className="w-3.5 h-3.5 text-[#B94A2D]" /> Cultural Story & Backstory
                 </span>
                 <p className="text-xs sm:text-sm text-[#44403C] leading-relaxed">
-                  {artwork.description || artwork.medium}
+                  {artwork.fullStory || artwork.description || artwork.medium}
                 </p>
-              </div>
-
-              {/* Technical Specifications */}
-              <div className="space-y-2 text-xs">
-                <div className="flex justify-between py-1 border-b border-[#E7E0D2]/50">
-                  <span className="text-[#78716C]">Medium</span>
-                  <span className="font-medium text-[#1C1917] text-right">{artwork.medium}</span>
-                </div>
-                <div className="flex justify-between items-center py-1.5 border-b border-[#E7E0D2]/50">
-                  <span className="text-[#78716C]">Authenticity</span>
-                  <span className="font-medium text-[#3E5A47] flex items-center gap-1.5">
-                    <img src="/images/logo-emblem.png" alt="Kalapravah Seal" className="w-4 h-4 object-contain" />
-                    <CheckCircle className="w-3 h-3 text-[#3E5A47]" /> Kalapravah Original • Signed by Rashmi Dhar
-                  </span>
-                </div>
               </div>
             </div>
 
