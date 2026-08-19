@@ -2,7 +2,7 @@
 
 import React, { useRef, useMemo, Suspense, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls, useTexture, Environment } from "@react-three/drei";
+import { OrbitControls, useTexture, Environment, Html } from "@react-three/drei";
 import * as THREE from "three";
 import { cn } from "@/lib/utils";
 
@@ -12,11 +12,13 @@ const RADIUS = 2.1;
 const ArtCanvasMesh = ({ 
   onClick, 
   textureUrl = "/images/sphere_madhubani.jpg",
-  ringColor = "#C87A38"
+  ringColor = "#C87A38",
+  ringState = "hidden"
 }: { 
   onClick?: () => void, 
   textureUrl?: string,
-  ringColor?: string
+  ringColor?: string,
+  ringState?: 'hidden' | 'animating' | 'visible'
 }) => {
   const meshRef = useRef<THREE.Mesh>(null);
   const frameRef = useRef<THREE.Mesh>(null);
@@ -436,6 +438,7 @@ export default function LunarGravityCard({
                 <ArtCanvasMesh 
                   textureUrl={artTextureUrl} 
                   ringColor={ringColor}
+                  ringState={ringState}
                   onClick={() => { if(ringState === 'hidden') setRingState('animating') }} 
                 />
                 <ParticleRing ringState={ringState} massiveAsteroidsRef={massiveAsteroidsRef} />

@@ -75,16 +75,29 @@ export default function Hero({ onExploreArtworks }) {
           {/* Right Column: Clean Floating 3D Art Gallery Showcase */}
           <div className="lg:col-span-6 relative w-full flex flex-col items-center justify-center pt-2 sm:pt-4 lg:pt-0">
             
-            {/* Subtle Gallery Pedestal / Soft Circle Vignette */}
-            <div className="relative w-full max-w-[290px] xs:max-w-[340px] sm:max-w-[480px] lg:max-w-[580px] aspect-square rounded-full bg-[#FAF8F3] border border-[#E7E0D2]/50 shadow-[0_20px_50px_rgba(28,25,23,0.04)] overflow-hidden flex items-center justify-center mx-auto">
+            {/* Wrapper around Circle + Outside Tag on Right */}
+            <div className="relative w-full max-w-[290px] xs:max-w-[340px] sm:max-w-[480px] lg:max-w-[580px] aspect-square mx-auto">
               
-              <LunarGravityCard 
-                key={MADHUBANI_ART.id}
-                artTextureUrl={MADHUBANI_ART.textureUrl}
-                ringColor={MADHUBANI_ART.ringColor}
-                hintText=""
-                className="w-full h-full min-h-0 sm:min-h-0 lg:min-h-0"
-              />
+              {/* Subtle Gallery Pedestal / Soft Circle Vignette */}
+              <div className="w-full h-full rounded-full bg-[#FAF8F3] border border-[#E7E0D2]/50 shadow-[0_20px_50px_rgba(28,25,23,0.04)] overflow-hidden flex items-center justify-center">
+                <LunarGravityCard 
+                  key={MADHUBANI_ART.id}
+                  artTextureUrl={MADHUBANI_ART.textureUrl}
+                  ringColor={MADHUBANI_ART.ringColor}
+                  hintText=""
+                  className="w-full h-full min-h-0 sm:min-h-0 lg:min-h-0"
+                />
+              </div>
+
+              {/* Minimal "CLICK SPHERE" prompt tag outside the circular pedestal on the right */}
+              <div className="absolute bottom-6 -right-2 xs:bottom-8 xs:-right-4 sm:bottom-12 sm:-right-6 lg:bottom-14 lg:-right-8 z-20 pointer-events-none">
+                <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#FFFDF9] border border-[#C87A38]/50 shadow-md shadow-[#1C1917]/5 backdrop-blur-md">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#C87A38] animate-pulse shrink-0" />
+                  <span className="text-[9px] sm:text-[10px] font-bold tracking-widest uppercase text-[#1C1917]">
+                    click sphere
+                  </span>
+                </div>
+              </div>
 
             </div>
 
