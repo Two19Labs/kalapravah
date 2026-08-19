@@ -1,0 +1,6 @@
+# Kalapravah Fine Art Gallery Robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap Location for Googlebot, Bingbot, and AI Search Crawlers
+Sitemap: https://kalapravah.art/sitemap.xml

@@ -27,7 +27,7 @@ export default function Navbar({ activeSection, setActiveSection }) {
   const navItems = [
     { id: 'hero', label: 'HOME' },
     { id: 'collections', label: 'ARTWORKS' },
-    { id: 'journal', label: 'JOURNAL' },
+    { id: 'journal', label: 'ABOUT' },
     { id: 'contact', label: 'CONTACT' },
   ];
 

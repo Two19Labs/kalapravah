@@ -8,7 +8,7 @@ export default function AboutSection() {
     },
     {
       title: "Workshops & teaching",
-      description: "Sessions for schools, institutions and enthusiasts — learning kachni line, bharni fill and the stories behind them."
+      description: "Sessions for schools, institutions and enthusiasts: learning kachni line, bharni fill and the stories behind them."
     },
     {
       title: "Commissions",
@@ -31,7 +31,7 @@ export default function AboutSection() {
           </h2>
 
           <p className="text-base sm:text-lg text-[#5C5652] font-normal leading-relaxed">
-            Kalapravah is more than an art initiative — it is a bridge between the past and the present. In a world thriving on the digital and the disposable, there is something profoundly enriching about engaging with art crafted by hand. Each piece holds a story, the collective memory and tradition of our ancestors. Our work is to keep those stories alive, and to make them reachable by everyone.
+            Kalapravah is more than an art initiative, it is a bridge between the past and the present. In a world thriving on the digital and the disposable, there is something profoundly enriching about engaging with art crafted by hand. Each piece holds a story, the collective memory and tradition of our ancestors. Our work is to keep those stories alive, and to make them reachable by everyone.
           </p>
         </div>
 

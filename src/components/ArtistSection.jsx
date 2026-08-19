@@ -14,7 +14,7 @@ export default function ArtistSection({ onContactStudio }) {
                 <div className="relative aspect-[3/4] overflow-hidden rounded-sm bg-[#FAF8F3]">
                   <img
                     src="/images/rashmi_dhar.jpg"
-                    alt="Rashmi Dhar — Artist & Founder of Kalapravah"
+                    alt="Rashmi Dhar, Artist and Founder of Kalapravah"
                     className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
                   />
                 </div>
@@ -29,7 +29,7 @@ export default function ArtistSection({ onContactStudio }) {
             </span>
 
             <h2 className="font-serif text-3xl sm:text-5xl font-bold tracking-tight text-[#1C1917] leading-[1.12]">
-              Rashmi Dhar — a professional turned artist
+              Rashmi Dhar: a professional turned artist
             </h2>
 
             <p className="text-base sm:text-lg text-[#5C5652] font-normal leading-relaxed">

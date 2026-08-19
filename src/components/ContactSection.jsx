@@ -158,7 +158,7 @@ export default function ContactSection() {
                   <Clock className="w-4 h-4 text-[#C87A38] shrink-0 mt-0.5" />
                   <div>
                     <span className="font-semibold text-[#1C1917] block">Studio Hours</span>
-                    <span className="text-[#5C5652]">Monday – Saturday, 10:00 AM – 7:00 PM IST</span>
+                    <span className="text-[#5C5652]">Monday to Saturday, 10:00 AM to 7:00 PM IST</span>
                   </div>
                 </div>
 
