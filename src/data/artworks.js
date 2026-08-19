@@ -68,7 +68,7 @@ export const ARTWORKS = [
     title: "Sonepur Wheel",
     styleCategory: "Godna Tattoo Line",
     medium: "Ink & yellow wash on handmade paper",
-    dimensions: "22 × 22 inches (Square Mandala)",
+    dimensions: "22 × 22 inches",
     year: "2025",
     price: "Inquire for price",
     image: "/images/sonepur_wheel.jpg",
