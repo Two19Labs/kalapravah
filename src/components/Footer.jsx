@@ -62,31 +62,7 @@ export default function Footer({ onNavigate }) {
   return (
     <footer className="w-full text-[#1C1917] overflow-hidden">
 
-      {/* Traditional Marquee Divider Bar */}
-      <div className="bg-[#261E1A] text-[#C87A38] py-2 overflow-hidden border-t border-b border-[#3D302A] select-none">
-        <div className="animate-marquee text-[10px] font-mono tracking-[0.25em] uppercase opacity-90 whitespace-nowrap">
-          <div className="flex items-center gap-6 pr-6">
-            <span>❖ MITHILA HERITAGE</span>
-            <span>◆</span>
-            <span>100% HAND PAINTED</span>
-            <span>◆</span>
-            <span>RASHMI DHAR ARTWORKS</span>
-            <span>◆</span>
-            <span>TRADITIONAL MOTIFS</span>
-            <span>◆</span>
-          </div>
-          <div className="flex items-center gap-6 pr-6">
-            <span>❖ MITHILA HERITAGE</span>
-            <span>◆</span>
-            <span>100% HAND PAINTED</span>
-            <span>◆</span>
-            <span>RASHMI DHAR ARTWORKS</span>
-            <span>◆</span>
-            <span>TRADITIONAL MOTIFS</span>
-            <span>◆</span>
-          </div>
-        </div>
-      </div>
+
 
       {/* FOOTER & WHATSAPP QUICK INQUIRY */}
       <section id="contact" className="bg-[#1C1613] text-[#EBE5DF] py-10 sm:py-12 px-4 sm:px-6 lg:px-8">
