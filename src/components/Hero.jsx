@@ -58,12 +58,13 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
       <div className="absolute bottom-10 left-0 w-[450px] h-[450px] bg-[#B94A2D]/6 rounded-full blur-3xl pointer-events-none" />
 
       {/* Watermarked Mithila Mandala Motif Overlay */}
-      <div className="absolute top-10 left-4 w-80 h-80 opacity-[0.035] pointer-events-none text-[#C87A38]">
-        <svg viewBox="0 0 200 200" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <circle cx="100" cy="100" r="80" strokeDasharray="4 4" />
-          <circle cx="100" cy="100" r="60" />
-          <circle cx="100" cy="100" r="40" strokeDasharray="6 6" />
-          <path d="M100 20 L100 180 M20 100 L180 100 M43 43 L157 157 M157 43 L43 157" />
+      <div className="absolute top-10 -left-12 w-[420px] h-[420px] opacity-[0.14] pointer-events-none text-[#C87A38]">
+        <svg viewBox="0 0 200 200" fill="none" stroke="currentColor" strokeWidth="1.8">
+          <circle cx="100" cy="100" r="85" strokeDasharray="5 5" />
+          <circle cx="100" cy="100" r="65" />
+          <circle cx="100" cy="100" r="45" strokeDasharray="4 4" />
+          <circle cx="100" cy="100" r="25" />
+          <path d="M100 15 L100 185 M15 100 L185 100 M40 40 L160 160 M160 40 L40 160" />
         </svg>
       </div>
 

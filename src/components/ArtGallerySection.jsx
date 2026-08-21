@@ -109,6 +109,15 @@ export default function ArtGallerySection({ onSelectArtwork }) {
       <div className="absolute top-1/4 right-0 w-96 h-96 bg-[#C87A38]/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#9A3412]/5 rounded-full blur-3xl pointer-events-none" />
 
+      {/* Watermarked Mithila Art Motif Overlay */}
+      <div className="absolute top-10 left-6 w-[400px] h-[400px] opacity-[0.14] pointer-events-none text-[#C87A38]">
+        <svg viewBox="0 0 200 200" fill="none" stroke="currentColor" strokeWidth="1.8">
+          <polygon points="100,15 125,75 185,100 125,125 100,185 75,125 15,100 75,75" strokeDasharray="4 4" />
+          <circle cx="100" cy="100" r="45" />
+          <circle cx="100" cy="100" r="25" strokeDasharray="3 3" />
+        </svg>
+      </div>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-20 sm:space-y-28">
         
         {/* Gallery Section Banner Header */}
