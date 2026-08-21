@@ -130,16 +130,14 @@ export default function ArtAndArtistSection({ onContactArtist }) {
           </div>
 
           {/* Artist Details & Photo Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
             
             {/* 📍 ARTIST PHOTO */}
-            <div className="lg:col-span-5 relative">
-              <div className="deckled-frame bg-[#FFFDF9] border border-[#E7E0D2] p-5 rounded-xl shadow-xl space-y-4">
-                <span className="text-[10px] font-bold tracking-[0.2em] text-[#C87A38] uppercase block text-center">
-                  ARTIST RASHMI DHAR
-                </span>
+            <div className="lg:col-span-5 relative flex flex-col">
+              <div className="deckled-frame bg-[#FFFDF9] border border-[#E7E0D2] p-5 rounded-xl shadow-xl space-y-4 h-full flex flex-col justify-between">
 
-                <div className="relative aspect-[3/4] rounded-lg overflow-hidden border border-[#E7E0D2] bg-[#FAF8F3] shadow-inner group">
+
+                <div className="relative flex-1 min-h-[380px] sm:min-h-[440px] rounded-lg overflow-hidden border border-[#E7E0D2] bg-[#FAF8F3] shadow-inner group">
                   <img
                     src="/images/rashmi_dhar.jpg"
                     alt="Rashmi Dhar: Artist & Founder of Kalapravah"
@@ -186,17 +184,15 @@ export default function ArtAndArtistSection({ onContactArtist }) {
                   To honor the integrity of this ancient craft, I sought out direct mentorship from core practitioners and award-winning master artists. This rigorous training grounded my work in authentic techniques while allowing me to develop a distinct, contemporary voice.
                 </p>
 
-                <div className="p-4 rounded-lg bg-[#FAF8F3] border border-[#E7E0D2] text-xs sm:text-sm text-[#1C1917] font-semibold flex items-center gap-3">
+                <div className="py-3 px-1 text-xs sm:text-sm text-[#1C1917] font-semibold flex items-center gap-3 border-t border-b border-[#E7E0D2]">
                   <Compass className="w-5 h-5 text-[#C87A38] shrink-0" />
                   <span>Believing that art inspired by nature and spiritual customs holds a unique, grounding power for the modern home.</span>
                 </div>
 
               </div>
 
-              {/* 🌟 CLIENT PERSONAL JOURNEY STATEMENT */}
-              <div className="bg-[#FFFDF9] border border-[#C87A38]/40 rounded-xl p-6 sm:p-8 shadow-md relative overflow-hidden space-y-4">
-                <div className="absolute top-0 left-0 w-2 h-full bg-[#C87A38]" />
-                
+              {/* 🌟 UN-BOXED EDITORIAL PULL-QUOTE JOURNEY STATEMENT */}
+              <div className="relative pl-6 sm:pl-8 border-l-2 border-[#C87A38] space-y-4 py-2 my-2">
                 <div className="flex items-center gap-2 text-xs sm:text-sm font-bold text-[#C87A38] uppercase tracking-widest">
                   <Quote className="w-4 h-4 fill-current shrink-0" />
                   <span>RASHMI DHAR: HER ARTISTIC JOURNEY</span>

@@ -5,6 +5,7 @@ import ArtAndArtistSection from './components/ArtAndArtistSection';
 import ArtGallerySection from './components/ArtGallerySection';
 import Footer from './components/Footer';
 import ArtworkLightbox from './components/ArtworkLightbox';
+import MadhubaniFolkBackground from './components/MadhubaniFolkBackground';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -49,39 +50,8 @@ export default function App() {
   return (
     <div className="min-h-screen bg-transparent font-sans selection:bg-[#C87A38] selection:text-white text-[#44403C] relative">
       
-      {/* 📌 FIXED BACKGROUND WATERMARKED MADHUBANI MOTIFS (FROZEN IN PLACE WHILE SCROLLING) */}
-      <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden select-none">
-        
-        {/* Top-Left Mithila Mandala */}
-        <div className="absolute -top-16 -left-16 w-[520px] h-[520px] opacity-[0.16] text-[#C87A38]">
-          <svg viewBox="0 0 200 200" fill="none" stroke="currentColor" strokeWidth="1.8">
-            <circle cx="100" cy="100" r="85" strokeDasharray="5 5" />
-            <circle cx="100" cy="100" r="65" />
-            <circle cx="100" cy="100" r="45" strokeDasharray="4 4" />
-            <circle cx="100" cy="100" r="25" />
-            <path d="M100 15 L100 185 M15 100 L185 100 M40 40 L160 160 M160 40 L40 160" />
-          </svg>
-        </div>
-
-        {/* Bottom-Right Sacred Sun & Lotus */}
-        <div className="absolute -bottom-20 -right-20 w-[550px] h-[550px] opacity-[0.16] text-[#B94A2D]">
-          <svg viewBox="0 0 200 200" fill="none" stroke="currentColor" strokeWidth="1.8">
-            <circle cx="100" cy="100" r="90" strokeDasharray="4 4" />
-            <circle cx="100" cy="100" r="70" />
-            <path d="M100 10 Q140 100 100 190 Q60 100 100 10" strokeWidth="2" />
-            <path d="M10 100 Q100 140 190 100 Q100 60 10 100" strokeWidth="2" />
-          </svg>
-        </div>
-
-        {/* Middle-Left Starburst Geometry */}
-        <div className="absolute top-1/2 -left-24 -translate-y-1/2 w-[420px] h-[420px] opacity-[0.12] text-[#D97706]">
-          <svg viewBox="0 0 200 200" fill="none" stroke="currentColor" strokeWidth="1.8">
-            <polygon points="100,15 125,75 185,100 125,125 100,185 75,125 15,100 75,75" strokeDasharray="4 4" />
-            <circle cx="100" cy="100" r="45" />
-          </svg>
-        </div>
-
-      </div>
+      {/* 📌 AUTHENTIC MADHUBANI FOLKLORE FIXED BACKGROUND (SURYA, PEACOCK, MATSYA, KALPAVRIKSHA) */}
+      <MadhubaniFolkBackground />
       
       {/* Index Navigation Bar Header */}
       <Navbar

@@ -338,7 +338,7 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
                   
                   {/* Circular Background Container with floating "Click" tag */}
                   <div className="relative">
-                    <div className="w-[220px] h-[220px] sm:w-[260px] sm:h-[260px] lg:w-[280px] lg:h-[280px] rounded-full bg-[#FFFDF9] border-2 border-[#C87A38]/30 shadow-2xl relative overflow-hidden flex items-center justify-center">
+                    <div className="w-[260px] h-[260px] sm:w-[320px] sm:h-[320px] lg:w-[340px] lg:h-[340px] rounded-full bg-[#FFFDF9] border-2 border-[#C87A38]/30 shadow-2xl relative overflow-hidden flex items-center justify-center">
                       <LunarGravityCard
                         className="w-full h-full"
                         artTextureUrl="/images/sphere_madhubani.jpg"
