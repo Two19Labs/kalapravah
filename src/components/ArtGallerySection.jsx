@@ -228,7 +228,7 @@ export default function ArtGallerySection({ onSelectArtwork }) {
                       {/* 📍 BRIEF 15-20 WORDS ABOUT EACH ART WORK */}
                       <div className="pt-2 border-t border-[#E7E0D2]/60">
                         <span className="text-[9.5px] font-bold tracking-widest text-[#C87A38] uppercase block mb-1">
-                          📍 ARTWORK BRIEF:
+                          ARTWORK BRIEF:
                         </span>
                         <p className="text-xs sm:text-[13px] text-[#292524] font-medium leading-relaxed bg-[#FAF8F3] p-2.5 rounded border border-[#E7E0D2]/80">
                           {artwork.brief}

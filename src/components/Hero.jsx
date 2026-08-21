@@ -216,41 +216,59 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
             <div className="w-16 h-[2px] bg-[#C87A38] mx-auto rounded-full mt-2" />
           </div>
 
-          {/* 3 Heritage Pillars Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto text-left">
+          {/* 3 Non-Boxy Editorial Craft Pillars */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 max-w-5xl mx-auto text-left pt-2">
             
-            <div className="bg-[#FFFDF9] border border-[#E7E0D2] rounded-xl p-6 shadow-sm space-y-3 hover:border-[#C87A38] transition-all">
-              <div className="w-10 h-10 rounded-full bg-[#C87A38]/10 flex items-center justify-center text-[#C87A38]">
-                <Feather className="w-5 h-5" />
+            {/* Pillar 1 */}
+            <div className="space-y-3.5 border-t-2 border-[#C87A38]/30 pt-5">
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 rounded-full bg-[#C87A38]/10 flex items-center justify-center text-[#C87A38] shrink-0">
+                  <Feather className="w-4 h-4" />
+                </div>
+                <span className="text-[10px] font-bold tracking-[0.2em] text-[#C87A38] uppercase">
+                  PIGMENTS & PAPER
+                </span>
               </div>
-              <h3 className="font-serif text-lg font-bold text-[#1C1917]">
+              <h3 className="font-serif text-xl font-bold text-[#1C1917]">
                 Archival Materials
               </h3>
-              <p className="text-xs text-[#5C5652] leading-relaxed">
+              <p className="text-xs sm:text-sm text-[#5C5652] leading-relaxed font-light">
                 Painted on handmade cotton fiber paper using natural organic pigments, indigo, turmeric washes, and charcoal soot ink for generations of longevity.
               </p>
             </div>
 
-            <div className="bg-[#FFFDF9] border border-[#E7E0D2] rounded-xl p-6 shadow-sm space-y-3 hover:border-[#C87A38] transition-all">
-              <div className="w-10 h-10 rounded-full bg-[#B94A2D]/10 flex items-center justify-center text-[#B94A2D]">
-                <Layers className="w-5 h-5" />
+            {/* Pillar 2 */}
+            <div className="space-y-3.5 border-t-2 border-[#B94A2D]/30 pt-5">
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 rounded-full bg-[#B94A2D]/10 flex items-center justify-center text-[#B94A2D] shrink-0">
+                  <Layers className="w-4 h-4" />
+                </div>
+                <span className="text-[10px] font-bold tracking-[0.2em] text-[#B94A2D] uppercase">
+                  TRADITIONAL STYLES
+                </span>
               </div>
-              <h3 className="font-serif text-lg font-bold text-[#1C1917]">
-                Authentic Styles
+              <h3 className="font-serif text-xl font-bold text-[#1C1917]">
+                Authentic Lineage
               </h3>
-              <p className="text-xs text-[#5C5652] leading-relaxed">
+              <p className="text-xs sm:text-sm text-[#5C5652] leading-relaxed font-light">
                 Mastery across traditional Mithila categories including vibrant <strong>Bharni</strong> color fills, fine line <strong>Kachni</strong> hatching, and sacred <strong>Godna</strong> motifs.
               </p>
             </div>
 
-            <div className="bg-[#FFFDF9] border border-[#E7E0D2] rounded-xl p-6 shadow-sm space-y-3 hover:border-[#C87A38] transition-all">
-              <div className="w-10 h-10 rounded-full bg-[#D97706]/10 flex items-center justify-center text-[#D97706]">
-                <ShieldCheck className="w-5 h-5" />
+            {/* Pillar 3 */}
+            <div className="space-y-3.5 border-t-2 border-[#D97706]/30 pt-5">
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 rounded-full bg-[#D97706]/10 flex items-center justify-center text-[#D97706] shrink-0">
+                  <ShieldCheck className="w-4 h-4" />
+                </div>
+                <span className="text-[10px] font-bold tracking-[0.2em] text-[#D97706] uppercase">
+                  DIRECT CREATOR
+                </span>
               </div>
-              <h3 className="font-serif text-lg font-bold text-[#1C1917]">
-                Direct Artist Studio
+              <h3 className="font-serif text-xl font-bold text-[#1C1917]">
+                Artist Studio
               </h3>
-              <p className="text-xs text-[#5C5652] leading-relaxed">
+              <p className="text-xs sm:text-sm text-[#5C5652] leading-relaxed font-light">
                 Created directly by artist Rashmi Dhar in New Delhi. Each artwork includes a hand-signed certificate of authenticity and story document.
               </p>
             </div>
@@ -275,11 +293,10 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
           {/* Narrative Flow with Artwork in Center */}
           <div className="max-w-4xl mx-auto space-y-10">
             
-            {/* Paragraph 1 */}
-            <div className="bg-[#FFFDF9] border border-[#E7E0D2] rounded-xl p-6 sm:p-10 shadow-sm relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-2.5 h-full bg-[#C87A38]" />
-              <p className="text-base sm:text-xl text-[#1C1917] font-serif leading-relaxed text-justify sm:text-left font-normal">
-                In an age where mass production and digital art dominate the landscape, the intrinsic value of handmade art seems to take a backseat. Kalapravah as an art venture is on a mission to change that narrative. By promoting handmade art, Kalapravah connects individuals to their cultural roots .
+            {/* Elegant Un-Boxed Editorial About Introduction */}
+            <div className="max-w-3xl mx-auto text-center space-y-4 px-4 pt-2 pb-2">
+              <p className="font-serif text-base sm:text-xl text-[#292524] leading-relaxed font-normal max-w-2xl mx-auto">
+                In an age where mass production and digital art dominate the landscape, the intrinsic value of handmade art seems to take a backseat. Kalapravah is on a mission to change that narrative by connecting individuals back to their cultural roots through authentic handmade Mithila fine art.
               </p>
             </div>
 
@@ -290,7 +307,7 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
                 {/* LEFT COLUMN: FEATURED HERITAGE ARTWORK */}
                 <div className="deckled-frame bg-[#FFFDF9] border-2 border-[#C87A38]/40 p-5 sm:p-7 rounded-2xl shadow-xl text-center space-y-4 flex flex-col justify-between">
                   <span className="text-[11px] font-bold tracking-[0.25em] text-[#C87A38] uppercase block">
-                    📍 FEATURED HERITAGE ARTWORK
+                    FEATURED HERITAGE ARTWORK
                   </span>
 
                   <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-[#E7E0D2] bg-[#FAF8F3] group shadow-inner">

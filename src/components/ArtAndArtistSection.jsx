@@ -1,5 +1,5 @@
 import React from 'react';
-import { Palette, UserCheck, Sparkles, HeartHandshake, ShieldCheck, Quote, Mountain, GraduationCap, Award, Compass } from 'lucide-react';
+import { Palette, UserCheck, Sparkles, HeartHandshake, ShieldCheck, Quote, Mountain, GraduationCap, Award, Compass, MessageSquare } from 'lucide-react';
 
 export default function ArtAndArtistSection({ onContactArtist }) {
   return (
@@ -29,7 +29,7 @@ export default function ArtAndArtistSection({ onContactArtist }) {
         {/* ========================================================================= */}
         {/* SUBSECTION 1: ABOUT MITHILA ART & 📍 ARTWORK UNDER KALAPRAVAH            */}
         {/* ========================================================================= */}
-        <div className="space-y-12">
+        <div className="space-y-5 sm:space-y-6">
           
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b border-[#E7E0D2] pb-4">
             <div>
@@ -79,7 +79,7 @@ export default function ArtAndArtistSection({ onContactArtist }) {
             <div className="lg:col-span-5 relative">
               <div className="deckled-frame bg-[#FFFDF9] border border-[#E7E0D2] p-5 rounded-xl shadow-xl space-y-3 text-center">
                 <span className="text-[10px] font-bold tracking-[0.2em] text-[#C87A38] uppercase block">
-                  📍 KALAPRAVAH HERITAGE ARTWORK
+                  KALAPRAVAH HERITAGE ARTWORK
                 </span>
 
                 <div className="relative aspect-[4/3] rounded-lg overflow-hidden border border-[#E7E0D2] bg-[#FAF8F3] group">
@@ -112,7 +112,7 @@ export default function ArtAndArtistSection({ onContactArtist }) {
         {/* ========================================================================= */}
         {/* SUBSECTION 2: ABOUT US (FROM THE MOUNTAINS TO THE CANVAS)                */}
         {/* ========================================================================= */}
-        <div className="pt-12 border-t border-[#E7E0D2] space-y-12">
+        <div className="pt-10 border-t border-[#E7E0D2] space-y-5 sm:space-y-6">
           
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b border-[#E7E0D2] pb-4">
             <div>
@@ -136,7 +136,7 @@ export default function ArtAndArtistSection({ onContactArtist }) {
             <div className="lg:col-span-5 relative">
               <div className="deckled-frame bg-[#FFFDF9] border border-[#E7E0D2] p-5 rounded-xl shadow-xl space-y-4">
                 <span className="text-[10px] font-bold tracking-[0.2em] text-[#C87A38] uppercase block text-center">
-                  📍 ARTIST RASHMI DHAR
+                  ARTIST RASHMI DHAR
                 </span>
 
                 <div className="relative aspect-[3/4] rounded-lg overflow-hidden border border-[#E7E0D2] bg-[#FAF8F3] shadow-inner group">
@@ -152,20 +152,17 @@ export default function ArtAndArtistSection({ onContactArtist }) {
                   </div>
                 </div>
 
-                {/* Milestone Chips */}
-                <div className="space-y-2 text-xs text-[#5C5652] text-left pt-2 border-t border-[#E7E0D2]">
-                  <div className="flex items-center gap-2">
-                    <Mountain className="w-4 h-4 text-[#C87A38]" />
-                    <span>Roots: Srinagar, Jammu & Kashmir</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <GraduationCap className="w-4 h-4 text-[#C87A38]" />
-                    <span>Engineering Graduate: Nagpur University</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Award className="w-4 h-4 text-[#C87A38]" />
-                    <span>2020 Transition to Professional Folk Artist</span>
-                  </div>
+                {/* WhatsApp Direct Chat Button */}
+                <div className="pt-3 border-t border-[#E7E0D2]">
+                  <a
+                    href="https://wa.me/919971399395?text=Hello%20Rashmi%2C%20I%20would%20like%20to%20chat%20and%20inquire%20about%20your%20artworks."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full flex items-center justify-center gap-2 py-3 px-3.5 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-[11px] sm:text-xs tracking-wider uppercase transition-all shadow-md hover:shadow-lg active:scale-95 text-center leading-snug"
+                  >
+                    <MessageSquare className="w-4 h-4 fill-current shrink-0" />
+                    <span>Chat or inquiries about art? Let's talk!</span>
+                  </a>
                 </div>
 
               </div>
@@ -197,19 +194,19 @@ export default function ArtAndArtistSection({ onContactArtist }) {
               </div>
 
               {/* 🌟 CLIENT PERSONAL JOURNEY STATEMENT */}
-              <div className="bg-[#FFFDF9] border border-[#C87A38]/40 rounded-xl p-6 sm:p-8 shadow-md relative overflow-hidden space-y-3">
+              <div className="bg-[#FFFDF9] border border-[#C87A38]/40 rounded-xl p-6 sm:p-8 shadow-md relative overflow-hidden space-y-4">
                 <div className="absolute top-0 left-0 w-2 h-full bg-[#C87A38]" />
                 
-                <div className="flex items-center gap-2 text-xs font-bold text-[#C87A38] uppercase tracking-widest">
-                  <Quote className="w-4 h-4 fill-current" />
+                <div className="flex items-center gap-2 text-xs sm:text-sm font-bold text-[#C87A38] uppercase tracking-widest">
+                  <Quote className="w-4 h-4 fill-current shrink-0" />
                   <span>RASHMI DHAR: HER ARTISTIC JOURNEY</span>
                 </div>
 
-                <blockquote className="space-y-3 text-xs sm:text-sm text-[#292524] font-serif leading-relaxed italic">
-                  <p>
+                <blockquote className="space-y-4 text-base sm:text-lg lg:text-xl text-[#1C1917] font-serif leading-relaxed font-normal">
+                  <p className="italic">
                     "Kalapravah translates to the continuous flow of art. For me, this venture is more than a collection of paintings, it is a sacred bridge connecting our rich civilizational roots with the modern world."
                   </p>
-                  <p>
+                  <p className="italic">
                     "Though I did not grow up in the traditional households of Mithila inheriting these brushstrokes from ancestors, I found myself drawn to Madhubani not by lineage, but by a profound sense of belonging. Every motif, the vibrant flora, the sacred fauna, and the eternal narratives of our epics, speaks a language of its own. When I hold the fine nib and fill the canvas with natural pigments and bright hues, I am not just painting; I am listening to the whispers of ancient history and translating them for today."
                   </p>
                 </blockquote>
