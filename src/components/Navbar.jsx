@@ -25,9 +25,11 @@ export default function Navbar({ activeSection, setActiveSection }) {
   }, [mobileMenuOpen]);
 
   const navItems = [
-    { id: 'hero', label: 'HOME' },
-    { id: 'collections', label: 'ARTWORKS' },
-    { id: 'journal', label: 'ABOUT' },
+    { id: 'home', label: 'HOME' },
+    { id: 'about', label: 'ABOUT' },
+    { id: 'art-artist', label: 'ART & ARTIST' },
+    { id: 'gallery', label: 'GALLERY' },
+    { id: 'exhibitions', label: 'EXHIBITIONS' },
     { id: 'contact', label: 'CONTACT' },
   ];
 
@@ -45,14 +47,14 @@ export default function Navbar({ activeSection, setActiveSection }) {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled || mobileMenuOpen
           ? 'bg-[#FAF8F3]/95 backdrop-blur-md border-b border-[#E7E0D2] shadow-sm py-3 sm:py-3.5' 
-          : 'bg-transparent py-3 sm:py-4'
+          : 'bg-[#FAF8F3]/80 backdrop-blur-sm py-3.5 sm:py-4 border-b border-[#E7E0D2]/40'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         
-        {/* Brand Logo */}
+        {/* Brand Logo & Title */}
         <button 
-          onClick={() => handleNavClick('hero')} 
+          onClick={() => handleNavClick('home')} 
           className="text-left group focus:outline-none flex items-center gap-2.5 sm:gap-3"
         >
           <img 
@@ -65,7 +67,7 @@ export default function Navbar({ activeSection, setActiveSection }) {
               KALAPRAVAH
             </span>
             <span className="text-[8px] sm:text-[9.5px] font-semibold tracking-[0.22em] text-[#C87A38] uppercase mt-0.5">
-              MITHILA ART GALLERY
+              MITHILA ART & ARTIST STUDIO
             </span>
           </div>
         </button>
@@ -90,11 +92,21 @@ export default function Navbar({ activeSection, setActiveSection }) {
           ))}
         </nav>
 
-        {/* Mobile Hamburger Toggle Button */}
-        <div className="flex md:hidden items-center gap-2">
+        {/* Quick Contact Badge / Mobile Hamburger */}
+        <div className="flex items-center gap-3">
+          <a
+            href="https://wa.me/919971399395?text=Hello%20Rashmi%2C%20I%20am%20inquiring%20about%20Kalapravah%20artworks."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden sm:inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1C1917] hover:bg-[#C87A38] text-white text-[11px] font-semibold tracking-wider uppercase transition-colors shadow-sm"
+          >
+            <MessageSquare className="w-3.5 h-3.5 text-[#25D366]" />
+            <span>INQUIRE</span>
+          </a>
+
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="w-10 h-10 rounded-full bg-[#FFFDF9] border border-[#E7E0D2] flex items-center justify-center text-[#1C1917] hover:text-[#C87A38] active:scale-95 transition-all shadow-sm"
+            className="md:hidden w-10 h-10 rounded-full bg-[#FFFDF9] border border-[#E7E0D2] flex items-center justify-center text-[#1C1917] hover:text-[#C87A38] active:scale-95 transition-all shadow-sm"
             aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -106,16 +118,16 @@ export default function Navbar({ activeSection, setActiveSection }) {
       {/* Mobile Slide-Down Drawer Navigation */}
       {mobileMenuOpen && (
         <div 
-          className="md:hidden fixed inset-x-0 top-[57px] bottom-0 bg-[#1C1917]/40 backdrop-blur-sm z-40 animate-fade-in"
+          className="md:hidden fixed inset-x-0 top-[60px] bottom-0 bg-[#1C1917]/50 backdrop-blur-md z-40 animate-fade-in"
           onClick={() => setMobileMenuOpen(false)}
         >
           <div 
-            className="bg-[#FAF8F3] border-b border-[#E7E0D2] px-6 pt-6 pb-8 shadow-xl space-y-6"
+            className="bg-[#FAF8F3] border-b border-[#E7E0D2] px-5 sm:px-6 pt-5 pb-8 shadow-2xl space-y-5 max-h-[calc(100vh-70px)] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="space-y-2">
               <span className="text-[10px] font-semibold tracking-[0.2em] uppercase text-[#C87A38] block border-b border-[#E7E0D2] pb-2">
-                NAVIGATION
+                INDEX MENU
               </span>
 
               <div className="flex flex-col space-y-1 pt-2">
@@ -146,7 +158,7 @@ export default function Navbar({ activeSection, setActiveSection }) {
                 className="w-full flex items-center justify-center gap-2 py-3.5 px-4 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-md font-semibold text-xs tracking-wider uppercase transition-colors shadow-md"
               >
                 <MessageSquare className="w-4 h-4 fill-current" />
-                <span>Quick WhatsApp Inquiry</span>
+                <span>WhatsApp Inquiry</span>
               </a>
             </div>
 
@@ -157,4 +169,3 @@ export default function Navbar({ activeSection, setActiveSection }) {
     </header>
   );
 }
-

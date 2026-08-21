@@ -3,7 +3,6 @@ import {
   Mail, 
   ChevronUp, 
   Phone,
-  MessageSquare,
   ArrowRight,
   Sparkles
 } from 'lucide-react';
@@ -31,6 +30,15 @@ export default function Footer({ onNavigate }) {
     'Custom Commission', 
     'Workshops', 
     'General Enquiry'
+  ];
+
+  const indexLinks = [
+    { id: 'home', label: 'HOME' },
+    { id: 'about', label: 'ABOUT' },
+    { id: 'art-artist', label: 'ART & ARTIST' },
+    { id: 'gallery', label: 'GALLERY' },
+    { id: 'exhibitions', label: 'EXHIBITIONS' },
+    { id: 'contact', label: 'CONTACT' },
   ];
 
   const handleSendWhatsApp = (e) => {
@@ -80,15 +88,17 @@ export default function Footer({ onNavigate }) {
         </div>
       </div>
 
-      {/* PETITE FOOTER & COMPACT WHATSAPP INQUIRY */}
-      <section id="contact" className="bg-[#1C1613] text-[#EBE5DF] py-8 sm:py-10 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto space-y-8">
+      {/* FOOTER & WHATSAPP QUICK INQUIRY */}
+      <section id="contact" className="bg-[#1C1613] text-[#EBE5DF] py-10 sm:py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto space-y-10">
           
           {/* Main 2-Column Compact Row */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 items-center">
             
             {/* Left Column: Brand & Direct Contact */}
-            <div className="lg:col-span-5 space-y-4">
+            <div className="lg:col-span-5 space-y-5">
+              
+              {/* Logo & Brand */}
               <div className="flex items-center gap-3.5">
                 <div className="bg-white p-2 rounded-2xl shadow-md shrink-0 flex items-center justify-center border border-white/20">
                   <img 
@@ -111,8 +121,21 @@ export default function Footer({ onNavigate }) {
                 Preserving sacred geometry & fine line-work of traditional Madhubani art by Rashmi Dhar.
               </p>
 
-              {/* Direct Links */}
-              <div className="space-y-2 pt-1 text-xs text-[#C2B7AC]">
+              {/* Navigation Index Links */}
+              <div className="flex flex-wrap gap-4 pt-1">
+                {indexLinks.map((link) => (
+                  <button
+                    key={link.id}
+                    onClick={() => handleLinkClick(link.id)}
+                    className="text-xs font-semibold tracking-widest text-[#D98A48] hover:text-white uppercase transition-colors cursor-pointer"
+                  >
+                    {link.label}
+                  </button>
+                ))}
+              </div>
+
+              {/* Direct Links (Email, Insta, WhatsApp) */}
+              <div className="space-y-2 pt-2 text-xs text-[#C2B7AC]">
                 <a
                   href="mailto:kalapravah2025@gmail.com"
                   className="flex items-center gap-2.5 hover:text-[#FAF8F3] transition-colors"
@@ -144,7 +167,7 @@ export default function Footer({ onNavigate }) {
             </div>
 
             {/* Right Column: Compact WhatsApp Inquiry Box */}
-            <div className="lg:col-span-7 bg-[#251E1A] border border-[#3D312B] p-4 sm:p-5 rounded-md shadow-sm space-y-3.5">
+            <div className="lg:col-span-7 bg-[#251E1A] border border-[#3D312B] p-5 sm:p-6 rounded-lg shadow-sm space-y-4">
               <div className="border-b border-[#3D312B] pb-2.5">
                 <div className="flex items-center gap-2">
                   <Sparkles className="w-3.5 h-3.5 text-[#D98A48]" />
@@ -179,17 +202,17 @@ export default function Footer({ onNavigate }) {
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   placeholder="Optional: Note, painting size, or details..."
-                  className="w-full px-3 py-2 bg-[#1C1613] border border-[#3D312B] focus:border-[#D98A48] rounded-sm text-xs text-[#FAF8F3] placeholder:text-[#786F66] focus:outline-none transition-colors"
+                  className="w-full px-3 py-2 bg-[#1C1613] border border-[#3D312B] focus:border-[#D98A48] rounded-sm text-xs text-[#FAF8F3] placeholder:text-[#78716C] focus:outline-none transition-colors"
                 />
 
                 {/* Submit Button */}
                 <button
                   type="submit"
-                  className="w-full flex items-center justify-between px-4 py-2.5 bg-[#25D366] hover:bg-[#20bd5a] text-[#1C1613] rounded-sm text-xs font-bold uppercase tracking-[0.15em] transition-all duration-300 group cursor-pointer shadow-sm"
+                  className="w-full flex items-center justify-between px-4 py-3 bg-[#25D366] hover:bg-[#20bd5a] text-[#1C1613] rounded-sm text-xs font-bold uppercase tracking-[0.15em] transition-all duration-300 group cursor-pointer shadow-sm"
                 >
                   <div className="flex items-center gap-2">
                     <WhatsAppIcon className="w-4 h-4 fill-current" />
-                    <span>Send Inquiry</span>
+                    <span>Send Inquiry (+91 99713 99395)</span>
                   </div>
                   <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                 </button>
@@ -212,7 +235,7 @@ export default function Footer({ onNavigate }) {
               <span>100% ORIGINAL ART GUARANTEE</span>
               <span>•</span>
               <button 
-                onClick={() => handleLinkClick('hero')} 
+                onClick={() => handleLinkClick('home')} 
                 className="inline-flex items-center gap-1 hover:text-[#FAF8F3] text-[#D98A48] cursor-pointer transition-colors"
               >
                 <span>TOP</span>

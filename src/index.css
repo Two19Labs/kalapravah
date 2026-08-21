@@ -15,7 +15,6 @@
   --color-terracotta: #B94A2D;
   --color-charcoal: #121110;
 
-  
   --border-subtle: #E7E0D2;
   --border-strong: #C4B9A3;
 
@@ -32,15 +31,14 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Custom Luxury Typography */
+/* Custom Luxury Typography - DO NOT force color here so Tailwind classes like text-white work! */
 h1, h2, h3, h4, .font-serif {
   font-family: var(--font-serif-display);
-  color: var(--text-ink);
   font-weight: 500;
   letter-spacing: -0.01em;
 }
 
-/* Luxury Square Outline Button (Matching ARTESIA Hero Button) */
+/* Luxury Square Outline Button */
 .btn-artesia {
   display: inline-flex;
   align-items: center;
@@ -122,14 +120,3 @@ h1, h2, h3, h4, .font-serif {
 html {
   scroll-behavior: smooth;
 }
-
-body {
-  font-family: var(--font-sans);
-  background-color: var(--bg-parchment);
-  color: var(--text-body);
-  line-height: 1.6;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-}
-
-

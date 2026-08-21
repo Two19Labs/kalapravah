@@ -33,6 +33,10 @@ const ArtCanvasMesh = ({
       colorMap.generateMipmaps = true;
       colorMap.minFilter = THREE.LinearMipmapLinearFilter;
       colorMap.magFilter = THREE.LinearFilter;
+      colorMap.wrapS = THREE.MirroredRepeatWrapping;
+      colorMap.wrapT = THREE.ClampToEdgeWrapping;
+      colorMap.repeat.set(1.85, 1);
+      colorMap.offset.set(0.04, 0);
       colorMap.needsUpdate = true;
     }
   }, [colorMap]);

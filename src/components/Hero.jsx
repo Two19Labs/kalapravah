@@ -1,116 +1,364 @@
-import React from 'react';
-import { ArrowUpRight } from 'lucide-react';
-import LunarGravityCard from '@/components/ui/lunar-gravity-card';
+import React, { useState, useEffect } from 'react';
+import { 
+  ArrowDownRight, 
+  Sparkles, 
+  Feather, 
+  Layers, 
+  ShieldCheck, 
+  Award,
+  ChevronLeft,
+  ChevronRight
+} from 'lucide-react';
+import LunarGravityCard from './ui/lunar-gravity-card';
 
-const MADHUBANI_ART = {
-  id: 'madhubani',
-  name: 'Madhubani',
-  region: 'Mithila, Bihar',
-  textureUrl: '/images/sphere_madhubani.jpg',
-  ringColor: '#C87A38',
-  description: 'Ancient folk art characterized by line drawings, natural mineral dyes, and sacred peacock motifs.'
-};
+export default function Hero({ onExploreArtworks, onExploreArtist }) {
+  // 3 Featured Banner Artworks
+  const spotlightArtworks = [
+    {
+      id: 'pic1',
+      title: 'Dashavatara: 10 Avatars of Vishnu',
+      style: 'Classic Bharni & Mineral Pigment',
+      image: '/images/artwork_dashavatara.jpg',
+      caption: 'Original Hand-Painted Canvas on Handmade Paper',
+      tag: 'FEATURED MASTERPIECE'
+    },
+    {
+      id: 'pic2',
+      title: 'Gaja Leela: Krishna & The Royal Elephant',
+      style: 'Bharni & Kachni Shading with Organic Dyes',
+      image: '/images/artwork_gaja_leela.jpg',
+      caption: 'Heritage Mithila Folklore Painting',
+      tag: 'POPULAR CANVAS'
+    },
+    {
+      id: 'pic3',
+      title: 'Radha Krishna: Pure Kachni Mandala',
+      style: 'Monochrome Kachni Fine Line Hatching',
+      image: '/images/artwork_kachni_mandala.jpg',
+      caption: 'Handmade Cotton Fiber Masterpiece',
+      tag: 'KACHNI SPECIAL'
+    }
+  ];
 
-export default function Hero({ onExploreArtworks }) {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  // Auto-fading slideshow every 4 seconds
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % spotlightArtworks.length);
+    }, 4000);
+    return () => clearInterval(timer);
+  }, [spotlightArtworks.length]);
+
   return (
-    <section id="hero" className="relative pt-16 sm:pt-20 lg:pt-20 pb-8 sm:pb-10 lg:pb-12 overflow-hidden bg-[#FAF8F3] border-b border-[#E7E0D2]">
+    <section id="home" className="pt-24 sm:pt-28 lg:pt-32 pb-16 sm:pb-24 bg-[#FAF8F3] relative overflow-hidden border-b border-[#E7E0D2]">
       
-      {/* Soft Ambient Warm Spotlight behind 3D Canvas */}
-      <div 
-        className="absolute top-1/2 left-1/2 sm:left-auto sm:right-1/4 -translate-x-1/2 sm:translate-x-0 -translate-y-1/2 w-[280px] xs:w-[380px] sm:w-[600px] h-[280px] xs:h-[380px] sm:h-[600px] rounded-full blur-[90px] sm:blur-[130px] pointer-events-none opacity-25 sm:opacity-20 transition-all duration-700"
-        style={{ backgroundColor: MADHUBANI_ART.ringColor }}
-      />
+      {/* Soft Ambient Background Glows */}
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#C87A38]/8 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-10 left-0 w-[450px] h-[450px] bg-[#B94A2D]/6 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 min-h-0 lg:min-h-[520px] items-center gap-6 sm:gap-8 lg:gap-10 pt-2 sm:pt-4 lg:pt-4 pb-4 sm:pb-6 lg:pb-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-20 sm:space-y-28">
+        
+        {/* ========================================================================= */}
+        {/* 1. ASYMMETRIC EDITORIAL FINE ART HERO (TYPOGRAPHY + FLOATING SHOWCASE)    */}
+        {/* ========================================================================= */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
           
-          {/* Left Column: Clean Editorial Typography */}
-          <div className="lg:col-span-6 space-y-5 sm:space-y-8 text-left flex flex-col justify-center">
-            
-            {/* Top Category Tag */}
-            <div className="flex items-center gap-2.5 sm:gap-3">
-              <img 
-                src="/images/logo-emblem.png" 
-                alt="Kalapravah Emblem Seal" 
-                className="w-7 h-7 sm:w-8 sm:h-8 object-contain"
-              />
-              <span className="text-[10px] xs:text-xs font-semibold tracking-[0.16em] sm:tracking-[0.22em] uppercase text-[#C87A38]">
-                MADHUBANI HERITAGE FINE ART
-              </span>
-              <span className="w-6 sm:w-8 h-[1px] bg-[#C87A38]/50" />
+          {/* LEFT COLUMN: EDITORIAL TYPOGRAPHY & CTAS */}
+          <div className="lg:col-span-6 space-y-6 sm:space-y-8 text-left">
+
+            {/* High-Impact Headline */}
+            <div className="space-y-3">
+              <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#1C1917] leading-[1.12]">
+                Traditional Elegance <br className="hidden sm:inline" />
+                For <span className="text-[#C87A38]">Contemporary</span> Spaces
+              </h1>
+              <div className="w-20 h-[3px] bg-[#C87A38] rounded-full" />
             </div>
 
-            {/* Headline */}
-            <h1 className="font-serif text-3xl xs:text-4xl sm:text-6xl lg:text-7xl font-normal tracking-tight text-[#1C1917] leading-[1.1] sm:leading-[1.05]">
-              Where Art <br className="hidden xs:inline" />
-              Inspires Life
-            </h1>
-
-            {/* Subtitle */}
-            <p className="text-sm sm:text-base lg:text-lg text-[#5C5652] max-w-md font-normal leading-relaxed">
-              Discover original Mithila masterpieces, visionary Indian artisans, and centuries of living Madhubani cultural heritage.
+            {/* Concise Mission & Value Narrative */}
+            <p className="text-sm sm:text-base lg:text-lg text-[#5C5652] leading-relaxed font-light max-w-xl">
+              Bringing the ancient storytelling, rich pigments, and meditative line work of traditional <strong>Madhubani & Mithila fine art</strong> directly into modern living spaces and curated art collections.
             </p>
 
-            {/* Focused Art Form Badge */}
-            <div className="pt-1 sm:pt-2">
-              <div className="inline-flex flex-wrap items-center gap-1.5 sm:gap-2 px-3 sm:px-3.5 py-1.5 rounded-full bg-[#C87A38]/10 border border-[#C87A38]/30 text-[10px] sm:text-xs font-semibold tracking-wider text-[#C87A38] uppercase max-w-full">
-                <span>ART FORM FOCUS:</span>
-                <span className="text-[#1C1917] font-bold">{MADHUBANI_ART.name} ({MADHUBANI_ART.region})</span>
-              </div>
-            </div>
-
-            {/* Main CTA Action */}
-            <div className="pt-2 flex flex-col xs:flex-row items-stretch xs:items-center gap-4 sm:gap-6">
+            {/* Dual CTAs */}
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 pt-2">
               <button
                 onClick={onExploreArtworks}
-                className="btn-artesia group justify-center w-full xs:w-auto"
+                className="inline-flex items-center justify-center gap-2.5 px-6 sm:px-7 py-3.5 rounded-full bg-[#1C1917] hover:bg-[#C87A38] text-white text-xs font-bold tracking-widest uppercase transition-all shadow-xl hover:scale-105 active:scale-95 cursor-pointer w-full sm:w-auto"
               >
-                <span>EXPLORE ARTWORKS</span>
-                <ArrowUpRight className="w-4 h-4 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                <span>EXPLORE 30+ ARTWORKS</span>
+                <ArrowDownRight className="w-4 h-4 text-[#F59E0B]" />
               </button>
+
+              <button
+                onClick={onExploreArtist}
+                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-[#FFFDF9] hover:bg-[#F3EFE6] text-[#1C1917] border border-[#E7E0D2] text-xs font-bold tracking-widest uppercase transition-all shadow-sm active:scale-95 cursor-pointer w-full sm:w-auto"
+              >
+                <span>ABOUT THE ARTIST</span>
+              </button>
+            </div>
+
+            {/* Trust & Craft Stats Counter */}
+            <div className="pt-6 border-t border-[#E7E0D2]/80 grid grid-cols-3 gap-4 text-left">
+              <div>
+                <span className="font-serif text-xl sm:text-2xl font-bold text-[#1C1917] block">30+</span>
+                <span className="text-[10px] sm:text-xs text-[#78716C] uppercase font-medium tracking-wider">Curated Canvases</span>
+              </div>
+              <div>
+                <span className="font-serif text-xl sm:text-2xl font-bold text-[#1C1917] block">100%</span>
+                <span className="text-[10px] sm:text-xs text-[#78716C] uppercase font-medium tracking-wider">Hand Painted</span>
+              </div>
+              <div>
+                <span className="font-serif text-xl sm:text-2xl font-bold text-[#1C1917] block">Natural</span>
+                <span className="text-[10px] sm:text-xs text-[#78716C] uppercase font-medium tracking-wider">Archival Dyes</span>
+              </div>
             </div>
 
           </div>
 
-          {/* Right Column: Clean Floating 3D Art Gallery Showcase */}
-          <div className="lg:col-span-6 relative w-full flex flex-col items-center justify-center pt-2 sm:pt-4 lg:pt-0">
+          {/* RIGHT COLUMN: FLOATING ARTWORK SHOWCASE FRAME */}
+          <div className="lg:col-span-6 relative">
             
-            {/* Wrapper around Circle + Outside Tag on Right */}
-            <div className="relative w-full max-w-[290px] xs:max-w-[340px] sm:max-w-[480px] lg:max-w-[580px] aspect-square mx-auto">
+            {/* Outer Deckled-Edge Art Card Frame */}
+            <div className="deckled-frame bg-[#FFFDF9] border-2 border-[#C87A38]/30 rounded-2xl p-3 sm:p-4 shadow-2xl relative overflow-hidden group">
               
-              {/* Subtle Gallery Pedestal / Soft Circle Vignette */}
-              <div className="w-full h-full rounded-full bg-[#FAF8F3] border border-[#E7E0D2]/50 shadow-[0_20px_50px_rgba(28,25,23,0.04)] overflow-hidden flex items-center justify-center">
-                <LunarGravityCard 
-                  key={MADHUBANI_ART.id}
-                  artTextureUrl={MADHUBANI_ART.textureUrl}
-                  ringColor={MADHUBANI_ART.ringColor}
-                  hintText=""
-                  className="w-full h-full min-h-0 sm:min-h-0 lg:min-h-0"
-                />
+              {/* Image Frame Container */}
+              <div className="relative aspect-[4/3] sm:aspect-[16/11] rounded-xl overflow-hidden bg-[#0F0D0C]">
+                {spotlightArtworks.map((banner, index) => (
+                  <div
+                    key={banner.id}
+                    className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                      index === currentSlide ? 'opacity-100 z-10' : 'opacity-0 z-0'
+                    }`}
+                  >
+                    <img
+                      src={banner.image}
+                      alt={banner.title}
+                      className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
+                    />
+                    
+                    {/* Soft Vignette Gradient */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0F0D0C]/90 via-[#0F0D0C]/20 to-transparent flex flex-col justify-end p-4 sm:p-6 text-white" />
+                  </div>
+                ))}
+
+                {/* Floating Gold Authenticity Emblem Badge */}
+                <div className="absolute top-3 left-3 z-20 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#1C1917]/90 text-[#F59E0B] border border-[#F59E0B]/40 text-[10px] font-bold tracking-widest uppercase shadow-lg backdrop-blur-md">
+                  <Award className="w-3 h-3" />
+                  <span>{spotlightArtworks[currentSlide].tag}</span>
+                </div>
+
+                {/* Arrow Controls inside image frame */}
+                <button
+                  onClick={() => setCurrentSlide((prev) => (prev - 1 + spotlightArtworks.length) % spotlightArtworks.length)}
+                  className="absolute left-3 top-1/2 -translate-y-1/2 z-20 w-8 h-8 rounded-full bg-[#0F0D0C]/75 hover:bg-[#C87A38] text-white flex items-center justify-center border border-white/20 transition-all cursor-pointer"
+                  aria-label="Previous artwork"
+                >
+                  <ChevronLeft className="w-4 h-4" />
+                </button>
+                <button
+                  onClick={() => setCurrentSlide((prev) => (prev + 1) % spotlightArtworks.length)}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 z-20 w-8 h-8 rounded-full bg-[#0F0D0C]/75 hover:bg-[#C87A38] text-white flex items-center justify-center border border-white/20 transition-all cursor-pointer"
+                  aria-label="Next artwork"
+                >
+                  <ChevronRight className="w-4 h-4" />
+                </button>
               </div>
 
-              {/* Minimal "CLICK SPHERE" prompt tag outside the circular pedestal on the right */}
-              <div className="absolute bottom-6 -right-2 xs:bottom-8 xs:-right-4 sm:bottom-12 sm:-right-6 lg:bottom-14 lg:-right-8 z-20 pointer-events-none">
-                <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#FFFDF9] border border-[#C87A38]/50 shadow-md shadow-[#1C1917]/5 backdrop-blur-md">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#C87A38] animate-pulse shrink-0" />
-                  <span className="text-[9px] sm:text-[10px] font-bold tracking-widest uppercase text-[#1C1917]">
-                    click sphere
-                  </span>
+              {/* Title & Caption Info Footer */}
+              <div className="pt-3 px-1 text-left flex items-center justify-between gap-3">
+                <div>
+                  <h3 className="font-serif text-base sm:text-lg font-bold text-[#1C1917]">
+                    {spotlightArtworks[currentSlide].title}
+                  </h3>
+                  <p className="text-xs text-[#78716C] font-medium">
+                    {spotlightArtworks[currentSlide].style}
+                  </p>
+                </div>
+
+                {/* Thumbnail Selector Pills */}
+                <div className="flex items-center gap-1.5 shrink-0">
+                  {spotlightArtworks.map((_, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => setCurrentSlide(idx)}
+                      className={`h-2 rounded-full transition-all cursor-pointer ${
+                        idx === currentSlide ? 'w-6 bg-[#C87A38]' : 'w-2 bg-[#E7E0D2] hover:bg-[#C4B9A3]'
+                      }`}
+                      aria-label={`Select artwork ${idx + 1}`}
+                    />
+                  ))}
                 </div>
               </div>
 
             </div>
 
-            {/* Elegant Description Card Below Circle */}
-            <div className="mt-5 sm:mt-6 text-center max-w-lg mx-auto px-4 sm:px-6 py-3.5 rounded-2xl bg-[#FFFDF9] border border-[#E7E0D2] shadow-[0_4px_20px_rgba(28,25,23,0.05)] transition-all">
-              <p className="text-xs sm:text-sm md:text-[15px] text-[#292524] font-medium leading-relaxed">
-                In Madhubani folklore, celestial bodies like the Sun, Moon & Stars represent timeless cosmic balance.
+          </div>
+
+        </div>
+
+        {/* ========================================================================= */}
+        {/* 2. WELCOME NARRATIVE & HERITAGE PILLARS                                  */}
+        {/* ========================================================================= */}
+        <div className="space-y-12 pt-6">
+          
+          <div className="text-center max-w-3xl mx-auto space-y-3">
+            <span className="text-[10px] font-bold tracking-[0.24em] text-[#C87A38] uppercase block">
+              WELCOME TO KALAPRAVAH
+            </span>
+            <h2 className="font-serif text-2xl sm:text-4xl lg:text-5xl font-normal text-[#1C1917] tracking-tight">
+              Where Heritage Meets Contemporary Calm
+            </h2>
+            <p className="text-sm sm:text-base text-[#5C5652] font-light leading-relaxed">
+              In a fast-paced world, art offers a much-needed sanctuary: a moment of pause and peace. Drawing inspiration from pristine nature, ancient rituals, customs, and deep-rooted spirituality, every brushstroke is designed to soothe the soul.
+            </p>
+            <div className="w-16 h-[2px] bg-[#C87A38] mx-auto rounded-full mt-2" />
+          </div>
+
+          {/* 3 Heritage Pillars Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto text-left">
+            
+            <div className="bg-[#FFFDF9] border border-[#E7E0D2] rounded-xl p-6 shadow-sm space-y-3 hover:border-[#C87A38] transition-all">
+              <div className="w-10 h-10 rounded-full bg-[#C87A38]/10 flex items-center justify-center text-[#C87A38]">
+                <Feather className="w-5 h-5" />
+              </div>
+              <h3 className="font-serif text-lg font-bold text-[#1C1917]">
+                Archival Materials
+              </h3>
+              <p className="text-xs text-[#5C5652] leading-relaxed">
+                Painted on handmade cotton fiber paper using natural organic pigments, indigo, turmeric washes, and charcoal soot ink for generations of longevity.
+              </p>
+            </div>
+
+            <div className="bg-[#FFFDF9] border border-[#E7E0D2] rounded-xl p-6 shadow-sm space-y-3 hover:border-[#C87A38] transition-all">
+              <div className="w-10 h-10 rounded-full bg-[#B94A2D]/10 flex items-center justify-center text-[#B94A2D]">
+                <Layers className="w-5 h-5" />
+              </div>
+              <h3 className="font-serif text-lg font-bold text-[#1C1917]">
+                Authentic Styles
+              </h3>
+              <p className="text-xs text-[#5C5652] leading-relaxed">
+                Mastery across traditional Mithila categories including vibrant <strong>Bharni</strong> color fills, fine line <strong>Kachni</strong> hatching, and sacred <strong>Godna</strong> motifs.
+              </p>
+            </div>
+
+            <div className="bg-[#FFFDF9] border border-[#E7E0D2] rounded-xl p-6 shadow-sm space-y-3 hover:border-[#C87A38] transition-all">
+              <div className="w-10 h-10 rounded-full bg-[#D97706]/10 flex items-center justify-center text-[#D97706]">
+                <ShieldCheck className="w-5 h-5" />
+              </div>
+              <h3 className="font-serif text-lg font-bold text-[#1C1917]">
+                Direct Artist Studio
+              </h3>
+              <p className="text-xs text-[#5C5652] leading-relaxed">
+                Created directly by artist Rashmi Dhar in New Delhi. Each artwork includes a hand-signed certificate of authenticity and story document.
               </p>
             </div>
 
           </div>
 
         </div>
+
+        {/* ========================================================================= */}
+        {/* 3. ABOUT KALAPRAVAH (MISSION & CENTERED ARTWORK)                         */}
+        {/* ========================================================================= */}
+        <div id="about" className="pt-10 border-t border-[#E7E0D2] space-y-12">
+          
+          {/* Section Header */}
+          <div className="text-center max-w-3xl mx-auto space-y-3">
+            <h2 className="font-serif text-3xl sm:text-5xl font-bold text-[#1C1917] tracking-tight">
+              About KALAPRAVAH
+            </h2>
+            <div className="w-20 h-[3px] bg-[#C87A38] mx-auto rounded-full mt-2" />
+          </div>
+
+          {/* Narrative Flow with Artwork in Center */}
+          <div className="max-w-4xl mx-auto space-y-10">
+            
+            {/* Paragraph 1 */}
+            <div className="bg-[#FFFDF9] border border-[#E7E0D2] rounded-xl p-6 sm:p-10 shadow-sm relative overflow-hidden">
+              <div className="absolute top-0 left-0 w-2.5 h-full bg-[#C87A38]" />
+              <p className="text-base sm:text-xl text-[#1C1917] font-serif leading-relaxed text-justify sm:text-left font-normal">
+                In an age where mass production and digital art dominate the landscape, the intrinsic value of handmade art seems to take a backseat. Kalapravah as an art venture is on a mission to change that narrative. By promoting handmade art, Kalapravah connects individuals to their cultural roots .
+              </p>
+            </div>
+
+            {/* 📍 DUAL FEATURED MEDIA IN STORY: HERITAGE ARTWORK (LEFT) + 3D CELESTIAL SPHERE (RIGHT) */}
+            <div className="relative py-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 items-stretch max-w-5xl mx-auto">
+                
+                {/* LEFT COLUMN: FEATURED HERITAGE ARTWORK */}
+                <div className="deckled-frame bg-[#FFFDF9] border-2 border-[#C87A38]/40 p-5 sm:p-7 rounded-2xl shadow-xl text-center space-y-4 flex flex-col justify-between">
+                  <span className="text-[11px] font-bold tracking-[0.25em] text-[#C87A38] uppercase block">
+                    📍 FEATURED HERITAGE ARTWORK
+                  </span>
+
+                  <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-[#E7E0D2] bg-[#FAF8F3] group shadow-inner">
+                    <img
+                      src="/images/artwork_gaja_leela.jpg"
+                      alt="Gaja Leela & Krishna: Kalapravah Fine Artwork by Rashmi Dhar"
+                      className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#1C1917]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center p-4">
+                      <span className="text-xs font-serif text-white font-medium tracking-wide">
+                        Gaja Leela & Krishna: Original Hand-Painted Canvas
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="space-y-1 text-center">
+                    <h4 className="font-serif text-xl font-bold text-[#1C1917]">
+                      Gaja Leela & Krishna (Bharni & Kachni Shading)
+                    </h4>
+                    <p className="text-xs text-[#78716C] max-w-lg mx-auto font-medium">
+                      Hand-painted by Rashmi Dhar using raw turmeric ochre, gold powder wash, and carbon soot ink on archival cotton fiber paper.
+                    </p>
+                  </div>
+                </div>
+
+                {/* RIGHT COLUMN: JUST THE 3D CELESTIAL GLOBE SPHERE IN WHITE CIRCULAR CONTAINER */}
+                <div className="flex flex-col items-center justify-center p-2 sm:p-4 space-y-4 text-center">
+                  
+                  {/* Circular Background Container with floating "Click" tag */}
+                  <div className="relative">
+                    <div className="w-[280px] h-[280px] sm:w-[340px] sm:h-[340px] lg:w-[360px] lg:h-[360px] rounded-full bg-[#FFFDF9] border-2 border-[#C87A38]/30 shadow-2xl relative overflow-hidden flex items-center justify-center">
+                      <LunarGravityCard
+                        className="w-full h-full"
+                        artTextureUrl="/images/sphere_madhubani.jpg"
+                        ringColor="#C87A38"
+                        hintText=""
+                      />
+                    </div>
+
+                    {/* Short floating "Click" tag near the sphere */}
+                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-30 pointer-events-none bg-[#1C1917]/90 text-[#F59E0B] px-3.5 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase border border-[#F59E0B]/40 shadow-lg flex items-center gap-1.5 backdrop-blur-md">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#F59E0B] shrink-0" />
+                      <span>CLICK</span>
+                    </div>
+                  </div>
+
+                  {/* Caption line about celestial bodies in Madhubani art */}
+                  <p className="text-xs sm:text-sm text-[#78716C] font-serif italic max-w-sm mx-auto leading-relaxed">
+                    In Madhubani folklore, celestial bodies like the Sun, Moon, and Stars represent timeless cosmic balance and spiritual harmony.
+                  </p>
+
+                </div>
+
+              </div>
+            </div>
+
+            {/* Paragraph 2 */}
+            <div className="bg-[#FFFDF9] border border-[#E7E0D2] rounded-xl p-6 sm:p-10 shadow-sm relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-2.5 h-full bg-[#B94A2D]" />
+              <p className="text-base sm:text-xl text-[#1C1917] font-serif leading-relaxed text-justify sm:text-left font-normal">
+                At its core, Kalapravah is more than just an art initiative; it serves as a bridge between the past and the present. In a world thriving on the digital and the disposable, there is something profoundly enriching about engaging with art that has been crafted by hand. Each piece tells a story, holding within it the collective memories and traditions of our ancestors. The initiative aims to keep these stories alive, making them accessible to everyone.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
 
     </section>
