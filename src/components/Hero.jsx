@@ -347,12 +347,21 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
               </div>
             </div>
 
-            {/* Paragraph 2 */}
-            <div className="bg-[#FFFDF9] border border-[#E7E0D2] rounded-xl p-6 sm:p-10 shadow-sm relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-2.5 h-full bg-[#B94A2D]" />
-              <p className="text-base sm:text-xl text-[#1C1917] font-serif leading-relaxed text-justify sm:text-left font-normal">
-                At its core, Kalapravah is more than just an art initiative; it serves as a bridge between the past and the present. In a world thriving on the digital and the disposable, there is something profoundly enriching about engaging with art that has been crafted by hand. Each piece tells a story, holding within it the collective memories and traditions of our ancestors. The initiative aims to keep these stories alive, making them accessible to everyone.
+            {/* Elegant Un-Boxed Editorial Philosophy Statement */}
+            <div className="max-w-3xl mx-auto text-center space-y-5 pt-8 pb-4 px-4">
+              <div className="flex items-center justify-center gap-3">
+                <div className="w-12 h-[1px] bg-[#C87A38]/40" />
+                <span className="text-[10px] font-bold tracking-[0.28em] uppercase text-[#C87A38]">
+                  THE KALAPRAVAH PHILOSOPHY
+                </span>
+                <div className="w-12 h-[1px] bg-[#C87A38]/40" />
+              </div>
+
+              <p className="font-serif text-base sm:text-xl text-[#292524] leading-relaxed font-normal max-w-2xl mx-auto">
+                At its core, Kalapravah is more than just an art initiative; it serves as a bridge between the past and the present. In a world thriving on the digital and the disposable, there is something profoundly enriching about engaging with art crafted by hand, preserving the collective memories and traditions of our ancestors.
               </p>
+
+              <div className="w-16 h-[2px] bg-[#C87A38] mx-auto rounded-full" />
             </div>
 
           </div>
