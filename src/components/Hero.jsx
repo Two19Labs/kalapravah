@@ -51,22 +51,11 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
   }, [spotlightArtworks.length]);
 
   return (
-    <section id="home" className="pt-24 sm:pt-28 lg:pt-32 pb-16 sm:pb-24 bg-[#FAF8F3] relative overflow-hidden border-b border-[#E7E0D2]">
+    <section id="home" className="pt-24 sm:pt-28 lg:pt-32 pb-16 sm:pb-24 bg-transparent relative overflow-hidden border-b border-[#E7E0D2]">
       
       {/* Soft Ambient Background Glows */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#C87A38]/8 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-10 left-0 w-[450px] h-[450px] bg-[#B94A2D]/6 rounded-full blur-3xl pointer-events-none" />
-
-      {/* Watermarked Mithila Mandala Motif Overlay */}
-      <div className="absolute top-10 -left-12 w-[420px] h-[420px] opacity-[0.14] pointer-events-none text-[#C87A38]">
-        <svg viewBox="0 0 200 200" fill="none" stroke="currentColor" strokeWidth="1.8">
-          <circle cx="100" cy="100" r="85" strokeDasharray="5 5" />
-          <circle cx="100" cy="100" r="65" />
-          <circle cx="100" cy="100" r="45" strokeDasharray="4 4" />
-          <circle cx="100" cy="100" r="25" />
-          <path d="M100 15 L100 185 M15 100 L185 100 M40 40 L160 160 M160 40 L40 160" />
-        </svg>
-      </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-20 sm:space-y-28">
         

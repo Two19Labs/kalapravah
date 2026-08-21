@@ -24,12 +24,13 @@
 
 body {
   font-family: var(--font-sans);
-  background-color: #F7F3E9;
+  background-color: #F5EFE3;
   background-image: 
-    radial-gradient(rgba(200, 122, 56, 0.16) 1.2px, transparent 1.2px),
-    radial-gradient(rgba(185, 74, 45, 0.12) 1.2px, transparent 1.2px);
-  background-size: 20px 20px, 40px 40px;
-  background-position: 0 0, 10px 10px;
+    radial-gradient(rgba(200, 122, 56, 0.22) 1.5px, transparent 1.5px),
+    radial-gradient(rgba(185, 74, 45, 0.18) 1.5px, transparent 1.5px);
+  background-size: 24px 24px, 48px 48px;
+  background-position: 0 0, 12px 12px;
+  background-attachment: fixed;
   color: var(--text-body);
   line-height: 1.6;
   overflow-x: hidden;
