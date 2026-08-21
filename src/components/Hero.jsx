@@ -280,33 +280,33 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
         {/* ========================================================================= */}
         {/* 3. ABOUT KALAPRAVAH (MISSION & CENTERED ARTWORK)                         */}
         {/* ========================================================================= */}
-        <div id="about" className="pt-10 border-t border-[#E7E0D2] space-y-12">
+        <div id="about" className="pt-6 border-t border-[#E7E0D2] space-y-4 sm:space-y-5">
           
           {/* Section Header */}
-          <div className="text-center max-w-3xl mx-auto space-y-3">
-            <h2 className="font-serif text-3xl sm:text-5xl font-bold text-[#1C1917] tracking-tight">
+          <div className="text-center max-w-3xl mx-auto space-y-1.5">
+            <h2 className="font-serif text-2xl sm:text-4xl font-bold text-[#1C1917] tracking-tight">
               About KALAPRAVAH
             </h2>
-            <div className="w-20 h-[3px] bg-[#C87A38] mx-auto rounded-full mt-2" />
+            <div className="w-16 h-[2.5px] bg-[#C87A38] mx-auto rounded-full" />
           </div>
 
           {/* Narrative Flow with Artwork in Center */}
-          <div className="max-w-4xl mx-auto space-y-10">
+          <div className="max-w-4xl mx-auto space-y-4 sm:space-y-5">
             
             {/* Elegant Un-Boxed Editorial About Introduction */}
-            <div className="max-w-3xl mx-auto text-center space-y-4 px-4 pt-2 pb-2">
-              <p className="font-serif text-base sm:text-xl text-[#292524] leading-relaxed font-normal max-w-2xl mx-auto">
+            <div className="max-w-2xl mx-auto text-center space-y-2 px-4 py-0">
+              <p className="font-serif text-sm sm:text-base text-[#292524] leading-relaxed font-normal max-w-xl mx-auto">
                 In an age where mass production and digital art dominate the landscape, the intrinsic value of handmade art seems to take a backseat. Kalapravah is on a mission to change that narrative by connecting individuals back to their cultural roots through authentic handmade Mithila fine art.
               </p>
             </div>
 
             {/* 📍 DUAL FEATURED MEDIA IN STORY: HERITAGE ARTWORK (LEFT) + 3D CELESTIAL SPHERE (RIGHT) */}
-            <div className="relative py-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 items-stretch max-w-5xl mx-auto">
+            <div className="relative py-0">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 items-stretch max-w-5xl mx-auto">
                 
                 {/* LEFT COLUMN: FEATURED HERITAGE ARTWORK */}
-                <div className="deckled-frame bg-[#FFFDF9] border-2 border-[#C87A38]/40 p-5 sm:p-7 rounded-2xl shadow-xl text-center space-y-4 flex flex-col justify-between">
-                  <span className="text-[11px] font-bold tracking-[0.25em] text-[#C87A38] uppercase block">
+                <div className="deckled-frame bg-[#FFFDF9] border-2 border-[#C87A38]/40 p-4 sm:p-5 rounded-2xl shadow-xl text-center space-y-3 flex flex-col justify-between">
+                  <span className="text-[10px] font-bold tracking-[0.22em] text-[#C87A38] uppercase block">
                     FEATURED HERITAGE ARTWORK
                   </span>
 
@@ -316,29 +316,29 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
                       alt="Gaja Leela & Krishna: Kalapravah Fine Artwork by Rashmi Dhar"
                       className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#1C1917]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center p-4">
-                      <span className="text-xs font-serif text-white font-medium tracking-wide">
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#1C1917]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center p-3">
+                      <span className="text-[11px] font-serif text-white font-medium tracking-wide">
                         Gaja Leela & Krishna: Original Hand-Painted Canvas
                       </span>
                     </div>
                   </div>
 
-                  <div className="space-y-1 text-center">
-                    <h4 className="font-serif text-xl font-bold text-[#1C1917]">
+                  <div className="space-y-0.5 text-center">
+                    <h4 className="font-serif text-base sm:text-lg font-bold text-[#1C1917]">
                       Gaja Leela & Krishna (Bharni & Kachni Shading)
                     </h4>
-                    <p className="text-xs text-[#78716C] max-w-lg mx-auto font-medium">
+                    <p className="text-[11px] text-[#78716C] max-w-lg mx-auto font-medium leading-tight">
                       Hand-painted by Rashmi Dhar using raw turmeric ochre, gold powder wash, and carbon soot ink on archival cotton fiber paper.
                     </p>
                   </div>
                 </div>
 
                 {/* RIGHT COLUMN: JUST THE 3D CELESTIAL GLOBE SPHERE IN WHITE CIRCULAR CONTAINER */}
-                <div className="flex flex-col items-center justify-center p-2 sm:p-4 space-y-4 text-center">
+                <div className="flex flex-col items-center justify-center p-2 space-y-3 text-center">
                   
                   {/* Circular Background Container with floating "Click" tag */}
                   <div className="relative">
-                    <div className="w-[280px] h-[280px] sm:w-[340px] sm:h-[340px] lg:w-[360px] lg:h-[360px] rounded-full bg-[#FFFDF9] border-2 border-[#C87A38]/30 shadow-2xl relative overflow-hidden flex items-center justify-center">
+                    <div className="w-[220px] h-[220px] sm:w-[260px] sm:h-[260px] lg:w-[280px] lg:h-[280px] rounded-full bg-[#FFFDF9] border-2 border-[#C87A38]/30 shadow-2xl relative overflow-hidden flex items-center justify-center">
                       <LunarGravityCard
                         className="w-full h-full"
                         artTextureUrl="/images/sphere_madhubani.jpg"
@@ -348,14 +348,14 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
                     </div>
 
                     {/* Short floating "Click" tag near the sphere */}
-                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-30 pointer-events-none bg-[#1C1917]/90 text-[#F59E0B] px-3.5 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase border border-[#F59E0B]/40 shadow-lg flex items-center gap-1.5 backdrop-blur-md">
+                    <div className="absolute bottom-3 left-1/2 -translate-x-1/2 z-30 pointer-events-none bg-[#1C1917]/90 text-[#F59E0B] px-3 py-0.5 rounded-full text-[9.5px] font-bold tracking-widest uppercase border border-[#F59E0B]/40 shadow-lg flex items-center gap-1.5 backdrop-blur-md">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#F59E0B] shrink-0" />
                       <span>CLICK</span>
                     </div>
                   </div>
 
                   {/* Caption line about celestial bodies in Madhubani art */}
-                  <p className="text-xs sm:text-sm text-[#78716C] font-serif italic max-w-sm mx-auto leading-relaxed">
+                  <p className="text-[11px] sm:text-xs text-[#78716C] font-serif italic max-w-xs mx-auto leading-tight">
                     In Madhubani folklore, celestial bodies like the Sun, Moon, and Stars represent timeless cosmic balance and spiritual harmony.
                   </p>
 
