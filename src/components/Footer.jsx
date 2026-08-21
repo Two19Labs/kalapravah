@@ -188,7 +188,7 @@ export default function Footer({ onNavigate }) {
                 >
                   <div className="flex items-center gap-2">
                     <WhatsAppIcon className="w-4 h-4 fill-current" />
-                    <span>Send Inquiry (+91 99713 99395)</span>
+                    <span>SEND MESSAGE</span>
                   </div>
                   <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                 </button>
