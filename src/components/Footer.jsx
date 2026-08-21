@@ -60,9 +60,7 @@ export default function Footer({ onNavigate }) {
   };
 
   return (
-    <footer className="w-full text-[#1C1917] overflow-hidden">
-
-
+    <footer className="w-full text-[#1C1917] overflow-hidden relative z-20 bg-[#1C1613] border-t border-[#3D302A]">
 
       {/* FOOTER & WHATSAPP QUICK INQUIRY */}
       <section id="contact" className="bg-[#1C1613] text-[#EBE5DF] py-10 sm:py-12 px-4 sm:px-6 lg:px-8">
