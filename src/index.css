@@ -25,6 +25,11 @@
 body {
   font-family: var(--font-sans);
   background-color: var(--bg-parchment);
+  background-image: 
+    radial-gradient(rgba(200, 122, 56, 0.05) 1px, transparent 1px),
+    radial-gradient(rgba(28, 25, 23, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px, 48px 48px;
+  background-position: 0 0, 12px 12px;
   color: var(--text-body);
   line-height: 1.6;
   overflow-x: hidden;

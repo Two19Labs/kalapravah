@@ -9,6 +9,16 @@ export default function ArtAndArtistSection({ onContactArtist }) {
       <div className="absolute top-1/3 left-0 w-80 h-80 bg-[#C87A38]/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-10 right-0 w-96 h-96 bg-[#9A3412]/5 rounded-full blur-3xl pointer-events-none" />
 
+      {/* Watermarked Mithila Fish/Sun Motif Overlay */}
+      <div className="absolute top-20 right-6 w-96 h-96 opacity-[0.035] pointer-events-none text-[#C87A38]">
+        <svg viewBox="0 0 200 200" fill="none" stroke="currentColor" strokeWidth="1.5">
+          <circle cx="100" cy="100" r="90" strokeDasharray="3 3" />
+          <circle cx="100" cy="100" r="70" />
+          <path d="M100 10 Q140 100 100 190 Q60 100 100 10" />
+          <path d="M10 100 Q100 140 190 100 Q100 60 10 100" />
+        </svg>
+      </div>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-20 sm:space-y-28">
         
         {/* Main Section Banner Header */}
