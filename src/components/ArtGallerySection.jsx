@@ -43,14 +43,23 @@ export default function ArtGallerySection({ onSelectArtwork }) {
     return () => clearInterval(timer);
   }, [isHovered, filteredArtworks.length]);
 
-  const [isMobile, setIsMobile] = useState(false);
+  const [cardsPerView, setCardsPerView] = useState(3);
   const [touchStartX, setTouchStartX] = useState(0);
 
   useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth < 768);
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
+    const updateCardsPerView = () => {
+      const width = window.innerWidth;
+      if (width < 640) {
+        setCardsPerView(1); // Mobile Phones: 1 card
+      } else if (width < 1024) {
+        setCardsPerView(2); // Tablets & iPads: 2 cards
+      } else {
+        setCardsPerView(3); // Laptops & Desktop: 3 cards
+      }
+    };
+    updateCardsPerView();
+    window.addEventListener('resize', updateCardsPerView);
+    return () => window.removeEventListener('resize', updateCardsPerView);
   }, []);
 
   const handleTouchStart = (e) => {
@@ -167,9 +176,9 @@ export default function ArtGallerySection({ onSelectArtwork }) {
             
             {/* Sliding Track with exact calc() translation & seamless transition toggle */}
             <div 
-              className="flex gap-6"
+              className="flex gap-4 sm:gap-6"
               style={{
-                transform: `translateX(calc(-${currentIndex} * (100% + 1.5rem) / ${isMobile ? 1 : 3}))`,
+                transform: `translateX(calc(-${currentIndex} * (100% + ${cardsPerView === 1 ? '1rem' : '1.5rem'}) / ${cardsPerView}))`,
                 transition: isTransitioning ? 'transform 700ms ease-in-out' : 'none'
               }}
             >
@@ -177,8 +186,8 @@ export default function ArtGallerySection({ onSelectArtwork }) {
                 <div
                   key={`${artwork.id}-${index}`}
                   onClick={() => onSelectArtwork && onSelectArtwork(artwork)}
-                  style={{ width: 'calc((100% - 3rem) / 3)' }}
-                  className="min-w-full md:min-w-[calc((100%-3rem)/3)] max-w-full md:max-w-[calc((100%-3rem)/3)] shrink-0 deckled-frame bg-[#FFFDF9] border-2 border-[#E7E0D2] hover:border-[#C87A38] rounded-xl p-4 sm:p-5 shadow-md hover:shadow-2xl transition-all duration-300 group cursor-pointer flex flex-col justify-between"
+                  style={{ width: `calc((100% - ${cardsPerView === 1 ? '0rem' : cardsPerView === 2 ? '1.5rem' : '3rem'}) / ${cardsPerView})` }}
+                  className="w-full sm:w-[calc((100%-1.5rem)/2)] lg:w-[calc((100%-3rem)/3)] min-w-full sm:min-w-[calc((100%-1.5rem)/2)] lg:min-w-[calc((100%-3rem)/3)] shrink-0 deckled-frame bg-[#FFFDF9] border-2 border-[#E7E0D2] hover:border-[#C87A38] rounded-xl p-4 sm:p-5 shadow-md hover:shadow-2xl transition-all duration-300 group cursor-pointer flex flex-col justify-between"
                 >
                   <div className="space-y-4">
                     
