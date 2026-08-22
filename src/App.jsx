@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ArtAndArtistSection from './components/ArtAndArtistSection';
@@ -7,10 +8,28 @@ import JournalSection from './components/JournalSection';
 import Footer from './components/Footer';
 import ArtworkLightbox from './components/ArtworkLightbox';
 import MadhubaniFolkBackground from './components/MadhubaniFolkBackground';
+import ArticlePage from './components/ArticlePage';
 
-export default function App() {
+function MainPage() {
   const [activeSection, setActiveSection] = useState('home');
   const [selectedArtwork, setSelectedArtwork] = useState(null);
+  const location = useLocation();
+
+  // Scroll to section if state contains scrollTo
+  useEffect(() => {
+    if (location.state?.scrollTo) {
+      const targetId = location.state.scrollTo;
+      setTimeout(() => {
+        const elem = document.getElementById(targetId);
+        if (elem) {
+          const navOffset = 84;
+          const elementPosition = elem.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - navOffset;
+          window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  }, [location]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -66,7 +85,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-transparent font-sans selection:bg-[#C87A38] selection:text-white text-[#44403C] relative">
       
-      {/* 📌 AUTHENTIC MADHUBANI FOLKLORE FIXED BACKGROUND (SURYA, PEACOCK, MATSYA, KALPAVRIKSHA) */}
+      {/* 📌 AUTHENTIC MADHUBANI FOLKLORE FIXED BACKGROUND */}
       <MadhubaniFolkBackground />
       
       {/* Index Navigation Bar Header */}
@@ -78,23 +97,23 @@ export default function App() {
       {/* Main Client Index Sections Flow */}
       <main className="w-full">
         
-        {/* 📌 SECTION 1: HOME (Banner 3 Pics, Punchline & About Kalapravah with Center Artwork) */}
+        {/* 📌 SECTION 1: HOME */}
         <Hero
           onExploreArtworks={() => scrollToSection('gallery')}
           onExploreArtist={() => scrollToSection('art-artist')}
         />
 
-        {/* 📌 SECTION 2: ART & ARTIST (About Mithila Art, About Artist Rashmi Dhar, Artwork & Profile Pic) */}
+        {/* 📌 SECTION 2: ART & ARTIST */}
         <ArtAndArtistSection
           onContactArtist={() => scrollToSection('contact')}
         />
 
-        {/* 📌 SECTION 3: ART GALLERY (30 Artworks + Briefs, IHC Exhibition, Workshops, Aga Khan Event) */}
+        {/* 📌 SECTION 3: ART GALLERY */}
         <ArtGallerySection
           onSelectArtwork={(artwork) => setSelectedArtwork(artwork)}
         />
 
-        {/* 📌 SECTION 4: BLOG & ARTICLES (Artist Feature & Heritage Guides) */}
+        {/* 📌 SECTION 4: BLOG */}
         <JournalSection
           onOpenCommission={() => scrollToSection('contact')}
         />
@@ -116,4 +135,13 @@ export default function App() {
     </div>
   );
 }
-// Kalapravah Mithila Fine Art Portfolio
+
+export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<MainPage />} />
+      <Route path="/blog/:articleId" element={<ArticlePage />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
+    </Routes>
+  );
+}

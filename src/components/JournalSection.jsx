@@ -1,19 +1,9 @@
 import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { ArrowRight, Clock, Sparkles, BookOpen, User } from 'lucide-react';
 import { ARTIST_FEATURE, BLOG_ARTICLES } from '../data/articles';
-import ArticleModal from './ArticleModal';
 
-export default function JournalSection({ onOpenCommission, onOpenArticlePage }) {
-  const [activeArticle, setActiveArticle] = useState(null);
-
-  const handleArticleClick = (article) => {
-    if (onOpenArticlePage) {
-      onOpenArticlePage(article.id);
-    } else {
-      setActiveArticle(article);
-    }
-  };
-
+export default function JournalSection({ onOpenCommission }) {
   return (
     <section id="blog" className="py-8 sm:py-10 lg:py-12 bg-transparent relative overflow-hidden border-b border-[#E7E0D2] scroll-mt-20 sm:scroll-mt-24">
       
@@ -47,12 +37,8 @@ export default function JournalSection({ onOpenCommission, onOpenArticlePage }) 
             </div>
 
             {/* Un-boxed Editorial Feature Card */}
-            <a
-              href={`/blog/${ARTIST_FEATURE.id}`}
-              onClick={(e) => {
-                e.preventDefault();
-                handleArticleClick(ARTIST_FEATURE);
-              }}
+            <Link
+              to={`/blog/${ARTIST_FEATURE.id}`}
               className="group cursor-pointer text-left flex flex-col justify-between transition-all p-3 sm:p-4 rounded-2xl hover:bg-[#FFFDF9]/60 border border-transparent hover:border-[#E7E0D2]/60 block"
             >
               <div>
@@ -89,7 +75,7 @@ export default function JournalSection({ onOpenCommission, onOpenArticlePage }) 
                   <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
                 </div>
               </div>
-            </a>
+            </Link>
           </div>
 
           {/* Right Part: Articles Grid */}
@@ -106,13 +92,9 @@ export default function JournalSection({ onOpenCommission, onOpenArticlePage }) 
             {/* Un-boxed Editorial Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
               {BLOG_ARTICLES.map((article) => (
-                <a
+                <Link
                   key={article.id}
-                  href={`/blog/${article.id}`}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleArticleClick(article);
-                  }}
+                  to={`/blog/${article.id}`}
                   className="group cursor-pointer text-left flex flex-col justify-between transition-all p-3 sm:p-4 rounded-2xl hover:bg-[#FFFDF9]/60 border border-transparent hover:border-[#E7E0D2]/60 block"
                 >
                   <div>
@@ -144,7 +126,7 @@ export default function JournalSection({ onOpenCommission, onOpenArticlePage }) 
                       <ArrowRight className="w-3 h-3" />
                     </span>
                   </div>
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -152,13 +134,6 @@ export default function JournalSection({ onOpenCommission, onOpenArticlePage }) 
         </div>
 
       </div>
-
-      {/* Reader Modal */}
-      <ArticleModal
-        article={activeArticle}
-        onClose={() => setActiveArticle(null)}
-        onOpenCommission={onOpenCommission}
-      />
 
     </section>
   );
