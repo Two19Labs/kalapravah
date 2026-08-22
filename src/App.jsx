@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ArtAndArtistSection from './components/ArtAndArtistSection';
 import ArtGallerySection from './components/ArtGallerySection';
+import JournalSection from './components/JournalSection';
 import Footer from './components/Footer';
 import ArtworkLightbox from './components/ArtworkLightbox';
 import MadhubaniFolkBackground from './components/MadhubaniFolkBackground';
@@ -13,7 +14,7 @@ export default function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'art-artist', 'gallery', 'contact'];
+      const sections = ['home', 'art-artist', 'gallery', 'blog', 'contact'];
       const viewportHeight = window.innerHeight;
       const scrollY = window.scrollY;
       const documentHeight = document.documentElement.scrollHeight;
@@ -29,7 +30,7 @@ export default function App() {
         const elem = document.getElementById(id);
         if (elem) {
           const rect = elem.getBoundingClientRect();
-          if (rect.top <= viewportHeight * 0.4) {
+          if (rect.top <= 120) {
             active = id;
           }
         }
@@ -51,7 +52,14 @@ export default function App() {
     setActiveSection(id);
     const elem = document.getElementById(id);
     if (elem) {
-      elem.scrollIntoView({ behavior: 'smooth' });
+      const navOffset = 84;
+      const elementPosition = elem.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - navOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
   };
 
@@ -84,6 +92,11 @@ export default function App() {
         {/* 📌 SECTION 3: ART GALLERY (30 Artworks + Briefs, IHC Exhibition, Workshops, Aga Khan Event) */}
         <ArtGallerySection
           onSelectArtwork={(artwork) => setSelectedArtwork(artwork)}
+        />
+
+        {/* 📌 SECTION 4: BLOG & ARTICLES (Artist Feature & Heritage Guides) */}
+        <JournalSection
+          onOpenCommission={() => scrollToSection('contact')}
         />
 
       </main>

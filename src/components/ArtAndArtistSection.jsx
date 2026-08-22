@@ -3,7 +3,7 @@ import { Palette, UserCheck, Sparkles, HeartHandshake, ShieldCheck, Quote, Mount
 
 export default function ArtAndArtistSection({ onContactArtist }) {
   return (
-    <section id="art-artist" className="py-8 sm:py-10 lg:py-12 bg-transparent relative overflow-hidden border-b border-[#E7E0D2]">
+    <section id="art-artist" className="py-8 sm:py-10 lg:py-12 bg-transparent relative overflow-hidden border-b border-[#E7E0D2] scroll-mt-20 sm:scroll-mt-24">
       
       {/* Soft Decorative Ambient Spotlights */}
       <div className="absolute top-1/3 left-0 w-80 h-80 bg-[#C87A38]/5 rounded-full blur-3xl pointer-events-none" />

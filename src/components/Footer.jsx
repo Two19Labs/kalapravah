@@ -34,10 +34,9 @@ export default function Footer({ onNavigate }) {
 
   const indexLinks = [
     { id: 'home', label: 'HOME' },
-    { id: 'about', label: 'ABOUT' },
     { id: 'art-artist', label: 'ART & ARTIST' },
-    { id: 'gallery', label: 'GALLERY' },
-    { id: 'exhibitions', label: 'EXHIBITIONS' },
+    { id: 'gallery', label: 'ART GALLERY' },
+    { id: 'blog', label: 'BLOG' },
     { id: 'contact', label: 'CONTACT' },
   ];
 
@@ -55,7 +54,16 @@ export default function Footer({ onNavigate }) {
       onNavigate(sectionId);
     } else {
       const elem = document.getElementById(sectionId);
-      if (elem) elem.scrollIntoView({ behavior: 'smooth' });
+      if (elem) {
+        const navOffset = 84;
+        const elementPosition = elem.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - navOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
     }
   };
 
@@ -63,7 +71,7 @@ export default function Footer({ onNavigate }) {
     <footer className="w-full text-[#1C1917] overflow-hidden relative z-20 bg-[#1C1613] border-t border-[#3D302A]">
 
       {/* FOOTER & WHATSAPP QUICK INQUIRY */}
-      <section id="contact" className="bg-[#1C1613] text-[#EBE5DF] py-8 sm:py-10 lg:py-12 px-4 sm:px-6 lg:px-8">
+      <section id="contact" className="bg-[#1C1613] text-[#EBE5DF] py-8 sm:py-10 lg:py-12 px-4 sm:px-6 lg:px-8 scroll-mt-20 sm:scroll-mt-24">
         <div className="max-w-6xl mx-auto space-y-10">
           
           {/* Main 2-Column Compact Row */}

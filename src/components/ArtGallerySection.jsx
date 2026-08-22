@@ -66,7 +66,7 @@ export default function ArtGallerySection({ onSelectArtwork }) {
           currentSpeed = -0.35; // Fast reverse when holding < button
         } else if (isHoldingRight) {
           currentSpeed = 0.35; // Fast forward when holding > button
-        } else if (!isHoveredRef.current && !isDraggingRef.current) {
+        } else if (!isDraggingRef.current) {
           currentSpeed = 0.035; // Gentle continuous slow motion (~35px/sec)
         }
 
@@ -83,36 +83,8 @@ export default function ArtGallerySection({ onSelectArtwork }) {
     };
   }, [isHoldingLeft, isHoldingRight, filteredArtworks.length]);
 
-  // 1:1 Incremental Mouse Drag Handlers (Zero Jump / Zero Cut)
-  const handleMouseDown = (e) => {
-    isHoveredRef.current = true;
-    setIsHovered(true);
-    isDraggingRef.current = true;
-    setIsDragging(true);
-    setHasDraggedFar(false);
-    lastMouseXRef.current = e.clientX;
-  };
-
-  const handleMouseMove = (e) => {
-    if (!isDraggingRef.current) return;
-    const dx = lastMouseXRef.current - e.clientX;
-    lastMouseXRef.current = e.clientX;
-
-    if (Math.abs(dx) > 0.5) {
-      setHasDraggedFar(true);
-      updateScrollPos(scrollPosRef.current + dx);
-    }
-  };
-
-  const handleMouseUp = () => {
-    isDraggingRef.current = false;
-    setIsDragging(false);
-  };
-
-  // 1:1 Incremental Touch Drag Handlers for Mobile (Zero Jump / Zero Cut)
+  // 1:1 Incremental Touch Drag Handlers for Mobile/Tablet
   const handleTouchStart = (e) => {
-    isHoveredRef.current = true;
-    setIsHovered(true);
     isDraggingRef.current = true;
     setIsDragging(true);
     setHasDraggedFar(false);
@@ -137,16 +109,6 @@ export default function ArtGallerySection({ onSelectArtwork }) {
     setIsDragging(false);
   };
 
-  const handleWheel = (e) => {
-    if (!trackRef.current) return;
-    const delta = e.deltaX !== 0 ? e.deltaX : e.deltaY;
-    if (Math.abs(delta) > 2) {
-      isHoveredRef.current = true;
-      setIsHovered(true);
-      updateScrollPos(scrollPosRef.current + delta * 0.8);
-    }
-  };
-
   const handleNext = () => {
     updateScrollPos(scrollPosRef.current + 360);
   };
@@ -156,18 +118,18 @@ export default function ArtGallerySection({ onSelectArtwork }) {
   };
 
   return (
-    <section id="gallery" className="py-8 sm:py-10 lg:py-12 bg-transparent relative overflow-hidden border-b border-[#E7E0D2]">
+    <section id="gallery" className="py-8 sm:py-10 lg:py-12 bg-transparent relative overflow-hidden border-b border-[#E7E0D2] scroll-mt-20 sm:scroll-mt-24">
       
       {/* Ambient Lights */}
       <div className="absolute top-1/4 right-0 w-96 h-96 bg-[#C87A38]/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#9A3412]/5 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-8 sm:space-y-10 lg:space-y-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-6 sm:space-y-8">
         
         {/* Gallery Section Banner Header */}
         <div className="text-center max-w-3xl mx-auto space-y-2">
           <h2 className="font-serif text-3xl sm:text-5xl font-normal text-[#1C1917] tracking-tight">
-            GALLERY
+            ART GALLERY
           </h2>
           <p className="text-sm sm:text-base text-[#5C5652] leading-relaxed max-w-2xl mx-auto font-light">
             Explore 30+ curated original artworks, upcoming gallery exhibitions at IHC, traditional outdoor workshops, and international youth events.
@@ -175,49 +137,13 @@ export default function ArtGallerySection({ onSelectArtwork }) {
           <div className="w-20 h-[2px] bg-[#C87A38] mx-auto rounded-full mt-2" />
         </div>
 
-        {/* ========================================================================= */}
-        {/* SUBSECTION 1: 30+ ART WORKS CONTINUOUS SLOW MOVING CAROUSEL                */}
-        {/* ========================================================================= */}
-        <div className="space-y-8">
-          
-          {/* Header Bar */}
-          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b border-[#E7E0D2] pb-4">
-            <div>
-              <div className="flex items-center gap-3 flex-wrap">
-                <span className="text-[10px] font-bold tracking-[0.24em] text-[#C87A38] uppercase block">
-                  ORIGINAL FINE ARTWORKS
-                </span>
-              </div>
-
-              <h3 className="font-serif text-2xl sm:text-3xl font-normal text-[#1C1917] mt-1">
-                30+ Featured Artworks
-              </h3>
-            </div>
-          </div>
-
-          {/* 📍 CONTINUOUS SLOW MOVING TRACK (SIDE HOLDABLE < AND > BUTTONS) */}
-          <div 
-            className="relative overflow-hidden py-3 px-1 rounded-xl cursor-grab active:cursor-grabbing select-none group/carousel"
-            onMouseEnter={() => {
-              isHoveredRef.current = true;
-              setIsHovered(true);
-            }}
-            onMouseLeave={() => {
-              isHoveredRef.current = false;
-              setIsHovered(false);
-              isDraggingRef.current = false;
-              setIsDragging(false);
-              setIsHoldingLeft(false);
-              setIsHoldingRight(false);
-            }}
-            onMouseDown={handleMouseDown}
-            onMouseMove={handleMouseMove}
-            onMouseUp={handleMouseUp}
-            onTouchStart={handleTouchStart}
-            onTouchMove={handleTouchMove}
-            onTouchEnd={handleTouchEnd}
-            onWheel={handleWheel}
-          >
+        {/* 📍 CONTINUOUS SLOW MOVING TRACK (SIDE HOLDABLE < AND > BUTTONS FOR PC, TOUCH SWIPE FOR MOBILE) */}
+        <div 
+          className="relative overflow-hidden py-3 px-1 rounded-xl select-none group/carousel"
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
+        >
             {/* Holdable Left Side Button (<) */}
             <button
               onMouseDown={(e) => { e.stopPropagation(); setIsHoldingLeft(true); }}
@@ -225,11 +151,14 @@ export default function ArtGallerySection({ onSelectArtwork }) {
               onMouseLeave={() => setIsHoldingLeft(false)}
               onTouchStart={(e) => { e.stopPropagation(); setIsHoldingLeft(true); }}
               onTouchEnd={(e) => { e.stopPropagation(); setIsHoldingLeft(false); }}
-              onClick={(e) => { e.stopPropagation(); e.preventDefault(); }}
+              onClick={(e) => {
+                e.stopPropagation();
+                handlePrev();
+              }}
               className={`absolute left-3 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-[#1C1917]/85 hover:bg-[#C87A38] text-white flex items-center justify-center border border-white/30 shadow-2xl backdrop-blur-md transition-all active:scale-95 cursor-pointer ${
                 isHoldingLeft ? 'bg-[#C87A38] scale-110 shadow-inner' : ''
               }`}
-              aria-label="Hold to move left fast"
+              aria-label="Move left / previous"
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
@@ -241,11 +170,14 @@ export default function ArtGallerySection({ onSelectArtwork }) {
               onMouseLeave={() => setIsHoldingRight(false)}
               onTouchStart={(e) => { e.stopPropagation(); setIsHoldingRight(true); }}
               onTouchEnd={(e) => { e.stopPropagation(); setIsHoldingRight(false); }}
-              onClick={(e) => { e.stopPropagation(); e.preventDefault(); }}
+              onClick={(e) => {
+                e.stopPropagation();
+                handleNext();
+              }}
               className={`absolute right-3 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-[#1C1917]/85 hover:bg-[#C87A38] text-white flex items-center justify-center border border-white/30 shadow-2xl backdrop-blur-md transition-all active:scale-95 cursor-pointer ${
                 isHoldingRight ? 'bg-[#C87A38] scale-110 shadow-inner' : ''
               }`}
-              aria-label="Hold to move right fast"
+              aria-label="Move right / next"
             >
               <ChevronRight className="w-6 h-6" />
             </button>
@@ -337,8 +269,6 @@ export default function ArtGallerySection({ onSelectArtwork }) {
             </div>
 
           </div>
-
-        </div>
 
         {/* ========================================================================= */}
         {/* SUBSECTION 2: EXHIBITIONS (UPCOMING GALLERY AT IHC)                       */}

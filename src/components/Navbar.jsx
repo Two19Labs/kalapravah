@@ -28,6 +28,7 @@ export default function Navbar({ activeSection, setActiveSection }) {
     { id: 'home', label: 'HOME' },
     { id: 'art-artist', label: 'ART & ARTIST' },
     { id: 'gallery', label: 'ART GALLERY' },
+    { id: 'blog', label: 'BLOG' },
     { id: 'contact', label: 'CONTACT' },
   ];
 
@@ -36,7 +37,14 @@ export default function Navbar({ activeSection, setActiveSection }) {
     setMobileMenuOpen(false);
     const elem = document.getElementById(id);
     if (elem) {
-      elem.scrollIntoView({ behavior: 'smooth' });
+      const navOffset = 84;
+      const elementPosition = elem.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - navOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
   };
 
