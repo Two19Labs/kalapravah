@@ -96,7 +96,7 @@ export default function BlogIndexPage() {
           {/* Main Banner Header */}
           <div className="text-center max-w-3xl mx-auto space-y-2.5">
             <h1 className="font-serif text-3xl sm:text-5xl font-normal text-[#1C1917] tracking-tight">
-              THE BLOG
+              THE KALAPRAVAH BLOG
             </h1>
 
             <p className="text-sm sm:text-base text-[#5C5652] leading-relaxed max-w-2xl mx-auto font-light">

@@ -43,9 +43,9 @@ export default function JournalSection() {
             </Link>
           </div>
 
-          {/* Un-boxed Editorial Grid */}
+          {/* Un-boxed Editorial Grid (First 4 Featured Articles) */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
-            {BLOG_ARTICLES.map((article) => (
+            {BLOG_ARTICLES.slice(0, 4).map((article) => (
               <Link
                 key={article.id}
                 to={`/blog/${article.id}`}

@@ -86,9 +86,12 @@ export default function ArticlePage() {
     };
   }, [article]);
 
-  if (!article) return null;
-
-  const relatedArticles = BLOG_ARTICLES.filter(a => a.id !== article.id).slice(0, 3);
+  // Smart related articles recommendation prioritizing same category
+  const relatedArticles = React.useMemo(() => {
+    const sameCategory = BLOG_ARTICLES.filter(a => a.id !== article.id && a.category === article.category);
+    const others = BLOG_ARTICLES.filter(a => a.id !== article.id && a.category !== article.category);
+    return [...sameCategory, ...others].slice(0, 3);
+  }, [article.id, article.category]);
 
   const handleShare = () => {
     if (navigator.clipboard) {
