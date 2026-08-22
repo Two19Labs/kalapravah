@@ -76,6 +76,30 @@ export default function JournalSection({ onOpenCommission }) {
                 </div>
               </div>
             </Link>
+
+            {/* Read More Blogs CTA Card in Empty Space */}
+            <div className="pt-2">
+              <Link
+                to="/blog"
+                className="group cursor-pointer flex items-center justify-between p-4 sm:p-5 rounded-2xl bg-[#FFFDF9]/80 hover:bg-[#FFFDF9] border border-[#E7E0D2] shadow-xs hover:shadow-md transition-all text-left block"
+              >
+                <div className="space-y-1">
+                  <div className="flex items-center gap-1.5 text-[10px] font-bold tracking-[0.2em] text-[#C87A38] uppercase">
+                    <BookOpen className="w-3.5 h-3.5" />
+                    <span>EXPANDING ARCHIVE</span>
+                  </div>
+                  <h4 className="font-serif text-base sm:text-lg font-normal text-[#1C1917] group-hover:text-[#C87A38] transition-colors">
+                    Read More Blogs & Guides
+                  </h4>
+                  <p className="text-xs text-[#5C5652] font-light">
+                    Explore our complete library of Madhubani art history, mineral pigment alchemy, and motif symbolism.
+                  </p>
+                </div>
+                <div className="w-9 h-9 rounded-full bg-[#1C1917] group-hover:bg-[#C87A38] text-white flex items-center justify-center shrink-0 transition-colors shadow-sm ml-3">
+                  <ArrowRight className="w-4 h-4 transform group-hover:translate-x-0.5 transition-transform" />
+                </div>
+              </Link>
+            </div>
           </div>
 
           {/* Right Part: Articles Grid */}

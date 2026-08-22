@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import ArtworkLightbox from './components/ArtworkLightbox';
 import MadhubaniFolkBackground from './components/MadhubaniFolkBackground';
 import ArticlePage from './components/ArticlePage';
+import BlogIndexPage from './components/BlogIndexPage';
 
 function MainPage() {
   const [activeSection, setActiveSection] = useState('home');
@@ -140,6 +141,7 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<MainPage />} />
+      <Route path="/blog" element={<BlogIndexPage />} />
       <Route path="/blog/:articleId" element={<ArticlePage />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
