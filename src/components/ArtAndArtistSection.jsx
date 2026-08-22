@@ -75,32 +75,52 @@ export default function ArtAndArtistSection({ onContactArtist }) {
               </div>
             </div>
 
-            {/* 📍 ARTWORK UNDER KALAPRAVAH (Client Requirement - Featuring Artist's Real Pure Kachni Mandala) */}
+            {/* 📍 MITHILA ART STYLES & TRADITIONAL TECHNIQUES CARD */}
             <div className="lg:col-span-5 relative">
-              <div className="deckled-frame bg-[#FFFDF9] border border-[#E7E0D2] p-5 rounded-xl shadow-xl space-y-3 text-center">
-                <span className="text-[10px] font-bold tracking-[0.2em] text-[#C87A38] uppercase block">
-                  KALAPRAVAH HERITAGE ARTWORK
-                </span>
+              <div className="deckled-frame bg-[#FFFDF9] border border-[#E7E0D2] p-6 rounded-xl shadow-xl space-y-4 text-left">
+                <div className="flex items-center justify-between border-b border-[#E7E0D2] pb-3">
+                  <span className="text-[10px] font-bold tracking-[0.2em] text-[#C87A38] uppercase block">
+                    SACRED MITHILA STYLES
+                  </span>
+                  <span className="text-[10px] font-semibold text-[#78716C] bg-[#FAF8F3] px-2 py-0.5 rounded border border-[#E7E0D2]">
+                    Heritage Crafts
+                  </span>
+                </div>
 
-                <div className="relative aspect-[4/3] rounded-lg overflow-hidden border border-[#E7E0D2] bg-[#FAF8F3] group">
-                  <img
-                    src="/images/artwork_kachni_mandala.jpg"
-                    alt="Radha Krishna Pure Kachni Mandala by Rashmi Dhar"
-                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#1C1917]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4 text-left">
-                    <span className="text-sm font-serif font-bold text-white">Radha Krishna Kachni Mandala</span>
-                    <span className="text-xs text-[#EAD5BE]">Fine Nib Ink on Handmade Cotton Paper</span>
+                <div className="space-y-3.5">
+                  <div className="space-y-1">
+                    <h5 className="font-serif text-sm font-bold text-[#1C1917] flex items-center gap-2">
+                      <span className="w-2 h-2 rounded-full bg-[#C87A38]" />
+                      Bharni (Vibrant Color Fill)
+                    </h5>
+                    <p className="text-xs text-[#5C5652] leading-relaxed font-light pl-4">
+                      Vibrant color fills bounded by solid black double contour linework, historically depicting divine epics.
+                    </p>
+                  </div>
+
+                  <div className="space-y-1">
+                    <h5 className="font-serif text-sm font-bold text-[#1C1917] flex items-center gap-2">
+                      <span className="w-2 h-2 rounded-full bg-[#B94A2D]" />
+                      Kachni (Fine Line Hatching)
+                    </h5>
+                    <p className="text-xs text-[#5C5652] leading-relaxed font-light pl-4">
+                      Monochrome ink line hatching created with fine bamboo dip nibs without color fills.
+                    </p>
+                  </div>
+
+                  <div className="space-y-1">
+                    <h5 className="font-serif text-sm font-bold text-[#1C1917] flex items-center gap-2">
+                      <span className="w-2 h-2 rounded-full bg-[#D97706]" />
+                      Godna & Kohbar (Ancestral Motifs)
+                    </h5>
+                    <p className="text-xs text-[#5C5652] leading-relaxed font-light pl-4">
+                      Ancestral tattoo stippling and sacred bridal chamber mandalas invoking prosperity and protection.
+                    </p>
                   </div>
                 </div>
 
-                <div className="pt-2 text-left space-y-1">
-                  <h4 className="font-serif text-base font-bold text-[#1C1917]">
-                    Radha Krishna Kachni Mandala
-                  </h4>
-                  <p className="text-xs text-[#78716C] leading-relaxed">
-                    Monochrome Kachni line hatching drawn with fine dip pen nib by Rashmi Dhar.
-                  </p>
+                <div className="pt-3 border-t border-[#E7E0D2] text-[11px] text-[#78716C] italic font-serif text-center">
+                  "Each style preserves thousands of fine brushstrokes and sacred folk geometry."
                 </div>
               </div>
             </div>

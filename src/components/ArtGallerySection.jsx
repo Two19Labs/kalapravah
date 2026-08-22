@@ -361,37 +361,31 @@ export default function ArtGallerySection({ onSelectArtwork }) {
               </div>
             </div>
 
-            {/* Client's Workshop Philosophy Card */}
+            {/* Main Featured Workshop: @ Sunder Nursery & Institutional Venues */}
             <div className="bg-[#FFFDF9] border border-[#E7E0D2] rounded-xl p-6 sm:p-8 shadow-sm space-y-4 text-left relative overflow-hidden">
               <div className="absolute top-0 left-0 w-2.5 h-full bg-[#C87A38]" />
-              <div className="flex items-center gap-2 text-xs font-bold text-[#C87A38] uppercase tracking-wider">
-                <HeartHandshake className="w-4 h-4 text-[#C87A38]" />
-                <span>ART IS MEANT TO BE SHARED & LIVED</span>
-              </div>
-              <p className="text-base sm:text-lg text-[#1C1917] font-serif leading-relaxed">
-                Art is meant to be shared and lived. Beyond my studio practice, I regularly conduct immersive Madhubani Art Workshops for students and corporate groups. These sessions are designed to slow down racing minds, spark creativity, and introduce participants to the meditative rhythm of Mithila storytelling.
-              </p>
-            </div>
-
-            {/* Main Featured Workshop: @ Sunder Nursery */}
-            <div className="bg-[#FFFDF9] border border-[#E7E0D2] rounded-xl p-6 sm:p-8 shadow-sm space-y-4 text-left">
-              <div className="flex items-center gap-2 text-xs font-bold text-[#C87A38] uppercase tracking-wider">
-                <MapPin className="w-4 h-4 text-[#9A3412]" />
-                <span>@ SUNDER NURSERY, NEW DELHI</span>
+              <div className="flex items-center justify-between flex-wrap gap-2">
+                <div className="flex items-center gap-2 text-xs font-bold text-[#C87A38] uppercase tracking-wider">
+                  <MapPin className="w-4 h-4 text-[#9A3412]" />
+                  <span>@ SUNDER NURSERY, NEW DELHI</span>
+                </div>
+                <div className="flex items-center gap-1 text-[11px] font-semibold text-[#78716C] bg-[#FAF8F3] px-2.5 py-0.5 rounded border border-[#E7E0D2]">
+                  <HeartHandshake className="w-3.5 h-3.5 text-[#C87A38]" />
+                  <span>Art Is Meant To Be Shared</span>
+                </div>
               </div>
 
               <h4 className="font-serif text-xl sm:text-2xl font-bold text-[#1C1917]">
-                Meditative Madhubani Art Workshops Amidst Nature
+                Mindful Outdoor Workshops Amidst Nature
               </h4>
 
-              {/* Exact Client Text Copy for Sunder Nursery */}
               <p className="text-sm sm:text-base text-[#44403C] leading-relaxed">
-                Artist Rashmi Dhar has conducted several meditative Madhubani art workshops in last 2 years amidst nature for all ages. Participants experienced an stress-busting journey into this 3,000-year-old heritage art, dating back to Ramayana times, and proudly carried home their own handcrafted traditional masterpieces.
+                Beyond studio practice, Rashmi Dhar regularly conducts immersive workshops for students, art enthusiasts, and corporate groups. Set in lush outdoor spaces like Sunder Nursery, these sessions provide a restorative, stress-busting journey into Mithila linework, allowing participants to slow down, explore ancient storytelling, and create their own hand-painted masterpieces.
               </p>
 
               {/* Other Workshops Badges */}
               <div className="pt-4 border-t border-[#E7E0D2] flex flex-wrap items-center gap-3">
-                <span className="text-xs font-bold text-[#1C1917] uppercase tracking-wider">Other Workshops:</span>
+                <span className="text-xs font-bold text-[#1C1917] uppercase tracking-wider">Additional Venues:</span>
                 <span className="px-3 py-1 rounded-full bg-[#FAF8F3] border border-[#E7E0D2] text-xs font-semibold text-[#78716C]">
                   @ Lalit Kala Academy
                 </span>
@@ -424,18 +418,17 @@ export default function ArtGallerySection({ onSelectArtwork }) {
               </div>
 
               <h4 className="font-serif text-xl sm:text-2xl font-bold text-[#1C1917]">
-                Global Youth Meditative Art Workshop
+                Global Youth Heritage Art Intensive
               </h4>
 
-              {/* Exact Client Text Copy for Event */}
               <p className="text-sm sm:text-base text-[#44403C] leading-relaxed">
-                At the Aga Khan Foundation’s summer camp, Rashmi Dhar led a meditative Madhubani art workshop. Forty teens aged 15-20 across globe & from India, the USA, Canada, and the UAE gathered for two days of skill-building. Beyond mastering traditional techniques, they found deep mindfulness, stress relief, and brought home 3,000-year-old art masterpieces.
+                At the Aga Khan Foundation’s summer camp, Rashmi Dhar led an intensive two-day heritage art program. Forty teenagers aged 15–20 from India, the USA, Canada, and the UAE gathered for skill-building, discovering traditional line techniques, mindfulness, and the rich cultural legacy of Mithila art.
               </p>
 
               <div className="pt-2 flex flex-wrap gap-2 text-[11px] font-semibold text-[#78716C]">
                 <span className="px-2.5 py-1 rounded bg-[#FAF8F3] border border-[#E7E0D2]">40 Global Teen Participants</span>
                 <span className="px-2.5 py-1 rounded bg-[#FAF8F3] border border-[#E7E0D2]">India, USA, Canada, UAE</span>
-                <span className="px-2.5 py-1 rounded bg-[#FAF8F3] border border-[#E7E0D2]">2-Day Skill Intensive</span>
+                <span className="px-2.5 py-1 rounded bg-[#FAF8F3] border border-[#E7E0D2]">2-Day Intensive</span>
               </div>
             </div>
 
