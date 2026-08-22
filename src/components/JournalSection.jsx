@@ -38,7 +38,7 @@ export default function JournalSection() {
               to="/blog"
               className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-[#1C1917] hover:text-[#C87A38] transition-colors"
             >
-              <span>Explore All Blogs ({BLOG_ARTICLES.length + 1})</span>
+              <span>Explore All Blogs ({BLOG_ARTICLES.length})</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>

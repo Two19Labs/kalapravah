@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Search, Clock, ArrowRight, BookOpen, Sparkles, User, Tag, ChevronRight } from 'lucide-react';
-import { BLOG_ARTICLES, ARTIST_FEATURE } from '../data/articles';
+import { BLOG_ARTICLES } from '../data/articles';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import MadhubaniFolkBackground from './MadhubaniFolkBackground';
@@ -11,11 +11,10 @@ export default function BlogIndexPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
 
-  const allArticles = [ARTIST_FEATURE, ...BLOG_ARTICLES];
+  const allArticles = BLOG_ARTICLES;
 
   const categories = [
     'All',
-    'About The Artist',
     'Art History & Styles',
     'Techniques',
     'Motifs & Symbolism'
