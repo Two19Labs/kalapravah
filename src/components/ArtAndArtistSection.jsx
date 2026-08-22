@@ -1,5 +1,7 @@
 import React from 'react';
-import { Palette, UserCheck, Sparkles, HeartHandshake, ShieldCheck, Quote, Mountain, GraduationCap, Award, Compass, MessageSquare } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Palette, UserCheck, Sparkles, HeartHandshake, ShieldCheck, Quote, Mountain, GraduationCap, Award, Compass, MessageSquare, ArrowRight } from 'lucide-react';
+import { ARTIST_FEATURE } from '../data/articles';
 
 export default function ArtAndArtistSection({ onContactArtist }) {
   return (
@@ -221,6 +223,40 @@ export default function ArtAndArtistSection({ onContactArtist }) {
                     "Though I did not grow up in the traditional households of Mithila inheriting these brushstrokes from ancestors, I found myself drawn to Madhubani not by lineage, but by a profound sense of belonging. Every motif, the vibrant flora, the sacred fauna, and the eternal narratives of our epics, speaks a language of its own. When I hold the fine nib and fill the canvas with natural pigments and bright hues, I am not just painting; I am listening to the whispers of ancient history and translating them for today."
                   </p>
                 </blockquote>
+              </div>
+
+              {/* 📍 FEATURED STUDIO STORY CARD */}
+              <div className="pt-2">
+                <Link
+                  to={`/blog/${ARTIST_FEATURE.id}`}
+                  className="group cursor-pointer flex flex-col sm:flex-row items-center justify-between p-4 sm:p-5 rounded-2xl bg-[#FFFDF9] border border-[#E7E0D2] shadow-sm hover:shadow-md transition-all gap-4 text-left block"
+                >
+                  <div className="relative w-full sm:w-40 aspect-[4/3] rounded-xl overflow-hidden bg-[#FAF8F3] shrink-0">
+                    <img
+                      src={ARTIST_FEATURE.image}
+                      alt={ARTIST_FEATURE.title}
+                      className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <span className="absolute top-2 left-2 bg-[#1C1917]/80 backdrop-blur-md text-white text-[9px] font-semibold px-2.5 py-0.5 rounded-full uppercase">
+                      STUDIO STORY
+                    </span>
+                  </div>
+                  <div className="space-y-1 flex-1">
+                    <span className="text-[10px] font-bold tracking-[0.2em] text-[#C87A38] uppercase block">
+                      FEATURED ARTIST JOURNAL
+                    </span>
+                    <h4 className="font-serif text-base sm:text-lg font-bold text-[#1C1917] group-hover:text-[#C87A38] transition-colors leading-snug">
+                      {ARTIST_FEATURE.title}
+                    </h4>
+                    <p className="text-xs text-[#5C5652] line-clamp-2 font-light">
+                      {ARTIST_FEATURE.excerpt}
+                    </p>
+                    <div className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase text-[#1C1917] group-hover:text-[#C87A38] pt-1">
+                      <span>Read Full Studio Story</span>
+                      <ArrowRight className="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </div>
+                </Link>
               </div>
 
 
