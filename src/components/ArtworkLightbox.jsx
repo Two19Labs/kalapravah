@@ -169,7 +169,7 @@ export default function ArtworkLightbox({ artwork, onClose, onOpenCommission }) 
                 <div className="space-y-3">
                   <div className="flex items-center justify-between border-b border-[#E7E0D2] pb-2">
                     <div className="flex items-center gap-2">
-                      <span className="w-2.5 h-2.5 rounded-full bg-[#22C55E] animate-ping"></span>
+                      <span className="w-2 h-2 rounded-full bg-[#C87A38]"></span>
                       <span className="text-xs font-bold uppercase tracking-wider text-[#B94A2D]">
                         High-Definition Macro View
                       </span>

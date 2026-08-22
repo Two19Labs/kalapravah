@@ -4,9 +4,21 @@ import { GalleryVertical, Calendar, Landmark, MapPin, Users, Sparkles, Eye, Arro
 
 export default function ArtGallerySection({ onSelectArtwork }) {
   const [filterStyle, setFilterStyle] = useState('All');
-  const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
-  const [isTransitioning, setIsTransitioning] = useState(true);
+  const [scrollPos, setScrollPos] = useState(0);
+
+  const [isDragging, setIsDragging] = useState(false);
+  const [hasDraggedFar, setHasDraggedFar] = useState(false);
+
+  const [isHoldingLeft, setIsHoldingLeft] = useState(false);
+  const [isHoldingRight, setIsHoldingRight] = useState(false);
+
+  const trackRef = React.useRef(null);
+  const animRef = React.useRef(null);
+  const scrollPosRef = React.useRef(0);
+  const lastMouseXRef = React.useRef(0);
+  const isDraggingRef = React.useRef(false);
+  const isHoveredRef = React.useRef(false);
 
   const categories = ['All', 'Bharni', 'Kachni', 'Godna', 'Traditional'];
 
@@ -15,108 +27,145 @@ export default function ArtGallerySection({ onSelectArtwork }) {
     return item.styleCategory.toLowerCase().includes(filterStyle.toLowerCase());
   });
 
-  // Seamless cloned track: append first 3 items to end for infinite loop
+  // Triple-cloned array for seamless infinite marquee scrolling in both directions
   const displayArtworks = filteredArtworks.length > 0 
-    ? [...filteredArtworks, ...filteredArtworks.slice(0, 3)] 
+    ? [...filteredArtworks, ...filteredArtworks, ...filteredArtworks] 
     : [];
 
-  // Reset seamless loop when reaching cloned end items
-  useEffect(() => {
-    if (currentIndex >= filteredArtworks.length && filteredArtworks.length > 0) {
-      const timeout = setTimeout(() => {
-        setIsTransitioning(false);
-        setCurrentIndex(0);
-      }, 700);
-      return () => clearTimeout(timeout);
-    }
-  }, [currentIndex, filteredArtworks.length]);
-
-  // Auto-swipe every 3 seconds (3000ms) unless hovered
-  useEffect(() => {
-    if (isHovered || filteredArtworks.length === 0) return;
-    
-    const timer = setInterval(() => {
-      setIsTransitioning(true);
-      setCurrentIndex((prev) => prev + 1);
-    }, 3000);
-
-    return () => clearInterval(timer);
-  }, [isHovered, filteredArtworks.length]);
-
-  const [cardsPerView, setCardsPerView] = useState(3);
-  const [touchStartX, setTouchStartX] = useState(0);
-
-  useEffect(() => {
-    const updateCardsPerView = () => {
-      const width = window.innerWidth;
-      if (width < 640) {
-        setCardsPerView(1); // Mobile Phones: 1 card
-      } else if (width < 1024) {
-        setCardsPerView(2); // Tablets & iPads: 2 cards
-      } else {
-        setCardsPerView(3); // Laptops & Desktop: 3 cards
+  // Helper to normalize position continuously without cuts
+  const updateScrollPos = (newPos) => {
+    let pos = newPos;
+    if (trackRef.current) {
+      const oneSetWidth = trackRef.current.scrollWidth / 3;
+      if (oneSetWidth > 0) {
+        while (pos < 0) pos += oneSetWidth;
+        while (pos >= oneSetWidth) pos -= oneSetWidth;
       }
-    };
-    updateCardsPerView();
-    window.addEventListener('resize', updateCardsPerView);
-    return () => window.removeEventListener('resize', updateCardsPerView);
-  }, []);
+    }
+    scrollPosRef.current = pos;
+    setScrollPos(pos);
+  };
 
-  const handleTouchStart = (e) => {
+  // Reset scrollPos if filter category changes
+  useEffect(() => {
+    updateScrollPos(0);
+  }, [filterStyle]);
+
+  // Continuous linear movement & continuous hold-to-scroll fast movement
+  useEffect(() => {
+    let lastTime = performance.now();
+
+    const animate = (now) => {
+      const delta = now - lastTime;
+      lastTime = now;
+
+      if (trackRef.current) {
+        let currentSpeed = 0;
+        
+        if (isHoldingLeft) {
+          currentSpeed = -0.35; // Fast reverse when holding < button
+        } else if (isHoldingRight) {
+          currentSpeed = 0.35; // Fast forward when holding > button
+        } else if (!isHoveredRef.current && !isDraggingRef.current) {
+          currentSpeed = 0.035; // Gentle continuous slow motion (~35px/sec)
+        }
+
+        if (currentSpeed !== 0) {
+          updateScrollPos(scrollPosRef.current + currentSpeed * delta);
+        }
+      }
+      animRef.current = requestAnimationFrame(animate);
+    };
+
+    animRef.current = requestAnimationFrame(animate);
+    return () => {
+      if (animRef.current) cancelAnimationFrame(animRef.current);
+    };
+  }, [isHoldingLeft, isHoldingRight, filteredArtworks.length]);
+
+  // 1:1 Incremental Mouse Drag Handlers (Zero Jump / Zero Cut)
+  const handleMouseDown = (e) => {
+    isHoveredRef.current = true;
     setIsHovered(true);
-    if (e.touches && e.touches[0]) {
-      setTouchStartX(e.touches[0].clientX);
+    isDraggingRef.current = true;
+    setIsDragging(true);
+    setHasDraggedFar(false);
+    lastMouseXRef.current = e.clientX;
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isDraggingRef.current) return;
+    const dx = lastMouseXRef.current - e.clientX;
+    lastMouseXRef.current = e.clientX;
+
+    if (Math.abs(dx) > 0.5) {
+      setHasDraggedFar(true);
+      updateScrollPos(scrollPosRef.current + dx);
     }
   };
 
-  const handleTouchEnd = (e) => {
-    setIsHovered(false);
-    if (!touchStartX || !e.changedTouches || !e.changedTouches[0]) return;
-    const touchEndX = e.changedTouches[0].clientX;
-    const diff = touchStartX - touchEndX;
+  const handleMouseUp = () => {
+    isDraggingRef.current = false;
+    setIsDragging(false);
+  };
 
-    if (diff > 40) {
-      handleNext();
-    } else if (diff < -40) {
-      handlePrev();
+  // 1:1 Incremental Touch Drag Handlers for Mobile (Zero Jump / Zero Cut)
+  const handleTouchStart = (e) => {
+    isHoveredRef.current = true;
+    setIsHovered(true);
+    isDraggingRef.current = true;
+    setIsDragging(true);
+    setHasDraggedFar(false);
+    if (e.touches && e.touches[0]) {
+      lastMouseXRef.current = e.touches[0].clientX;
     }
-    setTouchStartX(0);
+  };
+
+  const handleTouchMove = (e) => {
+    if (!isDraggingRef.current || !e.touches || !e.touches[0]) return;
+    const dx = lastMouseXRef.current - e.touches[0].clientX;
+    lastMouseXRef.current = e.touches[0].clientX;
+
+    if (Math.abs(dx) > 0.5) {
+      setHasDraggedFar(true);
+      updateScrollPos(scrollPosRef.current + dx);
+    }
+  };
+
+  const handleTouchEnd = () => {
+    isDraggingRef.current = false;
+    setIsDragging(false);
+  };
+
+  const handleWheel = (e) => {
+    if (!trackRef.current) return;
+    const delta = e.deltaX !== 0 ? e.deltaX : e.deltaY;
+    if (Math.abs(delta) > 2) {
+      isHoveredRef.current = true;
+      setIsHovered(true);
+      updateScrollPos(scrollPosRef.current + delta * 0.8);
+    }
   };
 
   const handleNext = () => {
-    setIsTransitioning(true);
-    setCurrentIndex((prev) => prev + 1);
+    updateScrollPos(scrollPosRef.current + 360);
   };
 
   const handlePrev = () => {
-    setIsTransitioning(true);
-    if (currentIndex === 0) {
-      setIsTransitioning(false);
-      setCurrentIndex(filteredArtworks.length);
-      setTimeout(() => {
-        setIsTransitioning(true);
-        setCurrentIndex(filteredArtworks.length - 1);
-      }, 50);
-    } else {
-      setCurrentIndex((prev) => prev - 1);
-    }
+    updateScrollPos(scrollPosRef.current - 360);
   };
 
   return (
-    <section id="gallery" className="py-16 sm:py-24 bg-transparent relative overflow-hidden border-b border-[#E7E0D2]">
+    <section id="gallery" className="pt-4 sm:pt-6 pb-16 sm:pb-24 bg-transparent relative overflow-hidden border-b border-[#E7E0D2]">
       
       {/* Ambient Lights */}
       <div className="absolute top-1/4 right-0 w-96 h-96 bg-[#C87A38]/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#9A3412]/5 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-20 sm:space-y-28">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-12 sm:space-y-16">
         
         {/* Gallery Section Banner Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#E7E0D2]/60 border border-[#C4B9A3]/60 text-xs font-bold text-[#C87A38] uppercase tracking-widest">
-            <GalleryVertical className="w-4 h-4" />
-            <span>STUDIO COLLECTION & EVENTS</span>
-          </div>
+        <div className="text-center max-w-3xl mx-auto space-y-2">
           <h2 className="font-serif text-3xl sm:text-5xl font-normal text-[#1C1917] tracking-tight">
             GALLERY
           </h2>
@@ -127,11 +176,11 @@ export default function ArtGallerySection({ onSelectArtwork }) {
         </div>
 
         {/* ========================================================================= */}
-        {/* SUBSECTION 1: 30+ ART WORKS PERFECT SMOOTH SEAMLESS CAROUSEL              */}
+        {/* SUBSECTION 1: 30+ ART WORKS CONTINUOUS SLOW MOVING CAROUSEL                */}
         {/* ========================================================================= */}
         <div className="space-y-8">
           
-          {/* Header & Controls Bar */}
+          {/* Header Bar */}
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b border-[#E7E0D2] pb-4">
             <div>
               <div className="flex items-center gap-3 flex-wrap">
@@ -144,52 +193,83 @@ export default function ArtGallerySection({ onSelectArtwork }) {
                 30+ Featured Artworks
               </h3>
             </div>
-
-            {/* Prev / Next Arrows positioned in Controls Bar */}
-            <div className="flex items-center gap-1.5">
-                <button
-                  onClick={handlePrev}
-                  className="w-9 h-9 rounded-full bg-[#FFFDF9] hover:bg-[#1C1917] text-[#1C1917] hover:text-white flex items-center justify-center border border-[#E7E0D2] shadow-sm transition-all active:scale-95 cursor-pointer"
-                  aria-label="Previous Artwork"
-                >
-                  <ChevronLeft className="w-5 h-5" />
-                </button>
-                <button
-                onClick={handleNext}
-                className="w-9 h-9 rounded-full bg-[#FFFDF9] hover:bg-[#1C1917] text-[#1C1917] hover:text-white flex items-center justify-center border border-[#E7E0D2] shadow-sm transition-all active:scale-95 cursor-pointer"
-                aria-label="Next Artwork"
-              >
-                <ChevronRight className="w-5 h-5" />
-              </button>
-            </div>
-
           </div>
 
-          {/* 📍 SMOOTH SLIDING TRACK CAROUSEL (SEAMLESS INFINITE LOOP) */}
+          {/* 📍 CONTINUOUS SLOW MOVING TRACK (SIDE HOLDABLE < AND > BUTTONS) */}
           <div 
-            className="relative overflow-hidden py-2 px-1 rounded-xl touch-pan-y"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
+            className="relative overflow-hidden py-3 px-1 rounded-xl cursor-grab active:cursor-grabbing select-none group/carousel"
+            onMouseEnter={() => {
+              isHoveredRef.current = true;
+              setIsHovered(true);
+            }}
+            onMouseLeave={() => {
+              isHoveredRef.current = false;
+              setIsHovered(false);
+              isDraggingRef.current = false;
+              setIsDragging(false);
+              setIsHoldingLeft(false);
+              setIsHoldingRight(false);
+            }}
+            onMouseDown={handleMouseDown}
+            onMouseMove={handleMouseMove}
+            onMouseUp={handleMouseUp}
             onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
+            onWheel={handleWheel}
           >
+            {/* Holdable Left Side Button (<) */}
+            <button
+              onMouseDown={(e) => { e.stopPropagation(); setIsHoldingLeft(true); }}
+              onMouseUp={(e) => { e.stopPropagation(); setIsHoldingLeft(false); }}
+              onMouseLeave={() => setIsHoldingLeft(false)}
+              onTouchStart={(e) => { e.stopPropagation(); setIsHoldingLeft(true); }}
+              onTouchEnd={(e) => { e.stopPropagation(); setIsHoldingLeft(false); }}
+              onClick={(e) => { e.stopPropagation(); e.preventDefault(); }}
+              className={`absolute left-3 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-[#1C1917]/85 hover:bg-[#C87A38] text-white flex items-center justify-center border border-white/30 shadow-2xl backdrop-blur-md transition-all active:scale-95 cursor-pointer ${
+                isHoldingLeft ? 'bg-[#C87A38] scale-110 shadow-inner' : ''
+              }`}
+              aria-label="Hold to move left fast"
+            >
+              <ChevronLeft className="w-6 h-6" />
+            </button>
+
+            {/* Holdable Right Side Button (>) */}
+            <button
+              onMouseDown={(e) => { e.stopPropagation(); setIsHoldingRight(true); }}
+              onMouseUp={(e) => { e.stopPropagation(); setIsHoldingRight(false); }}
+              onMouseLeave={() => setIsHoldingRight(false)}
+              onTouchStart={(e) => { e.stopPropagation(); setIsHoldingRight(true); }}
+              onTouchEnd={(e) => { e.stopPropagation(); setIsHoldingRight(false); }}
+              onClick={(e) => { e.stopPropagation(); e.preventDefault(); }}
+              className={`absolute right-3 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-[#1C1917]/85 hover:bg-[#C87A38] text-white flex items-center justify-center border border-white/30 shadow-2xl backdrop-blur-md transition-all active:scale-95 cursor-pointer ${
+                isHoldingRight ? 'bg-[#C87A38] scale-110 shadow-inner' : ''
+              }`}
+              aria-label="Hold to move right fast"
+            >
+              <ChevronRight className="w-6 h-6" />
+            </button>
             
-            {/* Sliding Track with exact calc() translation & seamless transition toggle */}
+            {/* Sliding Track with continuous requestAnimationFrame translate3d */}
             <div 
-              className="flex gap-4 sm:gap-6"
+              ref={trackRef}
+              className="flex gap-4 sm:gap-6 w-max"
               style={{
-                transform: `translateX(calc(-${currentIndex} * (100% + ${cardsPerView === 1 ? '1rem' : '1.5rem'}) / ${cardsPerView}))`,
-                transition: isTransitioning ? 'transform 700ms ease-in-out' : 'none'
+                transform: `translate3d(-${scrollPos}px, 0, 0)`,
+                willChange: 'transform'
               }}
             >
               {displayArtworks.map((artwork, index) => (
                 <div
                   key={`${artwork.id}-${index}`}
-                  onClick={() => onSelectArtwork && onSelectArtwork(artwork)}
-                  style={{ width: `calc((100% - ${cardsPerView === 1 ? '0rem' : cardsPerView === 2 ? '1.5rem' : '3rem'}) / ${cardsPerView})` }}
-                  className="w-full sm:w-[calc((100%-1.5rem)/2)] lg:w-[calc((100%-3rem)/3)] min-w-full sm:min-w-[calc((100%-1.5rem)/2)] lg:min-w-[calc((100%-3rem)/3)] shrink-0 deckled-frame bg-[#FFFDF9] border-2 border-[#E7E0D2] hover:border-[#C87A38] rounded-xl p-4 sm:p-5 shadow-md hover:shadow-2xl transition-all duration-300 group cursor-pointer flex flex-col justify-between"
+                  onClick={() => {
+                    if (!hasDraggedFar && onSelectArtwork) {
+                      onSelectArtwork(artwork);
+                    }
+                  }}
+                  className="w-[300px] sm:w-[360px] lg:w-[380px] min-w-[300px] sm:min-w-[360px] lg:min-w-[380px] shrink-0 deckled-frame bg-[#FFFDF9] border-2 border-[#E7E0D2] hover:border-[#C87A38] rounded-xl p-4 sm:p-5 shadow-md hover:shadow-2xl transition-all duration-300 group cursor-pointer flex flex-col justify-between h-[480px] sm:h-[510px]"
                 >
-                  <div className="space-y-4">
+                  <div className="space-y-3">
                     
                     {/* Artwork Image Frame */}
                     <div className="relative aspect-[4/3] rounded-lg overflow-hidden border border-[#E7E0D2] bg-[#FAF8F3]">
@@ -211,9 +291,9 @@ export default function ArtGallerySection({ onSelectArtwork }) {
                     </div>
 
                     {/* Artwork Titles & Details */}
-                    <div className="space-y-2 text-left">
-                      <div className="flex items-start justify-between gap-2">
-                        <h4 className="font-serif text-xl font-bold text-[#1C1917] group-hover:text-[#C87A38] transition-colors">
+                    <div className="space-y-1.5 text-left">
+                      <div className="flex items-center justify-between gap-2 h-7">
+                        <h4 className="font-serif text-lg sm:text-xl font-bold text-[#1C1917] group-hover:text-[#C87A38] transition-colors truncate">
                           {artwork.title}
                         </h4>
                         <span className="text-[11px] font-semibold text-[#78716C] bg-[#FAF8F3] px-2 py-0.5 rounded border border-[#E7E0D2] shrink-0">
@@ -221,18 +301,20 @@ export default function ArtGallerySection({ onSelectArtwork }) {
                         </span>
                       </div>
 
-                      <p className="text-xs text-[#78716C] italic font-serif">
+                      <p className="text-xs text-[#78716C] italic font-serif truncate h-5 flex items-center">
                         {artwork.medium}
                       </p>
 
-                      {/* 📍 BRIEF 15-20 WORDS ABOUT EACH ART WORK */}
-                      <div className="pt-2 border-t border-[#E7E0D2]/60">
-                        <span className="text-[9.5px] font-bold tracking-widest text-[#C87A38] uppercase block mb-1">
+                      {/* 📍 BRIEF 15-20 WORDS ABOUT EACH ART WORK (FIXED UNIFORM BOX HEIGHT) */}
+                      <div className="pt-2 border-t border-[#E7E0D2]/60 space-y-1">
+                        <span className="text-[9.5px] font-bold tracking-widest text-[#C87A38] uppercase block">
                           ARTWORK BRIEF:
                         </span>
-                        <p className="text-xs sm:text-[13px] text-[#292524] font-medium leading-relaxed bg-[#FAF8F3] p-2.5 rounded border border-[#E7E0D2]/80">
-                          {artwork.brief}
-                        </p>
+                        <div className="h-[60px] sm:h-[64px] bg-[#FAF8F3] p-2.5 rounded border border-[#E7E0D2]/80 flex items-center overflow-hidden">
+                          <p className="text-xs sm:text-[13px] text-[#292524] font-medium leading-snug line-clamp-3">
+                            {artwork.brief}
+                          </p>
+                        </div>
                       </div>
 
                     </div>
@@ -240,7 +322,7 @@ export default function ArtGallerySection({ onSelectArtwork }) {
                   </div>
 
                   {/* Card Footer */}
-                  <div className="pt-4 mt-4 border-t border-[#E7E0D2] flex items-center justify-between text-xs">
+                  <div className="pt-3 mt-2 border-t border-[#E7E0D2] flex items-center justify-between text-xs">
                     <span className="font-bold text-[#C87A38]">
                       {artwork.price}
                     </span>
@@ -254,20 +336,6 @@ export default function ArtGallerySection({ onSelectArtwork }) {
               ))}
             </div>
 
-          </div>
-
-          {/* Dots Indicator */}
-          <div className="flex items-center justify-center gap-2 pt-2">
-            {filteredArtworks.map((_, idx) => (
-              <button
-                key={idx}
-                onClick={() => setCurrentIndex(idx)}
-                className={`h-2.5 rounded-full transition-all cursor-pointer ${
-                  idx === currentIndex ? 'w-8 bg-[#C87A38]' : 'w-2.5 bg-[#E7E0D2] hover:bg-[#C4B9A3]'
-                }`}
-                aria-label={`Go to artwork ${idx + 1}`}
-              />
-            ))}
           </div>
 
         </div>
@@ -380,17 +448,17 @@ export default function ArtGallerySection({ onSelectArtwork }) {
               </h4>
 
               <p className="text-sm sm:text-base text-[#44403C] leading-relaxed">
-                Beyond studio practice, Rashmi Dhar regularly conducts immersive workshops for students, art enthusiasts, and corporate groups. Set in lush outdoor spaces like Sunder Nursery, these sessions provide a restorative, stress-busting journey into Mithila linework, allowing participants to slow down, explore ancient storytelling, and create their own hand-painted masterpieces.
+                Artist Rashmi Dhar has conducted several meditative Madhubani art workshops in last 2 years amidst nature for all ages. Participants experienced an stress-busting journey into this 3,000-year-old heritage art, dating back to Ramayana times, and proudly carried home their own handcrafted traditional masterpieces.
               </p>
 
               {/* Other Workshops Badges */}
               <div className="pt-4 border-t border-[#E7E0D2] flex flex-wrap items-center gap-3">
-                <span className="text-xs font-bold text-[#1C1917] uppercase tracking-wider">Additional Venues:</span>
+                <span className="text-xs font-bold text-[#1C1917] uppercase tracking-wider">Other workshops:</span>
                 <span className="px-3 py-1 rounded-full bg-[#FAF8F3] border border-[#E7E0D2] text-xs font-semibold text-[#78716C]">
-                  @ Lalit Kala Academy
+                  @ Lalit Kala academy
                 </span>
                 <span className="px-3 py-1 rounded-full bg-[#FAF8F3] border border-[#E7E0D2] text-xs font-semibold text-[#78716C]">
-                  @ Bikaner House
+                  @ Bikaner house
                 </span>
               </div>
             </div>
@@ -404,7 +472,7 @@ export default function ArtGallerySection({ onSelectArtwork }) {
                 INTERNATIONAL YOUTH & COMMUNITY HIGHLIGHT
               </span>
               <h3 className="font-serif text-2xl sm:text-4xl font-normal text-[#1C1917]">
-                Special Event
+                Event
               </h3>
             </div>
 
@@ -418,11 +486,11 @@ export default function ArtGallerySection({ onSelectArtwork }) {
               </div>
 
               <h4 className="font-serif text-xl sm:text-2xl font-bold text-[#1C1917]">
-                Global Youth Heritage Art Intensive
+                Global Youth Meditative Art Workshop
               </h4>
 
               <p className="text-sm sm:text-base text-[#44403C] leading-relaxed">
-                At the Aga Khan Foundation’s summer camp, Rashmi Dhar led an intensive two-day heritage art program. Forty teenagers aged 15–20 from India, the USA, Canada, and the UAE gathered for skill-building, discovering traditional line techniques, mindfulness, and the rich cultural legacy of Mithila art.
+                At the Aga Khan Foundation’s summer camp, Rashmi Dhar led a meditative Madhubani art workshop. Forty teens aged 15–20 across globe & from India, the USA, Canada, and the UAE gathered for two days of skill-building. Beyond mastering traditional techniques, they found deep mindfulness, stress relief, and brought home 3,000-year-old art masterpieces.
               </p>
 
               <div className="pt-2 flex flex-wrap gap-2 text-[11px] font-semibold text-[#78716C]">

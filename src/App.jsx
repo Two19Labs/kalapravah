@@ -13,30 +13,38 @@ export default function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'art-artist', 'gallery', 'exhibitions', 'contact'];
-      const scrollPosition = window.scrollY + 180;
+      const sections = ['home', 'art-artist', 'gallery', 'contact'];
+      const viewportHeight = window.innerHeight;
+      const scrollY = window.scrollY;
+      const documentHeight = document.documentElement.scrollHeight;
 
-      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 60) {
+      // Bottom of page -> contact section
+      if (viewportHeight + scrollY >= documentHeight - 100) {
         setActiveSection('contact');
         return;
       }
 
-      for (let i = sections.length - 1; i >= 0; i--) {
-        const elem = document.getElementById(sections[i]);
+      let active = 'home';
+      for (const id of sections) {
+        const elem = document.getElementById(id);
         if (elem) {
-          const top = elem.offsetTop;
-          if (scrollPosition >= top) {
-            setActiveSection(sections[i]);
-            break;
+          const rect = elem.getBoundingClientRect();
+          if (rect.top <= viewportHeight * 0.4) {
+            active = id;
           }
         }
       }
+      setActiveSection(active);
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('resize', handleScroll, { passive: true });
     handleScroll();
 
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleScroll);
+    };
   }, []);
 
   const scrollToSection = (id) => {

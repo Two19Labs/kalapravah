@@ -3,20 +3,16 @@ import { Palette, UserCheck, Sparkles, HeartHandshake, ShieldCheck, Quote, Mount
 
 export default function ArtAndArtistSection({ onContactArtist }) {
   return (
-    <section id="art-artist" className="py-12 sm:py-16 bg-transparent relative overflow-hidden border-b border-[#E7E0D2]">
+    <section id="art-artist" className="pt-2 sm:pt-4 pb-4 sm:pb-6 bg-transparent relative overflow-hidden border-b border-[#E7E0D2]">
       
       {/* Soft Decorative Ambient Spotlights */}
       <div className="absolute top-1/3 left-0 w-80 h-80 bg-[#C87A38]/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-10 right-0 w-96 h-96 bg-[#9A3412]/5 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-12 sm:space-y-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-8 sm:space-y-12">
         
         {/* Main Section Banner Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#E7E0D2]/60 border border-[#C4B9A3]/60 text-xs font-bold text-[#C87A38] uppercase tracking-widest">
-            <Palette className="w-4 h-4" />
-            <span>HERITAGE & VISIONARY CREATOR</span>
-          </div>
+        <div className="text-center max-w-3xl mx-auto space-y-2">
           <h2 className="font-serif text-3xl sm:text-5xl font-normal text-[#1C1917] tracking-tight">
             ART & ARTIST
           </h2>
@@ -193,21 +189,20 @@ export default function ArtAndArtistSection({ onContactArtist }) {
               <div className="bg-[#FFFDF9] border border-[#E7E0D2] rounded-xl p-6 sm:p-8 shadow-sm space-y-4">
                 
                 <p className="text-sm sm:text-base text-[#44403C] leading-relaxed">
-                  My journey with art began in early childhood, nurtured amidst the breathtaking landscapes of Srinagar, Jammu and Kashmir. Though life initially led me down a different technical path: graduating as an Engineering graduate from Nagpur University: my heart remained anchored in creative expression.
+                  In a world brimming with fast-paced, digital art trends, it's refreshing to come across artists who dive deep into the roots of creativity, drawing inspiration from traditional forms of expression. Among these creators is Rashmi Dhar, an Engineering graduate turned artist since past 5 years always had passion to explore the folk art from her early childhood and in particular, the Mithla art.
                 </p>
 
                 <p className="text-sm sm:text-base text-[#44403C] leading-relaxed">
-                  In 2020, I chose to follow that calling wholeheartedly, transitioning from a passionate art enthusiast to a dedicated, professional practitioner of traditional Madhubani art.
+                  Living presently in Delhi NCR, Rashmi was born and brought up in Srinagar (Jammu and Kashmir). She comes from a community of Kashmiri hindu scholars(pandit).
                 </p>
 
                 <p className="text-sm sm:text-base text-[#44403C] leading-relaxed">
-                  To honor the integrity of this ancient craft, I sought out direct mentorship from core practitioners and award-winning master artists. This rigorous training grounded my work in authentic techniques while allowing me to develop a distinct, contemporary voice.
+                  She has learned this art from the eminent national awardees, local artists & several workshops. This has helped her gain insight into the techniques and narratives that define their fineness of this revered folk art work.
                 </p>
 
-                <div className="py-3 px-1 text-xs sm:text-sm text-[#1C1917] font-semibold flex items-center gap-3 border-t border-b border-[#E7E0D2]">
-                  <Compass className="w-5 h-5 text-[#C87A38] shrink-0" />
-                  <span>Believing that art inspired by nature and spiritual customs holds a unique, grounding power for the modern home.</span>
-                </div>
+                <p className="text-sm sm:text-base text-[#1C1917] font-semibold leading-relaxed">
+                  Each piece of her art work resonates with emotion, telling tales of love, struggle, and community spirit that transcend generations.
+                </p>
 
               </div>
 

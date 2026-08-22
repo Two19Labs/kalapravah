@@ -26,10 +26,8 @@ export default function Navbar({ activeSection, setActiveSection }) {
 
   const navItems = [
     { id: 'home', label: 'HOME' },
-    { id: 'about', label: 'ABOUT' },
     { id: 'art-artist', label: 'ART & ARTIST' },
-    { id: 'gallery', label: 'GALLERY' },
-    { id: 'exhibitions', label: 'EXHIBITIONS' },
+    { id: 'gallery', label: 'ART GALLERY' },
     { id: 'contact', label: 'CONTACT' },
   ];
 
@@ -74,22 +72,27 @@ export default function Navbar({ activeSection, setActiveSection }) {
 
         {/* Desktop Header Nav Links */}
         <nav className="hidden md:flex items-center gap-6 lg:gap-8">
-          {navItems.map((item) => (
-            <button
-              key={item.id}
-              onClick={() => handleNavClick(item.id)}
-              className={`text-xs font-semibold tracking-[0.18em] transition-colors uppercase relative py-1 ${
-                activeSection === item.id 
-                  ? 'text-[#C87A38]' 
-                  : 'text-[#44403C] hover:text-[#C87A38]'
-              }`}
-            >
-              {item.label}
-              {activeSection === item.id && (
-                <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#C87A38]" />
-              )}
-            </button>
-          ))}
+          {navItems.map((item) => {
+            const isActive = activeSection === item.id;
+            return (
+              <button
+                key={item.id}
+                onClick={() => handleNavClick(item.id)}
+                className={`text-xs font-semibold tracking-[0.18em] transition-all duration-300 uppercase relative py-1.5 px-0.5 cursor-pointer ${
+                  isActive 
+                    ? 'text-[#C87A38] font-bold' 
+                    : 'text-[#44403C] hover:text-[#C87A38]'
+                }`}
+              >
+                <span>{item.label}</span>
+                <span 
+                  className={`absolute bottom-0 left-0 w-full h-[2.5px] bg-[#C87A38] rounded-full transition-all duration-300 ease-out origin-left ${
+                    isActive ? 'opacity-100 scale-x-100' : 'opacity-0 scale-x-0'
+                  }`} 
+                />
+              </button>
+            );
+          })}
         </nav>
 
         {/* Quick Contact Badge / Mobile Hamburger */}

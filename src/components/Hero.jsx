@@ -51,7 +51,7 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
   }, [spotlightArtworks.length]);
 
   return (
-    <section id="home" className="pt-24 sm:pt-28 lg:pt-32 pb-16 sm:pb-24 bg-transparent relative overflow-hidden border-b border-[#E7E0D2]">
+    <section id="home" className="pt-24 sm:pt-28 lg:pt-32 pb-3 sm:pb-4 bg-transparent relative overflow-hidden border-b border-[#E7E0D2]">
       
       {/* Soft Ambient Background Glows */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#C87A38]/8 rounded-full blur-3xl pointer-events-none" />
@@ -280,7 +280,7 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
         {/* ========================================================================= */}
         {/* 3. ABOUT KALAPRAVAH (BRAND MISSION & CELESTIAL SPHERE)                   */}
         {/* ========================================================================= */}
-        <div id="about" className="pt-6 border-t border-[#E7E0D2] space-y-8">
+        <div id="about" className="-mt-32 sm:-mt-48 pt-0 border-t border-[#E7E0D2]/40 space-y-3 sm:space-y-4">
           
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto space-y-1.5">
@@ -298,17 +298,20 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
             
             {/* Elegant Un-Boxed Editorial Introduction */}
             <div className="max-w-3xl mx-auto text-center space-y-4 px-4">
-              <p className="font-serif text-base sm:text-xl text-[#292524] leading-relaxed font-normal">
-                At its core, Kalapravah is more than an art initiative; it is a bridge connecting civilizational roots with modern living spaces. In an age dominated by digital noise and disposable decor, we bring individuals back to authentic, handmade Mithila fine art—preserving the collective memories, sacred geometry, and timeless traditions of our ancestors.
+              <p className="font-serif text-base sm:text-lg text-[#292524] leading-relaxed font-normal">
+                In an age where mass production and digital art dominate the landscape, the intrinsic value of handmade art seems to take a backseat. Kalapravah as an art venture is on a mission to change that narrative. By promoting handmade art, Kalapravah connects individuals to their cultural roots.
+              </p>
+              <p className="font-serif text-base sm:text-lg text-[#292524] leading-relaxed font-normal">
+                At its core, Kalapravah is more than just an art initiative; it serves as a bridge between the past and the present. In a world thriving on the digital and the disposable, there is something profoundly enriching about engaging with art that has been crafted by hand. Each piece tells a story, holding within it the collective memories and traditions of our ancestors. The initiative aims to keep these stories alive, making them accessible to everyone.
               </p>
             </div>
 
             {/* 3D CELESTIAL GLOBE SPHERE IN CENTER CONTAINER */}
-            <div className="flex flex-col items-center justify-center p-2 space-y-3 text-center">
+            <div className="flex flex-col items-center justify-center p-2 space-y-5 text-center">
               
               {/* Circular Background Container with floating "Click" tag */}
               <div className="relative">
-                <div className="w-[260px] h-[260px] sm:w-[320px] sm:h-[320px] lg:w-[340px] lg:h-[340px] rounded-full bg-[#FFFDF9] border-2 border-[#C87A38]/30 shadow-2xl relative overflow-hidden flex items-center justify-center">
+                <div className="w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] lg:w-[440px] lg:h-[440px] rounded-full bg-[#FFFDF9] border-2 border-[#C87A38]/40 shadow-2xl relative overflow-hidden flex items-center justify-center">
                   <LunarGravityCard
                     className="w-full h-full"
                     artTextureUrl="/images/sphere_madhubani.jpg"
@@ -318,16 +321,19 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
                 </div>
 
                 {/* Short floating "Click" tag near the sphere */}
-                <div className="absolute bottom-3 left-1/2 -translate-x-1/2 z-30 pointer-events-none bg-[#1C1917]/90 text-[#F59E0B] px-3 py-0.5 rounded-full text-[9.5px] font-bold tracking-widest uppercase border border-[#F59E0B]/40 shadow-lg flex items-center gap-1.5 backdrop-blur-md">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#F59E0B] shrink-0" />
-                  <span>INTERACTIVE 3D SPHERE</span>
+                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-30 pointer-events-none bg-[#1C1917]/95 text-[#F59E0B] px-4 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase border border-[#F59E0B]/50 shadow-xl flex items-center gap-1.5 backdrop-blur-md">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#F59E0B] animate-pulse shrink-0" />
+                  <span>Click</span>
                 </div>
               </div>
 
-              {/* Caption line about celestial bodies in Madhubani art */}
-              <p className="text-[11px] sm:text-xs text-[#78716C] font-serif italic max-w-sm mx-auto leading-tight pt-1">
-                In Madhubani folklore, celestial bodies like the Sun, Moon, and Stars represent timeless cosmic balance and spiritual harmony.
-              </p>
+              {/* Attractive High-Contrast Editorial Caption Card */}
+              <div className="bg-[#FFFDF9] border border-[#E7E0D2] shadow-lg rounded-2xl px-5 sm:px-8 py-3.5 sm:py-4 max-w-xl mx-auto flex items-center justify-center gap-3 backdrop-blur-md transition-all hover:border-[#C87A38]">
+                <Sparkles className="w-5 h-5 text-[#C87A38] shrink-0" />
+                <p className="text-xs sm:text-sm lg:text-[15px] text-[#1C1917] font-serif italic leading-relaxed text-center font-normal">
+                  In Madhubani folklore, celestial bodies like the <strong className="text-[#C87A38] not-italic font-bold">Sun, Moon, and Stars</strong> represent timeless cosmic balance and spiritual harmony.
+                </p>
+              </div>
 
             </div>
 

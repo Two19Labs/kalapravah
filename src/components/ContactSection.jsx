@@ -138,7 +138,7 @@ export default function ContactSection() {
               </div>
 
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#DCFCE7] text-[#15803D] text-[10px] sm:text-[11px] font-semibold tracking-wide shrink-0">
-                <span className="w-2 h-2 rounded-full bg-[#22C55E] animate-pulse" />
+                <span className="w-2 h-2 rounded-full bg-[#22C55E]" />
                 <span>WHATSAPP ACTIVE</span>
               </div>
             </div>
