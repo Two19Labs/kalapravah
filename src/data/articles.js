@@ -56,7 +56,7 @@ export const BLOG_ARTICLES = [
     "subtitle": "Everything you need to know about Mithila art, its Ramayana royal origins in Bihar, pioneer women masters, and the 5 core painting styles.",
     "category": "Art History & Styles",
     "date": "JULY 20, 2026",
-    "readTime": "8 min read",
+    "readTime": "7 min read",
     "image": "/images/monsoon_court.jpg",
     "author": "Rashmi Dhar",
     "seoKeywords": [
@@ -77,7 +77,7 @@ export const BLOG_ARTICLES = [
     "subtitle": "The dramatic story of how 1934 earthquakes and 1966 droughts pushed village wall murals onto global museum canvases.",
     "category": "Art History & Evolution",
     "date": "JULY 21, 2026",
-    "readTime": "8 min read",
+    "readTime": "7 min read",
     "image": "/images/artwork_collection_14.jpg",
     "author": "Rashmi Dhar",
     "seoKeywords": [
@@ -96,7 +96,7 @@ export const BLOG_ARTICLES = [
     "subtitle": "A detailed comparison of the two most celebrated techniques in Madhubani painting, their history, and aesthetic differences.",
     "category": "Techniques",
     "date": "JULY 23, 2026",
-    "readTime": "6 min read",
+    "readTime": "7 min read",
     "image": "/images/still_mind.jpg",
     "author": "Rashmi Dhar",
     "seoKeywords": [
@@ -136,7 +136,7 @@ export const BLOG_ARTICLES = [
     "subtitle": "Understand the deep spiritual and cultural symbolism encoded into every border, leaf, bird, and celestial motif in Mithila paintings.",
     "category": "Motifs & Symbolism",
     "date": "JULY 26, 2026",
-    "readTime": "7 min read",
+    "readTime": "6 min read",
     "image": "/images/raas.jpg",
     "author": "Rashmi Dhar",
     "seoKeywords": [
@@ -156,7 +156,7 @@ export const BLOG_ARTICLES = [
     "subtitle": "How Dalit women transformed ancestral body tattoos into a celebrated school of Madhubani fine art, earning India's highest civilian honors.",
     "category": "History & Social Lineage",
     "date": "JULY 28, 2026",
-    "readTime": "9 min read",
+    "readTime": "7 min read",
     "image": "/images/artwork_collection_02.jpg",
     "author": "Kalapravah Studio",
     "seoKeywords": [
@@ -176,7 +176,7 @@ export const BLOG_ARTICLES = [
     "subtitle": "An in-depth look at the ritual artwork created inside Mithila bridal chambers to bless newlyweds with prosperity and lineage.",
     "category": "Rituals & Traditions",
     "date": "JULY 29, 2026",
-    "readTime": "8 min read",
+    "readTime": "6 min read",
     "image": "/images/artwork_collection_05.jpg",
     "author": "Rashmi Dhar",
     "seoKeywords": [
@@ -216,7 +216,7 @@ export const BLOG_ARTICLES = [
     "subtitle": "Tracing the courageous lives of the pioneer women masters who transformed village wall art into award-winning global fine art.",
     "category": "Artist Profiles & Heritage",
     "date": "AUGUST 02, 2026",
-    "readTime": "9 min read",
+    "readTime": "6 min read",
     "image": "/images/artwork_collection_09.jpg",
     "author": "Kalapravah Studio",
     "seoKeywords": [
@@ -236,7 +236,7 @@ export const BLOG_ARTICLES = [
     "subtitle": "Canonical rules for depicting sacred Hindu epics and divine figures in traditional Madhubani paintings.",
     "category": "Religious & Mythological Themes",
     "date": "AUGUST 04, 2026",
-    "readTime": "7 min read",
+    "readTime": "6 min read",
     "image": "/images/artwork_collection_03.jpg",
     "author": "Rashmi Dhar",
     "seoKeywords": [
@@ -273,7 +273,7 @@ export const BLOG_ARTICLES = [
     "subtitle": "Exploring the meditative, esoteric style of Madhubani art focused on energy diagrams and spiritual focus.",
     "category": "Sacred & Mystical Art",
     "date": "AUGUST 08, 2026",
-    "readTime": "6 min read",
+    "readTime": "5 min read",
     "image": "/images/artwork_collection_15.jpg",
     "author": "Kalapravah Studio",
     "seoKeywords": [
@@ -292,7 +292,7 @@ export const BLOG_ARTICLES = [
     "subtitle": "A detailed wildlife encyclopedia of fauna depicted in traditional Bihar folk art.",
     "category": "Motifs & Symbolism",
     "date": "AUGUST 09, 2026",
-    "readTime": "7 min read",
+    "readTime": "5 min read",
     "image": "/images/artwork_collection_17.jpg",
     "author": "Rashmi Dhar",
     "seoKeywords": [
@@ -311,7 +311,7 @@ export const BLOG_ARTICLES = [
     "subtitle": "Exploring the cross-border cultural unity of Mithila art in Janakpur, Nepal.",
     "category": "Global Heritage & Cross-Border Art",
     "date": "AUGUST 11, 2026",
-    "readTime": "7 min read",
+    "readTime": "5 min read",
     "image": "/images/artwork_collection_20.jpg",
     "author": "Kalapravah Studio",
     "seoKeywords": [
@@ -330,7 +330,7 @@ export const BLOG_ARTICLES = [
     "subtitle": "Understanding the legal protection granted to Mithila artists under India's 2007 GI registration law.",
     "category": "Legal Heritage & Artisan Rights",
     "date": "AUGUST 13, 2026",
-    "readTime": "7 min read",
+    "readTime": "5 min read",
     "image": "/images/artwork_collection_18.jpg",
     "author": "Kalapravah Studio",
     "seoKeywords": [
@@ -349,7 +349,7 @@ export const BLOG_ARTICLES = [
     "subtitle": "A comprehensive collector's comparison of India's 4 most famous traditional folk art styles.",
     "category": "Buyer & Collector Guide",
     "date": "AUGUST 15, 2026",
-    "readTime": "10 min read",
+    "readTime": "7 min read",
     "image": "/images/artwork_collection_08.jpg",
     "author": "Rashmi Dhar",
     "seoKeywords": [
@@ -368,7 +368,7 @@ export const BLOG_ARTICLES = [
     "subtitle": "A complete hands-on tutorial for learning double contour lines, fine nib hatching, and traditional motif compositions.",
     "category": "Practical How-To Guide",
     "date": "AUGUST 16, 2026",
-    "readTime": "8 min read",
+    "readTime": "6 min read",
     "image": "/images/artwork_collection_10.jpg",
     "author": "Rashmi Dhar",
     "seoKeywords": [
@@ -387,7 +387,7 @@ export const BLOG_ARTICLES = [
     "subtitle": "Essential tests and red flags every art collector must know before buying original Madhubani paintings online.",
     "category": "Buyer & Collector Guide",
     "date": "AUGUST 18, 2026",
-    "readTime": "7 min read",
+    "readTime": "6 min read",
     "image": "/images/artwork_collection_13.jpg",
     "author": "Kalapravah Studio",
     "seoKeywords": [
@@ -405,7 +405,7 @@ export const BLOG_ARTICLES = [
     "subtitle": "Conservator advice for framing and preserving original natural-pigment Madhubani art on cotton paper.",
     "category": "Care & Conservation",
     "date": "AUGUST 19, 2026",
-    "readTime": "6 min read",
+    "readTime": "5 min read",
     "image": "/images/artwork_collection_16.jpg",
     "author": "Kalapravah Studio",
     "seoKeywords": [
@@ -423,7 +423,7 @@ export const BLOG_ARTICLES = [
     "subtitle": "Interior design guide for pairing traditional Mithila fine art with luxury, minimalist, and modern home architecture.",
     "category": "Interior Design & Fine Art Styling",
     "date": "AUGUST 20, 2026",
-    "readTime": "6 min read",
+    "readTime": "5 min read",
     "image": "/images/artwork_collection_19.jpg",
     "author": "Rashmi Dhar",
     "seoKeywords": [
