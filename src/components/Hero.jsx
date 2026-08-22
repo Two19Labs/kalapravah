@@ -51,13 +51,13 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
   }, [spotlightArtworks.length]);
 
   return (
-    <section id="home" className="pt-24 sm:pt-28 lg:pt-32 pb-3 sm:pb-4 bg-transparent relative overflow-hidden border-b border-[#E7E0D2]">
+    <section id="home" className="pt-20 sm:pt-24 lg:pt-28 pb-8 sm:pb-10 lg:pb-12 bg-transparent relative overflow-hidden border-b border-[#E7E0D2]">
       
       {/* Soft Ambient Background Glows */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#C87A38]/8 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-10 left-0 w-[450px] h-[450px] bg-[#B94A2D]/6 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-20 sm:space-y-28">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-10 sm:space-y-14 lg:space-y-16">
         
         {/* ========================================================================= */}
         {/* 1. ASYMMETRIC EDITORIAL FINE ART HERO (TYPOGRAPHY + FLOATING SHOWCASE)    */}
@@ -280,7 +280,7 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
         {/* ========================================================================= */}
         {/* 3. ABOUT KALAPRAVAH (BRAND MISSION & CELESTIAL SPHERE)                   */}
         {/* ========================================================================= */}
-        <div id="about" className="-mt-32 sm:-mt-48 pt-0 border-t border-[#E7E0D2]/40 space-y-3 sm:space-y-4">
+        <div id="about" className="pt-8 sm:pt-10 lg:pt-12 mt-8 sm:mt-10 lg:mt-12 border-t border-[#E7E0D2]/60 space-y-6 sm:space-y-8">
           
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto space-y-1.5">

@@ -3,13 +3,13 @@ import { Palette, UserCheck, Sparkles, HeartHandshake, ShieldCheck, Quote, Mount
 
 export default function ArtAndArtistSection({ onContactArtist }) {
   return (
-    <section id="art-artist" className="pt-2 sm:pt-4 pb-4 sm:pb-6 bg-transparent relative overflow-hidden border-b border-[#E7E0D2]">
+    <section id="art-artist" className="py-8 sm:py-10 lg:py-12 bg-transparent relative overflow-hidden border-b border-[#E7E0D2]">
       
       {/* Soft Decorative Ambient Spotlights */}
       <div className="absolute top-1/3 left-0 w-80 h-80 bg-[#C87A38]/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-10 right-0 w-96 h-96 bg-[#9A3412]/5 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-8 sm:space-y-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-8 sm:space-y-10 lg:space-y-12">
         
         {/* Main Section Banner Header */}
         <div className="text-center max-w-3xl mx-auto space-y-2">
@@ -128,7 +128,7 @@ export default function ArtAndArtistSection({ onContactArtist }) {
         {/* ========================================================================= */}
         {/* SUBSECTION 2: ABOUT US (FROM THE MOUNTAINS TO THE CANVAS)                */}
         {/* ========================================================================= */}
-        <div className="pt-10 border-t border-[#E7E0D2] space-y-5 sm:space-y-6">
+        <div className="pt-8 sm:pt-10 lg:pt-12 mt-8 sm:mt-10 lg:mt-12 border-t border-[#E7E0D2] space-y-6 sm:space-y-8">
           
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b border-[#E7E0D2] pb-4">
             <div>

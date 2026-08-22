@@ -156,13 +156,13 @@ export default function ArtGallerySection({ onSelectArtwork }) {
   };
 
   return (
-    <section id="gallery" className="pt-4 sm:pt-6 pb-16 sm:pb-24 bg-transparent relative overflow-hidden border-b border-[#E7E0D2]">
+    <section id="gallery" className="py-8 sm:py-10 lg:py-12 bg-transparent relative overflow-hidden border-b border-[#E7E0D2]">
       
       {/* Ambient Lights */}
       <div className="absolute top-1/4 right-0 w-96 h-96 bg-[#C87A38]/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#9A3412]/5 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-12 sm:space-y-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-8 sm:space-y-10 lg:space-y-12">
         
         {/* Gallery Section Banner Header */}
         <div className="text-center max-w-3xl mx-auto space-y-2">
@@ -343,7 +343,7 @@ export default function ArtGallerySection({ onSelectArtwork }) {
         {/* ========================================================================= */}
         {/* SUBSECTION 2: EXHIBITIONS (UPCOMING GALLERY AT IHC)                       */}
         {/* ========================================================================= */}
-        <div id="exhibitions" className="pt-12 border-t border-[#E7E0D2] space-y-8">
+        <div id="exhibitions" className="pt-8 sm:pt-10 lg:pt-12 mt-8 sm:mt-10 lg:mt-12 border-t border-[#E7E0D2] space-y-6 sm:space-y-8">
           
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-[#E7E0D2] pb-4">
             <div>
@@ -414,7 +414,7 @@ export default function ArtGallerySection({ onSelectArtwork }) {
         {/* ========================================================================= */}
         {/* SUBSECTION 3: WORKSHOPS & EVENT                                           */}
         {/* ========================================================================= */}
-        <div className="pt-12 border-t border-[#E7E0D2] space-y-12">
+        <div className="pt-8 sm:pt-10 lg:pt-12 mt-8 sm:mt-10 lg:mt-12 border-t border-[#E7E0D2] space-y-8 sm:space-y-10">
           
           {/* Workshops Section */}
           <div className="space-y-6">
