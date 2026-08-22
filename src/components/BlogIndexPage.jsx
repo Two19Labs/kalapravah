@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { ArrowRight, BookOpen } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { BLOG_ARTICLES } from '../data/articles';
 import Navbar from './Navbar';
 import Footer from './Footer';
@@ -83,8 +83,8 @@ export default function BlogIndexPage() {
         setActiveSection={handleNavClick}
       />
 
-      <main className="min-h-screen pt-24 sm:pt-28 pb-20 text-left relative z-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 sm:space-y-12">
+      <main className="min-h-screen pt-20 sm:pt-22 pb-16 text-left relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 sm:space-y-8">
           
           {/* Breadcrumb Trail */}
           <nav className="flex items-center gap-2 text-[11px] font-medium text-[#78716C] uppercase tracking-wider">
@@ -94,12 +94,7 @@ export default function BlogIndexPage() {
           </nav>
 
           {/* Main Banner Header */}
-          <div className="text-center max-w-3xl mx-auto space-y-3">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#1C1917]/80 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-widest">
-              <BookOpen className="w-3.5 h-3.5 text-[#C87A38]" />
-              <span>KALAPRAVAH JOURNAL & ARCHIVE</span>
-            </div>
-
+          <div className="text-center max-w-3xl mx-auto space-y-2.5">
             <h1 className="font-serif text-3xl sm:text-5xl font-normal text-[#1C1917] tracking-tight">
               THE BLOG
             </h1>
