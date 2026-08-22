@@ -4211,429 +4211,957 @@ No matching component was found for:
     </p>
   `},Uw=[{id:`what-is-madhubani-painting-meaning-origin-styles`,title:`What Is Madhubani Painting? Meaning, Origin, History & 5 Core Art Styles`,subtitle:`Everything you need to know about Mithila art, its Ramayana royal origins in Bihar, pioneer women masters, and the 5 core painting styles.`,category:`Art History & Styles`,date:`JULY 20, 2026`,readTime:`8 min read`,image:`/images/monsoon_court.jpg`,author:`Rashmi Dhar`,seoKeywords:[`what is Madhubani painting`,`Madhubani painting meaning`,`Madhubani art origin`,`5 styles of Madhubani art`,`Mithila art guide`,`are Madhubani and Mithila same`,`double line outlines Madhubani`],excerpt:`Discover what Madhubani painting is: its ancient Ramayana history, meaning of Mithila art, 1934 earthquake discovery, and the 5 core traditional styles.`,content:`
       <p class="lead font-serif text-lg sm:text-xl text-[#1C1917] leading-relaxed mb-6">
-        <strong>Madhubani painting</strong>, also known globally as <strong>Mithila art</strong>, is one of the world's oldest continuous folk art traditions. Originating in the Mithila region of northern Bihar, India and southern Nepal, this sacred art form is celebrated for its striking double contour lines, vibrant mineral dyes, intricate cross-hatching, and deep spiritual symbolism.
+        When I dip a fine metal nib into hand-milled lampblack soot ink and place the first twin contour lines onto a sheet of heavyweight cotton rag paper, I am not merely starting a painting. I am participating in a living lineage of artistic devotion that spans more than two and a half millennia. <strong>Madhubani painting</strong>, known globally as <strong>Mithila art</strong>, is one of humanity’s oldest continuous folk art traditions. Originating in the fertile plains of northern Bihar, India, and southern Nepal, this sacred art form is celebrated for its striking double contour lines, vibrant mineral dyes, intricate cross-hatching, and deep ecological and spiritual symbolism.
       </p>
 
-      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Top FAQ: What Is the Meaning of Madhubani?</h2>
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Etymology & Geography: What Is the Meaning of Madhubani?</h2>
       <p class="mb-4 text-[#44403C] leading-relaxed">
-        The word <strong>Madhubani</strong> literally translates to <em>"Forest of Honey"</em> (where <em>Madhu</em> means honey and <em>Bana</em> means forest). It refers directly to the Madhubani district in northern Bihar. <strong>Mithila</strong>, on the other hand, refers to the ancient cultural-geographic realm ruled by King Janaka in Hindu epics. Thus, Madhubani art and Mithila art refer to the exact same traditional lineage.
+        A question I am frequently asked in the studio by art collectors and visitors is whether "Madhubani" and "Mithila" refer to two distinct forms of art. The answer lies in geography, history, and sacred literature. The word <strong>Madhubani</strong> literally translates to <em>"Forest of Honey"</em> (derived from the Sanskrit <em>Madhu</em> meaning honey and <em>Bana</em> meaning forest or woodland). Today, Madhubani is an administrative district in the state of Bihar.
+      </p>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        <strong>Mithila</strong>, on the other hand, refers to the ancient cultural and linguistic kingdom ruled by King Janaka in Hindu epics. This region historically encompassed northern Bihar (including Madhubani, Darbhanga, Sitamarhi, Muzaffarpur, and Saharsa) and the Terai region of southern Nepal (centered around Janakpurdham). Therefore, while <em>Mithila art</em> honors the broader civilizational cultural realm, <em>Madhubani art</em> specifies the epicenter where this visual language was nurtured. They refer to the exact same sacred lineage of line, motif, and ritual.
       </p>
 
-      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">The Ramayana Royal Legend & Origin</h2>
+      <blockquote class="border-l-2 border-[#C87A38] pl-6 py-2 my-8 italic font-serif text-lg text-[#1C1917] bg-[#FAF8F3]/60 rounded-r-md">
+        "To hold a bamboo dip pen in the studio is to feel the heartbeat of generations of Mithila women who painted not for commercial fame or gallery applause, but to sanctify their homes, mark life's passages, and invite cosmic blessings."
+      </blockquote>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">The Ramayana Royal Legend & Ancient Origins</h2>
       <p class="mb-4 text-[#44403C] leading-relaxed">
-        According to historical folklore, the origins of Madhubani painting date back over 2,500 years to the era of the <em>Ramayana</em>. King Janaka of Mithila commissioned village women artists to paint the mud walls (*Bhitti Chitra*) of his palace to celebrate the royal wedding of his daughter Sita to Lord Rama. For centuries thereafter, women passed these secret brush techniques down from mother to daughter on home walls and courtyard floors.
+        According to centuries of oral folklore passed down through songs, the origin of Madhubani painting dates back over 2,500 years to the era of the epic <em>Ramayana</em>. When King Janaka arranged the royal wedding of his daughter Princess Sita to Lord Rama of Ayodhya, he desired to transform his kingdom into an earthly paradise for the divine couple. He commanded the village women across Mithila to decorate the mud walls of their homes and the royal court with vibrant murals depicting divine blessings, blooming flora, pairs of birds, and sacred symbols.
+      </p>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        This tradition of mud wall mural painting, known locally as <strong>Bhitti Chitra</strong>, became an essential ritual duty for Mithila women. Passed down strictly from mother to daughter across generations, these brush techniques were kept alive inside domestic courtyards, secluded from the outside world for centuries. Women painted during sacred life transitions—weddings, childbirth, sacred thread ceremonies (*Upanayana*), and seasonal festivals like Chhath Puja, Kojagari Lakshmi Puja, and Dev Uthani Ekadashi.
       </p>
 
-      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">The 1934 Earthquake & 1966 Famine Discovery</h2>
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">The 1934 Earthquake & The 1966 Paper Revolution</h2>
       <p class="mb-4 text-[#44403C] leading-relaxed">
-        For centuries, Madhubani art remained hidden inside Bihar villages. In 1934, a massive earthquake struck Bihar. While inspecting damaged homes, British Colonial officer <strong>W.G. Archer</strong> discovered stunning colorful murals exposed on broken interior walls. Decades later, during the severe Bihar drought of 1966, cultural leader <strong>Pupul Jayakar</strong> and artist <strong>Bhaskar Kulkarni</strong> encouraged village women to paint on handmade paper to sell for famine relief, introducing Madhubani art to the international fine art market.
+        For thousands of years, Madhubani art remained a hidden domestic treasure known only to the villagers of Bihar. That changed dramatically on January 15, 1934, when a devastating 8.0 magnitude earthquake struck northern Bihar. <strong>W.G. Archer</strong>, a British Colonial officer and passionate art historian inspecting the earthquake damage in Madhubani district, noticed collapsed mud walls exposing extraordinary, vibrant interior murals. Astonished by their geometric sophistication, line rhythm, and resemblance to modern masters like Picasso and Miro, Archer took black-and-white photographs that introduced Mithila art to Western art scholars.
+      </p>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        Three decades later, during the severe Bihar drought of 1966, legendary cultural leader <strong>Pupul Jayakar</strong> (then chairperson of the All India Handicrafts Board) along with artist <strong>Bhaskar Kulkarni</strong> devised an emergency famine-relief project. They dispatched reams of handmade paper and india ink directly to village women, encouraging them to transfer their sacred wall murals onto paper to earn an independent livelihood. This historical pivot brought Madhubani art out of rural homes and onto the walls of premier fine art galleries in New Delhi, Paris, Tokyo, and New York.
       </p>
 
-      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">The 2 Signature Rules of Authentic Madhubani Art</h2>
-      <ul class="list-disc list-inside space-y-2 mb-6 text-[#44403C]">
-        <li><strong>Double Contour Lines:</strong> Figures, eyes, and borders are drawn with double parallel ink lines, creating a structured graphic framing.</li>
-        <li><strong>Horror Vacui (No Empty Space):</strong> Traditional artists view blank space as inauspicious. Every millimeter is filled with flowers, leaves, birds, geometric hatching, or dots.</li>
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">The 2 Unbreakable Rules of Authentic Madhubani Art</h2>
+      <p class="mb-4 text-[#44403C] leading-relaxed">
+        While styles vary across artists, two foundational rules govern every authentic Madhubani masterpiece:
+      </p>
+      <ul class="list-disc list-inside space-y-3 mb-6 text-[#44403C]">
+        <li><strong>Double Contour Lines (Twin Outlines):</strong> Figures, eyes, leaves, and borders are never drawn with a single isolated line. Twin parallel lines frame every form. The narrow channel between these twin lines is meticulously filled with cross-hatching, fine diagonal pen lines, or micro-dots.</li>
+        <li><strong>Horror Vacui (Fear of Empty Space):</strong> In traditional Mithila philosophy, blank or unpainted space on a canvas is considered spiritually incomplete and inauspicious. Every square inch of negative space is lovingly populated with natural motifs—blooming lotus buds, fluttering birds, fish, geometric hatchings, and sun rays.</li>
       </ul>
 
-      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">The 5 Core Styles of Madhubani Art</h2>
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">The 5 Core Traditional Styles of Madhubani Painting</h2>
+      <p class="mb-4 text-[#44403C] leading-relaxed">
+        Madhubani art is divided into five distinct stylistic schools, each possessing its own visual rhythm, technique, and historic community lineage:
+      </p>
+
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-        <div class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm">
-          <h3 class="font-serif text-lg font-bold text-[#C87A38] mb-1">1. Kachni (Line Work)</h3>
-          <p class="text-sm text-[#5C5652]">Fine dip-nib monochrome or bicolor line hatching relying entirely on linework for texture and depth.</p>
+        <div class="p-5 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm shadow-xs">
+          <h3 class="font-serif text-xl font-bold text-[#C87A38] mb-2">1. Kachni (Linework Style)</h3>
+          <p class="text-sm text-[#5C5652] leading-relaxed">
+            Pioneered by the Kayastha community, <em>Kachni</em> relies strictly on monochrome or bi-color linework. No solid washes of paint are applied inside figures. Instead, texture, shading, and volume are built through thousands of fine dip-pen lines and parallel hatching.
+          </p>
         </div>
-        <div class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm">
-          <h3 class="font-serif text-lg font-bold text-[#C87A38] mb-1">2. Bharni (Color Fill)</h3>
-          <p class="text-sm text-[#5C5652]">Vibrant mineral color fills enclosed within bold black soot outlines depicting divine deities.</p>
+
+        <div class="p-5 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm shadow-xs">
+          <h3 class="font-serif text-xl font-bold text-[#C87A38] mb-2">2. Bharni (Color Fill Style)</h3>
+          <p class="text-sm text-[#5C5652] leading-relaxed">
+            Historically practiced by the Brahmin community, <em>Bharni</em> (meaning "filling") encloses bold black lampblack outlines with saturated mineral and botanical colors like vermilion, marigold yellow, and indigo blue to depict divine Hindu deities.
+          </p>
         </div>
-        <div class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm">
-          <h3 class="font-serif text-lg font-bold text-[#C87A38] mb-1">3. Godna (Tattoo Art)</h3>
-          <p class="text-sm text-[#5C5652]">Pioneered by Dalit artists, featuring repeating tattoo motifs, stippling, and cow-dung background washes.</p>
+
+        <div class="p-5 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm shadow-xs">
+          <h3 class="font-serif text-xl font-bold text-[#C87A38] mb-2">3. Godna (Tattoo Art Style)</h3>
+          <p class="text-sm text-[#5C5652] leading-relaxed">
+            Pioneered by Dalit women (Dusadh and Chamar communities), <em>Godna</em> transfers ancestral body tattoo motifs onto paper. Characterized by repeating geometric rings, fine stippling, and cow-dung canvas washes.
+          </p>
         </div>
-        <div class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm">
-          <h3 class="font-serif text-lg font-bold text-[#C87A38] mb-1">4. Tantrik (Sacred Geometry)</h3>
-          <p class="text-sm text-[#5C5652]">Mystical yantras and cosmic energy mandalas rooted in ancient spiritual texts.</p>
+
+        <div class="p-5 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm shadow-xs">
+          <h3 class="font-serif text-xl font-bold text-[#C87A38] mb-2">4. Tantrik (Sacred Geometry)</h3>
+          <p class="text-sm text-[#5C5652] leading-relaxed">
+            Focused on esoteric spiritual yantras, energy mandalas, and cosmic symbols derived from ancient Tantrik texts. It features interlocking triangles, concentric solar rays, and sacred bindu points.
+          </p>
         </div>
-      </div>
-      <div class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm mb-6">
-        <h3 class="font-serif text-lg font-bold text-[#C87A38] mb-1">5. Kohbar (Bridal Nuptial Chamber)</h3>
-        <p class="text-sm text-[#5C5652]">Created for royal wedding chambers, filled with lotus pond and bamboo symbols representing cosmic fertility.</p>
       </div>
 
-      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Padma Shri Masters & GI Tag Status</h2>
+      <div class="p-5 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm mb-6 shadow-xs">
+        <h3 class="font-serif text-xl font-bold text-[#C87A38] mb-2">5. Kohbar (Bridal Nuptial Chamber Art)</h3>
+        <p class="text-sm text-[#5C5652] leading-relaxed">
+          Created specifically to adorn the bridal nuptial chamber, <em>Kohbar</em> is filled with fertility diagrams—central Purain lotus leaves, upright bamboo shafts, turtles, and paired fish blessing newlyweds with marital longevity and divine progeny.
+        </p>
+      </div>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Padma Shri Masters & GI Protection</h2>
       <p class="mb-4 text-[#44403C] leading-relaxed">
-        Pioneer masters like <strong>Jagdamba Devi</strong> (first Padma Shri in 1975), <strong>Sita Devi</strong>, <strong>Ganga Devi</strong>, <strong>Mahasundari Devi</strong>, <strong>Baua Devi</strong>, <strong>Godavari Dutta</strong>, <strong>Dulari Devi</strong>, and <strong>Shanti Devi Paswan</strong> elevated Madhubani art into museums worldwide. In 2007, Madhubani art received official <strong>Geographical Indication (GI)</strong> protection to safeguard artisan authenticity.
+        The elevation of Madhubani art from village walls to international museum collections was driven by legendary women masters who received India’s prestigious <strong>Padma Shri</strong> awards: <strong>Jagdamba Devi</strong> (1975), <strong>Sita Devi</strong> (1981), <strong>Ganga Devi</strong> (1984), <strong>Mahasundari Devi</strong> (2011), <strong>Baua Devi</strong> (2017), <strong>Godavari Dutta</strong> (2019), <strong>Dulari Devi</strong> (2021), and <strong>Shanti Devi Paswan</strong> (2024).
+      </p>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        In 2007, Madhubani art received official <strong>Geographical Indication (GI)</strong> tag status under Indian intellectual property law. This legal protection guarantees that authentic Madhubani artworks are handcrafted by traditional artisans of the Mithila region, safeguarding their rights against industrial factory prints.
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">The Studio Reflection</h2>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        In our contemporary studio at Kalapravah, we remain deeply devoted to these ancient canons while bringing a modern aesthetic sensibility to heavyweight cotton rag papers. Whether executing a monochrome <em>Kachni</em> panel taking 150 studio hours or preparing hand-milled turmeric pigments for a <em>Bharni</em> deity painting, every stroke honors the endurance of Mithila’s spiritual heritage.
       </p>
     `},{id:`bhitti-chitra-mural-art-to-handmade-paper`,title:`From Mud Walls to Fine Art Galleries: The Evolution of Bhitti Chitra Wall Murals to Handmade Paper`,subtitle:`The dramatic story of how 1934 earthquakes and 1966 droughts pushed village wall murals onto global museum canvases.`,category:`Art History & Evolution`,date:`JULY 21, 2026`,readTime:`8 min read`,image:`/images/artwork_collection_14.jpg`,author:`Rashmi Dhar`,seoKeywords:[`Bhitti Chitra Madhubani`,`mud wall painting Bihar`,`history of Mithila wall murals`,`Puppul Jayakar paper initiative 1966`,`evolution of Madhubani painting`],excerpt:`Trace the historical journey of Bhitti Chitra mud wall murals transitioning to handmade cotton paper during Bihar's 1966 drought famine relief effort.`,content:`
       <p class="lead font-serif text-lg sm:text-xl text-[#1C1917] leading-relaxed mb-6">
-        For thousands of years, Madhubani art existed exclusively as <strong>Bhitti Chitra</strong>—ephemeral wall murals painted on mud walls inside village courtyards. Explore the historical events that brought this secret art into international galleries.
+        Before Madhubani art hung framed in climate-controlled galleries in London, New York, or New Delhi, it lived exclusively on the organic surfaces of domestic architecture. For thousands of years, this sacred visual language existed as <strong>Bhitti Chitra</strong>—vibrant, large-scale murals painted directly onto the unbaked mud walls of village courtyards in Bihar. To understand Madhubani art today, one must understand how a domestic ritual performed by village women evolved into a globally celebrated fine art movement.
       </p>
 
-      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">The 1966 Bihar Famine Relief Initiative</h2>
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">The Domestic Architecture of Mithila Homes</h2>
       <p class="mb-4 text-[#44403C] leading-relaxed">
-        When a severe drought hit Bihar in 1966, cultural officer Pupul Jayakar dispatched artist Bhaskar Kulkarni to Madhubani with stacks of handmade paper. Encouraging village women to paint on paper allowed them to earn independent income, launching Madhubani art into global fine art collections.
+        In traditional Mithila villages, a home was not merely a physical shelter; it was a living spiritual vessel. Homes were constructed with thick walls of clay, cow dung, straw, and husk. Each room possessed a sacred functional identity, and the inner walls served as canvases for communal prayers.
+      </p>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        Women were the sole custodians of this artistic tradition. Mothers taught daughters how to prepare clay washes, extract botanical dyes from garden flowers, and shape bamboo twigs into soft painting brushes. Painting was an act of domestic devotion (*Vrata*), performed to invoke prosperity, protect family members from negative energies, and sanctify life's major milestones.
+      </p>
+
+      <blockquote class="border-l-2 border-[#C87A38] pl-6 py-2 my-8 italic font-serif text-lg text-[#1C1917] bg-[#FAF8F3]/60 rounded-r-md">
+        "A mud wall was a canvas that breathed with the seasons. It absorbed natural dyes deeply, and when monsoon rains eroded the paint, women simply renewed the wall with fresh clay and new prayers."
+      </blockquote>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Preparing the Mud Canvas: Cow Dung, Clay, and Neem</h2>
+      <p class="mb-4 text-[#44403C] leading-relaxed">
+        Preparing a <em>Bhitti Chitra</em> canvas required days of intense physical preparation before a single brushstroke was drawn. The process was meticulously structured:
+      </p>
+      <ul class="list-disc list-inside space-y-3 mb-6 text-[#44403C]">
+        <li><strong>First Coat (Mitti & Paddy Husk):</strong> Clay mud mixed with fine paddy husk was plastered over bamboo wattle walls to build a sturdy, thick base.</li>
+        <li><strong>Second Coat (Gobar Wash):</strong> Fresh cow dung mixed with water and crushed neem leaves was smeared smoothly over the dried clay. Cow dung acted as a natural antiseptic and disinfectant while giving the wall a warm, earthy greenish-brown undertone.</li>
+        <li><strong>Final Priming (Chuna / Lime Priming):</strong> A thin wash of slaked lime (*Chuna*) or ground rice water (*Pithar*) was applied to create a smooth, light surface that allowed natural pigments to pop with radiant contrast.</li>
+      </ul>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Sacred Wall Geography: Gosain Ghar and Kohbar Ghar</h2>
+      <p class="mb-4 text-[#44403C] leading-relaxed">
+        <em>Bhitti Chitra</em> was not executed at random. It followed strict spatial distribution within the homestead:
+      </p>
+      <p class="mb-4 text-[#44403C] leading-relaxed">
+        <strong>1. Gosain Ghar (The Family Shrine Room):</strong> The innermost room dedicated to kuldevtas (lineage deities). Here, women painted majestic iconographic murals of Lord Vishnu, Goddess Lakshmi, Shiva-Parvati, Radha-Krishna, and Lord Ganesha. These murals were framed with complex geometric borders to seal spiritual energy inside the sanctum.
+      </p>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        <strong>2. Kohbar Ghar (The Bridal Nuptial Chamber):</strong> The room where bride and groom spent their initial days after marriage. The central wall was painted with the sacred *Kohbar* diagram—a dense symbolic composition featuring a central lotus leaf pierced by a bamboo stalk, surrounded by turtles, fish, parrots, and solar witnesses blessing the couple with fertility and lineage continuity.
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">The 1934 Earthquake & Discovery by W.G. Archer</h2>
+      <p class="mb-4 text-[#44403C] leading-relaxed">
+        For centuries, outsiders remained completely unaware of these masterworks hidden inside private village homes. On January 15, 1934, a catastrophic earthquake measuring 8.0 on the Richter scale devastated northern Bihar. British Colonial Civil Servant <strong>W.G. Archer</strong>, who was also a passionate collector and writer for art journals, visited damaged villages in Madhubani to assess recovery efforts.
+      </p>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        As Archer walked through ruined courtyards, he was stunned by what he saw. Broken exterior mud walls had collapsed, exposing inner chamber murals painted in dazzling blues, yellows, and deep lampblack lines. Archer recognized immediately that these murals possessed a graphic power comparable to modern European art legends like Klee and Picasso. He took extensive black-and-white photographs and published articles in prestigious art journals like <em>Marg</em>, introducing Mithila wall art to scholars across the globe.
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">The 1966 Drought: Paper Initiative & Economic Independence</h2>
+      <p class="mb-4 text-[#44403C] leading-relaxed">
+        The ultimate catalyst that permanently shifted Madhubani art from mud walls to fine art paper arrived three decades later. In 1966, a severe drought swept through Bihar, resulting in widespread crop failure and economic distress.
+      </p>
+      <p class="mb-4 text-[#44403C] leading-relaxed">
+        Recognizing the desperate need for alternative income, <strong>Pupul Jayakar</strong>, head of the All India Handicrafts Board, sent Bombay artist <strong>Bhaskar Kulkarni</strong> to Madhubani district. Kulkarni carried stacks of heavy handmade paper, dip pens, and inks into villages like Ranti and Jitwarpur. He invited women to paint their traditional wall murals onto paper sheets so they could be brought to New Delhi and sold to art collectors.
+      </p>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        The response was overwhelming. Village women, who had never sold a painting in their lives, suddenly became the primary breadwinners for their families during a time of famine. Master painters like Jagdamba Devi, Sita Devi, and Ganga Devi emerged as celebrated national artists.
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">From Mud Wall Texture to Archival Cotton Paper</h2>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        Today, in our studio at Kalapravah, we honor this historical transition. While we paint on 300gsm cold-pressed, 100% cotton acid-free paper rather than mud walls, we preserve the tactile soul of <em>Bhitti Chitra</em>. We often prime our paper with organic cow-dung washes or raw turmeric extracts to evoke the warm, earthy texture of ancestral courtyard walls, bridging thousands of years of domestic ritual with contemporary fine art preservation.
       </p>
     `},{id:`kachni-vs-bharni-style`,title:`Kachni vs Bharni: Fine Nib Linework Hatching vs Saturated Mineral Color Fill`,subtitle:`A detailed comparison of the two most celebrated techniques in Madhubani painting, their history, and aesthetic differences.`,category:`Techniques`,date:`JULY 23, 2026`,readTime:`6 min read`,image:`/images/still_mind.jpg`,author:`Rashmi Dhar`,seoKeywords:[`Kachni style Madhubani`,`Bharni painting technique`,`fine nib linework`,`traditional Indian line art`,`double line ink drawing`,`handmade paper folk art`],excerpt:`Discover the artistic nuances between Kachni's delicate line hatching and Bharni's rich mineral color fills in fine art Madhubani paintings.`,content:`
       <p class="lead font-serif text-lg sm:text-xl text-[#1C1917] leading-relaxed mb-6">
-        When observing an authentic Madhubani masterpiece, two distinct visual languages immediately emerge: the delicate, meditative precision of <strong>Kachni</strong> and the luminous, color-saturated exuberance of <strong>Bharni</strong>.
+        Step into an authentic Madhubani studio, and you will immediately notice two strikingly different visual languages resting side by side on the easel. One artwork whispers through thousands of delicate, monochrome dip-pen strokes that weave intricate shadows; the other blazes with radiant, saturated blocks of crimson, marigold yellow, and midnight indigo. These two master techniques—<strong>Kachni</strong> (fine linework) and <strong>Bharni</strong> (color fill)—represent the twin pillars of traditional Mithila fine art.
       </p>
 
-      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">What is Kachni Style Madhubani?</h2>
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">What Is Kachni Style Madhubani?</h2>
       <p class="mb-4 text-[#44403C] leading-relaxed">
-        <em>Kachni</em> literally translates to "line work". In pure Kachni compositions, no solid colors are painted inside the figures. Instead, shading, texture, and volume are created entirely through thousands of meticulously placed fine dip-pen lines, parallel hatching, and micro-cross-hatching.
+        The word <em>Kachni</em> is derived from the Maithili term for "line work" or "drawing lines." In pure Kachni style, no solid washes of paint are applied inside the figures or background. Shading, volume, texture, and emotional depth are achieved exclusively through fine dip-pen lines, parallel hatching, micro-cross-hatching, and delicate stippling.
       </p>
-      <p class="mb-4 text-[#44403C] leading-relaxed">
-        Historically practiced by Kayastha women in Mithila, Kachni demands extraordinary hand control. Drawing continuous ink lines on rough cotton paper without using erasing tools requires intense concentration. A detailed Kachni artwork like <em>Kachni Peacock Mandala</em> can take upwards of 140 hours of continuous fine penwork.
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        Historically practiced by women of the Kayastha community in Mithila, Kachni demands incredible physical discipline, breath control, and hand steadiness. Because dip nib pens draw continuously on rough 300gsm cotton rag paper without any standard graphite eraser guides, a single slip of the hand can ruin days of linework. A detailed Kachni masterpiece, such as a 24x36 inch <em>Kachni Peacock Mandala</em>, can take upwards of 140 to 180 studio hours of continuous pen work.
       </p>
 
-      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">What is Bharni Style Madhubani?</h2>
+      <blockquote class="border-l-2 border-[#C87A38] pl-6 py-2 my-8 italic font-serif text-lg text-[#1C1917] bg-[#FAF8F3]/60 rounded-r-md">
+        "Kachni is graphic meditation. When you draw thousands of parallel lines spaced barely a millimeter apart, your mind enters a quiet stillness where time completely ceases."
+      </blockquote>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">What Is Bharni Style Madhubani?</h2>
       <p class="mb-4 text-[#44403C] leading-relaxed">
-        <em>Bharni</em> means "filling". In this technique, artists first establish bold double-contour outlines using black lampblack ink, then fill the interior forms with vibrant, solid mineral colors such as vermilion red, turmeric yellow, indigo blue, and leaf green.
+        The word <em>Bharni</em> translates directly to "filling." In this style, the artist first establishes strong, bold double-contour outlines using black carbon lampblack ink (*Kajal*). Once the framework is sealed, the interior spaces are filled with vibrant, flat, saturated washes of mineral and botanical pigments.
+      </p>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        Historically associated with the Brahmin community of Mithila, Bharni art focuses heavily on depicting sacred Hindu deities (such as Lord Krishna, Ganesha, Goddess Durga, and Shiva-Parvati). The rich contrast between black lampblack outlines and luminous fills creates an iconographic energy designed to evoke spiritual awe (*Rasa*).
       </p>
 
       <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Detailed Comparison Matrix</h2>
+      <p class="mb-4 text-[#44403C] leading-relaxed">
+        Here is how fine art collectors and practitioners distinguish between these two foundational styles:
+      </p>
+
       <div class="overflow-x-auto my-6">
         <table class="w-full text-left text-sm border-collapse border border-[#E7E0D2]">
           <thead>
             <tr class="bg-[#F3EFE6]">
-              <th class="p-3 border border-[#E7E0D2] font-serif font-bold">Feature</th>
-              <th class="p-3 border border-[#E7E0D2] font-serif font-bold">Kachni Style</th>
-              <th class="p-3 border border-[#E7E0D2] font-serif font-bold">Bharni Style</th>
+              <th class="p-3 border border-[#E7E0D2] font-serif font-bold text-[#1C1917]">Feature</th>
+              <th class="p-3 border border-[#E7E0D2] font-serif font-bold text-[#1C1917]">Kachni Style</th>
+              <th class="p-3 border border-[#E7E0D2] font-serif font-bold text-[#1C1917]">Bharni Style</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class="p-3 border border-[#E7E0D2] font-semibold">Primary Medium</td>
-              <td class="p-3 border border-[#E7E0D2]">Fine nib dip pens & monochrome ink</td>
-              <td class="p-3 border border-[#E7E0D2]">Brushes, twigs & saturated mineral pigments</td>
+              <td class="p-3 border border-[#E7E0D2] font-semibold text-[#1C1917]">Primary Medium</td>
+              <td class="p-3 border border-[#E7E0D2]">Fine metal dip pens, bamboo nibs & monochrome ink</td>
+              <td class="p-3 border border-[#E7E0D2]">Soft brushes, cotton swabs & saturated mineral dyes</td>
             </tr>
             <tr class="bg-[#FFFDF9]">
-              <td class="p-3 border border-[#E7E0D2] font-semibold">Visual Focus</td>
-              <td class="p-3 border border-[#E7E0D2]">Intricate linework hatching & shadow texture</td>
-              <td class="p-3 border border-[#E7E0D2]">Bold color blocks & divine icon energy</td>
+              <td class="p-3 border border-[#E7E0D2] font-semibold text-[#1C1917]">Visual Language</td>
+              <td class="p-3 border border-[#E7E0D2]">Intricate line hatching, geometric texture & subtle shading</td>
+              <td class="p-3 border border-[#E7E0D2]">Bold black contour framing & vibrant solid color fills</td>
             </tr>
             <tr>
-              <td class="p-3 border border-[#E7E0D2] font-semibold">Historical Origin</td>
+              <td class="p-3 border border-[#E7E0D2] font-semibold text-[#1C1917]">Historical Origin</td>
               <td class="p-3 border border-[#E7E0D2]">Kayastha community lineage</td>
               <td class="p-3 border border-[#E7E0D2]">Brahmin community lineage</td>
             </tr>
             <tr class="bg-[#FFFDF9]">
-              <td class="p-3 border border-[#E7E0D2] font-semibold">Labor Intensity</td>
-              <td class="p-3 border border-[#E7E0D2]">Extremely high (100–180 studio hours)</td>
-              <td class="p-3 border border-[#E7E0D2]">High (40–90 studio hours)</td>
+              <td class="p-3 border border-[#E7E0D2] font-semibold text-[#1C1917]">Dominant Themes</td>
+              <td class="p-3 border border-[#E7E0D2]">Nature motifs, Tree of Life, peacocks, geometric mandalas</td>
+              <td class="p-3 border border-[#E7E0D2]">Mythological deities, Ramayana legends, divine avatars</td>
+            </tr>
+            <tr>
+              <td class="p-3 border border-[#E7E0D2] font-semibold text-[#1C1917]">Studio Labor Intensity</td>
+              <td class="p-3 border border-[#E7E0D2]">Extremely high (100–180 hours per canvas)</td>
+              <td class="p-3 border border-[#E7E0D2]">High (50–100 hours per canvas)</td>
             </tr>
           </tbody>
         </table>
       </div>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Modern Synthesis in Contemporary Fine Art</h2>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        While historical community divisions strictly separated Kachni and Bharni, contemporary fine art studios like Kalapravah celebrate a harmonious synthesis of both. Today, master artists seamlessly combine Kachni linework in complex background borders while applying rich Bharni color fills to central deity figures. This hybrid approach creates extraordinary visual rhythm, allowing modern collectors to appreciate both line precision and mineral radiance in a single canvas.
+      </p>
     `},{id:`natural-mineral-pigments`,title:`The Alchemy of Natural Pigments: How Turmeric, Indigo, Carbon Soot & Plant Dyes Fuel Authentic Madhubani Painting`,subtitle:`Unveiling the organic chemistry behind traditional Madhubani dyes and how raw earth elements preserve art for centuries.`,category:`Techniques & Materials`,date:`JULY 25, 2026`,readTime:`7 min read`,image:`/images/vighnaharta.jpg`,author:`Kalapravah Studio`,seoKeywords:[`natural mineral pigments`,`organic dyes Madhubani painting`,`turmeric ochre paint`,`raw soot ink kajal`,`materials used in Madhubani art`,`bamboo pen dip ink`],excerpt:`Learn how authentic Madhubani artists extract rich pigments from turmeric, indigo leaves, mustard lampblack, and mineral muds without synthetic chemicals.`,content:`
       <p class="lead font-serif text-lg sm:text-xl text-[#1C1917] leading-relaxed mb-6">
-        Long before commercial acrylics existed, Mithila artists crafted luminous, lightfast paints derived entirely from botanical leaves, minerals, and carbon deposits. At Kalapravah, we preserve this ancestral alchemy by hand-milling natural pigments in the studio.
+        Long before synthetic acrylic paints and chemical solvents existed in tube form, traditional Madhubani artists looked entirely to nature's pharmacy to color their world. The vibrant crimson reds, golden yellows, midnight blues, and velvety lampblacks seen in centuries-old Mithila art were harvested directly from botanical leaves, crushed minerals, clay deposits, and carbon soot. At Kalapravah Studio, we preserve this ancestral alchemy by hand-milling natural pigments on stone mortars, keeping art bound to the earth.
       </p>
 
-      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Key Organic Pigment Sources & Recipes</h2>
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">The Organic Chemistry of Traditional Mithila Dyes</h2>
+      <p class="mb-4 text-[#44403C] leading-relaxed">
+        The preparation of natural paints in Mithila is a slow, sacred ritual. Each color possesses its own seasonal harvesting cycle, grinding process, and organic binding agent:
+      </p>
+
       <ul class="space-y-4 mb-6 text-[#44403C]">
-        <li class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm">
-          <strong>Deep Black (Lampblack / Kajal):</strong> Formed by burning mustard oil lamps beneath earthen clay pots. The dense carbon soot is scraped off and ground with acacia resin (*gond*) to yield waterproof black ink.
+        <li class="p-5 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm shadow-xs">
+          <h3 class="font-serif text-lg font-bold text-[#C87A38] mb-1">1. Velvety Black (Kajal / Carbon Lampblack)</h3>
+          <p class="text-sm text-[#5C5652] leading-relaxed">
+            Formed by burning mustard oil lamps (*Diyas*) beneath earthen clay pots. The thick, velvety carbon soot that accumulates on the unglazed pottery surface is scraped off using a copper blade and ground with acacia tree resin (*Gond*) to create waterproof, deep black dip ink.
+          </p>
         </li>
-        <li class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm">
-          <strong>Luminous Yellow (Raw Turmeric & Marigold):</strong> Extracted by boiling wild turmeric rhizomes (*Haldi*) or soaking marigold petals (*Genda Phool*) with alum binder.
+        <li class="p-5 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm shadow-xs">
+          <h3 class="font-serif text-lg font-bold text-[#C87A38] mb-1">2. Golden Yellow (Haldi & Genda Phool)</h3>
+          <p class="text-sm text-[#5C5652] leading-relaxed">
+            Extracted by boiling raw wild turmeric rhizomes (*Haldi*) or steeping crushed marigold petals (*Genda Phool*) in hot water with alum binder. This yields a luminous, sun-kissed golden ochre.
+          </p>
         </li>
-        <li class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm">
-          <strong>Royal Blue (Indigo Leaves):</strong> Extracted from fermented leaves of the <em>Indigofera tinctoria</em> plant, providing deep, archival blues.
+        <li class="p-5 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm shadow-xs">
+          <h3 class="font-serif text-lg font-bold text-[#C87A38] mb-1">3. Royal Indigo Blue (Neel)</h3>
+          <p class="text-sm text-[#5C5652] leading-relaxed">
+            Extracted from fermented leaves of the <em>Indigofera tinctoria</em> plant, yielding deep, archival, lightfast blues that do not fade under indoor lighting.
+          </p>
         </li>
-        <li class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm">
-          <strong>Terracotta & Crimson (Geru Clay & Madder Root):</strong> Milled from natural iron-oxide clay deposits (*Geru*) and madder root bark (*Manjistha*).
+        <li class="p-5 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm shadow-xs">
+          <h3 class="font-serif text-lg font-bold text-[#C87A38] mb-1">4. Terracotta Red & Crimson (Geru & Manjistha)</h3>
+          <p class="text-sm text-[#5C5652] leading-relaxed">
+            Milled from natural iron-oxide clay deposits (*Geru*) for earthy terracotta tones, or boiled madder root bark (*Manjistha*) and dried pomegranate rind for deep crimson reds.
+          </p>
+        </li>
+        <li class="p-5 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm shadow-xs">
+          <h3 class="font-serif text-lg font-bold text-[#C87A38] mb-1">5. Leaf Green (Simbha Leaves & Lime)</h3>
+          <p class="text-sm text-[#5C5652] leading-relaxed">
+            Created by grinding fresh broad bean leaves (*Simbha*) or crushed wood apple leaves with a tiny pinch of slaked lime to fix the chlorophyll green color.
+          </p>
         </li>
       </ul>
 
-      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Natural Binders: Bael Fruit Resin & Acacia Gum</h2>
+      <blockquote class="border-l-2 border-[#C87A38] pl-6 py-2 my-8 italic font-serif text-lg text-[#1C1917] bg-[#FAF8F3]/60 rounded-r-md">
+        "Commercial acrylic paints sit like a plastic film on top of paper. Natural mineral dyes penetrate deep into cotton fibers, breathing with the paper and aging into a warm, luminous patina over decades."
+      </blockquote>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Natural Binders: Tree Resins and Bael Sap</h2>
       <p class="mb-4 text-[#44403C] leading-relaxed">
-        To prevent natural pigments from flaking, artists mix raw pigment powders with natural tree resins. The sap of the wood apple (*Bael*) fruit and acacia gum (*Gond*) act as organic binders, binding the pigment particles deep into the cotton fibers of handmade paper.
+        Without a proper binder, organic plant powder would simply flake off the paper once dry. Traditional artists mix raw ground pigments with natural plant saps. The sticky juice of the wood apple fruit (*Bael*) and natural acacia gum resin (*Gond*) act as powerful organic binders. These tree saps bind pigment particles directly into cotton fibers, rendering the paint water-resistant and durable.
       </p>
 
-      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Why Natural Dyes Age Gracefully</h2>
-      <p class="mb-4 text-[#44403C] leading-relaxed">
-        Unlike synthetic acrylic paints which form a plastic top layer susceptible to peeling, natural earth dyes penetrate into handmade paper. As decades pass, mineral pigments develop a soft, warm patina that collectors highly prize.
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Why Natural Mineral Pigments Age Gracefully</h2>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        Unlike chemical paints that degrade or crack when exposed to air over time, natural earth dyes contain inert minerals and organic plant tannins. As decades pass, natural artworks painted with turmeric, indigo, and soot develop a soft, warm patina that fine art museum curators and serious collectors highly value.
       </p>
     `},{id:`symbols-and-motifs-in-madhubani`,title:`Sacred Symbols in Madhubani Paintings: Decoding Peacock, Lotus, Fish, Sun & Tree of Life`,subtitle:`Understand the deep spiritual and cultural symbolism encoded into every border, leaf, bird, and celestial motif in Mithila paintings.`,category:`Motifs & Symbolism`,date:`JULY 26, 2026`,readTime:`7 min read`,image:`/images/raas.jpg`,author:`Rashmi Dhar`,seoKeywords:[`Madhubani motifs meaning`,`peacock symbol Indian art`,`lotus motif Mithila`,`Tree of Life folk painting`,`sun moon symbolism Madhubani`,`fish pair fertility symbol`],excerpt:`Decode the hidden visual symbolism in Madhubani paintings, from peacocks heralding love to fish representing fertility and sun and moon cosmic balance.`,content:`
       <p class="lead font-serif text-lg sm:text-xl text-[#1C1917] leading-relaxed mb-6">
-        Nothing in an authentic Madhubani painting is purely decorative. Every line, flower, bird, and geometric border carries centuries of spiritual philosophy and nature worship encoded by ancient Mithila women.
+        Look closely at an authentic Madhubani painting, and you will quickly realize that nothing on the canvas is purely decorative. Every line, bird feather, lotus petal, and geometric border is encoded with centuries of spiritual philosophy, cosmic mythology, and nature worship. Ancient Mithila women developed a rich iconographic visual dictionary, transforming every element of nature into a sacred symbol.
       </p>
 
-      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">5 Core Sacred Motifs & Their Symbolism</h2>
-
-      <h3 class="font-serif text-xl font-bold text-[#C87A38] mt-6 mb-2">1. The Peacock (Mayura): Romance & Divine Grace</h3>
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">5 Core Sacred Motifs & Their Hidden Meanings</h2>
       <p class="mb-4 text-[#44403C] leading-relaxed">
-        Peacocks represent divine romance, beauty, and the life-giving arrival of monsoon rains. Facing peacocks symbolize emotional harmony and spiritual courtship.
+        Here is how fine art collectors and enthusiasts can decode the visual dictionary of Mithila fine art:
       </p>
 
-      <h3 class="font-serif text-xl font-bold text-[#C87A38] mt-6 mb-2">2. The Lotus (Kamala): Purity & Female Energy</h3>
+      <h3 class="font-serif text-xl font-bold text-[#C87A38] mt-6 mb-2">1. The Peacock (Mayura): Divine Romance & Monsoon Joy</h3>
       <p class="mb-4 text-[#44403C] leading-relaxed">
-        Emerging unblemished from muddy waters, the lotus signifies divine awakening, mental purity, and sacred feminine power (*Shakti*).
+        The peacock is perhaps the most iconic avian motif in Madhubani art. Representing divine romance, beauty, and the life-giving arrival of monsoon rains, peacocks are frequently depicted in facing pairs. In Mithila folklore, a dancing peacock with expanded tail plumage symbolizes emotional ecstasy, courtship, and the awakening of love.
       </p>
 
-      <h3 class="font-serif text-xl font-bold text-[#C87A38] mt-6 mb-2">3. The Pair of Fish (Matsya): Fertility & Vitality</h3>
+      <h3 class="font-serif text-xl font-bold text-[#C87A38] mt-6 mb-2">2. The Lotus (Kamala): Spiritual Purity & Feminine Energy (Shakti)</h3>
       <p class="mb-4 text-[#44403C] leading-relaxed">
-        Swimmers in cosmic waters, fish pairs represent fertility, good fortune, marital harmony, and the unrestricted flow of life energy (*Prana*).
+        Emerging pristine and unblemished from murky mud waters, the lotus represents spiritual awakening, mental purity, and divine feminine energy (*Shakti*). In nuptial paintings (*Kohbar*), the central circular lotus leaf (*Purain*) represents the female womb of creation and the origin of life.
       </p>
 
-      <h3 class="font-serif text-xl font-bold text-[#C87A38] mt-6 mb-2">4. The Tree of Life (Kalpavriksha): Universal Interconnectedness</h3>
+      <h3 class="font-serif text-xl font-bold text-[#C87A38] mt-6 mb-2">3. The Pair of Fish (Matsya): Fertility, Good Fortune & Prana Flow</h3>
       <p class="mb-4 text-[#44403C] leading-relaxed">
-        Connecting roots in the earth to branches in the heavens, the Tree of Life represents cosmic unity, growth, and the wish-fulfilling axis of creation.
+        Swimmers in cosmic waters, pairs of fish represent fertility, marital harmony, good fortune, and the unrestricted flow of vital life force (*Prana*). In wedding blessings, fish motifs are drawn surrounding the central lotus to bless newlyweds with abundant lineage.
+      </p>
+
+      <h3 class="font-serif text-xl font-bold text-[#C87A38] mt-6 mb-2">4. The Tree of Life (Kalpavriksha): Universal Axis & Prosperity</h3>
+      <p class="mb-4 text-[#44403C] leading-relaxed">
+        Connecting deep roots in the earth to sprawling branches in the heavens, the Tree of Life (*Kalpavriksha*) represents cosmic unity, growth, and the wish-fulfilling axis of creation. Nesting peacocks, sunbirds, and squirrels within its foliage represent the interconnected web of all living beings.
       </p>
 
       <h3 class="font-serif text-xl font-bold text-[#C87A38] mt-6 mb-2">5. Sun & Moon (Surya & Chandra): Cosmic Balance</h3>
-      <p class="mb-4 text-[#44403C] leading-relaxed">
-        The Sun represents vitality, truth, and masculine energy, while the Moon symbolizes peace, intuition, and feminine grace. Together, they act as cosmic witnesses framing traditional compositions.
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        The Sun represents vitality, truth, and masculine solar energy (*Pingala*), while the Moon symbolizes peace, intuition, and feminine lunar grace (*Ida*). Placed at the top corners of traditional compositions, they act as eternal celestial witnesses framing human life.
+      </p>
+
+      <blockquote class="border-l-2 border-[#C87A38] pl-6 py-2 my-8 italic font-serif text-lg text-[#1C1917] bg-[#FAF8F3]/60 rounded-r-md">
+        "When an artist draws twin fish swimming around a lotus bud, she is not painting biology—she is invoking cosmic abundance and harmony on canvas."
+      </blockquote>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Border Motifs: Geometric Enclosure & Protection</h2>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        Even the outer borders framing a Madhubani artwork carry sacred protection. Intricate geometric borders—featuring repeating leaf vines, triangular wave patterns, or fish scales—act as a protective spiritual fence (*Yantra*), containing the sacred energy of the central composition within the canvas.
       </p>
     `},{id:`godna-and-dalit-madhubani-art-history`,title:`The Untold History of Godna Art: Dalit Tattoo Lineage, Cow-Dung Canvas & Pioneer Masters Jamuna Devi & Shanti Devi`,subtitle:`How Dalit women transformed ancestral body tattoos into a celebrated school of Madhubani fine art, earning India's highest civilian honors.`,category:`History & Social Lineage`,date:`JULY 28, 2026`,readTime:`9 min read`,image:`/images/artwork_collection_02.jpg`,author:`Kalapravah Studio`,seoKeywords:[`Godna style Madhubani`,`Dalit artists Mithila painting`,`tattoo motifs Madhubani`,`Jamuna Devi cow dung wash`,`Shanti Devi Shivan Paswan Padma Shri`,`Dusadh Chamar community art`],excerpt:`Explore the powerful history of Godna Madhubani art, from Dalit tattoo traditions to Jamuna Devi's cow-dung canvas wash and 2024 Padma Shri laureates Shanti & Shivan Paswan.`,content:`
       <p class="lead font-serif text-lg sm:text-xl text-[#1C1917] leading-relaxed mb-6">
-        The <strong>Godna style</strong> of Madhubani art represents one of the most compelling social and artistic revolutions in Indian art history. Pioneered by women of the Dusadh and Chamar Dalit communities, Godna transformed ancestral body tattoos into a globally celebrated fine art movement.
+        The <strong>Godna style</strong> of Madhubani painting represents one of the most compelling social and artistic revolutions in Indian art history. Pioneered by women of the Dusadh and Chamar Dalit communities in northern Bihar, Godna transformed ancestral body tattoos into a globally celebrated fine art movement. This is the inspiring story of how marginalized women claimed their rightful place in fine art galleries while earning India’s highest civilian honors.
       </p>
 
-      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Origins: Tattoos as Identity and Armor</h2>
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Origins: Body Tattoos as Identity, Armor, and Ornamentation</h2>
       <p class="mb-4 text-[#44403C] leading-relaxed">
-        The word <em>Godna</em> means "tattoo". Historically denied gold jewelry, Dalit women adorned their bodies with intricate permanent tattoos as symbols of identity, spiritual protection, and beauty. These tattoo patterns consisted of concentric rings, stippling, flora, and sacred geometric motifs.
+        The word <em>Godna</em> translates directly to "tattoo" in Hindi and Maithili. Historically denied access to expensive gold and silver jewelry under rigid feudal caste structures, Dalit women adorned their skin with intricate, permanent ink tattoos. These tattoos served as indelible body jewelry, personal identity markers, and spiritual armor.
+      </p>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        Specialist women tattoo artists (*Godnarin*) traveled between villages using fine needles and lampblack soot to tattoo arms, wrists, legs, and foreheads. The geometric motifs consisted of concentric circles, stippling, repeating floral rings, agricultural tools, and sacred protective symbols designed to accompany a woman into the afterlife.
       </p>
 
-      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">From Skin to Canvas in the 1970s</h2>
+      <blockquote class="border-l-2 border-[#C87A38] pl-6 py-2 my-8 italic font-serif text-lg text-[#1C1917] bg-[#FAF8F3]/60 rounded-r-md">
+        "Godna proves that art is an unquenchable human impulse. When denied gold, Dalit women wore art permanently on their skin; when given paper, they conquered the global art world."
+      </blockquote>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">The 1970s Transition: Erika Moser and the Shift to Paper</h2>
       <p class="mb-4 text-[#44403C] leading-relaxed">
-        In the late 1970s, encouraged by researchers like German anthropologist Erika Moser, Dalit women began transferring their tattoo iconography onto paper. While upper-caste artists painted classical Ramayana deities, Dalit artists depicted their own sacred oral epics, celebrating legendary heroes like <strong>Raja Salhesh</strong> and <strong>Dina-Bhadri</strong>.
+        When Madhubani paper art gained national recognition during the 1966 Bihar drought relief effort, commercial opportunities were initially dominated by upper-caste Brahmin and Kayastha women, who painted classical Ramayana narratives and deity icons.
+      </p>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        In the late 1970s, German anthropologist and filmmaker <strong>Dr. Erika Moser</strong> alongside sociologist Raymond Owens arrived in Madhubani. Working closely with Dalit village women, Moser encouraged them to stop copying upper-caste deity motifs and instead translate their own ancestral body tattoos and rich oral folklore onto handmade paper. This gave birth to the formal <strong>Godna painting style</strong>.
       </p>
 
-      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Jamuna Devi & The Cow-Dung Wash Invention</h2>
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Jamuna Devi & The Cow-Dung Paper Wash Invention</h2>
       <p class="mb-4 text-[#44403C] leading-relaxed">
-        Pioneer artist <strong>Jamuna Devi</strong> of the Chamar community invented a groundbreaking canvas treatment: coating handmade paper with a light wash of cow dung (*Gobar*) and mud. This earthy background gave the paper an antique, leather-like texture that made fine black line tattoos pop with extraordinary contrast.
+        A monumental technical breakthrough occurred through pioneer master <strong>Jamuna Devi</strong> of the Chamar community. Realizing that pristine white paper lacked the organic warmth of traditional village mud walls, Jamuna Devi invented a signature canvas treatment: washing handmade paper with a light, diluted wash of fresh cow dung (*Gobar*) mixed with clay.
+      </p>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        This cow-dung wash gave the paper an antique, golden-brown leather texture. When fine black ink lines and tattoo stippling were drawn over this textured background, the linework popped with breathtaking visual contrast. In 1982, Jamuna Devi became the first Dalit artist to receive the National Award for Madhubani painting.
       </p>
 
-      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">2024 Padma Shri Honor: Shanti Devi & Shivan Paswan</h2>
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Oral Epics of the Subaltern: Raja Salhesh & Dina-Bhadri</h2>
       <p class="mb-4 text-[#44403C] leading-relaxed">
-        In 2024, the President of India awarded the <strong>Padma Shri</strong> to husband-and-wife duo <strong>Shanti Devi Paswan</strong> and <strong>Shivan Paswan</strong> for their lifetime contribution to Godna painting, cementing Godna art as a pillar of Indian cultural heritage.
+        Beyond tattoo linework, Dalit artists introduced their own rich oral epics into Madhubani art. Rather than painting orthodox Puranic deities, artists like Chano Devi and Urmila Devi depicted the legend of <strong>Raja Salhesh</strong>—the great folk hero and guardian deity of the Dusadh community—along with his brave commanders and sacred flower gardens (*Rahu Puja*).
+      </p>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        These narrative canvases depicted Salhesh riding majestic royal elephants, surrounded by dense forests, wild animals, and village rituals, expanding the thematic range of Mithila art.
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">The 2024 Padma Shri Landmark: Shanti Devi & Shivan Paswan</h2>
+      <p class="mb-4 text-[#44403C] leading-relaxed">
+        The ultimate validation of Godna art arrived in 2024, when the President of India conferred the prestigious <strong>Padma Shri</strong> upon husband-and-wife artist duo <strong>Shanti Devi Paswan</strong> and <strong>Shivan Paswan</strong>. Overcoming decades of economic hardship in Lahanti village, their extraordinary Godna canvases—featuring dense stippled rings and Salhesh narratives—have been exhibited in major museums across Europe, Japan, and the United States.
+      </p>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        Today, Godna art stands as an internationally acclaimed symbol of artistic innovation, social dignity, and cultural resilience.
       </p>
     `},{id:`kohbar-ghar-nuptial-chamber-painting`,title:`Deciphering the Kohbar Ghar: Sacred Nuptial Chamber Murals, Fertility Symbolism & Royal Wedding Traditions`,subtitle:`An in-depth look at the ritual artwork created inside Mithila bridal chambers to bless newlyweds with prosperity and lineage.`,category:`Rituals & Traditions`,date:`JULY 29, 2026`,readTime:`8 min read`,image:`/images/artwork_collection_05.jpg`,author:`Rashmi Dhar`,seoKeywords:[`Kohbar Ghar painting`,`Madhubani wedding art`,`ritual nuptial chamber murals`,`fertility symbols Mithila`,`bamboo lotus symbolism`,`Purain lotus leaf`],excerpt:`Decode the sacred fertility diagram of the Kohbar Ghar in Madhubani painting: Purain lotus leaves, bamboo stalks, turtles, and celestial witnesses.`,content:`
       <p class="lead font-serif text-lg sm:text-xl text-[#1C1917] leading-relaxed mb-6">
-        In traditional Mithila culture, no wedding is complete without the <strong>Kohbar Ghar</strong>—the sacred nuptial chamber where newlyweds reside during their wedding days. The wall paintings inside this chamber act as a visual prayer for fertility, longevity, and marital bliss.
+        In traditional Mithila culture, no wedding is considered complete without the <strong>Kohbar Ghar</strong>—the sacred bridal nuptial chamber where newlyweds reside during their initial days of marriage. The wall paintings inside this private sanctuary are far more than decorative murals; they represent a complex visual prayer, an ancient yantra designed to invoke fertility, cosmic harmony, marital longevity, and unbroken family lineage.
       </p>
 
-      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Anatomy of the Central Kohbar Diagram</h2>
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Architectural Geography of the Nuptial Chamber</h2>
       <p class="mb-4 text-[#44403C] leading-relaxed">
-        At the heart of every Kohbar painting lies a central diagram representing the union of cosmic masculine and feminine energies:
+        In a traditional Bihar village homestead, the <em>Kohbar Ghar</em> is situated in the most protected inner section of the house. Days before the arrival of the groom's procession (*Baraat*), senior women of the family gather to purify the walls with fresh mud, cow dung, and rice paste.
       </p>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        Accompanied by traditional Maithili wedding songs (*Sohag Geet*), women paint the central wall of the chamber. This collective painting process is considered a holy ritual where knowledge, symbolism, and brush techniques are passed from older matriarchs to younger brides.
+      </p>
+
+      <blockquote class="border-l-2 border-[#C87A38] pl-6 py-2 my-8 italic font-serif text-lg text-[#1C1917] bg-[#FAF8F3]/60 rounded-r-md">
+        "The Kohbar diagram is a sacred cosmic map. It weaves the energies of earth, water, flora, and sky to bless a new marriage with harmony."
+      </blockquote>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Anatomy of the Central Kohbar Yantra Diagram</h2>
+      <p class="mb-4 text-[#44403C] leading-relaxed">
+        At the heart of every Kohbar painting lies an intricate diagram representing the union of cosmic masculine and feminine principles:
+      </p>
+
       <ul class="list-disc list-inside space-y-3 mb-6 text-[#44403C]">
-        <li><strong>Purain (Lotus Leaf Pond):</strong> The central circular lotus represents the feminine aspect (*Shakti*), fertility, and the womb of creation.</li>
-        <li><strong>Bans (Bamboo Shaft):</strong> An elongated bamboo stalk piercing the lotus represents the masculine aspect (*Purusha*), strength, and unbroken family lineage.</li>
-        <li><strong>Kurma (The Turtle):</strong> Placed at the base of the diagram, the turtle symbolizes cosmic stability, grounded devotion, and long life.</li>
+        <li><strong>Purain (The Central Lotus Leaf):</strong> A large, circular lotus leaf floating on water represents the divine feminine aspect (*Shakti*), womb of creation, emotional depth, and spiritual purity.</li>
+        <li><strong>Bans (The Upright Bamboo Shaft):</strong> A sturdy, elongated bamboo stalk piercing through the center of the lotus leaf represents the divine masculine aspect (*Purusha*), strength, resilience, and unbroken family lineage.</li>
+        <li><strong>Kurma (The Cosmic Turtle):</strong> Positioned at the base of the diagram, the turtle symbolizes cosmic stability, grounded patience, and long life. In Hindu mythology, Kurma supports the weight of the universe.</li>
       </ul>
 
-      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Surrounding Auspicious Symbols</h2>
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Auxiliary Guardian Motifs</h2>
       <p class="mb-4 text-[#44403C] leading-relaxed">
-        The central lotus diagram is framed by protective motifs: paired fish (*Matsya*) for fertility, parrots (*Suga*) for romantic love, snakes (*Naga*) for divine protection, and the Sun and Moon as eternal celestial witnesses to the marriage vows.
+        Surrounding the central lotus and bamboo yantra are protective guardian symbols:
+      </p>
+      <ul class="list-disc list-inside space-y-2 mb-6 text-[#44403C]">
+        <li><strong>Matsya (Pair of Fish):</strong> Swimming around the lotus pond, representing fertility, prosperity, and vital life energy (*Prana*).</li>
+        <li><strong>Suga (Green Parrots):</strong> Facing pairs of parrots representing romantic courtship, affectionate communication, and love.</li>
+        <li><strong>Naga (Serpent Guardians):</strong> Coiled snakes providing spiritual protection against evil forces.</li>
+        <li><strong>Surya & Chandra (Sun and Moon):</strong> Positioned at top corners as divine celestial witnesses to the marriage vows.</li>
+      </ul>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Modern Fine Art Wedding Canvas Commissions</h2>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        While traditional Kohbar murals were painted on temporary mud walls, modern art lovers and heritage connoisseurs frequently commission custom *Kohbar* paintings on archival 300gsm cotton paper. Framed in rich natural wood, these heirloom canvases serve as lifelong wedding blessings, preserving ancient Mithila ritual art inside modern homes.
       </p>
     `},{id:`aripan-mithila-floor-art-tradition`,title:`Aripan: The Ancient Sacred Floor Art of Mithila, Pithar Rice Paste Rituals & Spiritual Yantras`,subtitle:`Discover Mithila's ephemeral floor art tradition made with raw rice paste, finger strokes, and ancient geometric yantras.`,category:`Rituals & Traditions`,date:`JULY 31, 2026`,readTime:`6 min read`,image:`/images/artwork_collection_07.jpg`,author:`Kalapravah Studio`,seoKeywords:[`Aripan floor art`,`Mithila floor painting`,`Pithar rice paste art`,`sacred floor yantras Bihar`,`Aripan vs Rangoli`,`Astadhal Kamal`],excerpt:`Explore Aripan, Mithila's sacred ritual floor art painted with raw rice paste (pithar). Learn about Astadhal Kamal yantras and festival floor blessings.`,content:`
       <p class="lead font-serif text-lg sm:text-xl text-[#1C1917] leading-relaxed mb-6">
-        Before Madhubani paintings were drawn on paper or walls, women created <strong>Aripan</strong> (also spelled <em>Aripana</em>)—ephemeral ritual diagrams painted directly on the earth using ground rice paste (*Pithar*).
+        Long before paper or canvas arrived in the villages of Bihar, Mithila women expressed their spiritual devotion directly on the earth. <strong>Aripan</strong> (also spelled <em>Aripana</em>)—the sacred, ephemeral floor art tradition of Mithila—is created using freshly ground white rice paste (*Pithar*) applied with nimble fingers. Drawn at doorsteps, courtyard entrances, and ritual altars every morning, Aripan purifies the household and invites divine energy into daily life.
       </p>
 
-      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">What Is Pithar Paste?</h2>
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Preparation of Pithar Paste & Red Sindoor Accents</h2>
       <p class="mb-4 text-[#44403C] leading-relaxed">
-        Derived from the Sanskrit word <em>Alepan</em> (meaning "to smear"), Aripan begins with purifying the ground with clay and cow dung. Women then soak raw rice in water and grind it into a fine white paste called <strong>Pithar</strong>. Dipping their fingertips into the paste, they draw freehand geometric diagrams on courtyard floors.
+        The word <em>Aripan</em> is derived from the Sanskrit <em>Alepan</em>, meaning "to smear or coat." Preparing the painting paste is a daily morning ritual:
+      </p>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        Raw unpolished rice is soaked in water for several hours and finely ground on a flat stone mortar (*Sil-Batta*) into a fluid white liquid called <strong>Pithar</strong>. Women dip their index and middle fingers into the paste, drawing freehand lines with extraordinary swiftness. Once the white geometric diagram dries, red vermilion dots (*Sindoor*) and turmeric drops (*Haldi*) are placed at key intersection points to activate the yantra spiritually.
       </p>
 
-      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Types of Aripan Diagrams</h2>
-      <ul class="list-disc list-inside space-y-2 mb-6 text-[#44403C]">
-        <li><strong>Astadhal Kamal:</strong> An eight-petaled lotus diagram dedicated to Goddess Lakshmi and Lord Vishnu.</li>
-        <li><strong>Sarvatobhadra:</strong> A complex geometric grid drawn during sacred thread ceremonies and royal pujas.</li>
-        <li><strong>Tusari Puja Aripan:</strong> Created by unmarried girls during winter months to pray for a virtuous husband.</li>
+      <blockquote class="border-l-2 border-[#C87A38] pl-6 py-2 my-8 italic font-serif text-lg text-[#1C1917] bg-[#FAF8F3]/60 rounded-r-md">
+        "Aripan teaches us the beauty of impermanence. Created at sunrise with devotion, stepped upon during the day, and swept away at night, it reminds us that true art lies in the act of giving."
+      </blockquote>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">4 Major Traditional Aripan Typologies</h2>
+      <ul class="space-y-3 mb-6 text-[#44403C]">
+        <li class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm">
+          <strong>1. Astadhal Kamal (Eight-Petaled Lotus):</strong> Drawn for sacred pujas, featuring an eight-petaled lotus representing Lord Vishnu and Goddess Lakshmi.
+        </li>
+        <li class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm">
+          <strong>2. Sarvatobhadra:</strong> A complex geometric grid diagram drawn during sacred thread ceremonies (*Upanayana*) and royal consecrations.
+        </li>
+        <li class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm">
+          <strong>3. Tusari Puja Aripan:</strong> Drawn by unmarried girls during winter months, featuring concentric squares and stars to pray for a virtuous husband.
+        </li>
+        <li class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm">
+          <strong>4. Nag Panchami Aripan:</strong> Coiled serpent diagrams drawn on thresholds during monsoon to protect the home from snake bites.
+        </li>
       </ul>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Aripan vs Rangoli vs Kolam</h2>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        While South Indian *Kolam* uses dry rice flour and Maharashtrian *Rangoli* uses synthetic dry powders, Aripan relies strictly on wet rice paste (*Pithar*). This fluid paste bonds with the clay floor, leaving crisp white linework that dries like etched ivory.
+      </p>
     `},{id:`padma-shri-madhubani-masters-pioneers`,title:`7 Legendary Women Who Saved Madhubani Painting: From Jagdamba Devi to Dulari Devi`,subtitle:`Tracing the courageous lives of the pioneer women masters who transformed village wall art into award-winning global fine art.`,category:`Artist Profiles & Heritage`,date:`AUGUST 02, 2026`,readTime:`9 min read`,image:`/images/artwork_collection_09.jpg`,author:`Kalapravah Studio`,seoKeywords:[`Famous Madhubani artists`,`Padma Shri Madhubani painters`,`Jagdamba Devi first awardee`,`Sita Devi Ganga Devi Mahasundari Devi`,`Dulari Devi journey`,`Baua Devi Godavari Dutta`],excerpt:`Read about the 7 legendary Padma Shri women masters of Madhubani art: Jagdamba Devi, Sita Devi, Ganga Devi, Mahasundari Devi, Baua Devi, Godavari Dutta, and Dulari Devi.`,content:`
       <p class="lead font-serif text-lg sm:text-xl text-[#1C1917] leading-relaxed mb-6">
-        Madhubani painting owes its modern global stature to a group of visionary women masters from Bihar. Overcoming rural poverty and social barriers, these artists earned India's highest civilian honor—the <strong>Padma Shri</strong>.
+        The international acclaim enjoyed by Madhubani painting today is not an accident of history. It is the direct result of the courage, genius, and unwavering devotion of a group of visionary women masters from rural Bihar. Overcoming poverty, social seclusion, and economic barriers, these artists elevated village mud wall murals into world-renowned museum treasures, earning India’s highest civilian honor—the <strong>Padma Shri</strong>.
       </p>
 
-      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">The 7 Honored Padma Shri Masters</h2>
-      <ul class="space-y-4 mb-6 text-[#44403C]">
-        <li class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm">
-          <strong>1. Jagdamba Devi (Padma Shri 1975):</strong> The first artist ever to receive a National Award (1970) and Padma Shri for Madhubani painting, setting the benchmark for fine paper art.
-        </li>
-        <li class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm">
-          <strong>2. Sita Devi (Padma Shri 1981):</strong> Celebrated pioneer of the <em>Bharni</em> style who brought Mithila art to New Delhi exhibitions and international museums.
-        </li>
-        <li class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm">
-          <strong>3. Ganga Devi (Padma Shri 1984):</strong> Renowned for her masterwork line precision and her iconic <em>Kohbar Ghar</em> mural permanently preserved at the Crafts Museum in Delhi.
-        </li>
-        <li class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm">
-          <strong>4. Mahasundari Devi (Padma Shri 2011):</strong> Living legend who founded artisan cooperatives to empower thousands of Mithila women economically.
-        </li>
-        <li class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm">
-          <strong>5. Baua Devi (Padma Shri 2017):</strong> Among the youngest original artists encouraged in the 1960s, famous for her bold nag-kanya (snake goddess) compositions.
-        </li>
-        <li class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm">
-          <strong>6. Godavari Dutta (Padma Shri 2019):</strong> Master instructor who dedicated her life to training thousands of art students worldwide in traditional line techniques.
-        </li>
-        <li class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm">
-          <strong>7. Dulari Devi (Padma Shri 2021):</strong> An inspiring story of resilience—moving from working as a domestic helper in Mahasundari Devi's home to becoming an internationally exhibited master artist.
-        </li>
-      </ul>
-    `},{id:`deities-in-madhubani-art-radha-krishna-ram-sita-ganesha`,title:`Divine Iconography in Mithila Art: Depicting Radha-Krishna, Ram-Sita, Ganesha & Goddess Durga`,subtitle:`canonical rules for depicting sacred Hindu epics and divine figures in traditional Madhubani paintings.`,category:`Religious & Mythological Themes`,date:`AUGUST 04, 2026`,readTime:`7 min read`,image:`/images/artwork_collection_03.jpg`,author:`Rashmi Dhar`,seoKeywords:[`Madhubani painting of Ganesha`,`Radha Krishna Madhubani art`,`Ram Sita wedding painting`,`Hindu deities in Mithila art`,`religious motifs Bihar`],excerpt:`Explore how Hindu deities like Ganesha, Radha-Krishna, Ram-Sita, and Goddess Durga are rendered in traditional Madhubani art with canonical eyes and attributes.`,content:`
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">The 7 Honored Matriarchs of Mithila Fine Art</h2>
+
+      <div class="space-y-4 mb-6 text-[#44403C]">
+        <div class="p-5 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm shadow-xs">
+          <h3 class="font-serif text-xl font-bold text-[#C87A38] mb-1">1. Jagdamba Devi (Padma Shri 1975)</h3>
+          <p class="text-sm text-[#5C5652] leading-relaxed">
+            The matriarch who started it all. Jagdamba Devi of Jitwarpur village was the very first artist to receive the National Award for Madhubani painting in 1970, followed by the historic Padma Shri in 1975. Her delicate *Bharni* deity paintings established the benchmark for fine paper art.
+          </p>
+        </div>
+
+        <div class="p-5 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm shadow-xs">
+          <h3 class="font-serif text-xl font-bold text-[#C87A38] mb-1">2. Sita Devi (Padma Shri 1981)</h3>
+          <p class="text-sm text-[#5C5652] leading-relaxed">
+            A revolutionary pioneer who brought Madhubani art out of rural Bihar to international exhibitions in London, Washington, and Tokyo. Sita Devi popularized the bold, color-filled *Bharni* style and used her art proceeds to build schools and roads in her native village of Jitwarpur.
+          </p>
+        </div>
+
+        <div class="p-5 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm shadow-xs">
+          <h3 class="font-serif text-xl font-bold text-[#C87A38] mb-1">3. Ganga Devi (Padma Shri 1984)</h3>
+          <p class="text-sm text-[#5C5652] leading-relaxed">
+            Renowned for her unmatched *Kachni* line precision. Ganga Devi's masterwork murals are permanently preserved at the National Crafts Museum in New Delhi. Her autobiographical series *Festival of American Life* painted during her travels in the US remains a landmark in modern folk art.
+          </p>
+        </div>
+
+        <div class="p-5 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm shadow-xs">
+          <h3 class="font-serif text-xl font-bold text-[#C87A38] mb-1">4. Mahasundari Devi (Padma Shri 2011)</h3>
+          <p class="text-sm text-[#5C5652] leading-relaxed">
+            A powerhouse leader who established the *Mithila Hashtha Shilpa Kalakar Industrial Cooperative Society*, empowering thousands of rural women to achieve financial independence through painting.
+          </p>
+        </div>
+
+        <div class="p-5 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm shadow-xs">
+          <h3 class="font-serif text-xl font-bold text-[#C87A38] mb-1">5. Baua Devi (Padma Shri 2017)</h3>
+          <p class="text-sm text-[#5C5652] leading-relaxed">
+            The only female artist from Bihar exhibited at the prestigious *Magiciens de la Terre* exhibition at the Centre Pompidou in Paris in 1989. Famous for her bold *Nag Kanya* (serpent goddess) canvases.
+          </p>
+        </div>
+
+        <div class="p-5 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm shadow-xs">
+          <h3 class="font-serif text-xl font-bold text-[#C87A38] mb-1">6. Godavari Dutta (Padma Shri 2019)</h3>
+          <p class="text-sm text-[#5C5652] leading-relaxed">
+            A master educator who traveled across Japan, Germany, and the US teaching traditional line techniques. She trained generations of young art students, ensuring Mithila art techniques endure.
+          </p>
+        </div>
+
+        <div class="p-5 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm shadow-xs">
+          <h3 class="font-serif text-xl font-bold text-[#C87A38] mb-1">7. Dulari Devi (Padma Shri 2021)</h3>
+          <p class="text-sm text-[#5C5652] leading-relaxed">
+            An extraordinary story of resilience. Born into an impoverished fisherman family, Dulari Devi worked as a domestic helper in Mahasundari Devi's house. Watching art being painted inspired her to pick up the brush, eventually becoming a world-renowned master artist.
+          </p>
+        </div>
+      </div>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Standing on the Shoulders of Giants</h2>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        At Kalapravah, every original painting created in our studio pays homage to these seven courageous women. Their legacy reminds us that Madhubani painting is not merely decorative craft—it is a triumphant story of female agency, cultural preservation, and fine art mastery.
+      </p>
+    `},{id:`deities-in-madhubani-art-radha-krishna-ram-sita-ganesha`,title:`Divine Iconography in Mithila Art: Depicting Radha-Krishna, Ram-Sita, Ganesha & Goddess Durga`,subtitle:`Canonical rules for depicting sacred Hindu epics and divine figures in traditional Madhubani paintings.`,category:`Religious & Mythological Themes`,date:`AUGUST 04, 2026`,readTime:`7 min read`,image:`/images/artwork_collection_03.jpg`,author:`Rashmi Dhar`,seoKeywords:[`Madhubani painting of Ganesha`,`Radha Krishna Madhubani art`,`Ram Sita wedding painting`,`Hindu deities in Mithila art`,`religious motifs Bihar`],excerpt:`Explore how Hindu deities like Ganesha, Radha-Krishna, Ram-Sita, and Goddess Durga are rendered in traditional Madhubani art with canonical eyes and attributes.`,content:`
       <p class="lead font-serif text-lg sm:text-xl text-[#1C1917] leading-relaxed mb-6">
-        Religious narrative is the beating heart of traditional Madhubani art. Deities are not merely depicted as decorative figures; they are painted according to strict sacred canons passed down through centuries.
+        Religious narrative and divine myth are the beating heart of traditional Madhubani art. Deities in Mithila painting are not rendered as distant, anatomical portraits; they are depicted according to strict sacred canons passed down through centuries. When an artist paints Lord Ganesha, Radha-Krishna, or Goddess Durga, she follows precise rules regarding facial proportion, eye geometry, and symbolic attributes.
       </p>
 
-      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Canonical Eye Drawing: The Meenakshi Fish Eye</h2>
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Canonical Eye Geometry: The Meenakshi Fish Eye</h2>
       <p class="mb-4 text-[#44403C] leading-relaxed">
-        Figures in Madhubani art are almost always depicted in profile or three-quarter view. Their eyes are drawn extraordinarily large, elongated, and almond- or fish-shaped (*Meenakshi*), symbolizing divine omniscience and spiritual watchfulness.
+        The defining feature of every figure in authentic Madhubani art is the treatment of the eyes. Divine figures are depicted in strict profile or three-quarter view, but their eyes are drawn extraordinarily large, elongated, and almond- or fish-shaped (*Meenakshi*).
+      </p>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        In Mithila aesthetic philosophy, large fish eyes symbolize spiritual watchfulness, divine omniscience, and cosmic awareness. The iris is placed at the center with fine black ink lines framing the eyelid, giving the deity an intense, hypnotic gaze.
       </p>
 
-      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Key Deity Iconography</h2>
-      <ul class="space-y-3 mb-6 text-[#44403C]">
-        <li><strong>Lord Ganesha:</strong> Depicted with a side-curved trunk, modak sweet, and his mouse mount (*Mooshak*), framed by lotus vines.</li>
-        <li><strong>Radha-Krishna:</strong> Depicted beneath the Kadamba tree, Krishna holding his flute (*Bansi*) and Radha adorned with traditional Mithila head ornaments.</li>
-        <li><strong>Goddess Durga:</strong> Rendered in powerful <em>Tantrik</em> style, riding her lion and wielding ten weapons against demon forces.</li>
-      </ul>
+      <blockquote class="border-l-2 border-[#C87A38] pl-6 py-2 my-8 italic font-serif text-lg text-[#1C1917] bg-[#FAF8F3]/60 rounded-r-md">
+        "Drawing the eyes is the final ritual in a deity painting. In traditional studios, the artist paints the eyes last, awakening the divine presence (*Prana Pratishtha*) on paper."
+      </blockquote>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Key Deity Iconography Breakdown</h2>
+
+      <h3 class="font-serif text-xl font-bold text-[#C87A38] mt-6 mb-2">1. Lord Ganesha: The Obstacle Remover</h3>
+      <p class="mb-4 text-[#44403C] leading-relaxed">
+        Depicted with a side-curved trunk holding a sweet *Modak*, Ganesha is framed by sprawling lotus leaves and paired peacocks. His mouse mount (*Mooshak*) is drawn at his feet, and his body is filled with dense *Bharni* red or yellow mineral pigments.
+      </p>
+
+      <h3 class="font-serif text-xl font-bold text-[#C87A38] mt-6 mb-2">2. Radha-Krishna: Divine Love & Raas Leela</h3>
+      <p class="mb-4 text-[#44403C] leading-relaxed">
+        Depicted standing beneath the sacred Kadamba tree (*Kadamba Vriksha*), Lord Krishna holds his divine bamboo flute (*Bansi*), adorned with a peacock feather crown (*Mor Mukut*). Radha stands beside him, adorned with traditional Mithila head ornaments (*Tikli*) and fine *Kachni* line-hatched garments.
+      </p>
+
+      <h3 class="font-serif text-xl font-bold text-[#C87A38] mt-6 mb-2">3. Ram-Sita: Royal Mithila Wedding</h3>
+      <p class="mb-4 text-[#44403C] leading-relaxed">
+        Celebrating the royal wedding in Janakpur, Lord Ram and Sita are depicted exchanging wedding garlands (*Varmala*), surrounded by King Janaka, royal priests, and courtly attendants amidst lush banana plants.
+      </p>
+
+      <h3 class="font-serif text-xl font-bold text-[#C87A38] mt-6 mb-2">4. Goddess Durga: Fierce Tantrik Shakti</h3>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        Rendered in powerful *Tantrik* style, Goddess Durga rides her roaring lion mount, wielding ten weapons in her ten hands to destroy demon forces (*Mahishasuramardini*). Her eyes are drawn unusually large with intense red mineral pigments emphasizing divine energy.
+      </p>
     `},{id:`tree-of-life-kalpavriksha-madhubani-meaning`,title:`The Tree of Life (Kalpavriksha) in Madhubani Art: Cosmic Connection, Birds & Branch Geometry`,subtitle:`Analyzing the wish-fulfilling Tree of Life motif in Mithila fine art and its ecological philosophy.`,category:`Motifs & Symbolism`,date:`AUGUST 06, 2026`,readTime:`6 min read`,image:`/images/artwork_collection_12.jpg`,author:`Rashmi Dhar`,seoKeywords:[`Tree of life Madhubani painting`,`Kalpavriksha Mithila art`,`tree of life meaning Indian painting`,`peacock tree artwork`],excerpt:`Discover the cosmic philosophy of the Tree of Life (Kalpavriksha) in Madhubani art, featuring sprawling branches, nesting birds, and intricate leaf hatching.`,content:`
       <p class="lead font-serif text-lg sm:text-xl text-[#1C1917] leading-relaxed mb-6">
-        The <strong>Tree of Life</strong> (known in Sanskrit as <em>Kalpavriksha</em>) is one of the most beloved subjects in fine art Madhubani paintings, symbolizing nature's infinite generosity, harmony, and cosmic axis.
+        The <strong>Tree of Life</strong> (known in Sanskrit as <em>Kalpavriksha</em> or the "wish-fulfilling divine tree") is one of the most celebrated subjects in fine art Madhubani paintings. Rooted deep in the earth while stretching sprawling branches into the heavens, the Kalpavriksha serves as a visual metaphor for nature's infinite generosity, ecological balance, and cosmic unity.
       </p>
 
-      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Structure of a Kalpavriksha Composition</h2>
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Structure of a Madhubani Tree Composition</h2>
       <p class="mb-4 text-[#44403C] leading-relaxed">
-        A classical Madhubani Tree of Life artwork features a sturdy trunk rooted deep in earth, expanding into symmetrical or organic branches. Every single leaf is individually detailed with fine *Kachni* line hatching, while pairs of peacocks, parrots, and sunbirds nest within the foliage.
+        Creating a classical Madhubani Tree of Life artwork requires careful compositional balance. The painting begins at the base with a sturdy, textured trunk anchored in deep soil or surrounded by water guardians like fish and turtles.
+      </p>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        From the central trunk, organic branches expand outward in symmetrical curves, filling the upper canvas. Every single leaf is individually detailed using delicate *Kachni* line hatching spaced barely a millimeter apart.
+      </p>
+
+      <blockquote class="border-l-2 border-[#C87A38] pl-6 py-2 my-8 italic font-serif text-lg text-[#1C1917] bg-[#FAF8F3]/60 rounded-r-md">
+        "A Kalpavriksha canvas is a living ecosystem. You do not merely draw a tree; you build a sanctuary where peacocks rest, sunbirds sing, and cosmic energy flows through every leaf."
+      </blockquote>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Avian Inhabitants: Peacocks, Parrots & Sunbirds</h2>
+      <p class="mb-4 text-[#44403C] leading-relaxed">
+        A Madhubani Tree of Life is never solitary. Its branches shelter a bustling community of sacred fauna:
+      </p>
+      <ul class="list-disc list-inside space-y-3 mb-6 text-[#44403C]">
+        <li><strong>Facing Peacocks (Mayura):</strong> Placed on major lower branches, feathers flowing down the trunk, representing grace, romance, and monsoon rain blessings.</li>
+        <li><strong>Nesting Parrots (Suga):</strong> Tucked inside foliage clusters, symbolizing love, courtship, and sweet communication.</li>
+        <li><strong>Squirrels & Sunbirds:</strong> Nibbling on berries and lotus seeds, representing joy and nature's abundance.</li>
+      </ul>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Ecological Philosophy in Mithila Culture</h2>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        In Mithila village culture, trees are revered as living ancestors. Plants like Banyan (*Vata*), Peepal, Neem, and Kadamba are worshiped during seasonal festivals. The Kalpavriksha painting is an artistic declaration of environmental reverence, reminding us that human survival depends on protecting the natural world.
       </p>
     `},{id:`tantrik-madhubani-art-sacred-geometry`,title:`Tantrik Madhubani Art: Sacred Yantras, Geometric Mysticism & Energy Symbolism in Mithila`,subtitle:`Exploring the meditative, esoteric style of Madhubani art focused on energy diagrams and spiritual focus.`,category:`Sacred & Mystical Art`,date:`AUGUST 08, 2026`,readTime:`6 min read`,image:`/images/artwork_collection_15.jpg`,author:`Kalapravah Studio`,seoKeywords:[`Tantrik style Madhubani painting`,`sacred geometry Indian art`,`yantra paintings Mithila`,`Tantra in Bihar folk art`,`spiritual Madhubani symbols`],excerpt:`Discover Tantrik Madhubani art: sacred geometric yantras, energy mandalas, and the meditative practice of drawing sacred linework.`,content:`
       <p class="lead font-serif text-lg sm:text-xl text-[#1C1917] leading-relaxed mb-6">
-        Unlike the narrative storytelling of <em>Bharni</em> deity art, the <strong>Tantrik style</strong> of Madhubani painting focuses entirely on esoteric geometric yantras, cosmic mandalas, and spiritual energy points.
+        While many art collectors are familiar with the narrative deity paintings of *Bharni* or the fine line birds of *Kachni*, there exists a deeper, far more mystical branch of Mithila art: the <strong>Tantrik style</strong>. Focused entirely on esoteric geometric diagrams (*Yantras*), energy mandalas, cosmic solar rays, and sacred focal points (*Bindu*), Tantrik Madhubani art transforms painting into an intense act of visual meditation.
       </p>
 
-      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Geometry as Meditation</h2>
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Roots of Tantrik Philosophy in Ancient Mithila</h2>
       <p class="mb-4 text-[#44403C] leading-relaxed">
-        Tantrik compositions feature concentric circles, interlocking triangles (*Yantras*), and solar rays. Creating these artworks requires single-pointed mental focus, transforming the painting process into an act of meditation.
+        Historically, the Mithila region was a renowned center for Tantrik scholarship and esoteric spiritual philosophy. Scholars and women practitioners studied the subtle energy channels of the human body and the universe.
+      </p>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        Tantrik art does not depict anthropomorphic deities with human faces. Instead, it translates divine power into pure geometric vibration. The divine feminine energy (*Shakti*) is represented by downward-pointing triangles (*Trikona*), while the masculine principle (*Shiva*) is represented by upward-pointing triangles.
+      </p>
+
+      <blockquote class="border-l-2 border-[#C87A38] pl-6 py-2 my-8 italic font-serif text-lg text-[#1C1917] bg-[#FAF8F3]/60 rounded-r-md">
+        "Tantrik art is geometry charged with devotion. When drawing interlocking triangles freehand, breath must align with pen movement."
+      </blockquote>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Key Sacred Geometry Vocabulary</h2>
+      <ul class="space-y-3 mb-6 text-[#44403C]">
+        <li class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm">
+          <strong>Bindu (The Cosmic Center):</strong> The central dot representing the unmanifest origin of creation from which all geometric forms expand.
+        </li>
+        <li class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm">
+          <strong>Interlocking Triangles (Sri Yantra Motif):</strong> Overlapping triangles creating star polygons representing the union of spirit and matter.
+        </li>
+        <li class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm">
+          <strong>Concentric Rays (Surya Chakra):</strong> Radiating solar lines symbolizing expanding cosmic consciousness.
+        </li>
+      </ul>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Freehand Precision as Meditation</h2>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        Drawing a Tantrik mandala requires absolute mental stillness. Artists draw complex concentric circles and symmetrical triangles entirely freehand, relying on muscle memory and focused breathing. In modern interiors, these sacred geometric artworks provide a serene, meditative focal point.
       </p>
     `},{id:`animal-and-bird-symbolism-madhubani-art`,title:`Animal & Avian World of Mithila: Peacocks, Parrots, Elephants, Turtles & Fish in Madhubani Painting`,subtitle:`A detailed wildlife encyclopedia of fauna depicted in traditional Bihar folk art.`,category:`Motifs & Symbolism`,date:`AUGUST 09, 2026`,readTime:`7 min read`,image:`/images/artwork_collection_17.jpg`,author:`Rashmi Dhar`,seoKeywords:[`Animal symbols Madhubani art`,`elephant motif meaning Indian art`,`parrot symbol Mithila`,`turtle Kurma Madhubani`,`bird iconography Bihar art`],excerpt:`Explore the fauna encyclopedia of Madhubani painting: Gaja elephants of majesty, Suga parrots of love, Kurma turtles of stability, and Mayura peacocks.`,content:`
       <p class="lead font-serif text-lg sm:text-xl text-[#1C1917] leading-relaxed mb-6">
-        Animals and birds play a central role in Mithila art philosophy, serving as sacred messengers and divine mounts (*Vahanas*).
+        Animals and birds play a central role in Mithila art philosophy, serving as sacred messengers, cosmic mounts (*Vahanas*), and biological metaphors for spiritual virtues. In authentic Madhubani paintings, fauna is never depicted with photorealistic anatomy; instead, animals are stylized into bold, graphic icons filled with intricate line hatching and sacred geometry.
       </p>
 
-      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Key Fauna Motifs & Meanings</h2>
-      <ul class="space-y-3 mb-6 text-[#44403C]">
-        <li><strong>Gaja (The Royal Elephant):</strong> Symbolizes royal majesty, wisdom, strength, and divine blessings of Goddess Lakshmi.</li>
-        <li><strong>Suga (The Green Parrot):</strong> Associated with Kama (the god of love) and romantic courtship, frequently placed in pair settings.</li>
-        <li><strong>Kurma (The Cosmic Turtle):</strong> Represents grounded stability, perseverance, and the foundation of cosmic order.</li>
-      </ul>
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">The Wildlife Encyclopedia of Mithila Art</h2>
+
+      <div class="space-y-4 mb-6 text-[#44403C]">
+        <div class="p-5 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm shadow-xs">
+          <h3 class="font-serif text-xl font-bold text-[#C87A38] mb-1">1. Gaja (The Royal Elephant)</h3>
+          <p class="text-sm text-[#5C5652] leading-relaxed">
+            Symbolizes royal majesty, wisdom, calm strength, and the divine blessings of Goddess Lakshmi (*Gaja-Lakshmi*). Elephants are depicted holding lotus flowers in their trunks, framed by elaborate geometric saddle blankets.
+          </p>
+        </div>
+
+        <div class="p-5 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm shadow-xs">
+          <h3 class="font-serif text-xl font-bold text-[#C87A38] mb-1">2. Suga (The Green Parrot)</h3>
+          <p class="text-sm text-[#5C5652] leading-relaxed">
+            Associated with Kamadeva (the god of love) and romantic courtship. Parrots are drawn in pairs tucked inside tree foliage or perched on bridal palanquins, symbolizing sweet speech and affection.
+          </p>
+        </div>
+
+        <div class="p-5 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm shadow-xs">
+          <h3 class="font-serif text-xl font-bold text-[#C87A38] mb-1">3. Kurma (The Cosmic Turtle)</h3>
+          <p class="text-sm text-[#5C5652] leading-relaxed">
+            Represents grounded stability, perseverance, long life, and the foundation of creation. Drawn at the base of nuptial *Kohbar* diagrams.
+          </p>
+        </div>
+
+        <div class="p-5 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm shadow-xs">
+          <h3 class="font-serif text-xl font-bold text-[#C87A38] mb-1">4. Mayura (The Peacock)</h3>
+          <p class="text-sm text-[#5C5652] leading-relaxed">
+            Heralds the monsoon, romance, and spiritual beauty. Feathers are rendered using fine *Kachni* cross-hatching, creating brilliant optical texture.
+          </p>
+        </div>
+      </div>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Stylization Rules for Animal Drawing</h2>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        When drawing animals in Madhubani style, twin outlines frame the body. Eyes are drawn as large, fish-shaped ovals, and the interior body is filled with repeating leaf motifs, fish scales, or geometric cross-hatching, blurring the boundary between fauna and flora.
+      </p>
     `},{id:`nepal-mithila-art-janakpur-tradition`,title:`Mithila Art Beyond Borders: The Vibrant Janakpur Art Tradition of Southern Nepal`,subtitle:`Exploring the cross-border cultural unity of Mithila art in Janakpur, Nepal.`,category:`Global Heritage & Cross-Border Art`,date:`AUGUST 11, 2026`,readTime:`7 min read`,image:`/images/artwork_collection_20.jpg`,author:`Kalapravah Studio`,seoKeywords:[`Janakpur Mithila art Nepal`,`Nepalese Madhubani painting`,`Mithila Women's Art Center Janakpur`,`Cross-border Mithila culture`,`Terai Nepal folk art`],excerpt:`Explore Nepalese Mithila art in Janakpur: the Janakpur Women's Development Centre (JWDC), regional Terai motifs, and cross-border cultural unity.`,content:`
       <p class="lead font-serif text-lg sm:text-xl text-[#1C1917] leading-relaxed mb-6">
-        Mithila culture knows no modern political borders. In southern Nepal's Terai region lies <strong>Janakpurdham</strong>—the ancient capital of King Janaka—where Nepalese women practice a vibrant sister tradition of Madhubani art.
+        Mithila culture knows no modern political borders. While Madhubani district in Bihar is celebrated as the Indian heartland of this art form, directly across the international border in southern Nepal's Terai region lies <strong>Janakpurdham</strong>—the ancient capital of King Janaka. Here, Nepalese Maithil women practice a vibrant sister tradition of Mithila art that shares the exact same Ramayana roots, motifs, and sacred rituals.
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Janakpurdham: The Sacred Capital in Nepal</h2>
+      <p class="mb-4 text-[#44403C] leading-relaxed">
+        In Maithil memory, Janakpur is the birthplace of Princess Sita. The grand Janaki Temple (*Janaki Mandir*) stands at the center of the city, and local women have painted domestic wall murals for centuries to celebrate wedding anniversaries of Ram and Sita (*Vivaha Panchami*).
       </p>
 
       <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">The Janakpur Women's Development Centre (JWDC)</h2>
       <p class="mb-4 text-[#44403C] leading-relaxed">
-        Established in the late 1980s, the JWDC empowered local Nepalese women to preserve traditional wall paintings on paper and ceramics, creating a thriving artisan cooperative that exhibits internationally while honoring shared Mithila roots.
+        In 1989, American artist Claire Burkert founded the <strong>Janakpur Women's Development Centre (JWDC)</strong> in Nepal. This artisan cooperative empowered local Nepalese women to translate their traditional wall murals onto paper, ceramics, and textiles.
+      </p>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        Nepalese Mithila art often features unique regional motifs, depicting village life in the Terai—women harvesting rice, carrying water pots, attending village markets, and celebrating local Nepalese festivals alongside traditional deity narratives.
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Cross-Border Cultural Unity</h2>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        The shared art tradition between Bihar and Nepal highlights a profound truth: cultural heritage transcends political borders. Maithili language, songs, marriage rituals, and dip-pen line art bind communities in India and Nepal in an unbroken artistic chain.
       </p>
     `},{id:`gi-tag-madhubani-painting-legal-protection`,title:`What the GI Tag Means for Madhubani Painting: Geographical Indication, Authenticity & Protecting Artisan Rights`,subtitle:`Understanding the legal protection granted to Mithila artists under India's 2007 GI registration law.`,category:`Legal Heritage & Artisan Rights`,date:`AUGUST 13, 2026`,readTime:`7 min read`,image:`/images/artwork_collection_18.jpg`,author:`Kalapravah Studio`,seoKeywords:[`Madhubani painting GI tag`,`Geographical Indication Mithila art`,`artisan intellectual property India`,`authentic Bihar handicraft protection`,`buying GI certified Madhubani`],excerpt:`Learn what the 2007 Geographical Indication (GI) tag means for Madhubani art: legal protection against factory knockoffs and fair-trade artisan rights.`,content:`
       <p class="lead font-serif text-lg sm:text-xl text-[#1C1917] leading-relaxed mb-6">
-        In 2007, Madhubani art officially received <strong>Geographical Indication (GI)</strong> protection status under Indian intellectual property law, legally certifying that authentic Madhubani paintings must originate from the traditional Mithila region.
+        As traditional Madhubani art gained global fame, it faced a serious modern threat: cheap, mass-produced digital canvas prints and factory reproductions manufactured far away from Bihar, falsely sold under the name "Madhubani." To protect the economic rights and heritage authenticity of village artisans, Madhubani painting received official <strong>Geographical Indication (GI)</strong> protection status in 2007 under Indian intellectual property law.
       </p>
 
-      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Why GI Protection Matters</h2>
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">What Is a Geographical Indication (GI Tag)?</h2>
       <p class="mb-4 text-[#44403C] leading-relaxed">
-        GI certification protects village women artists from unauthorized commercial exploitation and factory mass-production. It ensures buyers receive genuine heritage artworks while guaranteeing fair compensation for traditional Bihar artisans.
+        A Geographical Indication is an official legal certification granted to products that possess a specific geographical origin and possess qualities, reputation, or characteristics attributable strictly to that location (similar to Champagne in France or Darjeeling Tea in India).
+      </p>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        Under GI Registration No. 105, only artworks handcrafted by traditional artisans within the defined Mithila region (comprising districts like Madhubani, Darbhanga, Sitamarhi, and Saharsa) can legally be labeled and sold as authentic **Madhubani Paintings**.
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Why GI Protection Matters for Artisans & Collectors</h2>
+      <ul class="space-y-3 mb-6 text-[#44403C]">
+        <li class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm">
+          <strong>Protects Rural Livelihoods:</strong> Prevents industrial factories from exploiting traditional designs, ensuring sales revenue returns directly to village women painters.
+        </li>
+        <li class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm">
+          <strong>Guarantees Collector Authenticity:</strong> Provides art collectors with legal assurance that their purchased canvas is an authentic, hand-painted heritage piece.
+        </li>
+        <li class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm">
+          <strong>Preserves Ancient Techniques:</strong> Encourages young artisans in Bihar to master traditional dip-pen linework and natural dye extraction.
+        </li>
+      </ul>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Supporting Ethical Fair-Trade Art</h2>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        At Kalapravah Studio, we strictly adhere to GI authenticity standards. Every artwork in our gallery is hand-painted by master artisans using traditional techniques on archival cotton paper, guaranteeing ethical compensation and heritage preservation.
       </p>
     `},{id:`madhubani-vs-warli-gond-pattachitra`,title:`Madhubani vs Warli vs Gond vs Pattachitra: The Ultimate Guide to Indian Folk Art Styles`,subtitle:`A comprehensive collector's comparison of India's 4 most famous traditional folk art styles.`,category:`Buyer & Collector Guide`,date:`AUGUST 15, 2026`,readTime:`10 min read`,image:`/images/artwork_collection_08.jpg`,author:`Rashmi Dhar`,seoKeywords:[`Difference between Madhubani and Warli`,`Indian folk art comparison`,`Gond vs Madhubani art`,`Pattachitra vs Mithila painting`,`famous Indian traditional painting styles`],excerpt:`Compare Madhubani, Warli, Gond, and Pattachitra folk art. Learn regional differences, line techniques, eye shapes, themes, and collector tips.`,content:`
       <p class="lead font-serif text-lg sm:text-xl text-[#1C1917] leading-relaxed mb-6">
-        India is home to an extraordinary tapestry of traditional art. Among them, four folk art forms stand out in global fine art galleries: <strong>Madhubani</strong> (Bihar), <strong>Warli</strong> (Maharashtra), <strong>Gond</strong> (Madhya Pradesh), and <strong>Pattachitra</strong> (Odisha). Here is your ultimate collector's guide to distinguishing between them.
+        India is home to an extraordinary tapestry of traditional folk art traditions, nurtured over centuries across distinct geographical regions. Among them, four traditional art styles stand out in global fine art galleries and private collections: <strong>Madhubani</strong> (Bihar), <strong>Warli</strong> (Maharashtra), <strong>Gond</strong> (Madhya Pradesh), and <strong>Pattachitra</strong> (Odisha & West Bengal). For art collectors, interior designers, and heritage enthusiasts, understanding the visual differences, cultural roots, line techniques, and thematic focus of each style is essential. Here is your definitive collector’s guide.
       </p>
 
-      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Folk Art Comparison Matrix</h2>
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">1. Madhubani Art (Bihar & Southern Nepal)</h2>
+      <p class="mb-4 text-[#44403C] leading-relaxed">
+        <strong>Origin & History:</strong> Hailing from the ancient Mithila region of northern Bihar, Madhubani art dates back over 2,500 years to the Ramayana era. Historically painted by women on mud courtyard walls (*Bhitti Chitra*).
+      </p>
+      <p class="mb-4 text-[#44403C] leading-relaxed">
+        <strong>Visual Style & Technique:</strong> Governed by two strict rules: <em>Double Contour Outlines</em> and <em>Horror Vacui</em> (filling all negative space). Figures are depicted with prominent fish-shaped eyes (*Meenakshi*) in profile view. Shading is achieved through fine dip-pen linework (*Kachni*) or vibrant mineral color fills (*Bharni*).
+      </p>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        <strong>Primary Themes:</strong> Hindu mythological epics (Ramayana, Krishna Leela, Ganesha), sacred fertility diagrams (*Kohbar*), and ecological motifs (Tree of Life, peacocks, fish, lotus).
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">2. Warli Art (Maharashtra)</h2>
+      <p class="mb-4 text-[#44403C] leading-relaxed">
+        <strong>Origin & History:</strong> Practiced by the indigenous Warli tribe in the Western Ghats of Maharashtra (Palghar district). Dates back to 2500 BCE, making it one of India's oldest tribal art forms.
+      </p>
+      <p class="mb-4 text-[#44403C] leading-relaxed">
+        <strong>Visual Style & Technique:</strong> Ultra-minimalist geometric iconography. Figures are created using simple geometric shapes: two inverted triangles joined at the tip to represent the torso, a circle for the head, and straight lines for limbs. Painted exclusively with a white pigment paste (rice powder mixed with water and gum) over a dark reddish-brown clay or cow-dung mud wall background.
+      </p>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        <strong>Primary Themes:</strong> Communal village life, the famous Tarpa harvest dance, farming, hunting, fishing, and tribal harmony with nature. Notably, traditional Warli art avoids depicting religious deities.
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">3. Gond Art (Madhya Pradesh)</h2>
+      <p class="mb-4 text-[#44403C] leading-relaxed">
+        <strong>Origin & History:</strong> Created by the Gond indigenous tribe of central India (primarily Madhya Pradesh and Chhattisgarh). Gond artists believe that viewing good images brings good fortune.
+      </p>
+      <p class="mb-4 text-[#44403C] leading-relaxed">
+        <strong>Visual Style & Technique:</strong> Defined by vibrant, luminous colors and intricate repeating signature fill patterns. Every Gond artist develops a unique personal signature pattern—consisting of fine dots, dashes, curved lines, or fish scales—to fill the interior of animal and tree forms.
+      </p>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        <strong>Primary Themes:</strong> Animist nature worship, sacred trees, mythic birds, deer, tigers, and forest spirits (*Bara Dev*).
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">4. Pattachitra (Odisha & Bengal)</h2>
+      <p class="mb-4 text-[#44403C] leading-relaxed">
+        <strong>Origin & History:</strong> Originating in Puri, Odisha, around the 5th century BCE, closely tied to the worship of Lord Jagannath.
+      </p>
+      <p class="mb-4 text-[#44403C] leading-relaxed">
+        <strong>Visual Style & Technique:</strong> Highly detailed, classical scroll paintings executed on specially prepared cloth canvases (*Patta*). Features dense, decorative scroll linework, intricate floral borders, classical proportions, and lacquer coating.
+      </p>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        <strong>Primary Themes:</strong> Lord Jagannath temple legends, Krishna Leela narratives, and Dasavatara (ten incarnations of Vishnu).
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Ultimate Side-by-Side Comparison Matrix</h2>
+
       <div class="overflow-x-auto my-6">
         <table class="w-full text-left text-sm border-collapse border border-[#E7E0D2]">
           <thead>
             <tr class="bg-[#F3EFE6]">
-              <th class="p-3 border border-[#E7E0D2] font-serif font-bold">Art Form</th>
-              <th class="p-3 border border-[#E7E0D2] font-serif font-bold">State & Region</th>
-              <th class="p-3 border border-[#E7E0D2] font-serif font-bold">Key Visual Style</th>
-              <th class="p-3 border border-[#E7E0D2] font-serif font-bold">Primary Themes</th>
+              <th class="p-3 border border-[#E7E0D2] font-serif font-bold text-[#1C1917]">Feature</th>
+              <th class="p-3 border border-[#E7E0D2] font-serif font-bold text-[#1C1917]">Madhubani</th>
+              <th class="p-3 border border-[#E7E0D2] font-serif font-bold text-[#1C1917]">Warli</th>
+              <th class="p-3 border border-[#E7E0D2] font-serif font-bold text-[#1C1917]">Gond</th>
+              <th class="p-3 border border-[#E7E0D2] font-serif font-bold text-[#1C1917]">Pattachitra</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class="p-3 border border-[#E7E0D2] font-semibold">Madhubani</td>
+              <td class="p-3 border border-[#E7E0D2] font-semibold text-[#1C1917]">State / Region</td>
               <td class="p-3 border border-[#E7E0D2]">Bihar (Mithila)</td>
-              <td class="p-3 border border-[#E7E0D2]">Double contour lines, fish eyes, no blank space</td>
-              <td class="p-3 border border-[#E7E0D2]">Mythology, Ramayana, nature, Kohbar weddings</td>
+              <td class="p-3 border border-[#E7E0D2]">Maharashtra</td>
+              <td class="p-3 border border-[#E7E0D2]">Madhya Pradesh</td>
+              <td class="p-3 border border-[#E7E0D2]">Odisha / Bengal</td>
             </tr>
             <tr class="bg-[#FFFDF9]">
-              <td class="p-3 border border-[#E7E0D2] font-semibold">Warli</td>
-              <td class="p-3 border border-[#E7E0D2]">Maharashtra</td>
-              <td class="p-3 border border-[#E7E0D2]">Minimalist white stick figures, triangles & circles</td>
-              <td class="p-3 border border-[#E7E0D2]">Village dances, farming, hunting, nature</td>
+              <td class="p-3 border border-[#E7E0D2] font-semibold text-[#1C1917]">Key Line Feature</td>
+              <td class="p-3 border border-[#E7E0D2]">Double contour outlines & hatching</td>
+              <td class="p-3 border border-[#E7E0D2]">Minimalist stick triangles & circles</td>
+              <td class="p-3 border border-[#E7E0D2]">Signature dots, dashes & mosaic fills</td>
+              <td class="p-3 border border-[#E7E0D2]">Dense classical scroll outlines & lacquer</td>
             </tr>
             <tr>
-              <td class="p-3 border border-[#E7E0D2] font-semibold">Gond</td>
-              <td class="p-3 border border-[#E7E0D2]">Madhya Pradesh</td>
-              <td class="p-3 border border-[#E7E0D2]">Vibrant dots, dashes, mosaic textures</td>
-              <td class="p-3 border border-[#E7E0D2]">Animist spirits, sacred trees, animals</td>
+              <td class="p-3 border border-[#E7E0D2] font-semibold text-[#1C1917]">Eye Shape</td>
+              <td class="p-3 border border-[#E7E0D2]">Large fish-shaped (*Meenakshi*)</td>
+              <td class="p-3 border border-[#E7E0D2]">Dot eyes / geometric heads</td>
+              <td class="p-3 border border-[#E7E0D2]">Stylized almond eyes</td>
+              <td class="p-3 border border-[#E7E0D2]">Elongated classical lotus eyes</td>
             </tr>
             <tr class="bg-[#FFFDF9]">
-              <td class="p-3 border border-[#E7E0D2] font-semibold">Pattachitra</td>
-              <td class="p-3 border border-[#E7E0D2]">Odisha</td>
-              <td class="p-3 border border-[#E7E0D2]">Highly detailed scroll lines, ornate classical borders</td>
-              <td class="p-3 border border-[#E7E0D2]">Lord Jagannath, Krishna Leela legends</td>
+              <td class="p-3 border border-[#E7E0D2] font-semibold text-[#1C1917]">Traditional Surface</td>
+              <td class="p-3 border border-[#E7E0D2]">Mud walls & cotton paper</td>
+              <td class="p-3 border border-[#E7E0D2]">Red mud / cow-dung walls</td>
+              <td class="p-3 border border-[#E7E0D2]">Mud walls & canvas paper</td>
+              <td class="p-3 border border-[#E7E0D2]">Treated cotton cloth scrolls (*Patta*)</td>
+            </tr>
+            <tr>
+              <td class="p-3 border border-[#E7E0D2] font-semibold text-[#1C1917]">Primary Focus</td>
+              <td class="p-3 border border-[#E7E0D2]">Mythology, rituals & flora/fauna</td>
+              <td class="p-3 border border-[#E7E0D2]">Village life, dance & farming</td>
+              <td class="p-3 border border-[#E7E0D2]">Animism, forest spirits & fauna</td>
+              <td class="p-3 border border-[#E7E0D2]">Lord Jagannath & Krishna lore</td>
             </tr>
           </tbody>
         </table>
       </div>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Collector’s Display Strategy</h2>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        For home art collectors, pairing these traditional art forms creates a captivating dialogue across Indian regional heritage. A monochrome Madhubani *Kachni* linework piece pairs elegantly with a rustic Warli panel, while a vibrant Gond animal motif complements colorful Pattachitra scroll art in modern living rooms.
+      </p>
     `},{id:`madhubani-painting-for-beginners-step-by-step`,title:`How to Paint Madhubani Art: Step-by-Step Guide for Beginners, Tools, Outlines & Fill Patterns`,subtitle:`A complete hands-on tutorial for learning double contour lines, fine nib hatching, and traditional motif compositions.`,category:`Practical How-To Guide`,date:`AUGUST 16, 2026`,readTime:`8 min read`,image:`/images/artwork_collection_10.jpg`,author:`Rashmi Dhar`,seoKeywords:[`Madhubani painting step by step`,`how to do Madhubani painting for beginners`,`Madhubani painting materials list`,`fine nib dip pen tutorial`,`double line borders`],excerpt:`Learn how to paint Madhubani art step-by-step: choosing 300gsm paper, dip pens, drawing double line outlines, and mastering Kachni cross-hatching fill patterns.`,content:`
       <p class="lead font-serif text-lg sm:text-xl text-[#1C1917] leading-relaxed mb-6">
-        Ready to create your first authentic Madhubani artwork? This step-by-step tutorial guides you through selecting paper, holding dip nib pens, framing double-line borders, and executing delicate line fills.
+        Welcome to the studio! If you have ever been mesmerized by the intricate linework and sacred geometry of Madhubani art and wondered how to begin your own painting journey, this step-by-step tutorial is designed for you. Learning Madhubani art is not just about mastering drawing skills; it is a meditative practice that teaches hand control, patience, and visual rhythm.
       </p>
 
-      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Step 1: Essential Materials Checklist</h2>
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Essential Studio Materials Checklist</h2>
+      <p class="mb-4 text-[#44403C] leading-relaxed">
+        Before making your first mark, gather these recommended materials:
+      </p>
       <ul class="list-disc list-inside space-y-2 mb-6 text-[#44403C]">
-        <li><strong>Paper:</strong> 300gsm cold-pressed acid-free watercolor paper or handmade cotton paper.</li>
-        <li><strong>Pens & Inks:</strong> Fine metal dip pens (gillot nibs) or 0.3mm waterproof pigment fineliners; waterproof black India ink.</li>
-        <li><strong>Coloring Tools:</strong> Soft round brushes (#0 to #4) and natural mineral paint or acrylic inks.</li>
+        <li><strong>Paper:</strong> 300gsm cold-pressed acid-free watercolor paper or 100% cotton handmade paper (the rough texture holds ink beautifully).</li>
+        <li><strong>Pens & Inks:</strong> Fine metal dip pens (Gillot 303 nibs) or 0.3mm waterproof pigment fineliner pens; waterproof black India ink or lampblack soot ink.</li>
+        <li><strong>Colors:</strong> Fine round watercolor brushes (#0, #2, #4) and natural mineral paints or acrylic inks.</li>
+        <li><strong>Pencil & Ruler:</strong> Light 2B pencil and ruler (strictly for initial border grid layout).</li>
       </ul>
 
-      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Step 2: Drawing the Double-Line Framework</h2>
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Step 1: Framing the Double-Line Border</h2>
       <p class="mb-4 text-[#44403C] leading-relaxed">
-        Always begin by drawing a double-line border around your page. Whether painting a peacock or lotus, draw parallel twin lines. Later, fill the small channel between these lines with fine cross-hatching or dots.
+        Never start sketching in the center of a blank page. In Madhubani painting, you must always establish the protective border first. Draw twin parallel lines 1 centimeter inside the paper edges. Later, fill the channel between these twin lines with small diagonal hatches, fish scales, or repeating leaf motifs.
       </p>
 
-      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Step 3: Mastering Kachni Line Hatching</h2>
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Step 2: Sketching the Central Subject & Fish Eyes</h2>
       <p class="mb-4 text-[#44403C] leading-relaxed">
-        Fill interior spaces (such as peacock feathers or fish scales) with fine parallel lines spaced 1 millimeter apart. Keep your stroke pressure uniform and steady.
+        Lightly sketch your central motif—such as a peacock, lotus, pair of fish, or Lord Ganesha—using soft pencil lines. Remember the canonical eye rule: draw large, elongated fish-shaped eyes (*Meenakshi*) occupying a prominent portion of the face.
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Step 3: Inking Double Contour Lines</h2>
+      <p class="mb-4 text-[#44403C] leading-relaxed">
+        Dip your nib pen into black India ink. Carefully ink over your pencil sketch using **double parallel lines**. Every figure, leaf, bird feather, and flower must be enclosed within twin ink outlines.
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Step 4: Executing Kachni Line Hatching or Bharni Color Fills</h2>
+      <p class="mb-4 text-[#44403C] leading-relaxed">
+        Choose your style direction:
+      </p>
+      <ul class="list-disc list-inside space-y-2 mb-6 text-[#44403C]">
+        <li><strong>For Kachni Style:</strong> Fill interior spaces (such as peacock wings or fish scales) with fine parallel lines spaced 1 millimeter apart. Keep your hand stroke steady and uniform.</li>
+        <li><strong>For Bharni Style:</strong> Fill interior spaces with solid, saturated mineral colors using your soft round brush.</li>
+      </ul>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Step 5: Filling the Void (Horror Vacui)</h2>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        Finally, inspect the background. Honor the traditional rule of *Horror Vacui* by populating any remaining blank background space with small lotus buds, fluttering sunbirds, geometric dots, and leaves. Erase any faint graphite pencil lines once the ink is completely dry.
       </p>
     `},{id:`how-to-identify-authentic-madhubani-art-vs-fake-prints`,title:`How to Spot Authentic Hand-Painted Madhubani Art vs Digital Canvas Prints: Collector's Verification Guide`,subtitle:`Essential tests and red flags every art collector must know before buying original Madhubani paintings online.`,category:`Buyer & Collector Guide`,date:`AUGUST 18, 2026`,readTime:`7 min read`,image:`/images/artwork_collection_13.jpg`,author:`Kalapravah Studio`,seoKeywords:[`How to identify original Madhubani painting`,`authentic Madhubani art vs print`,`Madhubani painting price guide`,`buying genuine Mithila art online`],excerpt:`Learn 6 collector tests to verify authentic hand-painted Madhubani art vs mass-produced digital canvas prints. Inspect nib indents, paper edges, and GI tags.`,content:`
       <p class="lead font-serif text-lg sm:text-xl text-[#1C1917] leading-relaxed mb-6">
-        With the rise of online marketplaces, cheap digital offset prints are frequently mislabeled as "original hand-painted Madhubani paintings". Here is how fine art collectors verify authenticity.
+        As fine art Madhubani paintings command increasing respect in global galleries and auction houses, cheap digital offset canvas prints and factory reproductions are frequently mislabeled online as "original hand-painted artworks." For serious art collectors, understanding how to verify physical authenticity is crucial. Here are 6 definitive collector verification tests developed in our studio.
       </p>
 
       <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">6 Verification Tests for Collectors</h2>
-      <ol class="list-decimal list-inside space-y-3 mb-6 text-[#44403C]">
-        <li><strong>The Nib Indentation Test:</strong> Hold the paper at an angle under light. Hand-drawn ink lines leave faint physical indentations from dip pen pressure. Digital prints are smooth and flat.</li>
-        <li><strong>Deckled Edge Cotton Paper:</strong> Authentic fine artworks are created on heavy handmade cotton paper with uneven, organic deckled edges.</li>
-        <li><strong>Natural Pigment Aroma:</strong> Original pieces painted with turmeric, organic soot, and plant dyes carry a faint natural earth aroma.</li>
-        <li><strong>Minor Hand Imperfections:</strong> True handmade line work features tiny natural line thickness variations, unlike machine-perfect vector prints.</li>
-        <li><strong>Artisan Signature & GI Tag:</strong> Look for artist credit and official Geographical Indication (GI) registration seals.</li>
+
+      <ol class="list-decimal list-inside space-y-4 mb-6 text-[#44403C]">
+        <li class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm">
+          <strong>1. The Angled Light Nib Indentation Test:</strong> Hold the paper at a 45-degree angle under a warm desk lamp. Hand-drawn ink lines executed with metal dip pens leave faint, physical indentations pressed into the heavy paper fiber. Digital prints are completely flat and smooth.
+        </li>
+        <li class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm">
+          <strong>2. Deckled Edge Cotton Rag Paper:</strong> Authentic masterworks are painted on heavy 300gsm 100% cotton handmade paper featuring uneven, organic deckled edges. Machine-cut poster prints have razor-straight factory edges.
+        </li>
+        <li class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm">
+          <strong>3. Natural Earth Aroma Test:</strong> Original paintings executed with natural pigments (turmeric, lampblack soot, tree resins) carry a subtle, natural earth fragrance. Digital prints smell faintly of chemical synthetic printer solvents.
+        </li>
+        <li class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm">
+          <strong>4. Human Line Weight Variations:</strong> Under a magnifying glass, genuine hand-drawn linework reveals tiny natural variations in ink density and nib pressure. Machine-printed vector graphics display sterile, uniform line thickness.
+        </li>
+        <li class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm">
+          <strong>5. Pigment Absorption into Fiber:</strong> Turn the paper over. Real water-based mineral pigments bleed slightly into the cotton fibers on the reverse side. Digital canvas prints deposit ink strictly on the top surface.
+        </li>
+        <li class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm">
+          <strong>6. GI Tag Certification & Artist Signature:</strong> Verify that the painting includes the artist's original handwritten signature, creation date, and official Geographical Indication (GI) registration details.
+        </li>
       </ol>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Investing in Genuine Heritage</h2>
+      <p class="mb-6 text-[#44403C] leading-relaxed">
+        Buying original hand-painted Madhubani art directly supports traditional village artists in Bihar, preserving centuries of sacred heritage. At Kalapravah, every artwork is accompanied by a signed Certificate of Authenticity.
+      </p>
     `},{id:`preservation-framing-care-madhubani-paintings`,title:`How to Care for & Frame Hand-Painted Madhubani Art: Archival Glass, UV Protection & Humidity Control`,subtitle:`Conservator advice for framing and preserving original natural-pigment Madhubani art on cotton paper.`,category:`Care & Conservation`,date:`AUGUST 19, 2026`,readTime:`6 min read`,image:`/images/artwork_collection_16.jpg`,author:`Kalapravah Studio`,seoKeywords:[`How to preserve Madhubani painting`,`framing guide for handmade paper art`,`caring for natural pigment art`,`UV protective glass art framing`],excerpt:`Learn professional framing and preservation techniques for Madhubani art: 100% acid-free matting, UV-filtering glass, and spacer mounts.`,content:`
       <p class="lead font-serif text-lg sm:text-xl text-[#1C1917] leading-relaxed mb-6">
-        Original Madhubani paintings executed with natural pigments on handmade cotton paper require thoughtful framing to ensure they remain vibrant for generations.
+        Original Madhubani paintings executed with natural pigments on handmade cotton paper are living artworks. With proper archival framing and environmental care, these fine art pieces can retain their radiance, deep linework, and color saturation for centuries across generations of collectors.
       </p>
 
-      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Framing Best Practices</h2>
-      <ul class="list-disc list-inside space-y-2 mb-6 text-[#44403C]">
-        <li><strong>Use 100% Acid-Free Matboard:</strong> Standard cardboard contains acid that yellow handmade paper over time. Always specify 4-ply acid-free rag matting.</li>
-        <li><strong>Museum UV Glass:</strong> Protect natural organic pigments (like turmeric yellow) from UV light fading by choosing 99% UV-protective museum glass.</li>
-        <li><strong>Use Window Spacers:</strong> Ensure the glass never directly touches the painted surface to prevent moisture trapping.</li>
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Archival Framing Best Practices</h2>
+      <ul class="space-y-3 mb-6 text-[#44403C]">
+        <li class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm">
+          <strong>1. Use 100% Acid-Free Rag Matboard:</strong> Standard acidic cardboard backing will yellow and embrittle handmade paper over time. Always specify 4-ply acid-free cotton rag matting for museum-grade protection.
+        </li>
+        <li class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm">
+          <strong>2. Specify 99% UV-Protective Museum Glass:</strong> Natural botanical dyes (like turmeric yellow and flower extracts) are sensitive to ultraviolet light. Choose museum glass that blocks 99% of UV rays to prevent pigment fading.
+        </li>
+        <li class="p-4 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm">
+          <strong>3. Install Acrylic Window Spacers:</strong> Ensure the glass never touches the painted paper surface directly. Spacers create a tiny air cushion, preventing condensation trapping.
+        </li>
       </ul>
+
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Environmental Care in the Home</h2>
+      <p class="mb-4 text-[#44403C] leading-relaxed">
+        Hang original artworks away from direct sunlight, air conditioning drafts, and humid bathroom walls. Maintain indoor relative humidity between 40% and 50% for optimal paper preservation. Dust frame glass gently with a dry microfiber cloth.
+      </p>
     `},{id:`contemporary-madhubani-art-modern-interiors`,title:`Styling Modern Interiors with Contemporary Madhubani Art: Minimalist Palettes, Large Formats & Fine Art Decor`,subtitle:`Interior design guide for pairing traditional Mithila fine art with luxury, minimalist, and modern home architecture.`,category:`Interior Design & Fine Art Styling`,date:`AUGUST 20, 2026`,readTime:`6 min read`,image:`/images/artwork_collection_19.jpg`,author:`Rashmi Dhar`,seoKeywords:[`Madhubani painting modern home decor`,`contemporary Mithila art interior design`,`minimalist Madhubani art`,`framing Madhubani for modern living rooms`,`luxury Indian art decor`],excerpt:`Discover interior design tips for styling modern homes with contemporary Madhubani art: monochrome Kachni panels, floating frames, and earth-toned walls.`,content:`
       <p class="lead font-serif text-lg sm:text-xl text-[#1C1917] leading-relaxed mb-6">
-        Contemporary interior designers are increasingly incorporating fine art Madhubani paintings into minimalist and modern architectural spaces, creating a warm dialogue between ancient heritage and modern line aesthetics.
+        Leading contemporary interior architects and luxury home designers are increasingly incorporating fine art Madhubani paintings into modern architectural spaces. The intricate geometric linework of Mithila art creates a warm, soulful dialogue when paired with minimalist concrete, neutral linen furnishings, and warm natural timber interiors.
       </p>
 
-      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Interior Styling Tips</h2>
-      <ul class="list-disc list-inside space-y-2 mb-6 text-[#44403C]">
-        <li><strong>Monochrome Statement Panels:</strong> Large-scale black ink *Kachni* linework panels serve as striking focal points over neutral linen sofas.</li>
-        <li><strong>Natural Wood Float Frames:</strong> Pair deckled-edge cotton paper art with raw oak or black walnut float frames to highlight organic paper edges.</li>
-        <li><strong>Gallery Grid Arrangements:</strong> Group four smaller 12x12 inch motif vignettes (Peacock, Fish, Lotus, Sun) in a clean 2x2 grid.</li>
-      </ul>
+      <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">4 Interior Design Styling Strategies</h2>
+
+      <div class="space-y-4 mb-6 text-[#44403C]">
+        <div class="p-5 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm shadow-xs">
+          <h3 class="font-serif text-xl font-bold text-[#C87A38] mb-1">1. Monochrome Kachni Statement Panels</h3>
+          <p class="text-sm text-[#5C5652] leading-relaxed">
+            Large-scale black-and-white *Kachni* linework panels serve as striking focal points over neutral cream or off-white sofas in modern living rooms, offering high graphic elegance.
+          </p>
+        </div>
+
+        <div class="p-5 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm shadow-xs">
+          <h3 class="font-serif text-xl font-bold text-[#C87A38] mb-1">2. Floating Glass Frames with Deckled Edges</h3>
+          <p class="text-sm text-[#5C5652] leading-relaxed">
+            Mount deckled-edge cotton paper artworks between floating glass panes framed in raw oak or black walnut. This highlights the organic paper texture against modern walls.
+          </p>
+        </div>
+
+        <div class="p-5 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm shadow-xs">
+          <h3 class="font-serif text-xl font-bold text-[#C87A38] mb-1">3. Motif Grid Wall Arrangements</h3>
+          <p class="text-sm text-[#5C5652] leading-relaxed">
+            Group four matching 12x12 inch motif vignettes (Peacock, Fish, Lotus, Sun) in a clean 2x2 grid in dining areas or entryway foyers for structured visual rhythm.
+          </p>
+        </div>
+
+        <div class="p-5 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm shadow-xs">
+          <h3 class="font-serif text-xl font-bold text-[#C87A38] mb-1">4. Warm 2700K Spotlight Lighting</h3>
+          <p class="text-sm text-[#5C5652] leading-relaxed">
+            Illuminate paintings with warm 2700K to 3000K LED art spotlights, enhancing the natural warmth of turmeric ochre and iron clay pigments.
+          </p>
+        </div>
+      </div>
     `}];function Ww({onContactArtist:e}){return(0,V.jsxs)(`section`,{id:`art-artist`,className:`py-8 sm:py-10 lg:py-12 bg-transparent relative overflow-hidden border-b border-[#E7E0D2] scroll-mt-20 sm:scroll-mt-24`,children:[(0,V.jsx)(`div`,{className:`absolute top-1/3 left-0 w-80 h-80 bg-[#C87A38]/5 rounded-full blur-3xl pointer-events-none`}),(0,V.jsx)(`div`,{className:`absolute bottom-10 right-0 w-96 h-96 bg-[#9A3412]/5 rounded-full blur-3xl pointer-events-none`}),(0,V.jsxs)(`div`,{className:`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-8 sm:space-y-10 lg:space-y-12`,children:[(0,V.jsxs)(`div`,{className:`text-center max-w-3xl mx-auto space-y-2`,children:[(0,V.jsx)(`h2`,{className:`font-serif text-3xl sm:text-5xl font-normal text-[#1C1917] tracking-tight`,children:`ART & ARTIST`}),(0,V.jsx)(`p`,{className:`text-sm sm:text-base text-[#5C5652] leading-relaxed max-w-2xl mx-auto font-light`,children:`Discover the rich lineage of ancient Mithila art and the personal journey of artist Rashmi Dhar bridging ancestral roots with modern expression.`}),(0,V.jsx)(`div`,{className:`w-20 h-[2px] bg-[#C87A38] mx-auto rounded-full mt-2`})]}),(0,V.jsxs)(`div`,{className:`space-y-5 sm:space-y-6`,children:[(0,V.jsxs)(`div`,{className:`flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b border-[#E7E0D2] pb-4`,children:[(0,V.jsxs)(`div`,{children:[(0,V.jsx)(`span`,{className:`text-[10px] font-bold tracking-[0.24em] text-[#C87A38] uppercase block`,children:`ANCIENT HERITAGE LINEAGE`}),(0,V.jsx)(`h3`,{className:`font-serif text-2xl sm:text-4xl font-normal text-[#1C1917]`,children:`About Mithila Art`})]}),(0,V.jsxs)(`div`,{className:`inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FFFDF9] border border-[#E7E0D2] text-xs text-[#78716C]`,children:[(0,V.jsx)(pr,{className:`w-3.5 h-3.5 text-[#C87A38]`}),(0,V.jsx)(`span`,{children:`3,000-Year Heritage from Bihar`})]})]}),(0,V.jsxs)(`div`,{className:`grid grid-cols-1 lg:grid-cols-12 gap-8 items-start`,children:[(0,V.jsxs)(`div`,{className:`lg:col-span-7 space-y-6 text-left`,children:[(0,V.jsxs)(`div`,{className:`bg-[#FFFDF9] border border-[#E7E0D2] rounded-xl p-6 sm:p-8 shadow-sm space-y-4`,children:[(0,V.jsx)(`p`,{className:`text-sm sm:text-base text-[#44403C] leading-relaxed`,children:`Mithila art, with its intricate designs and vibrant colors, has evolved from the walls of rural Bihar in India to captivate audiences across the globe. This unique art form, steeped in cultural heritage, is now embraced by art lovers from diverse backgrounds, thanks to the larger global reach facilitated by technology and cultural exchanges.`}),(0,V.jsx)(`p`,{className:`text-sm sm:text-base text-[#44403C] leading-relaxed`,children:`Originating in the Mithila region, Mithila also known as Madhubani art dates back centuries and is traditionally created by women, who use natural pigments to depict themes from mythology, nature, and daily life.`}),(0,V.jsx)(`p`,{className:`text-sm sm:text-base text-[#44403C] leading-relaxed`,children:`The distinctive patterns, often created with the help of a brush made from twigs, are characterized by bold lines and intricate motifs, making each piece a visual feast. Historically, these works adorned the walls of homes during festivals and rituals, serving both decorative and spiritual purposes.`})]}),(0,V.jsxs)(`div`,{className:`grid grid-cols-1 sm:grid-cols-2 gap-4`,children:[(0,V.jsxs)(`div`,{className:`p-4 rounded-lg bg-[#FAF8F3] border border-[#E7E0D2] flex items-center gap-3`,children:[(0,V.jsx)(nr,{className:`w-5 h-5 text-[#C87A38] shrink-0`}),(0,V.jsx)(`span`,{className:`text-xs font-semibold text-[#1C1917]`,children:`Twig Brushes & Organic Dyes`})]}),(0,V.jsxs)(`div`,{className:`p-4 rounded-lg bg-[#FAF8F3] border border-[#E7E0D2] flex items-center gap-3`,children:[(0,V.jsx)(fr,{className:`w-5 h-5 text-[#C87A38] shrink-0`}),(0,V.jsx)(`span`,{className:`text-xs font-semibold text-[#1C1917]`,children:`Double Outline Linework`})]})]})]}),(0,V.jsx)(`div`,{className:`lg:col-span-5 relative`,children:(0,V.jsxs)(`div`,{className:`deckled-frame bg-[#FFFDF9] border border-[#E7E0D2] p-6 rounded-xl shadow-xl space-y-4 text-left`,children:[(0,V.jsxs)(`div`,{className:`flex items-center justify-between border-b border-[#E7E0D2] pb-3`,children:[(0,V.jsx)(`span`,{className:`text-[10px] font-bold tracking-[0.2em] text-[#C87A38] uppercase block`,children:`SACRED MITHILA STYLES`}),(0,V.jsx)(`span`,{className:`text-[10px] font-semibold text-[#78716C] bg-[#FAF8F3] px-2 py-0.5 rounded border border-[#E7E0D2]`,children:`Heritage Crafts`})]}),(0,V.jsxs)(`div`,{className:`space-y-3.5`,children:[(0,V.jsxs)(`div`,{className:`space-y-1`,children:[(0,V.jsxs)(`h5`,{className:`font-serif text-sm font-bold text-[#1C1917] flex items-center gap-2`,children:[(0,V.jsx)(`span`,{className:`w-2 h-2 rounded-full bg-[#C87A38]`}),`Bharni (Vibrant Color Fill)`]}),(0,V.jsx)(`p`,{className:`text-xs text-[#5C5652] leading-relaxed font-light pl-4`,children:`Vibrant color fills bounded by solid black double contour linework, historically depicting divine epics.`})]}),(0,V.jsxs)(`div`,{className:`space-y-1`,children:[(0,V.jsxs)(`h5`,{className:`font-serif text-sm font-bold text-[#1C1917] flex items-center gap-2`,children:[(0,V.jsx)(`span`,{className:`w-2 h-2 rounded-full bg-[#B94A2D]`}),`Kachni (Fine Line Hatching)`]}),(0,V.jsx)(`p`,{className:`text-xs text-[#5C5652] leading-relaxed font-light pl-4`,children:`Monochrome ink line hatching created with fine bamboo dip nibs without color fills.`})]}),(0,V.jsxs)(`div`,{className:`space-y-1`,children:[(0,V.jsxs)(`h5`,{className:`font-serif text-sm font-bold text-[#1C1917] flex items-center gap-2`,children:[(0,V.jsx)(`span`,{className:`w-2 h-2 rounded-full bg-[#D97706]`}),`Godna & Kohbar (Ancestral Motifs)`]}),(0,V.jsx)(`p`,{className:`text-xs text-[#5C5652] leading-relaxed font-light pl-4`,children:`Ancestral tattoo stippling and sacred bridal chamber mandalas invoking prosperity and protection.`})]})]}),(0,V.jsx)(`div`,{className:`pt-3 border-t border-[#E7E0D2] text-[11px] text-[#78716C] italic font-serif text-center`,children:`"Each style preserves thousands of fine brushstrokes and sacred folk geometry."`})]})})]})]}),(0,V.jsxs)(`div`,{className:`pt-8 sm:pt-10 lg:pt-12 mt-8 sm:mt-10 lg:mt-12 border-t border-[#E7E0D2] space-y-6 sm:space-y-8`,children:[(0,V.jsxs)(`div`,{className:`flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b border-[#E7E0D2] pb-4`,children:[(0,V.jsxs)(`div`,{children:[(0,V.jsx)(`span`,{className:`text-[10px] font-bold tracking-[0.24em] text-[#C87A38] uppercase block`,children:`MEET THE CREATOR & FOUNDER`}),(0,V.jsx)(`h3`,{className:`font-serif text-2xl sm:text-4xl font-normal text-[#1C1917]`,children:`From the Mountains to the Canvas`})]}),(0,V.jsxs)(`div`,{className:`inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FFFDF9] border border-[#E7E0D2] text-xs text-[#78716C]`,children:[(0,V.jsx)(mr,{className:`w-3.5 h-3.5 text-[#C87A38]`}),(0,V.jsx)(`span`,{children:`Rashmi Dhar: Professional Folk Artist`})]})]}),(0,V.jsxs)(`div`,{className:`grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch`,children:[(0,V.jsx)(`div`,{className:`lg:col-span-5 relative flex flex-col`,children:(0,V.jsxs)(`div`,{className:`deckled-frame bg-[#FFFDF9] border border-[#E7E0D2] p-5 rounded-xl shadow-xl space-y-4 h-full flex flex-col justify-between`,children:[(0,V.jsxs)(`div`,{className:`relative flex-1 min-h-[380px] sm:min-h-[440px] rounded-lg overflow-hidden border border-[#E7E0D2] bg-[#FAF8F3] shadow-inner group`,children:[(0,V.jsx)(`img`,{src:`/images/rashmi_dhar.jpg`,alt:`Rashmi Dhar: Artist & Founder of Kalapravah`,className:`w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-700`}),(0,V.jsxs)(`div`,{className:`absolute inset-0 bg-gradient-to-t from-[#1C1917]/80 via-transparent to-transparent opacity-90 flex flex-col justify-end p-5 text-white`,children:[(0,V.jsx)(`span`,{className:`font-serif text-xl font-bold`,children:`Rashmi Dhar`}),(0,V.jsx)(`span`,{className:`text-xs text-[#EAD5BE] font-light`,children:`Engineering Graduate (Nagpur University) & Fine Artist`}),(0,V.jsx)(`span`,{className:`text-[10px] text-[#A89F95] mt-1`,children:`Delhi NCR • Nurtured in Srinagar, J&K`})]})]}),(0,V.jsx)(`div`,{className:`pt-3 border-t border-[#E7E0D2]`,children:(0,V.jsxs)(`a`,{href:`https://wa.me/919971399395?text=Hello%20Rashmi%2C%20I%20would%20like%20to%20chat%20and%20inquire%20about%20your%20artworks.`,target:`_blank`,rel:`noopener noreferrer`,className:`w-full flex items-center justify-center gap-2 py-3 px-3.5 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-[11px] sm:text-xs tracking-wider uppercase transition-all shadow-md hover:shadow-lg active:scale-95 text-center leading-snug`,children:[(0,V.jsx)(cr,{className:`w-4 h-4 fill-current shrink-0`}),(0,V.jsx)(`span`,{children:`Chat or inquiries about art? Let's talk!`})]})})]})}),(0,V.jsxs)(`div`,{className:`lg:col-span-7 space-y-6 text-left`,children:[(0,V.jsxs)(`div`,{className:`bg-[#FFFDF9] border border-[#E7E0D2] rounded-xl p-6 sm:p-8 shadow-sm space-y-4`,children:[(0,V.jsx)(`p`,{className:`text-sm sm:text-base text-[#44403C] leading-relaxed`,children:`In a world brimming with fast-paced, digital art trends, it's refreshing to come across artists who dive deep into the roots of creativity, drawing inspiration from traditional forms of expression. Among these creators is Rashmi Dhar, an Engineering graduate turned artist since past 5 years always had passion to explore the folk art from her early childhood and in particular, the Mithla art.`}),(0,V.jsx)(`p`,{className:`text-sm sm:text-base text-[#44403C] leading-relaxed`,children:`Living presently in Delhi NCR, Rashmi was born and brought up in Srinagar (Jammu and Kashmir). She comes from a community of Kashmiri hindu scholars(pandit).`}),(0,V.jsx)(`p`,{className:`text-sm sm:text-base text-[#44403C] leading-relaxed`,children:`She has learned this art from the eminent national awardees, local artists & several workshops. This has helped her gain insight into the techniques and narratives that define their fineness of this revered folk art work.`}),(0,V.jsx)(`p`,{className:`text-sm sm:text-base text-[#1C1917] font-semibold leading-relaxed`,children:`Each piece of her art work resonates with emotion, telling tales of love, struggle, and community spirit that transcend generations.`})]}),(0,V.jsxs)(`div`,{className:`relative pl-6 sm:pl-8 border-l-2 border-[#C87A38] space-y-4 py-2 my-2`,children:[(0,V.jsxs)(`div`,{className:`flex items-center gap-2 text-xs sm:text-sm font-bold text-[#C87A38] uppercase tracking-widest`,children:[(0,V.jsx)(ur,{className:`w-4 h-4 fill-current shrink-0`}),(0,V.jsx)(`span`,{children:`RASHMI DHAR: HER ARTISTIC JOURNEY`})]}),(0,V.jsxs)(`blockquote`,{className:`space-y-4 text-base sm:text-lg lg:text-xl text-[#1C1917] font-serif leading-relaxed font-normal`,children:[(0,V.jsx)(`p`,{className:`italic`,children:`"Kalapravah translates to the continuous flow of art. For me, this venture is more than a collection of paintings, it is a sacred bridge connecting our rich civilizational roots with the modern world."`}),(0,V.jsx)(`p`,{className:`italic`,children:`"Though I did not grow up in the traditional households of Mithila inheriting these brushstrokes from ancestors, I found myself drawn to Madhubani not by lineage, but by a profound sense of belonging. Every motif, the vibrant flora, the sacred fauna, and the eternal narratives of our epics, speaks a language of its own. When I hold the fine nib and fill the canvas with natural pigments and bright hues, I am not just painting; I am listening to the whispers of ancient history and translating them for today."`})]})]}),(0,V.jsx)(`div`,{className:`pt-2`,children:(0,V.jsxs)(yn,{to:`/blog/${Hw.id}`,className:`group cursor-pointer flex flex-col sm:flex-row items-center justify-between p-4 sm:p-5 rounded-2xl bg-[#FFFDF9] border border-[#E7E0D2] shadow-sm hover:shadow-md transition-all gap-4 text-left block`,children:[(0,V.jsxs)(`div`,{className:`relative w-full sm:w-40 aspect-[4/3] rounded-xl overflow-hidden bg-[#FAF8F3] shrink-0`,children:[(0,V.jsx)(`img`,{src:Hw.image,alt:Hw.title,className:`w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500`}),(0,V.jsx)(`span`,{className:`absolute top-2 left-2 bg-[#1C1917]/80 backdrop-blur-md text-white text-[9px] font-semibold px-2.5 py-0.5 rounded-full uppercase`,children:`STUDIO STORY`})]}),(0,V.jsxs)(`div`,{className:`space-y-1 flex-1`,children:[(0,V.jsx)(`span`,{className:`text-[10px] font-bold tracking-[0.2em] text-[#C87A38] uppercase block`,children:`FEATURED ARTIST JOURNAL`}),(0,V.jsx)(`h4`,{className:`font-serif text-base sm:text-lg font-bold text-[#1C1917] group-hover:text-[#C87A38] transition-colors leading-snug`,children:Hw.title}),(0,V.jsx)(`p`,{className:`text-xs text-[#5C5652] line-clamp-2 font-light`,children:Hw.excerpt}),(0,V.jsxs)(`div`,{className:`inline-flex items-center gap-1.5 text-xs font-semibold uppercase text-[#1C1917] group-hover:text-[#C87A38] pt-1`,children:[(0,V.jsx)(`span`,{children:`Read Full Studio Story`}),(0,V.jsx)(Un,{className:`w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform`})]})]})]})})]})]})]})]})]})}var Gw=[{id:`artwork-01`,title:`Kachni Peacock Mandala`,styleCategory:`Kachni Fine Line`,medium:`Monochrome ink & fine line hatching`,dimensions:`24 × 36 in`,year:`2026`,price:`Inquire for price`,image:`/images/artwork_collection_01.jpg`,brief:`Intricate monochrome mandala featuring sacred peacocks, fish, and auspicious folk symbols in fine linework.`,fullStory:`A breathtaking pure Kachni fine line artwork composed of intricate concentric circles. The inner rings reveal sacred fish, dancing peacocks, and traditional Mithila motifs rendered entirely with fine dip-nib ink hatching.`,technique:`Fine Nib Ink Line Hatching (Kachni)`,pigments:`Lampblack Ink & Handmade Cotton Canvas`,motifs:[`Peacocks`,`Matsya Fish`,`Concentric Mandala`,`Auspicious Borders`],inStock:!0},{id:`artwork-02`,title:`Matsya Chakra Wheel`,styleCategory:`Godna & Kachni`,medium:`Turmeric wash, ink & mineral dyes`,dimensions:`24 × 24 in`,year:`2026`,price:`Inquire for price`,image:`/images/artwork_collection_02.jpg`,brief:`Eight sacred fish radiating outward in a cosmic wheel symbolizing prosperity and eternal vitality.`,fullStory:`A sacred fish mandala depicting eight radiating fish with lotus petals and hatched scales. In Mithila heritage, the Matsya fish represents fertility, divine blessings, and cosmic water elements.`,technique:`Godna Tattoo Stippling & Kachni Line`,pigments:`Turmeric Ochre, Charcoal Ink & Herbal Dye`,motifs:[`Matsya Fish`,`Sacred Wheel`,`Lotus Petals`,`Water Energy`],inStock:!0},{id:`artwork-03`,title:`Vighnaharta Lord Ganesha`,styleCategory:`Bharni & Mineral Color`,medium:`Natural mineral pigments & black ink`,dimensions:`20 × 32 in`,year:`2026`,price:`Inquire for price`,image:`/images/artwork_collection_03.jpg`,brief:`Seated Ganesha upon his sacred mouse vehicle surrounded by vibrant floral vines and lotus motifs.`,fullStory:`Lord Ganesha, the remover of obstacles, depicted in rich Bharni colors of yellow, vermilion, green, and cobalt blue. He rests upon Mooshak his sacred mount amidst a border of blooming lotus vines.`,technique:`Bharni Color Fill & Fine Outline`,pigments:`Natural Ochre, Vermilion, Leaf Green & Ink`,motifs:[`Lord Ganesha`,`Mooshak Mount`,`Floral Vines`,`Modak Sweet`],inStock:!0},{id:`artwork-04`,title:`Mithila Village Chronicles`,styleCategory:`Kachni & Ink Line`,medium:`Fine dip nib ink & hatched linework`,dimensions:`16 × 40 in`,year:`2026`,price:`Inquire for price`,image:`/images/artwork_collection_04.jpg`,brief:`Five medallion vignettes illustrating village women engaged in daily domestic chores and rituals.`,fullStory:`A vertical narrative panel featuring five circular medallions depicting Mithila village women churning butter, cooking, weaving, and tending the household in traditional hatched ink style.`,technique:`Sequential Medallion Fine Line Kachni`,pigments:`Black Nib Ink & Aged Handmade Paper`,motifs:[`Mithila Women`,`Village Life`,`Domestic Chores`,`Leaf Borders`],inStock:!0},{id:`artwork-05`,title:`Sacred Ritual Dancers`,styleCategory:`Kachni Folk Pattern`,medium:`Black ink hatching & turmeric wash`,dimensions:`20 × 32 in`,year:`2026`,price:`Inquire for price`,image:`/images/artwork_collection_05.jpg`,brief:`Rhythmic repeating rows of traditional folk dancers offering prayers amidst blooming lotus blossoms.`,fullStory:`A rhythmic tapestry showcasing multiple rows of ritual dancers in geometric attire with raised arms offering prayers to nature, separated by blooming lotus stems and traditional linework.`,technique:`Geometric Folk Pattern Hatching`,pigments:`Lampblack Ink & Organic Rice Paper`,motifs:[`Folk Dancers`,`Ritual Prayer`,`Lotus Flowers`,`Rhythmic Tapestry`],inStock:!0},{id:`artwork-06`,title:`Raja Procession Mandala`,styleCategory:`Pure Kachni Fine Line`,medium:`Hand-drawn black ink & line hatching`,dimensions:`22 × 30 in`,year:`2026`,price:`Inquire for price`,image:`/images/artwork_collection_06.jpg`,brief:`Royal warriors on horseback and elephant bearing swords within a foliage-bordered sacred mandala.`,fullStory:`A circular royal procession depicting three armed warriors on horseback and elephant carrying swords inside a framed circular mandala surrounded by dense leaf foliage background.`,technique:`Kachni Line Hatching & Foliage Framing`,pigments:`Soot Ink & Cotton Rag Paper`,motifs:[`Royal Warriors`,`Horseback & Elephant`,`Circular Frame`,`Tree Canopy`],inStock:!0},{id:`artwork-07`,title:`Gaja & Ashwa Brigade`,styleCategory:`Godna & Kachni Line`,medium:`Natural herbal dyes & black ink`,dimensions:`20 × 36 in`,year:`2026`,price:`Inquire for price`,image:`/images/artwork_collection_07.jpg`,brief:`Parallel horizontal friezes depicting royal elephants, horses, and armed cavaliers in palm leaves.`,fullStory:`Six horizontal bands depicting decorated elephants and royal horses carrying riders amidst tropical palm branches, rendered in traditional Godna line hatching.`,technique:`Horizontal Frieze Godna Line`,pigments:`Natural Charcoal Ink & Herbal Tint`,motifs:[`Royal Elephants`,`War Horses`,`Foliage Branches`,`Processional Frieze`],inStock:!0},{id:`artwork-08`,title:`Golden Kalpavriksha Tree`,styleCategory:`Godna & Turmeric Wash`,medium:`Turmeric dye wash & fine line ink`,dimensions:`22 × 34 in`,year:`2026`,price:`Inquire for price`,image:`/images/artwork_collection_08.jpg`,brief:`Sprawling tree of life teeming with birds above village folk riding horses and royal elephants.`,fullStory:`Set against a warm turmeric yellow backdrop, this Kalpavriksha tree of life features sprawling branches filled with nesting birds, with villagers riding horses and elephants at its base.`,technique:`Turmeric Wash & Godna Hatching`,pigments:`Raw Turmeric, Mineral Ochre & Soot Ink`,motifs:[`Kalpavriksha Tree`,`Nesting Birds`,`Village Travelers`,`Turmeric Sky`],inStock:!0},{id:`artwork-09`,title:`Vrindavan Raas Leela`,styleCategory:`Colorful Bharni`,medium:`Natural mineral pigments & black ink`,dimensions:`28 × 36 in`,year:`2026`,price:`Inquire for price`,image:`/images/artwork_collection_09.jpg`,brief:`Radha and Krishna dancing in a circular celestial Raas surrounded by colorful gopis and peacocks.`,fullStory:`A masterpiece of Bharni color depicting Radha and Krishna in divine ecstasy at the center of a circular Raas Leela, flanked by colorful gopis and eight grand corner peacocks.`,technique:`Bharni Mineral Fill with Peacock Corners`,pigments:`Mineral Ochre, Crimson, Indigo & Lampblack`,motifs:[`Radha Krishna`,`Raas Leela`,`Dancing Gopis`,`Corner Peacocks`],inStock:!0},{id:`artwork-10`,title:`Suga Jodi Loving Parrots`,styleCategory:`Godna & Kachni Line`,medium:`Natural vegetable dyes & black ink`,dimensions:`14 × 38 in`,year:`2026`,price:`Inquire for price`,image:`/images/artwork_collection_10.jpg`,brief:`Vertical repeating panel of paired loving parrots holding orange blossoms in green zig-zag borders.`,fullStory:`The Suga (parrot) in Mithila culture signifies eternal love and marital harmony. This vertical tapestry displays ten paired parrots holding bright orange blossoms inside green zig-zag borders.`,technique:`Vertical Tapestry Godna Hatching`,pigments:`Leaf Green, Orange Flower Dye & Ink`,motifs:[`Parrot Couples`,`Suga Jodi`,`Orange Blossoms`,`Zig-Zag Border`],inStock:!0},{id:`artwork-11`,title:`Mayur Trio in Kadamba Tree`,styleCategory:`Bharni & Kachni Hybrid`,medium:`Vibrant acrylics & fine black ink`,dimensions:`16 × 42 in`,year:`2026`,price:`Inquire for price`,image:`/images/artwork_collection_11.jpg`,brief:`Three majestic peacocks with vibrant orange and blue plumage perched inside dense black leaf branches.`,fullStory:`A vertical composition displaying three regal peacocks with glowing blue bodies and orange-spotted eyelet tail feathers resting among dense black leaves and a colorful beaded outer frame.`,technique:`Hybrid Bharni Fill & Dense Foliage`,pigments:`Cobalt Blue, Orange Ochre & Black Ink`,motifs:[`Dancing Peacocks`,`Kadamba Tree`,`Eyelet Plumage`,`Beaded Frame`],inStock:!0},{id:`artwork-12`,title:`Lotus Raas Mandala`,styleCategory:`Bharni & Fine Line Kachni`,medium:`Natural mineral colors & black ink`,dimensions:`24 × 36 in`,year:`2026`,price:`Inquire for price`,image:`/images/artwork_collection_12.jpg`,brief:`Radha Krishna flute duet at center of an eight-gopi lotus wheel framed by peacock tree branches.`,fullStory:`Radha and Krishna play flute in a central golden medallion surrounded by eight dancing gopis in fan-shaped skirts, encircled by intricate peacock-laden tree branches.`,technique:`Eight-Petal Lotus Wheel Bharni`,pigments:`Multi-colored Mineral Paints & Fine Ink`,motifs:[`Radha Krishna`,`Gopi Wheel`,`Fan Skirts`,`Peacock Branches`],inStock:!0},{id:`artwork-13`,title:`The Still Mind Buddha`,styleCategory:`Bharni & Earth Wash`,medium:`Golden yellow ochre, ink & earth dyes`,dimensions:`24 × 36 in`,year:`2026`,price:`Inquire for price`,image:`/images/artwork_collection_13.jpg`,brief:`Golden meditating Buddha in lotus pose with fish halo aura and lotus stalks on dark backdrop.`,fullStory:`A serene yellow ochre Buddha seated in Abhaya Mudra upon a lotus throne. His aura is ringed with swimming fish representing spiritual clarity against a dark night sky.`,technique:`Bharni Earth Wash & Halo Stippling`,pigments:`Yellow Ochre, Terracotta & Black Soot`,motifs:[`Meditating Buddha`,`Fish Halo Aura`,`Abhaya Mudra`,`Lotus Throne`],inStock:!0},{id:`artwork-14`,title:`Crimson Banyan Tree of Life`,styleCategory:`Kachni Fine Line`,medium:`Crimson ink & black fine line`,dimensions:`26 × 38 in`,year:`2026`,price:`Inquire for price`,image:`/images/artwork_collection_14.jpg`,brief:`Grand Banyan tree with red leaf canopy housing monkeys, owls, and forest animals under radiant sun.`,fullStory:`An extraordinary Tree of Life artwork in crimson and black ink. The dense red leaf canopy shelters monkeys, owls, and birds while elephants, deer, peacocks, and cows rest below.`,technique:`Dual-Tone Crimson & Black Kachni`,pigments:`Crimson Ink, Soot Black & Rice Paper`,motifs:[`Banyan Tree`,`Forest Animals`,`Radiant Sun`,`Crimson Leaves`],inStock:!0},{id:`artwork-15`,title:`Lord Narasimha Avatara`,styleCategory:`Classical Bharni`,medium:`Natural mineral pigments & black ink`,dimensions:`24 × 36 in`,year:`2026`,price:`Inquire for price`,image:`/images/artwork_collection_15.jpg`,brief:`Fierce lion-headed Vishnu avatar vanquishing demon Hiranyakashipu in bold traditional pigments.`,fullStory:`The powerful fourth avatar of Lord Vishnu, Narasimha, depicted with a roaring lion mane vanquishing demon Hiranyakashipu, executed in traditional yellow, red, and black Bharni pigments.`,technique:`Classical Bharni Iconography`,pigments:`Golden Yellow, Vermilion & Wood Soot Ink`,motifs:[`Lord Narasimha`,`Lion Mane`,`Demon Hiranyakashipu`,`Vedic Shield`],inStock:!0},{id:`artwork-16`,title:`Gaja Parivar Elephant Herd`,styleCategory:`Bharni & Kachni`,medium:`Yellow ochre, mineral dyes & ink`,dimensions:`24 × 34 in`,year:`2026`,price:`Inquire for price`,image:`/images/artwork_collection_16.jpg`,brief:`Royal elephant family gathering under banana leaf canopy near a lotus fish pond in Mithila.`,fullStory:`A heartwarming depiction of an elephant family (Gaja Parivar) with decorated trunks and ears, resting under banana palm trees beside a lotus pond filled with swimming fish.`,technique:`Bharni Fill & Kachni Border`,pigments:`Yellow Ochre, Terracotta Red & Ink`,motifs:[`Elephant Family`,`Banana Canopy`,`Lotus Fish Pond`,`Traditional Shell Border`],inStock:!0},{id:`artwork-17`,title:`Kaliya Mardan & Nag Kanyas`,styleCategory:`Godna & Ink Linework`,medium:`Black ink & subtle natural washes`,dimensions:`22 × 30 in`,year:`2026`,price:`Inquire for price`,image:`/images/artwork_collection_17.jpg`,brief:`Young Krishna atop multi-headed serpent Kaliya flanked by serpent maidens offering Yamuna prayers.`,fullStory:`Lord Krishna subduing serpent demon Kaliya in the Yamuna river. Two Nag Kanyas (serpent maidens) with scaled tails pray for mercy around Kaliya's five-headed fan hood.`,technique:`Fine Line Ink Hatching & Water Waves`,pigments:`Black Nib Ink & Natural Earth Wash`,motifs:[`Krishna Kaliya Mardan`,`Multi-hood Serpent`,`Nag Kanyas`,`Yamuna Waves`],inStock:!0},{id:`artwork-18`,title:`Sacred Forest Antelope`,styleCategory:`Godna & Kachni Line`,medium:`Black ink hatching & crimson pigment`,dimensions:`24 × 36 in`,year:`2026`,price:`Inquire for price`,image:`/images/artwork_collection_18.jpg`,brief:`Graceful forest deer with geometric cross-hatch patterning resting beneath dense banyan canopy.`,fullStory:`A majestic forest deer with geometric cross-hatched body patterns standing under a sweeping banyan tree canopy, set against a bold red sun disk.`,technique:`Geometric Cross-Hatch Godna`,pigments:`Lampblack Ink & Vermilion Sun Wash`,motifs:[`Forest Antelope`,`Banyan Canopy`,`Red Sun Disc`,`Geometric Body Fill`],inStock:!0},{id:`artwork-19`,title:`Matsya Circle in Crimson`,styleCategory:`Godna & Ink Linework`,medium:`Deep crimson stipple & black ink`,dimensions:`20 × 28 in`,year:`2026`,price:`Inquire for price`,image:`/images/artwork_collection_19.jpg`,brief:`Nine radial sacred fish converging at center surrounded by lotus ring against a stippled canvas.`,fullStory:`Nine sacred fish swimming in a radial circle with lotus flower petals, presented against a hand-stippled crimson red background creating striking visual contrast.`,technique:`Radial Wheel & Stippled Background`,pigments:`Crimson Red Pigment & Fine Black Ink`,motifs:[`Nine Sacred Fish`,`Radial Circle`,`Lotus Ring`,`Stippled Red Canvas`],inStock:!0},{id:`artwork-20`,title:`Surajmukhi Sunflower Vine`,styleCategory:`Godna & Kachni Line`,medium:`Orange, yellow mineral dyes & ink`,dimensions:`16 × 36 in`,year:`2026`,price:`Inquire for price`,image:`/images/artwork_collection_20.jpg`,brief:`Vertical panel featuring three blooming sunflowers and golden butterflies entwined in hatched vines.`,fullStory:`A vertical floral panel depicting three large bright orange sunflowers, yellow butterflies, and rosebuds climbing through dense black-hatched leaves.`,technique:`Vertical Floral Panel Kachni`,pigments:`Sunflower Yellow, Orange Dye & Ink`,motifs:[`Sunflowers`,`Golden Butterflies`,`Rosebuds`,`Hatched Leaves`],inStock:!0},{id:`artwork-21`,title:`Bal Hanuman & Surya`,styleCategory:`Bold Bharni & Mineral Color`,medium:`Natural minerals & black outline`,dimensions:`18 × 38 in`,year:`2026`,price:`Inquire for price`,image:`/images/artwork_collection_21.jpg`,brief:`Young Hanuman leaping over blue ocean waves toward the flaming solar disc under banyan branches.`,fullStory:`The epic tale of young Hanuman leaping high into the sky over rolling ocean waves to reach the radiant solar disc of Surya, painted in rich orange and blue Bharni pigments.`,technique:`Dynamic Legend Bharni Painting`,pigments:`Orange Ochre, Cobalt Blue & Ink`,motifs:[`Bal Hanuman`,`Surya Sun Disc`,`Ocean Waves`,`Banyan Tree`],inStock:!0},{id:`artwork-22`,title:`Radha Krishna Flute Serenade`,styleCategory:`Bharni & Natural Pigment`,medium:`Turmeric wash, ink & mineral colors`,dimensions:`24 × 30 in`,year:`2026`,price:`Inquire for price`,image:`/images/artwork_collection_22.jpg`,brief:`Krishna playing Bansuri flute for Radha beneath a fruiting mango tree canopy with lotus stream.`,fullStory:`Divine lovers Radha and Krishna under a fruiting mango tree. Krishna plays his bansuri flute while Radha holds a pot of butter, resting above a fish-filled lotus stream.`,technique:`Classic Bharni & Fish Border Stream`,pigments:`Turmeric Yellow, Indigo, Red Bark & Ink`,motifs:[`Radha Krishna`,`Bansuri Flute`,`Mango Tree Canopy`,`Lotus Fish Base`],inStock:!0},{id:`artwork-23`,title:`Surya Chandra & Cosmic Butterfly`,styleCategory:`Kachni & Bharni Line`,medium:`Natural mineral dyes & nib ink`,dimensions:`22 × 32 in`,year:`2026`,price:`Inquire for price`,image:`/images/artwork_collection_23.jpg`,brief:`Central fish-butterfly emblem flanked by Sun deity Surya and Moon deity Chandra among garden vines.`,fullStory:`A cosmic composition showcasing a central sacred fish-butterfly emblem flanked by the radiant Sun god (Surya) top left and the crescent Moon god (Chandra) top right.`,technique:`Cosmic Symbology Kachni`,pigments:`Natural Ochres, Vermilion & Ink`,motifs:[`Fish Butterfly Emblem`,`Surya Sun God`,`Chandra Moon God`,`Garden Vines`],inStock:!0},{id:`artwork-24`,title:`Kamadhenu & Krishna Gopal`,styleCategory:`Rich Bharni & Mineral Color`,medium:`Rich mineral paints & black ink`,dimensions:`24 × 36 in`,year:`2026`,price:`Inquire for price`,image:`/images/artwork_collection_24.jpg`,brief:`Celestial Krishna in red and green attire playing flute for three sacred Kamadhenu cows.`,fullStory:`Krishna Gopal adorned in rich red and green robes playing flute under Kadamba trees for three sacred Kamadhenu cows decorated with geometric body markings.`,technique:`Rich Bharni Fill & Star Flower Border`,pigments:`Mineral Red, Green, Yellow & Ink`,motifs:[`Krishna Gopal`,`Kamadhenu Cows`,`Kadamba Trees`,`Star Flower Frame`],inStock:!0},{id:`artwork-25`,title:`Buddha with Alms Bowl`,styleCategory:`Godna & Kachni Line`,medium:`Yellow ochre, ink & tea-stained paper`,dimensions:`22 × 32 in`,year:`2026`,price:`Inquire for price`,image:`/images/artwork_collection_25.jpg`,brief:`Serene Buddha seated in lotus pose holding alms bowl under Bodhi tree leaf canopy backdrop.`,fullStory:`A peaceful depiction of Lord Buddha in golden robes holding a sacred alms bowl, seated upon a lotus pedestal under a dense Bodhi leaf canopy on antique paper.`,technique:`Bodhi Canopy Kachni & Earth Wash`,pigments:`Yellow Ochre, Tea Wash & Fine Ink`,motifs:[`Seated Buddha`,`Alms Bowl`,`Bodhi Tree Canopy`,`Geometric Border`],inStock:!0},{id:`artwork-26`,title:`Berry Tree Peacock Trio`,styleCategory:`Kachni Line Art`,medium:`Black ink & red berry accents`,dimensions:`22 × 32 in`,year:`2026`,price:`Inquire for price`,image:`/images/artwork_collection_26.jpg`,brief:`Three intricate fine-line peacocks perched upon fruiting berry branches in monochrome linework.`,fullStory:`A delicate monochrome artwork showing three peacocks with hatched feathers perched upon fruiting berry tree branches, highlighted with subtle crimson berry accents.`,technique:`Monochrome Fine Line Peacock Hatching`,pigments:`Black Nib Ink & Crimson Accent`,motifs:[`Peacock Trio`,`Fruiting Berry Tree`,`Hatched Feathers`,`Double Line Border`],inStock:!0},{id:`artwork-27`,title:`Matsya Avatara of Vishnu`,styleCategory:`Colorful Bharni`,medium:`Natural mineral pigments & black ink`,dimensions:`24 × 36 in`,year:`2026`,price:`Inquire for price`,image:`/images/artwork_collection_27.jpg`,brief:`Four-armed Lord Vishnu emerging from divine golden fish avatar holding sacred weapons in waves.`,fullStory:`The divine Matsya Avatara depicting four-armed blue Lord Vishnu emerging from a majestic golden-and-red horned fish avatar holding the Sudarshana Chakra, Shankha, and Gada.`,technique:`Sacred Iconography Bharni`,pigments:`Cobalt Blue, Golden Yellow, Red & Ink`,motifs:[`Matsya Avatara`,`Lord Vishnu`,`Sacred Weapons`,`Oceanic Waves`],inStock:!0},{id:`artwork-28`,title:`Navagraha: Shani, Chandra & Mangal`,styleCategory:`Bharni & Vedic Cosmology`,medium:`Vibrant natural minerals & ink`,dimensions:`24 × 36 in`,year:`2026`,price:`Inquire for price`,image:`/images/artwork_collection_28.jpg`,brief:`Planetary deities Shani, Chandra, and Mangal upon their animal mounts beneath a lotus canopy.`,fullStory:`Part of the sacred Navagraha series depicting planetary gods Shani on crow, Chandra on deer, and Mangal on ram in vibrant Bharni colors under a pink lotus arch.`,technique:`Vedic Navagraha Bharni Painting`,pigments:`Natural Ochre, Vermilion, Black & Indigo`,motifs:[`Shani (Saturn)`,`Chandra (Moon)`,`Mangal (Mars)`,`Pink Lotus Canopy`],inStock:!0},{id:`artwork-29`,title:`Navagraha: Rahu, Surya & Ketu`,styleCategory:`Bharni & Vedic Cosmology`,medium:`Natural mineral colors & black ink`,dimensions:`24 × 36 in`,year:`2026`,price:`Inquire for price`,image:`/images/artwork_collection_29.jpg`,brief:`Celestial deities Rahu on tiger, Surya on horse chariot, and Ketu holding mace and sword.`,fullStory:`A triptych panel of planetary deities Rahu riding a tiger, radiant Surya driving his seven-horse chariot, and Ketu bearing sword and mace.`,technique:`Triptych Navagraha Iconography`,pigments:`Saffron Yellow, Vermilion & Charcoal Ink`,motifs:[`Rahu on Tiger`,`Surya Sun Chariot`,`Ketu Deity`,`Floral Framing`],inStock:!0},{id:`artwork-30`,title:`Navagraha: Brihaspati, Shukra & Budh`,styleCategory:`Bharni & Vedic Cosmology`,medium:`Natural mineral pigments & black ink`,dimensions:`24 × 36 in`,year:`2026`,price:`Inquire for price`,image:`/images/artwork_collection_30.jpg`,brief:`Planetary gods Brihaspati, Shukra, and Budh seated upon elephant, horse, and lion in framing.`,fullStory:`The third Navagraha panel depicting Brihaspati on elephant, Shukra on horse, and Budh on lion under a pink lotus branch border.`,technique:`Navagraha Planetary Iconography`,pigments:`Yellow Ochre, Emerald Green & Indigo`,motifs:[`Brihaspati (Jupiter)`,`Shukra (Venus)`,`Budh (Mercury)`,`Lotus Vine Arch`],inStock:!0}];function Kw({onSelectArtwork:e}){let[t,n]=(0,S.useState)(`All`),[r,i]=(0,S.useState)(!1),[a,o]=(0,S.useState)(0),[s,c]=(0,S.useState)(!1),[l,u]=(0,S.useState)(!1),[d,f]=(0,S.useState)(!1),[p,m]=(0,S.useState)(!1),h=S.useRef(null),g=S.useRef(null),_=S.useRef(0),v=S.useRef(0),y=S.useRef(!1);S.useRef(!1);let b=Gw.filter(e=>t===`All`||e.styleCategory.toLowerCase().includes(t.toLowerCase())),x=b.length>0?[...b,...b,...b]:[],C=e=>{let t=e;if(h.current){let e=h.current.scrollWidth/3;if(e>0){for(;t<0;)t+=e;for(;t>=e;)t-=e}}_.current=t,o(t)};(0,S.useEffect)(()=>{C(0)},[t]),(0,S.useEffect)(()=>{let e=performance.now(),t=n=>{let r=n-e;if(e=n,h.current){let e=0;d?e=-.35:p?e=.35:y.current||(e=.035),e!==0&&C(_.current+e*r)}g.current=requestAnimationFrame(t)};return g.current=requestAnimationFrame(t),()=>{g.current&&cancelAnimationFrame(g.current)}},[d,p,b.length]);let w=e=>{y.current=!0,c(!0),u(!1),e.touches&&e.touches[0]&&(v.current=e.touches[0].clientX)},T=e=>{if(!y.current||!e.touches||!e.touches[0])return;let t=v.current-e.touches[0].clientX;v.current=e.touches[0].clientX,Math.abs(t)>.5&&(u(!0),C(_.current+t))},E=()=>{y.current=!1,c(!1)},D=()=>{C(_.current+360)},O=()=>{C(_.current-360)};return(0,V.jsxs)(`section`,{id:`gallery`,className:`py-8 sm:py-10 lg:py-12 bg-transparent relative overflow-hidden border-b border-[#E7E0D2] scroll-mt-20 sm:scroll-mt-24`,children:[(0,V.jsx)(`div`,{className:`absolute top-1/4 right-0 w-96 h-96 bg-[#C87A38]/5 rounded-full blur-3xl pointer-events-none`}),(0,V.jsx)(`div`,{className:`absolute bottom-0 left-0 w-80 h-80 bg-[#9A3412]/5 rounded-full blur-3xl pointer-events-none`}),(0,V.jsxs)(`div`,{className:`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-6 sm:space-y-8`,children:[(0,V.jsxs)(`div`,{className:`text-center max-w-3xl mx-auto space-y-2`,children:[(0,V.jsx)(`h2`,{className:`font-serif text-3xl sm:text-5xl font-normal text-[#1C1917] tracking-tight`,children:`ART GALLERY`}),(0,V.jsx)(`p`,{className:`text-sm sm:text-base text-[#5C5652] leading-relaxed max-w-2xl mx-auto font-light`,children:`Explore 30+ curated original artworks, upcoming gallery exhibitions at IHC, traditional outdoor workshops, and international youth events.`}),(0,V.jsx)(`div`,{className:`w-20 h-[2px] bg-[#C87A38] mx-auto rounded-full mt-2`})]}),(0,V.jsxs)(`div`,{className:`relative overflow-hidden py-3 px-1 rounded-xl select-none group/carousel`,onTouchStart:w,onTouchMove:T,onTouchEnd:E,children:[(0,V.jsx)(`button`,{onMouseDown:e=>{e.stopPropagation(),f(!0)},onMouseUp:e=>{e.stopPropagation(),f(!1)},onMouseLeave:()=>f(!1),onTouchStart:e=>{e.stopPropagation(),f(!0)},onTouchEnd:e=>{e.stopPropagation(),f(!1)},onClick:e=>{e.stopPropagation(),O()},className:`absolute left-3 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-[#1C1917]/85 hover:bg-[#C87A38] text-white flex items-center justify-center border border-white/30 shadow-2xl backdrop-blur-md transition-all active:scale-95 cursor-pointer ${d?`bg-[#C87A38] scale-110 shadow-inner`:``}`,"aria-label":`Move left / previous`,children:(0,V.jsx)(Yn,{className:`w-6 h-6`})}),(0,V.jsx)(`button`,{onMouseDown:e=>{e.stopPropagation(),m(!0)},onMouseUp:e=>{e.stopPropagation(),m(!1)},onMouseLeave:()=>m(!1),onTouchStart:e=>{e.stopPropagation(),m(!0)},onTouchEnd:e=>{e.stopPropagation(),m(!1)},onClick:e=>{e.stopPropagation(),D()},className:`absolute right-3 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-[#1C1917]/85 hover:bg-[#C87A38] text-white flex items-center justify-center border border-white/30 shadow-2xl backdrop-blur-md transition-all active:scale-95 cursor-pointer ${p?`bg-[#C87A38] scale-110 shadow-inner`:``}`,"aria-label":`Move right / next`,children:(0,V.jsx)(Xn,{className:`w-6 h-6`})}),(0,V.jsx)(`div`,{ref:h,className:`flex gap-4 sm:gap-6 w-max`,style:{transform:`translate3d(-${a}px, 0, 0)`,willChange:`transform`},children:x.map((t,n)=>(0,V.jsxs)(`div`,{onClick:()=>{!l&&e&&e(t)},className:`w-[300px] sm:w-[360px] lg:w-[380px] min-w-[300px] sm:min-w-[360px] lg:min-w-[380px] shrink-0 deckled-frame bg-[#FFFDF9] border-2 border-[#E7E0D2] hover:border-[#C87A38] rounded-xl p-4 sm:p-5 shadow-md hover:shadow-2xl transition-all duration-300 group cursor-pointer flex flex-col justify-between h-[480px] sm:h-[510px]`,children:[(0,V.jsxs)(`div`,{className:`space-y-3`,children:[(0,V.jsxs)(`div`,{className:`relative aspect-[4/3] rounded-lg overflow-hidden border border-[#E7E0D2] bg-[#FAF8F3]`,children:[(0,V.jsx)(`img`,{src:t.image,alt:t.title,className:`w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700`}),(0,V.jsx)(`div`,{className:`absolute top-3 left-3 bg-[#1C1917]/85 backdrop-blur-md px-2.5 py-1 rounded-full text-[10px] font-bold text-[#F59E0B] tracking-wider uppercase border border-[#F59E0B]/30`,children:t.styleCategory}),(0,V.jsx)(`div`,{className:`absolute inset-0 bg-[#1C1917]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center`,children:(0,V.jsxs)(`div`,{className:`inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-white text-[#1C1917] text-xs font-bold shadow-md`,children:[(0,V.jsx)(er,{className:`w-4 h-4 text-[#C87A38]`}),(0,V.jsx)(`span`,{children:`INSPECT DETAILS`})]})})]}),(0,V.jsxs)(`div`,{className:`space-y-1.5 text-left`,children:[(0,V.jsxs)(`div`,{className:`flex items-center justify-between gap-2 h-7`,children:[(0,V.jsx)(`h4`,{className:`font-serif text-lg sm:text-xl font-bold text-[#1C1917] group-hover:text-[#C87A38] transition-colors truncate`,children:t.title}),(0,V.jsx)(`span`,{className:`text-[11px] font-semibold text-[#78716C] bg-[#FAF8F3] px-2 py-0.5 rounded border border-[#E7E0D2] shrink-0`,children:t.dimensions})]}),(0,V.jsx)(`p`,{className:`text-xs text-[#78716C] italic font-serif truncate h-5 flex items-center`,children:t.medium}),(0,V.jsxs)(`div`,{className:`pt-2 border-t border-[#E7E0D2]/60 space-y-1`,children:[(0,V.jsx)(`span`,{className:`text-[9.5px] font-bold tracking-widest text-[#C87A38] uppercase block`,children:`ARTWORK BRIEF:`}),(0,V.jsx)(`div`,{className:`h-[60px] sm:h-[64px] bg-[#FAF8F3] p-2.5 rounded border border-[#E7E0D2]/80 flex items-center overflow-hidden`,children:(0,V.jsx)(`p`,{className:`text-xs sm:text-[13px] text-[#292524] font-medium leading-snug line-clamp-3`,children:t.brief})})]})]})]}),(0,V.jsxs)(`div`,{className:`pt-3 mt-2 border-t border-[#E7E0D2] flex items-center justify-between text-xs`,children:[(0,V.jsx)(`span`,{className:`font-bold text-[#C87A38]`,children:t.price}),(0,V.jsxs)(`div`,{className:`inline-flex items-center gap-1 text-[#1C1917] group-hover:text-[#C87A38] font-bold tracking-wider uppercase text-[11px]`,children:[(0,V.jsx)(`span`,{children:`VIEW STORY`}),(0,V.jsx)(Wn,{className:`w-3.5 h-3.5`})]})]})]},`${t.id}-${n}`))})]}),(0,V.jsxs)(`div`,{id:`exhibitions`,className:`pt-8 sm:pt-10 lg:pt-12 mt-8 sm:mt-10 lg:mt-12 border-t border-[#E7E0D2] space-y-6 sm:space-y-8`,children:[(0,V.jsxs)(`div`,{className:`flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-[#E7E0D2] pb-4`,children:[(0,V.jsxs)(`div`,{children:[(0,V.jsx)(`span`,{className:`text-[10px] font-bold tracking-[0.24em] text-[#C87A38] uppercase block`,children:`GALLERY EXHIBITIONS & SHOWS`}),(0,V.jsx)(`h3`,{className:`font-serif text-2xl sm:text-4xl font-normal text-[#1C1917]`,children:`Exhibitions`})]}),(0,V.jsxs)(`div`,{className:`inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FFFDF9] border border-[#E7E0D2] text-xs text-[#78716C]`,children:[(0,V.jsx)(rr,{className:`w-3.5 h-3.5 text-[#C87A38]`}),(0,V.jsx)(`span`,{children:`India Habitat Centre (IHC) Feature`})]})]}),(0,V.jsxs)(`div`,{className:`deckled-frame bg-[#FFFDF9] border border-[#E7E0D2] rounded-xl overflow-hidden shadow-lg grid grid-cols-1 lg:grid-cols-12 items-center`,children:[(0,V.jsxs)(`div`,{className:`lg:col-span-5 relative h-[260px] sm:h-[300px] lg:h-[340px] overflow-hidden bg-[#1C1917]`,children:[(0,V.jsx)(`img`,{src:`/images/monsoon_court.jpg`,alt:`Upcoming Gallery Exhibition at India Habitat Centre (IHC) New Delhi`,className:`w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700`}),(0,V.jsxs)(`div`,{className:`absolute inset-0 bg-gradient-to-t from-[#1C1917]/90 via-[#1C1917]/30 to-transparent flex flex-col justify-end p-5 text-white`,children:[(0,V.jsx)(`div`,{className:`inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#C87A38] text-white text-[10px] font-bold uppercase tracking-widest w-fit mb-1.5`,children:(0,V.jsx)(`span`,{children:`EXHIBITION PREVIEW`})}),(0,V.jsx)(`span`,{className:`font-serif text-base sm:text-lg font-bold`,children:`India Habitat Centre (IHC)`}),(0,V.jsx)(`span`,{className:`text-[11px] text-[#EAD5BE]`,children:`Visual Arts Gallery • Lodhi Road, New Delhi`})]})]}),(0,V.jsxs)(`div`,{className:`lg:col-span-7 p-6 sm:p-8 lg:p-10 text-left space-y-4`,children:[(0,V.jsxs)(`div`,{className:`inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#C87A38]/10 text-[#C87A38] text-xs font-bold uppercase tracking-wider`,children:[(0,V.jsx)(qn,{className:`w-3.5 h-3.5`}),(0,V.jsx)(`span`,{children:`UPCOMING GALLERY FEATURE`})]}),(0,V.jsx)(`h4`,{className:`font-serif text-2xl sm:text-3xl font-bold text-[#1C1917] leading-tight`,children:`Upcoming Fine Art Gallery Exhibition at India Habitat Centre (IHC)`}),(0,V.jsxs)(`p`,{className:`text-sm sm:text-base text-[#44403C] leading-relaxed`,children:[`Kalapravah is proud to announce an exclusive upcoming exhibition at the prestigious `,(0,V.jsx)(`strong`,{children:`India Habitat Centre (IHC), New Delhi`}),`. Featuring original large-scale Madhubani canvases, intricate Kachni line series, and live pigment mixing demonstrations by artist Rashmi Dhar.`]}),(0,V.jsxs)(`div`,{className:`space-y-2 text-xs text-[#5C5652] pt-2 border-t border-[#E7E0D2]`,children:[(0,V.jsxs)(`div`,{className:`flex items-center gap-2`,children:[(0,V.jsx)(or,{className:`w-4 h-4 text-[#C87A38]`}),(0,V.jsxs)(`span`,{children:[(0,V.jsx)(`strong`,{children:`Venue:`}),` Visual Arts Gallery, India Habitat Centre (IHC), New Delhi`]})]}),(0,V.jsxs)(`div`,{className:`flex items-center gap-2`,children:[(0,V.jsx)(pr,{className:`w-4 h-4 text-[#C87A38]`}),(0,V.jsxs)(`span`,{children:[(0,V.jsx)(`strong`,{children:`Highlights:`}),` Original Mithila Paintings, Private Viewing & Artist Talk`]})]})]})]})]})]}),(0,V.jsxs)(`div`,{className:`pt-8 sm:pt-10 lg:pt-12 mt-8 sm:mt-10 lg:mt-12 border-t border-[#E7E0D2] space-y-8 sm:space-y-10`,children:[(0,V.jsxs)(`div`,{className:`space-y-6`,children:[(0,V.jsx)(`div`,{className:`flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-[#E7E0D2] pb-4`,children:(0,V.jsxs)(`div`,{children:[(0,V.jsx)(`span`,{className:`text-[10px] font-bold tracking-[0.24em] text-[#C87A38] uppercase block`,children:`HERITAGE LEARNING & MINDFULNESS`}),(0,V.jsx)(`h3`,{className:`font-serif text-2xl sm:text-4xl font-normal text-[#1C1917]`,children:`Workshops`})]})}),(0,V.jsxs)(`div`,{className:`bg-[#FFFDF9] border border-[#E7E0D2] rounded-xl p-6 sm:p-8 shadow-sm space-y-4 text-left relative overflow-hidden`,children:[(0,V.jsx)(`div`,{className:`absolute top-0 left-0 w-2.5 h-full bg-[#C87A38]`}),(0,V.jsxs)(`div`,{className:`flex items-center justify-between flex-wrap gap-2`,children:[(0,V.jsxs)(`div`,{className:`flex items-center gap-2 text-xs font-bold text-[#C87A38] uppercase tracking-wider`,children:[(0,V.jsx)(or,{className:`w-4 h-4 text-[#9A3412]`}),(0,V.jsx)(`span`,{children:`@ SUNDER NURSERY, NEW DELHI`})]}),(0,V.jsxs)(`div`,{className:`flex items-center gap-1 text-[11px] font-semibold text-[#78716C] bg-[#FAF8F3] px-2.5 py-0.5 rounded border border-[#E7E0D2]`,children:[(0,V.jsx)(nr,{className:`w-3.5 h-3.5 text-[#C87A38]`}),(0,V.jsx)(`span`,{children:`Art Is Meant To Be Shared`})]})]}),(0,V.jsx)(`h4`,{className:`font-serif text-xl sm:text-2xl font-bold text-[#1C1917]`,children:`Mindful Outdoor Workshops Amidst Nature`}),(0,V.jsx)(`p`,{className:`text-sm sm:text-base text-[#44403C] leading-relaxed`,children:`Artist Rashmi Dhar has conducted several meditative Madhubani art workshops in last 2 years amidst nature for all ages. Participants experienced an stress-busting journey into this 3,000-year-old heritage art, dating back to Ramayana times, and proudly carried home their own handcrafted traditional masterpieces.`}),(0,V.jsxs)(`div`,{className:`pt-4 border-t border-[#E7E0D2] flex flex-wrap items-center gap-3`,children:[(0,V.jsx)(`span`,{className:`text-xs font-bold text-[#1C1917] uppercase tracking-wider`,children:`Other workshops:`}),(0,V.jsx)(`span`,{className:`px-3 py-1 rounded-full bg-[#FAF8F3] border border-[#E7E0D2] text-xs font-semibold text-[#78716C]`,children:`@ Lalit Kala academy`}),(0,V.jsx)(`span`,{className:`px-3 py-1 rounded-full bg-[#FAF8F3] border border-[#E7E0D2] text-xs font-semibold text-[#78716C]`,children:`@ Bikaner house`})]})]})]}),(0,V.jsxs)(`div`,{className:`space-y-6`,children:[(0,V.jsxs)(`div`,{className:`border-b border-[#E7E0D2] pb-4`,children:[(0,V.jsx)(`span`,{className:`text-[10px] font-bold tracking-[0.24em] text-[#C87A38] uppercase block`,children:`INTERNATIONAL YOUTH & COMMUNITY HIGHLIGHT`}),(0,V.jsx)(`h3`,{className:`font-serif text-2xl sm:text-4xl font-normal text-[#1C1917]`,children:`Event`})]}),(0,V.jsxs)(`div`,{className:`bg-[#FFFDF9] border border-[#E7E0D2] rounded-xl p-6 sm:p-8 shadow-sm space-y-4 text-left relative overflow-hidden`,children:[(0,V.jsx)(`div`,{className:`absolute top-0 right-0 w-24 h-24 bg-[#C87A38]/10 rounded-full blur-2xl pointer-events-none`}),(0,V.jsxs)(`div`,{className:`flex items-center gap-2 text-xs font-bold text-[#C87A38] uppercase tracking-wider`,children:[(0,V.jsx)(gr,{className:`w-4 h-4 text-[#C87A38]`}),(0,V.jsx)(`span`,{children:`AGA KHAN FOUNDATION SUMMER CAMP`})]}),(0,V.jsx)(`h4`,{className:`font-serif text-xl sm:text-2xl font-bold text-[#1C1917]`,children:`Global Youth Meditative Art Workshop`}),(0,V.jsx)(`p`,{className:`text-sm sm:text-base text-[#44403C] leading-relaxed`,children:`At the Aga Khan Foundation’s summer camp, Rashmi Dhar led a meditative Madhubani art workshop. Forty teens aged 15–20 across globe & from India, the USA, Canada, and the UAE gathered for two days of skill-building. Beyond mastering traditional techniques, they found deep mindfulness, stress relief, and brought home 3,000-year-old art masterpieces.`}),(0,V.jsxs)(`div`,{className:`pt-2 flex flex-wrap gap-2 text-[11px] font-semibold text-[#78716C]`,children:[(0,V.jsx)(`span`,{className:`px-2.5 py-1 rounded bg-[#FAF8F3] border border-[#E7E0D2]`,children:`40 Global Teen Participants`}),(0,V.jsx)(`span`,{className:`px-2.5 py-1 rounded bg-[#FAF8F3] border border-[#E7E0D2]`,children:`India, USA, Canada, UAE`}),(0,V.jsx)(`span`,{className:`px-2.5 py-1 rounded bg-[#FAF8F3] border border-[#E7E0D2]`,children:`2-Day Intensive`})]})]})]})]})]})]})}function qw(){return(0,V.jsxs)(`section`,{id:`blog`,className:`py-8 sm:py-10 lg:py-12 bg-transparent relative overflow-hidden border-b border-[#E7E0D2] scroll-mt-20 sm:scroll-mt-24`,children:[(0,V.jsx)(`div`,{className:`absolute top-1/3 left-0 w-80 h-80 bg-[#C87A38]/5 rounded-full blur-3xl pointer-events-none`}),(0,V.jsx)(`div`,{className:`absolute bottom-10 right-0 w-96 h-96 bg-[#9A3412]/5 rounded-full blur-3xl pointer-events-none`}),(0,V.jsxs)(`div`,{className:`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-8 sm:space-y-10`,children:[(0,V.jsxs)(`div`,{className:`text-center max-w-3xl mx-auto space-y-2`,children:[(0,V.jsx)(`h2`,{className:`font-serif text-3xl sm:text-5xl font-normal text-[#1C1917] tracking-tight`,children:`BLOG`}),(0,V.jsx)(`p`,{className:`text-sm sm:text-base text-[#5C5652] leading-relaxed max-w-2xl mx-auto font-light`,children:`Discover in-depth guides on Madhubani painting techniques, natural mineral pigments, and sacred motifs.`}),(0,V.jsx)(`div`,{className:`w-20 h-[2px] bg-[#C87A38] mx-auto rounded-full mt-2`})]}),(0,V.jsxs)(`div`,{className:`space-y-6`,children:[(0,V.jsxs)(`div`,{className:`flex items-center justify-between border-b border-[#E7E0D2] pb-3`,children:[(0,V.jsxs)(`div`,{className:`flex items-center gap-2`,children:[(0,V.jsx)(Kn,{className:`w-4 h-4 text-[#C87A38]`}),(0,V.jsx)(`span`,{className:`text-[10px] font-bold tracking-[0.24em] uppercase text-[#C87A38]`,children:`HERITAGE GUIDES & ARTICLES`})]}),(0,V.jsxs)(yn,{to:`/blog`,className:`inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-[#1C1917] hover:text-[#C87A38] transition-colors`,children:[(0,V.jsxs)(`span`,{children:[`Explore All Blogs (`,Uw.length,`)`]}),(0,V.jsx)(Un,{className:`w-3.5 h-3.5`})]})]}),(0,V.jsx)(`div`,{className:`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6`,children:Uw.slice(0,4).map(e=>(0,V.jsxs)(yn,{to:`/blog/${e.id}`,className:`group cursor-pointer text-left flex flex-col justify-between transition-all p-3 sm:p-4 rounded-2xl hover:bg-[#FFFDF9]/60 border border-transparent hover:border-[#E7E0D2]/60 block`,children:[(0,V.jsxs)(`div`,{children:[(0,V.jsxs)(`div`,{className:`relative aspect-[16/10] overflow-hidden rounded-2xl mb-3 shadow-sm group-hover:shadow-md transition-shadow duration-500 bg-[#FAF8F3]`,children:[(0,V.jsx)(`img`,{src:e.image,alt:e.title,className:`w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700`}),(0,V.jsx)(`span`,{className:`absolute bottom-2.5 left-2.5 bg-[#1C1917]/80 backdrop-blur-md text-white text-[9px] font-semibold px-2.5 py-1 rounded-full tracking-wider uppercase`,children:e.category})]}),(0,V.jsx)(`h3`,{className:`font-serif text-base font-normal text-[#1C1917] leading-snug group-hover:text-[#C87A38] transition-colors mb-1.5 line-clamp-2`,children:e.title}),(0,V.jsx)(`p`,{className:`text-xs text-[#5C5652] leading-relaxed mb-3 line-clamp-2 font-light`,children:e.excerpt})]}),(0,V.jsxs)(`div`,{className:`pt-2.5 border-t border-[#E7E0D2]/50 flex items-center justify-between text-[10px] font-semibold text-[#78716C] tracking-wider uppercase`,children:[(0,V.jsx)(`span`,{children:e.date}),(0,V.jsxs)(`span`,{className:`flex items-center gap-1 group-hover:text-[#C87A38] transition-colors`,children:[e.readTime,(0,V.jsx)(Un,{className:`w-3 h-3`})]})]})]},e.id))}),(0,V.jsx)(`div`,{className:`pt-4 text-center`,children:(0,V.jsxs)(yn,{to:`/blog`,className:`inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#1C1917] hover:bg-[#C87A38] text-white text-xs font-semibold uppercase tracking-wider transition-colors shadow-sm cursor-pointer`,children:[(0,V.jsx)(`span`,{children:`Read More Blogs & Guides`}),(0,V.jsx)(Un,{className:`w-4 h-4`})]})})]})]})]})}var Jw=({className:e=`w-4 h-4`})=>(0,V.jsx)(`svg`,{className:e,fill:`currentColor`,viewBox:`0 0 24 24`,children:(0,V.jsx)(`path`,{d:`M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z`})}),Yw=({className:e=`w-4 h-4`})=>(0,V.jsxs)(`svg`,{className:e,fill:`currentColor`,viewBox:`0 0 24 24`,children:[(0,V.jsx)(`path`,{d:`M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347z`}),(0,V.jsx)(`path`,{d:`M12 0C5.373 0 0 5.373 0 12c0 2.119.553 4.11 1.519 5.84L0 24l6.344-1.498A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.84 0-3.567-.492-5.064-1.353l-.363-.21-3.76.888.888-3.66-.232-.375A9.957 9.957 0 012 12c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10z`})]});function Xw({onNavigate:e}){let[t,n]=(0,S.useState)(`Artwork Inquiry`),[r,i]=(0,S.useState)(``),[a,o]=(0,S.useState)(!1),s=[`Artwork Inquiry`,`Custom Commission`,`Workshops`,`General Enquiry`],c=[{id:`home`,label:`HOME`},{id:`art-artist`,label:`ART & ARTIST`},{id:`gallery`,label:`ART GALLERY`},{id:`blog`,label:`BLOG`},{id:`contact`,label:`CONTACT`}],l=e=>{e.preventDefault();let n=`Hello Rashmi,\n\nI am inquiring about: *${t}*\n${r.trim()?r.trim():`Please share available collection catalog and details.`}`,i=`https://wa.me/919971399395?text=${encodeURIComponent(n)}`;window.open(i,`_blank`,`noopener,noreferrer`),o(!0),setTimeout(()=>o(!1),5e3)},u=t=>{if(e)e(t);else{let e=document.getElementById(t);if(e){let t=e.getBoundingClientRect().top+window.pageYOffset-84;window.scrollTo({top:t,behavior:`smooth`})}}};return(0,V.jsx)(`footer`,{className:`w-full text-[#1C1917] overflow-hidden relative z-20 bg-[#1C1613] border-t border-[#3D302A]`,children:(0,V.jsx)(`section`,{id:`contact`,className:`bg-[#1C1613] text-[#EBE5DF] py-8 sm:py-10 lg:py-12 px-4 sm:px-6 lg:px-8 scroll-mt-20 sm:scroll-mt-24`,children:(0,V.jsxs)(`div`,{className:`max-w-6xl mx-auto space-y-10`,children:[(0,V.jsxs)(`div`,{className:`grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 items-center`,children:[(0,V.jsxs)(`div`,{className:`lg:col-span-5 space-y-5`,children:[(0,V.jsxs)(`div`,{className:`flex items-center gap-3.5`,children:[(0,V.jsx)(`div`,{className:`bg-white p-2 rounded-2xl shadow-md shrink-0 flex items-center justify-center border border-white/20`,children:(0,V.jsx)(`img`,{src:`/images/logo-footer.png`,alt:`Kalapravah Logo`,className:`w-14 h-14 sm:w-16 sm:h-16 object-contain rounded-xl`})}),(0,V.jsxs)(`div`,{children:[(0,V.jsx)(`span`,{className:`font-serif text-2xl sm:text-3xl font-bold tracking-widest text-white uppercase block leading-none`,style:{color:`#ffffff`},children:`KALAPRAVAH`}),(0,V.jsx)(`span`,{className:`text-[10px] font-semibold tracking-[0.25em] uppercase text-[#D98A48] block mt-1`,children:`MITHILA ART GALLERY & STUDIO`})]})]}),(0,V.jsx)(`p`,{className:`text-xs text-[#A89F95] leading-relaxed max-w-sm`,children:`Preserving sacred geometry & fine line-work of traditional Madhubani art by Rashmi Dhar.`}),(0,V.jsx)(`div`,{className:`flex flex-wrap gap-4 pt-1`,children:c.map(e=>(0,V.jsx)(`button`,{onClick:()=>u(e.id),className:`text-xs font-semibold tracking-widest text-[#D98A48] hover:text-white uppercase transition-colors cursor-pointer`,children:e.label},e.id))}),(0,V.jsxs)(`div`,{className:`space-y-2 pt-2 text-xs text-[#C2B7AC]`,children:[(0,V.jsxs)(`a`,{href:`mailto:kalapravah2025@gmail.com`,className:`flex items-center gap-2.5 hover:text-[#FAF8F3] transition-colors`,children:[(0,V.jsx)(ar,{className:`w-3.5 h-3.5 text-[#D98A48]`}),(0,V.jsx)(`span`,{children:`kalapravah2025@gmail.com`})]}),(0,V.jsxs)(`a`,{href:`https://www.instagram.com/kalapravah2025?igsh=MWJ4N3ZubzBzczBodg==`,target:`_blank`,rel:`noopener noreferrer`,className:`flex items-center gap-2.5 hover:text-[#FAF8F3] transition-colors`,children:[(0,V.jsx)(Jw,{className:`w-3.5 h-3.5 text-[#D98A48]`}),(0,V.jsx)(`span`,{children:`@kalapravah2025`})]}),(0,V.jsxs)(`a`,{href:`https://wa.me/919971399395`,target:`_blank`,rel:`noopener noreferrer`,className:`flex items-center gap-2.5 hover:text-[#FAF8F3] transition-colors`,children:[(0,V.jsx)(lr,{className:`w-3.5 h-3.5 text-[#25D366]`}),(0,V.jsx)(`span`,{children:`+91 99713 99395`})]})]})]}),(0,V.jsxs)(`div`,{className:`lg:col-span-7 bg-[#251E1A] border border-[#3D312B] p-5 sm:p-6 rounded-lg shadow-sm space-y-4`,children:[(0,V.jsx)(`div`,{className:`border-b border-[#3D312B] pb-2.5`,children:(0,V.jsxs)(`div`,{className:`flex items-center gap-2`,children:[(0,V.jsx)(pr,{className:`w-3.5 h-3.5 text-[#D98A48]`}),(0,V.jsx)(`span`,{className:`text-[10px] font-bold tracking-[0.18em] uppercase text-[#D98A48]`,children:`WANT TO TALK? SEND A MESSAGE INSTANTLY`})]})}),(0,V.jsxs)(`form`,{onSubmit:l,className:`space-y-3`,children:[(0,V.jsx)(`div`,{className:`flex flex-wrap gap-1.5`,children:s.map(e=>(0,V.jsx)(`button`,{type:`button`,onClick:()=>n(e),className:`px-2.5 py-1 text-[11px] font-medium tracking-wide rounded-sm border transition-all cursor-pointer ${t===e?`bg-[#D98A48] text-[#1C1613] border-[#D98A48] font-semibold`:`bg-[#1C1613] text-[#C2B7AC] border-[#3D312B] hover:border-[#D98A48] hover:text-[#FAF8F3]`}`,children:e},e))}),(0,V.jsx)(`input`,{type:`text`,value:r,onChange:e=>i(e.target.value),placeholder:`Optional: Note, painting size, or details...`,className:`w-full px-3 py-2 bg-[#1C1613] border border-[#3D312B] focus:border-[#D98A48] rounded-sm text-xs text-[#FAF8F3] placeholder:text-[#78716C] focus:outline-none transition-colors`}),(0,V.jsxs)(`button`,{type:`submit`,className:`w-full flex items-center justify-between px-4 py-3 bg-[#25D366] hover:bg-[#20bd5a] text-[#1C1613] rounded-sm text-xs font-bold uppercase tracking-[0.15em] transition-all duration-300 group cursor-pointer shadow-sm`,children:[(0,V.jsxs)(`div`,{className:`flex items-center gap-2`,children:[(0,V.jsx)(Yw,{className:`w-4 h-4 fill-current`}),(0,V.jsx)(`span`,{children:`SEND MESSAGE`})]}),(0,V.jsx)(Un,{className:`w-3.5 h-3.5 group-hover:translate-x-1 transition-transform`})]})]}),a&&(0,V.jsx)(`p`,{className:`text-[11px] font-semibold text-[#25D366] text-center`,children:`✓ Opening WhatsApp message...`})]})]}),(0,V.jsxs)(`div`,{className:`pt-4 border-t border-[#362C26] flex flex-col sm:flex-row items-center justify-between text-[10px] sm:text-[11px] font-semibold tracking-[0.12em] text-[#8C8277] gap-3`,children:[(0,V.jsx)(`p`,{children:`© 2026 KALAPRAVAH • ART BY RASHMI DHAR`}),(0,V.jsxs)(`div`,{className:`flex items-center gap-4`,children:[(0,V.jsx)(`span`,{children:`100% ORIGINAL ART GUARANTEE`}),(0,V.jsx)(`span`,{children:`•`}),(0,V.jsxs)(`button`,{onClick:()=>u(`home`),className:`inline-flex items-center gap-1 hover:text-[#FAF8F3] text-[#D98A48] cursor-pointer transition-colors`,children:[(0,V.jsx)(`span`,{children:`TOP`}),(0,V.jsx)(Zn,{className:`w-3 h-3`})]})]})]})]})})})}function Zw({artwork:e,onClose:t,onOpenCommission:n}){if(!e)return null;let[r,i]=(0,S.useState)(!1),[a,o]=(0,S.useState)({x:0,y:0,percentX:50,percentY:50}),s=(0,S.useRef)(null);(0,S.useEffect)(()=>{let e=e=>{e.key===`Escape`&&t()};return window.addEventListener(`keydown`,e),()=>window.removeEventListener(`keydown`,e)},[t]);let c=(e,t)=>{if(!s.current)return;let n=s.current.getBoundingClientRect(),r=Math.max(0,Math.min(e-n.left,n.width)),i=Math.max(0,Math.min(t-n.top,n.height)),a=r/n.width*100,c=i/n.height*100;o({x:r,y:i,percentX:a,percentY:c,width:n.width,height:n.height})},l=e=>{c(e.clientX,e.clientY)},u=e=>{!e.touches||!e.touches[0]||c(e.touches[0].clientX,e.touches[0].clientY)},d=Math.max(0,Math.min(a.percentX-10,80)),f=Math.max(0,Math.min(a.percentY-10,80));return(0,V.jsx)(`div`,{className:`fixed inset-0 bg-[#1C1917]/85 backdrop-blur-md z-50 flex items-center justify-center p-2 sm:p-4 md:p-6 overflow-y-auto`,children:(0,V.jsxs)(`div`,{className:`bg-[#FAF8F3] border border-[#C4B9A3] w-full max-w-5xl max-h-[94vh] rounded-lg shadow-2xl overflow-y-auto relative my-auto flex flex-col`,children:[(0,V.jsxs)(`div`,{className:`sticky top-0 z-40 bg-[#FAF8F3]/95 backdrop-blur-sm border-b border-[#E7E0D2] px-4 py-3 flex items-center justify-between`,children:[(0,V.jsxs)(`div`,{className:`flex items-center gap-2`,children:[(0,V.jsx)(`span`,{className:`text-[11px] font-bold uppercase tracking-widest text-[#B94A2D] bg-[#B94A2D]/10 px-2.5 py-1 rounded`,children:`Artwork Inspector`}),(0,V.jsxs)(`span`,{className:`hidden sm:inline text-xs text-[#78716C] font-mono`,children:[`• `,e.title]})]}),(0,V.jsx)(`button`,{onClick:t,className:`w-8 h-8 rounded-full bg-[#1C1917] text-white hover:bg-[#B94A2D] flex items-center justify-center transition-colors shadow`,"aria-label":`Close Lightbox`,children:(0,V.jsx)(_r,{className:`w-4 h-4`})})]}),(0,V.jsxs)(`div`,{className:`grid grid-cols-1 lg:grid-cols-12 flex-grow overflow-hidden`,children:[(0,V.jsxs)(`div`,{className:`lg:col-span-6 p-4 sm:p-6 bg-[#F4EFE6] flex flex-col justify-between items-center border-b lg:border-b-0 lg:border-r border-[#E7E0D2] relative select-none`,children:[(0,V.jsxs)(`div`,{className:`w-full flex items-center justify-between mb-3 text-xs bg-[#FAF8F3] border border-[#E7E0D2] px-3 py-1.5 rounded-md shadow-sm z-20`,children:[(0,V.jsx)(`div`,{className:`flex items-center gap-2`,children:(0,V.jsx)(`span`,{className:`text-[11px] font-semibold text-[#1C1917] uppercase tracking-wider`,children:`5.0x HD View`})}),(0,V.jsx)(`span`,{className:`text-[10px] text-[#78716C] italic font-serif`,children:`Hover canvas to inspect`})]}),(0,V.jsxs)(`div`,{ref:s,className:`relative w-full aspect-[3/4] rounded border border-[#C4B9A3] shadow-lg bg-white overflow-hidden cursor-crosshair`,onMouseEnter:()=>i(!0),onMouseLeave:()=>i(!1),onMouseMove:l,onTouchStart:()=>i(!0),onTouchMove:u,children:[(0,V.jsx)(`img`,{src:e.image,alt:e.title,className:`w-full h-full object-cover select-none pointer-events-none`}),r&&(0,V.jsx)(`div`,{className:`absolute border-2 border-[#C87A38] bg-[#C87A38]/20 backdrop-blur-[1px] shadow-md pointer-events-none transition-all duration-75 ease-out rounded-sm`,style:{width:`20%`,height:`20%`,left:`${d}%`,top:`${f}%`},children:(0,V.jsxs)(`div`,{className:`absolute inset-0 flex items-center justify-center opacity-60`,children:[(0,V.jsx)(`div`,{className:`w-2 h-0.5 bg-[#C87A38]`}),(0,V.jsx)(`div`,{className:`h-2 w-0.5 bg-[#C87A38] absolute`})]})}),!r&&(0,V.jsx)(`div`,{className:`absolute inset-0 bg-[#1C1917]/10 flex items-center justify-center pointer-events-none`,children:(0,V.jsxs)(`div`,{className:`bg-[#1C1917]/90 text-white text-xs font-semibold px-4 py-2 rounded-full backdrop-blur-md shadow-xl flex items-center gap-2 border border-[#C87A38]/40`,children:[(0,V.jsx)(er,{className:`w-4 h-4 text-[#C87A38]`}),(0,V.jsx)(`span`,{children:`Hover over artwork to inspect fine details`})]})})]}),(0,V.jsxs)(`div`,{className:`mt-3 text-[11px] text-[#78716C] text-center font-serif italic`,children:[(0,V.jsx)(`span`,{className:`font-semibold text-[#1C1917]`,children:`Tip:`}),` Move cursor over artwork to inspect fine details`]})]}),(0,V.jsx)(`div`,{className:`lg:col-span-6 p-5 sm:p-8 space-y-5 text-left flex flex-col justify-between bg-[#FFFDF9] relative min-h-[420px]`,children:r?(0,V.jsxs)(`div`,{className:`h-full flex flex-col justify-between animate-in fade-in duration-200`,children:[(0,V.jsxs)(`div`,{className:`space-y-3`,children:[(0,V.jsxs)(`div`,{className:`flex items-center justify-between border-b border-[#E7E0D2] pb-2`,children:[(0,V.jsxs)(`div`,{className:`flex items-center gap-2`,children:[(0,V.jsx)(`span`,{className:`w-2 h-2 rounded-full bg-[#C87A38]`}),(0,V.jsx)(`span`,{className:`text-xs font-bold uppercase tracking-wider text-[#B94A2D]`,children:`High-Definition Macro View`})]}),(0,V.jsx)(`span`,{className:`text-xs font-mono font-bold text-[#C87A38] bg-[#C87A38]/10 px-2 py-0.5 rounded`,children:`5.0x Magnification`})]}),(0,V.jsxs)(`div`,{className:`w-full aspect-[4/3] sm:aspect-[16/11] rounded border-2 border-[#C87A38] shadow-2xl bg-[#1C1917] overflow-hidden relative`,style:{backgroundImage:`url(${e.image})`,backgroundPosition:`${a.percentX}% ${a.percentY}%`,backgroundSize:`500%`,backgroundRepeat:`no-repeat`},children:[(0,V.jsxs)(`div`,{className:`absolute inset-0 pointer-events-none flex items-center justify-center opacity-30`,children:[(0,V.jsx)(`div`,{className:`w-full h-[1px] bg-[#C87A38]`}),(0,V.jsx)(`div`,{className:`h-full w-[1px] bg-[#C87A38] absolute`})]}),(0,V.jsxs)(`div`,{className:`absolute top-2 left-2 bg-[#1C1917]/85 text-[#FAF8F3] text-[10px] font-mono px-2 py-0.5 rounded border border-[#E7E0D2]/30 backdrop-blur-sm`,children:[`X: `,Math.round(a.percentX),`% | Y: `,Math.round(a.percentY),`%`]}),(0,V.jsx)(`div`,{className:`absolute bottom-2 right-2 bg-[#1C1917]/85 text-[#C87A38] text-[10px] font-mono font-bold px-2 py-0.5 rounded border border-[#C87A38]/40 backdrop-blur-sm`,children:`Kalapravah 5x Macro Lens`})]}),(0,V.jsxs)(`p`,{className:`text-xs text-[#5C5652] italic leading-relaxed pt-1`,children:[`Examining fine lines, hand-pulled mineral pigments, gold leaf work, and fiber texture of `,(0,V.jsx)(`span`,{className:`font-semibold text-[#1C1917]`,children:e.title}),`.`]})]}),(0,V.jsxs)(`div`,{className:`bg-[#FAF8F3] border border-[#E7E0D2] p-3 rounded text-xs space-y-1.5 mt-auto`,children:[(0,V.jsxs)(`div`,{className:`font-semibold text-[#1C1917] flex items-center justify-between`,children:[(0,V.jsx)(`span`,{children:`Pigment & Texture Inspection`}),(0,V.jsx)(`button`,{onClick:()=>i(!1),className:`text-[11px] text-[#B94A2D] hover:underline font-medium`,children:`View Artwork Story`})]}),(0,V.jsx)(`p`,{className:`text-[11px] text-[#78716C]`,children:`Hand-painted using fine organic brushes (kachni line style) on handmade unbleached fiber paper.`})]})]}):(0,V.jsxs)(`div`,{className:`space-y-5 flex-grow flex flex-col justify-between`,children:[(0,V.jsxs)(`div`,{className:`space-y-4`,children:[(0,V.jsxs)(`div`,{children:[(0,V.jsx)(`span`,{className:`text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#B94A2D] block`,children:e.styleCategory||e.style||`Madhubani Folk Art`}),(0,V.jsx)(`h2`,{className:`font-serif text-2xl sm:text-3xl font-bold text-[#1C1917] mt-1`,children:e.title}),(0,V.jsxs)(`p`,{className:`text-[11px] sm:text-xs text-[#78716C] font-mono mt-1`,children:[`Created `,e.year||`2026`,` • Artist: Rashmi Dhar`]})]}),(0,V.jsxs)(`div`,{className:`bg-[#FAF8F3] border border-[#E7E0D2] rounded-md p-3 sm:p-4 text-xs space-y-2 shadow-sm`,children:[(0,V.jsxs)(`div`,{className:`flex justify-between py-1 border-b border-[#E7E0D2]/60`,children:[(0,V.jsx)(`span`,{className:`text-[#78716C]`,children:`Year`}),(0,V.jsx)(`span`,{className:`font-semibold text-[#1C1917]`,children:e.year||`2026`})]}),(0,V.jsxs)(`div`,{className:`flex justify-between py-1 border-b border-[#E7E0D2]/60`,children:[(0,V.jsx)(`span`,{className:`text-[#78716C]`,children:`Style`}),(0,V.jsx)(`span`,{className:`font-semibold text-[#1C1917]`,children:e.styleCategory||e.style||`Madhubani Folk Art`})]}),e.dimensions&&(0,V.jsxs)(`div`,{className:`flex justify-between py-1 border-b border-[#E7E0D2]/60`,children:[(0,V.jsx)(`span`,{className:`text-[#78716C]`,children:`Dimensions`}),(0,V.jsx)(`span`,{className:`font-semibold text-[#1C1917]`,children:e.dimensions})]}),e.medium&&(0,V.jsxs)(`div`,{className:`flex justify-between py-1 border-b border-[#E7E0D2]/60`,children:[(0,V.jsx)(`span`,{className:`text-[#78716C]`,children:`Medium`}),(0,V.jsx)(`span`,{className:`font-semibold text-[#1C1917] text-right max-w-[60%]`,children:e.medium})]}),e.technique&&(0,V.jsxs)(`div`,{className:`flex justify-between py-1 border-b border-[#E7E0D2]/60`,children:[(0,V.jsx)(`span`,{className:`text-[#78716C]`,children:`Technique`}),(0,V.jsx)(`span`,{className:`font-semibold text-[#1C1917] text-right max-w-[60%]`,children:e.technique})]}),e.pigments&&(0,V.jsxs)(`div`,{className:`flex justify-between py-1 border-b border-[#E7E0D2]/60`,children:[(0,V.jsx)(`span`,{className:`text-[#78716C]`,children:`Pigments & Ink`}),(0,V.jsx)(`span`,{className:`font-semibold text-[#1C1917] text-right max-w-[60%]`,children:e.pigments})]}),e.motifs&&e.motifs.length>0&&(0,V.jsxs)(`div`,{className:`flex justify-between py-1 border-b border-[#E7E0D2]/60`,children:[(0,V.jsx)(`span`,{className:`text-[#78716C]`,children:`Motifs`}),(0,V.jsx)(`span`,{className:`font-semibold text-[#1C1917] text-right max-w-[60%]`,children:e.motifs.join(`, `)})]}),(0,V.jsxs)(`div`,{className:`flex justify-between items-center pt-1 text-[11px]`,children:[(0,V.jsx)(`span`,{className:`text-[#78716C]`,children:`Authenticity`}),(0,V.jsxs)(`span`,{className:`font-semibold text-[#3E5A47] flex items-center gap-1.5`,children:[(0,V.jsx)(`img`,{src:`/images/logo-emblem.png`,alt:`Kalapravah Seal`,className:`w-3.5 h-3.5 object-contain`}),(0,V.jsx)(Qn,{className:`w-3 h-3 text-[#3E5A47]`}),` Kalapravah Original • Signed by Rashmi Dhar`]})]})]}),(0,V.jsxs)(`div`,{className:`space-y-2 border-t border-b border-[#E7E0D2] py-3.5 sm:py-4`,children:[(0,V.jsxs)(`span`,{className:`text-[11px] sm:text-xs font-bold uppercase tracking-widest text-[#1C1917] flex items-center gap-1.5`,children:[(0,V.jsx)(tr,{className:`w-3.5 h-3.5 text-[#B94A2D]`}),` Cultural Story & Backstory`]}),(0,V.jsx)(`p`,{className:`text-xs sm:text-sm text-[#44403C] leading-relaxed`,children:e.fullStory||e.description||e.medium})]})]}),(0,V.jsxs)(`div`,{className:`pt-3 space-y-2.5`,children:[(0,V.jsxs)(`a`,{href:`mailto:kalapravah.art@gmail.com?subject=Inquiry about Painting: ${e.title}`,className:`w-full py-3 px-4 bg-[#1C1917] hover:bg-[#2D2A26] text-white rounded-sm font-semibold text-xs tracking-wider uppercase flex items-center justify-center gap-2 transition-all shadow-sm active:scale-[0.99]`,children:[(0,V.jsx)(cr,{className:`w-4 h-4 text-[#22C55E]`}),(0,V.jsx)(`span`,{children:`Inquire / Reserve Painting`})]}),(0,V.jsxs)(`button`,{onClick:()=>{t(),n&&n()},className:`w-full py-2.5 px-4 bg-transparent border border-[#C87A38] text-[#C87A38] hover:bg-[#C87A38]/10 rounded-sm font-semibold text-xs tracking-wider uppercase flex items-center justify-center gap-2 transition-all active:scale-[0.99]`,children:[(0,V.jsx)(pr,{className:`w-4 h-4`}),(0,V.jsx)(`span`,{children:`Commission Similar Custom Artwork`})]})]})]})})]})]})})}function Qw(){return(0,V.jsxs)(`div`,{className:`fixed inset-0 pointer-events-none z-0 overflow-hidden select-none w-screen h-screen`,children:[(0,V.jsx)(`div`,{className:`absolute inset-0 bg-[#FAF8F3]/55 z-10`}),(0,V.jsx)(`img`,{src:`/images/madhubani_tapestry_bg.jpg`,alt:`Madhubani Twin Peacocks Canvas Background`,className:`absolute inset-0 w-full h-full object-cover object-center scale-108 sm:scale-110 opacity-[0.14] mix-blend-multiply z-0`})]})}function $w(){let{articleId:e}=ct(),t=ot(),[n,r]=S.useState(!1),i=[Hw,...Uw].find(t=>t.id===e)||Uw[0];(0,S.useEffect)(()=>{if(!i)return;let e=document.title;document.title=`${i.title} | Kalapravah Fine Art Blog`;let t=document.querySelector(`meta[name="description"]`);t||(t=document.createElement(`meta`),t.name=`description`,document.head.appendChild(t)),t.content=i.excerpt||i.subtitle;let n=document.querySelector(`link[rel="canonical"]`);n||(n=document.createElement(`link`),n.rel=`canonical`,document.head.appendChild(n)),n.href=`https://kalapravah.art/blog/${i.id}`;let r={"@context":`https://schema.org`,"@type":`BlogPosting`,mainEntityOfPage:{"@type":`WebPage`,"@id":`https://kalapravah.art/blog/${i.id}`},headline:i.title,description:i.excerpt||i.subtitle,image:`https://kalapravah.art${i.image}`,author:{"@type":`Person`,name:i.author||`Rashmi Dhar`},publisher:{"@type":`Organization`,name:`Kalapravah Mithila Art Gallery`,logo:{"@type":`ImageObject`,url:`https://kalapravah.art/images/logo-emblem.png`}},datePublished:i.date,keywords:i.seoKeywords?i.seoKeywords.join(`, `):`Madhubani art, Mithila painting`},a=document.getElementById(`json-ld-article-schema`);return a||(a=document.createElement(`script`),a.id=`json-ld-article-schema`,a.type=`application/ld+json`,document.head.appendChild(a)),a.text=JSON.stringify(r),window.scrollTo({top:0,behavior:`smooth`}),()=>{document.title=e,a&&a.remove()}},[i]);let a=S.useMemo(()=>{let e=Uw.filter(e=>e.id!==i.id&&e.category===i.category),t=Uw.filter(e=>e.id!==i.id&&e.category!==i.category);return[...e,...t].slice(0,3)},[i.id,i.category]),o=()=>{navigator.clipboard&&(navigator.clipboard.writeText(window.location.href),r(!0),setTimeout(()=>r(!1),2e3))},s=e=>{t(`/`,{state:{scrollTo:e}})};return(0,V.jsxs)(`div`,{className:`min-h-screen bg-transparent font-sans selection:bg-[#C87A38] selection:text-white text-[#44403C] relative`,children:[(0,V.jsx)(Qw,{}),(0,V.jsx)(yr,{activeSection:`blog`,setActiveSection:s}),(0,V.jsxs)(`article`,{className:`min-h-screen pt-24 sm:pt-28 pb-20 text-left relative z-10`,children:[(0,V.jsxs)(`div`,{className:`max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-8`,children:[(0,V.jsxs)(`div`,{className:`flex items-center justify-between border-b border-[#E7E0D2] pb-4`,children:[(0,V.jsxs)(`button`,{onClick:()=>s(`blog`),className:`inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-[#1C1917] hover:text-[#C87A38] transition-colors cursor-pointer`,children:[(0,V.jsx)(Hn,{className:`w-4 h-4`}),(0,V.jsx)(`span`,{children:`BACK TO KALAPRAVAH BLOG`})]}),(0,V.jsxs)(`button`,{onClick:o,className:`inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#FFFDF9] border border-[#E7E0D2] text-xs font-semibold text-[#5C5652] hover:text-[#1C1917] hover:border-[#C87A38] transition-all shadow-sm cursor-pointer`,children:[n?(0,V.jsx)(Jn,{className:`w-3.5 h-3.5 text-emerald-600`}):(0,V.jsx)(dr,{className:`w-3.5 h-3.5`}),(0,V.jsx)(`span`,{children:n?`Copied Link!`:`Share Webpage`})]})]}),(0,V.jsxs)(`nav`,{className:`flex items-center gap-2 text-[11px] font-medium text-[#78716C] mt-4 uppercase tracking-wider`,children:[(0,V.jsx)(`span`,{className:`hover:text-[#1C1917] cursor-pointer`,onClick:()=>s(`home`),children:`Home`}),(0,V.jsx)(`span`,{children:`/`}),(0,V.jsx)(`span`,{className:`hover:text-[#1C1917] cursor-pointer`,onClick:()=>s(`blog`),children:`Blog`}),(0,V.jsx)(`span`,{children:`/`}),(0,V.jsx)(`span`,{className:`text-[#C87A38] font-semibold`,children:i.category||`Article`})]})]}),(0,V.jsxs)(`main`,{className:`max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8`,children:[(0,V.jsxs)(`header`,{className:`space-y-4`,children:[(0,V.jsx)(`span`,{className:`inline-block px-3 py-1 bg-[#1C1917]/80 backdrop-blur-md text-white rounded-full text-[10px] font-bold uppercase tracking-widest`,children:i.category||`BLOG ARTICLE`}),(0,V.jsx)(`h1`,{className:`font-serif text-3xl sm:text-5xl font-bold text-[#1C1917] leading-[1.15] tracking-tight`,children:i.title}),i.subtitle&&(0,V.jsx)(`p`,{className:`text-base sm:text-xl text-[#5C5652] font-normal leading-relaxed`,children:i.subtitle}),(0,V.jsxs)(`div`,{className:`flex flex-wrap items-center gap-4 sm:gap-6 pt-3 pb-5 text-xs font-semibold text-[#78716C] border-t border-b border-[#E7E0D2]`,children:[(0,V.jsxs)(`div`,{className:`flex items-center gap-1.5`,children:[(0,V.jsx)(hr,{className:`w-3.5 h-3.5 text-[#C87A38]`}),(0,V.jsxs)(`span`,{children:[`By `,i.author]})]}),(0,V.jsxs)(`div`,{className:`flex items-center gap-1.5`,children:[(0,V.jsx)(qn,{className:`w-3.5 h-3.5 text-[#C87A38]`}),(0,V.jsxs)(`span`,{children:[`Published `,i.date]})]}),(0,V.jsxs)(`div`,{className:`flex items-center gap-1.5`,children:[(0,V.jsx)($n,{className:`w-3.5 h-3.5 text-[#C87A38]`}),(0,V.jsx)(`span`,{children:i.readTime})]})]})]}),i.image&&(0,V.jsxs)(`figure`,{className:`space-y-2`,children:[(0,V.jsx)(`div`,{className:`relative aspect-[16/9] overflow-hidden rounded-2xl border border-[#E7E0D2] bg-[#FFFDF9] shadow-md`,children:(0,V.jsx)(`img`,{src:i.image,alt:i.title,className:`w-full h-full object-cover`})}),(0,V.jsx)(`figcaption`,{className:`text-center text-xs text-[#78716C] italic font-serif`,children:`Original hand-painted Madhubani fine artwork by Rashmi Dhar • Kalapravah Studio Collection`})]}),(0,V.jsx)(`div`,{className:`prose prose-stone max-w-none text-[#44403C] text-base sm:text-lg leading-relaxed space-y-6 pt-4 font-light`,dangerouslySetInnerHTML:{__html:i.content}}),i.seoKeywords&&i.seoKeywords.length>0&&(0,V.jsxs)(`section`,{className:`pt-8 border-t border-[#E7E0D2] space-y-3`,children:[(0,V.jsx)(`h3`,{className:`text-xs font-bold tracking-widest text-[#78716C] uppercase`,children:`INDEXED TOPICS & SEARCH KEYWORDS`}),(0,V.jsx)(`div`,{className:`flex flex-wrap gap-2`,children:i.seoKeywords.map((e,t)=>(0,V.jsxs)(`span`,{className:`px-3.5 py-1.5 bg-[#FFFDF9] border border-[#E7E0D2] rounded-full text-xs font-medium text-[#5C5652]`,children:[`#`,e.trim()]},t))})]}),(0,V.jsxs)(`section`,{className:`p-6 sm:p-8 bg-[#FFFDF9] border border-[#E7E0D2] rounded-2xl shadow-sm flex flex-col md:flex-row items-center justify-between gap-6 my-12`,children:[(0,V.jsxs)(`div`,{className:`space-y-2`,children:[(0,V.jsx)(`span`,{className:`text-[10px] font-bold tracking-widest text-[#C87A38] uppercase block`,children:`KALAPRAVAH FINE ART GALLERY`}),(0,V.jsx)(`h3`,{className:`font-serif text-xl font-bold text-[#1C1917]`,children:`Acquire Original Madhubani Masterpieces`}),(0,V.jsx)(`p`,{className:`text-xs sm:text-sm text-[#5C5652] max-w-md font-light`,children:`Each painting is hand-drawn on archival cotton fiber paper using organic mineral pigments. Inquire about available pieces or commission a custom motif.`})]}),(0,V.jsxs)(`div`,{className:`flex flex-col sm:flex-row gap-3 w-full md:w-auto`,children:[(0,V.jsx)(`button`,{onClick:()=>s(`gallery`),className:`px-5 py-3 rounded-full border border-[#1C1917] text-xs font-semibold uppercase tracking-wider text-[#1C1917] hover:bg-[#1C1917] hover:text-white transition-all text-center whitespace-nowrap cursor-pointer`,children:`Explore Artworks`}),(0,V.jsxs)(`button`,{onClick:()=>s(`contact`),className:`px-5 py-3 rounded-full bg-[#1C1917] hover:bg-[#C87A38] text-white text-xs font-semibold uppercase tracking-wider transition-colors text-center whitespace-nowrap flex items-center justify-center gap-2 cursor-pointer shadow-sm`,children:[(0,V.jsx)(`span`,{children:`Commission Custom Art`}),(0,V.jsx)(Un,{className:`w-4 h-4`})]})]})]}),(0,V.jsxs)(`section`,{className:`pt-10 border-t border-[#E7E0D2] space-y-6`,children:[(0,V.jsxs)(`div`,{className:`flex items-center gap-2`,children:[(0,V.jsx)(Kn,{className:`w-4 h-4 text-[#C87A38]`}),(0,V.jsx)(`h3`,{className:`font-serif text-2xl font-bold text-[#1C1917]`,children:`More Articles from The Blog`})]}),(0,V.jsx)(`div`,{className:`grid grid-cols-1 sm:grid-cols-3 gap-5`,children:a.map(e=>(0,V.jsxs)(yn,{to:`/blog/${e.id}`,className:`group cursor-pointer flex flex-col justify-between p-3.5 rounded-2xl bg-[#FFFDF9]/60 hover:bg-[#FFFDF9] border border-[#E7E0D2]/50 hover:border-[#E7E0D2] transition-all`,children:[(0,V.jsxs)(`div`,{children:[(0,V.jsx)(`div`,{className:`relative aspect-[4/3] overflow-hidden rounded-xl mb-3 bg-[#FAF8F3]`,children:(0,V.jsx)(`img`,{src:e.image,alt:e.title,className:`w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500`})}),(0,V.jsx)(`h4`,{className:`font-serif text-sm font-normal text-[#1C1917] group-hover:text-[#C87A38] transition-colors line-clamp-2 mb-2`,children:e.title})]}),(0,V.jsx)(`span`,{className:`text-[10px] font-semibold tracking-wider text-[#78716C] uppercase pt-2 border-t border-[#E7E0D2]/50`,children:e.readTime})]},e.id))})]})]})]}),(0,V.jsx)(Xw,{onNavigate:s})]})}function eT(){let e=ot();(0,S.useEffect)(()=>{let e=document.title;document.title=`Kalapravah Blog | Mithila & Madhubani Art History, Techniques & Motif Guides`;let t=document.querySelector(`meta[name="description"]`);t||(t=document.createElement(`meta`),t.name=`description`,document.head.appendChild(t)),t.content=`Explore the complete Kalapravah journal: in-depth articles on Madhubani art history, 5 core styles, natural mineral pigments, and sacred Mithila symbolism.`;let n=document.querySelector(`link[rel="canonical"]`);n||(n=document.createElement(`link`),n.rel=`canonical`,document.head.appendChild(n)),n.href=`https://kalapravah.art/blog`;let r={"@context":`https://schema.org`,"@type":`Blog`,mainEntityOfPage:{"@type":`WebPage`,"@id":`https://kalapravah.art/blog`},name:`Kalapravah Fine Art Journal & Blog`,description:`Authentic research, guides, and stories on traditional Madhubani and Mithila art by Rashmi Dhar.`,publisher:{"@type":`Organization`,name:`Kalapravah Mithila Art Gallery`,logo:{"@type":`ImageObject`,url:`https://kalapravah.art/images/logo-emblem.png`}}},i=document.getElementById(`json-ld-blog-index-schema`);return i||(i=document.createElement(`script`),i.id=`json-ld-blog-index-schema`,i.type=`application/ld+json`,document.head.appendChild(i)),i.text=JSON.stringify(r),window.scrollTo({top:0,behavior:`smooth`}),()=>{document.title=e,i&&i.remove()}},[]);let t=t=>{e(`/`,{state:{scrollTo:t}})};return(0,V.jsxs)(`div`,{className:`min-h-screen bg-transparent font-sans selection:bg-[#C87A38] selection:text-white text-[#44403C] relative`,children:[(0,V.jsx)(Qw,{}),(0,V.jsx)(yr,{activeSection:`blog`,setActiveSection:t}),(0,V.jsx)(`main`,{className:`min-h-screen pt-20 sm:pt-22 pb-16 text-left relative z-10`,children:(0,V.jsxs)(`div`,{className:`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 sm:space-y-8`,children:[(0,V.jsxs)(`nav`,{className:`flex items-center gap-2 text-[11px] font-medium text-[#78716C] uppercase tracking-wider`,children:[(0,V.jsx)(`span`,{className:`hover:text-[#1C1917] cursor-pointer`,onClick:()=>t(`home`),children:`Home`}),(0,V.jsx)(`span`,{children:`/`}),(0,V.jsx)(`span`,{className:`text-[#C87A38] font-semibold`,children:`Blog Archive`})]}),(0,V.jsxs)(`div`,{className:`text-center max-w-3xl mx-auto space-y-2.5`,children:[(0,V.jsx)(`h1`,{className:`font-serif text-3xl sm:text-5xl font-normal text-[#1C1917] tracking-tight`,children:`THE KALAPRAVAH BLOG`}),(0,V.jsx)(`p`,{className:`text-sm sm:text-base text-[#5C5652] leading-relaxed max-w-2xl mx-auto font-light`,children:`Explore our complete collection of heritage articles, pigment guides, traditional line art styles, and motif symbolism.`}),(0,V.jsx)(`div`,{className:`w-20 h-[2px] bg-[#C87A38] mx-auto rounded-full mt-2`})]}),(0,V.jsx)(`div`,{className:`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8`,children:Uw.map(e=>(0,V.jsxs)(yn,{to:`/blog/${e.id}`,className:`group cursor-pointer text-left flex flex-col justify-between transition-all p-4 rounded-2xl bg-[#FFFDF9]/70 hover:bg-[#FFFDF9] border border-transparent hover:border-[#E7E0D2] shadow-xs hover:shadow-md block`,children:[(0,V.jsxs)(`div`,{children:[(0,V.jsxs)(`div`,{className:`relative aspect-[16/10] overflow-hidden rounded-xl mb-4 shadow-sm group-hover:shadow-md transition-shadow duration-500 bg-[#FAF8F3]`,children:[(0,V.jsx)(`img`,{src:e.image,alt:e.title,className:`w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700`}),(0,V.jsx)(`span`,{className:`absolute bottom-2.5 left-2.5 bg-[#1C1917]/85 backdrop-blur-md text-white text-[9px] font-semibold px-2.5 py-1 rounded-full tracking-wider uppercase`,children:e.category})]}),(0,V.jsx)(`h3`,{className:`font-serif text-lg font-normal text-[#1C1917] leading-snug group-hover:text-[#C87A38] transition-colors mb-2 line-clamp-2`,children:e.title}),(0,V.jsx)(`p`,{className:`text-xs sm:text-sm text-[#5C5652] leading-relaxed mb-4 line-clamp-3 font-light`,children:e.excerpt})]}),(0,V.jsxs)(`div`,{className:`pt-3 border-t border-[#E7E0D2]/60 flex items-center justify-between text-[10px] font-semibold text-[#78716C] tracking-wider uppercase`,children:[(0,V.jsx)(`span`,{children:e.date}),(0,V.jsxs)(`span`,{className:`flex items-center gap-1 group-hover:text-[#C87A38] transition-colors`,children:[e.readTime,(0,V.jsx)(Un,{className:`w-3.5 h-3.5`})]})]})]},e.id))})]})}),(0,V.jsx)(Xw,{onNavigate:t})]})}function tT(){let[e,t]=(0,S.useState)(`home`),[n,r]=(0,S.useState)(null),i=rt();(0,S.useEffect)(()=>{if(i.state?.scrollTo){let e=i.state.scrollTo;setTimeout(()=>{let t=document.getElementById(e);if(t){let e=t.getBoundingClientRect().top+window.pageYOffset-84;window.scrollTo({top:e,behavior:`smooth`})}},100)}},[i]),(0,S.useEffect)(()=>{let e=()=>{let e=[`home`,`art-artist`,`gallery`,`blog`,`contact`],n=window.innerHeight,r=window.scrollY,i=document.documentElement.scrollHeight;if(n+r>=i-100){t(`contact`);return}let a=`home`;for(let t of e){let e=document.getElementById(t);e&&e.getBoundingClientRect().top<=120&&(a=t)}t(a)};return window.addEventListener(`scroll`,e,{passive:!0}),window.addEventListener(`resize`,e,{passive:!0}),e(),()=>{window.removeEventListener(`scroll`,e),window.removeEventListener(`resize`,e)}},[]);let a=e=>{t(e);let n=document.getElementById(e);if(n){let e=n.getBoundingClientRect().top+window.pageYOffset-84;window.scrollTo({top:e,behavior:`smooth`})}};return(0,V.jsxs)(`div`,{className:`min-h-screen bg-transparent font-sans selection:bg-[#C87A38] selection:text-white text-[#44403C] relative`,children:[(0,V.jsx)(Qw,{}),(0,V.jsx)(yr,{activeSection:e,setActiveSection:e=>a(e)}),(0,V.jsxs)(`main`,{className:`w-full`,children:[(0,V.jsx)(Vw,{onExploreArtworks:()=>a(`gallery`),onExploreArtist:()=>a(`art-artist`)}),(0,V.jsx)(Ww,{onContactArtist:()=>a(`contact`)}),(0,V.jsx)(Kw,{onSelectArtwork:e=>r(e)}),(0,V.jsx)(qw,{onOpenCommission:()=>a(`contact`)})]}),(0,V.jsx)(Xw,{onNavigate:e=>a(e)}),(0,V.jsx)(Zw,{artwork:n,onClose:()=>r(null),onOpenCommission:()=>a(`contact`)})]})}function nT(){return(0,V.jsxs)(Nt,{children:[(0,V.jsx)(jt,{path:`/`,element:(0,V.jsx)(tT,{})}),(0,V.jsx)(jt,{path:`/blog`,element:(0,V.jsx)(eT,{})}),(0,V.jsx)(jt,{path:`/blog/:articleId`,element:(0,V.jsx)($w,{})}),(0,V.jsx)(jt,{path:`*`,element:(0,V.jsx)(At,{to:`/`,replace:!0})})]})}(0,An.createRoot)(document.getElementById(`root`)).render((0,V.jsx)(S.StrictMode,{children:(0,V.jsx)(vn,{children:(0,V.jsx)(nT,{})})}));
