@@ -14,12 +14,20 @@ export default function Navbar({ activeSection, setActiveSection }) {
   }, []);
 
   useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') {
+        setMobileMenuOpen(false);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+
     if (mobileMenuOpen) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = '';
     }
     return () => {
+      window.removeEventListener('keydown', handleKeyDown);
       document.body.style.overflow = '';
     };
   }, [mobileMenuOpen]);
@@ -38,7 +46,7 @@ export default function Navbar({ activeSection, setActiveSection }) {
     setMobileMenuOpen(false);
     const elem = document.getElementById(id);
     if (elem) {
-      const navOffset = 84;
+      const navOffset = window.innerWidth < 640 ? 68 : 84;
       const elementPosition = elem.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - navOffset;
 
@@ -62,7 +70,7 @@ export default function Navbar({ activeSection, setActiveSection }) {
         {/* Brand Logo & Title */}
         <button 
           onClick={() => handleNavClick('home')} 
-          className="text-left group focus:outline-none flex items-center gap-2.5 sm:gap-3"
+          className="text-left group focus:outline-none flex items-center gap-2.5 sm:gap-3 cursor-pointer"
         >
           <img 
             src="/images/logo-emblem.png" 
@@ -77,7 +85,7 @@ export default function Navbar({ activeSection, setActiveSection }) {
         </button>
 
         {/* Desktop Header Nav Links */}
-        <nav className="hidden md:flex items-center gap-6 lg:gap-8">
+        <nav className="hidden md:flex items-center gap-5 lg:gap-8">
           {navItems.map((item) => {
             const isActive = activeSection === item.id;
             return (
@@ -107,7 +115,7 @@ export default function Navbar({ activeSection, setActiveSection }) {
             href="https://wa.me/919971399395?text=Hello%20Rashmi%2C%20I%20am%20inquiring%20about%20Kalapravah%20artworks."
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden sm:inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1C1917] hover:bg-[#C87A38] text-white text-[11px] font-semibold tracking-wider uppercase transition-colors shadow-sm"
+            className="hidden sm:inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-[#1C1917] hover:bg-[#C87A38] text-white text-[11px] font-semibold tracking-wider uppercase transition-colors shadow-sm cursor-pointer"
           >
             <MessageSquare className="w-3.5 h-3.5 text-[#25D366]" />
             <span>INQUIRE</span>
@@ -115,7 +123,7 @@ export default function Navbar({ activeSection, setActiveSection }) {
 
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden w-10 h-10 rounded-full bg-[#FFFDF9] border border-[#E7E0D2] flex items-center justify-center text-[#1C1917] hover:text-[#C87A38] active:scale-95 transition-all shadow-sm"
+            className="md:hidden w-11 h-11 rounded-full bg-[#FFFDF9] border border-[#E7E0D2] flex items-center justify-center text-[#1C1917] hover:text-[#C87A38] active:scale-95 transition-all shadow-sm cursor-pointer"
             aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -127,11 +135,11 @@ export default function Navbar({ activeSection, setActiveSection }) {
       {/* Mobile Slide-Down Drawer Navigation */}
       {mobileMenuOpen && (
         <div 
-          className="md:hidden fixed inset-x-0 top-[60px] bottom-0 bg-[#1C1917]/50 backdrop-blur-md z-40 animate-fade-in"
+          className="md:hidden fixed inset-x-0 top-full bottom-0 h-[calc(100vh-100%)] bg-[#1C1917]/50 backdrop-blur-md z-40 animate-fade-in"
           onClick={() => setMobileMenuOpen(false)}
         >
           <div 
-            className="bg-[#FAF8F3] border-b border-[#E7E0D2] px-5 sm:px-6 pt-5 pb-8 shadow-2xl space-y-5 max-h-[calc(100vh-70px)] overflow-y-auto"
+            className="bg-[#FAF8F3] border-b border-[#E7E0D2] px-5 sm:px-6 pt-5 pb-8 shadow-2xl space-y-5 max-h-[85vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="space-y-2">
@@ -144,7 +152,7 @@ export default function Navbar({ activeSection, setActiveSection }) {
                   <button
                     key={item.id}
                     onClick={() => handleNavClick(item.id)}
-                    className={`flex items-center justify-between py-3.5 px-4 rounded-md text-sm font-semibold tracking-wider transition-all text-left uppercase ${
+                    className={`flex items-center justify-between min-h-[44px] py-3 px-4 rounded-md text-sm font-semibold tracking-wider transition-all text-left uppercase cursor-pointer ${
                       activeSection === item.id
                         ? 'bg-[#1C1917] text-white shadow-sm'
                         : 'text-[#44403C] hover:bg-[#F3EFE6]'
@@ -164,7 +172,7 @@ export default function Navbar({ activeSection, setActiveSection }) {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}
-                className="w-full flex items-center justify-center gap-2 py-3.5 px-4 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-md font-semibold text-xs tracking-wider uppercase transition-colors shadow-md"
+                className="w-full flex items-center justify-center gap-2 min-h-[44px] py-3 px-4 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-md font-semibold text-xs tracking-wider uppercase transition-colors shadow-md cursor-pointer"
               >
                 <MessageSquare className="w-4 h-4 fill-current" />
                 <span>WhatsApp Inquiry</span>

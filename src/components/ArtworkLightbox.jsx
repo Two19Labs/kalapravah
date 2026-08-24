@@ -150,28 +150,53 @@ export default function ArtworkLightbox({ artwork, onClose, onOpenCommission }) 
 
               {/* Hover Instruction Overlay Hint */}
               {!isHovering && (
-                <div className="absolute inset-0 bg-[#1C1917]/10 flex items-center justify-center pointer-events-none">
-                  <div className="bg-[#1C1917]/90 text-white text-xs font-semibold px-4 py-2 rounded-full backdrop-blur-md shadow-xl flex items-center gap-2 border border-[#C87A38]/40">
-                    <Eye className="w-4 h-4 text-[#C87A38]" />
-                    <span>Hover over artwork to inspect fine details</span>
+                <div className="absolute inset-0 bg-[#1C1917]/10 flex items-center justify-center pointer-events-none p-4">
+                  <div className="bg-[#1C1917]/90 text-white text-xs font-semibold px-3.5 py-2 rounded-full backdrop-blur-md shadow-xl flex items-center gap-2 border border-[#C87A38]/40 text-center">
+                    <Eye className="w-4 h-4 text-[#C87A38] shrink-0" />
+                    <span>Touch or hover canvas to inspect fine details</span>
                   </div>
                 </div>
               )}
             </div>
 
             {/* Bottom Guidance Text */}
-            <div className="mt-3 text-[11px] text-[#78716C] text-center font-serif italic">
-              <span className="font-semibold text-[#1C1917]">Tip:</span> Move cursor over artwork to inspect fine details
+            <div className="mt-3 text-[11px] text-[#78716C] text-center font-serif italic flex items-center justify-center gap-2">
+              <span className="font-semibold text-[#1C1917]">Tip:</span> Touch or move cursor over artwork to inspect 5x macro lines
             </div>
 
           </div>
 
           {/* Right Column: High-Definition Side Zoom Viewport or Standard Details */}
-          <div className="lg:col-span-6 p-5 sm:p-8 space-y-5 text-left flex flex-col justify-between bg-[#FFFDF9] relative min-h-[420px]">
+          <div className="lg:col-span-6 p-4 sm:p-6 lg:p-8 space-y-5 text-left flex flex-col justify-between bg-[#FFFDF9] relative min-h-[400px]">
             
+            {/* View Mode Switcher Pills for Mobile & Tablet */}
+            <div className="flex items-center justify-between border-b border-[#E7E0D2] pb-3">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-[#78716C]">
+                VIEW MODE
+              </span>
+              <div className="flex items-center gap-1.5 bg-[#FAF8F3] p-1 rounded-lg border border-[#E7E0D2]">
+                <button
+                  onClick={() => setIsHovering(false)}
+                  className={`px-2.5 py-1 rounded text-[11px] font-semibold transition-all cursor-pointer ${
+                    !isHovering ? 'bg-[#1C1917] text-white shadow-xs' : 'text-[#5C5652] hover:text-[#1C1917]'
+                  }`}
+                >
+                  Story & Specs
+                </button>
+                <button
+                  onClick={() => setIsHovering(true)}
+                  className={`px-2.5 py-1 rounded text-[11px] font-semibold transition-all cursor-pointer ${
+                    isHovering ? 'bg-[#C87A38] text-white shadow-xs' : 'text-[#5C5652] hover:text-[#1C1917]'
+                  }`}
+                >
+                  5.0x Lens View
+                </button>
+              </div>
+            </div>
+
             {/* Dynamic View: High-Definition Macro Zoom Pane when hovering */}
             {isHovering ? (
-              <div className="h-full flex flex-col justify-between animate-in fade-in duration-200">
+              <div className="h-full flex flex-col justify-between animate-in fade-in duration-200 space-y-4">
                 <div className="space-y-3">
                   <div className="flex items-center justify-between border-b border-[#E7E0D2] pb-2">
                     <div className="flex items-center gap-2">
@@ -221,7 +246,7 @@ export default function ArtworkLightbox({ artwork, onClose, onOpenCommission }) 
                     <span>Pigment & Texture Inspection</span>
                     <button 
                       onClick={() => setIsHovering(false)} 
-                      className="text-[11px] text-[#B94A2D] hover:underline font-medium"
+                      className="text-[11px] text-[#B94A2D] hover:underline font-medium cursor-pointer"
                     >
                       View Artwork Story
                     </button>

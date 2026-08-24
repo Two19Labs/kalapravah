@@ -199,7 +199,7 @@ export default function ArtGallerySection({ onSelectArtwork }) {
                       onSelectArtwork(artwork);
                     }
                   }}
-                  className="w-[300px] sm:w-[360px] lg:w-[380px] min-w-[300px] sm:min-w-[360px] lg:min-w-[380px] shrink-0 deckled-frame bg-[#FFFDF9] border-2 border-[#E7E0D2] hover:border-[#C87A38] rounded-xl p-4 sm:p-5 shadow-md hover:shadow-2xl transition-all duration-300 group cursor-pointer flex flex-col justify-between h-[480px] sm:h-[510px]"
+                  className="w-[270px] xs:w-[310px] sm:w-[360px] lg:w-[380px] min-w-[270px] xs:min-w-[310px] sm:min-w-[360px] lg:min-w-[380px] shrink-0 deckled-frame bg-[#FFFDF9] border-2 border-[#E7E0D2] hover:border-[#C87A38] rounded-xl p-3.5 xs:p-4 sm:p-5 shadow-md hover:shadow-2xl transition-all duration-300 group cursor-pointer flex flex-col justify-between h-[470px] xs:h-[480px] sm:h-[510px]"
                 >
                   <div className="space-y-3">
                     

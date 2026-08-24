@@ -79,29 +79,29 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
 
           {/* Centered High-Impact Headline */}
           <div className="space-y-3">
-            <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.1] drop-shadow-xl text-center">
-              Traditional Elegance <br />
+            <h1 className="font-serif text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.15] drop-shadow-xl text-center">
+              Traditional Elegance <br className="hidden xs:inline" />
               For <span className="font-serif italic font-normal text-[#F59E0B] underline decoration-[#F59E0B]/50 decoration-wavy decoration-1 underline-offset-8">Contemporary</span> Spaces
             </h1>
           </div>
 
           {/* Centered Narrative Subtitle */}
-          <p className="text-base sm:text-lg lg:text-xl text-white/90 leading-relaxed font-light max-w-2xl mx-auto text-center drop-shadow-md">
+          <p className="text-sm xs:text-base sm:text-lg lg:text-xl text-white/90 leading-relaxed font-light max-w-2xl mx-auto text-center drop-shadow-md">
             Bringing ancient storytelling, rich mineral pigments, and meditative line work of traditional <strong>Madhubani/Mithila folk art</strong> directly into modern living spaces.
           </p>
 
           {/* Centered Action Buttons */}
-          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 pt-4">
+          <div className="flex flex-col xs:flex-row items-center justify-center gap-3 sm:gap-4 pt-3 sm:pt-4 w-full max-w-xs xs:max-w-none mx-auto">
             <button
               onClick={onExploreArtworks}
-              className="px-6 sm:px-7 py-3.5 rounded-full bg-transparent hover:bg-white/15 text-white border-2 border-white/80 hover:border-white text-xs sm:text-sm font-bold tracking-widest uppercase transition-all backdrop-blur-md shadow-lg cursor-pointer hover:scale-105 active:scale-95"
+              className="w-full xs:w-auto text-center px-6 sm:px-7 py-3.5 rounded-full bg-transparent hover:bg-white/15 text-white border-2 border-white/80 hover:border-white text-xs sm:text-sm font-bold tracking-widest uppercase transition-all backdrop-blur-md shadow-lg cursor-pointer hover:scale-105 active:scale-95"
             >
               EXPLORE ART GALLERY
             </button>
 
             <button
               onClick={onExploreArtist}
-              className="px-7 sm:px-8 py-3.5 rounded-full bg-[#C87A38] hover:bg-[#b56929] text-white text-xs sm:text-sm font-bold tracking-widest uppercase transition-all shadow-2xl hover:scale-105 active:scale-95 cursor-pointer border border-[#C87A38]"
+              className="w-full xs:w-auto text-center px-7 sm:px-8 py-3.5 rounded-full bg-[#C87A38] hover:bg-[#b56929] text-white text-xs sm:text-sm font-bold tracking-widest uppercase transition-all shadow-2xl hover:scale-105 active:scale-95 cursor-pointer border border-[#C87A38]"
             >
               ABOUT THE ARTIST
             </button>
@@ -135,7 +135,7 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
         <div id="about" className="space-y-8">
           
           {/* 2-Column Grid Layout: Text on Left, 3D Sphere on Right */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-center max-w-6xl mx-auto">
             
             {/* LEFT COLUMN: TITLE & NARRATIVE (lg:col-span-7) */}
             <div className="lg:col-span-7 space-y-5 text-left">
@@ -143,13 +143,13 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
                 <span className="text-[10px] font-bold tracking-[0.28em] uppercase text-[#C87A38] block">
                   THE KALAPRAVAH PHILOSOPHY
                 </span>
-                <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1C1917] tracking-tight">
+                <h2 className="font-serif text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1C1917] tracking-tight">
                   About KALAPRAVAH
                 </h2>
                 <div className="w-16 h-[2.5px] bg-[#C87A38] rounded-full mt-1.5" />
               </div>
 
-              <p className="font-serif text-lg sm:text-xl text-[#1C1917] italic leading-relaxed font-normal pt-1">
+              <p className="font-serif text-base sm:text-xl text-[#1C1917] italic leading-relaxed font-normal pt-1">
                 "Where Heritage Meets Contemporary Calm"
               </p>
               
@@ -171,7 +171,7 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
               
               {/* Circular Background Container with floating "Click" tag */}
               <div className="relative">
-                <div className="w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] lg:w-[340px] lg:h-[340px] rounded-full bg-[#FFFDF9] border-2 border-[#C87A38]/40 shadow-2xl relative overflow-hidden flex items-center justify-center">
+                <div className="w-[240px] h-[240px] xs:w-[280px] xs:h-[280px] sm:w-[320px] sm:h-[320px] lg:w-[340px] lg:h-[340px] rounded-full bg-[#FFFDF9] border-2 border-[#C87A38]/40 shadow-2xl relative overflow-hidden flex items-center justify-center">
                   <LunarGravityCard
                     className="w-full h-full"
                     artTextureUrl="/images/sphere_madhubani.jpg"
