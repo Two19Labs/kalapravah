@@ -72,9 +72,6 @@ export default function Navbar({ activeSection, setActiveSection }) {
             <span className="font-serif text-lg sm:text-2xl font-bold tracking-widest text-[#1C1917] uppercase leading-none">
               KALAPRAVAH
             </span>
-            <span className="text-[8px] sm:text-[9.5px] font-semibold tracking-[0.22em] text-[#C87A38] uppercase mt-0.5">
-              MITHILA ART & ARTIST STUDIO
-            </span>
           </div>
         </button>
 
