@@ -130,7 +130,7 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
       {/* ========================================================================= */}
       {/* 2. ABOUT KALAPRAVAH (SEAMLESS BRAND MISSION & CELESTIAL SPHERE)          */}
       {/* ========================================================================= */}
-      <div id="welcome-section" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-10 sm:space-y-14 lg:space-y-16 py-12 sm:py-16">
+      <div id="welcome-section" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-10 sm:space-y-14 lg:space-y-16 pt-10 sm:pt-14 pb-6 sm:pb-8">
         
         <div id="about" className="space-y-8">
           

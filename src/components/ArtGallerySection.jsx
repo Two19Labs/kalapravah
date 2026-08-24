@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ARTWORKS } from '../data/artworks';
-import { GalleryVertical, Calendar, Landmark, MapPin, Users, Sparkles, Eye, ArrowUpRight, ChevronLeft, ChevronRight, Pause, Play, HeartHandshake } from 'lucide-react';
+import { GalleryVertical, Calendar, Landmark, MapPin, Users, Sparkles, Eye, ArrowUpRight, ChevronLeft, ChevronRight, Pause, Play, HeartHandshake, Globe, Clock } from 'lucide-react';
 
 export default function ArtGallerySection({ onSelectArtwork }) {
   const [filterStyle, setFilterStyle] = useState('All');
@@ -118,7 +118,7 @@ export default function ArtGallerySection({ onSelectArtwork }) {
   };
 
   return (
-    <section id="gallery" className="py-8 sm:py-10 lg:py-12 bg-transparent relative overflow-hidden border-b border-[#E7E0D2] scroll-mt-20 sm:scroll-mt-24">
+    <section id="gallery" className="pt-6 sm:pt-8 lg:pt-10 pb-12 sm:pb-16 bg-transparent relative overflow-hidden border-b border-[#E7E0D2] scroll-mt-20 sm:scroll-mt-24">
       
       {/* Ambient Lights */}
       <div className="absolute top-1/4 right-0 w-96 h-96 bg-[#C87A38]/5 rounded-full blur-3xl pointer-events-none" />
@@ -282,7 +282,7 @@ export default function ArtGallerySection({ onSelectArtwork }) {
         {/* ========================================================================= */}
         <div id="exhibitions" className="pt-8 sm:pt-10 lg:pt-12 mt-8 sm:mt-10 lg:mt-12 border-t border-[#E7E0D2] space-y-6 sm:space-y-8">
           
-          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-[#E7E0D2] pb-4">
+          <div className="border-b border-[#E7E0D2] pb-4">
             <div>
               <span className="text-[10px] font-bold tracking-[0.24em] text-[#C87A38] uppercase block">
                 GALLERY EXHIBITIONS & SHOWS
@@ -290,10 +290,6 @@ export default function ArtGallerySection({ onSelectArtwork }) {
               <h3 className="font-serif text-2xl sm:text-4xl font-normal text-[#1C1917]">
                 Exhibitions
               </h3>
-            </div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FFFDF9] border border-[#E7E0D2] text-xs text-[#78716C]">
-              <Landmark className="w-3.5 h-3.5 text-[#C87A38]" />
-              <span>India Habitat Centre (IHC) Feature</span>
             </div>
           </div>
 
@@ -374,10 +370,6 @@ export default function ArtGallerySection({ onSelectArtwork }) {
                   <MapPin className="w-4 h-4 text-[#9A3412]" />
                   <span>@ SUNDER NURSERY, NEW DELHI</span>
                 </div>
-                <div className="flex items-center gap-1 text-[11px] font-semibold text-[#78716C] bg-[#FAF8F3] px-2.5 py-0.5 rounded border border-[#E7E0D2]">
-                  <HeartHandshake className="w-3.5 h-3.5 text-[#C87A38]" />
-                  <span>Art Is Meant To Be Shared</span>
-                </div>
               </div>
 
               <h4 className="font-serif text-xl sm:text-2xl font-bold text-[#1C1917]">
@@ -388,15 +380,12 @@ export default function ArtGallerySection({ onSelectArtwork }) {
                 Artist Rashmi Dhar has conducted several meditative Madhubani art workshops in last 2 years amidst nature for all ages. Participants experienced an stress-busting journey into this 3,000-year-old heritage art, dating back to Ramayana times, and proudly carried home their own handcrafted traditional masterpieces.
               </p>
 
-              {/* Other Workshops Badges */}
-              <div className="pt-4 border-t border-[#E7E0D2] flex flex-wrap items-center gap-3">
-                <span className="text-xs font-bold text-[#1C1917] uppercase tracking-wider">Other workshops:</span>
-                <span className="px-3 py-1 rounded-full bg-[#FAF8F3] border border-[#E7E0D2] text-xs font-semibold text-[#78716C]">
-                  @ Lalit Kala academy
-                </span>
-                <span className="px-3 py-1 rounded-full bg-[#FAF8F3] border border-[#E7E0D2] text-xs font-semibold text-[#78716C]">
-                  @ Bikaner house
-                </span>
+              {/* Other Workshop Venues Text Strip (Replaces Pill Buttons) */}
+              <div className="pt-4 border-t border-[#E7E0D2]/70 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-[#5C5652]">
+                <span className="font-bold text-[#1C1917] uppercase tracking-wider">Other Workshop Venues:</span>
+                <span className="font-medium text-[#44403C]">Lalit Kala Akademi</span>
+                <span className="text-[#C87A38] font-bold">•</span>
+                <span className="font-medium text-[#44403C]">Bikaner House</span>
               </div>
             </div>
 
@@ -430,10 +419,20 @@ export default function ArtGallerySection({ onSelectArtwork }) {
                 At the Aga Khan Foundation’s summer camp, Rashmi Dhar led a meditative Madhubani art workshop. Forty teens aged 15-20 across globe & from India, the USA, Canada, and the UAE gathered for two days of skill-building. Beyond mastering traditional techniques, they found deep mindfulness, stress relief, and brought home 3,000-year-old art masterpieces.
               </p>
 
-              <div className="pt-2 flex flex-wrap gap-2 text-[11px] font-semibold text-[#78716C]">
-                <span className="px-2.5 py-1 rounded bg-[#FAF8F3] border border-[#E7E0D2]">40 Global Teen Participants</span>
-                <span className="px-2.5 py-1 rounded bg-[#FAF8F3] border border-[#E7E0D2]">India, USA, Canada, UAE</span>
-                <span className="px-2.5 py-1 rounded bg-[#FAF8F3] border border-[#E7E0D2]">2-Day Intensive</span>
+              {/* Event Metadata Strip (Replaces Pill Buttons) */}
+              <div className="pt-4 border-t border-[#E7E0D2]/70 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-[#5C5652]">
+                <div className="flex items-center gap-1.5 font-medium text-[#44403C]">
+                  <Users className="w-3.5 h-3.5 text-[#C87A38]" />
+                  <span>40 Global Teen Participants</span>
+                </div>
+                <div className="flex items-center gap-1.5 font-medium text-[#44403C]">
+                  <Globe className="w-3.5 h-3.5 text-[#C87A38]" />
+                  <span>India, USA, Canada & UAE</span>
+                </div>
+                <div className="flex items-center gap-1.5 font-medium text-[#44403C]">
+                  <Clock className="w-3.5 h-3.5 text-[#C87A38]" />
+                  <span>2-Day Intensive Workshop</span>
+                </div>
               </div>
             </div>
 

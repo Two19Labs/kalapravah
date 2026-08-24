@@ -1,59 +1,90 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Palette, UserCheck, Sparkles, HeartHandshake, ShieldCheck, Quote, Mountain, GraduationCap, Award, Compass, MessageSquare, ArrowRight } from 'lucide-react';
+import { Palette, UserCheck, Sparkles, HeartHandshake, ShieldCheck, Quote, Mountain, GraduationCap, Award, Compass, MessageSquare, ArrowRight, BookOpen, Layers, Feather, Sun, Fish, Flower2, Bird, Scroll } from 'lucide-react';
 import { ARTIST_FEATURE } from '../data/articles';
 
 export default function ArtAndArtistSection({ onContactArtist }) {
   return (
     <>
       {/* 📌 SECTION 2A: ART */}
-      <section id="art" className="py-8 sm:py-10 lg:py-12 bg-transparent relative overflow-hidden border-b border-[#E7E0D2] scroll-mt-20 sm:scroll-mt-24">
+      <section id="art" className="pt-6 sm:pt-8 lg:pt-10 pb-12 sm:pb-16 bg-transparent relative overflow-hidden border-b border-[#E7E0D2] scroll-mt-20 sm:scroll-mt-24">
         {/* Soft Decorative Ambient Spotlights */}
         <div className="absolute top-1/3 left-0 w-80 h-80 bg-[#C87A38]/5 rounded-full blur-3xl pointer-events-none" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-6">
-          {/* Compact About Madhubani Art Banner */}
-          <div className="bg-[#FFFDF9] border border-[#E7E0D2] rounded-xl p-5 sm:p-6 shadow-sm space-y-4 text-left">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-6 sm:space-y-8">
+          
+          {/* Main Section Banner Header */}
+          <div className="text-center max-w-3xl mx-auto space-y-2">
+            <h2 className="font-serif text-3xl sm:text-5xl font-normal text-[#1C1917] tracking-tight">
+              ART
+            </h2>
+            <p className="text-sm sm:text-base text-[#5C5652] leading-relaxed max-w-2xl mx-auto font-light">
+              Discover the 3,000-year civilizational heritage of Madhubani art, defined by sacred motifs, double-line hatching, and organic mineral pigments.
+            </p>
+            <div className="w-20 h-[2px] bg-[#C87A38] mx-auto rounded-full mt-2" />
+          </div>
+
+          {/* Seamless Un-boxed Editorial Spread */}
+          <div className="space-y-6 text-left">
             
-            {/* Header Bar */}
-            <div className="border-b border-[#E7E0D2]/70 pb-3">
-              <div>
-                <span className="text-[10px] font-bold tracking-[0.24em] text-[#C87A38] uppercase block">
-                  ANCIENT HERITAGE LINEAGE
-                </span>
-                <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#1C1917]">
-                  About Madhubani Art
-                </h3>
-              </div>
+            {/* Sub-Header Bar */}
+            <div className="border-b border-[#E7E0D2] pb-4">
+              <h3 className="font-serif text-2xl sm:text-4xl font-normal text-[#1C1917]">
+                About Madhubani Art
+              </h3>
             </div>
 
-            {/* 2-Column Content: Narrative & 3 Styles */}
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+            {/* 2-Column Open Editorial Grid (Equal 50/50 Split) */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
               
-              {/* Left: Concise Narrative */}
-              <div className="lg:col-span-7 space-y-2 border-b lg:border-b-0 lg:border-r border-[#E7E0D2]/70 pb-4 lg:pb-0 lg:pr-6">
-                <p className="text-xs sm:text-sm text-[#44403C] leading-relaxed">
-                  Originating in northern Bihar, <strong>Madhubani/Mithila folk art</strong> is a 3,000-year-old tradition historically painted by women on domestic mud courtyard walls (<em>Bhitti Chitra</em>) during sacred rituals and harvest festivals. Celebrated for striking double-line contours, natural mineral pigments, and dense geometric fill, every motif preserves ancient symbolism, ecological harmony, and living cultural memory.
+              {/* Left Column: Narrative (Height-Matched) */}
+              <div className="space-y-4 border-b lg:border-b-0 lg:border-r border-[#E7E0D2]/70 pb-8 lg:pb-0 lg:pr-10">
+                <span className="text-[10px] font-bold tracking-[0.24em] text-[#C87A38] uppercase block">
+                  ANCIENT CIVILIZATIONAL HERITAGE
+                </span>
+                <p className="text-sm sm:text-base text-[#332F2C] leading-relaxed font-light">
+                  Originating in northern Bihar's Mithila region, <strong className="font-semibold text-[#1C1917]">Madhubani folk art</strong> is a 3,000-year-old sacred tradition historically painted by women on domestic mud courtyard walls (<em>Bhitti Chitra</em>) during auspicious festivals, marriages, and harvest celebrations.
+                </p>
+                <p className="text-sm sm:text-base text-[#332F2C] leading-relaxed font-light">
+                  Celebrated worldwide for bold double-line contours, fine bamboo nib penmanship, and natural mineral dyes, every motif preserves ancient Vedic symbolism, ecological harmony, and living civilizational memory.
+                </p>
+                <p className="text-sm sm:text-base text-[#332F2C] leading-relaxed font-light">
+                  Each canvas acts as a sacred visual bridge, translating timeless folklore and civilizational narratives into living art for modern residential and gallery spaces.
                 </p>
               </div>
 
-              {/* Right: 3 Master Styles */}
-              <div className="lg:col-span-5 space-y-2">
-                <span className="text-[10px] font-bold tracking-[0.2em] text-[#C87A38] uppercase block">
+              {/* Right Column: 3 Master Styles Stack (Perfectly Height-Matched) */}
+              <div className="space-y-4 lg:pl-2">
+                <span className="text-[10px] font-bold tracking-[0.24em] text-[#C87A38] uppercase block">
                   3 MASTER STYLE CATEGORIES
                 </span>
-                <div className="space-y-1.5 text-xs text-[#44403C]">
-                  <div className="flex items-baseline gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#C87A38] shrink-0 translate-y-[-1px]" />
-                    <span><strong>Bharni:</strong> Saturated organic color fill with bold black double outlines.</span>
+                
+                <div className="space-y-4">
+                  <div className="pl-4 border-l-2 border-[#C87A38] space-y-1">
+                    <h4 className="font-serif text-base sm:text-lg font-bold text-[#1C1917]">
+                      Bharni Style <span className="font-sans text-xs font-medium text-[#C87A38] uppercase tracking-wider ml-1">(Color Fill)</span>
+                    </h4>
+                    <p className="text-xs sm:text-sm text-[#5C5652] leading-relaxed font-light">
+                      Saturated organic color fill using vibrant earth dyes extracted from turmeric and indigo, paired with bold black double outlines.
+                    </p>
                   </div>
-                  <div className="flex items-baseline gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#B94A2D] shrink-0 translate-y-[-1px]" />
-                    <span><strong>Kachni:</strong> Fine monochrome pen line hatching without solid color fills.</span>
+
+                  <div className="pl-4 border-l-2 border-[#B94A2D] space-y-1">
+                    <h4 className="font-serif text-base sm:text-lg font-bold text-[#1C1917]">
+                      Kachni Style <span className="font-sans text-xs font-medium text-[#B94A2D] uppercase tracking-wider ml-1">(Line Hatching)</span>
+                    </h4>
+                    <p className="text-xs sm:text-sm text-[#5C5652] leading-relaxed font-light">
+                      Fine monochrome pen line hatching, delicate cross-hatching, and intricate geometric patterns drawn strictly without solid color fills.
+                    </p>
                   </div>
-                  <div className="flex items-baseline gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#D97706] shrink-0 translate-y-[-1px]" />
-                    <span><strong>Godna & Kohbar:</strong> Tattoo stippling & sacred bridal chamber mandalas.</span>
+
+                  <div className="pl-4 border-l-2 border-[#D97706] space-y-1">
+                    <h4 className="font-serif text-base sm:text-lg font-bold text-[#1C1917]">
+                      Godna & Kohbar <span className="font-sans text-xs font-medium text-[#D97706] uppercase tracking-wider ml-1">(Sacred Motifs)</span>
+                    </h4>
+                    <p className="text-xs sm:text-sm text-[#5C5652] leading-relaxed font-light">
+                      Tattoo stippling techniques & sacred bridal chamber mandalas celebrating cosmic fertility, life force, and prosperity.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -61,17 +92,29 @@ export default function ArtAndArtistSection({ onContactArtist }) {
             </div>
 
           </div>
+
         </div>
       </section>
 
       {/* 📌 SECTION 2B: ARTIST */}
-      <section id="artist" className="py-8 sm:py-10 lg:py-12 bg-transparent relative overflow-hidden border-b border-[#E7E0D2] scroll-mt-20 sm:scroll-mt-24">
+      <section id="artist" className="pt-6 sm:pt-8 lg:pt-10 pb-12 sm:pb-16 bg-transparent relative overflow-hidden border-b border-[#E7E0D2] scroll-mt-20 sm:scroll-mt-24">
         {/* Soft Decorative Ambient Spotlights */}
         <div className="absolute bottom-10 right-0 w-96 h-96 bg-[#9A3412]/5 rounded-full blur-3xl pointer-events-none" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-8 sm:space-y-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-6 sm:space-y-8">
           
-          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b border-[#E7E0D2] pb-4">
+          {/* Main Section Banner Header */}
+          <div className="text-center max-w-3xl mx-auto space-y-2">
+            <h2 className="font-serif text-3xl sm:text-5xl font-normal text-[#1C1917] tracking-tight">
+              ARTIST
+            </h2>
+            <p className="text-sm sm:text-base text-[#5C5652] leading-relaxed max-w-2xl mx-auto font-light">
+              Meet Rashmi Dhar — Engineering graduate, traditional folk practitioner, and founder of Kalapravah, dedicated to preserving Mithila heritage for modern spaces.
+            </p>
+            <div className="w-20 h-[2px] bg-[#C87A38] mx-auto rounded-full mt-2" />
+          </div>
+
+          <div className="border-b border-[#E7E0D2] pb-4">
             <div>
               <span className="text-[10px] font-bold tracking-[0.24em] text-[#C87A38] uppercase block">
                 MEET THE CREATOR & FOUNDER
@@ -80,10 +123,6 @@ export default function ArtAndArtistSection({ onContactArtist }) {
                 From the Mountains to the Canvas
               </h3>
             </div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FFFDF9] border border-[#E7E0D2] text-xs text-[#78716C]">
-              <UserCheck className="w-3.5 h-3.5 text-[#C87A38]" />
-              <span>Rashmi Dhar: Professional Folk Artist</span>
-            </div>
           </div>
 
           {/* Artist Details & Photo Grid */}
@@ -91,24 +130,23 @@ export default function ArtAndArtistSection({ onContactArtist }) {
             
             {/* 📍 ARTIST PHOTO */}
             <div className="lg:col-span-5 relative flex flex-col">
-              <div className="deckled-frame bg-[#FFFDF9] border border-[#E7E0D2] p-5 rounded-xl shadow-xl space-y-4 h-full flex flex-col justify-between">
+              <div className="bg-[#FFFDF9] border border-[#E7E0D2] p-4 rounded-2xl shadow-md space-y-4 h-full flex flex-col justify-between">
 
-
-                <div className="relative flex-1 min-h-[380px] sm:min-h-[440px] rounded-lg overflow-hidden border border-[#E7E0D2] bg-[#FAF8F3] shadow-inner group">
+                <div className="relative flex-1 min-h-[380px] sm:min-h-[440px] rounded-xl overflow-hidden border border-[#E7E0D2] bg-[#FAF8F3] shadow-inner group">
                   <img
                     src="/images/rashmi_dhar.jpg"
                     alt="Rashmi Dhar: Artist & Founder of Kalapravah"
                     className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1C1917]/80 via-transparent to-transparent opacity-90 flex flex-col justify-end p-5 text-white">
-                    <span className="font-serif text-xl font-bold">Rashmi Dhar</span>
+                    <span className="font-serif text-xl sm:text-2xl font-bold">Rashmi Dhar</span>
                     <span className="text-xs text-[#EAD5BE] font-light">Engineering Graduate (Nagpur University) & Folk Artist</span>
                     <span className="text-[10px] text-[#A89F95] mt-1">Delhi NCR • Nurtured in Srinagar, J&K</span>
                   </div>
                 </div>
 
                 {/* WhatsApp Direct Chat Button */}
-                <div className="pt-3 border-t border-[#E7E0D2]">
+                <div className="pt-2 border-t border-[#E7E0D2]">
                   <a
                     href="https://wa.me/919971399395?text=Hello%20Rashmi%2C%20I%20would%20like%20to%20chat%20and%20inquire%20about%20your%20artworks."
                     target="_blank"
@@ -123,32 +161,30 @@ export default function ArtAndArtistSection({ onContactArtist }) {
               </div>
             </div>
 
-            {/* Artist Journey Copy (New Client Text) */}
+            {/* Artist Journey Copy (Un-boxed Seamless Narrative) */}
             <div className="lg:col-span-7 space-y-6 text-left">
               
-              {/* Detailed Narrative */}
-              <div className="bg-[#FFFDF9] border border-[#E7E0D2] rounded-xl p-6 sm:p-8 shadow-sm space-y-4">
-                
-                <p className="text-sm sm:text-base text-[#44403C] leading-relaxed">
-                  In a world brimming with fast-paced, digital art trends, it's refreshing to come across artists who dive deep into the roots of creativity, drawing inspiration from traditional forms of expression. Among these creators is Rashmi Dhar, an Engineering graduate turned artist since past 5 years always had passion to explore the folk art from her early childhood and in particular, the Mithla art.
+              {/* Open Detailed Narrative */}
+              <div className="space-y-4 py-1">
+                <p className="text-base sm:text-lg text-[#332F2C] leading-relaxed font-light">
+                  In a world brimming with fast-paced, digital art trends, it's refreshing to come across artists who dive deep into the roots of creativity, drawing inspiration from traditional forms of expression. Among these creators is Rashmi Dhar, an Engineering graduate turned artist who since the past 5 years has dedicated her passion to exploring Indian folk art, with a special focus on Mithila art.
                 </p>
 
-                <p className="text-sm sm:text-base text-[#44403C] leading-relaxed">
-                  Living presently in Delhi NCR, Rashmi was born and brought up in Srinagar (Jammu and Kashmir). She comes from a community of Kashmiri hindu scholars(pandit).
+                <p className="text-base sm:text-lg text-[#332F2C] leading-relaxed font-light">
+                  Living presently in Delhi NCR, Rashmi was born and brought up in Srinagar (Jammu and Kashmir). She comes from a community of Kashmiri Hindu scholars.
                 </p>
 
-                <p className="text-sm sm:text-base text-[#44403C] leading-relaxed">
-                  She has learned this art from the eminent national awardees, local artists & several workshops. This has helped her gain insight into the techniques and narratives that define their fineness of this revered folk art work.
+                <p className="text-base sm:text-lg text-[#332F2C] leading-relaxed font-light">
+                  She has learned this art form under eminent national awardees, local master artists, and immersive traditional workshops. This hands-on guidance has helped her gain deep insight into the precise nib techniques, natural pigment preparations, and civilizational narratives that define Mithila folk art.
                 </p>
 
-                <p className="text-sm sm:text-base text-[#1C1917] font-semibold leading-relaxed">
-                  Each piece of her art work resonates with emotion, telling tales of love, struggle, and community spirit that transcend generations.
+                <p className="text-base sm:text-lg text-[#1C1917] font-semibold leading-relaxed">
+                  Each piece of her artwork resonates with emotion, telling tales of love, struggle, and community spirit that transcend generations.
                 </p>
-
               </div>
 
               {/* 🌟 UN-BOXED EDITORIAL PULL-QUOTE JOURNEY STATEMENT */}
-              <div className="relative pl-6 sm:pl-8 border-l-2 border-[#C87A38] space-y-4 py-2 my-2">
+              <div className="relative pl-6 sm:pl-8 border-l-2 border-[#C87A38] space-y-4 py-2 my-4">
                 <div className="flex items-center gap-2 text-xs sm:text-sm font-bold text-[#C87A38] uppercase tracking-widest">
                   <Quote className="w-4 h-4 fill-current shrink-0" />
                   <span>RASHMI DHAR: HER ARTISTIC JOURNEY</span>
@@ -198,8 +234,6 @@ export default function ArtAndArtistSection({ onContactArtist }) {
                 </Link>
               </div>
 
-
-
             </div>
 
           </div>
@@ -209,3 +243,6 @@ export default function ArtAndArtistSection({ onContactArtist }) {
     </>
   );
 }
+
+
+
