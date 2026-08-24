@@ -24,3 +24,7 @@ dist-ssr
 
 # Raw Scan PDFs
 *.pdf
+
+# Backups
+*_backup/
+
