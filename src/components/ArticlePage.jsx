@@ -21,7 +21,7 @@ export default function ArticlePage() {
 
     // 1. Update Document Title
     const originalTitle = document.title;
-    document.title = `${article.title} | Kalapravah Fine Art Blog`;
+    document.title = `${article.title} | Kalapravah Folk Art Blog`;
 
     // 2. Meta Description Injection
     let metaDesc = document.querySelector('meta[name="description"]');
@@ -200,7 +200,7 @@ export default function ArticlePage() {
                 />
               </div>
               <figcaption className="text-center text-xs text-[#78716C] italic font-serif">
-                Original hand-painted Madhubani fine artwork by Rashmi Dhar • Kalapravah Studio Collection
+                Original hand-painted Madhubani folk artwork by Rashmi Dhar • Kalapravah Studio Collection
               </figcaption>
             </figure>
           )}
@@ -234,7 +234,7 @@ export default function ArticlePage() {
           <section className="p-6 sm:p-8 bg-[#FFFDF9] border border-[#E7E0D2] rounded-2xl shadow-sm flex flex-col md:flex-row items-center justify-between gap-6 my-12">
             <div className="space-y-2">
               <span className="text-[10px] font-bold tracking-widest text-[#C87A38] uppercase block">
-                KALAPRAVAH FINE ART GALLERY
+                KALAPRAVAH FOLK ART GALLERY
               </span>
               <h3 className="font-serif text-xl font-bold text-[#1C1917]">
                 Acquire Original Madhubani Masterpieces

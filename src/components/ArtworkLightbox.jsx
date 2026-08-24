@@ -4,8 +4,6 @@ import {
 } from 'lucide-react';
 
 export default function ArtworkLightbox({ artwork, onClose, onOpenCommission }) {
-  if (!artwork) return null;
-
   // Fixed 5.0x Zoom State
   const zoomScale = 5.0; 
   const [isHovering, setIsHovering] = useState(false);
@@ -23,6 +21,8 @@ export default function ArtworkLightbox({ artwork, onClose, onOpenCommission }) 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [onClose]);
+
+  if (!artwork) return null;
 
   // Calculate mouse or touch coordinates relative to image container
   const updatePosition = (clientX, clientY) => {
@@ -116,12 +116,18 @@ export default function ArtworkLightbox({ artwork, onClose, onOpenCommission }) 
               onTouchStart={() => setIsHovering(true)}
               onTouchMove={handleTouchMove}
             >
-              {/* Primary Artwork Image */}
-              <img
-                src={artwork.image}
-                alt={artwork.title}
-                className="w-full h-full object-cover select-none pointer-events-none"
-              />
+              {/* Primary Artwork Image with Uniform Red Border */}
+              <div className="absolute inset-0 overflow-hidden">
+                <img
+                  src={artwork.image}
+                  alt={artwork.title}
+                  className="w-full h-full object-cover scale-[1.12] select-none pointer-events-none"
+                />
+              </div>
+
+              {/* Uniform Symmetric Madhubani Red Frame Overlay */}
+              <div className="absolute inset-0 border-[7px] sm:border-[8px] border-[#B83224] pointer-events-none rounded z-10 shadow-inner" />
+              <div className="absolute inset-[7px] sm:inset-[8px] border border-[#1C1917]/50 pointer-events-none z-10" />
 
               {/* Target Highlight Lens Rectangle */}
               {isHovering && (

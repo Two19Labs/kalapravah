@@ -34,7 +34,7 @@ function MainPage() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'art-artist', 'gallery', 'blog', 'contact'];
+      const sections = ['home', 'art', 'artist', 'gallery', 'blog', 'contact'];
       const viewportHeight = window.innerHeight;
       const scrollY = window.scrollY;
       const documentHeight = document.documentElement.scrollHeight;
@@ -101,7 +101,7 @@ function MainPage() {
         {/* 📌 SECTION 1: HOME */}
         <Hero
           onExploreArtworks={() => scrollToSection('gallery')}
-          onExploreArtist={() => scrollToSection('art-artist')}
+          onExploreArtist={() => scrollToSection('artist')}
         />
 
         {/* 📌 SECTION 2: ART & ARTIST */}

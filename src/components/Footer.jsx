@@ -34,7 +34,8 @@ export default function Footer({ onNavigate }) {
 
   const indexLinks = [
     { id: 'home', label: 'HOME' },
-    { id: 'art-artist', label: 'ART & ARTIST' },
+    { id: 'art', label: 'ART' },
+    { id: 'artist', label: 'ARTIST' },
     { id: 'gallery', label: 'ART GALLERY' },
     { id: 'blog', label: 'BLOG' },
     { id: 'contact', label: 'CONTACT' },
@@ -93,15 +94,8 @@ export default function Footer({ onNavigate }) {
                   <span className="font-serif text-2xl sm:text-3xl font-bold tracking-widest text-white uppercase block leading-none" style={{ color: '#ffffff' }}>
                     KALAPRAVAH
                   </span>
-                  <span className="text-[10px] font-semibold tracking-[0.25em] uppercase text-[#D98A48] block mt-1">
-                    MITHILA ART GALLERY & STUDIO
-                  </span>
                 </div>
               </div>
-
-              <p className="text-xs text-[#A89F95] leading-relaxed max-w-sm">
-                Preserving sacred geometry & fine line-work of traditional Madhubani art by Rashmi Dhar.
-              </p>
 
               {/* Navigation Index Links */}
               <div className="flex flex-wrap gap-4 pt-1">

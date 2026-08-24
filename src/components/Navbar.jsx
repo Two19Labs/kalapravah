@@ -26,7 +26,8 @@ export default function Navbar({ activeSection, setActiveSection }) {
 
   const navItems = [
     { id: 'home', label: 'HOME' },
-    { id: 'art-artist', label: 'ART & ARTIST' },
+    { id: 'art', label: 'ART' },
+    { id: 'artist', label: 'ARTIST' },
     { id: 'gallery', label: 'ART GALLERY' },
     { id: 'blog', label: 'BLOG' },
     { id: 'contact', label: 'CONTACT' },
@@ -52,8 +53,8 @@ export default function Navbar({ activeSection, setActiveSection }) {
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled || mobileMenuOpen
-          ? 'bg-[#FAF8F3]/50 backdrop-blur-md border-b border-[#E7E0D2]/60 shadow-sm py-3 sm:py-3.5' 
-          : 'bg-transparent py-3.5 sm:py-4 border-b border-[#E7E0D2]/30'
+          ? 'bg-[#FFFDF9]/95 backdrop-blur-md border-b border-[#E7E0D2] shadow-md py-3 sm:py-3.5' 
+          : 'bg-[#FFFDF9]/90 backdrop-blur-md border-b border-[#E7E0D2]/70 shadow-sm py-3.5 sm:py-4'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">

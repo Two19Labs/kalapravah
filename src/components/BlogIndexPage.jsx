@@ -12,7 +12,7 @@ export default function BlogIndexPage() {
   // Dynamic SEO Meta Tags & Schema Injection
   useEffect(() => {
     const originalTitle = document.title;
-    document.title = 'Kalapravah Blog | Mithila & Madhubani Art History, Techniques & Motif Guides';
+    document.title = 'Kalapravah Blog | Madhubani/Mithila Art History, Techniques & Motif Guides';
 
     let metaDesc = document.querySelector('meta[name="description"]');
     if (!metaDesc) {
@@ -38,8 +38,8 @@ export default function BlogIndexPage() {
         "@type": "WebPage",
         "@id": "https://kalapravah.art/blog"
       },
-      "name": "Kalapravah Fine Art Journal & Blog",
-      "description": "Authentic research, guides, and stories on traditional Madhubani and Mithila art by Rashmi Dhar.",
+      "name": "Kalapravah Folk Art Journal & Blog",
+      "description": "Authentic research, guides, and stories on traditional Madhubani/Mithila art by Rashmi Dhar.",
       "publisher": {
         "@type": "Organization",
         "name": "Kalapravah Mithila Art Gallery",

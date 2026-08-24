@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { X, Sparkles, Check, ArrowRight, ArrowLeft, Send, Feather } from 'lucide-react';
 
 export default function CommissionBuilder({ isOpen, onClose }) {
-  if (!isOpen) return null;
-
   const [step, setStep] = useState(1);
   const [submitted, setSubmitted] = useState(false);
 
@@ -16,6 +14,8 @@ export default function CommissionBuilder({ isOpen, onClose }) {
     email: '',
     notes: ''
   });
+
+  if (!isOpen) return null;
 
   const themes = [
     { name: 'Vighnaharta / Deities', desc: 'Sacred iconography (Ganesha, Lakshmi, Krishna)' },
