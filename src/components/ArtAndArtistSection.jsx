@@ -109,7 +109,7 @@ export default function ArtAndArtistSection({ onContactArtist }) {
               ARTIST
             </h2>
             <p className="text-sm sm:text-base text-[#5C5652] leading-relaxed max-w-2xl mx-auto font-light">
-              Meet Rashmi Dhar — Engineering graduate, traditional folk practitioner, and founder of Kalapravah, dedicated to preserving Mithila heritage for modern spaces.
+              Meet Rashmi Dhar - Engineering graduate, traditional folk practitioner, and founder of Kalapravah, dedicated to preserving Mithila heritage for modern spaces.
             </p>
             <div className="w-20 h-[2px] bg-[#C87A38] mx-auto rounded-full mt-2" />
           </div>
