@@ -311,7 +311,7 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
               
               {/* Circular Background Container with floating "Click" tag */}
               <div className="relative">
-                <div className="w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] lg:w-[440px] lg:h-[440px] rounded-full bg-[#FFFDF9] border-2 border-[#C87A38]/40 shadow-2xl relative overflow-hidden flex items-center justify-center">
+                <div className="w-[260px] h-[260px] sm:w-[330px] sm:h-[330px] lg:w-[360px] lg:h-[360px] rounded-full bg-[#FFFDF9] border-2 border-[#C87A38]/40 shadow-2xl relative overflow-hidden flex items-center justify-center">
                   <LunarGravityCard
                     className="w-full h-full"
                     artTextureUrl="/images/sphere_madhubani.jpg"
@@ -321,7 +321,7 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
                 </div>
 
                 {/* Short floating "Click" tag near the sphere */}
-                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-30 pointer-events-none bg-[#1C1917]/95 text-[#F59E0B] px-4 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase border border-[#F59E0B]/50 shadow-xl flex items-center gap-1.5 backdrop-blur-md">
+                <div className="absolute bottom-3 left-1/2 -translate-x-1/2 z-30 pointer-events-none bg-[#1C1917]/95 text-[#F59E0B] px-3.5 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase border border-[#F59E0B]/50 shadow-xl flex items-center gap-1.5 backdrop-blur-md">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#F59E0B] animate-pulse shrink-0" />
                   <span>Click</span>
                 </div>
