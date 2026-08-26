@@ -213,9 +213,7 @@ export default function ArtGallerySection({ onSelectArtwork }) {
                         />
                       </div>
 
-                      {/* Uniform Symmetric Madhubani Red Frame Overlay */}
-                      <div className="absolute inset-0 border-[7px] sm:border-[8px] border-[#B83224] pointer-events-none rounded-lg z-10 shadow-inner" />
-                      <div className="absolute inset-[7px] sm:inset-[8px] border border-[#1C1917]/50 pointer-events-none z-10" />
+
 
                       <div className="absolute top-3 left-3 bg-[#1C1917]/85 backdrop-blur-md px-2.5 py-1 rounded-full text-[10px] font-bold text-[#F59E0B] tracking-wider uppercase border border-[#F59E0B]/30 z-20">
                         {artwork.styleCategory}
