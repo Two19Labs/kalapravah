@@ -16,6 +16,7 @@ export default function ArtGallerySection({ onSelectArtwork }) {
   const trackRef = React.useRef(null);
   const animRef = React.useRef(null);
   const scrollPosRef = React.useRef(0);
+  const targetScrollPosRef = React.useRef(null);
   const lastMouseXRef = React.useRef(0);
   const isDraggingRef = React.useRef(false);
   const isHoveredRef = React.useRef(false);
@@ -32,14 +33,31 @@ export default function ArtGallerySection({ onSelectArtwork }) {
     ? [...filteredArtworks, ...filteredArtworks, ...filteredArtworks] 
     : [];
 
+  // Helper to calculate exact card width + gap dynamically
+  const getCardPitch = () => {
+    if (trackRef.current && trackRef.current.children[0]) {
+      const firstCard = trackRef.current.children[0];
+      const style = window.getComputedStyle(trackRef.current);
+      const gap = parseFloat(style.gap || style.gridGap || '24') || 24;
+      return firstCard.offsetWidth + gap;
+    }
+    return 384;
+  };
+
   // Helper to normalize position continuously without cuts
   const updateScrollPos = (newPos) => {
     let pos = newPos;
     if (trackRef.current) {
       const oneSetWidth = trackRef.current.scrollWidth / 3;
       if (oneSetWidth > 0) {
-        while (pos < 0) pos += oneSetWidth;
-        while (pos >= oneSetWidth) pos -= oneSetWidth;
+        while (pos < 0) {
+          pos += oneSetWidth;
+          if (targetScrollPosRef.current !== null) targetScrollPosRef.current += oneSetWidth;
+        }
+        while (pos >= oneSetWidth) {
+          pos -= oneSetWidth;
+          if (targetScrollPosRef.current !== null) targetScrollPosRef.current -= oneSetWidth;
+        }
       }
     }
     scrollPosRef.current = pos;
@@ -48,10 +66,11 @@ export default function ArtGallerySection({ onSelectArtwork }) {
 
   // Reset scrollPos if filter category changes
   useEffect(() => {
+    targetScrollPosRef.current = null;
     updateScrollPos(0);
   }, [filterStyle]);
 
-  // Continuous linear movement & continuous hold-to-scroll fast movement
+  // Continuous linear movement & smooth card-by-card navigation
   useEffect(() => {
     let lastTime = performance.now();
 
@@ -60,18 +79,23 @@ export default function ArtGallerySection({ onSelectArtwork }) {
       lastTime = now;
 
       if (trackRef.current) {
-        let currentSpeed = 0;
-        
         if (isHoldingLeft) {
-          currentSpeed = -0.35; // Fast reverse when holding < button
+          targetScrollPosRef.current = null;
+          updateScrollPos(scrollPosRef.current - 0.45 * delta);
         } else if (isHoldingRight) {
-          currentSpeed = 0.35; // Fast forward when holding > button
-        } else if (!isDraggingRef.current) {
-          currentSpeed = 0.035; // Gentle continuous slow motion (~35px/sec)
-        }
-
-        if (currentSpeed !== 0) {
-          updateScrollPos(scrollPosRef.current + currentSpeed * delta);
+          targetScrollPosRef.current = null;
+          updateScrollPos(scrollPosRef.current + 0.45 * delta);
+        } else if (targetScrollPosRef.current !== null) {
+          const diff = targetScrollPosRef.current - scrollPosRef.current;
+          if (Math.abs(diff) < 0.5) {
+            updateScrollPos(targetScrollPosRef.current);
+            targetScrollPosRef.current = null;
+          } else {
+            // Smooth ease-out glide to target card without cuts
+            updateScrollPos(scrollPosRef.current + diff * 0.14);
+          }
+        } else if (!isDraggingRef.current && !isHoveredRef.current) {
+          updateScrollPos(scrollPosRef.current + 0.03 * delta);
         }
       }
       animRef.current = requestAnimationFrame(animate);
@@ -85,6 +109,7 @@ export default function ArtGallerySection({ onSelectArtwork }) {
 
   // 1:1 Incremental Touch Drag Handlers for Mobile/Tablet
   const handleTouchStart = (e) => {
+    targetScrollPosRef.current = null;
     isDraggingRef.current = true;
     setIsDragging(true);
     setHasDraggedFar(false);
@@ -110,11 +135,17 @@ export default function ArtGallerySection({ onSelectArtwork }) {
   };
 
   const handleNext = () => {
-    updateScrollPos(scrollPosRef.current + 360);
+    const pitch = getCardPitch();
+    const current = targetScrollPosRef.current !== null ? targetScrollPosRef.current : scrollPosRef.current;
+    const nextTarget = (Math.floor((current + 4) / pitch) + 1) * pitch;
+    targetScrollPosRef.current = nextTarget;
   };
 
   const handlePrev = () => {
-    updateScrollPos(scrollPosRef.current - 360);
+    const pitch = getCardPitch();
+    const current = targetScrollPosRef.current !== null ? targetScrollPosRef.current : scrollPosRef.current;
+    const prevTarget = (Math.ceil((current - 4) / pitch) - 1) * pitch;
+    targetScrollPosRef.current = prevTarget;
   };
 
   return (
