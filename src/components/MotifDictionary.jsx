@@ -10,7 +10,7 @@ export default function MotifDictionary() {
       hindiName: "मयूर",
       symbolism: "Grace, Love & Celestial Joy",
       description: "In Madhubani folklore, peacocks represent divine romance and monsoon renewal. Double peacocks facing each other signify marital harmony and eternal friendship.",
-      colorPalette: "Indigo Blue & Mineral Ochre",
+      colorPalette: "Indigo Blue & Natural Ochre",
       icon: "🦚"
     },
     {
@@ -26,7 +26,7 @@ export default function MotifDictionary() {
       hindiName: "मत्स्य",
       symbolism: "Fertility, Abundance & Good Luck",
       description: "Paired fishes represent life force, water abundance, and continuous prosperity. Traditionally painted on Kohbar marriage chamber walls.",
-      colorPalette: "Ochre Yellow & Mineral Ink",
+      colorPalette: "Ochre Yellow & Natural Ink",
       icon: "🐟"
     },
     {

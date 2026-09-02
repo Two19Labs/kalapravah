@@ -24,7 +24,7 @@ export default function WorkshopsSection() {
       target: "Art Enthusiasts & Collectors",
       duration: "2-Day Weekend Intensive",
       groupSize: "Max 8 Apprentices",
-      description: "Deep dive into natural mineral dye preparation, Kohbar symbolism, advanced Bharni filling, and border composition.",
+      description: "Deep dive into natural dye preparation, Kohbar symbolism, advanced Bharni filling, and border composition.",
       features: ["Personal feedback by Rashmi Dhar", "Organic pigment mixing toolkit", "Completed masterpiece artwork"]
     }
   ];

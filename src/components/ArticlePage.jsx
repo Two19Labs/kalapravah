@@ -240,7 +240,7 @@ export default function ArticlePage() {
                 Acquire Original Madhubani Masterpieces
               </h3>
               <p className="text-xs sm:text-sm text-[#5C5652] max-w-md font-light">
-                Each painting is hand-drawn on archival cotton fiber paper using organic mineral pigments. Inquire about available pieces or commission a custom motif.
+                Each painting is hand-drawn on archival cotton fiber paper using organic pigments. Inquire about available pieces or commission a custom motif.
               </p>
             </div>
 

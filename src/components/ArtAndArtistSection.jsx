@@ -19,7 +19,7 @@ export default function ArtAndArtistSection({ onContactArtist }) {
               ART
             </h2>
             <p className="text-sm sm:text-base text-[#5C5652] leading-relaxed max-w-2xl mx-auto font-light">
-              Discover the 3,000-year civilizational heritage of Madhubani art, defined by sacred motifs, double-line hatching, and organic mineral pigments.
+              Discover the centuries-old civilizational heritage of Madhubani art, defined by sacred motifs, double-line hatching, and organic pigments.
             </p>
             <div className="w-20 h-[2px] bg-[#C87A38] mx-auto rounded-full mt-2" />
           </div>
@@ -43,10 +43,10 @@ export default function ArtAndArtistSection({ onContactArtist }) {
                   ANCIENT CIVILIZATIONAL HERITAGE
                 </span>
                 <p className="text-sm sm:text-base text-[#332F2C] leading-relaxed font-light">
-                  Originating in northern Bihar's Mithila region, <strong className="font-semibold text-[#1C1917]">Madhubani folk art</strong> is a 3,000-year-old sacred tradition historically painted by women on domestic mud courtyard walls (<em>Bhitti Chitra</em>) during auspicious festivals, marriages, and harvest celebrations.
+                  Originating in northern Bihar's Mithila region, <strong className="font-semibold text-[#1C1917]">Madhubani folk art</strong> is a centuries-old sacred tradition historically painted by women on domestic mud courtyard walls (<em>Bhitti Chitra</em>) during auspicious festivals, marriages, and harvest celebrations.
                 </p>
                 <p className="text-sm sm:text-base text-[#332F2C] leading-relaxed font-light">
-                  Celebrated worldwide for bold double-line contours, fine bamboo nib penmanship, and natural mineral dyes, every motif preserves ancient Vedic symbolism, ecological harmony, and living civilizational memory.
+                  Celebrated worldwide for bold double-line contours, fine bamboo nib penmanship, and natural pigments, every motif preserves ancient Vedic symbolism, ecological harmony, and living civilizational memory.
                 </p>
                 <p className="text-sm sm:text-base text-[#332F2C] leading-relaxed font-light">
                   Each canvas acts as a sacred visual bridge, translating timeless folklore and civilizational narratives into living art for modern residential and gallery spaces.
@@ -109,16 +109,13 @@ export default function ArtAndArtistSection({ onContactArtist }) {
               ARTIST
             </h2>
             <p className="text-sm sm:text-base text-[#5C5652] leading-relaxed max-w-2xl mx-auto font-light">
-              Meet Rashmi Dhar - Engineering graduate, traditional folk practitioner, and founder of Kalapravah, dedicated to preserving Mithila heritage for modern spaces.
+              Rashmi Dhar - Engineering graduate, traditional folk practitioner, and founder of Kalapravah, dedicated to preserving Mithila heritage for modern spaces.
             </p>
             <div className="w-20 h-[2px] bg-[#C87A38] mx-auto rounded-full mt-2" />
           </div>
 
           <div className="border-b border-[#E7E0D2] pb-4">
             <div>
-              <span className="text-[10px] font-bold tracking-[0.24em] text-[#C87A38] uppercase block">
-                MEET THE CREATOR & FOUNDER
-              </span>
               <h3 className="font-serif text-2xl sm:text-4xl font-normal text-[#1C1917]">
                 From the Mountains to the Canvas
               </h3>
@@ -190,14 +187,11 @@ export default function ArtAndArtistSection({ onContactArtist }) {
                   <span>RASHMI DHAR: HER ARTISTIC JOURNEY</span>
                 </div>
 
-                <blockquote className="space-y-3 sm:space-y-4 text-sm sm:text-lg lg:text-xl text-[#1C1917] font-serif leading-relaxed font-normal">
-                  <p className="italic">
-                    "Kalapravah translates to the continuous flow of art. For me, this venture is more than a collection of paintings, it is a sacred bridge connecting our rich civilizational roots with the modern world."
+                <div className="space-y-3 text-sm sm:text-base lg:text-lg text-[#44403C] font-serif leading-relaxed font-normal">
+                  <p className="not-italic">
+                    Though she did not grow up in the traditional households of Mithila inheriting these brushstrokes from ancestors, she found herself drawn to Madhubani not by lineage, but by a profound sense of belonging. Every motif, the vibrant flora, the sacred fauna, and the eternal narratives of traditional epics, speaks a language of its own. When she holds the fine nib and fills the canvas with natural pigments and bright hues, she is not just painting; she is listening to the whispers of ancient history and translating them for today.
                   </p>
-                  <p className="italic">
-                    "Though I did not grow up in the traditional households of Mithila inheriting these brushstrokes from ancestors, I found myself drawn to Madhubani not by lineage, but by a profound sense of belonging. Every motif, the vibrant flora, the sacred fauna, and the eternal narratives of our epics, speaks a language of its own. When I hold the fine nib and fill the canvas with natural pigments and bright hues, I am not just painting; I am listening to the whispers of ancient history and translating them for today."
-                  </p>
-                </blockquote>
+                </div>
               </div>
 
               {/* 📍 FEATURED STUDIO STORY CARD */}

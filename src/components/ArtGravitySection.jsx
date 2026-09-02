@@ -40,7 +40,7 @@ export default function ArtGravitySection() {
                 </span>
               </>
             }
-            description="Experience traditional folk folklore in interactive 3D physics. Tap the celestial sphere to ignite orbiting golden particle dust and mineral rings."
+            description="Experience traditional folk folklore in interactive 3D physics. Tap the celestial sphere to ignite orbiting golden particle dust and natural rings."
           />
         </div>
 

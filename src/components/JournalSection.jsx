@@ -19,7 +19,7 @@ export default function JournalSection() {
             BLOG
           </h2>
           <p className="text-sm sm:text-base text-[#5C5652] leading-relaxed max-w-2xl mx-auto font-light">
-            Discover in-depth guides on Madhubani painting techniques, natural mineral pigments, and sacred motifs.
+            Discover in-depth guides on Madhubani painting techniques, natural pigments, and sacred motifs.
           </p>
           <div className="w-20 h-[2px] bg-[#C87A38] mx-auto rounded-full mt-2" />
         </div>

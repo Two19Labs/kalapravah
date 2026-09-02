@@ -8,7 +8,7 @@ export default function CommissionBuilder({ isOpen, onClose }) {
   const [formData, setFormData] = useState({
     theme: 'Tree of Life & Ancestral Memory',
     size: 'Medium (20 × 28 inches)',
-    palette: 'Classic Mineral & Ochre',
+    palette: 'Classic Natural & Ochre',
     framing: 'Deckled Edge Handmade Paper (Unframed)',
     name: '',
     email: '',
@@ -33,7 +33,7 @@ export default function CommissionBuilder({ isOpen, onClose }) {
   ];
 
   const palettes = [
-    { name: 'Classic Mineral & Ochre', desc: 'Terracotta red, turmeric yellow & soot black' },
+    { name: 'Classic Natural & Ochre', desc: 'Terracotta red, turmeric yellow & soot black' },
     { name: 'Pure Monochrome Kachni', desc: 'Crisp black Indian ink line work on cream paper' },
     { name: 'Indigo & Gold Wash', desc: 'Deep cobalt blue with golden turmeric highlights' },
     { name: 'Vivid Garden Colors', desc: 'Full spectrum of natural botanical pigments' },

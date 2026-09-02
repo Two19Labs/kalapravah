@@ -87,7 +87,7 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
 
           {/* Centered Narrative Subtitle */}
           <p className="text-sm xs:text-base sm:text-lg lg:text-xl text-white/90 leading-relaxed font-light max-w-2xl mx-auto text-center drop-shadow-md">
-            Bringing ancient storytelling, rich mineral pigments, and meditative line work of traditional <strong>Madhubani/Mithila folk art</strong> directly into modern living spaces.
+            Bringing ancient storytelling, rich natural pigments, and meditative line work of traditional <strong>Madhubani/Mithila folk art</strong> directly into modern living spaces.
           </p>
 
           {/* Centered Action Buttons */}
@@ -153,6 +153,10 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
                 "Where Heritage Meets Contemporary Calm"
               </p>
               
+              <p className="font-serif text-sm sm:text-base text-[#C87A38] italic leading-relaxed font-medium pl-4 border-l-2 border-[#C87A38]/60 my-2">
+                "Kalapravah translates to the continuous flow of art. For me, this venture is more than a collection of paintings, it is a sacred bridge connecting our rich civilizational roots with the modern world."
+              </p>
+              
               <p className="text-sm sm:text-base text-[#5C5652] leading-relaxed font-light">
                 In a fast-paced world, art offers a much-needed sanctuary: a moment of pause and peace. Drawing inspiration from pristine nature, ancient rituals, customs, and deep-rooted spirituality, every brushstroke is designed to soothe the soul.
               </p>
@@ -162,7 +166,7 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
               </p>
               
               <p className="text-sm sm:text-base text-[#5C5652] leading-relaxed font-light">
-                At its core, Kalapravah is more than just an art initiative; it serves as a bridge between the past and the present. In a world thriving on the digital and the disposable, there is something profoundly enriching about engaging with art that has been crafted by hand. Each piece tells a story, holding within it the collective memories and traditions of our ancestors, making them accessible to everyone.
+                At its core, Kalapravah is more than just an art initiative; it serves as a bridge between the past and the present. In a world thriving on the digital and the disposable, there is something profoundly enriching about engaging with art that has been crafted by hand. Each piece tells a story, holding within it the collective memories and traditions, making them accessible to everyone.
               </p>
             </div>
 

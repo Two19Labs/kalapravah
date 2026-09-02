@@ -20,7 +20,7 @@ export default function BlogIndexPage() {
       metaDesc.name = 'description';
       document.head.appendChild(metaDesc);
     }
-    metaDesc.content = 'Explore the complete Kalapravah journal: in-depth articles on Madhubani art history, 5 core styles, natural mineral pigments, and sacred Mithila symbolism.';
+    metaDesc.content = 'Explore the complete Kalapravah journal: in-depth articles on Madhubani art history, 5 core styles, natural pigments, and sacred Mithila symbolism.';
 
     let canonical = document.querySelector('link[rel="canonical"]');
     if (!canonical) {

@@ -406,7 +406,7 @@ export default function ArtGallerySection({ onSelectArtwork }) {
               </h4>
 
               <p className="text-sm sm:text-base text-[#44403C] leading-relaxed">
-                Artist Rashmi Dhar has conducted several meditative Madhubani art workshops in last 2 years amidst nature for all ages. Participants experienced an stress-busting journey into this 3,000-year-old heritage art, dating back to Ramayana times, and proudly carried home their own handcrafted traditional masterpieces.
+                Artist Rashmi Dhar has conducted several meditative Madhubani art workshops in last 2 years amidst nature for all ages. Participants experienced an stress-busting journey into this centuries-old heritage art, dating back to Ramayana times, and proudly carried home their own handcrafted traditional masterpieces.
               </p>
 
               {/* Other Workshop Venues Text Strip (Replaces Pill Buttons) */}
@@ -445,7 +445,7 @@ export default function ArtGallerySection({ onSelectArtwork }) {
               </h4>
 
               <p className="text-sm sm:text-base text-[#44403C] leading-relaxed">
-                At the Aga Khan Foundation’s summer camp, Rashmi Dhar led a meditative Madhubani art workshop. Forty teens aged 15-20 across globe & from India, the USA, Canada, and the UAE gathered for two days of skill-building. Beyond mastering traditional techniques, they found deep mindfulness, stress relief, and brought home 3,000-year-old art masterpieces.
+                At the Aga Khan Foundation’s summer camp, Rashmi Dhar led a meditative Madhubani art workshop. Forty teens aged 15-20 across globe & from India, the USA, Canada, and the UAE gathered for two days of skill-building. Beyond mastering traditional techniques, they found deep mindfulness, stress relief, and brought home centuries-old art masterpieces.
               </p>
 
               {/* Event Metadata Strip (Replaces Pill Buttons) */}

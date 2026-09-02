@@ -10,13 +10,13 @@ export default function TechniqueShowcase() {
       name: "Kachni Style (Line Work)",
       subtitle: "Precision, Patience & Fine Hatching",
       description: "Kachni relies strictly on fine line drawing, hatching, and intricate geometric patterns. Artists draw double lines and fill the inner spaces with delicate parallel lines or cross-hatching without solid color blocks.",
-      materials: ["Bamboo nib pens", "Kashmiri walnut ink", "Handmade organic paper", "Mineral black pigment"],
+      materials: ["Bamboo nib pens", "Kashmiri walnut ink", "Handmade organic paper", "Organic black pigment"],
       symbolicMeaning: "Symbolizes clarity of thought, restraint, and patient spiritual meditation."
     },
     bharni: {
       name: "Bharni Style (Color Fill)",
       subtitle: "Vibrant Earth Dyes & Solid Color Saturated Fields",
-      description: "Bharni brings Madhubani paintings to life through vivid, vibrant colors. Solid areas of deities, peacocks, and floral motifs are filled completely with organic vegetable and mineral dyes.",
+      description: "Bharni brings Madhubani paintings to life through vivid, vibrant colors. Solid areas of deities, peacocks, and floral motifs are filled completely with organic vegetable and natural dyes.",
       materials: ["Turmeric yellow", "Marigold ochre", "Indigo leaf dye", "Rice paste binder"],
       symbolicMeaning: "Symbolizes abundance, joy, fertility, and cosmic vitality."
     }
@@ -39,7 +39,7 @@ export default function TechniqueShowcase() {
           </h2>
 
           <p className="text-base sm:text-lg text-[#5C5652] leading-relaxed">
-            Madhubani art is categorized by distinct traditional line and color methodologies. Slide below to compare fine-line hatching against rich mineral color fill.
+            Madhubani art is categorized by distinct traditional line and color methodologies. Slide below to compare fine-line hatching against rich natural color fill.
           </p>
         </div>
 

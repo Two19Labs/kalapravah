@@ -401,7 +401,7 @@ export default function LunarGravityCard({
   className,
   artTextureUrl = "/images/sphere_madhubani.jpg",
   ringColor = "#C87A38",
-  hintText = "Click 3D orb to ignite cosmic minerals",
+  hintText = "Click 3D orb to ignite cosmic pigments",
   title,
   description
 }: LunarGravityCardProps) {
