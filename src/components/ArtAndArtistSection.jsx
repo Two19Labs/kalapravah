@@ -59,31 +59,43 @@ export default function ArtAndArtistSection({ onContactArtist }) {
                   3 MASTER STYLE CATEGORIES
                 </span>
                 
-                <div className="space-y-4">
-                  <div className="pl-4 border-l-2 border-[#C87A38] space-y-1">
+                <div className="space-y-3">
+                  {/* Katchni Style */}
+                  <div className="pl-4 border-l-2 border-[#B94A2D] space-y-0.5">
                     <h4 className="font-serif text-base sm:text-lg font-bold text-[#1C1917]">
-                      Bharni Style <span className="font-sans text-xs font-medium text-[#C87A38] uppercase tracking-wider ml-1">(Color Fill)</span>
+                      Katchni Style <span className="font-sans text-xs font-medium text-[#B94A2D] uppercase tracking-wider ml-1">(Line Hatching)</span>
                     </h4>
-                    <p className="text-xs sm:text-sm text-[#5C5652] leading-relaxed font-light">
-                      Saturated organic color fill using vibrant earth dyes extracted from turmeric and indigo, paired with bold black double outlines.
+                    <p className="text-xs sm:text-sm text-[#44403C] leading-relaxed font-light">
+                      A delicate, line-dominant style featuring fine monochrome work. Intricate hatching and cross-hatching create depth without solid fills.
+                    </p>
+                    <p className="text-[11px] sm:text-xs text-[#78716C] font-light italic">
+                      Practiced by Brahmin & Kayastha women in Jitwarpur.
                     </p>
                   </div>
 
-                  <div className="pl-4 border-l-2 border-[#B94A2D] space-y-1">
+                  {/* Barni Style */}
+                  <div className="pl-4 border-l-2 border-[#C87A38] space-y-0.5">
                     <h4 className="font-serif text-base sm:text-lg font-bold text-[#1C1917]">
-                      Kachni Style <span className="font-sans text-xs font-medium text-[#B94A2D] uppercase tracking-wider ml-1">(Line Hatching)</span>
+                      Barni Style <span className="font-sans text-xs font-medium text-[#C87A38] uppercase tracking-wider ml-1">(Color Fill)</span>
                     </h4>
-                    <p className="text-xs sm:text-sm text-[#5C5652] leading-relaxed font-light">
-                      Fine monochrome pen line hatching, delicate cross-hatching, and intricate geometric patterns drawn strictly without solid color fills.
+                    <p className="text-xs sm:text-sm text-[#44403C] leading-relaxed font-light">
+                      A vibrant, color-rich style defined by bold outlines and opaque pigments. It focuses on grand motifs like the Tree of Life and deities.
+                    </p>
+                    <p className="text-[11px] sm:text-xs text-[#78716C] font-light italic">
+                      Practiced by women of Brahmin & upper-caste communities.
                     </p>
                   </div>
 
-                  <div className="pl-4 border-l-2 border-[#D97706] space-y-1">
+                  {/* Godna Style */}
+                  <div className="pl-4 border-l-2 border-[#D97706] space-y-0.5">
                     <h4 className="font-serif text-base sm:text-lg font-bold text-[#1C1917]">
-                      Godna & Kohbar <span className="font-sans text-xs font-medium text-[#D97706] uppercase tracking-wider ml-1">(Sacred Motifs)</span>
+                      Godna Style <span className="font-sans text-xs font-medium text-[#D97706] uppercase tracking-wider ml-1">(Tattoo & Folk)</span>
                     </h4>
-                    <p className="text-xs sm:text-sm text-[#5C5652] leading-relaxed font-light">
-                      Tattoo stippling techniques & sacred bridal chamber mandalas celebrating cosmic fertility, life force, and prosperity.
+                    <p className="text-xs sm:text-sm text-[#44403C] leading-relaxed font-light">
+                      Rooted in body-tattoo art, using repeating concentric circles and grid patterns to depict folk heroes, protectors, and rural life.
+                    </p>
+                    <p className="text-[11px] sm:text-xs text-[#78716C] font-light italic">
+                      Historically associated with Dalit communities (Dusadh & Paswan).
                     </p>
                   </div>
                 </div>
