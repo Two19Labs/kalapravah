@@ -17,6 +17,40 @@ export default function ArtworkLightbox({ artwork, onClose, onOpenCommission }) 
 
   if (!artwork) return null;
 
+  const isSimplePhoto = artwork.isWorkshop || artwork.styleCategory === 'Workshop Photo' || artwork.isPhotoOnly;
+
+  if (isSimplePhoto) {
+    return (
+      <div 
+        className="fixed inset-0 bg-[#1C1917]/90 backdrop-blur-md z-50 flex items-center justify-center p-4 sm:p-6"
+        onClick={onClose}
+      >
+        <div 
+          className="relative max-w-5xl max-h-[92vh] flex flex-col items-center justify-center select-none"
+          onClick={(e) => e.stopPropagation()}
+        >
+          {/* Floating Close Button */}
+          <button
+            onClick={onClose}
+            className="absolute -top-12 right-0 sm:-right-10 w-9 h-9 rounded-full bg-[#1C1917]/80 text-white hover:bg-[#B94A2D] flex items-center justify-center transition-colors shadow-lg cursor-pointer z-50 border border-white/20"
+            aria-label="Close Lightbox"
+          >
+            <X className="w-5 h-5" />
+          </button>
+
+          {/* Full Clean Image */}
+          <div className="relative rounded-lg overflow-hidden border border-[#C4B9A3]/30 shadow-2xl bg-black/40">
+            <img
+              src={artwork.originalImage || artwork.image}
+              alt={artwork.title || "Workshop photo"}
+              className="max-h-[85vh] max-w-[90vw] sm:max-w-[85vw] w-auto h-auto object-contain rounded-lg"
+            />
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="fixed inset-0 bg-[#1C1917]/85 backdrop-blur-md z-50 flex items-center justify-center p-2 sm:p-4 md:p-6 overflow-y-auto">
       <div className="bg-[#FAF8F3] border border-[#C4B9A3] w-full max-w-5xl max-h-[94vh] rounded-lg shadow-2xl overflow-y-auto relative my-auto flex flex-col">
@@ -98,53 +132,42 @@ export default function ArtworkLightbox({ artwork, onClose, onOpenCommission }) 
                       <span className="font-semibold text-[#1C1917] text-right max-w-[60%]">{artwork.medium}</span>
                     </div>
                   )}
-                  {artwork.technique && (
-                    <div className="flex justify-between py-1 border-b border-[#E7E0D2]/60">
-                      <span className="text-[#78716C]">Technique</span>
-                      <span className="font-semibold text-[#1C1917] text-right max-w-[60%]">{artwork.technique}</span>
-                    </div>
-                  )}
-                  {artwork.pigments && (
-                    <div className="flex justify-between py-1 border-b border-[#E7E0D2]/60">
-                      <span className="text-[#78716C]">Pigments & Ink</span>
-                      <span className="font-semibold text-[#1C1917] text-right max-w-[60%]">{artwork.pigments}</span>
-                    </div>
-                  )}
-                  {artwork.motifs && artwork.motifs.length > 0 && (
-                    <div className="flex justify-between py-1 border-b border-[#E7E0D2]/60">
-                      <span className="text-[#78716C]">Motifs</span>
-                      <span className="font-semibold text-[#1C1917] text-right max-w-[60%]">{artwork.motifs.join(', ')}</span>
-                    </div>
-                  )}
-                  <div className="flex justify-between items-center pt-1 text-[11px]">
+                  <div className="flex justify-between py-1 pt-1.5">
                     <span className="text-[#78716C]">Authenticity</span>
-                    <span className="font-semibold text-[#3E5A47] flex items-center gap-1.5">
-                      <img src="/images/logo-emblem.png" alt="Kalapravah Seal" className="w-3.5 h-3.5 object-contain" />
-                      <CheckCircle className="w-3 h-3 text-[#3E5A47]" /> Kalapravah Original • Signed by Rashmi Dhar
+                    <span className="font-semibold text-[#1C1917] flex items-center gap-1">
+                      <Feather className="w-3 h-3 text-[#B94A2D]" />
+                      <span>Kalapravah Original • Signed by Rashmi Dhar</span>
                     </span>
                   </div>
                 </div>
 
-                {/* Story / Description */}
-                <div className="space-y-2 border-t border-b border-[#E7E0D2] py-3.5 sm:py-4">
-                  <span className="text-[11px] sm:text-xs font-bold uppercase tracking-widest text-[#1C1917] flex items-center gap-1.5">
-                    <Feather className="w-3.5 h-3.5 text-[#B94A2D]" /> Cultural Story & Backstory
-                  </span>
-                  <p className="text-xs sm:text-sm text-[#44403C] leading-relaxed">
-                    {artwork.fullStory || artwork.description || artwork.medium}
-                  </p>
-                </div>
+                {/* Story Paragraph */}
+                {artwork.story && (
+                  <div className="space-y-1.5 pt-1">
+                    <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#1C1917] flex items-center gap-1.5">
+                      <Feather className="w-3.5 h-3.5 text-[#B94A2D]" />
+                      <span>Cultural Story & Backstory</span>
+                    </span>
+                    <p className="text-xs sm:text-sm text-[#5C5652] leading-relaxed italic bg-[#FDFBF7] p-3 rounded border border-[#E7E0D2]/60">
+                      {artwork.story}
+                    </p>
+                  </div>
+                )}
               </div>
 
-              {/* Inquire & Commission Actions */}
-              <div className="pt-3 space-y-2.5">
-                <a
-                  href={`mailto:kalapravah.art@gmail.com?subject=Inquiry about Painting: ${artwork.title}`}
-                  className="w-full py-3 px-4 bg-[#1C1917] hover:bg-[#2D2A26] text-white rounded-sm font-semibold text-xs tracking-wider uppercase flex items-center justify-center gap-2 transition-all shadow-sm active:scale-[0.99]"
+              {/* Action Buttons Container */}
+              <div className="pt-6 space-y-2 border-t border-[#E7E0D2]">
+                <button
+                  onClick={() => {
+                    onClose();
+                    if (onOpenCommission) onOpenCommission();
+                  }}
+                  className="w-full py-3 px-4 bg-[#1C1917] hover:bg-[#B94A2D] text-white rounded-sm font-semibold text-xs tracking-wider uppercase flex items-center justify-center gap-2 shadow-md transition-all active:scale-[0.99] cursor-pointer"
                 >
-                  <MessageSquare className="w-4 h-4 text-[#22C55E]" />
+                  <MessageSquare className="w-4 h-4 text-[#C87A38]" />
                   <span>Inquire / Reserve Painting</span>
-                </a>
+                </button>
+
                 <button
                   onClick={() => {
                     onClose();

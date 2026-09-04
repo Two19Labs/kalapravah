@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ARTWORKS } from '../data/artworks';
+import { WORKSHOP_PHOTOS } from '../data/workshops';
 import { GalleryVertical, Calendar, Landmark, MapPin, Users, Sparkles, Eye, ArrowUpRight, ChevronLeft, ChevronRight, Pause, Play, HeartHandshake, Globe, Clock } from 'lucide-react';
 
 export default function ArtGallerySection({ onSelectArtwork }) {
@@ -20,6 +21,125 @@ export default function ArtGallerySection({ onSelectArtwork }) {
   const lastMouseXRef = React.useRef(0);
   const isDraggingRef = React.useRef(false);
   const isHoveredRef = React.useRef(false);
+
+  // Workshop marquee state & refs
+  const [wsScrollPos, setWsScrollPos] = useState(0);
+  const [isWsHoldingLeft, setIsWsHoldingLeft] = useState(false);
+  const [isWsHoldingRight, setIsWsHoldingRight] = useState(false);
+  const [hasWsDraggedFar, setHasWsDraggedFar] = useState(false);
+
+  const wsTrackRef = React.useRef(null);
+  const wsAnimRef = React.useRef(null);
+  const wsScrollPosRef = React.useRef(0);
+  const wsTargetScrollPosRef = React.useRef(null);
+  const lastWsMouseXRef = React.useRef(0);
+  const isWsDraggingRef = React.useRef(false);
+  const isWsHoveredRef = React.useRef(false);
+
+  const displayWorkshopPhotos = WORKSHOP_PHOTOS.length > 0 
+    ? [...WORKSHOP_PHOTOS, ...WORKSHOP_PHOTOS, ...WORKSHOP_PHOTOS] 
+    : [];
+
+  const updateWsScrollPos = (newPos) => {
+    let pos = newPos;
+    if (wsTrackRef.current) {
+      const oneSetWidth = wsTrackRef.current.scrollWidth / 3;
+      if (oneSetWidth > 0) {
+        while (pos < 0) {
+          pos += oneSetWidth;
+          if (wsTargetScrollPosRef.current !== null) wsTargetScrollPosRef.current += oneSetWidth;
+        }
+        while (pos >= oneSetWidth) {
+          pos -= oneSetWidth;
+          if (wsTargetScrollPosRef.current !== null) wsTargetScrollPosRef.current -= oneSetWidth;
+        }
+      }
+    }
+    wsScrollPosRef.current = pos;
+    setWsScrollPos(pos);
+  };
+
+  const getWsCardPitch = () => {
+    if (wsTrackRef.current && wsTrackRef.current.children[0]) {
+      const firstCard = wsTrackRef.current.children[0];
+      const style = window.getComputedStyle(wsTrackRef.current);
+      const gap = parseFloat(style.gap || style.gridGap || '16') || 16;
+      return firstCard.offsetWidth + gap;
+    }
+    return 300;
+  };
+
+  useEffect(() => {
+    let lastTime = performance.now();
+    const animateWs = (now) => {
+      const delta = now - lastTime;
+      lastTime = now;
+
+      if (wsTrackRef.current) {
+        if (isWsHoldingLeft) {
+          wsTargetScrollPosRef.current = null;
+          updateWsScrollPos(wsScrollPosRef.current - 0.45 * delta);
+        } else if (isWsHoldingRight) {
+          wsTargetScrollPosRef.current = null;
+          updateWsScrollPos(wsScrollPosRef.current + 0.45 * delta);
+        } else if (wsTargetScrollPosRef.current !== null) {
+          const diff = wsTargetScrollPosRef.current - wsScrollPosRef.current;
+          if (Math.abs(diff) < 0.5) {
+            updateWsScrollPos(wsTargetScrollPosRef.current);
+            wsTargetScrollPosRef.current = null;
+          } else {
+            updateWsScrollPos(wsScrollPosRef.current + diff * 0.14);
+          }
+        } else if (!isWsDraggingRef.current && !isWsHoveredRef.current) {
+          updateWsScrollPos(wsScrollPosRef.current + 0.03 * delta);
+        }
+      }
+      wsAnimRef.current = requestAnimationFrame(animateWs);
+    };
+
+    wsAnimRef.current = requestAnimationFrame(animateWs);
+    return () => {
+      if (wsAnimRef.current) cancelAnimationFrame(wsAnimRef.current);
+    };
+  }, [isWsHoldingLeft, isWsHoldingRight]);
+
+  const handleWsTouchStart = (e) => {
+    wsTargetScrollPosRef.current = null;
+    isWsDraggingRef.current = true;
+    setHasWsDraggedFar(false);
+    if (e.touches && e.touches[0]) {
+      lastWsMouseXRef.current = e.touches[0].clientX;
+    }
+  };
+
+  const handleWsTouchMove = (e) => {
+    if (!isWsDraggingRef.current || !e.touches || !e.touches[0]) return;
+    const dx = lastWsMouseXRef.current - e.touches[0].clientX;
+    lastWsMouseXRef.current = e.touches[0].clientX;
+
+    if (Math.abs(dx) > 0.5) {
+      setHasWsDraggedFar(true);
+      updateWsScrollPos(wsScrollPosRef.current + dx);
+    }
+  };
+
+  const handleWsTouchEnd = () => {
+    isWsDraggingRef.current = false;
+  };
+
+  const handleWsNext = () => {
+    const pitch = getWsCardPitch();
+    const current = wsTargetScrollPosRef.current !== null ? wsTargetScrollPosRef.current : wsScrollPosRef.current;
+    const nextTarget = (Math.floor((current + 4) / pitch) + 1) * pitch;
+    wsTargetScrollPosRef.current = nextTarget;
+  };
+
+  const handleWsPrev = () => {
+    const pitch = getWsCardPitch();
+    const current = wsTargetScrollPosRef.current !== null ? wsTargetScrollPosRef.current : wsScrollPosRef.current;
+    const prevTarget = (Math.ceil((current - 4) / pitch) - 1) * pitch;
+    wsTargetScrollPosRef.current = prevTarget;
+  };
 
   const categories = ['All', 'Bharni', 'Kachni', 'Godna', 'Traditional'];
 
@@ -380,36 +500,130 @@ export default function ArtGallerySection({ onSelectArtwork }) {
           
           {/* Workshops Section */}
           <div className="space-y-6">
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-[#E7E0D2] pb-4">
-              <div>
-                <span className="text-[10px] font-bold tracking-[0.24em] text-[#C87A38] uppercase block">
-                  HERITAGE LEARNING & MINDFULNESS
-                </span>
-                <h3 className="font-serif text-2xl sm:text-4xl font-normal text-[#1C1917]">
-                  Workshops
-                </h3>
-              </div>
+            <div className="border-b border-[#E7E0D2] pb-4">
+              <span className="text-[10px] font-bold tracking-[0.24em] text-[#C87A38] uppercase block">
+                HERITAGE LEARNING & MINDFULNESS
+              </span>
+              <h3 className="font-serif text-2xl sm:text-4xl font-normal text-[#1C1917]">
+                Workshops
+              </h3>
             </div>
 
             {/* Main Featured Workshop: @ Sunder Nursery & Institutional Venues */}
             <div className="bg-[#FFFDF9] border border-[#E7E0D2] rounded-xl p-6 sm:p-8 shadow-sm space-y-4 text-left relative overflow-hidden">
               <div className="absolute top-0 left-0 w-2.5 h-full bg-[#C87A38]" />
-              <div className="flex items-center justify-between flex-wrap gap-2">
+              
+              <div className="space-y-2">
                 <div className="flex items-center gap-2 text-xs font-bold text-[#C87A38] uppercase tracking-wider">
                   <MapPin className="w-4 h-4 text-[#9A3412]" />
                   <span>@ SUNDER NURSERY, NEW DELHI</span>
                 </div>
+
+                <h4 className="font-serif text-xl sm:text-2xl font-bold text-[#1C1917]">
+                  Mindful Outdoor Workshops Amidst Nature
+                </h4>
+
+                <p className="text-sm sm:text-base text-[#44403C] leading-snug">
+                  Artist Rashmi Dhar has conducted meditative Madhubani art workshops amidst nature for all ages over the last 2 years. Participants experienced a stress-busting journey into centuries-old heritage art, carrying home handcrafted traditional masterpieces.
+                </p>
               </div>
 
-              <h4 className="font-serif text-xl sm:text-2xl font-bold text-[#1C1917]">
-                Mindful Outdoor Workshops Amidst Nature
-              </h4>
+              {/* 📸 CONTINUOUS SLOW MOVING WORKSHOP CAROUSEL */}
+              <div className="space-y-2 pt-0">
+                <div className="flex items-center justify-between text-xs font-semibold text-[#78716C]">
+                  <span className="uppercase tracking-wider text-[#C87A38] font-bold">Workshop Moments & Participant Masterpieces</span>
+                </div>
 
-              <p className="text-sm sm:text-base text-[#44403C] leading-relaxed">
-                Artist Rashmi Dhar has conducted several meditative Madhubani art workshops in last 2 years amidst nature for all ages. Participants experienced an stress-busting journey into this centuries-old heritage art, dating back to Ramayana times, and proudly carried home their own handcrafted traditional masterpieces.
-              </p>
+                <div 
+                  className="relative overflow-hidden py-2 px-1 rounded-xl select-none group/ws-carousel"
+                  onTouchStart={handleWsTouchStart}
+                  onTouchMove={handleWsTouchMove}
+                  onTouchEnd={handleWsTouchEnd}
+                  onMouseEnter={() => { isWsHoveredRef.current = true; }}
+                  onMouseLeave={() => { isWsHoveredRef.current = false; }}
+                >
+                  {/* Floating Left Side Button (<) */}
+                  <button
+                    onMouseDown={(e) => { e.stopPropagation(); setIsWsHoldingLeft(true); }}
+                    onMouseUp={(e) => { e.stopPropagation(); setIsWsHoldingLeft(false); }}
+                    onMouseLeave={() => setIsWsHoldingLeft(false)}
+                    onTouchStart={(e) => { e.stopPropagation(); setIsWsHoldingLeft(true); }}
+                    onTouchEnd={(e) => { e.stopPropagation(); setIsWsHoldingLeft(false); }}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleWsPrev();
+                    }}
+                    className={`absolute left-2 top-1/2 -translate-y-1/2 z-30 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#1C1917]/85 hover:bg-[#C87A38] text-white flex items-center justify-center border border-white/30 shadow-2xl backdrop-blur-md transition-all active:scale-95 cursor-pointer ${
+                      isWsHoldingLeft ? 'bg-[#C87A38] scale-110 shadow-inner' : ''
+                    }`}
+                    aria-label="Move left / previous"
+                  >
+                    <ChevronLeft className="w-5 h-5" />
+                  </button>
 
-              {/* Other Workshop Venues Text Strip (Replaces Pill Buttons) */}
+                  {/* Floating Right Side Button (>) */}
+                  <button
+                    onMouseDown={(e) => { e.stopPropagation(); setIsWsHoldingRight(true); }}
+                    onMouseUp={(e) => { e.stopPropagation(); setIsWsHoldingRight(false); }}
+                    onMouseLeave={() => setIsWsHoldingRight(false)}
+                    onTouchStart={(e) => { e.stopPropagation(); setIsWsHoldingRight(true); }}
+                    onTouchEnd={(e) => { e.stopPropagation(); setIsWsHoldingRight(false); }}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleWsNext();
+                    }}
+                    className={`absolute right-2 top-1/2 -translate-y-1/2 z-30 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#1C1917]/85 hover:bg-[#C87A38] text-white flex items-center justify-center border border-white/30 shadow-2xl backdrop-blur-md transition-all active:scale-95 cursor-pointer ${
+                      isWsHoldingRight ? 'bg-[#C87A38] scale-110 shadow-inner' : ''
+                    }`}
+                    aria-label="Move right / next"
+                  >
+                    <ChevronRight className="w-5 h-5" />
+                  </button>
+
+                  <div 
+                    ref={wsTrackRef}
+                    className="flex gap-4 w-max"
+                    style={{
+                      transform: `translate3d(-${wsScrollPos}px, 0, 0)`,
+                      willChange: 'transform'
+                    }}
+                  >
+                    {displayWorkshopPhotos.map((item, index) => (
+                      <div
+                        key={`${item.id}-${index}`}
+                        onClick={() => {
+                          if (!hasWsDraggedFar && onSelectArtwork) {
+                            onSelectArtwork({
+                              title: item.title,
+                              image: item.image,
+                              styleCategory: 'Workshop Photo',
+                              medium: 'Madhubani Art Workshop',
+                              story: item.caption,
+                              year: '2026',
+                              dimensions: item.location,
+                              isWorkshop: true
+                            });
+                          }
+                        }}
+                        className="w-64 sm:w-72 shrink-0 bg-[#FAF8F3] border border-[#E7E0D2] hover:border-[#C87A38] rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group relative cursor-pointer"
+                      >
+                        <div className="relative aspect-[4/3] bg-[#E7E0D2]/40 overflow-hidden">
+                          <img 
+                            src={item.image} 
+                            alt={item.title} 
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          />
+                          <div className="absolute bottom-2 right-2 bg-[#C87A38] text-white p-1.5 rounded-full shadow opacity-90 group-hover:opacity-100 group-hover:scale-110 transition-all">
+                            <Eye className="w-3.5 h-3.5" />
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Other Workshop Venues Text Strip */}
               <div className="pt-4 border-t border-[#E7E0D2]/70 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-[#5C5652]">
                 <span className="font-bold text-[#1C1917] uppercase tracking-wider">Other Workshop Venues:</span>
                 <span className="font-medium text-[#44403C]">Lalit Kala Akademi</span>
