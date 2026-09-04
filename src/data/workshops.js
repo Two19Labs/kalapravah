@@ -39,16 +39,14 @@ export const WORKSHOP_PHOTOS = [
     image: '/workshops/workshop-6.jpg',
     title: 'Young Artist at Work',
     caption: 'Little participant creating his custom Madhubani bird drawing in the sunshine',
-    location: 'Sunder Nursery, New Delhi',
-    objectPosition: 'object-top'
+    location: 'Sunder Nursery, New Delhi'
   },
   {
     id: 'ws-7',
     image: '/workshops/workshop-7.jpg',
     title: 'Proud Bird Motif Artwork',
     caption: 'Young participant showcasing his completed traditional Madhubani bird art',
-    location: 'Sunder Nursery, New Delhi',
-    objectPosition: 'object-top'
+    location: 'Sunder Nursery, New Delhi'
   },
   {
     id: 'ws-8',
@@ -62,15 +60,13 @@ export const WORKSHOP_PHOTOS = [
     image: '/workshops/workshop-9.jpg',
     title: 'Handcrafted Heritage Art',
     caption: 'Young artist displaying her beautifully mounted Madhubani bird masterpiece',
-    location: 'Sunder Nursery, New Delhi',
-    objectPosition: 'object-top'
+    location: 'Sunder Nursery, New Delhi'
   },
   {
     id: 'ws-10',
     image: '/workshops/workshop-10.jpg',
     title: 'Easel Demonstration & Practice',
     caption: 'Easel instruction for Madhubani motifs during outdoor heritage sessions',
-    location: 'Sunder Nursery, New Delhi',
-    objectPosition: 'object-top'
+    location: 'Sunder Nursery, New Delhi'
   }
 ];

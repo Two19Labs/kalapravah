@@ -611,7 +611,7 @@ export default function ArtGallerySection({ onSelectArtwork }) {
                           <img 
                             src={item.image} 
                             alt={item.title} 
-                            className={`w-full h-full object-cover ${item.objectPosition || 'object-center'} group-hover:scale-105 transition-transform duration-500`}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                           />
                         </div>
                       </div>
