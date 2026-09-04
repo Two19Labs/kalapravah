@@ -98,11 +98,11 @@ export default function ArticleModal({ article, onClose, onOpenCommission }) {
 
           {/* Featured Hero Image */}
           {article.image && (
-            <div className="relative aspect-[16/9] sm:aspect-[21/9] overflow-hidden rounded-sm border border-[#E7E0D2] bg-[#FFFDF9]">
+            <div className="relative aspect-[3/2] overflow-hidden rounded-sm border border-[#E7E0D2] bg-[#FFFDF9]">
               <img
                 src={article.image}
                 alt={article.title}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-[center_28%]"
               />
             </div>
           )}
@@ -113,33 +113,14 @@ export default function ArticleModal({ article, onClose, onOpenCommission }) {
             dangerouslySetInnerHTML={{ __html: article.content }}
           />
 
-          {/* SEO Focus Keyword Badges */}
-          {article.seoKeywords && article.seoKeywords.length > 0 && (
-            <div className="pt-6 border-t border-[#E7E0D2] space-y-3">
-              <span className="text-[10px] font-semibold tracking-widest text-[#78716C] uppercase block">
-                EXPLORE TOPICS & KEYWORDS
-              </span>
-              <div className="flex flex-wrap gap-2">
-                {article.seoKeywords.map((kw, idx) => (
-                  <span
-                    key={idx}
-                    className="px-3 py-1 bg-[#FFFDF9] border border-[#E7E0D2] rounded-full text-xs text-[#5C5652]"
-                  >
-                    #{kw.trim()}
-                  </span>
-                ))}
-              </div>
-            </div>
-          )}
-
           {/* Contextual Call to Action */}
-          <div className="p-6 bg-[#FFFDF9] border border-[#E7E0D2] rounded-sm flex flex-col sm:flex-row items-center justify-between gap-4 mt-8">
-            <div>
-              <h4 className="font-serif text-base font-bold text-[#1C1917]">
+          <div className="p-4 sm:p-5 bg-[#FFFDF9] border border-[#E7E0D2] rounded-xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mt-6">
+            <div className="space-y-0.5">
+              <h4 className="font-serif text-sm font-bold text-[#1C1917]">
                 Interested in Authentic Madhubani Artworks?
               </h4>
-              <p className="text-xs text-[#5C5652] mt-1">
-                Explore Kalapravah's curated original collection or commission a bespoke painting for your space.
+              <p className="text-xs text-[#5C5652] font-light">
+                Explore Kalapravah's curated original collection or commission a bespoke painting.
               </p>
             </div>
             <button
@@ -147,10 +128,10 @@ export default function ArticleModal({ article, onClose, onOpenCommission }) {
                 onClose();
                 if (onOpenCommission) onOpenCommission();
               }}
-              className="btn-primary text-xs font-semibold px-5 py-2.5 whitespace-nowrap flex items-center gap-2"
+              className="px-4 py-2.5 rounded-lg bg-[#1C1917] hover:bg-[#C87A38] text-white text-xs font-semibold uppercase tracking-wider transition-colors whitespace-nowrap flex items-center gap-1.5 cursor-pointer shadow-xs shrink-0"
             >
-              <span>Inquire / Commission Art</span>
-              <ArrowRight className="w-4 h-4" />
+              <span>Inquire / Commission</span>
+              <ArrowRight className="w-3.5 h-3.5" />
             </button>
           </div>
 

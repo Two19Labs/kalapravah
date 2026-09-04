@@ -121,7 +121,7 @@ export default function ArtAndArtistSection({ onContactArtist }) {
               ARTIST
             </h2>
             <p className="text-sm sm:text-base text-[#5C5652] leading-relaxed max-w-2xl mx-auto font-light">
-              Rashmi Dhar - Engineering graduate, traditional folk practitioner, and founder of Kalapravah, dedicated to preserving Mithila heritage for modern spaces.
+              Rashmi Dhar — Traditional Madhubani practitioner, workshop facilitator, and founder of Kalapravah, dedicated to keeping Mithila heritage vibrant.
             </p>
             <div className="w-20 h-[2px] bg-[#C87A38] mx-auto rounded-full mt-2" />
           </div>
@@ -129,7 +129,7 @@ export default function ArtAndArtistSection({ onContactArtist }) {
           <div className="border-b border-[#E7E0D2] pb-4">
             <div>
               <h3 className="font-serif text-2xl sm:text-4xl font-normal text-[#1C1917]">
-                From the Mountains to the Canvas
+                My Art Journey: Solace in Sacred Tradition
               </h3>
             </div>
           </div>
@@ -149,8 +149,8 @@ export default function ArtAndArtistSection({ onContactArtist }) {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1C1917]/80 via-transparent to-transparent opacity-90 flex flex-col justify-end p-4 sm:p-5 text-white">
                     <span className="font-serif text-lg sm:text-2xl font-bold">Rashmi Dhar</span>
-                    <span className="text-xs text-[#EAD5BE] font-light">Engineering Graduate (Nagpur University) & Folk Artist</span>
-                    <span className="text-[10px] text-[#A89F95] mt-1">Delhi NCR • Nurtured in Srinagar, J&K</span>
+                    <span className="text-xs text-[#EAD5BE] font-light">Madhubani Folk Artist & Founder of Kalapravah</span>
+                    <span className="text-[10px] text-[#A89F95] mt-1">Delhi NCR • Natural Pigments & Canvas Work</span>
                   </div>
                 </div>
 
@@ -176,19 +176,15 @@ export default function ArtAndArtistSection({ onContactArtist }) {
               {/* Open Detailed Narrative */}
               <div className="space-y-3.5 sm:space-y-4 py-1">
                 <p className="text-sm sm:text-base lg:text-lg text-[#332F2C] leading-relaxed font-light">
-                  In a world brimming with fast-paced, digital art trends, it's refreshing to come across artists who dive deep into the roots of creativity, drawing inspiration from traditional forms of expression. Among these creators is Rashmi Dhar, an Engineering graduate turned artist who since the past 5 years has dedicated her passion to exploring Indian folk art, with a special focus on Mithila art.
+                  Drawing and painting are my childhood passion! As I pursued my academics, my creative pursuits eventually took a backseat to the demands of everyday life. However, a deep longing to create and express never truly left me. When I returned to art, I found profound solace in Madhubani (Mithila) art.
                 </p>
 
                 <p className="text-sm sm:text-base lg:text-lg text-[#332F2C] leading-relaxed font-light">
-                  Living presently in Delhi NCR, Rashmi was born and brought up in Srinagar (Jammu and Kashmir). She comes from a community of Kashmiri Hindu scholars.
+                  Madhubani art is truly a sacred tradition which derives all its stories from our civilization, mythology, and nature. Over the past 6 years, I have dedicated myself to learning and practicing this timeless art form directly under master artists who inherited these techniques through generations of family tradition.
                 </p>
 
                 <p className="text-sm sm:text-base lg:text-lg text-[#332F2C] leading-relaxed font-light">
-                  She has learned this art form under eminent national awardees, local master artists, and immersive traditional workshops. This hands-on guidance has helped her gain deep insight into the precise nib techniques, natural pigment preparations, and civilizational narratives that define Mithila folk art.
-                </p>
-
-                <p className="text-sm sm:text-base lg:text-lg text-[#1C1917] font-semibold leading-relaxed">
-                  Each piece of her artwork resonates with emotion, telling tales of love, struggle, and community spirit that transcend generations.
+                  My primary mediums are acrylics and natural pigments on handmade paper and canvas. Through my creative space, I started an art startup for myself—<strong>Kalapravah</strong>—where I strive to keep this living heritage breathing and vibrant.
                 </p>
               </div>
 
@@ -196,12 +192,12 @@ export default function ArtAndArtistSection({ onContactArtist }) {
               <div className="relative pl-4 sm:pl-8 border-l-2 border-[#C87A38] space-y-3 sm:space-y-4 py-2 my-4">
                 <div className="flex items-center gap-2 text-xs sm:text-sm font-bold text-[#C87A38] uppercase tracking-widest">
                   <Quote className="w-4 h-4 fill-current shrink-0" />
-                  <span>RASHMI DHAR: HER ARTISTIC JOURNEY</span>
+                  <span>HERITAGE & MINDFUL WORKSHOPS</span>
                 </div>
 
                 <div className="space-y-3 text-sm sm:text-base lg:text-lg text-[#44403C] font-serif leading-relaxed font-normal">
                   <p className="not-italic">
-                    Though she did not grow up in the traditional households of Mithila inheriting these brushstrokes from ancestors, she found herself drawn to Madhubani not by lineage, but by a profound sense of belonging. Every motif, the vibrant flora, the sacred fauna, and the eternal narratives of traditional epics, speaks a language of its own. When she holds the fine nib and fills the canvas with natural pigments and bright hues, she is not just painting; she is listening to the whispers of ancient history and translating them for today.
+                    "Art is meant to be shared, which is why a vital part of my journey involves conducting hands-on Madhubani workshops. I design these sessions especially for the younger generation and busy modern minds—providing a peaceful sanctuary away from screens and offering a calming, therapeutic space to unwind, reset, and find joy."
                   </p>
                 </div>
               </div>

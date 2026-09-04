@@ -1,51 +1,63 @@
 export const ARTIST_FEATURE = {
   id: "inside-the-studio",
-  title: "Inside the Studio of Contemporary Artist Rashmi Dhar",
-  subtitle: "Translating Kashmiri heritage, ancestral memory, and sacred Mithila linework into contemporary folk art.",
+  title: "My Art Journey: Inside the Studio of Contemporary Artist Rashmi Dhar",
+  subtitle: "Reconnecting with childhood passion, learning under hereditary master artists, and keeping Mithila's living heritage vibrant through Kalapravah.",
   category: "About The Artist",
   date: "AUGUST 21, 2026",
   readTime: "6 min read",
   image: "/images/rashmi_dhar.jpg",
-  author: "Kalapravah Editorial",
+  author: "Rashmi Dhar",
   seoKeywords: [
-    "Rashmi Dhar artist",
-    "contemporary Madhubani artist",
-    "Kalapravah art studio",
-    "Mithila art gallery Delhi NCR",
-    "Kashmiri Pandit artist"
+    "Rashmi Dhar artist journey",
+    "Madhubani artist",
+    "Kalapravah art startup",
+    "Mithila art workshops",
+    "master artist learning Madhubani"
   ],
-  excerpt: "A Kashmiri Pandit born and raised in Kashmir, now working in Delhi NCR. Discover how memory, traditional Mithila techniques, and organic pigments shape her studio practice.",
+  excerpt: "Drawing and painting have been my childhood passion. Discover how returning to art led me to Madhubani painting, master artist mentorships, mindful workshops, and the founding of Kalapravah.",
   content: `
     <p class="lead font-serif text-lg sm:text-xl text-[#1C1917] leading-relaxed mb-6">
-      Step inside the quiet space where traditional fine nibs, natural mineral dyes, and hand-milled turmeric ochre transform raw cotton fiber paper into living stories of sacred heritage.
+      Drawing and painting are my childhood passion! As I pursued my academics, my creative pursuits eventually took a backseat to the demands of everyday life. However, a deep longing to create and express never truly left me. When I returned to art, I found profound solace in Madhubani (Mithila) art.
     </p>
 
-    <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">A Journey of Healing and Memory</h2>
+    <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">My Art Journey & Living Heritage</h2>
     <p class="mb-4 text-[#44403C] leading-relaxed">
-      Born and raised in Kashmir, Rashmi Dhar's artistic journey carries the indelible memory of home, displacement, and resilience. Turning to the meditative rhythm of traditional Indian art, she found in Madhubani/Mithila painting a profound vehicle for expression, quiet contemplation, and artistic rebirth.
+      Madhubani art is truly a sacred tradition which derives all its stories from our civilization, mythology, and nature. Hence it instantly resonated with my soul.
+    </p>
+    <p class="mb-4 text-[#44403C] leading-relaxed">
+      Over the past 6 years, I have dedicated myself to learning and practicing this timeless art form. To honor its authenticity, I have learned this art directly under master artists who inherited these techniques through generations of family tradition.
+    </p>
+    <p class="mb-4 text-[#44403C] leading-relaxed">
+      My primary mediums are acrylics and natural pigments on handmade paper and canvas.
     </p>
     <p class="mb-6 text-[#44403C] leading-relaxed">
-      "Fine line work requires single-pointed focus," explains Rashmi. "When drawing thousands of continuous ink lines without standard pencil guides, there is no room for haste. Every stroke becomes an act of mindfulness."
+      Through my creative space, I have started an art startup for myself, namely, <strong>Kalapravah</strong>! At KALAPRAVAH, I strive to keep this living heritage breathing and vibrant.
     </p>
 
     <blockquote class="border-l-2 border-[#C87A38] pl-6 py-2 my-8 italic font-serif text-lg text-[#1C1917] bg-[#FAF8F3]/60 rounded-r-md">
-      "Art for me is not merely decorative: it is a sacred bridge between past heritage and modern quietude."
+      "Madhubani art is truly a sacred tradition which derives all its stories from our civilization, mythology, and nature. At KALAPRAVAH, I strive to keep this living heritage breathing and vibrant."
     </blockquote>
 
-    <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">The Kalapravah Studio Philosophy</h2>
+    <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Heritage & Mindful Workshops</h2>
     <p class="mb-4 text-[#44403C] leading-relaxed">
-      Located in Delhi NCR, the Kalapravah Studio blends traditional Mithila iconography, such as the sacred lotus, cosmic peacocks, and divine figures, with contemporary aesthetics, restrained color palettes, and archival handmade papers.
+      Art is meant to be shared, which is why a vital part of my journey involves conducting hands-on Madhubani workshops. I design these sessions especially for the younger generation and busy modern minds, keeping several core goals at heart:
     </p>
-    <ul class="list-disc list-inside space-y-2 mb-6 text-[#44403C]">
-      <li><strong>Hand-milled Pigments:</strong> Utilizing raw turmeric, madder root, indigo, and wood soot.</li>
-      <li><strong>Archival Cotton Paper:</strong> Heavyweight deckled-edge paper sourced from traditional paper makers.</li>
-      <li><strong>Kachni & Bharni Lineage:</strong> Honoring ancestral techniques passed down through generations of Bihar women artisans.</li>
+    <ul class="list-disc list-inside space-y-3 mb-6 text-[#44403C]">
+      <li><strong>Cultural Grounding:</strong> Guiding participants to discover the rich storytelling and historical depth of Mithila art, helping them stay grounded in our rich cultural heritage.</li>
+      <li><strong>Digital Detox Sanctuary:</strong> Providing a peaceful sanctuary away from screens and devices, where hands can be engaged in tactile, creative work.</li>
+      <li><strong>Therapeutic Creative Outlet:</strong> Offering a calming, therapeutic outlet for individuals who lead fast-paced lives and cannot dedicate themselves to art full-time, yet deeply desire a creative space to unwind, reset, and find joy.</li>
     </ul>
 
-    <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Visiting & Custom Commissions</h2>
-    <p class="mb-6 text-[#44403C] leading-relaxed">
-      Each original artwork created in the studio takes between 40 to 180 hours of meticulous hand painting. Private viewings and custom artwork commissions can be scheduled directly via the Kalapravah studio concierge.
+    <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Vision for KALAPRAVAH</h2>
+    <p class="mb-4 text-[#44403C] leading-relaxed">
+      Looking ahead, my vision at KALAPRAVAH as a Madhubani artist is multi-fold:
     </p>
+    <ul class="list-disc list-inside space-y-3 mb-6 text-[#44403C]">
+      <li><strong>Pure Tradition & New Media:</strong> Keeping the purest traditions of Mithila art alive while experimenting respectfully with new surfaces and scales.</li>
+      <li><strong>Expanding Community Workshops:</strong> Expanding my workshops to reach more young minds and passionate hobbyists, ensuring our traditional art forms continue to thrive.</li>
+      <li><strong>Global Exhibitions:</strong> Exhibiting through collective platforms and sharing larger narratives of civilization and nature with a wider global audience.</li>
+      <li><strong>Sustainable Practices:</strong> Leaning deeper into sustainable practices by expanding my use of natural pigments and eco-friendly handmade materials.</li>
+    </ul>
   `
 };
 

@@ -191,72 +191,48 @@ export default function ArticlePage() {
 
           {/* Hero Featured Image */}
           {article.image && (
-            <figure className="space-y-2">
-              <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-[#E7E0D2] bg-[#FFFDF9] shadow-md">
-                <img
-                  src={article.image}
-                  alt={article.title}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <figcaption className="text-center text-xs text-[#78716C] italic font-serif">
-                Original hand-painted Madhubani folk artwork by Rashmi Dhar • Kalapravah Studio Collection
-              </figcaption>
-            </figure>
+            <div className="relative aspect-[3/2] max-h-[500px] overflow-hidden rounded-2xl border border-[#E7E0D2] bg-[#FFFDF9] shadow-md">
+              <img
+                src={article.image}
+                alt={article.title}
+                className="w-full h-full object-cover object-[center_28%]"
+              />
+            </div>
           )}
 
           {/* Body HTML Content */}
           <div 
-            className="prose prose-stone max-w-none text-[#44403C] text-base sm:text-lg leading-relaxed space-y-6 pt-4 font-light"
+            className="prose prose-stone max-w-none text-[#44403C] text-base sm:text-lg leading-relaxed space-y-6 pt-2 font-light"
             dangerouslySetInnerHTML={{ __html: article.content }}
           />
 
-          {/* SEO Focus Keyword Badges */}
-          {article.seoKeywords && article.seoKeywords.length > 0 && (
-            <section className="pt-8 border-t border-[#E7E0D2] space-y-3">
-              <h3 className="text-xs font-bold tracking-widest text-[#78716C] uppercase">
-                INDEXED TOPICS & SEARCH KEYWORDS
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {article.seoKeywords.map((kw, idx) => (
-                  <span
-                    key={idx}
-                    className="px-3.5 py-1.5 bg-[#FFFDF9] border border-[#E7E0D2] rounded-full text-xs font-medium text-[#5C5652]"
-                  >
-                    #{kw.trim()}
-                  </span>
-                ))}
-              </div>
-            </section>
-          )}
-
           {/* CTA Box: Collection & Commission */}
-          <section className="p-6 sm:p-8 bg-[#FFFDF9] border border-[#E7E0D2] rounded-2xl shadow-sm flex flex-col md:flex-row items-center justify-between gap-6 my-12">
-            <div className="space-y-2">
+          <section className="p-5 sm:p-6 bg-[#FFFDF9] border border-[#E7E0D2] rounded-xl shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-5 my-8">
+            <div className="space-y-1 flex-1 max-w-xl">
               <span className="text-[10px] font-bold tracking-widest text-[#C87A38] uppercase block">
                 KALAPRAVAH FOLK ART GALLERY
               </span>
-              <h3 className="font-serif text-xl font-bold text-[#1C1917]">
+              <h3 className="font-serif text-lg sm:text-xl font-bold text-[#1C1917]">
                 Acquire Original Madhubani Masterpieces
               </h3>
-              <p className="text-xs sm:text-sm text-[#5C5652] max-w-md font-light">
-                Each painting is hand-drawn on archival cotton fiber paper using organic pigments. Inquire about available pieces or commission a custom motif.
+              <p className="text-xs sm:text-sm text-[#5C5652] leading-relaxed font-light">
+                Hand-drawn on archival cotton paper using natural pigments. Inquire about available originals or commission a custom motif.
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+            <div className="flex items-center gap-2.5 shrink-0 self-start md:self-center">
               <button
                 onClick={() => handleNavClick('gallery')}
-                className="px-5 py-3 rounded-full border border-[#1C1917] text-xs font-semibold uppercase tracking-wider text-[#1C1917] hover:bg-[#1C1917] hover:text-white transition-all text-center whitespace-nowrap cursor-pointer"
+                className="px-4 py-2.5 rounded-lg border border-[#1C1917] text-xs font-semibold uppercase tracking-wider text-[#1C1917] hover:bg-[#1C1917] hover:text-white transition-all whitespace-nowrap cursor-pointer"
               >
                 Explore Artworks
               </button>
               <button
                 onClick={() => handleNavClick('contact')}
-                className="px-5 py-3 rounded-full bg-[#1C1917] hover:bg-[#C87A38] text-white text-xs font-semibold uppercase tracking-wider transition-colors text-center whitespace-nowrap flex items-center justify-center gap-2 cursor-pointer shadow-sm"
+                className="px-4 py-2.5 rounded-lg bg-[#1C1917] hover:bg-[#C87A38] text-white text-xs font-semibold uppercase tracking-wider transition-colors whitespace-nowrap flex items-center gap-1.5 cursor-pointer shadow-xs"
               >
                 <span>Commission Custom Art</span>
-                <ArrowRight className="w-4 h-4" />
+                <ArrowRight className="w-3.5 h-3.5" />
               </button>
             </div>
           </section>
