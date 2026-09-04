@@ -67,6 +67,7 @@ export const WORKSHOP_PHOTOS = [
     image: '/workshops/workshop-10.jpg',
     title: 'Easel Demonstration & Practice',
     caption: 'Easel instruction for Madhubani motifs during outdoor heritage sessions',
-    location: 'Sunder Nursery, New Delhi'
+    location: 'Sunder Nursery, New Delhi',
+    objectPosition: 'object-top'
   }
 ];
