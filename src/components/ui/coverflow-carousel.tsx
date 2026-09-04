@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { ChevronLeft, ChevronRight, Eye } from "lucide-react";
+import { ChevronLeft, ChevronRight, Sparkles } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 
@@ -349,7 +349,7 @@ export function CoverflowCarousel({
                 {/* Subtle Hover Overlay Hint */}
                 <div className="absolute inset-0 bg-[#1C1917]/25 opacity-0 group-hover/card:opacity-100 transition-all duration-300 flex items-center justify-center pointer-events-none p-3">
                   <div className="bg-[#FAF8F3]/95 backdrop-blur-md text-[#1C1917] text-[10px] sm:text-xs font-semibold tracking-wider uppercase px-3.5 py-2 rounded-full border border-[#E7E0D2] shadow-lg flex items-center gap-1.5 transform translate-y-1 group-hover/card:translate-y-0 transition-transform duration-300">
-                    <Eye className="w-3.5 h-3.5 text-[#C87A38]" />
+                    <Sparkles className="w-3.5 h-3.5 text-[#C87A38]" />
                     <span>Click to inspect</span>
                   </div>
                 </div>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ARTWORKS } from '../data/artworks';
 import { WORKSHOP_PHOTOS } from '../data/workshops';
-import { GalleryVertical, Calendar, Landmark, MapPin, Users, Sparkles, Eye, ArrowUpRight, ChevronLeft, ChevronRight, Pause, Play, HeartHandshake, Globe, Clock } from 'lucide-react';
+import { GalleryVertical, Calendar, Landmark, MapPin, Users, Sparkles, ArrowUpRight, ChevronLeft, ChevronRight, Pause, Play, HeartHandshake, Globe, Clock } from 'lucide-react';
 
 export default function ArtGallerySection({ onSelectArtwork }) {
   const [filterStyle, setFilterStyle] = useState('All');
@@ -372,8 +372,8 @@ export default function ArtGallerySection({ onSelectArtwork }) {
 
                       <div className="absolute inset-0 bg-[#1C1917]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center z-20">
                         <div className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-white text-[#1C1917] text-xs font-bold shadow-md">
-                          <Eye className="w-4 h-4 text-[#C87A38]" />
-                          <span>INSPECT DETAILS</span>
+                          <Sparkles className="w-3.5 h-3.5 text-[#C87A38]" />
+                          <span>VIEW DETAILS</span>
                         </div>
                       </div>
                     </div>
@@ -613,9 +613,6 @@ export default function ArtGallerySection({ onSelectArtwork }) {
                             alt={item.title} 
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                           />
-                          <div className="absolute bottom-2 right-2 bg-[#C87A38] text-white p-1.5 rounded-full shadow opacity-90 group-hover:opacity-100 group-hover:scale-110 transition-all">
-                            <Eye className="w-3.5 h-3.5" />
-                          </div>
                         </div>
                       </div>
                     ))}
