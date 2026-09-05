@@ -38,6 +38,7 @@ export default function Footer({ onNavigate }) {
     { id: 'artist', label: 'ARTIST' },
     { id: 'gallery', label: 'ART GALLERY' },
     { id: 'blog', label: 'BLOG' },
+    { id: 'faq', label: 'FAQS' },
     { id: 'contact', label: 'CONTACT' },
   ];
 

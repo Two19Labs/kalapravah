@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import ArtAndArtistSection from './components/ArtAndArtistSection';
 import ArtGallerySection from './components/ArtGallerySection';
 import JournalSection from './components/JournalSection';
+import FAQSection from './components/FAQSection';
 import Footer from './components/Footer';
 import ArtworkLightbox from './components/ArtworkLightbox';
 import MadhubaniFolkBackground from './components/MadhubaniFolkBackground';
@@ -34,7 +35,7 @@ function MainPage() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'art', 'artist', 'gallery', 'blog', 'contact'];
+      const sections = ['home', 'art', 'artist', 'gallery', 'blog', 'faq', 'contact'];
       const viewportHeight = window.innerHeight;
       const scrollY = window.scrollY;
       const documentHeight = document.documentElement.scrollHeight;
@@ -118,6 +119,9 @@ function MainPage() {
         <JournalSection
           onOpenCommission={() => scrollToSection('contact')}
         />
+
+        {/* 📌 SECTION 5: FAQS (COLLECTOR GUIDE & AI SEO ENGINE) */}
+        <FAQSection />
 
       </main>
 
