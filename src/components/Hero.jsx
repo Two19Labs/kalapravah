@@ -150,11 +150,11 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
               </div>
 
               <p className="font-serif text-base sm:text-xl text-[#1C1917] italic leading-relaxed font-normal pt-1">
-                "Where Heritage Meets Contemporary Calm"
+                Where Heritage Meets Contemporary Calm
               </p>
               
               <p className="font-serif text-sm sm:text-base text-[#C87A38] italic leading-relaxed font-medium pl-4 border-l-2 border-[#C87A38]/60 my-2">
-                "Kalapravah translates to the continuous flow of art. For me, this venture is more than a collection of paintings, it is a sacred bridge connecting our rich civilizational roots with the modern world."
+                Kalapravah translates to the continuous flow of art. For me, this venture is more than a collection of paintings, it is a sacred bridge connecting our rich civilizational roots with the modern world.
               </p>
               
               <p className="text-sm sm:text-base text-[#5C5652] leading-relaxed font-light">
