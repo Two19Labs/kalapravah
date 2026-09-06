@@ -129,7 +129,7 @@ export default function ArtAndArtistSection({ onContactArtist }) {
           <div className="border-b border-[#E7E0D2] pb-4">
             <div>
               <h3 className="font-serif text-2xl sm:text-4xl font-normal text-[#1C1917]">
-                My Art Journey: Solace in Sacred Tradition
+                Artist Journey: Solace in Sacred Tradition
               </h3>
             </div>
           </div>
@@ -176,15 +176,15 @@ export default function ArtAndArtistSection({ onContactArtist }) {
               {/* Open Detailed Narrative */}
               <div className="space-y-3.5 sm:space-y-4 py-1">
                 <p className="text-sm sm:text-base lg:text-lg text-[#332F2C] leading-relaxed font-light">
-                  Drawing and painting are my childhood passion! As I pursued my academics, my creative pursuits eventually took a backseat to the demands of everyday life. However, a deep longing to create and express never truly left me. When I returned to art, I found profound solace in Madhubani (Mithila) art.
+                  Drawing and painting have been her childhood passion. As she pursued her academics, her creative pursuits eventually took a backseat to the demands of everyday life. However, a deep longing to create and express never truly left her. When she returned to art, she found profound solace in Madhubani (Mithila) art.
                 </p>
 
                 <p className="text-sm sm:text-base lg:text-lg text-[#332F2C] leading-relaxed font-light">
-                  Madhubani art is truly a sacred tradition which derives all its stories from our civilization, mythology, and nature. Over the past 6 years, I have dedicated myself to learning and practicing this timeless art form directly under master artists who inherited these techniques through generations of family tradition.
+                  Madhubani art is truly a sacred tradition which derives all its stories from civilization, mythology, and nature. Over the past 6 years, she has dedicated herself to learning and practicing this timeless art form directly under master artists who inherited these techniques through generations of family tradition.
                 </p>
 
                 <p className="text-sm sm:text-base lg:text-lg text-[#332F2C] leading-relaxed font-light">
-                  My primary mediums are acrylics and natural pigments on handmade paper and canvas. Through my creative space, I started an art startup for myself—<strong>Kalapravah</strong>—where I strive to keep this living heritage breathing and vibrant.
+                  Her primary mediums are acrylics and natural pigments on handmade paper and canvas. Through her creative space, she founded the art initiative—<strong>Kalapravah</strong>—where she strives to keep this living heritage breathing and vibrant.
                 </p>
               </div>
 
@@ -197,7 +197,7 @@ export default function ArtAndArtistSection({ onContactArtist }) {
 
                 <div className="space-y-3 text-sm sm:text-base lg:text-lg text-[#44403C] font-serif leading-relaxed font-normal">
                   <p className="not-italic">
-                    "Art is meant to be shared, which is why a vital part of my journey involves conducting hands-on Madhubani workshops. I design these sessions especially for the younger generation and busy modern minds—providing a peaceful sanctuary away from screens and offering a calming, therapeutic space to unwind, reset, and find joy."
+                    Art is meant to be shared, which is why a vital part of her journey involves conducting hands-on Madhubani workshops. She designs these sessions especially for the younger generation and busy modern minds—providing a peaceful sanctuary away from screens and offering a calming, therapeutic space to unwind, reset, and find joy.
                   </p>
                 </div>
               </div>

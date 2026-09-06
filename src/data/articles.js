@@ -1,6 +1,6 @@
 export const ARTIST_FEATURE = {
   id: "inside-the-studio",
-  title: "My Art Journey: Inside the Studio of Contemporary Artist Rashmi Dhar",
+  title: "Artist Journey: Inside the Studio of Contemporary Artist Rashmi Dhar",
   subtitle: "Reconnecting with childhood passion, learning under hereditary master artists, and keeping Mithila's living heritage vibrant through Kalapravah.",
   category: "About The Artist",
   date: "AUGUST 21, 2026",
@@ -14,33 +14,33 @@ export const ARTIST_FEATURE = {
     "Mithila art workshops",
     "master artist learning Madhubani"
   ],
-  excerpt: "Drawing and painting have been my childhood passion. Discover how returning to art led me to Madhubani painting, master artist mentorships, mindful workshops, and the founding of Kalapravah.",
+  excerpt: "Drawing and painting have been her childhood passion. Discover how returning to art led Rashmi Dhar to Madhubani painting, master artist mentorships, mindful workshops, and the founding of Kalapravah.",
   content: `
     <p class="lead font-serif text-lg sm:text-xl text-[#1C1917] leading-relaxed mb-6">
-      Drawing and painting are my childhood passion! As I pursued my academics, my creative pursuits eventually took a backseat to the demands of everyday life. However, a deep longing to create and express never truly left me. When I returned to art, I found profound solace in Madhubani (Mithila) art.
+      Drawing and painting have been her childhood passion. As she pursued her academics, her creative pursuits eventually took a backseat to the demands of everyday life. However, a deep longing to create and express never truly left her. When she returned to art, she found profound solace in Madhubani (Mithila) art.
     </p>
 
-    <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">My Art Journey & Living Heritage</h2>
+    <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Artist Journey & Living Heritage</h2>
     <p class="mb-4 text-[#44403C] leading-relaxed">
-      Madhubani art is truly a sacred tradition which derives all its stories from our civilization, mythology, and nature. Hence it instantly resonated with my soul.
+      Madhubani art is truly a sacred tradition which derives all its stories from civilization, mythology, and nature. Hence it instantly resonated with her soul.
     </p>
     <p class="mb-4 text-[#44403C] leading-relaxed">
-      Over the past 6 years, I have dedicated myself to learning and practicing this timeless art form. To honor its authenticity, I have learned this art directly under master artists who inherited these techniques through generations of family tradition.
+      Over the past 6 years, she has dedicated herself to learning and practicing this timeless art form. To honor its authenticity, she learned this art directly under master artists who inherited these techniques through generations of family tradition.
     </p>
     <p class="mb-4 text-[#44403C] leading-relaxed">
-      My primary mediums are acrylics and natural pigments on handmade paper and canvas.
+      Her primary mediums are acrylics and natural pigments on handmade paper and canvas.
     </p>
     <p class="mb-6 text-[#44403C] leading-relaxed">
-      Through my creative space, I have started an art startup for myself, namely, <strong>Kalapravah</strong>! At KALAPRAVAH, I strive to keep this living heritage breathing and vibrant.
+      Through her creative space, she founded the art initiative, namely, <strong>Kalapravah</strong>! At KALAPRAVAH, she strives to keep this living heritage breathing and vibrant.
     </p>
 
     <blockquote class="border-l-2 border-[#C87A38] pl-6 py-2 my-8 italic font-serif text-lg text-[#1C1917] bg-[#FAF8F3]/60 rounded-r-md">
-      "Madhubani art is truly a sacred tradition which derives all its stories from our civilization, mythology, and nature. At KALAPRAVAH, I strive to keep this living heritage breathing and vibrant."
+      Madhubani art is truly a sacred tradition which derives all its stories from civilization, mythology, and nature. At KALAPRAVAH, she strives to keep this living heritage breathing and vibrant.
     </blockquote>
 
     <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Heritage & Mindful Workshops</h2>
     <p class="mb-4 text-[#44403C] leading-relaxed">
-      Art is meant to be shared, which is why a vital part of my journey involves conducting hands-on Madhubani workshops. I design these sessions especially for the younger generation and busy modern minds, keeping several core goals at heart:
+      Art is meant to be shared, which is why a vital part of her journey involves conducting hands-on Madhubani workshops. She designs these sessions especially for the younger generation and busy modern minds, keeping several core goals at heart:
     </p>
     <ul class="list-disc list-inside space-y-3 mb-6 text-[#44403C]">
       <li><strong>Cultural Grounding:</strong> Guiding participants to discover the rich storytelling and historical depth of Mithila art, helping them stay grounded in our rich cultural heritage.</li>
@@ -50,13 +50,13 @@ export const ARTIST_FEATURE = {
 
     <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Vision for KALAPRAVAH</h2>
     <p class="mb-4 text-[#44403C] leading-relaxed">
-      Looking ahead, my vision at KALAPRAVAH as a Madhubani artist is multi-fold:
+      Looking ahead, her vision at KALAPRAVAH as a Madhubani artist is multi-fold:
     </p>
     <ul class="list-disc list-inside space-y-3 mb-6 text-[#44403C]">
       <li><strong>Pure Tradition & New Media:</strong> Keeping the purest traditions of Mithila art alive while experimenting respectfully with new surfaces and scales.</li>
-      <li><strong>Expanding Community Workshops:</strong> Expanding my workshops to reach more young minds and passionate hobbyists, ensuring our traditional art forms continue to thrive.</li>
+      <li><strong>Expanding Community Workshops:</strong> Expanding workshops to reach more young minds and passionate hobbyists, ensuring our traditional art forms continue to thrive.</li>
       <li><strong>Global Exhibitions:</strong> Exhibiting through collective platforms and sharing larger narratives of civilization and nature with a wider global audience.</li>
-      <li><strong>Sustainable Practices:</strong> Leaning deeper into sustainable practices by expanding my use of natural pigments and eco-friendly handmade materials.</li>
+      <li><strong>Sustainable Practices:</strong> Leaning deeper into sustainable practices by expanding her use of natural pigments and eco-friendly handmade materials.</li>
     </ul>
   `
 };
