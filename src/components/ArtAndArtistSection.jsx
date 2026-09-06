@@ -40,7 +40,7 @@ export default function ArtAndArtistSection({ onContactArtist }) {
               {/* Left Column: Narrative (Height-Matched) */}
               <div className="space-y-4 border-b lg:border-b-0 lg:border-r border-[#E7E0D2]/70 pb-8 lg:pb-0 lg:pr-10">
                 <span className="text-[10px] font-bold tracking-[0.24em] text-[#C87A38] uppercase block">
-                  ANCIENT CIVILIZATIONAL HERITAGE
+                  ANCIENT CIVILIZATIONAL HERITAGE ART
                 </span>
                 <p className="text-sm sm:text-base text-[#332F2C] leading-relaxed font-light">
                   Originating in northern Bihar's Mithila region, <strong className="font-semibold text-[#1C1917]">Madhubani folk art</strong> is a centuries-old sacred tradition historically painted by women on domestic mud courtyard walls (<em>Bhitti Chitra</em>) during auspicious festivals, marriages, and harvest celebrations.
