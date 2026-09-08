@@ -514,17 +514,12 @@ export default function ArtGallerySection({ onSelectArtwork }) {
               <div className="absolute top-0 left-0 w-2.5 h-full bg-[#C87A38]" />
               
               <div className="space-y-2">
-                <div className="flex items-center gap-2 text-xs font-bold text-[#C87A38] uppercase tracking-wider">
-                  <MapPin className="w-4 h-4 text-[#9A3412]" />
-                  <span>@ SUNDER NURSERY, NEW DELHI</span>
-                </div>
-
                 <h4 className="font-serif text-xl sm:text-2xl font-bold text-[#1C1917]">
                   Mindful Outdoor Workshops Amidst Nature
                 </h4>
 
                 <p className="text-sm sm:text-base text-[#44403C] leading-snug">
-                  Artist Rashmi Dhar has conducted meditative Madhubani art workshops amidst nature for all ages over the last 2 years. Participants experienced a stress-busting journey into centuries-old heritage art, carrying home handcrafted traditional masterpieces.
+                  Over the past two years, artist Rashmi Dhar has conducted meditative Madhubani art workshops amidst nature for participants of all ages. Attendees embark on a calming journey into traditional folk art, creating and taking home their own handcrafted heritage pieces.
                 </p>
               </div>
 
@@ -619,30 +614,9 @@ export default function ArtGallerySection({ onSelectArtwork }) {
                   </div>
                 </div>
               </div>
-
-              {/* Other Workshop Venues Text Strip */}
-              <div className="pt-4 border-t border-[#E7E0D2]/70 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-[#5C5652]">
-                <span className="font-bold text-[#1C1917] uppercase tracking-wider">Other Workshop Venues:</span>
-                <span className="font-medium text-[#44403C]">Lalit Kala Akademi</span>
-                <span className="text-[#C87A38] font-bold">•</span>
-                <span className="font-medium text-[#44403C]">Bikaner House</span>
-              </div>
             </div>
 
-          </div>
-
-          {/* Event Section */}
-          <div className="space-y-6">
-            <div className="border-b border-[#E7E0D2] pb-4">
-              <span className="text-[10px] font-bold tracking-[0.24em] text-[#C87A38] uppercase block">
-                INTERNATIONAL YOUTH & COMMUNITY HIGHLIGHT
-              </span>
-              <h3 className="font-serif text-2xl sm:text-4xl font-normal text-[#1C1917]">
-                Event
-              </h3>
-            </div>
-
-            {/* Event Card: Aga Khan Foundation Summer Camp */}
+            {/* Event Workshop Card: Aga Khan Foundation Summer Camp */}
             <div className="bg-[#FFFDF9] border border-[#E7E0D2] rounded-xl p-6 sm:p-8 shadow-sm space-y-4 text-left relative overflow-hidden">
               <div className="absolute top-0 right-0 w-24 h-24 bg-[#C87A38]/10 rounded-full blur-2xl pointer-events-none" />
 
@@ -656,7 +630,7 @@ export default function ArtGallerySection({ onSelectArtwork }) {
               </h4>
 
               <p className="text-sm sm:text-base text-[#44403C] leading-relaxed">
-                At the Aga Khan Foundation’s summer camp, Rashmi Dhar led a meditative Madhubani art workshop. Forty teens aged 15-20 across globe & from India, the USA, Canada, and the UAE gathered for two days of skill-building. Beyond mastering traditional techniques, they found deep mindfulness, stress relief, and brought home centuries-old art masterpieces.
+                At the Aga Khan Foundation’s summer camp, Rashmi Dhar led a meditative Madhubani art workshop. Forty teenagers aged 15–20 from across the globe—including India, the USA, Canada, and the UAE—gathered for two days of skill-building. Beyond mastering traditional techniques, participants experienced deep mindfulness, creative focus, and brought home their own handcrafted Mithila paintings.
               </p>
 
               {/* Event Metadata Strip (Replaces Pill Buttons) */}

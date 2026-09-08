@@ -3,7 +3,7 @@ export const ARTWORKS = [
     id: "artwork-godna-tree",
     title: "Godna",
     styleCategory: "Godna",
-    medium: "Natural pigment n acrylic on handmade paper",
+    medium: "Natural pigments and acrylic on handmade paper",
     dimensions: "11 × 15 in",
     year: "2026",
     price: "Inquire for price",

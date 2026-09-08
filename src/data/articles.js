@@ -31,11 +31,11 @@ export const ARTIST_FEATURE = {
       Her primary mediums are acrylics and natural pigments on handmade paper and canvas.
     </p>
     <p class="mb-6 text-[#44403C] leading-relaxed">
-      Through her creative space, she founded the art initiative, namely, <strong>Kalapravah</strong>! At KALAPRAVAH, she strives to keep this living heritage breathing and vibrant.
+      Through her creative space, she founded the art initiative—<strong>Kalapravah</strong>—where she strives to keep this living heritage vibrant and thriving.
     </p>
 
     <blockquote class="border-l-2 border-[#C87A38] pl-6 py-2 my-8 italic font-serif text-lg text-[#1C1917] bg-[#FAF8F3]/60 rounded-r-md">
-      Madhubani art is truly a sacred tradition which derives all its stories from civilization, mythology, and nature. At KALAPRAVAH, she strives to keep this living heritage breathing and vibrant.
+      Madhubani art is a sacred tradition that draws its stories from ancient civilization, mythology, and nature. At Kalapravah, she strives to keep this living heritage vibrant and thriving.
     </blockquote>
 
     <h2 class="font-serif text-2xl font-bold text-[#1C1917] mt-8 mb-4">Heritage & Mindful Workshops</h2>

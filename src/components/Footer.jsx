@@ -149,7 +149,7 @@ export default function Footer({ onNavigate }) {
                 <div className="flex items-center gap-2">
                   <Sparkles className="w-3.5 h-3.5 text-[#D98A48]" />
                   <span className="text-[10px] font-bold tracking-[0.18em] uppercase text-[#D98A48]">
-                    WANT TO TALK? SEND A MESSAGE INSTANTLY
+                    DIRECT INQUIRY • MESSAGE THE ARTIST
                   </span>
                 </div>
               </div>

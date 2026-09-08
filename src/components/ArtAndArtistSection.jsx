@@ -60,10 +60,10 @@ export default function ArtAndArtistSection({ onContactArtist }) {
                 </span>
                 
                 <div className="space-y-3">
-                  {/* Katchni Style */}
+                  {/* Kachni Style */}
                   <div className="pl-4 border-l-2 border-[#B94A2D] space-y-0.5">
                     <h4 className="font-serif text-base sm:text-lg font-bold text-[#1C1917]">
-                      Katchni Style <span className="font-sans text-xs font-medium text-[#B94A2D] uppercase tracking-wider ml-1">(Line Hatching)</span>
+                      Kachni Style <span className="font-sans text-xs font-medium text-[#B94A2D] uppercase tracking-wider ml-1">(Line Hatching)</span>
                     </h4>
                     <p className="text-xs sm:text-sm text-[#44403C] leading-relaxed font-light">
                       A delicate, line-dominant style featuring fine monochrome work. Intricate hatching and cross-hatching create depth without solid fills.
@@ -73,10 +73,10 @@ export default function ArtAndArtistSection({ onContactArtist }) {
                     </p>
                   </div>
 
-                  {/* Barni Style */}
+                  {/* Bharni Style */}
                   <div className="pl-4 border-l-2 border-[#C87A38] space-y-0.5">
                     <h4 className="font-serif text-base sm:text-lg font-bold text-[#1C1917]">
-                      Barni Style <span className="font-sans text-xs font-medium text-[#C87A38] uppercase tracking-wider ml-1">(Color Fill)</span>
+                      Bharni Style <span className="font-sans text-xs font-medium text-[#C87A38] uppercase tracking-wider ml-1">(Color Fill)</span>
                     </h4>
                     <p className="text-xs sm:text-sm text-[#44403C] leading-relaxed font-light">
                       A vibrant, color-rich style defined by bold outlines and opaque pigments. It focuses on grand motifs like the Tree of Life and deities.
@@ -163,7 +163,7 @@ export default function ArtAndArtistSection({ onContactArtist }) {
                     className="w-full flex items-center justify-center gap-2 min-h-[44px] py-3 px-3.5 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-[11px] sm:text-xs tracking-wider uppercase transition-all shadow-md hover:shadow-lg active:scale-95 text-center leading-snug cursor-pointer"
                   >
                     <MessageSquare className="w-4 h-4 fill-current shrink-0" />
-                    <span>Chat or inquiries about art? Let's talk!</span>
+                    <span>Have questions about an artwork? Let's chat</span>
                   </a>
                 </div>
 
@@ -176,15 +176,15 @@ export default function ArtAndArtistSection({ onContactArtist }) {
               {/* Open Detailed Narrative */}
               <div className="space-y-3.5 sm:space-y-4 py-1">
                 <p className="text-sm sm:text-base lg:text-lg text-[#332F2C] leading-relaxed font-light">
-                  Drawing and painting have been her childhood passion. As she pursued her academics, her creative pursuits eventually took a backseat to the demands of everyday life. However, a deep longing to create and express never truly left her. When she returned to art, she found profound solace in Madhubani (Mithila) art.
+                  Drawing and painting have been her lifelong passion. As she pursued her academics, creative pursuits temporarily took a backseat to the demands of everyday life. However, a deep longing to create and express never truly left her. When she returned to art, she found profound solace in Madhubani (Mithila) art.
                 </p>
 
                 <p className="text-sm sm:text-base lg:text-lg text-[#332F2C] leading-relaxed font-light">
-                  Madhubani art is truly a sacred tradition which derives all its stories from civilization, mythology, and nature. Over the past 6 years, she has dedicated herself to learning and practicing this timeless art form directly under master artists who inherited these techniques through generations of family tradition.
+                  Madhubani art is a sacred tradition that draws its narratives from ancient civilization, mythology, and nature. Over the past 6 years, she has dedicated herself to learning and practicing this timeless art form directly under master artists who inherited these techniques through generations of family tradition.
                 </p>
 
                 <p className="text-sm sm:text-base lg:text-lg text-[#332F2C] leading-relaxed font-light">
-                  Her primary mediums are acrylics and natural pigments on handmade paper and canvas. Through her creative space, she founded the art initiative—<strong>Kalapravah</strong>—where she strives to keep this living heritage breathing and vibrant.
+                  Her primary mediums are acrylics and natural pigments on handmade paper and canvas. Through her creative space, she founded the art initiative—<strong>Kalapravah</strong>—where she strives to keep this living heritage vibrant and thriving.
                 </p>
               </div>
 
