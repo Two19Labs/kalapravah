@@ -16,7 +16,8 @@ export default function ContactSection() {
     'Custom Commission',
     'Workshops & Teaching',
     'Exhibition / Gallery Feature',
-    'General Enquiry'
+    'General Enquiry',
+    'Other'
   ];
 
   const handleWhatsAppSend = () => {

@@ -29,7 +29,8 @@ export default function Footer({ onNavigate }) {
     'Artwork Inquiry', 
     'Custom Commission', 
     'Workshops', 
-    'General Enquiry'
+    'General Enquiry',
+    'Other'
   ];
 
   const indexLinks = [

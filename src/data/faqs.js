@@ -1,13 +1,130 @@
 export const FAQ_CATEGORIES = [
   "All",
+  "About Art & Brand",
+  "Workshops & Learning",
+  "Orders, Shipping & Care",
+  "Collaborations & Exhibitions",
   "Home Decor & Styling",
-  "Madhubani & Indian Art",
-  "Collecting & Care"
+  "Madhubani & Indian Art"
 ];
 
 export const FAQS = [
   // =========================================================================
-  // 1. HOME DECOR & INTERIOR STYLING
+  // 1. ABOUT ART AND BRAND
+  // =========================================================================
+  {
+    id: "faq-brand-what-is-kalapravah",
+    category: "About Art & Brand",
+    question: "What is Kalapravah?",
+    answer: "Kalapravah is an art brand dedicated to preserving, promoting, and contemporary styling of traditional Madhubani (Mithila) art. We offer authentic hand-painted artworks, home decor, customized lifestyle pieces, and immersive workshops.",
+    keywords: ["what is kalapravah", "kalapravah madhubani art", "authentic mithila art brand", "traditional indian art"]
+  },
+  {
+    id: "faq-brand-authentic-handpainted",
+    category: "About Art & Brand",
+    question: "Are all Kalapravah artworks authentic and hand-painted?",
+    answer: "Yes, absolutely. Every piece is meticulously hand-painted using authentic techniques, nibs and brushes, natural or acrylic colors, and handmade papers or eco-friendly canvases. We also provide Authenticity Certificate with every art work sold.",
+    keywords: ["authentic hand painted art", "madhubani certificate of authenticity", "genuine mithila paintings", "hand painted indian folk art"]
+  },
+  {
+    id: "faq-brand-custom-commission",
+    category: "About Art & Brand",
+    question: "Can I commission a custom piece of Madhubani art?",
+    answer: "We love bringing custom visions to life! Whether you want a specific theme or a custom size for your home or office interior, reach out to us via Direct Enquiry to discuss your requirements.",
+    keywords: ["commission custom madhubani art", "bespoke indian art commission", "custom painting for home", "personalized mithila artwork"]
+  },
+  {
+    id: "faq-care-identify-authentic",
+    category: "About Art & Brand",
+    question: "How can I distinguish an authentic hand-painted Madhubani piece from a digital print?",
+    answer: "Look closely at the line work and surface texture: authentic handmade art reveals organic variations in dip-pen pressure, subtle pigment gradients on textured cotton paper, and double-line borders drawn freehand. Machine prints, by contrast, exhibit uniform digital dots under magnification, flat artificial gloss, and unnaturally rigid geometric symmetry.",
+    keywords: ["how to identify authentic Madhubani", "real vs fake Mithila painting", "handmade paper art verification", "genuine Madhubani artwork"]
+  },
+
+  // =========================================================================
+  // 2. WORKSHOPS & LEARNING
+  // =========================================================================
+  {
+    id: "faq-workshops-conduct",
+    category: "Workshops & Learning",
+    question: "Do you conduct Madhubani painting workshops?",
+    answer: "Yes! We regularly conduct beginner-friendly and advanced Madhubani art workshops at cultural hubs, heritage spaces and private events. These sessions cover traditional motifs, and step-by-step storytelling through art.",
+    keywords: ["madhubani painting workshops", "mithila art classes", "traditional art workshop delhi", "learn madhubani painting"]
+  },
+  {
+    id: "faq-workshops-beginner",
+    category: "Workshops & Learning",
+    question: "I am a complete beginner. Can I join your workshops?",
+    answer: "Our workshops are designed for all skill levels—no prior drawing experience is needed. We guide you gently through every line, stroke, and filling technique.",
+    keywords: ["beginner madhubani workshop", "art workshop for beginners", "learn folk art without experience", "mithila painting classes for beginners"]
+  },
+  {
+    id: "faq-workshops-register",
+    category: "Workshops & Learning",
+    question: "How can I register for upcoming workshops?",
+    answer: "You can follow our social media handles and get information about the workshop schedules or submit a workshop inquiry under Direct Inquiry on our website. Private group and corporate workshop bookings are also available upon request.",
+    keywords: ["register for madhubani workshop", "corporate art workshop booking", "private art sessions", "workshop inquiry kalapravah"]
+  },
+
+  // =========================================================================
+  // 3. ORDERS, SHIPPING & CARE
+  // =========================================================================
+  {
+    id: "faq-shipping-timeline",
+    category: "Orders, Shipping & Care",
+    question: "How long does it take to ship an order?",
+    answer: "Ready-to-ship artworks and standard decor pieces are dispatched within 3 to 5 business days. Custom commissions require additional time depending on the intricacy and size of the artwork.",
+    keywords: ["art delivery timeline", "madhubani painting shipping time", "custom commission delivery duration", "order dispatch times"]
+  },
+  {
+    id: "faq-shipping-delicate",
+    category: "Orders, Shipping & Care",
+    question: "How are delicate paintings shipped?",
+    answer: "We take utmost care in packaging. We prefer Unframed paintings on paper to be shipped securely in sturdy cardboard tubes, while stretched canvases or framed pieces are multi-layered with protective bubble wrap and rigid boxes to ensure safe transit.",
+    keywords: ["art packaging safe transit", "shipping fragile paintings", "cardboard tube art delivery", "delicate artwork packaging"]
+  },
+  {
+    id: "faq-care-madhubani-painting",
+    category: "Orders, Shipping & Care",
+    question: "How do I care for my Madhubani painting?",
+    answer: "To preserve the vibrancy of your handmade artwork, keep it away from direct, harsh sunlight and excessive moisture. Dust gently with a soft, dry cloth. If your painting is unframed, we recommend getting it framed under glass or acrylic sheets.",
+    keywords: ["how to care for madhubani painting", "protecting handmade paper art", "framing madhubani artwork", "cleaning handmade paintings"]
+  },
+  {
+    id: "faq-care-framing-preservation",
+    category: "Orders, Shipping & Care",
+    question: "How should I frame, clean, and preserve an original painting on handmade paper?",
+    answer: "Always frame behind UV-protective glass with a 1.5–2 inch acid-free window mat board so the paper never touches the glass directly. Hang the piece in a dry, well-ventilated area away from direct relentless sunlight and damp exterior walls. Lightly dust the outer frame glass with a microfiber cloth; never apply water or chemical cleaning sprays to the artwork.",
+    keywords: ["how to preserve Madhubani painting", "framing handmade paper art", "care instructions folk painting", "UV glass framing for art"]
+  },
+  {
+    id: "faq-care-commissions-delivery",
+    category: "Orders, Shipping & Care",
+    question: "Can bespoke sizes be commissioned and safely shipped worldwide?",
+    answer: "Yes. Custom paintings can be commissioned to fit specific architectural niches, prayer rooms, or corporate spaces directly with artist Rashmi Dhar. Unframed original artworks on archival paper are cushioned between acid-free glassine sheets and shipped inside heavy-duty, crush-proof PVC tubes with full transit insurance, arriving safely across India and internationally.",
+    keywords: ["custom Madhubani painting commission", "bespoke Mithila art interior design", "commission traditional Indian artist", "international shipping Indian folk art"]
+  },
+
+  // =========================================================================
+  // 4. COLLABORATIONS & EXHIBITIONS
+  // =========================================================================
+  {
+    id: "faq-collab-exhibitions",
+    category: "Collaborations & Exhibitions",
+    question: "Does Kalapravah participate in art bazaars and exhibitions?",
+    answer: "Yes, we frequently showcase our collections at craft markets, pop-ups, and prestigious gallery exhibitions. Keep an eye on our social media handles to meet us in person!",
+    keywords: ["kalapravah art exhibitions", "madhubani art bazaars", "craft market popups delhi", "meet artist rashmi dhar"]
+  },
+  {
+    id: "faq-collab-corporate-gifting",
+    category: "Collaborations & Exhibitions",
+    question: "Are you open to corporate gifting or brand collaborations?",
+    answer: "We welcome thoughtful corporate gifting orders, interior styling partnerships, and cultural collaborations. Please drop us an email or message us through our Direct Inquiry to start a conversation.",
+    keywords: ["corporate gifting indian art", "brand collaborations folk art", "bulk artisanal gifts", "corporate madhubani artwork"]
+  },
+
+  // =========================================================================
+  // 5. HOME DECOR & INTERIOR STYLING
   // =========================================================================
   {
     id: "faq-decor-modern-homes",
@@ -39,7 +156,7 @@ export const FAQS = [
   },
 
   // =========================================================================
-  // 2. MADHUBANI & INDIAN FOLK ART HERITAGE
+  // 6. MADHUBANI & INDIAN FOLK ART HERITAGE
   // =========================================================================
   {
     id: "faq-art-unique-heritage",
@@ -69,37 +186,12 @@ export const FAQS = [
     answer: "Mithila art was historically painted on mud courtyard walls using bamboo nibs and natural earth pigments (turmeric for yellow, soot for lampblack, indigo for blue). Today's authentic artists preserve this tactile warmth on 300+ GSM acid-free cotton rag paper using dip pens and organic washes, ensuring the painting breathes and ages gracefully over generations without brittleness.",
     keywords: ["pigments used in Madhubani painting", "handmade paper Mithila art", "dip nib folk art ink", "traditional Indian art materials"]
   },
-
-  // =========================================================================
-  // 3. COLLECTING, AUTHENTICITY & CARE
-  // =========================================================================
-  {
-    id: "faq-care-identify-authentic",
-    category: "Collecting & Care",
-    question: "How can I distinguish an authentic hand-painted Madhubani piece from a digital print?",
-    answer: "Look closely at the line work and surface texture: authentic handmade art reveals organic variations in dip-pen pressure, subtle pigment gradients on textured cotton paper, and double-line borders drawn freehand. Machine prints, by contrast, exhibit uniform digital dots under magnification, flat artificial gloss, and unnaturally rigid geometric symmetry.",
-    keywords: ["how to identify authentic Madhubani", "real vs fake Mithila painting", "handmade paper art verification", "genuine Madhubani artwork"]
-  },
-  {
-    id: "faq-care-framing-preservation",
-    category: "Collecting & Care",
-    question: "How should I frame, clean, and preserve an original painting on handmade paper?",
-    answer: "Always frame behind UV-protective glass with a 1.5–2 inch acid-free window mat board so the paper never touches the glass directly. Hang the piece in a dry, well-ventilated area away from direct relentless sunlight and damp exterior walls. Lightly dust the outer frame glass with a microfiber cloth; never apply water or chemical cleaning sprays to the artwork.",
-    keywords: ["how to preserve Madhubani painting", "framing handmade paper art", "care instructions folk painting", "UV glass framing for art"]
-  },
   {
     id: "faq-care-art-investment",
-    category: "Collecting & Care",
+    category: "Madhubani & Indian Art",
     question: "Do original handmade Indian folk paintings appreciate in value over time?",
     answer: "Yes. With Madhubani art holding an official Geographical Indication (GI) tag and master works being collected by premier global institutions (such as Paris's Centre Pompidou and the Mithila Museum in Japan), original pieces requiring 40 to 100+ hours of master penmanship carry lasting cultural and investment value, far outlasting transient commercial prints.",
     keywords: ["Madhubani painting cost", "price of original Mithila art", "authentic Indian folk art pricing", "is Madhubani painting a good investment"]
-  },
-  {
-    id: "faq-care-commissions-delivery",
-    category: "Collecting & Care",
-    question: "Can bespoke sizes be commissioned and safely shipped worldwide?",
-    answer: "Yes. Custom paintings can be commissioned to fit specific architectural niches, prayer rooms, or corporate spaces directly with artist Rashmi Dhar. Unframed original artworks on archival paper are cushioned between acid-free glassine sheets and shipped inside heavy-duty, crush-proof PVC tubes with full transit insurance, arriving safely across India and internationally.",
-    keywords: ["custom Madhubani painting commission", "bespoke Mithila art interior design", "commission traditional Indian artist", "international shipping Indian folk art"]
   }
 ];
 

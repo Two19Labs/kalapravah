@@ -2,22 +2,24 @@ import React, { useState, useMemo } from 'react';
 import { 
   ChevronDown, 
   Sparkles, 
-  ShieldCheck, 
   Palette, 
-  Compass, 
   Home,
-  CheckCircle2
+  BookOpen,
+  Package,
+  Users
 } from 'lucide-react';
-import { FAQS, FAQ_CATEGORIES, getFaqSchemaJsonLd } from '../data/faqs';
+import { FAQS, getFaqSchemaJsonLd } from '../data/faqs';
 
 const CATEGORY_ICONS = {
-  "Home Decor & Styling": Sparkles,
+  "About Art & Brand": Sparkles,
+  "Workshops & Learning": BookOpen,
+  "Orders, Shipping & Care": Package,
+  "Collaborations & Exhibitions": Users,
+  "Home Decor & Styling": Home,
   "Madhubani & Indian Art": Palette,
-  "Collecting & Care": ShieldCheck,
 };
 
 export default function FAQSection() {
-  const [selectedCategory, setSelectedCategory] = useState('All');
   // Support independent multi-expand in the 2-column matrix
   const [expandedIds, setExpandedIds] = useState(new Set([FAQS[0]?.id, FAQS[1]?.id]));
 
@@ -33,11 +35,6 @@ export default function FAQSection() {
     });
   };
 
-  const filteredFaqs = useMemo(() => {
-    if (selectedCategory === 'All') return FAQS;
-    return FAQS.filter(faq => faq.category === selectedCategory);
-  }, [selectedCategory]);
-
   const jsonLdSchema = useMemo(() => {
     return JSON.stringify(getFaqSchemaJsonLd());
   }, []);
@@ -45,7 +42,7 @@ export default function FAQSection() {
   return (
     <section 
       id="faq" 
-      className="w-full pt-8 sm:pt-12 pb-14 sm:pb-20 bg-transparent relative overflow-hidden border-b border-[#E7E0D2] scroll-mt-20 sm:scroll-mt-24 z-10"
+      className="w-full pt-4 sm:pt-6 pb-12 sm:pb-16 bg-transparent relative overflow-hidden border-b border-[#E7E0D2] scroll-mt-20 sm:scroll-mt-24 z-10"
       aria-label="Frequently Asked Questions: Art, Home Decor & Collector Guide"
     >
       {/* Soft Decorative Ambient Spotlights */}
@@ -58,52 +55,18 @@ export default function FAQSection() {
         dangerouslySetInnerHTML={{ __html: jsonLdSchema }}
       />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 sm:space-y-10 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4 sm:space-y-5 relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-2.5">
-          <span className="text-[10px] font-bold tracking-[0.26em] text-[#C87A38] uppercase block">
-            KNOWLEDGE BASE & COLLECTOR GUIDE
-          </span>
+        <div className="text-center max-w-3xl mx-auto">
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-[#1C1917] tracking-tight leading-tight">
             Frequently Asked Questions
           </h2>
-          <p className="text-sm sm:text-base text-[#5C5652] leading-relaxed max-w-2xl mx-auto font-light pt-1">
-            Everything you need to know about styling traditional Madhubani art in modern homes, cultural symbolism, Vastu directions, and collector care.
-          </p>
-          <div className="w-20 h-[2px] bg-[#C87A38] mx-auto rounded-full mt-2" />
         </div>
 
-        {/* Category Filter Chips */}
-        <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 pt-1">
-          {FAQ_CATEGORIES.map((cat) => {
-            const count = cat === 'All' ? FAQS.length : FAQS.filter(f => f.category === cat).length;
-            const isSelected = selectedCategory === cat;
-
-            return (
-              <button
-                key={cat}
-                onClick={() => setSelectedCategory(cat)}
-                className={`px-4 py-2 rounded-full text-xs font-semibold tracking-wider transition-all duration-200 cursor-pointer flex items-center gap-1.5 shadow-xs ${
-                  isSelected
-                    ? 'bg-[#C87A38] text-white shadow-md scale-102 border border-[#C87A38]'
-                    : 'bg-[#FFFDF9]/85 text-[#5C5652] border border-[#E7E0D2] hover:border-[#C87A38]/60 hover:text-[#1C1917]'
-                }`}
-              >
-                <span>{cat}</span>
-                <span className={`text-[10px] px-1.5 py-0.2 rounded-full font-mono ${
-                  isSelected ? 'bg-white/20 text-white' : 'bg-[#E7E0D2]/50 text-[#78716C]'
-                }`}>
-                  {count}
-                </span>
-              </button>
-            );
-          })}
-        </div>
-
-        {/* 2-Column Responsive Matrix Layout (Grid of 2 Columns × 6 Rows = 12 FAQs) */}
+        {/* 2-Column Responsive Matrix Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 items-start">
-          {filteredFaqs.map((faq) => {
+          {FAQS.map((faq) => {
             const isExpanded = expandedIds.has(faq.id);
             const IconComp = CATEGORY_ICONS[faq.category] || Sparkles;
 
