@@ -80,14 +80,14 @@ export default function ArtworkLightbox({ artwork, onClose, onOpenCommission }) 
         <div className="grid grid-cols-1 lg:grid-cols-12 flex-grow overflow-hidden">
           
           {/* Left Column: Artwork Canvas */}
-          <div className="lg:col-span-6 p-4 sm:p-6 bg-[#F4EFE6] flex flex-col justify-center items-center border-b lg:border-b-0 lg:border-r border-[#E7E0D2] relative select-none">
+          <div className="lg:col-span-6 p-3 sm:p-5 md:p-6 bg-[#F4EFE6] flex flex-col justify-center items-center border-b lg:border-b-0 lg:border-r border-[#E7E0D2] relative select-none min-h-[340px] lg:min-h-[500px]">
             
-            {/* Artwork Container */}
-            <div className="relative w-full aspect-[3/4] rounded border border-[#C4B9A3] shadow-lg bg-white overflow-hidden">
+            {/* Artwork Container - Adaptive without cropping */}
+            <div className="relative w-full max-w-full flex items-center justify-center p-1.5 sm:p-2 rounded-lg border border-[#C4B9A3]/60 shadow-inner bg-[#ECE5D8]/40">
               <img
                 src={artwork.originalImage || artwork.image}
                 alt={artwork.title}
-                className="w-full h-full object-cover scale-[1.04] select-none pointer-events-none"
+                className="max-h-[52vh] sm:max-h-[62vh] lg:max-h-[70vh] w-auto max-w-full object-contain rounded shadow-md select-none pointer-events-none transition-all duration-300"
               />
             </div>
 

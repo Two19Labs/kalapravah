@@ -360,15 +360,12 @@ export default function ArtGallerySection({ onSelectArtwork }) {
                         <img
                           src={artwork.image}
                           alt={artwork.title}
-                          className="w-full h-full object-cover scale-[1.12] transform group-hover:scale-[1.18] transition-transform duration-700"
+                          className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
                         />
                       </div>
 
 
 
-                      <div className="absolute top-3 left-3 bg-[#1C1917]/85 backdrop-blur-md px-2.5 py-1 rounded-full text-[10px] font-bold text-[#F59E0B] tracking-wider uppercase border border-[#F59E0B]/30 z-20">
-                        {artwork.styleCategory}
-                      </div>
 
                       <div className="absolute inset-0 bg-[#1C1917]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center z-20">
                         <div className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-white text-[#1C1917] text-xs font-bold shadow-md">
