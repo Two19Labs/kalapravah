@@ -11,9 +11,6 @@ export default function ArtSection({ onSelectArtwork }) {
         
         {/* Main Section Banner Header */}
         <div className="text-center max-w-3xl mx-auto space-y-2">
-          <span className="text-[10px] font-bold tracking-[0.24em] text-[#C87A38] uppercase block">
-            ANCIENT CIVILIZATIONAL HERITAGE ART
-          </span>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1C1917] tracking-tight">
             ART
           </h2>
@@ -23,29 +20,35 @@ export default function ArtSection({ onSelectArtwork }) {
           </p>
         </div>
 
-        {/* Unified High-Impact Editorial Card */}
-        <div className="deckled-frame bg-[#FFFDF9] border border-[#E7E0D2] rounded-2xl overflow-hidden shadow-lg grid grid-cols-1 lg:grid-cols-12 items-stretch">
+        {/* Open Organic Editorial Layout (No Boxy Containers) */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-14 xl:gap-16 items-center pt-2 sm:pt-4">
           
-          {/* Left Column: Tradition & Technique Narrative */}
-          <div className="lg:col-span-6 p-5 sm:p-7 lg:p-8 xl:p-10 flex flex-col justify-center space-y-4 sm:space-y-5 text-left border-b lg:border-b-0 lg:border-r border-[#E7E0D2]">
-            <span className="text-[10px] font-bold tracking-[0.24em] text-[#C87A38] uppercase block">
-              TRADITION & TECHNIQUE
-            </span>
-            <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#1C1917] leading-tight">
-              Sacred Living Heritage
-            </h3>
-            <p className="text-sm sm:text-base text-[#332F2C] leading-relaxed font-light">
-              Originating in northern Bihar's Madhubani region, <strong className="font-semibold text-[#1C1917]">Madhubani folk art</strong> is a centuries-old sacred tradition historically painted by women on domestic mud courtyard walls (<em>Bhitti Chitra</em>) during auspicious festivals, marriages, and harvest celebrations.
-            </p>
-            <p className="text-sm sm:text-base text-[#332F2C] leading-relaxed font-light">
-              Celebrated worldwide for bold double-line contours, fine bamboo nib penmanship, and natural pigments, every motif preserves ancient Vedic symbolism, ecological harmony, and living civilizational memory.
-            </p>
-            <p className="text-sm sm:text-base text-[#332F2C] leading-relaxed font-light">
-              Each canvas acts as a sacred visual bridge, translating timeless folklore and civilizational narratives into living art for modern residential and gallery spaces.
-            </p>
+          {/* Left Column: Tradition & Technique Narrative (Open & Flowing) */}
+          <div className="lg:col-span-6 space-y-4 sm:space-y-5 text-left">
+            <div className="space-y-2">
+              <span className="text-[10px] font-bold tracking-[0.24em] text-[#C87A38] uppercase block">
+                TRADITION & TECHNIQUE
+              </span>
+              <h3 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1C1917] tracking-tight">
+                Sacred Living Heritage
+              </h3>
+            </div>
+
+            <div className="space-y-3.5 sm:space-y-4 text-sm sm:text-base text-[#332F2C] leading-relaxed font-light">
+              <p>
+                Originating in northern Bihar's Madhubani region, <strong className="font-semibold text-[#1C1917]">Madhubani folk art</strong> is a centuries-old sacred tradition historically painted by women on domestic mud courtyard walls (<em>Bhitti Chitra</em>) during auspicious festivals, marriages, and harvest celebrations.
+              </p>
+              <p>
+                Celebrated worldwide for bold double-line contours, fine bamboo nib penmanship, and natural pigments, every motif preserves ancient Vedic symbolism, ecological harmony, and living civilizational memory.
+              </p>
+              <p>
+                Each canvas acts as a sacred visual bridge, translating timeless folklore and civilizational narratives into living art for modern residential and gallery spaces.
+              </p>
+            </div>
+
           </div>
 
-          {/* Right Column: High-Impact Masterpiece Showcase */}
+          {/* Right Column: Curated Masterwork Showcase (Floating Canvas, No Heavy Boxes) */}
           <div 
             onClick={() => {
               if (onSelectArtwork) {
@@ -61,39 +64,26 @@ export default function ArtSection({ onSelectArtwork }) {
                 });
               }
             }}
-            className="lg:col-span-6 p-5 sm:p-7 lg:p-8 xl:p-10 bg-[#FAF8F3]/50 flex flex-col justify-between text-left group cursor-pointer space-y-4"
+            className="lg:col-span-6 space-y-3 text-left group cursor-pointer"
           >
-            {/* Top Showcase Tag */}
-            <div className="flex items-center justify-between">
-              <span className="text-[10px] font-bold tracking-[0.24em] text-[#C87A38] uppercase block">
-                CURATED MASTERWORK
-              </span>
-              <span className="text-[10px] font-bold text-[#C87A38] uppercase tracking-wider bg-[#C87A38]/10 px-2.5 py-0.5 rounded-full border border-[#C87A38]/20">
-                BHARNI & KACHNI
-              </span>
-            </div>
+            {/* Floating Masterwork Canvas with Soft Ambient Drop Shadow */}
+            <div className="relative rounded-2xl overflow-hidden bg-[#FAF8F3] border border-[#E7E0D2] shadow-xl group-hover:shadow-2xl group-hover:border-[#C87A38]/40 transition-all duration-500">
+              <img
+                src="/images/janak_phulwari.jpg"
+                alt="Janak Phulwari: Traditional Madhubani Folk Artwork"
+                className="w-full h-auto object-contain group-hover:scale-[1.02] transition-transform duration-700"
+              />
 
-            {/* High-Impact Framed Painting */}
-            <div className="flex-1 flex flex-col justify-center py-1">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-[#2C241E] bg-[#FFFDF9] p-2.5 sm:p-3.5 ring-1 ring-[#C87A38]/20 group-hover:scale-[1.02] group-hover:shadow-[0_20px_50px_rgba(0,0,0,0.18)] transition-all duration-500">
-                <div className="relative rounded-xl overflow-hidden bg-[#FAF8F3] border border-[#E7E0D2] aspect-[16/11]">
-                  <img
-                    src="/images/janak_phulwari.jpg"
-                    alt="Janak Phulwari: Traditional Madhubani Folk Artwork"
-                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700"
-                  />
-                  {/* Subtle click hint badge */}
-                  <div className="absolute bottom-2.5 right-2.5 opacity-0 group-hover:opacity-100 transition-opacity hidden sm:block">
-                    <span className="text-[10px] font-medium text-white bg-[#1C1917]/85 backdrop-blur-md px-2.5 py-1 rounded-full border border-white/20 shadow-xs">
-                      Click to inspect
-                    </span>
-                  </div>
-                </div>
+              {/* Hover Pill Hint */}
+              <div className="absolute bottom-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity hidden sm:block">
+                <span className="text-[11px] font-medium text-white bg-[#1C1917]/85 backdrop-blur-md px-3 py-1 rounded-full border border-white/20 shadow-xs">
+                  Click to inspect
+                </span>
               </div>
             </div>
 
-            {/* Artwork Metadata Bar */}
-            <div className="pt-3 border-t border-[#E7E0D2] flex items-center justify-between">
+            {/* Minimalist Gallery Artwork Information */}
+            <div className="flex items-center justify-between pt-1 px-1">
               <div>
                 <h4 className="font-serif text-base sm:text-lg font-bold text-[#1C1917] group-hover:text-[#C87A38] transition-colors">
                   Janak Phulwari: Sacred Garden
@@ -102,10 +92,13 @@ export default function ArtSection({ onSelectArtwork }) {
                   Natural pigments & acrylic on handmade cotton rag paper • 22 × 15 in
                 </p>
               </div>
-              <span className="inline-flex items-center gap-1 text-xs font-semibold text-[#C87A38] shrink-0">
-                <span>Inspect</span>
-                <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-              </span>
+
+              <div className="flex items-center gap-2">
+                <span className="text-[10px] font-bold text-[#C87A38] uppercase tracking-wider bg-[#C87A38]/10 px-2.5 py-0.5 rounded-full border border-[#C87A38]/20 shrink-0">
+                  BHARNI & KACHNI
+                </span>
+                <ArrowUpRight className="w-4 h-4 text-[#C87A38] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform shrink-0" />
+              </div>
             </div>
 
           </div>

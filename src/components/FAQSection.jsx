@@ -62,9 +62,6 @@ export default function FAQSection() {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-2">
-          <span className="text-[10px] font-bold tracking-[0.24em] text-[#C87A38] uppercase block">
-            COLLECTOR & VISITOR GUIDE
-          </span>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1C1917] tracking-tight leading-tight">
             FAQS
           </h2>

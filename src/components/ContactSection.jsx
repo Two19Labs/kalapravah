@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MapPin, Mail, Phone, Clock, Award, Sparkles, ArrowRight, MessageSquare } from 'lucide-react';
+import { MapPin, Mail, Phone, Clock, Award, ArrowRight, MessageSquare } from 'lucide-react';
 
 const InstagramIcon = ({ className = "w-6 h-6" }) => (
   <svg className={className} fill="currentColor" viewBox="0 0 24 24">
@@ -33,11 +33,6 @@ export default function ContactSection() {
         
         {/* Top Header Pill & Titles */}
         <div className="text-center max-w-3xl mx-auto space-y-3 sm:space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-full bg-[#F3ECE0] border border-[#E7E0D2] text-[10px] sm:text-xs font-semibold tracking-wider text-[#A16207] uppercase">
-            <Sparkles className="w-3.5 h-3.5 text-[#C87A38]" />
-            <span>STUDIO DIRECT CONNECTIONS</span>
-          </div>
-
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1C1917] tracking-tight leading-[1.15]">
             CONTACT
           </h2>

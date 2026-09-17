@@ -192,6 +192,13 @@ export const FAQS = [
     question: "Do original handmade Indian folk paintings appreciate in value over time?",
     answer: "Yes. With Madhubani art holding an official Geographical Indication (GI) tag and master works being collected by premier global institutions (such as Paris's Centre Pompidou and prestigious Asian art museums), original pieces requiring 40 to 100+ hours of master penmanship carry lasting cultural and investment value, far outlasting transient commercial prints.",
     keywords: ["Madhubani painting cost", "price of original Madhubani art", "authentic Indian folk art pricing", "is Madhubani painting a good investment"]
+  },
+  {
+    id: "faq-art-history-origin",
+    category: "Madhubani & Indian Art",
+    question: "How old is Madhubani painting and where did it originate?",
+    answer: "Madhubani painting is believed to be over 2,500 years old, originating in the Mithila region of Bihar, India. According to folklore, King Janaka asked local women artists to paint the city of Janakpur for the wedding of Princess Sita and Lord Rama. For centuries, women passed this art from mother to daughter, painting on the mud walls of their homes during festivals and weddings. In 1934, a major earthquake revealed these stunning wall murals to the outside world, and by the 1960s the art transitioned onto handmade paper and canvas. Madhubani painting received a Geographical Indication (GI) tag in 2007, officially recognizing it as an authentic heritage craft of the Mithila region.",
+    keywords: ["history of Madhubani painting", "how old is Madhubani art", "origin of Madhubani painting", "Madhubani painting GI tag", "where did Madhubani painting originate", "Mithila art history", "King Janaka Madhubani"]
   }
 ];
 
