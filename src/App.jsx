@@ -2,8 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import ArtAndArtistSection from './components/ArtAndArtistSection';
+import ArtSection from './components/ArtSection';
+import ArtistSection from './components/ArtistSection';
 import ArtGallerySection from './components/ArtGallerySection';
+import WorkshopsSection from './components/WorkshopsSection';
+import ExhibitionsSection from './components/ExhibitionsSection';
 import FAQSection from './components/FAQSection';
 import Footer from './components/Footer';
 import ArtworkLightbox from './components/ArtworkLightbox';
@@ -34,7 +37,7 @@ function MainPage() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'art', 'artist', 'gallery', 'faq', 'contact'];
+      const sections = ['home', 'art', 'artist', 'gallery', 'workshops', 'exhibitions', 'faqs', 'contact'];
       const viewportHeight = window.innerHeight;
       const scrollY = window.scrollY;
       const documentHeight = document.documentElement.scrollHeight;
@@ -104,17 +107,34 @@ function MainPage() {
           onExploreArtist={() => scrollToSection('artist')}
         />
 
-        {/* 📌 SECTION 2: ART & ARTIST */}
-        <ArtAndArtistSection
+        {/* 📌 SECTION 2: ART */}
+        <ArtSection 
+          onSelectArtwork={(artwork) => setSelectedArtwork(artwork)}
+        />
+
+        {/* 📌 SECTION 3: ARTIST */}
+        <ArtistSection
           onContactArtist={() => scrollToSection('contact')}
         />
 
-        {/* 📌 SECTION 3: ART GALLERY */}
+        {/* 📌 SECTION 4: ART GALLERY */}
         <ArtGallerySection
           onSelectArtwork={(artwork) => setSelectedArtwork(artwork)}
         />
 
-        {/* 📌 SECTION 4: FAQS (COLLECTOR GUIDE & AI SEO ENGINE) */}
+        {/* 📌 SECTION 5: WORKSHOPS */}
+        <WorkshopsSection
+          onSelectArtwork={(artwork) => setSelectedArtwork(artwork)}
+          onBookWorkshop={() => scrollToSection('contact')}
+        />
+
+        {/* 📌 SECTION 6: EXHIBITIONS */}
+        <ExhibitionsSection
+          onSelectArtwork={(artwork) => setSelectedArtwork(artwork)}
+          onInquireExhibition={() => scrollToSection('contact')}
+        />
+
+        {/* 📌 SECTION 7: FAQS */}
         <FAQSection />
 
       </main>

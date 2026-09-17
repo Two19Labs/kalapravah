@@ -124,7 +124,7 @@ export const ARTWORKS = [
     styleCategory: "Kachni & Bharni",
     medium: "Acrylic on handmade paper",
     dimensions: "22 × 15 in",
-    year: "2026",
+    year: "2024",
     price: "Inquire for price",
     image: "/images/decor_matsya_avatar.jpg",
     originalImage: "/images/matsya_avatar.jpg",

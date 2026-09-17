@@ -29,6 +29,7 @@ export default function Footer({ onNavigate }) {
     'Artwork Inquiry', 
     'Custom Commission', 
     'Workshops', 
+    'Exhibitions',
     'General Enquiry',
     'Other'
   ];
@@ -38,7 +39,9 @@ export default function Footer({ onNavigate }) {
     { id: 'art', label: 'ART' },
     { id: 'artist', label: 'ARTIST' },
     { id: 'gallery', label: 'ART GALLERY' },
-    { id: 'faq', label: 'FAQS' },
+    { id: 'workshops', label: 'WORKSHOPS' },
+    { id: 'exhibitions', label: 'EXHIBITIONS' },
+    { id: 'faqs', label: 'FAQS' },
     { id: 'contact', label: 'CONTACT' },
   ];
 
@@ -73,8 +76,8 @@ export default function Footer({ onNavigate }) {
     <footer className="w-full text-[#1C1917] overflow-hidden relative z-20 bg-[#1C1613] border-t border-[#3D302A]">
 
       {/* FOOTER & WHATSAPP QUICK INQUIRY */}
-      <section id="contact" className="bg-[#1C1613] text-[#EBE5DF] py-8 sm:py-10 lg:py-12 px-4 sm:px-6 lg:px-8 scroll-mt-20 sm:scroll-mt-24">
-        <div className="max-w-6xl mx-auto space-y-10">
+      <section id="contact" className="bg-[#1C1613] text-[#EBE5DF] py-6 sm:py-8 lg:py-9 px-4 sm:px-6 lg:px-8 scroll-mt-20 sm:scroll-mt-24">
+        <div className="max-w-6xl mx-auto space-y-6 sm:space-y-8">
           
           {/* Main 2-Column Compact Row */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 items-center">

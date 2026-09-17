@@ -41,10 +41,13 @@ export default function FAQSection() {
 
   return (
     <section 
-      id="faq" 
-      className="w-full pt-4 sm:pt-6 pb-12 sm:pb-16 bg-transparent relative overflow-hidden border-b border-[#E7E0D2] scroll-mt-20 sm:scroll-mt-24 z-10"
+      id="faqs" 
+      className="w-full pt-5 sm:pt-7 lg:pt-8 pb-7 sm:pb-9 lg:pb-10 bg-transparent relative overflow-hidden border-b border-[#E7E0D2] scroll-mt-20 sm:scroll-mt-24 z-10"
       aria-label="Frequently Asked Questions: Art, Home Decor & Collector Guide"
     >
+      {/* Anchor alias for backwards compatibility */}
+      <div id="faq" className="absolute -top-24" />
+
       {/* Soft Decorative Ambient Spotlights */}
       <div className="absolute top-1/4 left-0 w-96 h-96 bg-[#C87A38]/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-10 right-0 w-96 h-96 bg-[#9A3412]/5 rounded-full blur-3xl pointer-events-none" />
@@ -55,13 +58,20 @@ export default function FAQSection() {
         dangerouslySetInnerHTML={{ __html: jsonLdSchema }}
       />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4 sm:space-y-5 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-5 sm:space-y-6 relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto">
+        <div className="text-center max-w-3xl mx-auto space-y-2">
+          <span className="text-[10px] font-bold tracking-[0.24em] text-[#C87A38] uppercase block">
+            COLLECTOR & VISITOR GUIDE
+          </span>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1C1917] tracking-tight leading-tight">
-            FREQUENTLY ASKED QUESTIONS
+            FAQS
           </h2>
+          <div className="w-16 h-[2.5px] bg-[#C87A38] mx-auto rounded-full mt-1.5" />
+          <p className="text-sm sm:text-base text-[#5C5652] leading-relaxed max-w-2xl mx-auto font-light pt-1">
+            Common questions regarding authentic Madhubani paintings, framing care, commissions, and workshop bookings.
+          </p>
         </div>
 
         {/* 2-Column Responsive Matrix Layout */}

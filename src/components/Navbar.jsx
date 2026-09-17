@@ -37,7 +37,9 @@ export default function Navbar({ activeSection, setActiveSection }) {
     { id: 'art', label: 'ART' },
     { id: 'artist', label: 'ARTIST' },
     { id: 'gallery', label: 'ART GALLERY' },
-    { id: 'faq', label: 'FAQS' },
+    { id: 'workshops', label: 'WORKSHOPS' },
+    { id: 'exhibitions', label: 'EXHIBITIONS' },
+    { id: 'faqs', label: 'FAQS' },
     { id: 'contact', label: 'CONTACT' },
   ];
 
@@ -85,14 +87,14 @@ export default function Navbar({ activeSection, setActiveSection }) {
         </button>
 
         {/* Desktop Header Nav Links */}
-        <nav className="hidden md:flex items-center gap-5 lg:gap-8">
+        <nav className="hidden lg:flex items-center gap-4 xl:gap-6">
           {navItems.map((item) => {
             const isActive = activeSection === item.id;
             return (
               <button
                 key={item.id}
                 onClick={() => handleNavClick(item.id)}
-                className={`text-xs font-semibold tracking-[0.18em] transition-all duration-300 uppercase relative py-1.5 px-0.5 cursor-pointer ${
+                className={`text-[11px] xl:text-xs font-semibold tracking-[0.14em] xl:tracking-[0.18em] transition-all duration-300 uppercase relative py-1.5 px-0.5 cursor-pointer whitespace-nowrap ${
                   isActive 
                     ? 'text-[#C87A38] font-bold' 
                     : 'text-[#44403C] hover:text-[#C87A38]'
@@ -123,7 +125,7 @@ export default function Navbar({ activeSection, setActiveSection }) {
 
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden w-11 h-11 rounded-full bg-[#FFFDF9] border border-[#E7E0D2] flex items-center justify-center text-[#1C1917] hover:text-[#C87A38] active:scale-95 transition-all shadow-sm cursor-pointer"
+            className="lg:hidden w-11 h-11 rounded-full bg-[#FFFDF9] border border-[#E7E0D2] flex items-center justify-center text-[#1C1917] hover:text-[#C87A38] active:scale-95 transition-all shadow-sm cursor-pointer"
             aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -135,7 +137,7 @@ export default function Navbar({ activeSection, setActiveSection }) {
       {/* Mobile Slide-Down Drawer Navigation */}
       {mobileMenuOpen && (
         <div 
-          className="md:hidden fixed inset-x-0 top-full bottom-0 min-h-[calc(100dvh-100%)] bg-[#1C1917]/50 backdrop-blur-md z-40 animate-fade-in"
+          className="lg:hidden fixed inset-x-0 top-full bottom-0 min-h-[calc(100dvh-100%)] bg-[#1C1917]/50 backdrop-blur-md z-40 animate-fade-in"
           onClick={() => setMobileMenuOpen(false)}
         >
           <div 
