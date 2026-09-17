@@ -12,7 +12,7 @@ export default function ArtSection({ onSelectArtwork }) {
         {/* Main Section Banner Header */}
         <div className="text-center max-w-3xl mx-auto space-y-2">
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1C1917] tracking-tight">
-            ART
+            ABOUT MADHUBANI ART
           </h2>
           <div className="w-16 h-[2.5px] bg-[#C87A38] mx-auto rounded-full mt-1.5" />
           <p className="text-sm sm:text-base text-[#5C5652] leading-relaxed max-w-2xl mx-auto font-light pt-1">

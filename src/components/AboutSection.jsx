@@ -23,7 +23,7 @@ export default function AboutSection() {
         {/* Section Header */}
         <div className="max-w-3xl space-y-6 text-left">
           <span className="text-xs font-semibold tracking-wider uppercase text-[#C87A38]">
-            About Kalapravah
+            Kalapravah
           </span>
 
           <h2 className="font-serif text-3xl sm:text-5xl font-bold text-[#1C1917] leading-[1.15] tracking-tight">

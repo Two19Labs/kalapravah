@@ -140,7 +140,7 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
             <div className="lg:col-span-7 space-y-5 text-left">
               <div className="space-y-2">
                 <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1C1917] tracking-tight">
-                  ABOUT KALAPRAVAH
+                  KALAPRAVAH
                 </h2>
                 <div className="w-16 h-[2.5px] bg-[#C87A38] rounded-full mt-1.5" />
               </div>
@@ -150,7 +150,7 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
               </p>
               
               <p className="text-sm sm:text-base text-[#5C5652] leading-relaxed font-light">
-                Kalapravah translates to the continuous flow of art. For me, this venture is more than a collection of paintings—it is a sacred bridge connecting our rich civilizational roots with the modern world.
+                Kalapravah translates to the continuous flow of art. This venture is more than a collection of paintings—it is a sacred bridge connecting our rich civilizational roots with the modern world.
               </p>
               
               <p className="text-sm sm:text-base text-[#5C5652] leading-relaxed font-light">
@@ -166,7 +166,7 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
                 <div className="w-[240px] h-[240px] xs:w-[280px] xs:h-[280px] sm:w-[320px] sm:h-[320px] lg:w-[340px] lg:h-[340px] rounded-full bg-[#FFFDF9] border-2 border-[#C87A38]/40 shadow-2xl relative overflow-hidden flex items-center justify-center">
                   <LunarGravityCard
                     className="w-full h-full"
-                    artTextureUrl="/images/sphere_madhubani.jpg"
+                    artTextureUrl="/images/artwork_sphere_surya_chandra.jpg"
                     ringColor="#C87A38"
                     hintText=""
                   />

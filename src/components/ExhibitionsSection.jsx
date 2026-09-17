@@ -22,19 +22,19 @@ export default function ExhibitionsSection({ onInquireExhibition, onSelectArtwor
         {/* 1. UPCOMING EXHIBITION SPOTLIGHT: INDIA HABITAT CENTRE (IHC) */}
         <div className="deckled-frame bg-[#FFFDF9] border border-[#E7E0D2] rounded-2xl overflow-hidden shadow-lg grid grid-cols-1 lg:grid-cols-12 items-stretch">
           
-          {/* Featured Exhibition Canvas */}
+          {/* Featured Exhibition Venue */}
           <div 
             onClick={() => {
               if (onSelectArtwork) {
                 onSelectArtwork({
-                  title: "Saheli: Companions Under Crescent Moon",
-                  image: "/images/decor_saheli.jpg",
-                  originalImage: "/images/saheli.jpg",
-                  styleCategory: "Pure Kachni",
-                  medium: "Acrylic and lampblack ink on handmade cotton rag paper",
-                  story: "Two sahelis (cherished companions) sharing intimate moments in an ornate arched pavilion under a star-filled night sky and radiant moon. Intricately adorned with fine Kachni line hatching on traditional attire, floral framing, and delicate handheld fan. Featured at the upcoming India Habitat Centre (IHC) showcase.",
-                  year: "2024",
-                  dimensions: "22 × 15 in",
+                  title: "Visual Arts Gallery, India Habitat Centre (IHC)",
+                  image: "/images/ihc_visual_art_gallery.jpg",
+                  originalImage: "/images/ihc_visual_art_gallery.jpg",
+                  styleCategory: "Exhibition Venue",
+                  medium: "India Habitat Centre, Lodhi Road, New Delhi",
+                  story: "The prestigious Visual Arts Gallery at India Habitat Centre (IHC), New Delhi. Known for showcasing premier national and international modern and folk art retrospectives, featuring large-scale works and intimate artist demonstrations.",
+                  year: "2026",
+                  dimensions: "Visual Arts Gallery, New Delhi",
                   inStock: false
                 });
               }
@@ -42,22 +42,22 @@ export default function ExhibitionsSection({ onInquireExhibition, onSelectArtwor
             className="lg:col-span-5 relative min-h-[250px] xs:min-h-[280px] sm:min-h-[340px] lg:min-h-[380px] overflow-hidden group cursor-pointer bg-[#1C1917] border-b lg:border-b-0 lg:border-r border-[#E7E0D2]"
           >
             <img
-              src="/images/decor_saheli.jpg"
-              alt="Upcoming Gallery Exhibition at India Habitat Centre (IHC) New Delhi - Saheli"
+              src="/images/ihc_visual_art_gallery.jpg"
+              alt="Visual Arts Gallery, India Habitat Centre (IHC), New Delhi"
               className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
             />
 
             {/* Badge */}
             <div className="absolute top-3.5 left-3.5 z-10 flex items-center gap-2">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#1C1917]/85 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-widest border border-white/20 shadow-xs">
-                FEATURED EXHIBITION CANVAS
+                VISUAL ARTS GALLERY • IHC NEW DELHI
               </span>
             </div>
 
             {/* Hint on hover */}
             <div className="absolute bottom-3.5 right-3.5 z-10 opacity-0 group-hover:opacity-100 transition-opacity hidden sm:block">
               <span className="text-[10px] font-medium text-[#FAF8F3] bg-[#1C1917]/80 backdrop-blur-md px-2.5 py-1 rounded-full border border-white/20 shadow-xs">
-                Click to inspect artwork
+                Click to view gallery
               </span>
             </div>
           </div>
@@ -69,18 +69,18 @@ export default function ExhibitionsSection({ onInquireExhibition, onSelectArtwor
               <span>UPCOMING GALLERY FEATURE</span>
             </div>
 
-            <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#1C1917] leading-tight">
-              Folk Art Gallery Exhibition at India Habitat Centre (IHC)
-            </h3>
-
-            <p className="text-sm sm:text-base text-[#44403C] leading-relaxed font-light">
-              Kalapravah is proud to announce an exclusive upcoming exhibition at the prestigious <strong>India Habitat Centre (IHC), New Delhi</strong>. Featuring original large-scale Madhubani canvases, intricate Kachni line series, and live pigment mixing demonstrations by artist Rashmi Dhar.
+            <p className="text-base sm:text-lg text-[#1C1917] font-serif leading-relaxed font-normal">
+              Kalapravah is proud to announce an upcoming exhibition at the prestigious <strong>Visual Art Gallery, India Habitat Centre (IHC), New Delhi</strong> featuring original Madhubani paintings.
             </p>
 
             <div className="space-y-2.5 text-xs sm:text-sm text-[#5C5652] pt-3 border-t border-[#E7E0D2]">
               <div className="flex items-center gap-2.5">
                 <MapPin className="w-4 h-4 text-[#C87A38] shrink-0" />
                 <span><strong>Venue:</strong> Visual Arts Gallery, India Habitat Centre (IHC), Lodhi Road, New Delhi</span>
+              </div>
+              <div className="flex items-center gap-2.5">
+                <Calendar className="w-4 h-4 text-[#C87A38] shrink-0" />
+                <span><strong>Date:</strong> To be announced soon</span>
               </div>
               <div className="flex items-center gap-2.5">
                 <Sparkles className="w-4 h-4 text-[#C87A38] shrink-0" />

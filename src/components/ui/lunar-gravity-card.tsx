@@ -11,7 +11,7 @@ const RADIUS = 2.1;
 
 const ArtCanvasMesh = ({ 
   onClick, 
-  textureUrl = "/images/sphere_madhubani.jpg",
+  textureUrl = "/images/artwork_sphere_surya_chandra.jpg",
   ringColor = "#C87A38",
   ringState = "hidden"
 }: { 
@@ -33,10 +33,10 @@ const ArtCanvasMesh = ({
       colorMap.generateMipmaps = true;
       colorMap.minFilter = THREE.LinearMipmapLinearFilter;
       colorMap.magFilter = THREE.LinearFilter;
-      colorMap.wrapS = THREE.MirroredRepeatWrapping;
+      colorMap.wrapS = THREE.RepeatWrapping;
       colorMap.wrapT = THREE.ClampToEdgeWrapping;
-      colorMap.repeat.set(1.85, 1);
-      colorMap.offset.set(0.04, 0);
+      colorMap.repeat.set(1, 1);
+      colorMap.offset.set(0, 0);
       colorMap.needsUpdate = true;
     }
   }, [colorMap]);
@@ -328,10 +328,18 @@ const generateAsteroids = (count: number) => {
   return data;
 };
 
-const AsteroidBelt = ({ ringState, massiveAsteroidsRef }: { ringState: 'hidden' | 'animating' | 'visible', massiveAsteroidsRef: React.MutableRefObject<Float32Array> }) => {
+const AsteroidBelt = ({ 
+  ringState, 
+  massiveAsteroidsRef,
+  textureUrl = "/images/artwork_sphere_surya_chandra.jpg" 
+}: { 
+  ringState: 'hidden' | 'animating' | 'visible', 
+  massiveAsteroidsRef: React.MutableRefObject<Float32Array>,
+  textureUrl?: string 
+}) => {
   const meshRef = useRef<THREE.InstancedMesh>(null);
 
-  const colorMap = useTexture('/images/sphere_madhubani.jpg');
+  const colorMap = useTexture(textureUrl);
 
   const count = 75; 
   const dummy = useMemo(() => new THREE.Object3D(), []);
@@ -414,7 +422,7 @@ export interface LunarGravityCardProps {
 
 export default function LunarGravityCard({ 
   className,
-  artTextureUrl = "/images/sphere_madhubani.jpg",
+  artTextureUrl = "/images/artwork_sphere_surya_chandra.jpg",
   ringColor = "#C87A38",
   hintText = "Click 3D orb to ignite cosmic pigments",
   title,
@@ -477,7 +485,7 @@ export default function LunarGravityCard({
                   onClick={() => { if(ringState === 'hidden') setRingState('animating') }} 
                 />
                 <ParticleRing ringState={ringState} massiveAsteroidsRef={massiveAsteroidsRef} isMobile={isMobile} />
-                <AsteroidBelt ringState={ringState} massiveAsteroidsRef={massiveAsteroidsRef} />
+                <AsteroidBelt ringState={ringState} massiveAsteroidsRef={massiveAsteroidsRef} textureUrl={artTextureUrl} />
               </Suspense>
             </group>
           </Canvas>

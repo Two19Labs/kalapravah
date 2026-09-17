@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageSquare, Quote } from 'lucide-react';
+import { MessageSquare, Quote, MapPin } from 'lucide-react';
 
 export default function ArtistSection({ onContactArtist }) {
   return (
@@ -30,13 +30,14 @@ export default function ArtistSection({ onContactArtist }) {
               <div className="relative flex-1 min-h-[280px] xs:min-h-[320px] sm:min-h-[360px] rounded-xl overflow-hidden border border-[#E7E0D2] bg-[#FAF8F3] shadow-inner group">
                 <img
                   src="/images/rashmi_dhar.jpg"
-                  alt="Rashmi Dhar at 'Vaidehi - Beyond Body' Exhibition, IGNCA, New Delhi"
+                  alt="Rashmi Dhar at IGNCA, New Delhi"
                   className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#1C1917]/85 via-transparent to-transparent opacity-95 flex flex-col justify-end p-4 sm:p-5 text-white">
-                  <span className="font-serif text-lg sm:text-2xl font-bold">Rashmi Dhar</span>
-                  <span className="text-xs text-[#EAD5BE] font-light">Madhubani Folk Artist & Founder of Kalapravah</span>
-                  <span className="text-[10px] text-[#E0D7CD] mt-1 font-medium">"Vaidehi - Beyond Body" Exhibition • IGNCA, New Delhi</span>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#1C1917]/80 via-transparent to-transparent opacity-95 flex flex-col justify-end p-4 sm:p-5 text-white">
+                  <div className="inline-flex items-center gap-1.5 text-xs sm:text-sm text-[#FAF8F3] font-medium tracking-wide">
+                    <MapPin className="w-3.5 h-3.5 text-[#C87A38] shrink-0" />
+                    <span>IGNCA, New Delhi</span>
+                  </div>
                 </div>
               </div>
 

@@ -186,7 +186,7 @@ export default function WorkshopsSection({ onSelectArtwork, onBookWorkshop }) {
               Meditative Art Amidst Nature
             </h3>
             <p className="text-sm sm:text-base text-[#44403C] leading-relaxed font-light">
-              Over the past two years, artist Rashmi Dhar has conducted meditative Madhubani art workshops amidst nature (e.g. Sunder Nursery, New Delhi) and institutional spaces for participants of all ages. Attendees embark on a calming journey into traditional folk art, creating and taking home their own handcrafted heritage pieces.
+              Over the past two years, artist Rashmi Dhar has conducted meditative Madhubani art workshops amidst nature and institutional spaces for participants of all ages. Attendees embark on a calming journey into traditional folk art, creating and taking home their own handcrafted heritage pieces.
             </p>
 
             <div className="pt-1">
