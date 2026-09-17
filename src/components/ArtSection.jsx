@@ -27,40 +27,22 @@ export default function ArtSection({ onSelectArtwork }) {
         <div className="deckled-frame bg-[#FFFDF9] border border-[#E7E0D2] rounded-2xl overflow-hidden shadow-lg grid grid-cols-1 lg:grid-cols-12 items-stretch">
           
           {/* Left Column: Tradition & Technique Narrative */}
-          <div className="lg:col-span-6 p-5 sm:p-7 lg:p-8 xl:p-10 flex flex-col justify-between space-y-5 sm:space-y-6 text-left border-b lg:border-b-0 lg:border-r border-[#E7E0D2]">
-            <div className="space-y-3.5 sm:space-y-4">
-              <span className="text-[10px] font-bold tracking-[0.24em] text-[#C87A38] uppercase block">
-                TRADITION & TECHNIQUE
-              </span>
-              <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#1C1917] leading-tight">
-                Sacred Living Heritage
-              </h3>
-              <p className="text-sm sm:text-base text-[#332F2C] leading-relaxed font-light">
-                Originating in northern Bihar's Madhubani region, <strong className="font-semibold text-[#1C1917]">Madhubani folk art</strong> is a centuries-old sacred tradition historically painted by women on domestic mud courtyard walls (<em>Bhitti Chitra</em>) during auspicious festivals, marriages, and harvest celebrations.
-              </p>
-              <p className="text-sm sm:text-base text-[#332F2C] leading-relaxed font-light">
-                Celebrated worldwide for bold double-line contours, fine bamboo nib penmanship, and natural pigments, every motif preserves ancient Vedic symbolism, ecological harmony, and living civilizational memory.
-              </p>
-              <p className="text-sm sm:text-base text-[#332F2C] leading-relaxed font-light">
-                Each canvas acts as a sacred visual bridge, translating timeless folklore and civilizational narratives into living art for modern residential and gallery spaces.
-              </p>
-            </div>
-
-            {/* Heritage Hallmark Indicators */}
-            <div className="pt-4 border-t border-[#E7E0D2] grid grid-cols-3 gap-2 sm:gap-2.5">
-              <div className="p-2 sm:p-2.5 md:p-3 rounded-xl bg-[#FAF8F3] border border-[#E7E0D2] text-center">
-                <span className="block text-[9px] sm:text-[10px] font-bold text-[#C87A38] uppercase tracking-wider">Heritage</span>
-                <span className="block text-[10.5px] xs:text-xs sm:text-sm font-semibold text-[#1C1917] mt-0.5 leading-tight">Bhitti Chitra</span>
-              </div>
-              <div className="p-2 sm:p-2.5 md:p-3 rounded-xl bg-[#FAF8F3] border border-[#E7E0D2] text-center">
-                <span className="block text-[9px] sm:text-[10px] font-bold text-[#C87A38] uppercase tracking-wider">Pigments</span>
-                <span className="block text-[10.5px] xs:text-xs sm:text-sm font-semibold text-[#1C1917] mt-0.5 leading-tight">Natural Colors</span>
-              </div>
-              <div className="p-2 sm:p-2.5 md:p-3 rounded-xl bg-[#FAF8F3] border border-[#E7E0D2] text-center">
-                <span className="block text-[9px] sm:text-[10px] font-bold text-[#C87A38] uppercase tracking-wider">Technique</span>
-                <span className="block text-[10.5px] xs:text-xs sm:text-sm font-semibold text-[#1C1917] mt-0.5 leading-tight">Double-Line</span>
-              </div>
-            </div>
+          <div className="lg:col-span-6 p-5 sm:p-7 lg:p-8 xl:p-10 flex flex-col justify-center space-y-4 sm:space-y-5 text-left border-b lg:border-b-0 lg:border-r border-[#E7E0D2]">
+            <span className="text-[10px] font-bold tracking-[0.24em] text-[#C87A38] uppercase block">
+              TRADITION & TECHNIQUE
+            </span>
+            <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#1C1917] leading-tight">
+              Sacred Living Heritage
+            </h3>
+            <p className="text-sm sm:text-base text-[#332F2C] leading-relaxed font-light">
+              Originating in northern Bihar's Madhubani region, <strong className="font-semibold text-[#1C1917]">Madhubani folk art</strong> is a centuries-old sacred tradition historically painted by women on domestic mud courtyard walls (<em>Bhitti Chitra</em>) during auspicious festivals, marriages, and harvest celebrations.
+            </p>
+            <p className="text-sm sm:text-base text-[#332F2C] leading-relaxed font-light">
+              Celebrated worldwide for bold double-line contours, fine bamboo nib penmanship, and natural pigments, every motif preserves ancient Vedic symbolism, ecological harmony, and living civilizational memory.
+            </p>
+            <p className="text-sm sm:text-base text-[#332F2C] leading-relaxed font-light">
+              Each canvas acts as a sacred visual bridge, translating timeless folklore and civilizational narratives into living art for modern residential and gallery spaces.
+            </p>
           </div>
 
           {/* Right Column: High-Impact Masterpiece Showcase */}
