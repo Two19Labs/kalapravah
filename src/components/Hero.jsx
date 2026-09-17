@@ -45,7 +45,7 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
     <section id="home" className="w-full relative overflow-hidden border-b border-[#E7E0D2]">
       
       {/* ========================================================================= */}
-      {/* 1. GHOOMAR-STYLE FULL-BLEED 100VW SLIDESHOW HERO BANNER                  */}
+      {/* 1. FULL-BLEED 100VW SLIDESHOW HERO BANNER                                */}
       {/* ========================================================================= */}
       <div className="relative w-full h-[88vh] sm:h-screen min-h-[580px] flex items-center justify-center text-center overflow-hidden">
         
@@ -69,39 +69,38 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
             ))}
           </div>
 
-          {/* Cinematic Dark Overlay for Ghoomarthali-style Text Contrast */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/55 to-black/45 z-10 pointer-events-none" />
-          <div className="absolute inset-0 bg-black/20 z-10 backdrop-blur-[0.5px] pointer-events-none" />
+          {/* Calibrated Dark Overlay for Enhanced Artwork Visibility and Text Contrast */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/45 to-black/35 sm:from-black/60 sm:via-black/35 sm:to-black/25 z-10 pointer-events-none" />
         </div>
 
-        {/* OVERLAID CENTERED HERO CONTENT (EXACT GHOOMAR STYLE) */}
-        <div className="relative z-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 sm:space-y-8 pt-12">
-
+        {/* OVERLAID CENTERED HERO CONTENT */}
+        <div className="relative z-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 space-y-6 sm:space-y-8">
+          
           {/* Centered High-Impact Headline */}
           <div className="space-y-3">
             <h1 className="font-serif text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.15] drop-shadow-xl text-center">
               Traditional Elegance <br className="hidden xs:inline" />
-              For <span className="font-serif italic font-normal text-[#F59E0B] underline decoration-[#F59E0B]/50 decoration-wavy decoration-1 underline-offset-8">Contemporary</span> Spaces
+              For <span className="font-serif italic font-normal text-[#F59E0B]">Contemporary</span> Spaces
             </h1>
           </div>
 
           {/* Centered Narrative Subtitle */}
           <p className="text-sm xs:text-base sm:text-lg lg:text-xl text-white/90 leading-relaxed font-light max-w-2xl mx-auto text-center drop-shadow-md">
-            Bringing ancient storytelling, rich natural pigments, and meditative line work of traditional <strong>Madhubani/Mithila folk art</strong> directly into modern living spaces.
+            Bringing ancient storytelling of traditional <strong className="font-semibold text-white">Madhubani folk art</strong> directly into modern living spaces.
           </p>
 
           {/* Centered Action Buttons */}
           <div className="flex flex-col xs:flex-row items-center justify-center gap-3 sm:gap-4 pt-3 sm:pt-4 w-full max-w-xs xs:max-w-none mx-auto">
             <button
               onClick={onExploreArtworks}
-              className="w-full xs:w-auto text-center px-6 sm:px-7 py-3.5 rounded-full bg-transparent hover:bg-white/15 text-white border-2 border-white/80 hover:border-white text-xs sm:text-sm font-bold tracking-widest uppercase transition-all backdrop-blur-md shadow-lg cursor-pointer hover:scale-105 active:scale-95"
+              className="w-full xs:w-auto text-center px-6 sm:px-7 py-3.5 rounded-full bg-transparent hover:bg-white/15 text-white border-2 border-white/80 hover:border-white text-xs sm:text-sm font-bold tracking-widest uppercase transition-all shadow-lg cursor-pointer hover:scale-105 active:scale-95 whitespace-nowrap"
             >
               EXPLORE ART GALLERY
             </button>
 
             <button
               onClick={onExploreArtist}
-              className="w-full xs:w-auto text-center px-7 sm:px-8 py-3.5 rounded-full bg-[#C87A38] hover:bg-[#b56929] text-white text-xs sm:text-sm font-bold tracking-widest uppercase transition-all shadow-2xl hover:scale-105 active:scale-95 cursor-pointer border border-[#C87A38]"
+              className="w-full xs:w-auto text-center px-7 sm:px-8 py-3.5 rounded-full bg-[#C87A38] hover:bg-[#b56929] text-white text-xs sm:text-sm font-bold tracking-widest uppercase transition-all shadow-2xl hover:scale-105 active:scale-95 cursor-pointer border border-[#C87A38] whitespace-nowrap"
             >
               ABOUT THE ARTIST
             </button>
@@ -140,11 +139,8 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
             {/* LEFT COLUMN: TITLE & NARRATIVE (lg:col-span-7) */}
             <div className="lg:col-span-7 space-y-5 text-left">
               <div className="space-y-2">
-                <span className="text-[10px] font-bold tracking-[0.28em] uppercase text-[#C87A38] block">
-                  THE KALAPRAVAH PHILOSOPHY
-                </span>
-                <h2 className="font-serif text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1C1917] tracking-tight">
-                  About KALAPRAVAH
+                <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1C1917] tracking-tight">
+                  ABOUT KALAPRAVAH
                 </h2>
                 <div className="w-16 h-[2.5px] bg-[#C87A38] rounded-full mt-1.5" />
               </div>
@@ -153,16 +149,8 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
                 Where Heritage Meets Contemporary Calm
               </p>
               
-              <p className="font-serif text-sm sm:text-base text-[#C87A38] italic leading-relaxed font-medium pl-4 border-l-2 border-[#C87A38]/60 my-2">
+              <p className="text-sm sm:text-base text-[#5C5652] leading-relaxed font-light">
                 Kalapravah translates to the continuous flow of art. For me, this venture is more than a collection of paintings—it is a sacred bridge connecting our rich civilizational roots with the modern world.
-              </p>
-              
-              <p className="text-sm sm:text-base text-[#5C5652] leading-relaxed font-light">
-                In a fast-paced world, art offers a much-needed sanctuary: a moment of pause and peace. Drawing inspiration from pristine nature, ancient rituals, customs, and deep-rooted spirituality, every brushstroke is designed to soothe the soul.
-              </p>
-              
-              <p className="text-sm sm:text-base text-[#5C5652] leading-relaxed font-light">
-                In an age where mass production and digital art dominate the landscape, the intrinsic value of handmade art seems to take a backseat. Kalapravah as an art venture is on a mission to change that narrative. By promoting handmade art, Kalapravah connects individuals to their cultural roots.
               </p>
               
               <p className="text-sm sm:text-base text-[#5C5652] leading-relaxed font-light">
@@ -173,7 +161,7 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
             {/* RIGHT COLUMN: 3D CELESTIAL GLOBE SPHERE (lg:col-span-5) */}
             <div className="lg:col-span-5 flex flex-col items-center justify-center space-y-5 text-center">
               
-              {/* Circular Background Container with floating "Click" tag */}
+              {/* Circular Background Container */}
               <div className="relative">
                 <div className="w-[240px] h-[240px] xs:w-[280px] xs:h-[280px] sm:w-[320px] sm:h-[320px] lg:w-[340px] lg:h-[340px] rounded-full bg-[#FFFDF9] border-2 border-[#C87A38]/40 shadow-2xl relative overflow-hidden flex items-center justify-center">
                   <LunarGravityCard
@@ -182,12 +170,6 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
                     ringColor="#C87A38"
                     hintText=""
                   />
-                </div>
-
-                {/* Short floating "Click" tag near the sphere */}
-                <div className="absolute bottom-3 left-1/2 -translate-x-1/2 z-30 pointer-events-none bg-[#1C1917]/95 text-[#F59E0B] px-3.5 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase border border-[#F59E0B]/50 shadow-xl flex items-center gap-1.5 backdrop-blur-md">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#F59E0B] animate-pulse shrink-0" />
-                  <span>Click</span>
                 </div>
               </div>
 

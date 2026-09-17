@@ -37,7 +37,6 @@ export default function Navbar({ activeSection, setActiveSection }) {
     { id: 'art', label: 'ART' },
     { id: 'artist', label: 'ARTIST' },
     { id: 'gallery', label: 'ART GALLERY' },
-    { id: 'blog', label: 'BLOG' },
     { id: 'faq', label: 'FAQS' },
     { id: 'contact', label: 'CONTACT' },
   ];
@@ -136,11 +135,11 @@ export default function Navbar({ activeSection, setActiveSection }) {
       {/* Mobile Slide-Down Drawer Navigation */}
       {mobileMenuOpen && (
         <div 
-          className="md:hidden fixed inset-x-0 top-full bottom-0 h-[calc(100vh-100%)] bg-[#1C1917]/50 backdrop-blur-md z-40 animate-fade-in"
+          className="md:hidden fixed inset-x-0 top-full bottom-0 min-h-[calc(100dvh-100%)] bg-[#1C1917]/50 backdrop-blur-md z-40 animate-fade-in"
           onClick={() => setMobileMenuOpen(false)}
         >
           <div 
-            className="bg-[#FAF8F3] border-b border-[#E7E0D2] px-5 sm:px-6 pt-5 pb-8 shadow-2xl space-y-5 max-h-[85vh] overflow-y-auto"
+            className="bg-[#FAF8F3] border-b border-[#E7E0D2] px-5 sm:px-6 pt-5 pb-8 shadow-2xl space-y-5 max-h-[calc(100dvh-80px)] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="space-y-2">

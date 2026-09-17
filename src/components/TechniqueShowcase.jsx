@@ -34,7 +34,7 @@ export default function TechniqueShowcase() {
             <span>Folk Art Master Techniques</span>
           </div>
 
-          <h2 className="font-serif text-3xl sm:text-5xl font-bold text-[#1C1917] tracking-tight">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1C1917] tracking-tight">
             Kachni line vs. Bharni color.
           </h2>
 

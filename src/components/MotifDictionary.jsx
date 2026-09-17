@@ -17,7 +17,7 @@ export default function MotifDictionary() {
       name: "Lotus (Kamal)",
       hindiName: "कमल",
       symbolism: "Purity, Divine Wisdom & Rebirth",
-      description: "The lotus blooms unblemished from muddy waters, symbolizing spiritual enlightenment, purity of heart, and cosmic creation across traditional Mithila homes.",
+      description: "The lotus blooms unblemished from muddy waters, symbolizing spiritual enlightenment, purity of heart, and cosmic creation across traditional Madhubani homes.",
       colorPalette: "Terracotta Red & Rice White",
       icon: "🪷"
     },
@@ -59,7 +59,7 @@ export default function MotifDictionary() {
             <span>Visual Vocabulary & Memory</span>
           </div>
 
-          <h2 className="font-serif text-3xl sm:text-5xl font-bold text-[#1C1917] tracking-tight">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1C1917] tracking-tight">
             Motif Dictionary
           </h2>
 

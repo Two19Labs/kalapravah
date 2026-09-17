@@ -21,6 +21,9 @@ export default function ArtGallerySection({ onSelectArtwork }) {
   const lastMouseXRef = React.useRef(0);
   const isDraggingRef = React.useRef(false);
   const isHoveredRef = React.useRef(false);
+  const touchStartXRef = React.useRef(0);
+  const touchStartYRef = React.useRef(0);
+  const touchDirectionRef = React.useRef(null);
 
   // Workshop marquee state & refs
   const [wsScrollPos, setWsScrollPos] = useState(0);
@@ -35,6 +38,9 @@ export default function ArtGallerySection({ onSelectArtwork }) {
   const lastWsMouseXRef = React.useRef(0);
   const isWsDraggingRef = React.useRef(false);
   const isWsHoveredRef = React.useRef(false);
+  const wsTouchStartXRef = React.useRef(0);
+  const wsTouchStartYRef = React.useRef(0);
+  const wsTouchDirectionRef = React.useRef(null);
 
   const displayWorkshopPhotos = WORKSHOP_PHOTOS.length > 0 
     ? [...WORKSHOP_PHOTOS, ...WORKSHOP_PHOTOS, ...WORKSHOP_PHOTOS] 
@@ -104,27 +110,53 @@ export default function ArtGallerySection({ onSelectArtwork }) {
   }, [isWsHoldingLeft, isWsHoldingRight]);
 
   const handleWsTouchStart = (e) => {
+    if (!e.touches || !e.touches[0]) return;
     wsTargetScrollPosRef.current = null;
-    isWsDraggingRef.current = true;
+    wsTouchStartXRef.current = e.touches[0].clientX;
+    wsTouchStartYRef.current = e.touches[0].clientY;
+    lastWsMouseXRef.current = e.touches[0].clientX;
+    wsTouchDirectionRef.current = null;
+    isWsDraggingRef.current = false;
     setHasWsDraggedFar(false);
-    if (e.touches && e.touches[0]) {
-      lastWsMouseXRef.current = e.touches[0].clientX;
-    }
   };
 
   const handleWsTouchMove = (e) => {
-    if (!isWsDraggingRef.current || !e.touches || !e.touches[0]) return;
-    const dx = lastWsMouseXRef.current - e.touches[0].clientX;
-    lastWsMouseXRef.current = e.touches[0].clientX;
+    if (!e.touches || !e.touches[0]) return;
+    const currentX = e.touches[0].clientX;
+    const currentY = e.touches[0].clientY;
 
-    if (Math.abs(dx) > 0.5) {
-      setHasWsDraggedFar(true);
-      updateWsScrollPos(wsScrollPosRef.current + dx);
+    if (!wsTouchDirectionRef.current) {
+      const diffX = Math.abs(currentX - wsTouchStartXRef.current);
+      const diffY = Math.abs(currentY - wsTouchStartYRef.current);
+      if (diffX > 8 || diffY > 8) {
+        if (diffX > diffY) {
+          wsTouchDirectionRef.current = 'horizontal';
+          isWsDraggingRef.current = true;
+          lastWsMouseXRef.current = currentX;
+        } else {
+          wsTouchDirectionRef.current = 'vertical';
+          isWsDraggingRef.current = false;
+          return;
+        }
+      } else {
+        return;
+      }
+    }
+
+    if (wsTouchDirectionRef.current === 'horizontal' && isWsDraggingRef.current) {
+      const dx = lastWsMouseXRef.current - currentX;
+      lastWsMouseXRef.current = currentX;
+
+      if (Math.abs(dx) > 0.5) {
+        setHasWsDraggedFar(true);
+        updateWsScrollPos(wsScrollPosRef.current + dx);
+      }
     }
   };
 
   const handleWsTouchEnd = () => {
     isWsDraggingRef.current = false;
+    wsTouchDirectionRef.current = null;
   };
 
   const handleWsNext = () => {
@@ -161,7 +193,7 @@ export default function ArtGallerySection({ onSelectArtwork }) {
       const gap = parseFloat(style.gap || style.gridGap || '24') || 24;
       return firstCard.offsetWidth + gap;
     }
-    return 384;
+    return 340;
   };
 
   // Helper to normalize position continuously without cuts
@@ -227,31 +259,59 @@ export default function ArtGallerySection({ onSelectArtwork }) {
     };
   }, [isHoldingLeft, isHoldingRight, filteredArtworks.length]);
 
-  // 1:1 Incremental Touch Drag Handlers for Mobile/Tablet
+  // 1:1 Incremental Touch Drag Handlers with vertical scroll passthrough
   const handleTouchStart = (e) => {
+    if (!e.touches || !e.touches[0]) return;
     targetScrollPosRef.current = null;
-    isDraggingRef.current = true;
-    setIsDragging(true);
+    touchStartXRef.current = e.touches[0].clientX;
+    touchStartYRef.current = e.touches[0].clientY;
+    lastMouseXRef.current = e.touches[0].clientX;
+    touchDirectionRef.current = null;
+    isDraggingRef.current = false;
+    setIsDragging(false);
     setHasDraggedFar(false);
-    if (e.touches && e.touches[0]) {
-      lastMouseXRef.current = e.touches[0].clientX;
-    }
   };
 
   const handleTouchMove = (e) => {
-    if (!isDraggingRef.current || !e.touches || !e.touches[0]) return;
-    const dx = lastMouseXRef.current - e.touches[0].clientX;
-    lastMouseXRef.current = e.touches[0].clientX;
+    if (!e.touches || !e.touches[0]) return;
+    const currentX = e.touches[0].clientX;
+    const currentY = e.touches[0].clientY;
 
-    if (Math.abs(dx) > 0.5) {
-      setHasDraggedFar(true);
-      updateScrollPos(scrollPosRef.current + dx);
+    if (!touchDirectionRef.current) {
+      const diffX = Math.abs(currentX - touchStartXRef.current);
+      const diffY = Math.abs(currentY - touchStartYRef.current);
+      if (diffX > 8 || diffY > 8) {
+        if (diffX > diffY) {
+          touchDirectionRef.current = 'horizontal';
+          isDraggingRef.current = true;
+          setIsDragging(true);
+          lastMouseXRef.current = currentX;
+        } else {
+          touchDirectionRef.current = 'vertical';
+          isDraggingRef.current = false;
+          setIsDragging(false);
+          return;
+        }
+      } else {
+        return;
+      }
+    }
+
+    if (touchDirectionRef.current === 'horizontal' && isDraggingRef.current) {
+      const dx = lastMouseXRef.current - currentX;
+      lastMouseXRef.current = currentX;
+
+      if (Math.abs(dx) > 0.5) {
+        setHasDraggedFar(true);
+        updateScrollPos(scrollPosRef.current + dx);
+      }
     }
   };
 
   const handleTouchEnd = () => {
     isDraggingRef.current = false;
     setIsDragging(false);
+    touchDirectionRef.current = null;
   };
 
   const handleNext = () => {
@@ -279,13 +339,9 @@ export default function ArtGallerySection({ onSelectArtwork }) {
         
         {/* Gallery Section Banner Header */}
         <div className="text-center max-w-3xl mx-auto space-y-2">
-          <h2 className="font-serif text-3xl sm:text-5xl font-normal text-[#1C1917] tracking-tight">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1C1917] tracking-tight">
             ART GALLERY
           </h2>
-          <p className="text-sm sm:text-base text-[#5C5652] leading-relaxed max-w-2xl mx-auto font-light">
-            Explore 30+ curated original artworks, upcoming gallery exhibitions at IHC, traditional outdoor workshops, and international youth events.
-          </p>
-          <div className="w-20 h-[2px] bg-[#C87A38] mx-auto rounded-full mt-2" />
         </div>
 
         {/* 📍 CONTINUOUS SLOW MOVING TRACK (SIDE HOLDABLE < AND > BUTTONS FOR PC, TOUCH SWIPE FOR MOBILE) */}
@@ -306,12 +362,12 @@ export default function ArtGallerySection({ onSelectArtwork }) {
                 e.stopPropagation();
                 handlePrev();
               }}
-              className={`absolute left-3 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-[#1C1917]/85 hover:bg-[#C87A38] text-white flex items-center justify-center border border-white/30 shadow-2xl backdrop-blur-md transition-all active:scale-95 cursor-pointer ${
+              className={`absolute left-1.5 sm:left-3 top-1/2 -translate-y-1/2 z-30 w-9 h-9 sm:w-12 sm:h-12 rounded-full bg-[#1C1917]/85 hover:bg-[#C87A38] text-white flex items-center justify-center border border-white/30 shadow-2xl backdrop-blur-md transition-all active:scale-95 cursor-pointer ${
                 isHoldingLeft ? 'bg-[#C87A38] scale-110 shadow-inner' : ''
               }`}
               aria-label="Move left / previous"
             >
-              <ChevronLeft className="w-6 h-6" />
+              <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6" />
             </button>
 
             {/* Holdable Right Side Button (>) */}
@@ -325,12 +381,12 @@ export default function ArtGallerySection({ onSelectArtwork }) {
                 e.stopPropagation();
                 handleNext();
               }}
-              className={`absolute right-3 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-[#1C1917]/85 hover:bg-[#C87A38] text-white flex items-center justify-center border border-white/30 shadow-2xl backdrop-blur-md transition-all active:scale-95 cursor-pointer ${
+              className={`absolute right-1.5 sm:right-3 top-1/2 -translate-y-1/2 z-30 w-9 h-9 sm:w-12 sm:h-12 rounded-full bg-[#1C1917]/85 hover:bg-[#C87A38] text-white flex items-center justify-center border border-white/30 shadow-2xl backdrop-blur-md transition-all active:scale-95 cursor-pointer ${
                 isHoldingRight ? 'bg-[#C87A38] scale-110 shadow-inner' : ''
               }`}
               aria-label="Move right / next"
             >
-              <ChevronRight className="w-6 h-6" />
+              <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
             </button>
             
             {/* Sliding Track with continuous requestAnimationFrame translate3d */}
@@ -350,9 +406,9 @@ export default function ArtGallerySection({ onSelectArtwork }) {
                       onSelectArtwork(artwork);
                     }
                   }}
-                  className="w-[270px] xs:w-[310px] sm:w-[360px] lg:w-[380px] min-w-[270px] xs:min-w-[310px] sm:min-w-[360px] lg:min-w-[380px] shrink-0 deckled-frame bg-[#FFFDF9] border-2 border-[#E7E0D2] hover:border-[#C87A38] rounded-xl p-3.5 xs:p-4 sm:p-5 shadow-md hover:shadow-2xl transition-all duration-300 group cursor-pointer flex flex-col justify-between h-[470px] xs:h-[480px] sm:h-[510px]"
+                  className="w-[260px] xs:w-[285px] sm:w-[315px] lg:w-[330px] min-w-[260px] xs:min-w-[285px] sm:min-w-[315px] lg:min-w-[330px] shrink-0 deckled-frame bg-[#FFFDF9] border-2 border-[#E7E0D2] hover:border-[#C87A38] rounded-xl p-3 sm:p-3.5 shadow-md hover:shadow-2xl transition-all duration-300 group cursor-pointer flex flex-col justify-between h-[405px] xs:h-[415px] sm:h-[425px]"
                 >
-                  <div className="space-y-3">
+                  <div className="space-y-2">
                     
                     {/* Artwork Image Frame with Uniform Symmetric Red Border */}
                     <div className="relative aspect-[4/3] rounded-lg overflow-hidden border border-[#E7E0D2] bg-[#FAF8F3]">
@@ -364,11 +420,8 @@ export default function ArtGallerySection({ onSelectArtwork }) {
                         />
                       </div>
 
-
-
-
                       <div className="absolute inset-0 bg-[#1C1917]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center z-20">
-                        <div className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-white text-[#1C1917] text-xs font-bold shadow-md">
+                        <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white text-[#1C1917] text-xs font-bold shadow-md">
                           <Sparkles className="w-3.5 h-3.5 text-[#C87A38]" />
                           <span>VIEW DETAILS</span>
                         </div>
@@ -376,27 +429,27 @@ export default function ArtGallerySection({ onSelectArtwork }) {
                     </div>
 
                     {/* Artwork Titles & Details */}
-                    <div className="space-y-1.5 text-left">
-                      <div className="flex items-center justify-between gap-2 h-7">
-                        <h4 className="font-serif text-lg sm:text-xl font-bold text-[#1C1917] group-hover:text-[#C87A38] transition-colors truncate">
+                    <div className="space-y-1 text-left">
+                      <div className="flex items-center justify-between gap-2 h-6 sm:h-6.5">
+                        <h4 className="font-serif text-base sm:text-lg font-bold text-[#1C1917] group-hover:text-[#C87A38] transition-colors truncate">
                           {artwork.title}
                         </h4>
-                        <span className="text-[11px] font-semibold text-[#78716C] bg-[#FAF8F3] px-2 py-0.5 rounded border border-[#E7E0D2] shrink-0">
+                        <span className="text-[10px] sm:text-[11px] font-semibold text-[#78716C] bg-[#FAF8F3] px-2 py-0.5 rounded border border-[#E7E0D2] shrink-0">
                           {artwork.dimensions}
                         </span>
                       </div>
 
-                      <p className="text-xs text-[#78716C] italic font-serif truncate h-5 flex items-center">
+                      <p className="text-[11px] sm:text-xs text-[#78716C] italic font-serif truncate h-4 sm:h-4.5 flex items-center">
                         {artwork.medium}
                       </p>
 
-                      {/* 📍 BRIEF 15-20 WORDS ABOUT EACH ART WORK (FIXED UNIFORM BOX HEIGHT) */}
-                      <div className="pt-2 border-t border-[#E7E0D2]/60 space-y-1">
-                        <span className="text-[9.5px] font-bold tracking-widest text-[#C87A38] uppercase block">
+                      {/* 📍 BRIEF 2-3 LINES OF EQUAL LENGTH (UNIFORM COMPACT BOX) */}
+                      <div className="pt-1.5 border-t border-[#E7E0D2]/60 space-y-1">
+                        <span className="text-[9px] font-bold tracking-widest text-[#C87A38] uppercase block">
                           ARTWORK BRIEF:
                         </span>
-                        <div className="h-[60px] sm:h-[64px] bg-[#FAF8F3] p-2.5 rounded border border-[#E7E0D2]/80 flex items-center overflow-hidden">
-                          <p className="text-xs sm:text-[13px] text-[#292524] font-medium leading-snug line-clamp-3">
+                        <div className="h-[52px] sm:h-[56px] bg-[#FAF8F3] p-2 rounded border border-[#E7E0D2]/80 flex items-center overflow-hidden">
+                          <p className="text-[11px] sm:text-xs text-[#292524] font-medium leading-relaxed line-clamp-3">
                             {artwork.brief}
                           </p>
                         </div>
@@ -407,11 +460,11 @@ export default function ArtGallerySection({ onSelectArtwork }) {
                   </div>
 
                   {/* Card Footer */}
-                  <div className="pt-3 mt-2 border-t border-[#E7E0D2] flex items-center justify-between text-xs">
-                    <span className="font-bold text-[#C87A38]">
+                  <div className="pt-2 sm:pt-2.5 mt-auto border-t border-[#E7E0D2] flex items-center justify-between text-xs">
+                    <span className="font-bold text-[#C87A38] text-[11px] sm:text-xs">
                       {artwork.price}
                     </span>
-                    <div className="inline-flex items-center gap-1 text-[#1C1917] group-hover:text-[#C87A38] font-bold tracking-wider uppercase text-[11px]">
+                    <div className="inline-flex items-center gap-1 text-[#1C1917] group-hover:text-[#C87A38] font-bold tracking-wider uppercase text-[10.5px] sm:text-[11px]">
                       <span>VIEW STORY</span>
                       <ArrowUpRight className="w-3.5 h-3.5" />
                     </div>
@@ -480,7 +533,7 @@ export default function ArtGallerySection({ onSelectArtwork }) {
                 </div>
                 <div className="flex items-center gap-2">
                   <Sparkles className="w-4 h-4 text-[#C87A38]" />
-                  <span><strong>Highlights:</strong> Original Mithila Paintings, Private Viewing & Artist Talk</span>
+                  <span><strong>Highlights:</strong> Original Madhubani Paintings, Private Viewing & Artist Talk</span>
                 </div>
               </div>
 
@@ -545,12 +598,12 @@ export default function ArtGallerySection({ onSelectArtwork }) {
                       e.stopPropagation();
                       handleWsPrev();
                     }}
-                    className={`absolute left-2 top-1/2 -translate-y-1/2 z-30 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#1C1917]/85 hover:bg-[#C87A38] text-white flex items-center justify-center border border-white/30 shadow-2xl backdrop-blur-md transition-all active:scale-95 cursor-pointer ${
+                    className={`absolute left-1.5 sm:left-2 top-1/2 -translate-y-1/2 z-30 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-[#1C1917]/85 hover:bg-[#C87A38] text-white flex items-center justify-center border border-white/30 shadow-2xl backdrop-blur-md transition-all active:scale-95 cursor-pointer ${
                       isWsHoldingLeft ? 'bg-[#C87A38] scale-110 shadow-inner' : ''
                     }`}
                     aria-label="Move left / previous"
                   >
-                    <ChevronLeft className="w-5 h-5" />
+                    <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
                   </button>
 
                   {/* Floating Right Side Button (>) */}
@@ -564,12 +617,12 @@ export default function ArtGallerySection({ onSelectArtwork }) {
                       e.stopPropagation();
                       handleWsNext();
                     }}
-                    className={`absolute right-2 top-1/2 -translate-y-1/2 z-30 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#1C1917]/85 hover:bg-[#C87A38] text-white flex items-center justify-center border border-white/30 shadow-2xl backdrop-blur-md transition-all active:scale-95 cursor-pointer ${
+                    className={`absolute right-1.5 sm:right-2 top-1/2 -translate-y-1/2 z-30 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-[#1C1917]/85 hover:bg-[#C87A38] text-white flex items-center justify-center border border-white/30 shadow-2xl backdrop-blur-md transition-all active:scale-95 cursor-pointer ${
                       isWsHoldingRight ? 'bg-[#C87A38] scale-110 shadow-inner' : ''
                     }`}
                     aria-label="Move right / next"
                   >
-                    <ChevronRight className="w-5 h-5" />
+                    <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
                   </button>
 
                   <div 
@@ -612,47 +665,9 @@ export default function ArtGallerySection({ onSelectArtwork }) {
                 </div>
               </div>
             </div>
-
-            {/* Event Workshop Card: Aga Khan Foundation Summer Camp */}
-            <div className="bg-[#FFFDF9] border border-[#E7E0D2] rounded-xl p-6 sm:p-8 shadow-sm space-y-4 text-left relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-24 h-24 bg-[#C87A38]/10 rounded-full blur-2xl pointer-events-none" />
-
-              <div className="flex items-center gap-2 text-xs font-bold text-[#C87A38] uppercase tracking-wider">
-                <Users className="w-4 h-4 text-[#C87A38]" />
-                <span>AGA KHAN FOUNDATION SUMMER CAMP</span>
-              </div>
-
-              <h4 className="font-serif text-xl sm:text-2xl font-bold text-[#1C1917]">
-                Global Youth Meditative Art Workshop
-              </h4>
-
-              <p className="text-sm sm:text-base text-[#44403C] leading-relaxed">
-                At the Aga Khan Foundation’s summer camp, Rashmi Dhar led a meditative Madhubani art workshop. Forty teenagers aged 15–20 from across the globe—including India, the USA, Canada, and the UAE—gathered for two days of skill-building. Beyond mastering traditional techniques, participants experienced deep mindfulness, creative focus, and brought home their own handcrafted Mithila paintings.
-              </p>
-
-              {/* Event Metadata Strip (Replaces Pill Buttons) */}
-              <div className="pt-4 border-t border-[#E7E0D2]/70 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-[#5C5652]">
-                <div className="flex items-center gap-1.5 font-medium text-[#44403C]">
-                  <Users className="w-3.5 h-3.5 text-[#C87A38]" />
-                  <span>40 Global Teen Participants</span>
-                </div>
-                <div className="flex items-center gap-1.5 font-medium text-[#44403C]">
-                  <Globe className="w-3.5 h-3.5 text-[#C87A38]" />
-                  <span>India, USA, Canada & UAE</span>
-                </div>
-                <div className="flex items-center gap-1.5 font-medium text-[#44403C]">
-                  <Clock className="w-3.5 h-3.5 text-[#C87A38]" />
-                  <span>2-Day Intensive Workshop</span>
-                </div>
-              </div>
-            </div>
-
           </div>
-
         </div>
-
       </div>
-
     </section>
   );
 }

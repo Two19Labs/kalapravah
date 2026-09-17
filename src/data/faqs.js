@@ -16,29 +16,29 @@ export const FAQS = [
     id: "faq-brand-what-is-kalapravah",
     category: "About Art & Brand",
     question: "What is Kalapravah?",
-    answer: "Kalapravah is an art brand dedicated to preserving, promoting, and contemporary styling of traditional Madhubani (Mithila) art. We offer authentic hand-painted artworks, home decor, customized lifestyle pieces, and immersive workshops.",
-    keywords: ["what is kalapravah", "kalapravah madhubani art", "authentic mithila art brand", "traditional indian art"]
+    answer: "Kalapravah is an art brand dedicated to preserving, promoting, and contemporary styling of traditional Madhubani art. We offer authentic hand-painted artworks, home decor, customized lifestyle pieces, and immersive workshops.",
+    keywords: ["what is kalapravah", "kalapravah madhubani art", "authentic madhubani art brand", "traditional indian art"]
   },
   {
     id: "faq-brand-authentic-handpainted",
     category: "About Art & Brand",
     question: "Are all Kalapravah artworks authentic and hand-painted?",
     answer: "Yes, absolutely. Every piece is meticulously hand-painted using authentic techniques, nibs and brushes, natural or acrylic colors, and handmade papers or eco-friendly canvases. We also provide Authenticity Certificate with every art work sold.",
-    keywords: ["authentic hand painted art", "madhubani certificate of authenticity", "genuine mithila paintings", "hand painted indian folk art"]
+    keywords: ["authentic hand painted art", "madhubani certificate of authenticity", "genuine madhubani paintings", "hand painted indian folk art"]
   },
   {
     id: "faq-brand-custom-commission",
     category: "About Art & Brand",
     question: "Can I commission a custom piece of Madhubani art?",
     answer: "We love bringing custom visions to life! Whether you want a specific theme or a custom size for your home or office interior, reach out to us via Direct Enquiry to discuss your requirements.",
-    keywords: ["commission custom madhubani art", "bespoke indian art commission", "custom painting for home", "personalized mithila artwork"]
+    keywords: ["commission custom madhubani art", "bespoke indian art commission", "custom painting for home", "personalized madhubani artwork"]
   },
   {
     id: "faq-care-identify-authentic",
     category: "About Art & Brand",
     question: "How can I distinguish an authentic hand-painted Madhubani piece from a digital print?",
     answer: "Look closely at the line work and surface texture: authentic handmade art reveals organic variations in dip-pen pressure, subtle pigment gradients on textured cotton paper, and double-line borders drawn freehand. Machine prints, by contrast, exhibit uniform digital dots under magnification, flat artificial gloss, and unnaturally rigid geometric symmetry.",
-    keywords: ["how to identify authentic Madhubani", "real vs fake Mithila painting", "handmade paper art verification", "genuine Madhubani artwork"]
+    keywords: ["how to identify authentic Madhubani", "real vs fake Madhubani painting", "handmade paper art verification", "genuine Madhubani artwork"]
   },
 
   // =========================================================================
@@ -49,14 +49,14 @@ export const FAQS = [
     category: "Workshops & Learning",
     question: "Do you conduct Madhubani painting workshops?",
     answer: "Yes! We regularly conduct beginner-friendly and advanced Madhubani art workshops at cultural hubs, heritage spaces and private events. These sessions cover traditional motifs, and step-by-step storytelling through art.",
-    keywords: ["madhubani painting workshops", "mithila art classes", "traditional art workshop delhi", "learn madhubani painting"]
+    keywords: ["madhubani painting workshops", "madhubani art classes", "traditional art workshop delhi", "learn madhubani painting"]
   },
   {
     id: "faq-workshops-beginner",
     category: "Workshops & Learning",
     question: "I am a complete beginner. Can I join your workshops?",
     answer: "Our workshops are designed for all skill levels—no prior drawing experience is needed. We guide you gently through every line, stroke, and filling technique.",
-    keywords: ["beginner madhubani workshop", "art workshop for beginners", "learn folk art without experience", "mithila painting classes for beginners"]
+    keywords: ["beginner madhubani workshop", "art workshop for beginners", "learn folk art without experience", "madhubani painting classes for beginners"]
   },
   {
     id: "faq-workshops-register",
@@ -102,7 +102,7 @@ export const FAQS = [
     category: "Orders, Shipping & Care",
     question: "Can bespoke sizes be commissioned and safely shipped worldwide?",
     answer: "Yes. Custom paintings can be commissioned to fit specific architectural niches, prayer rooms, or corporate spaces directly with artist Rashmi Dhar. Unframed original artworks on archival paper are cushioned between acid-free glassine sheets and shipped inside heavy-duty, crush-proof PVC tubes with full transit insurance, arriving safely across India and internationally.",
-    keywords: ["custom Madhubani painting commission", "bespoke Mithila art interior design", "commission traditional Indian artist", "international shipping Indian folk art"]
+    keywords: ["custom Madhubani painting commission", "bespoke Madhubani art interior design", "commission traditional Indian artist", "international shipping Indian folk art"]
   },
 
   // =========================================================================
@@ -162,36 +162,36 @@ export const FAQS = [
     id: "faq-art-unique-heritage",
     category: "Madhubani & Indian Art",
     question: "What makes Madhubani painting distinct from other Indian folk art traditions?",
-    answer: "Unlike Warli (defined by white-on-ochre stick figures) or Gond (celebrated for its patterned dot fills), Madhubani art is distinguished by signature double-line contour framing, micro-hatching line work, and 'Horror Vacui'—the philosophical avoidance of empty space where every corner is filled with living flora and fauna. Originating in ancient Mithila during the Ramayana era, it remains one of the world's oldest continuous women-led living traditions.",
-    keywords: ["difference between Madhubani and Warli", "unique features of Mithila art", "Indian folk art comparison", "what is special about Madhubani painting"]
+    answer: "Unlike Warli (defined by white-on-ochre stick figures) or Gond (celebrated for its patterned dot fills), Madhubani art is distinguished by signature double-line contour framing, micro-hatching line work, and 'Horror Vacui'—the philosophical avoidance of empty space where every corner is filled with living flora and fauna. Originating in ancient Bihar during the Ramayana era, it remains one of the world's oldest continuous women-led living traditions.",
+    keywords: ["difference between Madhubani and Warli", "unique features of Madhubani art", "Indian folk art comparison", "what is special about Madhubani painting"]
   },
   {
     id: "faq-art-motifs-meaning",
     category: "Madhubani & Indian Art",
     question: "What is the symbolic meaning behind motifs like the Fish, Tree of Life, and Sun?",
-    answer: "Every motif in Mithila folklore is an auspicious emblem of cosmic harmony. The Matsya (Fish) symbolizes fertility, divine water energy, and Lord Vishnu's first avatar. The Tree of Life represents the cosmic axis connecting the roots of earth with heavenly realms. The Sun (Surya) embodies life force, truth, and protection, while the Peacock represents grace, celestial love, and seasonal renewal.",
-    keywords: ["Madhubani motif symbolism", "Matsya fish meaning Mithila art", "Tree of Life Indian folk art", "Kohbar painting significance"]
+    answer: "Every motif in Madhubani folklore is an auspicious emblem of cosmic harmony. The Matsya (Fish) symbolizes fertility, divine water energy, and Lord Vishnu's first avatar. The Tree of Life represents the cosmic axis connecting the roots of earth with heavenly realms. The Sun (Surya) embodies life force, truth, and protection, while the Peacock represents grace, celestial love, and seasonal renewal.",
+    keywords: ["Madhubani motif symbolism", "Matsya fish meaning Madhubani art", "Tree of Life Indian folk art", "Kohbar painting significance"]
   },
   {
     id: "faq-art-styles-explained",
     category: "Madhubani & Indian Art",
     question: "What are the primary traditional styles (Kachni, Bharni, Godna, and Tantrik)?",
     answer: "Madhubani encompasses distinct visual lineages: Kachni focuses purely on monochromatic or bi-color dip-pen line hatching without solid fills; Bharni features bold outlines filled with saturated mineral pigments; Godna utilizes tattoo-inspired concentric wheels and tribal lore; while Tantrik explores sacred geometry, yantras, and cosmic mandalas for meditative focus.",
-    keywords: ["difference between Kachni and Bharni", "Godna Madhubani painting", "Mithila art styles explained", "Kachni fine line art"]
+    keywords: ["difference between Kachni and Bharni", "Godna Madhubani painting", "Madhubani art styles explained", "Kachni fine line art"]
   },
   {
     id: "faq-art-materials-pigments",
     category: "Madhubani & Indian Art",
     question: "Why are handmade cotton rag paper and natural pigments traditionally used?",
-    answer: "Mithila art was historically painted on mud courtyard walls using bamboo nibs and natural earth pigments (turmeric for yellow, soot for lampblack, indigo for blue). Today's authentic artists preserve this tactile warmth on 300+ GSM acid-free cotton rag paper using dip pens and organic washes, ensuring the painting breathes and ages gracefully over generations without brittleness.",
-    keywords: ["pigments used in Madhubani painting", "handmade paper Mithila art", "dip nib folk art ink", "traditional Indian art materials"]
+    answer: "Madhubani art was historically painted on mud courtyard walls using bamboo nibs and natural earth pigments (turmeric for yellow, soot for lampblack, indigo for blue). Today's authentic artists preserve this tactile warmth on 300+ GSM acid-free cotton rag paper using dip pens and organic washes, ensuring the painting breathes and ages gracefully over generations without brittleness.",
+    keywords: ["pigments used in Madhubani painting", "handmade paper Madhubani art", "dip nib folk art ink", "traditional Indian art materials"]
   },
   {
     id: "faq-care-art-investment",
     category: "Madhubani & Indian Art",
     question: "Do original handmade Indian folk paintings appreciate in value over time?",
-    answer: "Yes. With Madhubani art holding an official Geographical Indication (GI) tag and master works being collected by premier global institutions (such as Paris's Centre Pompidou and the Mithila Museum in Japan), original pieces requiring 40 to 100+ hours of master penmanship carry lasting cultural and investment value, far outlasting transient commercial prints.",
-    keywords: ["Madhubani painting cost", "price of original Mithila art", "authentic Indian folk art pricing", "is Madhubani painting a good investment"]
+    answer: "Yes. With Madhubani art holding an official Geographical Indication (GI) tag and master works being collected by premier global institutions (such as Paris's Centre Pompidou and prestigious Asian art museums), original pieces requiring 40 to 100+ hours of master penmanship carry lasting cultural and investment value, far outlasting transient commercial prints.",
+    keywords: ["Madhubani painting cost", "price of original Madhubani art", "authentic Indian folk art pricing", "is Madhubani painting a good investment"]
   }
 ];
 

@@ -123,11 +123,24 @@ h1, h2, h3, h4, .font-serif {
   -webkit-tap-highlight-color: transparent;
 }
 
+button, a, input, select, textarea {
+  touch-action: manipulation;
+}
+
 html, body {
   width: 100%;
-  max-width: 100vw;
+  max-width: 100%;
   overflow-x: hidden;
+  position: relative;
   -webkit-overflow-scrolling: touch;
+}
+
+/* Safe area padding for notched mobile devices */
+@supports (padding: max(0px)) {
+  body {
+    padding-left: max(0px, env(safe-area-inset-left));
+    padding-right: max(0px, env(safe-area-inset-right));
+  }
 }
 
 html {

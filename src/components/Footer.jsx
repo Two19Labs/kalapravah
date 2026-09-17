@@ -38,7 +38,6 @@ export default function Footer({ onNavigate }) {
     { id: 'art', label: 'ART' },
     { id: 'artist', label: 'ARTIST' },
     { id: 'gallery', label: 'ART GALLERY' },
-    { id: 'blog', label: 'BLOG' },
     { id: 'faq', label: 'FAQS' },
     { id: 'contact', label: 'CONTACT' },
   ];
@@ -180,7 +179,7 @@ export default function Footer({ onNavigate }) {
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   placeholder="Optional: Note, painting size, or details..."
-                  className="w-full px-3.5 py-2.5 bg-[#1C1613] border border-[#3D312B] focus:border-[#D98A48] rounded-md text-xs text-[#FAF8F3] placeholder:text-[#78716C] focus:outline-none transition-colors min-h-[44px]"
+                  className="w-full px-3.5 py-2.5 bg-[#1C1613] border border-[#3D312B] focus:border-[#D98A48] rounded-md text-base sm:text-xs text-[#FAF8F3] placeholder:text-[#78716C] focus:outline-none transition-colors min-h-[44px]"
                 />
 
                 {/* Submit Button */}

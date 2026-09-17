@@ -7,7 +7,7 @@ import React from 'react';
  */
 export default function MadhubaniFolkBackground() {
   return (
-    <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden select-none w-screen h-screen">
+    <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden select-none w-full h-full">
       
       {/* 1. SOFT TRANSLUCENT PARCHMENT VEIL OVERLAY FOR TEXT READABILITY */}
       <div className="absolute inset-0 bg-[#FAF8F3]/55 z-10" />

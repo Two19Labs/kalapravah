@@ -38,7 +38,7 @@ export default function ContactSection() {
             <span>STUDIO DIRECT CONNECTIONS</span>
           </div>
 
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-[#1C1917] tracking-tight leading-[1.15]">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1C1917] tracking-tight leading-[1.15]">
             CONTACT
           </h2>
 
@@ -60,7 +60,7 @@ export default function ContactSection() {
             />
             <div>
               <span className="font-serif text-lg font-bold text-[#1C1917] block leading-none">KALAPRAVAH</span>
-              <span className="text-[9px] font-bold text-[#C87A38] uppercase tracking-widest block mt-1">Mithila Art Studio</span>
+              <span className="text-[9px] font-bold text-[#C87A38] uppercase tracking-widest block mt-1">Madhubani Art Studio</span>
             </div>
           </div>
 
@@ -283,7 +283,7 @@ export default function ContactSection() {
               <div className="p-4 rounded-sm bg-[#FAF8F3] border border-[#E7E0D2] space-y-2">
                 <div className="flex items-center gap-2 text-xs font-bold text-[#1C1917] uppercase tracking-wide">
                   <Award className="w-4 h-4 text-[#C87A38]" />
-                  <span>100% ORIGINAL MITHILA ART GUARANTEE</span>
+                  <span>100% ORIGINAL MADHUBANI ART GUARANTEE</span>
                 </div>
                 <p className="text-[11px] text-[#78716C] leading-relaxed">
                   Each artwork created by Rashmi Dhar is hand-drawn and painted using traditional natural pigments or fine acrylics, complete with an official physical Certificate of Authenticity.

@@ -12,7 +12,7 @@ export default function BlogIndexPage() {
   // Dynamic SEO Meta Tags & Schema Injection
   useEffect(() => {
     const originalTitle = document.title;
-    document.title = 'Kalapravah Blog | Madhubani/Mithila Art History, Techniques & Motif Guides';
+    document.title = 'Kalapravah Blog | Madhubani Art History, Techniques & Motif Guides';
 
     let metaDesc = document.querySelector('meta[name="description"]');
     if (!metaDesc) {
@@ -20,7 +20,7 @@ export default function BlogIndexPage() {
       metaDesc.name = 'description';
       document.head.appendChild(metaDesc);
     }
-    metaDesc.content = 'Explore the complete Kalapravah journal: in-depth articles on Madhubani art history, 5 core styles, natural pigments, and sacred Mithila symbolism.';
+    metaDesc.content = 'Explore the complete Kalapravah journal: in-depth articles on Madhubani art history, 5 core styles, natural pigments, and sacred Madhubani symbolism.';
 
     let canonical = document.querySelector('link[rel="canonical"]');
     if (!canonical) {
@@ -39,10 +39,10 @@ export default function BlogIndexPage() {
         "@id": "https://kalapravah.art/blog"
       },
       "name": "Kalapravah Folk Art Journal & Blog",
-      "description": "Authentic research, guides, and stories on traditional Madhubani/Mithila art by Rashmi Dhar.",
+      "description": "Authentic research, guides, and stories on traditional Madhubani art by Rashmi Dhar.",
       "publisher": {
         "@type": "Organization",
-        "name": "Kalapravah Mithila Art Gallery",
+        "name": "Kalapravah Madhubani Art Gallery",
         "logo": {
           "@type": "ImageObject",
           "url": "https://kalapravah.art/images/logo-emblem.png"

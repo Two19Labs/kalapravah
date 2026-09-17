@@ -58,14 +58,14 @@ export default function ArticlePage() {
       },
       "publisher": {
         "@type": "Organization",
-        "name": "Kalapravah Mithila Art Gallery",
+        "name": "Kalapravah Madhubani Art Gallery",
         "logo": {
           "@type": "ImageObject",
           "url": "https://kalapravah.art/images/logo-emblem.png"
         }
       },
       "datePublished": article.date,
-      "keywords": article.seoKeywords ? article.seoKeywords.join(", ") : "Madhubani art, Mithila painting"
+      "keywords": article.seoKeywords ? article.seoKeywords.join(", ") : "Madhubani art"
     };
 
     let scriptTag = document.getElementById('json-ld-article-schema');

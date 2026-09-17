@@ -130,8 +130,23 @@ const [ringPositions, ringColors, ringRandoms] = (() => {
   return [pos, col, rnd];
 })();
 
-const ParticleRing = ({ ringState, massiveAsteroidsRef }: { ringState: 'hidden' | 'animating' | 'visible', massiveAsteroidsRef: React.MutableRefObject<Float32Array> }) => {
+const ParticleRing = ({ 
+  ringState, 
+  massiveAsteroidsRef,
+  isMobile = false
+}: { 
+  ringState: 'hidden' | 'animating' | 'visible', 
+  massiveAsteroidsRef: React.MutableRefObject<Float32Array>,
+  isMobile?: boolean
+}) => {
   const pointsRef = useRef<THREE.Points>(null);
+
+  React.useEffect(() => {
+    if (pointsRef.current && pointsRef.current.geometry) {
+      const activeCount = isMobile ? 18000 : 55000;
+      pointsRef.current.geometry.setDrawRange(0, activeCount);
+    }
+  }, [isMobile]);
 
   const uniforms = useRef({
     uProgress: { value: ringState === 'visible' ? 1.0 : 0.0 },
@@ -407,6 +422,16 @@ export default function LunarGravityCard({
 }: LunarGravityCardProps) {
   const [ringState, setRingState] = useState<'hidden' | 'animating' | 'visible'>('hidden');
   const massiveAsteroidsRef = useRef<Float32Array>(new Float32Array(75 * 4));
+  const [isMobile, setIsMobile] = useState(false);
+
+  React.useEffect(() => {
+    const check = () => {
+      setIsMobile(window.innerWidth < 768 || ('ontouchstart' in window && window.innerWidth < 1024));
+    };
+    check();
+    window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
+  }, []);
 
   return (
     <div className={cn("w-full h-full bg-transparent rounded-none flex flex-col md:flex-row relative overflow-hidden border-none shadow-none", className)}>
@@ -428,14 +453,20 @@ export default function LunarGravityCard({
      
       <div className={cn("relative w-full h-full pointer-events-auto z-0 flex items-center justify-center bg-transparent", title || description ? "md:absolute md:right-0 md:top-0 md:w-[65%]" : "w-full")}>
         <div className="absolute inset-0 w-full h-full touch-pan-y" style={{ touchAction: "pan-y" }}>
-          <Canvas shadows camera={{ position: [0, 0.2, 6.7], fov: 45 }} dpr={[1, 2]} style={{ touchAction: "pan-y" }}>
+          <Canvas shadows camera={{ position: [0, 0.2, 6.7], fov: 45 }} dpr={[1, 1.5]} style={{ touchAction: "pan-y" }}>
             {/* Dramatic Cinematic Studio Lighting */}
             <ambientLight intensity={0.65} />
-            <directionalLight position={[8, 6, 6]} intensity={2.8} color="#FFFDF9" castShadow shadow-mapSize={[2048, 2048]} />
+            <directionalLight position={[8, 6, 6]} intensity={2.8} color="#FFFDF9" castShadow shadow-mapSize={[1024, 1024]} />
             <directionalLight position={[-8, -2, -4]} intensity={1.2} color={ringColor} />
             <pointLight position={[0, 4, 4]} intensity={1.5} color="#F5E6C8" />
 
-            <OrbitControls enableZoom={false} enablePan={false} autoRotate={false} />
+            <OrbitControls 
+              enableZoom={false} 
+              enablePan={false} 
+              enableRotate={!isMobile} 
+              autoRotate={isMobile} 
+              autoRotateSpeed={0.8} 
+            />
 
             <group rotation={[Math.PI / 14, 0, 0]}>
               <Suspense fallback={null}>
@@ -445,7 +476,7 @@ export default function LunarGravityCard({
                   ringState={ringState}
                   onClick={() => { if(ringState === 'hidden') setRingState('animating') }} 
                 />
-                <ParticleRing ringState={ringState} massiveAsteroidsRef={massiveAsteroidsRef} />
+                <ParticleRing ringState={ringState} massiveAsteroidsRef={massiveAsteroidsRef} isMobile={isMobile} />
                 <AsteroidBelt ringState={ringState} massiveAsteroidsRef={massiveAsteroidsRef} />
               </Suspense>
             </group>

@@ -4,7 +4,6 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ArtAndArtistSection from './components/ArtAndArtistSection';
 import ArtGallerySection from './components/ArtGallerySection';
-import JournalSection from './components/JournalSection';
 import FAQSection from './components/FAQSection';
 import Footer from './components/Footer';
 import ArtworkLightbox from './components/ArtworkLightbox';
@@ -35,7 +34,7 @@ function MainPage() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'art', 'artist', 'gallery', 'blog', 'faq', 'contact'];
+      const sections = ['home', 'art', 'artist', 'gallery', 'faq', 'contact'];
       const viewportHeight = window.innerHeight;
       const scrollY = window.scrollY;
       const documentHeight = document.documentElement.scrollHeight;
@@ -115,12 +114,7 @@ function MainPage() {
           onSelectArtwork={(artwork) => setSelectedArtwork(artwork)}
         />
 
-        {/* 📌 SECTION 4: BLOG */}
-        <JournalSection
-          onOpenCommission={() => scrollToSection('contact')}
-        />
-
-        {/* 📌 SECTION 5: FAQS (COLLECTOR GUIDE & AI SEO ENGINE) */}
+        {/* 📌 SECTION 4: FAQS (COLLECTOR GUIDE & AI SEO ENGINE) */}
         <FAQSection />
 
       </main>

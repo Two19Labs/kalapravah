@@ -25,11 +25,11 @@ export default function FeaturedCollection({ onSelectArtwork }) {
           <span className="text-xs font-semibold tracking-[0.2em] uppercase text-[#C87A38]">
             SELECTED WORKS & EXHIBITION
           </span>
-          <h2 className="font-serif text-4xl sm:text-5xl font-normal tracking-tight text-[#1C1917] leading-[1.08]">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#1C1917] leading-tight">
             From the Studio Gallery
           </h2>
           <p className="text-sm text-[#5C5652] leading-relaxed">
-            Click any artwork or drag the 3D coverflow carousel to inspect detailed cultural lore, pigment details, and original Mithila motifs.
+            Click any artwork or drag the 3D coverflow carousel to inspect detailed cultural lore, pigment details, and original Madhubani motifs.
           </p>
         </div>
 

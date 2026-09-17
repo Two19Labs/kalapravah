@@ -11,7 +11,7 @@ export const MOTIFS = [
     id: "lotus",
     name: "Lotus (Padma)",
     meaning: "Purity, Wisdom & Divine Consciousness",
-    symbolism: "The lotus blooms immaculate from muddy waters. In Mithila art, multi-petaled lotuses form the base of deities and sacred mandalas, symbolizing spiritual awakening.",
+    symbolism: "The lotus blooms immaculate from muddy waters. In Madhubani art, multi-petaled lotuses form the base of deities and sacred mandalas, symbolizing spiritual awakening.",
     icon: "🪷",
     accentColor: "#C87A38"
   },

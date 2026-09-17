@@ -32,7 +32,7 @@ export default function ArtworkLightbox({ artwork, onClose, onOpenCommission }) 
           {/* Floating Close Button */}
           <button
             onClick={onClose}
-            className="absolute -top-12 right-0 sm:-right-10 w-9 h-9 rounded-full bg-[#1C1917]/80 text-white hover:bg-[#B94A2D] flex items-center justify-center transition-colors shadow-lg cursor-pointer z-50 border border-white/20"
+            className="absolute top-3 right-3 sm:-top-12 sm:right-0 md:-right-10 w-11 h-11 rounded-full bg-[#1C1917]/85 text-white hover:bg-[#B94A2D] flex items-center justify-center transition-colors shadow-lg cursor-pointer z-50 border border-white/20"
             aria-label="Close Lightbox"
           >
             <X className="w-5 h-5" />
@@ -43,7 +43,7 @@ export default function ArtworkLightbox({ artwork, onClose, onOpenCommission }) 
             <img
               src={artwork.originalImage || artwork.image}
               alt={artwork.title || "Workshop photo"}
-              className="max-h-[85vh] max-w-[90vw] sm:max-w-[85vw] w-auto h-auto object-contain rounded-lg"
+              className="max-h-[82vh] sm:max-h-[85vh] max-w-[92vw] sm:max-w-[85vw] w-auto h-auto object-contain rounded-lg"
             />
           </div>
         </div>
@@ -69,10 +69,10 @@ export default function ArtworkLightbox({ artwork, onClose, onOpenCommission }) 
           {/* Close Button */}
           <button
             onClick={onClose}
-            className="w-8 h-8 rounded-full bg-[#1C1917] text-white hover:bg-[#B94A2D] flex items-center justify-center transition-colors shadow cursor-pointer"
+            className="w-10 h-10 sm:w-9 sm:h-9 rounded-full bg-[#1C1917] text-white hover:bg-[#B94A2D] flex items-center justify-center transition-colors shadow cursor-pointer active:scale-95"
             aria-label="Close Lightbox"
           >
-            <X className="w-4 h-4" />
+            <X className="w-5 h-5 sm:w-4 sm:h-4" />
           </button>
         </div>
 
@@ -80,21 +80,21 @@ export default function ArtworkLightbox({ artwork, onClose, onOpenCommission }) 
         <div className="grid grid-cols-1 lg:grid-cols-12 flex-grow overflow-hidden">
           
           {/* Left Column: Artwork Canvas */}
-          <div className="lg:col-span-6 p-3 sm:p-5 md:p-6 bg-[#F4EFE6] flex flex-col justify-center items-center border-b lg:border-b-0 lg:border-r border-[#E7E0D2] relative select-none min-h-[340px] lg:min-h-[500px]">
+          <div className="lg:col-span-6 p-2.5 sm:p-5 md:p-6 bg-[#F4EFE6] flex flex-col justify-center items-center border-b lg:border-b-0 lg:border-r border-[#E7E0D2] relative select-none min-h-[220px] sm:min-h-[340px] lg:min-h-[500px]">
             
             {/* Artwork Container - Adaptive without cropping */}
             <div className="relative w-full max-w-full flex items-center justify-center p-1.5 sm:p-2 rounded-lg border border-[#C4B9A3]/60 shadow-inner bg-[#ECE5D8]/40">
               <img
                 src={artwork.originalImage || artwork.image}
                 alt={artwork.title}
-                className="max-h-[52vh] sm:max-h-[62vh] lg:max-h-[70vh] w-auto max-w-full object-contain rounded shadow-md select-none pointer-events-none transition-all duration-300"
+                className="max-h-[38vh] sm:max-h-[55vh] lg:max-h-[70vh] w-auto max-w-full object-contain rounded shadow-md select-none pointer-events-none transition-all duration-300"
               />
             </div>
 
           </div>
 
           {/* Right Column: Specifications & Story Details */}
-          <div className="lg:col-span-6 p-4 sm:p-6 lg:p-8 space-y-5 text-left flex flex-col justify-between bg-[#FFFDF9] relative min-h-[400px]">
+          <div className="lg:col-span-6 p-4 sm:p-6 lg:p-8 space-y-5 text-left flex flex-col justify-between bg-[#FFFDF9] relative min-h-0 lg:min-h-[400px]">
             
             <div className="space-y-5 flex-grow flex flex-col justify-between">
               <div className="space-y-4">
@@ -142,27 +142,27 @@ export default function ArtworkLightbox({ artwork, onClose, onOpenCommission }) 
                 </div>
 
                 {/* Story Paragraph */}
-                {artwork.story && (
+                {(artwork.story || artwork.fullStory || artwork.brief) && (
                   <div className="space-y-1.5 pt-1">
                     <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#1C1917] flex items-center gap-1.5">
                       <Feather className="w-3.5 h-3.5 text-[#B94A2D]" />
                       <span>Cultural Story & Backstory</span>
                     </span>
                     <p className="text-xs sm:text-sm text-[#5C5652] leading-relaxed italic bg-[#FDFBF7] p-3 rounded border border-[#E7E0D2]/60">
-                      {artwork.story}
+                      {artwork.story || artwork.fullStory || artwork.brief}
                     </p>
                   </div>
                 )}
               </div>
 
               {/* Action Buttons Container */}
-              <div className="pt-6 space-y-2 border-t border-[#E7E0D2]">
+              <div className="pt-4 sm:pt-6 space-y-2 border-t border-[#E7E0D2]">
                 <button
                   onClick={() => {
                     onClose();
                     if (onOpenCommission) onOpenCommission();
                   }}
-                  className="w-full py-3 px-4 bg-[#1C1917] hover:bg-[#B94A2D] text-white rounded-sm font-semibold text-xs tracking-wider uppercase flex items-center justify-center gap-2 shadow-md transition-all active:scale-[0.99] cursor-pointer"
+                  className="w-full min-h-[44px] py-3 px-4 bg-[#1C1917] hover:bg-[#B94A2D] text-white rounded-sm font-semibold text-xs tracking-wider uppercase flex items-center justify-center gap-2 shadow-md transition-all active:scale-[0.99] cursor-pointer"
                 >
                   <MessageSquare className="w-4 h-4 text-[#C87A38]" />
                   <span>Inquire / Reserve Painting</span>
@@ -173,7 +173,7 @@ export default function ArtworkLightbox({ artwork, onClose, onOpenCommission }) 
                     onClose();
                     if (onOpenCommission) onOpenCommission();
                   }}
-                  className="w-full py-2.5 px-4 bg-transparent border border-[#C87A38] text-[#C87A38] hover:bg-[#C87A38]/10 rounded-sm font-semibold text-xs tracking-wider uppercase flex items-center justify-center gap-2 transition-all active:scale-[0.99] cursor-pointer"
+                  className="w-full min-h-[44px] py-2.5 px-4 bg-transparent border border-[#C87A38] text-[#C87A38] hover:bg-[#C87A38]/10 rounded-sm font-semibold text-xs tracking-wider uppercase flex items-center justify-center gap-2 transition-all active:scale-[0.99] cursor-pointer"
                 >
                   <Sparkles className="w-4 h-4" />
                   <span>Commission Similar Custom Artwork</span>
