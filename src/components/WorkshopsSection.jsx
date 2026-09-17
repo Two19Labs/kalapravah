@@ -289,7 +289,7 @@ export default function WorkshopsSection({ onSelectArtwork, onBookWorkshop }) {
                         });
                       }
                     }}
-                    className="w-60 sm:w-72 aspect-[4/3] shrink-0 bg-[#FAF8F3] border border-[#E7E0D2] hover:border-[#C87A38] rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group relative cursor-pointer"
+                    className="w-52 xs:w-60 sm:w-68 md:w-72 aspect-[4/3] shrink-0 bg-[#FAF8F3] border border-[#E7E0D2] hover:border-[#C87A38] rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group relative cursor-pointer"
                   >
                     <img 
                       src={item.image} 

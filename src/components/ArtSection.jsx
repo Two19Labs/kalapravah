@@ -27,8 +27,8 @@ export default function ArtSection({ onSelectArtwork }) {
         <div className="deckled-frame bg-[#FFFDF9] border border-[#E7E0D2] rounded-2xl overflow-hidden shadow-lg grid grid-cols-1 lg:grid-cols-12 items-stretch">
           
           {/* Left Column: Tradition & Technique Narrative */}
-          <div className="lg:col-span-6 p-6 sm:p-8 lg:p-10 flex flex-col justify-between space-y-6 text-left border-b lg:border-b-0 lg:border-r border-[#E7E0D2]">
-            <div className="space-y-4">
+          <div className="lg:col-span-6 p-5 sm:p-7 lg:p-8 xl:p-10 flex flex-col justify-between space-y-5 sm:space-y-6 text-left border-b lg:border-b-0 lg:border-r border-[#E7E0D2]">
+            <div className="space-y-3.5 sm:space-y-4">
               <span className="text-[10px] font-bold tracking-[0.24em] text-[#C87A38] uppercase block">
                 TRADITION & TECHNIQUE
               </span>
@@ -47,18 +47,18 @@ export default function ArtSection({ onSelectArtwork }) {
             </div>
 
             {/* Heritage Hallmark Indicators */}
-            <div className="pt-4 border-t border-[#E7E0D2] grid grid-cols-3 gap-2.5">
-              <div className="p-2.5 sm:p-3 rounded-xl bg-[#FAF8F3] border border-[#E7E0D2] text-center">
+            <div className="pt-4 border-t border-[#E7E0D2] grid grid-cols-3 gap-2 sm:gap-2.5">
+              <div className="p-2 sm:p-2.5 md:p-3 rounded-xl bg-[#FAF8F3] border border-[#E7E0D2] text-center">
                 <span className="block text-[9px] sm:text-[10px] font-bold text-[#C87A38] uppercase tracking-wider">Heritage</span>
-                <span className="block text-xs sm:text-sm font-semibold text-[#1C1917] mt-0.5">Bhitti Chitra</span>
+                <span className="block text-[10.5px] xs:text-xs sm:text-sm font-semibold text-[#1C1917] mt-0.5 leading-tight">Bhitti Chitra</span>
               </div>
-              <div className="p-2.5 sm:p-3 rounded-xl bg-[#FAF8F3] border border-[#E7E0D2] text-center">
+              <div className="p-2 sm:p-2.5 md:p-3 rounded-xl bg-[#FAF8F3] border border-[#E7E0D2] text-center">
                 <span className="block text-[9px] sm:text-[10px] font-bold text-[#C87A38] uppercase tracking-wider">Pigments</span>
-                <span className="block text-xs sm:text-sm font-semibold text-[#1C1917] mt-0.5">Natural Colors</span>
+                <span className="block text-[10.5px] xs:text-xs sm:text-sm font-semibold text-[#1C1917] mt-0.5 leading-tight">Natural Colors</span>
               </div>
-              <div className="p-2.5 sm:p-3 rounded-xl bg-[#FAF8F3] border border-[#E7E0D2] text-center">
+              <div className="p-2 sm:p-2.5 md:p-3 rounded-xl bg-[#FAF8F3] border border-[#E7E0D2] text-center">
                 <span className="block text-[9px] sm:text-[10px] font-bold text-[#C87A38] uppercase tracking-wider">Technique</span>
-                <span className="block text-xs sm:text-sm font-semibold text-[#1C1917] mt-0.5">Double-Line</span>
+                <span className="block text-[10.5px] xs:text-xs sm:text-sm font-semibold text-[#1C1917] mt-0.5 leading-tight">Double-Line</span>
               </div>
             </div>
           </div>
@@ -79,7 +79,7 @@ export default function ArtSection({ onSelectArtwork }) {
                 });
               }
             }}
-            className="lg:col-span-6 p-6 sm:p-8 lg:p-10 bg-[#FAF8F3]/50 flex flex-col justify-between text-left group cursor-pointer space-y-4"
+            className="lg:col-span-6 p-5 sm:p-7 lg:p-8 xl:p-10 bg-[#FAF8F3]/50 flex flex-col justify-between text-left group cursor-pointer space-y-4"
           >
             {/* Top Showcase Tag */}
             <div className="flex items-center justify-between">

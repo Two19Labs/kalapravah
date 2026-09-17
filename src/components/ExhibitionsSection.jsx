@@ -42,7 +42,7 @@ export default function ExhibitionsSection({ onInquireExhibition, onSelectArtwor
                 });
               }
             }}
-            className="lg:col-span-5 relative min-h-[280px] sm:min-h-[340px] lg:min-h-[380px] overflow-hidden group cursor-pointer bg-[#1C1917] border-b lg:border-b-0 lg:border-r border-[#E7E0D2]"
+            className="lg:col-span-5 relative min-h-[250px] xs:min-h-[280px] sm:min-h-[340px] lg:min-h-[380px] overflow-hidden group cursor-pointer bg-[#1C1917] border-b lg:border-b-0 lg:border-r border-[#E7E0D2]"
           >
             <img
               src="/images/decor_saheli.jpg"
@@ -66,7 +66,7 @@ export default function ExhibitionsSection({ onInquireExhibition, onSelectArtwor
           </div>
 
           {/* Exhibition Details */}
-          <div className="lg:col-span-7 p-6 sm:p-8 lg:p-10 text-left space-y-4 sm:space-y-5">
+          <div className="lg:col-span-7 p-5 sm:p-7 lg:p-8 xl:p-10 text-left space-y-4 sm:space-y-5">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#C87A38]/10 text-[#C87A38] text-xs font-bold uppercase tracking-wider">
               <Calendar className="w-3.5 h-3.5" />
               <span>UPCOMING GALLERY FEATURE</span>

@@ -87,14 +87,14 @@ export default function Navbar({ activeSection, setActiveSection }) {
         </button>
 
         {/* Desktop Header Nav Links */}
-        <nav className="hidden lg:flex items-center gap-4 xl:gap-6">
+        <nav className="hidden lg:flex items-center gap-2.5 xl:gap-5 2xl:gap-6">
           {navItems.map((item) => {
             const isActive = activeSection === item.id;
             return (
               <button
                 key={item.id}
                 onClick={() => handleNavClick(item.id)}
-                className={`text-[11px] xl:text-xs font-semibold tracking-[0.14em] xl:tracking-[0.18em] transition-all duration-300 uppercase relative py-1.5 px-0.5 cursor-pointer whitespace-nowrap ${
+                className={`text-[10.5px] xl:text-xs font-semibold tracking-[0.1em] xl:tracking-[0.16em] transition-all duration-300 uppercase relative py-1.5 px-0.5 cursor-pointer whitespace-nowrap ${
                   isActive 
                     ? 'text-[#C87A38] font-bold' 
                     : 'text-[#44403C] hover:text-[#C87A38]'

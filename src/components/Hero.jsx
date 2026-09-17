@@ -93,14 +93,14 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
           <div className="flex flex-col xs:flex-row items-center justify-center gap-3 sm:gap-4 pt-3 sm:pt-4 w-full max-w-xs xs:max-w-none mx-auto">
             <button
               onClick={onExploreArtworks}
-              className="w-full xs:w-auto text-center px-6 sm:px-7 py-3.5 rounded-full bg-transparent hover:bg-white/15 text-white border-2 border-white/80 hover:border-white text-xs sm:text-sm font-bold tracking-widest uppercase transition-all shadow-lg cursor-pointer hover:scale-105 active:scale-95 whitespace-nowrap"
+              className="w-full xs:w-auto text-center px-5 sm:px-7 py-3 sm:py-3.5 rounded-full bg-transparent hover:bg-white/15 text-white border-2 border-white/80 hover:border-white text-[11px] sm:text-xs font-bold tracking-widest uppercase transition-all shadow-lg cursor-pointer hover:scale-105 active:scale-95 whitespace-nowrap"
             >
               EXPLORE ART GALLERY
             </button>
 
             <button
               onClick={onExploreArtist}
-              className="w-full xs:w-auto text-center px-7 sm:px-8 py-3.5 rounded-full bg-[#C87A38] hover:bg-[#b56929] text-white text-xs sm:text-sm font-bold tracking-widest uppercase transition-all shadow-2xl hover:scale-105 active:scale-95 cursor-pointer border border-[#C87A38] whitespace-nowrap"
+              className="w-full xs:w-auto text-center px-6 sm:px-8 py-3 sm:py-3.5 rounded-full bg-[#C87A38] hover:bg-[#b56929] text-white text-[11px] sm:text-xs font-bold tracking-widest uppercase transition-all shadow-2xl hover:scale-105 active:scale-95 cursor-pointer border border-[#C87A38] whitespace-nowrap"
             >
               ABOUT THE ARTIST
             </button>
