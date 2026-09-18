@@ -23,41 +23,17 @@ export default function ExhibitionsSection({ onInquireExhibition, onSelectArtwor
         <div className="deckled-frame bg-[#FFFDF9] border border-[#E7E0D2] rounded-2xl overflow-hidden shadow-lg grid grid-cols-1 lg:grid-cols-12 items-stretch">
           
           {/* Featured Exhibition Venue */}
-          <div 
-            onClick={() => {
-              if (onSelectArtwork) {
-                onSelectArtwork({
-                  title: "Visual Arts Gallery, India Habitat Centre (IHC)",
-                  image: "/images/ihc_visual_art_gallery.jpg",
-                  originalImage: "/images/ihc_visual_art_gallery.jpg",
-                  styleCategory: "Exhibition Venue",
-                  medium: "India Habitat Centre, Lodhi Road, New Delhi",
-                  story: "The prestigious Visual Arts Gallery at India Habitat Centre (IHC), New Delhi. Known for showcasing premier national and international modern and folk art retrospectives, featuring large-scale works and intimate artist demonstrations.",
-                  year: "2026",
-                  dimensions: "Visual Arts Gallery, New Delhi",
-                  inStock: false
-                });
-              }
-            }}
-            className="lg:col-span-5 relative min-h-[250px] xs:min-h-[280px] sm:min-h-[340px] lg:min-h-[380px] overflow-hidden group cursor-pointer bg-[#1C1917] border-b lg:border-b-0 lg:border-r border-[#E7E0D2]"
-          >
+          <div className="lg:col-span-5 relative min-h-[250px] xs:min-h-[280px] sm:min-h-[340px] lg:min-h-[380px] overflow-hidden bg-[#1C1917] border-b lg:border-b-0 lg:border-r border-[#E7E0D2]">
             <img
               src="/images/ihc_visual_art_gallery.jpg"
               alt="Visual Arts Gallery, India Habitat Centre (IHC), New Delhi"
-              className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+              className="w-full h-full object-cover object-center"
             />
 
             {/* Badge */}
             <div className="absolute top-3.5 left-3.5 z-10 flex items-center gap-2">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#1C1917]/85 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-widest border border-white/20 shadow-xs">
                 VISUAL ARTS GALLERY • IHC NEW DELHI
-              </span>
-            </div>
-
-            {/* Hint on hover */}
-            <div className="absolute bottom-3.5 right-3.5 z-10 opacity-0 group-hover:opacity-100 transition-opacity hidden sm:block">
-              <span className="text-[10px] font-medium text-[#FAF8F3] bg-[#1C1917]/80 backdrop-blur-md px-2.5 py-1 rounded-full border border-white/20 shadow-xs">
-                Click to view gallery
               </span>
             </div>
           </div>

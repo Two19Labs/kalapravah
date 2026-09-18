@@ -12,10 +12,10 @@ export default function MadhubaniFolkBackground() {
       {/* 1. SOFT TRANSLUCENT PARCHMENT VEIL OVERLAY FOR TEXT READABILITY */}
       <div className="absolute inset-0 bg-[#FAF8F3]/55 z-10" />
 
-      {/* 2. AUTHENTIC TWIN PEACOCKS MADHUBANI CANVAS ARTWORK (100% WALL-TO-WALL COVERAGE) */}
+      {/* 2. AUTHENTIC MADHUBANI ARTWORK (SAME AS CELESTIAL GLOBE) */}
       <img
-        src="/images/madhubani_tapestry_bg.jpg"
-        alt="Madhubani Twin Peacocks Canvas Background"
+        src="/images/artwork_sphere_surya_chandra.jpg"
+        alt="Madhubani Surya Chandra Canvas Background"
         className="absolute inset-0 w-full h-full object-cover object-center scale-108 sm:scale-110 opacity-[0.14] mix-blend-multiply z-0"
       />
 
