@@ -22,6 +22,16 @@
   --font-sans: 'Plus Jakarta Sans', -apple-system, sans-serif;
 }
 
+html, body, #root {
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 body {
   font-family: var(--font-sans);
   background-color: #F5EFE3;
@@ -35,6 +45,11 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.touch-scroll {
+  -webkit-overflow-scrolling: touch;
 }
 
 /* Custom Luxury Typography - DO NOT force color here so Tailwind classes like text-white work! */

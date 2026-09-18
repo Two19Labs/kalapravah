@@ -76,7 +76,7 @@ export default function Footer({ onNavigate }) {
     <footer className="w-full text-[#1C1917] overflow-hidden relative z-20 bg-[#1C1613] border-t border-[#3D302A]">
 
       {/* FOOTER & WHATSAPP QUICK INQUIRY */}
-      <section id="contact" className="bg-[#1C1613] text-[#EBE5DF] py-6 sm:py-8 lg:py-9 px-4 sm:px-6 lg:px-8 scroll-mt-20 sm:scroll-mt-24">
+      <section id="contact" className="bg-[#1C1613] text-[#EBE5DF] py-6 sm:py-8 lg:py-9 px-4 sm:px-6 lg:px-8 pb-safe pb-8 sm:pb-10 scroll-mt-20 sm:scroll-mt-24">
         <div className="max-w-6xl mx-auto space-y-6 sm:space-y-8">
           
           {/* Main 2-Column Compact Row */}

@@ -28,7 +28,12 @@ export default function ArtGallerySection({ onSelectArtwork }) {
 
   const filteredArtworks = ARTWORKS.filter(item => {
     if (filterStyle === 'All') return true;
-    return item.styleCategory.toLowerCase().includes(filterStyle.toLowerCase());
+    const cat = item.styleCategory.toLowerCase();
+    const target = filterStyle.toLowerCase();
+    if (target === 'kachni') {
+      return cat.includes('kachni') || cat.includes('katchni');
+    }
+    return cat.includes(target);
   });
 
   // Triple-cloned array for seamless infinite marquee scrolling in both directions
@@ -292,16 +297,18 @@ export default function ArtGallerySection({ onSelectArtwork }) {
                       </p>
 
                       {/* 📍 BRIEF 2-3 LINES OF EQUAL LENGTH (UNIFORM COMPACT BOX) */}
-                      <div className="pt-1.5 border-t border-[#E7E0D2]/60 space-y-1">
-                        <span className="text-[9px] font-bold tracking-widest text-[#C87A38] uppercase block">
-                          ARTWORK BRIEF:
-                        </span>
-                        <div className="h-[52px] sm:h-[56px] bg-[#FAF8F3] p-2 rounded border border-[#E7E0D2]/80 flex items-center overflow-hidden">
-                          <p className="text-[11px] sm:text-xs text-[#292524] font-medium leading-relaxed line-clamp-3">
-                            {artwork.brief}
-                          </p>
+                      {artwork.brief ? (
+                        <div className="pt-1.5 border-t border-[#E7E0D2]/60 space-y-1">
+                          <span className="text-[9px] font-bold tracking-widest text-[#C87A38] uppercase block">
+                            ARTWORK BRIEF:
+                          </span>
+                          <div className="h-[52px] sm:h-[56px] bg-[#FAF8F3] p-2 rounded border border-[#E7E0D2]/80 flex items-center overflow-hidden">
+                            <p className="text-[11px] sm:text-xs text-[#292524] font-medium leading-relaxed line-clamp-3">
+                              {artwork.brief}
+                            </p>
+                          </div>
                         </div>
-                      </div>
+                      ) : null}
 
                     </div>
 
@@ -328,7 +335,7 @@ export default function ArtGallerySection({ onSelectArtwork }) {
           <div className="flex sm:hidden items-center justify-center gap-4 pt-2">
             <button
               onClick={handlePrev}
-              className="w-10 h-10 rounded-full bg-[#1C1917]/85 text-white flex items-center justify-center border border-white/20 shadow-md active:scale-95 cursor-pointer"
+              className="w-11 h-11 rounded-full bg-[#1C1917]/85 text-white flex items-center justify-center border border-white/20 shadow-md active:scale-95 cursor-pointer"
               aria-label="Previous artwork"
             >
               <ChevronLeft className="w-5 h-5" />
@@ -338,7 +345,7 @@ export default function ArtGallerySection({ onSelectArtwork }) {
             </span>
             <button
               onClick={handleNext}
-              className="w-10 h-10 rounded-full bg-[#1C1917]/85 text-white flex items-center justify-center border border-white/20 shadow-md active:scale-95 cursor-pointer"
+              className="w-11 h-11 rounded-full bg-[#1C1917]/85 text-white flex items-center justify-center border border-white/20 shadow-md active:scale-95 cursor-pointer"
               aria-label="Next artwork"
             >
               <ChevronRight className="w-5 h-5" />

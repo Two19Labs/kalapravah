@@ -20,7 +20,7 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
     {
       id: 'slide2',
       bgImage: '/images/hero_decor_2.jpg',
-      title: 'Matsya Chakra: Sacred Fish Wheel',
+      title: 'Matsya Raas: Sacred Fish Dance',
       artworkTag: 'GALLERY EXHIBITION'
     },
     {
@@ -47,7 +47,7 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
       {/* ========================================================================= */}
       {/* 1. FULL-BLEED 100VW SLIDESHOW HERO BANNER                                */}
       {/* ========================================================================= */}
-      <div className="relative w-full h-[90svh] sm:h-screen min-h-[500px] xs:min-h-[540px] sm:min-h-[580px] md:min-h-[620px] flex items-center justify-center text-center overflow-hidden">
+      <div className="relative w-full h-[88dvh] xs:h-[90dvh] sm:h-screen min-h-[500px] xs:min-h-[540px] sm:min-h-[580px] md:min-h-[620px] flex items-center justify-center text-center overflow-hidden">
         
         {/* Full-Bleed 100% Background Slideshow with Horizontal Swipe Left Animation */}
         <div className="absolute inset-0 z-0 overflow-hidden">
@@ -133,22 +133,22 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
         
         <div id="about" className="space-y-8">
           
-          {/* 2-Column Grid Layout: Text on Left, 3D Sphere on Right */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-center max-w-6xl mx-auto">
-            
-            {/* LEFT COLUMN: TITLE & NARRATIVE (lg:col-span-7) */}
-            <div className="lg:col-span-7 space-y-4 sm:space-y-5 text-left">
-              <div className="space-y-2">
-                <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1C1917] tracking-tight">
-                  KALAPRAVAH
-                </h2>
-                <div className="w-16 h-[2.5px] bg-[#C87A38] rounded-full mt-1.5" />
-              </div>
+          {/* Main Section Banner Header - Center Aligned */}
+          <div className="text-center max-w-3xl mx-auto space-y-2">
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1C1917] tracking-tight">
+              KALAPRAVAH
+            </h2>
+            <div className="w-16 h-[2.5px] bg-[#C87A38] mx-auto rounded-full mt-1.5" />
+            <p className="font-serif text-base sm:text-xl text-[#1C1917] italic leading-relaxed font-normal pt-1">
+              Where Heritage Meets Contemporary Calm
+            </p>
+          </div>
 
-              <p className="font-serif text-base sm:text-xl text-[#1C1917] italic leading-relaxed font-normal pt-1">
-                Where Heritage Meets Contemporary Calm
-              </p>
-              
+          {/* 2-Column Grid Layout: Text on Left, 3D Sphere on Right */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-center max-w-6xl mx-auto pt-2">
+            
+            {/* LEFT COLUMN: NARRATIVE (lg:col-span-7) */}
+            <div className="lg:col-span-7 space-y-4 sm:space-y-5 text-left">
               <p className="text-sm sm:text-base text-[#5C5652] leading-relaxed font-light">
                 Kalapravah translates to the continuous flow of art. This venture is more than a collection of paintings—it is a sacred bridge connecting our rich civilizational roots with the modern world.
               </p>
@@ -163,7 +163,7 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
               
               {/* Circular Background Container */}
               <div className="relative">
-                <div className="w-[210px] h-[210px] xs:w-[250px] xs:h-[250px] sm:w-[300px] sm:h-[300px] lg:w-[340px] lg:h-[340px] rounded-full bg-[#FFFDF9] border-2 border-[#C87A38]/40 shadow-2xl relative overflow-hidden flex items-center justify-center">
+                <div className="w-[210px] h-[210px] xs:w-[250px] xs:h-[250px] sm:w-[300px] sm:h-[300px] lg:w-[340px] lg:h-[340px] max-w-[calc(100vw-2.5rem)] max-h-[calc(100vw-2.5rem)] rounded-full bg-[#FFFDF9] border-2 border-[#C87A38]/40 shadow-2xl relative overflow-hidden flex items-center justify-center">
                   <LunarGravityCard
                     className="w-full h-full"
                     artTextureUrl="/images/artwork_sphere_surya_chandra.jpg"

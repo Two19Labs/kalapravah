@@ -70,7 +70,7 @@ export default function ContactSection() {
             </div>
             <div>
               <span className="text-[10px] font-bold tracking-widest text-[#78716C] uppercase block">EMAIL ID</span>
-              <span className="text-xs sm:text-sm font-semibold text-[#1C1917] truncate block group-hover:text-[#C87A38] transition-colors">
+              <span className="text-xs sm:text-sm font-semibold text-[#1C1917] break-all sm:truncate block group-hover:text-[#C87A38] transition-colors">
                 kalapravah2025@gmail.com
               </span>
             </div>
@@ -151,7 +151,7 @@ export default function ContactSection() {
                     key={topic}
                     type="button"
                     onClick={() => setSelectedTopic(topic)}
-                    className={`px-3.5 py-2.5 rounded-sm text-xs font-semibold transition-all min-h-[42px] flex items-center justify-center text-center ${
+                    className={`px-3.5 py-2.5 rounded-sm text-xs font-semibold transition-all min-h-[44px] flex items-center justify-center text-center ${
                       selectedTopic === topic
                         ? 'bg-[#1C1917] text-white border border-[#1C1917] shadow-sm'
                         : 'bg-[#FAF8F3] text-[#44403C] border border-[#E7E0D2] hover:border-[#C4B9A3] active:bg-[#F3EFE6]'
@@ -174,7 +174,7 @@ export default function ContactSection() {
                 value={note}
                 onChange={(e) => setNote(e.target.value)}
                 placeholder="Share details like preferred painting size, color palette, wall space, or event dates..."
-                className="w-full px-3.5 py-3 bg-[#FAF8F3] border border-[#E7E0D2] rounded-sm text-xs text-[#1C1917] placeholder-[#A8A29E] focus:outline-none focus:border-[#C87A38] transition-colors"
+                className="w-full px-3.5 py-3 bg-[#FAF8F3] border border-[#E7E0D2] rounded-sm text-base sm:text-xs text-[#1C1917] placeholder-[#A8A29E] focus:outline-none focus:border-[#C87A38] transition-colors"
               />
             </div>
 

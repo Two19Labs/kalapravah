@@ -53,7 +53,7 @@ export default function ArtworkLightbox({ artwork, onClose, onOpenCommission }) 
 
   return (
     <div className="fixed inset-0 bg-[#1C1917]/85 backdrop-blur-md z-50 flex items-center justify-center p-2 xs:p-3 sm:p-4 md:p-6 overflow-y-auto">
-      <div className="bg-[#FAF8F3] border border-[#C4B9A3] w-full max-w-5xl max-h-[92dvh] sm:max-h-[90vh] rounded-xl shadow-2xl overflow-y-auto relative my-auto flex flex-col">
+      <div className="bg-[#FAF8F3] border border-[#C4B9A3] w-full max-w-5xl max-h-[92dvh] sm:max-h-[90vh] rounded-xl shadow-2xl overflow-y-auto relative my-auto flex flex-col touch-scroll">
         
         {/* Top Header Bar */}
         <div className="sticky top-0 z-40 bg-[#FAF8F3]/95 backdrop-blur-sm border-b border-[#E7E0D2] px-3.5 sm:px-4 py-2.5 sm:py-3 flex items-center justify-between shrink-0">
@@ -69,7 +69,7 @@ export default function ArtworkLightbox({ artwork, onClose, onOpenCommission }) 
           {/* Close Button */}
           <button
             onClick={onClose}
-            className="w-10 h-10 rounded-full bg-[#1C1917] text-white hover:bg-[#B94A2D] flex items-center justify-center transition-colors shadow cursor-pointer active:scale-95"
+            className="w-11 h-11 rounded-full bg-[#1C1917] text-white hover:bg-[#B94A2D] flex items-center justify-center transition-colors shadow cursor-pointer active:scale-95"
             aria-label="Close Lightbox"
           >
             <X className="w-5 h-5 sm:w-4 sm:h-4" />
@@ -142,7 +142,7 @@ export default function ArtworkLightbox({ artwork, onClose, onOpenCommission }) 
                 </div>
 
                 {/* Story Paragraph */}
-                {(artwork.story || artwork.fullStory || artwork.brief) && (
+                {artwork.title !== "Godna" && (artwork.story || artwork.fullStory || artwork.brief) && (
                   <div className="space-y-1.5 pt-1">
                     <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#1C1917] flex items-center gap-1.5">
                       <Feather className="w-3.5 h-3.5 text-[#B94A2D]" />
@@ -156,7 +156,7 @@ export default function ArtworkLightbox({ artwork, onClose, onOpenCommission }) 
               </div>
 
               {/* Action Buttons Container */}
-              <div className="pt-4 sm:pt-6 space-y-2 border-t border-[#E7E0D2]">
+              <div className="pt-4 sm:pt-6 pb-2 pb-safe space-y-2 border-t border-[#E7E0D2]">
                 <button
                   onClick={() => {
                     onClose();

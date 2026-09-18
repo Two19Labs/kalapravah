@@ -23,29 +23,17 @@ export default function ArtSection({ onSelectArtwork }) {
         {/* Open Organic Editorial Layout (No Boxy Containers) */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-14 xl:gap-16 items-center pt-2 sm:pt-4">
           
-          {/* Left Column: Tradition & Technique Narrative (Open & Flowing) */}
-          <div className="lg:col-span-6 space-y-4 sm:space-y-5 text-left">
-            <div className="space-y-2">
-              <span className="text-[10px] font-bold tracking-[0.24em] text-[#C87A38] uppercase block">
-                TRADITION & TECHNIQUE
-              </span>
-              <h3 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1C1917] tracking-tight">
-                Sacred Living Heritage
-              </h3>
-            </div>
-
-            <div className="space-y-3.5 sm:space-y-4 text-sm sm:text-base text-[#332F2C] leading-relaxed font-light">
-              <p>
-                Originating in northern Bihar's Madhubani region, <strong className="font-semibold text-[#1C1917]">Madhubani folk art</strong> is a centuries-old sacred tradition historically painted by women on domestic mud courtyard walls (<em>Bhitti Chitra</em>) during auspicious festivals, marriages, and harvest celebrations.
-              </p>
-              <p>
-                Celebrated worldwide for bold double-line contours, fine bamboo nib penmanship, and natural pigments, every motif preserves ancient Vedic symbolism, ecological harmony, and living civilizational memory.
-              </p>
-              <p>
-                Each canvas acts as a sacred visual bridge, translating timeless folklore and civilizational narratives into living art for modern residential and gallery spaces.
-              </p>
-            </div>
-
+          {/* Left Column: Narrative (Open & Flowing) */}
+          <div className="lg:col-span-6 space-y-3.5 sm:space-y-4 text-sm sm:text-base text-[#332F2C] leading-relaxed font-light text-left">
+            <p>
+              Originating in northern Bihar's Madhubani region, <strong className="font-semibold text-[#1C1917]">Madhubani folk art</strong> is a centuries-old sacred tradition historically painted by women on domestic mud courtyard walls (<em>Bhitti Chitra</em>) during auspicious festivals, marriages, and harvest celebrations.
+            </p>
+            <p>
+              Celebrated worldwide for bold double-line contours, fine bamboo nib penmanship, and natural pigments, every motif preserves ancient Vedic symbolism, ecological harmony, and living civilizational memory.
+            </p>
+            <p>
+              Each canvas acts as a sacred visual bridge, translating timeless folklore and civilizational narratives into living art for modern residential and gallery spaces.
+            </p>
           </div>
 
           {/* Right Column: Curated Masterwork Showcase (Floating Canvas, No Heavy Boxes) */}
@@ -58,7 +46,7 @@ export default function ArtSection({ onSelectArtwork }) {
                   styleCategory: "Bharni & Kachni",
                   medium: "Natural pigments and acrylic on handmade cotton rag paper",
                   story: "Depicts Lord Rama and Lakshmana visiting King Janaka's sacred flower garden in Mithila, where Rama first beholds Sita surrounded by attendants. Intricately adorned with lush floral canopies, sacred peacocks, double-line hatching, and vibrant Bharni color fills.",
-                  year: "2024",
+                  year: "2023",
                   dimensions: "22 × 15 in",
                   inStock: false
                 });
@@ -66,12 +54,12 @@ export default function ArtSection({ onSelectArtwork }) {
             }}
             className="lg:col-span-6 space-y-3 text-left group cursor-pointer"
           >
-            {/* Floating Masterwork Canvas with Soft Ambient Drop Shadow */}
-            <div className="relative rounded-2xl overflow-hidden bg-[#FAF8F3] border border-[#E7E0D2] shadow-xl group-hover:shadow-2xl group-hover:border-[#C87A38]/40 transition-all duration-500">
+            {/* Masterwork Canvas with Dark Gallery Border Outline */}
+            <div className="relative rounded-xl overflow-hidden bg-[#FAF8F3] border-2 border-[#1C1917] shadow-xl group-hover:shadow-2xl transition-all duration-500">
               <img
                 src="/images/janak_phulwari.jpg"
                 alt="Janak Phulwari: Traditional Madhubani Folk Artwork"
-                className="w-full h-auto object-contain group-hover:scale-[1.02] transition-transform duration-700"
+                className="w-full h-auto object-contain block group-hover:scale-[1.02] transition-transform duration-700"
               />
 
               {/* Hover Pill Hint */}

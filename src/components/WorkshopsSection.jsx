@@ -271,13 +271,7 @@ export default function WorkshopsSection({ onSelectArtwork, onBookWorkshop }) {
                     onClick={() => {
                       if (!hasWsDraggedFar && onSelectArtwork) {
                         onSelectArtwork({
-                          title: item.title,
                           image: item.image,
-                          styleCategory: 'Workshop Photo',
-                          medium: 'Madhubani Art Workshop',
-                          story: item.caption,
-                          year: '2026',
-                          dimensions: item.location,
                           isWorkshop: true
                         });
                       }
@@ -286,8 +280,9 @@ export default function WorkshopsSection({ onSelectArtwork, onBookWorkshop }) {
                   >
                     <img 
                       src={item.image} 
-                      alt={item.title} 
-                      className={`w-full h-full object-cover ${item.objectPosition || 'object-center'} group-hover:scale-105 transition-transform duration-500`}
+                      alt="Workshop photo" 
+                      style={item.objectPosition ? { objectPosition: item.objectPosition } : undefined}
+                      className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
                 ))}
@@ -298,20 +293,20 @@ export default function WorkshopsSection({ onSelectArtwork, onBookWorkshop }) {
             <div className="flex sm:hidden items-center justify-center gap-4 pt-2">
               <button
                 onClick={handleWsPrev}
-                className="w-9 h-9 rounded-full bg-[#1C1917]/85 text-white flex items-center justify-center border border-white/20 shadow-md active:scale-95 cursor-pointer"
+                className="w-11 h-11 rounded-full bg-[#1C1917]/85 text-white flex items-center justify-center border border-white/20 shadow-md active:scale-95 cursor-pointer"
                 aria-label="Previous workshop photo"
               >
-                <ChevronLeft className="w-4 h-4" />
+                <ChevronLeft className="w-5 h-5" />
               </button>
-              <span className="text-[10.5px] font-semibold text-[#78716C] uppercase tracking-wider">
+              <span className="text-[11px] font-semibold text-[#78716C] uppercase tracking-wider">
                 Swipe or Tap
               </span>
               <button
                 onClick={handleWsNext}
-                className="w-9 h-9 rounded-full bg-[#1C1917]/85 text-white flex items-center justify-center border border-white/20 shadow-md active:scale-95 cursor-pointer"
+                className="w-11 h-11 rounded-full bg-[#1C1917]/85 text-white flex items-center justify-center border border-white/20 shadow-md active:scale-95 cursor-pointer"
                 aria-label="Next workshop photo"
               >
-                <ChevronRight className="w-4 h-4" />
+                <ChevronRight className="w-5 h-5" />
               </button>
             </div>
 

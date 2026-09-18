@@ -20,6 +20,9 @@ const CATEGORY_ICONS = {
 };
 
 export default function FAQSection() {
+  const INITIAL_FAQ_COUNT = 4;
+  const [showAll, setShowAll] = useState(false);
+
   // Support independent multi-expand in the 2-column matrix
   const [expandedIds, setExpandedIds] = useState(new Set([FAQS[0]?.id, FAQS[1]?.id]));
 
@@ -34,6 +37,8 @@ export default function FAQSection() {
       return next;
     });
   };
+
+  const visibleFaqs = showAll ? FAQS : FAQS.slice(0, INITIAL_FAQ_COUNT);
 
   const jsonLdSchema = useMemo(() => {
     return JSON.stringify(getFaqSchemaJsonLd());
@@ -73,7 +78,7 @@ export default function FAQSection() {
 
         {/* 2-Column Responsive Matrix Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 items-start">
-          {FAQS.map((faq) => {
+          {visibleFaqs.map((faq) => {
             const isExpanded = expandedIds.has(faq.id);
             const IconComp = CATEGORY_ICONS[faq.category] || Sparkles;
 
@@ -125,6 +130,20 @@ export default function FAQSection() {
             );
           })}
         </div>
+
+        {/* View More / Show Less Toggle Button */}
+        {FAQS.length > INITIAL_FAQ_COUNT && (
+          <div className="text-center pt-3 sm:pt-4">
+            <button
+              onClick={() => setShowAll((prev) => !prev)}
+              className="inline-flex items-center gap-2 px-6 py-2.5 sm:px-7 sm:py-3 rounded-full bg-[#FFFDF9] hover:bg-[#FAF8F3] text-[#1C1917] border border-[#C87A38]/40 hover:border-[#C87A38] text-xs sm:text-sm font-semibold tracking-wide transition-all shadow-sm hover:shadow-md cursor-pointer active:scale-95 group"
+              aria-label={showAll ? "Show fewer FAQs" : "View more FAQs"}
+            >
+              <span>{showAll ? 'Show Fewer FAQs' : `View More FAQs (${FAQS.length - INITIAL_FAQ_COUNT} more)`}</span>
+              <ChevronDown className={`w-4 h-4 text-[#C87A38] transition-transform duration-300 ${showAll ? 'rotate-180' : 'group-hover:translate-y-0.5'}`} />
+            </button>
+          </div>
+        )}
 
       </div>
     </section>

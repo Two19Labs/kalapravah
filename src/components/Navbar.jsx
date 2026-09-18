@@ -125,7 +125,7 @@ export default function Navbar({ activeSection, setActiveSection }) {
 
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#FFFDF9] border border-[#E7E0D2] flex items-center justify-center text-[#1C1917] hover:text-[#C87A38] active:scale-95 transition-all shadow-sm cursor-pointer"
+            className="lg:hidden w-11 h-11 rounded-full bg-[#FFFDF9] border border-[#E7E0D2] flex items-center justify-center text-[#1C1917] hover:text-[#C87A38] active:scale-95 transition-all shadow-sm cursor-pointer"
             aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -141,7 +141,7 @@ export default function Navbar({ activeSection, setActiveSection }) {
           onClick={() => setMobileMenuOpen(false)}
         >
           <div 
-            className="bg-[#FAF8F3] border-b border-[#E7E0D2] px-4 sm:px-6 pt-4 pb-safe pb-8 shadow-2xl space-y-4 max-h-[calc(100dvh-70px)] sm:max-h-[calc(100dvh-80px)] overflow-y-auto"
+            className="bg-[#FAF8F3] border-b border-[#E7E0D2] px-4 sm:px-6 pt-4 pb-safe pb-8 shadow-2xl space-y-4 max-h-[calc(100dvh-70px)] sm:max-h-[calc(100dvh-80px)] overflow-y-auto touch-scroll"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="space-y-1.5">
