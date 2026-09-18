@@ -48,7 +48,7 @@ export default function Navbar({ activeSection, setActiveSection }) {
     setMobileMenuOpen(false);
     const elem = document.getElementById(id);
     if (elem) {
-      const navOffset = window.innerWidth < 640 ? 68 : 84;
+      const navOffset = window.innerWidth < 640 ? 64 : window.innerWidth < 1024 ? 76 : 88;
       const elementPosition = elem.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - navOffset;
 
@@ -63,38 +63,38 @@ export default function Navbar({ activeSection, setActiveSection }) {
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled || mobileMenuOpen
-          ? 'bg-[#FFFDF9]/95 backdrop-blur-md border-b border-[#E7E0D2] shadow-md py-3 sm:py-3.5' 
-          : 'bg-[#FFFDF9]/90 backdrop-blur-md border-b border-[#E7E0D2]/70 shadow-sm py-3.5 sm:py-4'
+          ? 'bg-[#FFFDF9]/95 backdrop-blur-md border-b border-[#E7E0D2] shadow-md py-2.5 sm:py-3.5' 
+          : 'bg-[#FFFDF9]/90 backdrop-blur-md border-b border-[#E7E0D2]/70 shadow-sm py-3 sm:py-4'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 flex items-center justify-between">
         
         {/* Brand Logo & Title */}
         <button 
           onClick={() => handleNavClick('home')} 
-          className="text-left group focus:outline-none flex items-center gap-2.5 sm:gap-3 cursor-pointer"
+          className="text-left group focus:outline-none flex items-center gap-2 xs:gap-2.5 sm:gap-3 cursor-pointer"
         >
           <img 
             src="/images/logo-emblem.png" 
             alt="Kalapravah Emblem" 
-            className="w-10 h-10 sm:w-11 sm:h-11 object-contain group-hover:scale-105 transition-transform duration-300" 
+            className="w-8 h-8 xs:w-9 xs:h-9 sm:w-11 sm:h-11 object-contain group-hover:scale-105 transition-transform duration-300 shrink-0" 
           />
           <div className="flex flex-col">
-            <span className="font-serif text-lg sm:text-2xl font-bold tracking-widest text-[#1C1917] uppercase leading-none">
+            <span className="font-serif text-base xs:text-lg sm:text-2xl font-bold tracking-widest text-[#1C1917] uppercase leading-none">
               KALAPRAVAH
             </span>
           </div>
         </button>
 
         {/* Desktop Header Nav Links */}
-        <nav className="hidden lg:flex items-center gap-2.5 xl:gap-5 2xl:gap-6">
+        <nav className="hidden lg:flex items-center gap-1.5 xl:gap-4 2xl:gap-5">
           {navItems.map((item) => {
             const isActive = activeSection === item.id;
             return (
               <button
                 key={item.id}
                 onClick={() => handleNavClick(item.id)}
-                className={`text-[10.5px] xl:text-xs font-semibold tracking-[0.1em] xl:tracking-[0.16em] transition-all duration-300 uppercase relative py-1.5 px-0.5 cursor-pointer whitespace-nowrap ${
+                className={`text-[10px] xl:text-xs font-semibold tracking-[0.06em] xl:tracking-[0.14em] transition-all duration-300 uppercase relative py-1.5 px-0.5 cursor-pointer whitespace-nowrap ${
                   isActive 
                     ? 'text-[#C87A38] font-bold' 
                     : 'text-[#44403C] hover:text-[#C87A38]'
@@ -112,12 +112,12 @@ export default function Navbar({ activeSection, setActiveSection }) {
         </nav>
 
         {/* Quick Contact Badge / Mobile Hamburger */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3">
           <a
             href="https://wa.me/919971399395?text=Hello%20Rashmi%2C%20I%20am%20inquiring%20about%20Kalapravah%20artworks."
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden sm:inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-[#1C1917] hover:bg-[#C87A38] text-white text-[11px] font-semibold tracking-wider uppercase transition-colors shadow-sm cursor-pointer"
+            className="hidden sm:inline-flex items-center gap-2 px-3 sm:px-3.5 py-1.5 sm:py-2 rounded-full bg-[#1C1917] hover:bg-[#C87A38] text-white text-[10.5px] sm:text-[11px] font-semibold tracking-wider uppercase transition-colors shadow-sm cursor-pointer"
           >
             <MessageSquare className="w-3.5 h-3.5 text-[#25D366]" />
             <span>INQUIRE</span>
@@ -125,7 +125,7 @@ export default function Navbar({ activeSection, setActiveSection }) {
 
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden w-11 h-11 rounded-full bg-[#FFFDF9] border border-[#E7E0D2] flex items-center justify-center text-[#1C1917] hover:text-[#C87A38] active:scale-95 transition-all shadow-sm cursor-pointer"
+            className="lg:hidden w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#FFFDF9] border border-[#E7E0D2] flex items-center justify-center text-[#1C1917] hover:text-[#C87A38] active:scale-95 transition-all shadow-sm cursor-pointer"
             aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -141,20 +141,20 @@ export default function Navbar({ activeSection, setActiveSection }) {
           onClick={() => setMobileMenuOpen(false)}
         >
           <div 
-            className="bg-[#FAF8F3] border-b border-[#E7E0D2] px-5 sm:px-6 pt-5 pb-8 shadow-2xl space-y-5 max-h-[calc(100dvh-80px)] overflow-y-auto"
+            className="bg-[#FAF8F3] border-b border-[#E7E0D2] px-4 sm:px-6 pt-4 pb-safe pb-8 shadow-2xl space-y-4 max-h-[calc(100dvh-70px)] sm:max-h-[calc(100dvh-80px)] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="space-y-2">
+            <div className="space-y-1.5">
               <span className="text-[10px] font-semibold tracking-[0.2em] uppercase text-[#C87A38] block border-b border-[#E7E0D2] pb-2">
                 INDEX MENU
               </span>
 
-              <div className="flex flex-col space-y-1 pt-2">
+              <div className="flex flex-col space-y-1 pt-1.5">
                 {navItems.map((item) => (
                   <button
                     key={item.id}
                     onClick={() => handleNavClick(item.id)}
-                    className={`flex items-center justify-between min-h-[44px] py-3 px-4 rounded-md text-sm font-semibold tracking-wider transition-all text-left uppercase cursor-pointer ${
+                    className={`flex items-center justify-between min-h-[44px] py-2.5 px-3.5 rounded-md text-sm font-semibold tracking-wider transition-all text-left uppercase cursor-pointer ${
                       activeSection === item.id
                         ? 'bg-[#1C1917] text-white shadow-sm'
                         : 'text-[#44403C] hover:bg-[#F3EFE6]'

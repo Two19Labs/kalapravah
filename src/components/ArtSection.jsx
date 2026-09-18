@@ -83,7 +83,7 @@ export default function ArtSection({ onSelectArtwork }) {
             </div>
 
             {/* Minimalist Gallery Artwork Information */}
-            <div className="flex items-center justify-between pt-1 px-1">
+            <div className="flex flex-col xs:flex-row xs:items-center justify-between gap-2 pt-1 px-1">
               <div>
                 <h4 className="font-serif text-base sm:text-lg font-bold text-[#1C1917] group-hover:text-[#C87A38] transition-colors">
                   Janak Phulwari: Sacred Garden
@@ -93,7 +93,7 @@ export default function ArtSection({ onSelectArtwork }) {
                 </p>
               </div>
 
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 self-start xs:self-auto shrink-0">
                 <span className="text-[10px] font-bold text-[#C87A38] uppercase tracking-wider bg-[#C87A38]/10 px-2.5 py-0.5 rounded-full border border-[#C87A38]/20 shrink-0">
                   BHARNI & KACHNI
                 </span>

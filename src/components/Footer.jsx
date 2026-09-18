@@ -86,28 +86,28 @@ export default function Footer({ onNavigate }) {
             <div className="lg:col-span-5 space-y-5">
               
               {/* Logo & Brand */}
-              <div className="flex items-center gap-3.5">
+              <div className="flex items-center gap-3 sm:gap-3.5">
                 <div className="bg-white p-2 rounded-2xl shadow-md shrink-0 flex items-center justify-center border border-white/20">
                   <img 
                     src="/images/logo-footer.png" 
                     alt="Kalapravah Logo" 
-                    className="w-14 h-14 sm:w-16 sm:h-16 object-contain rounded-xl" 
+                    className="w-12 h-12 sm:w-16 sm:h-16 object-contain rounded-xl" 
                   />
                 </div>
                 <div>
-                  <span className="font-serif text-2xl sm:text-3xl font-bold tracking-widest text-white uppercase block leading-none" style={{ color: '#ffffff' }}>
+                  <span className="font-serif text-xl xs:text-2xl sm:text-3xl font-bold tracking-widest text-white uppercase block leading-none" style={{ color: '#ffffff' }}>
                     KALAPRAVAH
                   </span>
                 </div>
               </div>
 
               {/* Navigation Index Links */}
-              <div className="flex flex-wrap gap-4 pt-1">
+              <div className="flex flex-wrap gap-2.5 xs:gap-4 pt-1">
                 {indexLinks.map((link) => (
                   <button
                     key={link.id}
                     onClick={() => handleLinkClick(link.id)}
-                    className="text-xs font-semibold tracking-widest text-[#D98A48] hover:text-white uppercase transition-colors cursor-pointer"
+                    className="text-xs font-semibold tracking-widest text-[#D98A48] hover:text-white uppercase transition-colors cursor-pointer py-1.5 px-1 min-h-[36px] flex items-center"
                   >
                     {link.label}
                   </button>
@@ -118,19 +118,19 @@ export default function Footer({ onNavigate }) {
               <div className="space-y-2 pt-2 text-xs text-[#C2B7AC]">
                 <a
                   href="mailto:kalapravah2025@gmail.com"
-                  className="flex items-center gap-2.5 hover:text-[#FAF8F3] transition-colors"
+                  className="flex items-center gap-2.5 hover:text-[#FAF8F3] transition-colors py-1"
                 >
-                  <Mail className="w-3.5 h-3.5 text-[#D98A48]" />
-                  <span>kalapravah2025@gmail.com</span>
+                  <Mail className="w-3.5 h-3.5 text-[#D98A48] shrink-0" />
+                  <span className="break-all sm:break-normal">kalapravah2025@gmail.com</span>
                 </a>
 
                 <a
                   href="https://www.instagram.com/kalapravah2025?igsh=MWJ4N3ZubzBzczBodg=="
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2.5 hover:text-[#FAF8F3] transition-colors"
+                  className="flex items-center gap-2.5 hover:text-[#FAF8F3] transition-colors py-1"
                 >
-                  <InstagramIcon className="w-3.5 h-3.5 text-[#D98A48]" />
+                  <InstagramIcon className="w-3.5 h-3.5 text-[#D98A48] shrink-0" />
                   <span>@kalapravah2025</span>
                 </a>
 
@@ -138,16 +138,16 @@ export default function Footer({ onNavigate }) {
                   href="https://wa.me/919971399395"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2.5 hover:text-[#FAF8F3] transition-colors"
+                  className="flex items-center gap-2.5 hover:text-[#FAF8F3] transition-colors py-1"
                 >
-                  <Phone className="w-3.5 h-3.5 text-[#25D366]" />
+                  <Phone className="w-3.5 h-3.5 text-[#25D366] shrink-0" />
                   <span>+91 99713 99395</span>
                 </a>
               </div>
             </div>
 
             {/* Right Column: Compact WhatsApp Inquiry Box */}
-            <div className="lg:col-span-7 bg-[#251E1A] border border-[#3D312B] p-5 sm:p-6 rounded-lg shadow-sm space-y-4">
+            <div className="lg:col-span-7 bg-[#251E1A] border border-[#3D312B] p-4 xs:p-5 sm:p-6 rounded-lg shadow-sm space-y-3.5 sm:space-y-4">
               <div className="border-b border-[#3D312B] pb-2.5">
                 <div className="flex items-center gap-2">
                   <Sparkles className="w-3.5 h-3.5 text-[#D98A48]" />
@@ -159,13 +159,13 @@ export default function Footer({ onNavigate }) {
 
               <form onSubmit={handleSendWhatsApp} className="space-y-3">
                 {/* Topic Pills */}
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-1.5 xs:gap-2">
                   {categories.map((cat) => (
                     <button
                       key={cat}
                       type="button"
                       onClick={() => setCategory(cat)}
-                      className={`px-3 py-1.5 text-[11px] font-medium tracking-wide rounded-md border transition-all cursor-pointer min-h-[36px] ${
+                      className={`px-2.5 xs:px-3 py-1.5 text-[10.5px] xs:text-[11px] font-medium tracking-wide rounded-md border transition-all cursor-pointer min-h-[38px] flex items-center ${
                         category === cat
                           ? 'bg-[#D98A48] text-[#1C1613] border-[#D98A48] font-semibold shadow-xs'
                           : 'bg-[#1C1613] text-[#C2B7AC] border-[#3D312B] hover:border-[#D98A48] hover:text-[#FAF8F3]'
@@ -208,7 +208,7 @@ export default function Footer({ onNavigate }) {
           </div>
 
           {/* Bottom Copyright Strip */}
-          <div className="pt-4 border-t border-[#362C26] flex flex-col sm:flex-row items-center justify-between text-[10px] sm:text-[11px] font-semibold tracking-[0.12em] text-[#8C8277] gap-3">
+          <div className="pt-4 border-t border-[#362C26] flex flex-col sm:flex-row items-center justify-between text-[10px] sm:text-[11px] font-semibold tracking-[0.12em] text-[#8C8277] gap-3 text-center sm:text-left">
             <p>© 2026 KALAPRAVAH • ART BY RASHMI DHAR</p>
 
             <div className="flex items-center gap-4">

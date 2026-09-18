@@ -175,7 +175,7 @@ export default function WorkshopsSection({ onSelectArtwork, onBookWorkshop }) {
         </div>
 
         {/* 1. FEATURED OUTDOOR NATURE WORKSHOP & PHOTO CAROUSEL */}
-        <div className="bg-[#FFFDF9] border border-[#E7E0D2] rounded-2xl p-5 sm:p-6 lg:p-7 shadow-sm space-y-4 text-left relative overflow-hidden">
+        <div className="bg-[#FFFDF9] border border-[#E7E0D2] rounded-2xl p-4 xs:p-5 sm:p-6 lg:p-7 shadow-sm space-y-4 text-left relative overflow-hidden">
           <div className="absolute top-0 left-0 w-2.5 h-full bg-[#C87A38]" />
           
           <div className="space-y-2.5 max-w-4xl">
@@ -198,7 +198,7 @@ export default function WorkshopsSection({ onSelectArtwork, onBookWorkshop }) {
                     onBookWorkshop('Madhubani Art Workshop');
                   }
                 }}
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#1C1917] hover:bg-[#C87A38] text-white text-xs font-bold tracking-widest uppercase transition-all shadow-xs active:scale-95 cursor-pointer"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 sm:py-2.5 rounded-full bg-[#1C1917] hover:bg-[#C87A38] text-white text-xs font-bold tracking-widest uppercase transition-all shadow-xs active:scale-95 cursor-pointer min-h-[44px]"
               >
                 <span>Inquire About Workshops</span>
                 <ArrowRight className="w-3.5 h-3.5" />
@@ -222,18 +222,16 @@ export default function WorkshopsSection({ onSelectArtwork, onBookWorkshop }) {
               onMouseEnter={() => { isWsHoveredRef.current = true; }}
               onMouseLeave={() => { isWsHoveredRef.current = false; }}
             >
-              {/* Left Button */}
+              {/* Left Button - Desktop */}
               <button
                 onMouseDown={(e) => { e.stopPropagation(); setIsWsHoldingLeft(true); }}
                 onMouseUp={(e) => { e.stopPropagation(); setIsWsHoldingLeft(false); }}
                 onMouseLeave={() => setIsWsHoldingLeft(false)}
-                onTouchStart={(e) => { e.stopPropagation(); setIsWsHoldingLeft(true); }}
-                onTouchEnd={(e) => { e.stopPropagation(); setIsWsHoldingLeft(false); }}
                 onClick={(e) => {
                   e.stopPropagation();
                   handleWsPrev();
                 }}
-                className={`absolute left-1.5 sm:left-2 top-1/2 -translate-y-1/2 z-30 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-[#1C1917]/85 hover:bg-[#C87A38] text-white flex items-center justify-center border border-white/30 shadow-2xl backdrop-blur-md transition-all active:scale-95 cursor-pointer ${
+                className={`hidden sm:flex absolute left-2 top-1/2 -translate-y-1/2 z-30 w-10 h-10 rounded-full bg-[#1C1917]/85 hover:bg-[#C87A38] text-white items-center justify-center border border-white/30 shadow-2xl backdrop-blur-md transition-all active:scale-95 cursor-pointer ${
                   isWsHoldingLeft ? 'bg-[#C87A38] scale-110 shadow-inner' : ''
                 }`}
                 aria-label="Previous workshop photo"
@@ -241,18 +239,16 @@ export default function WorkshopsSection({ onSelectArtwork, onBookWorkshop }) {
                 <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
               </button>
 
-              {/* Right Button */}
+              {/* Right Button - Desktop */}
               <button
                 onMouseDown={(e) => { e.stopPropagation(); setIsWsHoldingRight(true); }}
                 onMouseUp={(e) => { e.stopPropagation(); setIsWsHoldingRight(false); }}
                 onMouseLeave={() => setIsWsHoldingRight(false)}
-                onTouchStart={(e) => { e.stopPropagation(); setIsWsHoldingRight(true); }}
-                onTouchEnd={(e) => { e.stopPropagation(); setIsWsHoldingRight(false); }}
                 onClick={(e) => {
                   e.stopPropagation();
                   handleWsNext();
                 }}
-                className={`absolute right-1.5 sm:right-2 top-1/2 -translate-y-1/2 z-30 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-[#1C1917]/85 hover:bg-[#C87A38] text-white flex items-center justify-center border border-white/30 shadow-2xl backdrop-blur-md transition-all active:scale-95 cursor-pointer ${
+                className={`hidden sm:flex absolute right-2 top-1/2 -translate-y-1/2 z-30 w-10 h-10 rounded-full bg-[#1C1917]/85 hover:bg-[#C87A38] text-white items-center justify-center border border-white/30 shadow-2xl backdrop-blur-md transition-all active:scale-95 cursor-pointer ${
                   isWsHoldingRight ? 'bg-[#C87A38] scale-110 shadow-inner' : ''
                 }`}
                 aria-label="Next workshop photo"
@@ -263,7 +259,7 @@ export default function WorkshopsSection({ onSelectArtwork, onBookWorkshop }) {
               {/* Photos Track */}
               <div 
                 ref={wsTrackRef}
-                className="flex gap-4 w-max"
+                className="flex gap-3 sm:gap-4 w-max"
                 style={{
                   transform: `translate3d(-${wsScrollPos}px, 0, 0)`,
                   willChange: 'transform'
@@ -286,7 +282,7 @@ export default function WorkshopsSection({ onSelectArtwork, onBookWorkshop }) {
                         });
                       }
                     }}
-                    className="w-52 xs:w-60 sm:w-68 md:w-72 aspect-[4/3] shrink-0 bg-[#FAF8F3] border border-[#E7E0D2] hover:border-[#C87A38] rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group relative cursor-pointer"
+                    className="w-44 xs:w-56 sm:w-68 md:w-72 aspect-[4/3] shrink-0 bg-[#FAF8F3] border border-[#E7E0D2] hover:border-[#C87A38] rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group relative cursor-pointer"
                   >
                     <img 
                       src={item.image} 
@@ -297,6 +293,28 @@ export default function WorkshopsSection({ onSelectArtwork, onBookWorkshop }) {
                 ))}
               </div>
             </div>
+
+            {/* Mobile Carousel Navigation Controls */}
+            <div className="flex sm:hidden items-center justify-center gap-4 pt-2">
+              <button
+                onClick={handleWsPrev}
+                className="w-9 h-9 rounded-full bg-[#1C1917]/85 text-white flex items-center justify-center border border-white/20 shadow-md active:scale-95 cursor-pointer"
+                aria-label="Previous workshop photo"
+              >
+                <ChevronLeft className="w-4 h-4" />
+              </button>
+              <span className="text-[10.5px] font-semibold text-[#78716C] uppercase tracking-wider">
+                Swipe or Tap
+              </span>
+              <button
+                onClick={handleWsNext}
+                className="w-9 h-9 rounded-full bg-[#1C1917]/85 text-white flex items-center justify-center border border-white/20 shadow-md active:scale-95 cursor-pointer"
+                aria-label="Next workshop photo"
+              >
+                <ChevronRight className="w-4 h-4" />
+              </button>
+            </div>
+
           </div>
         </div>
 

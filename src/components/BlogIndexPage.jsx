@@ -83,8 +83,8 @@ export default function BlogIndexPage() {
         setActiveSection={handleNavClick}
       />
 
-      <main className="min-h-screen pt-20 sm:pt-22 pb-16 text-left relative z-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 sm:space-y-8">
+      <main className="min-h-screen pt-20 sm:pt-24 pb-12 sm:pb-16 text-left relative z-10">
+        <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 space-y-5 sm:space-y-8">
           
           {/* Breadcrumb Trail */}
           <nav className="flex items-center gap-2 text-[11px] font-medium text-[#78716C] uppercase tracking-wider">
@@ -95,11 +95,11 @@ export default function BlogIndexPage() {
 
           {/* Main Banner Header */}
           <div className="text-center max-w-3xl mx-auto space-y-2.5">
-            <h1 className="font-serif text-3xl sm:text-5xl font-normal text-[#1C1917] tracking-tight">
+            <h1 className="font-serif text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-normal text-[#1C1917] tracking-tight">
               THE KALAPRAVAH BLOG
             </h1>
 
-            <p className="text-sm sm:text-base text-[#5C5652] leading-relaxed max-w-2xl mx-auto font-light">
+            <p className="text-xs xs:text-sm sm:text-base text-[#5C5652] leading-relaxed max-w-2xl mx-auto font-light">
               Explore our complete collection of heritage articles, pigment guides, traditional line art styles, and motif symbolism.
             </p>
 
@@ -107,12 +107,12 @@ export default function BlogIndexPage() {
           </div>
 
           {/* Articles Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 xs:gap-6 sm:gap-8">
             {BLOG_ARTICLES.map((article) => (
               <Link
                 key={article.id}
                 to={`/blog/${article.id}`}
-                className="group cursor-pointer text-left flex flex-col justify-between transition-all p-4 rounded-2xl bg-[#FFFDF9]/70 hover:bg-[#FFFDF9] border border-transparent hover:border-[#E7E0D2] shadow-xs hover:shadow-md block"
+                className="group cursor-pointer text-left flex flex-col justify-between transition-all p-3.5 xs:p-4 rounded-2xl bg-[#FFFDF9]/80 hover:bg-[#FFFDF9] border border-transparent hover:border-[#E7E0D2] shadow-xs hover:shadow-md block"
               >
                 <div>
                   {/* Image Container */}

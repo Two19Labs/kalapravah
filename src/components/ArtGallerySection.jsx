@@ -203,18 +203,16 @@ export default function ArtGallerySection({ onSelectArtwork }) {
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
         >
-            {/* Holdable Left Side Button (<) */}
+            {/* Holdable Left Side Button (<) - Desktop/Tablet */}
             <button
               onMouseDown={(e) => { e.stopPropagation(); setIsHoldingLeft(true); }}
               onMouseUp={(e) => { e.stopPropagation(); setIsHoldingLeft(false); }}
               onMouseLeave={() => setIsHoldingLeft(false)}
-              onTouchStart={(e) => { e.stopPropagation(); setIsHoldingLeft(true); }}
-              onTouchEnd={(e) => { e.stopPropagation(); setIsHoldingLeft(false); }}
               onClick={(e) => {
                 e.stopPropagation();
                 handlePrev();
               }}
-              className={`absolute left-1.5 sm:left-3 top-1/2 -translate-y-1/2 z-30 w-9 h-9 sm:w-12 sm:h-12 rounded-full bg-[#1C1917]/85 hover:bg-[#C87A38] text-white flex items-center justify-center border border-white/30 shadow-2xl backdrop-blur-md transition-all active:scale-95 cursor-pointer ${
+              className={`hidden sm:flex absolute left-2 sm:left-3 top-1/2 -translate-y-1/2 z-30 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#1C1917]/85 hover:bg-[#C87A38] text-white items-center justify-center border border-white/30 shadow-2xl backdrop-blur-md transition-all active:scale-95 cursor-pointer ${
                 isHoldingLeft ? 'bg-[#C87A38] scale-110 shadow-inner' : ''
               }`}
               aria-label="Move left / previous"
@@ -222,18 +220,16 @@ export default function ArtGallerySection({ onSelectArtwork }) {
               <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6" />
             </button>
 
-            {/* Holdable Right Side Button (>) */}
+            {/* Holdable Right Side Button (>) - Desktop/Tablet */}
             <button
               onMouseDown={(e) => { e.stopPropagation(); setIsHoldingRight(true); }}
               onMouseUp={(e) => { e.stopPropagation(); setIsHoldingRight(false); }}
               onMouseLeave={() => setIsHoldingRight(false)}
-              onTouchStart={(e) => { e.stopPropagation(); setIsHoldingRight(true); }}
-              onTouchEnd={(e) => { e.stopPropagation(); setIsHoldingRight(false); }}
               onClick={(e) => {
                 e.stopPropagation();
                 handleNext();
               }}
-              className={`absolute right-1.5 sm:right-3 top-1/2 -translate-y-1/2 z-30 w-9 h-9 sm:w-12 sm:h-12 rounded-full bg-[#1C1917]/85 hover:bg-[#C87A38] text-white flex items-center justify-center border border-white/30 shadow-2xl backdrop-blur-md transition-all active:scale-95 cursor-pointer ${
+              className={`hidden sm:flex absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 z-30 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#1C1917]/85 hover:bg-[#C87A38] text-white items-center justify-center border border-white/30 shadow-2xl backdrop-blur-md transition-all active:scale-95 cursor-pointer ${
                 isHoldingRight ? 'bg-[#C87A38] scale-110 shadow-inner' : ''
               }`}
               aria-label="Move right / next"
@@ -244,7 +240,7 @@ export default function ArtGallerySection({ onSelectArtwork }) {
             {/* Sliding Track with continuous requestAnimationFrame translate3d */}
             <div 
               ref={trackRef}
-              className="flex gap-4 sm:gap-6 w-max"
+              className="flex gap-3.5 sm:gap-6 w-max"
               style={{
                 transform: `translate3d(-${scrollPos}px, 0, 0)`,
                 willChange: 'transform'
@@ -258,7 +254,7 @@ export default function ArtGallerySection({ onSelectArtwork }) {
                       onSelectArtwork(artwork);
                     }
                   }}
-                  className="w-[260px] xs:w-[285px] sm:w-[315px] lg:w-[330px] min-w-[260px] xs:min-w-[285px] sm:min-w-[315px] lg:min-w-[330px] shrink-0 deckled-frame bg-[#FFFDF9] border-2 border-[#E7E0D2] hover:border-[#C87A38] rounded-xl p-3 sm:p-3.5 shadow-md hover:shadow-2xl transition-all duration-300 group cursor-pointer flex flex-col justify-between h-[405px] xs:h-[415px] sm:h-[425px]"
+                  className="w-[240px] xs:w-[275px] sm:w-[315px] lg:w-[330px] min-w-[240px] xs:min-w-[275px] sm:min-w-[315px] lg:min-w-[330px] shrink-0 deckled-frame bg-[#FFFDF9] border-2 border-[#E7E0D2] hover:border-[#C87A38] rounded-xl p-3 sm:p-3.5 shadow-md hover:shadow-2xl transition-all duration-300 group cursor-pointer flex flex-col justify-between h-[395px] xs:h-[415px] sm:h-[425px]"
                 >
                   <div className="space-y-2">
                     
@@ -326,6 +322,27 @@ export default function ArtGallerySection({ onSelectArtwork }) {
               ))}
             </div>
 
+          </div>
+
+          {/* Mobile Carousel Navigation Controls */}
+          <div className="flex sm:hidden items-center justify-center gap-4 pt-2">
+            <button
+              onClick={handlePrev}
+              className="w-10 h-10 rounded-full bg-[#1C1917]/85 text-white flex items-center justify-center border border-white/20 shadow-md active:scale-95 cursor-pointer"
+              aria-label="Previous artwork"
+            >
+              <ChevronLeft className="w-5 h-5" />
+            </button>
+            <span className="text-[11px] font-semibold text-[#78716C] uppercase tracking-wider">
+              Swipe or Tap
+            </span>
+            <button
+              onClick={handleNext}
+              className="w-10 h-10 rounded-full bg-[#1C1917]/85 text-white flex items-center justify-center border border-white/20 shadow-md active:scale-95 cursor-pointer"
+              aria-label="Next artwork"
+            >
+              <ChevronRight className="w-5 h-5" />
+            </button>
           </div>
 
       </div>

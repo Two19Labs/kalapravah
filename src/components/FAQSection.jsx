@@ -90,13 +90,13 @@ export default function FAQSection() {
                 <button
                   onClick={() => toggleAccordion(faq.id)}
                   aria-expanded={isExpanded}
-                  className="w-full text-left p-4 sm:p-5 flex items-start justify-between gap-3 sm:gap-4 cursor-pointer"
+                  className="w-full text-left p-3.5 xs:p-4 sm:p-5 flex items-start justify-between gap-2.5 xs:gap-3 sm:gap-4 cursor-pointer min-h-[48px]"
                 >
-                  <div className="flex items-start gap-3 sm:gap-3.5 flex-1">
-                    <div className={`p-2 rounded-lg shrink-0 mt-0.5 transition-colors ${
+                  <div className="flex items-start gap-2.5 xs:gap-3 sm:gap-3.5 flex-1">
+                    <div className={`p-1.5 xs:p-2 rounded-lg shrink-0 mt-0.5 transition-colors ${
                       isExpanded ? 'bg-[#C87A38]/10 text-[#C87A38]' : 'bg-[#FAF8F3] text-[#8C827A]'
                     }`}>
-                      <IconComp className="w-4 h-4" />
+                      <IconComp className="w-3.5 h-3.5 xs:w-4 xs:h-4" />
                     </div>
 
                     <div className="flex-1">
@@ -106,17 +106,17 @@ export default function FAQSection() {
                     </div>
                   </div>
                   
-                  <div className={`p-1.5 rounded-full shrink-0 mt-0.5 transition-transform duration-200 ${
+                  <div className={`p-1 xs:p-1.5 rounded-full shrink-0 mt-0.5 transition-transform duration-200 ${
                     isExpanded ? 'rotate-180 bg-[#C87A38] text-white shadow-xs' : 'bg-[#FAF8F3] text-[#5C5652]'
                   }`}>
-                    <ChevronDown className="w-4 h-4" />
+                    <ChevronDown className="w-3.5 h-3.5 xs:w-4 xs:h-4" />
                   </div>
                 </button>
 
                 {/* Smooth Expansion Body Content */}
                 {isExpanded && (
-                  <div className="px-4 sm:px-5 pb-5 pt-0">
-                    <div className="p-3.5 sm:p-4 rounded-lg bg-[#FAF8F3]/90 border-l-2 border-[#C87A38] text-xs sm:text-sm text-[#3E3834] leading-relaxed font-light">
+                  <div className="px-3.5 xs:px-4 sm:px-5 pb-4 sm:pb-5 pt-0">
+                    <div className="p-3 xs:p-3.5 sm:p-4 rounded-lg bg-[#FAF8F3]/90 border-l-2 border-[#C87A38] text-xs sm:text-sm text-[#3E3834] leading-relaxed font-light">
                       {faq.answer}
                     </div>
                   </div>

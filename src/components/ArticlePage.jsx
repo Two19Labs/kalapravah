@@ -121,12 +121,12 @@ export default function ArticlePage() {
         
         {/* Top Navigation Bar & Breadcrumb */}
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
-          <div className="flex items-center justify-between border-b border-[#E7E0D2] pb-4">
+          <div className="flex flex-col xs:flex-row items-start xs:items-center justify-between gap-3 pb-4 border-b border-[#E7E0D2]">
             
             {/* Back to Home / Blog link */}
             <button
               onClick={() => handleNavClick('blog')}
-              className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-[#1C1917] hover:text-[#C87A38] transition-colors cursor-pointer"
+              className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-[#1C1917] hover:text-[#C87A38] transition-colors cursor-pointer min-h-[36px]"
             >
               <ArrowLeft className="w-4 h-4" />
               <span>BACK TO KALAPRAVAH BLOG</span>
@@ -135,7 +135,7 @@ export default function ArticlePage() {
             {/* Share Action */}
             <button
               onClick={handleShare}
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#FFFDF9] border border-[#E7E0D2] text-xs font-semibold text-[#5C5652] hover:text-[#1C1917] hover:border-[#C87A38] transition-all shadow-sm cursor-pointer"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#FFFDF9] border border-[#E7E0D2] text-xs font-semibold text-[#5C5652] hover:text-[#1C1917] hover:border-[#C87A38] transition-all shadow-sm cursor-pointer min-h-[36px]"
             >
               {copied ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Share2 className="w-3.5 h-3.5" />}
               <span>{copied ? 'Copied Link!' : 'Share Webpage'}</span>
@@ -144,7 +144,7 @@ export default function ArticlePage() {
           </div>
 
           {/* Breadcrumb Trail */}
-          <nav className="flex items-center gap-2 text-[11px] font-medium text-[#78716C] mt-4 uppercase tracking-wider">
+          <nav className="flex items-center gap-2 text-[11px] font-medium text-[#78716C] mt-3 sm:mt-4 uppercase tracking-wider">
             <span className="hover:text-[#1C1917] cursor-pointer" onClick={() => handleNavClick('home')}>Home</span>
             <span>/</span>
             <span className="hover:text-[#1C1917] cursor-pointer" onClick={() => handleNavClick('blog')}>Blog</span>
@@ -154,26 +154,26 @@ export default function ArticlePage() {
         </div>
 
         {/* Main Article Container */}
-        <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+        <main className="max-w-4xl mx-auto px-3.5 sm:px-6 lg:px-8 space-y-6 sm:space-y-8">
           
           {/* Article Title & Subtitle Header */}
-          <header className="space-y-4">
+          <header className="space-y-3.5 sm:space-y-4">
             <span className="inline-block px-3 py-1 bg-[#1C1917]/80 backdrop-blur-md text-white rounded-full text-[10px] font-bold uppercase tracking-widest">
               {article.category || 'BLOG ARTICLE'}
             </span>
 
-            <h1 className="font-serif text-3xl sm:text-5xl font-bold text-[#1C1917] leading-[1.15] tracking-tight">
+            <h1 className="font-serif text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold text-[#1C1917] leading-[1.15] tracking-tight">
               {article.title}
             </h1>
 
             {article.subtitle && (
-              <p className="text-base sm:text-xl text-[#5C5652] font-normal leading-relaxed">
+              <p className="text-sm sm:text-lg lg:text-xl text-[#5C5652] font-normal leading-relaxed">
                 {article.subtitle}
               </p>
             )}
 
             {/* Author & Publication Details */}
-            <div className="flex flex-wrap items-center gap-4 sm:gap-6 pt-3 pb-5 text-xs font-semibold text-[#78716C] border-t border-b border-[#E7E0D2]">
+            <div className="flex flex-wrap items-center gap-3 xs:gap-4 sm:gap-6 pt-2.5 pb-4 text-xs font-semibold text-[#78716C] border-t border-b border-[#E7E0D2]">
               <div className="flex items-center gap-1.5">
                 <User className="w-3.5 h-3.5 text-[#C87A38]" />
                 <span>By {article.author}</span>
@@ -207,7 +207,7 @@ export default function ArticlePage() {
           />
 
           {/* CTA Box: Collection & Commission */}
-          <section className="p-5 sm:p-6 bg-[#FFFDF9] border border-[#E7E0D2] rounded-xl shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-5 my-8">
+          <section className="p-4 xs:p-5 sm:p-6 bg-[#FFFDF9] border border-[#E7E0D2] rounded-xl shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4 sm:gap-5 my-6 sm:my-8">
             <div className="space-y-1 flex-1 max-w-xl">
               <span className="text-[10px] font-bold tracking-widest text-[#C87A38] uppercase block">
                 KALAPRAVAH FOLK ART GALLERY
@@ -220,16 +220,16 @@ export default function ArticlePage() {
               </p>
             </div>
 
-            <div className="flex items-center gap-2.5 shrink-0 self-start md:self-center">
+            <div className="flex flex-col xs:flex-row items-stretch xs:items-center gap-2.5 shrink-0 w-full md:w-auto">
               <button
                 onClick={() => handleNavClick('gallery')}
-                className="px-4 py-2.5 rounded-lg border border-[#1C1917] text-xs font-semibold uppercase tracking-wider text-[#1C1917] hover:bg-[#1C1917] hover:text-white transition-all whitespace-nowrap cursor-pointer"
+                className="w-full xs:w-auto px-4 py-2.5 rounded-lg border border-[#1C1917] text-xs font-semibold uppercase tracking-wider text-[#1C1917] hover:bg-[#1C1917] hover:text-white transition-all whitespace-nowrap cursor-pointer text-center min-h-[44px]"
               >
                 Explore Artworks
               </button>
               <button
                 onClick={() => handleNavClick('contact')}
-                className="px-4 py-2.5 rounded-lg bg-[#1C1917] hover:bg-[#C87A38] text-white text-xs font-semibold uppercase tracking-wider transition-colors whitespace-nowrap flex items-center gap-1.5 cursor-pointer shadow-xs"
+                className="w-full xs:w-auto px-4 py-2.5 rounded-lg bg-[#1C1917] hover:bg-[#C87A38] text-white text-xs font-semibold uppercase tracking-wider transition-colors whitespace-nowrap flex items-center justify-center gap-1.5 cursor-pointer shadow-xs min-h-[44px]"
               >
                 <span>Commission Custom Art</span>
                 <ArrowRight className="w-3.5 h-3.5" />

@@ -27,13 +27,13 @@ export default function ArtistSection({ onContactArtist }) {
           <div className="lg:col-span-5 relative flex flex-col">
             <div className="bg-[#FFFDF9] border border-[#E7E0D2] p-3.5 sm:p-4 rounded-2xl shadow-md space-y-4 h-full flex flex-col justify-between">
 
-              <div className="relative flex-1 min-h-[280px] xs:min-h-[320px] sm:min-h-[360px] rounded-xl overflow-hidden border border-[#E7E0D2] bg-[#FAF8F3] shadow-inner group">
+              <div className="relative flex-1 min-h-[260px] xs:min-h-[300px] sm:min-h-[360px] aspect-[4/5] sm:aspect-[3/4] lg:aspect-auto rounded-xl overflow-hidden border border-[#E7E0D2] bg-[#FAF8F3] shadow-inner group">
                 <img
                   src="/images/rashmi_dhar.jpg"
                   alt="Rashmi Dhar at IGNCA, New Delhi"
                   className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#1C1917]/80 via-transparent to-transparent opacity-95 flex flex-col justify-end p-4 sm:p-5 text-white">
+                <div className="absolute inset-0 bg-gradient-to-t from-[#1C1917]/80 via-transparent to-transparent opacity-95 flex flex-col justify-end p-3.5 sm:p-5 text-white">
                   <div className="inline-flex items-center gap-1.5 text-xs sm:text-sm text-[#FAF8F3] font-medium tracking-wide">
                     <MapPin className="w-3.5 h-3.5 text-[#C87A38] shrink-0" />
                     <span>IGNCA, New Delhi</span>
@@ -47,7 +47,7 @@ export default function ArtistSection({ onContactArtist }) {
                   href="https://wa.me/919971399395?text=Hello%20Rashmi%2C%20I%20would%20like%20to%20chat%20and%20inquire%20about%20your%20artworks."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full flex items-center justify-center gap-2 min-h-[44px] py-3 px-3.5 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-[11px] sm:text-xs tracking-wider uppercase transition-all shadow-md hover:shadow-lg active:scale-95 text-center leading-snug cursor-pointer"
+                  className="w-full flex items-center justify-center gap-2 min-h-[44px] py-2.5 sm:py-3 px-2.5 sm:px-3.5 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-[10.5px] xs:text-[11px] sm:text-xs tracking-wider uppercase transition-all shadow-md hover:shadow-lg active:scale-95 text-center leading-snug cursor-pointer"
                 >
                   <MessageSquare className="w-4 h-4 fill-current shrink-0" />
                   <span>Have questions about an artwork? Let's chat</span>
@@ -76,7 +76,7 @@ export default function ArtistSection({ onContactArtist }) {
             </div>
 
             {/* 🌟 UN-BOXED EDITORIAL PULL-QUOTE JOURNEY STATEMENT */}
-            <div className="relative pl-4 sm:pl-8 border-l-2 border-[#C87A38] space-y-3 py-2 my-2">
+            <div className="relative pl-3.5 sm:pl-6 lg:pl-8 border-l-2 border-[#C87A38] space-y-2.5 sm:space-y-3 py-1.5 sm:py-2 my-2">
               <div className="flex items-center gap-2 text-xs sm:text-sm font-bold text-[#C87A38] uppercase tracking-widest">
                 <Quote className="w-4 h-4 fill-current shrink-0" />
                 <span>HERITAGE & MINDFUL WORKSHOPS</span>

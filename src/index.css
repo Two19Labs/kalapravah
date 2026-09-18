@@ -135,22 +135,41 @@ html, body {
   -webkit-overflow-scrolling: touch;
 }
 
-/* Safe area padding for notched mobile devices */
+/* Prevent auto-zoom on iOS Safari when tapping inputs */
+@media (max-width: 640px) {
+  input, select, textarea {
+    font-size: 16px !important;
+  }
+}
+
+/* Safe area utilities for notched devices (iPhone X+, iPads) */
 @supports (padding: max(0px)) {
   body {
     padding-left: max(0px, env(safe-area-inset-left));
     padding-right: max(0px, env(safe-area-inset-right));
   }
+  .pb-safe {
+    padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
+  }
+  .pt-safe {
+    padding-top: max(1rem, env(safe-area-inset-top));
+  }
 }
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 84px;
+  scroll-padding-top: 88px;
+}
+
+@media (max-width: 1024px) {
+  html {
+    scroll-padding-top: 76px;
+  }
 }
 
 @media (max-width: 640px) {
   html {
-    scroll-padding-top: 68px;
+    scroll-padding-top: 64px;
   }
 }
 

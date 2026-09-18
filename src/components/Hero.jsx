@@ -47,7 +47,7 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
       {/* ========================================================================= */}
       {/* 1. FULL-BLEED 100VW SLIDESHOW HERO BANNER                                */}
       {/* ========================================================================= */}
-      <div className="relative w-full h-[88vh] sm:h-screen min-h-[580px] flex items-center justify-center text-center overflow-hidden">
+      <div className="relative w-full h-[90svh] sm:h-screen min-h-[500px] xs:min-h-[540px] sm:min-h-[580px] md:min-h-[620px] flex items-center justify-center text-center overflow-hidden">
         
         {/* Full-Bleed 100% Background Slideshow with Horizontal Swipe Left Animation */}
         <div className="absolute inset-0 z-0 overflow-hidden">
@@ -74,40 +74,40 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
         </div>
 
         {/* OVERLAID CENTERED HERO CONTENT */}
-        <div className="relative z-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 space-y-6 sm:space-y-8">
+        <div className="relative z-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 sm:pt-12 space-y-5 sm:space-y-8">
           
           {/* Centered High-Impact Headline */}
-          <div className="space-y-3">
-            <h1 className="font-serif text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.15] drop-shadow-xl text-center">
+          <div className="space-y-2.5 xs:space-y-3">
+            <h1 className="font-serif text-2xl xs:text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.15] drop-shadow-xl text-center">
               Traditional Elegance <br className="hidden xs:inline" />
               For <span className="font-serif italic font-normal text-[#F59E0B]">Contemporary</span> Spaces
             </h1>
           </div>
 
           {/* Centered Narrative Subtitle */}
-          <p className="text-sm xs:text-base sm:text-lg lg:text-xl text-white/90 leading-relaxed font-light max-w-2xl mx-auto text-center drop-shadow-md">
+          <p className="text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl text-white/90 leading-relaxed font-light max-w-2xl mx-auto text-center drop-shadow-md">
             Bringing ancient storytelling of traditional <strong className="font-semibold text-white">Madhubani folk art</strong> directly into modern living spaces.
           </p>
 
           {/* Centered Action Buttons */}
-          <div className="flex flex-col xs:flex-row items-center justify-center gap-3 sm:gap-4 pt-3 sm:pt-4 w-full max-w-xs xs:max-w-none mx-auto">
+          <div className="flex flex-col xs:flex-row items-center justify-center gap-3 sm:gap-4 pt-2 xs:pt-3 sm:pt-4 w-full max-w-xs xs:max-w-none mx-auto">
             <button
               onClick={onExploreArtworks}
-              className="w-full xs:w-auto text-center px-5 sm:px-7 py-3 sm:py-3.5 rounded-full bg-transparent hover:bg-white/15 text-white border-2 border-white/80 hover:border-white text-[11px] sm:text-xs font-bold tracking-widest uppercase transition-all shadow-lg cursor-pointer hover:scale-105 active:scale-95 whitespace-nowrap"
+              className="w-full xs:w-auto text-center px-5 sm:px-7 py-3 sm:py-3.5 rounded-full bg-transparent hover:bg-white/15 text-white border-2 border-white/80 hover:border-white text-[11px] sm:text-xs font-bold tracking-widest uppercase transition-all shadow-lg cursor-pointer hover:scale-105 active:scale-95 whitespace-nowrap min-h-[44px]"
             >
               EXPLORE ART GALLERY
             </button>
 
             <button
               onClick={onExploreArtist}
-              className="w-full xs:w-auto text-center px-6 sm:px-8 py-3 sm:py-3.5 rounded-full bg-[#C87A38] hover:bg-[#b56929] text-white text-[11px] sm:text-xs font-bold tracking-widest uppercase transition-all shadow-2xl hover:scale-105 active:scale-95 cursor-pointer border border-[#C87A38] whitespace-nowrap"
+              className="w-full xs:w-auto text-center px-6 sm:px-8 py-3 sm:py-3.5 rounded-full bg-[#C87A38] hover:bg-[#b56929] text-white text-[11px] sm:text-xs font-bold tracking-widest uppercase transition-all shadow-2xl hover:scale-105 active:scale-95 cursor-pointer border border-[#C87A38] whitespace-nowrap min-h-[44px]"
             >
               ABOUT THE ARTIST
             </button>
           </div>
 
           {/* Subtle Slide Indicator Bars at Bottom */}
-          <div className="pt-4 flex justify-center">
+          <div className="pt-3 sm:pt-4 flex justify-center">
             <div className="flex items-center gap-2">
               {decorHeroSlides.map((_, idx) => (
                 <button
@@ -137,7 +137,7 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-center max-w-6xl mx-auto">
             
             {/* LEFT COLUMN: TITLE & NARRATIVE (lg:col-span-7) */}
-            <div className="lg:col-span-7 space-y-5 text-left">
+            <div className="lg:col-span-7 space-y-4 sm:space-y-5 text-left">
               <div className="space-y-2">
                 <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1C1917] tracking-tight">
                   KALAPRAVAH
@@ -159,11 +159,11 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
             </div>
 
             {/* RIGHT COLUMN: 3D CELESTIAL GLOBE SPHERE (lg:col-span-5) */}
-            <div className="lg:col-span-5 flex flex-col items-center justify-center space-y-5 text-center">
+            <div className="lg:col-span-5 flex flex-col items-center justify-center space-y-4 sm:space-y-5 text-center">
               
               {/* Circular Background Container */}
               <div className="relative">
-                <div className="w-[240px] h-[240px] xs:w-[280px] xs:h-[280px] sm:w-[320px] sm:h-[320px] lg:w-[340px] lg:h-[340px] rounded-full bg-[#FFFDF9] border-2 border-[#C87A38]/40 shadow-2xl relative overflow-hidden flex items-center justify-center">
+                <div className="w-[210px] h-[210px] xs:w-[250px] xs:h-[250px] sm:w-[300px] sm:h-[300px] lg:w-[340px] lg:h-[340px] rounded-full bg-[#FFFDF9] border-2 border-[#C87A38]/40 shadow-2xl relative overflow-hidden flex items-center justify-center">
                   <LunarGravityCard
                     className="w-full h-full"
                     artTextureUrl="/images/artwork_sphere_surya_chandra.jpg"
@@ -174,7 +174,7 @@ export default function Hero({ onExploreArtworks, onExploreArtist }) {
               </div>
 
               {/* High-Contrast Editorial Caption Card */}
-              <div className="bg-[#FFFDF9] border border-[#E7E0D2] shadow-lg rounded-2xl px-4 sm:px-6 py-3.5 max-w-sm mx-auto flex items-center justify-center gap-3 backdrop-blur-md transition-all hover:border-[#C87A38]">
+              <div className="bg-[#FFFDF9] border border-[#E7E0D2] shadow-lg rounded-2xl px-3.5 sm:px-6 py-2.5 sm:py-3.5 max-w-xs xs:max-w-sm mx-auto flex items-center justify-center gap-2.5 sm:gap-3 backdrop-blur-md transition-all hover:border-[#C87A38]">
                 <Sparkles className="w-5 h-5 text-[#C87A38] shrink-0" />
                 <p className="text-xs sm:text-sm text-[#1C1917] font-serif italic leading-relaxed text-center font-normal">
                   In Madhubani folklore, celestial bodies like the <strong className="text-[#C87A38] not-italic font-bold">Sun, Moon, and Stars</strong> represent cosmic balance.
