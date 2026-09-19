@@ -24,7 +24,7 @@ export default function ArtistSection({ onContactArtist }) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center pt-1">
           
           {/* 📍 ARTIST PHOTO */}
-          <div className="lg:col-span-5 relative flex flex-col">
+          <div className="lg:col-span-5 relative flex flex-col max-w-md mx-auto w-full lg:max-w-none">
             <div className="bg-[#FFFDF9] border border-[#E7E0D2] p-3.5 sm:p-4 rounded-2xl shadow-md space-y-4 h-full flex flex-col justify-between">
 
               <div className="relative flex-1 min-h-[260px] xs:min-h-[300px] sm:min-h-[360px] aspect-[4/5] sm:aspect-[3/4] lg:aspect-auto rounded-xl overflow-hidden border border-[#E7E0D2] bg-[#FAF8F3] shadow-inner group">

@@ -142,7 +142,7 @@ export default function ArtworkLightbox({ artwork, onClose, onOpenCommission }) 
                 </div>
 
                 {/* Story Paragraph */}
-                {artwork.title !== "Godna" && (artwork.story || artwork.fullStory || artwork.brief) && (
+                {(artwork.story || artwork.fullStory || artwork.brief) && (
                   <div className="space-y-1.5 pt-1">
                     <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#1C1917] flex items-center gap-1.5">
                       <Feather className="w-3.5 h-3.5 text-[#B94A2D]" />
@@ -159,8 +159,9 @@ export default function ArtworkLightbox({ artwork, onClose, onOpenCommission }) 
               <div className="pt-4 sm:pt-6 pb-2 pb-safe space-y-2 border-t border-[#E7E0D2]">
                 <button
                   onClick={() => {
+                    const text = `Hello Rashmi,\n\nI am inquiring about the artwork: *${artwork.title}*\nStyle: ${artwork.styleCategory || artwork.style || 'Madhubani'}\nDimensions: ${artwork.dimensions || 'N/A'}\nMedium: ${artwork.medium || 'Natural pigments on handmade paper'}\n\nPlease let me know if this original is available.`;
+                    window.open(`https://wa.me/919971399395?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
                     onClose();
-                    if (onOpenCommission) onOpenCommission();
                   }}
                   className="w-full min-h-[44px] py-3 px-4 bg-[#1C1917] hover:bg-[#B94A2D] text-white rounded-sm font-semibold text-xs tracking-wider uppercase flex items-center justify-center gap-2 shadow-md transition-all active:scale-[0.99] cursor-pointer"
                 >
@@ -170,8 +171,9 @@ export default function ArtworkLightbox({ artwork, onClose, onOpenCommission }) 
 
                 <button
                   onClick={() => {
+                    const text = `Hello Rashmi,\n\nI am interested in commissioning a bespoke artwork inspired by: *${artwork.title}* (${artwork.styleCategory || artwork.style || 'Madhubani'}).\n\nPlease let me know how we can discuss sizing and details.`;
+                    window.open(`https://wa.me/919971399395?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
                     onClose();
-                    if (onOpenCommission) onOpenCommission();
                   }}
                   className="w-full min-h-[44px] py-2.5 px-4 bg-transparent border border-[#C87A38] text-[#C87A38] hover:bg-[#C87A38]/10 rounded-sm font-semibold text-xs tracking-wider uppercase flex items-center justify-center gap-2 transition-all active:scale-[0.99] cursor-pointer"
                 >
